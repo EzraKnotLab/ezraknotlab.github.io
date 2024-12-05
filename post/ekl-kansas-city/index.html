@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/GhoO8sRec">
+                        📍Stories
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NzQ4NzEwOQ==&amp;action=getalbum&amp;album_id=1985166448217899009&amp;scene=173&amp;from_msgid=2247484979&amp;from_itemidx=1&amp;count=3&amp;nolastread=1#wechat_redirect">
+                        🪄Fotos
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        ⏳link
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1733402854014" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1733402854014" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/GhoO8sRec">
+                            📍Stories
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NzQ4NzEwOQ==&amp;action=getalbum&amp;album_id=1985166448217899009&amp;scene=173&amp;from_msgid=2247484979&amp;from_itemidx=1&amp;count=3&amp;nolastread=1#wechat_redirect">
+                            🪄Fotos
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            ⏳link
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Kansas City
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2023-02-27</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">17.3
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4403</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NIGHT/">EKL_NIGHT</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://ezraknotlab.github.io//post-images/ekl-kansas-city.png" alt="">
+                          
+                        <div class="post-content">
+                            <blockquote>
+<p>We have the first snowflake. Now let's build a blizzard.</p>
+</blockquote>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li><a href="#toc">TOC</a></li>
+<li><a href="#1%EF%B8%8F%E2%83%A3-d%E5%B8%A6%E4%B8%AD%E5%BF%83%E7%90%86%E8%AE%BA%E4%B8%8E%E8%B4%B9%E7%B1%B3%E8%83%BD%E7%BA%A7">1️⃣ d带中心理论与费米能级</a></li>
+<li><a href="#2%EF%B8%8F%E2%83%A3-bi-p-orbitals-in-biox-for-nrr">2️⃣ Bi p orbitals in BiOx for NRR</a></li>
+<li><a href="#3%EF%B8%8F%E2%83%A3-vacancy-defected-graphene-vg-cuni-2-for-detecting-tce">3️⃣ vacancy-defected graphene VG-CuNi-2 for detecting TCE</a></li>
+<li><a href="#4%EF%B8%8F%E2%83%A3-ptni-alloy-for-orr-in-zabs">4️⃣ PtNi Alloy for ORR in ZABs</a></li>
+<li><a href="#5%EF%B8%8F%E2%83%A3-silver-clusters-for-co2rr">5️⃣ Silver Clusters for CO2RR</a></li>
+<li><a href="#6%EF%B8%8F%E2%83%A3-%E9%82%BBfe%E4%BD%8D%E7%82%B9%E9%80%9A%E8%BF%87%E5%8F%8C%E9%87%91%E5%B1%9E%E4%BD%8D%E7%82%B9%E8%AE%BE%E8%AE%A1%E4%BF%83%E8%BF%9Bcosacs-for-oer">6️⃣ 邻Fe位点通过双金属位点设计促进CoSACs for OER</a></li>
+<li><a href="#7%EF%B8%8F%E2%83%A3-thoughts-on-xt-group-meeting-dos%E5%92%8Cd%E5%B8%A6%E4%B8%AD%E5%BF%83%E7%9A%84%E5%9B%BE%E8%AF%B4%E6%98%8E%E5%8E%9F%E5%AD%90%E6%8E%BA%E6%9D%82%E6%95%88%E6%9E%9C">7️⃣ Thoughts on XT group meeting DOS和D带中心的图说明原子掺杂效果</a></li>
+<li><a href="#fighters-countdown">👑 Fighters Countdown</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#paperreading">📗PaperReading：</a></li>
+<li><a href="#the-salmon-of-doubt-%E5%9B%B0%E6%83%91%E7%9A%84%E4%B8%89%E6%96%87%E9%B1%BC">🐟The Salmon of Doubt 《困惑的三文鱼》</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="1️⃣-d带中心理论与费米能级">1️⃣ d带中心理论与费米能级</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://ezraknotlab.github.io//post-images/1689494719293.png" alt="" loading="lazy"><br>
+<img src="https://ezraknotlab.github.io//post-images/1689494722991.jpg" alt="" loading="lazy"></p>
+<h1 id="2️⃣-bi-p-orbitals-in-biox-for-nrr">2️⃣ Bi p orbitals in BiOx for NRR</h1>
+<p>激活非晶态BiOx分散簇中的Bi p-轨道用于电催化氮还原<br>
+Activating Bi p-orbitals in Dispersed Clusters of Amorphous BiOx for Electrocatalytic Nitrogen Reduction<br>
+Kang, Jianxin, Chen, Xiangyu, Si, Rutong, Gao, Xiang, Zhang, Shuo, Teobaldi, Gilberto, Selloni, Annabella, Liu, Li-Min, Guo, Lin, Angew. Chem. Int. Ed. 2023, e202217428; Angew. Chem. 2023, e202217428.<br>
+<a href="#toc">↩️</a></p>
+<blockquote>
+<p>Bi氧化态被提出强烈影响固氮活性，Bi2+离子的半占pz轨道对电子注入惰性N2分子具有很高的效率。 有足够的催化位点来吸附和激活N2，N2和催化剂之间的键合可以原位识别。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://ezraknotlab.github.io//post-images/1689494898588.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>在先前吸附的BiOBr的原位电化学分解之后，通过Bi在沉积载体上的迁移，已经成功地实现了无定形BiOx的原子级分散的簇，表现出不同的Bi2+和Bi+氧化态。实验和理论证实Bi系统的活性与6p轨道的填充和随后Bi原子的氧化态直接相关。</p>
+</blockquote>
+<ul>
+<li>与d轨道催化剂相比，Bi 6p轨道可以部分抑制固氮 N2 fixation 竞争析氢反应，从而使NRR具有更高的活性和选择性。</li>
+<li>该催化剂在NH3生产中表现出优异的法拉第效率（30%）和高产率（113μg h-1mg-1cat），优于大多数现有的水溶液催化剂。 这些结果为开发p嵌段元素催化多电子反应的潜力奠定了基础。工作相关的见解为未来开发p轨道元素的全部潜力铺平了道路，以催化从NRR开始的多电子反应，但不限于此。</li>
+</ul>
+<h1 id="3️⃣-vacancy-defected-graphene-vg-cuni-2-for-detecting-tce">3️⃣ vacancy-defected graphene VG-CuNi-2 for detecting TCE</h1>
+<p><a href="#toc">↩️</a><br>
+A first-principles study of the adsorption of trichloroethylene on vacancy-defected graphene decorated by Cu and/or Ni dimers</p>
+<p>VG-CuNi-2 can be used as a sensing material for detecting TCE（三氯代乙烯）.</p>
+<p>Here we focus on analysis of the DOS diagrams(In the DOS map, the zero point of the abscissa indicates the Fermi level.):</p>
+<figure data-type="image" tabindex="2"><img src="https://ezraknotlab.github.io//post-images/1689494985799.png" alt="" loading="lazy"></figure>
+<ul>
+<li>a:吸附前后无明显变化，那说明作用力较弱。</li>
+<li>b,e: 前后有变化，但在费米能级附近无明显变化，说明对导电性只有微弱的影响。</li>
+<li>c；</li>
+<li>d: 整体向高能量移动了点，费米能级处有明显变化，d影响大于c，作用更强，有更好的ensibility，吸附能电荷转移gap和差分电荷密度等也与此保持一致的推论。VG-CuNi-2 带宽最小，随着电荷从石墨烯衬底转移到TCE，带隙值降低，导致整个系统的电子结构发生变化。VG-CuNi-2的带隙在tce吸附后发生变化最大，表明VG-CuNi-2对TCE的敏感性最大。 结果与之前关于吸附能、电荷转移和电子密度差的分析结果一致。</li>
+</ul>
+<h1 id="4️⃣-ptni-alloy-for-orr-in-zabs">4️⃣ PtNi Alloy for ORR in ZABs</h1>
+<p><a href="#toc">↩️</a><br>
+Nanostructure Engineering and Electronic Modulation of a PtNi Alloy Catalyst for Enhanced Oxygen Reduction Electrocatalysis in Zinc–Air Batteries<br>
+J. Phys. Chem. Lett. 2023, 14, XXX, 1740–1747</p>
+<p><img src="https://ezraknotlab.github.io//post-images/1689495106045.png" alt="" loading="lazy"><br>
+Figure 5. Calculated free energy diagrams for the ORR on (a) PtNi(111) and (b) Pt(111) slabs. (c) Optimized atom configuration and charge density difference plots for the PtNi(111) surface. (d and e) DOS plots for PtNi(111) and Pt(111), respectively.</p>
+<ul>
+<li>d，e: 费米能级上都有轨道布局，且导电性也差不多，显示出合金的金属特性，满足ORR的高效电荷转移。图中标的d带中心，明显合金的更正，更利于ORR</li>
+</ul>
+<blockquote>
+<p>根据d带中心理论，d带中心更接近费米能级，将加强ORR中间体的结合。 显然，合金化Pt和Ni原子可以显着改变Pt的d带中心位置，从而促进在ORR期间形成含氧中间体。</p>
+</blockquote>
+<h1 id="5️⃣-silver-clusters-for-co2rr">5️⃣ Silver Clusters for CO2RR</h1>
+<p><a href="#toc">↩️</a></p>
+<p>Reaction Selectivity for Plasmon-Driven Carbon Dioxide Reduction on Silver Clusters: A Theoretical Prediction<br>
+Xia-Guang Zhang, Yuxiu Liu, Chao Zhan, Xi Jin, Qijin Chi, De-Yin Wu, Yi Zhao, and Zhong-Qun Tian<br>
+The Journal of Physical Chemistry C 2019 123 (17), 11101-11108<br>
+DOI: 10.1021/acs.jpcc.9b01448</p>
+<p>采用密度泛函理论研究等离子体驱动的CO2在金属银团簇活性位点的还原。 结果预测，CO2更倾向于吸附在银团簇的桥位点，并且由于电子基态处的高活化势垒，C–O键难以断裂。 然而，由于银纳米粒子的光致等离子体能与C–O键的解离能相匹配，CO2很容易解离成CO和吸附氧原子。 此外，我们的计算结果表明，生成的CO强烈吸附在银簇上有利于其随后与氢还原成CH3OH和CH4的反应。 生成CH3OH的反应势垒低于形成CH4的反应势垒，因为质子在初始反应步骤中比与氧原子更容易与碳结合。 它很好地说明了在可见光照射下，银纳米粒子上的二氧化碳还原可以形成CH3OH的实验观察结果。</p>
+<hr>
+<p>localized surface plasmon resonances (LSPR)——局部表面等离子体共振(LSPR)<br>
+<img src="https://ezraknotlab.github.io//post-images/1689495181648.gif" alt="" loading="lazy"><br>
+Figure 3. Mechanism of the photogeneration hot electron transfer from a silver cluster to CO2. The black line and the blue line represent the density of state of Ag18 cluster and CO2, respectively. The energy level is relative to the vacuum level.</p>
+<blockquote>
+<p>从银团簇的电子激发中,发现CO2的LUMO能与sp电子的银团簇激发能很好地匹配,银团簇上激发的热电子由于强烈的轨道耦合,很容易转移到CO2的LUMO轨道上。 具有化学吸附结构的电荷转移状态大大降低了C–O键裂解形成CO的能垒。</p>
+</blockquote>
+<h1 id="6️⃣-邻fe位点通过双金属位点设计促进cosacs-for-oer">6️⃣ 邻Fe位点通过双金属位点设计促进CoSACs for OER</h1>
+<p><a href="#toc">↩️</a><br>
+Adjacent Fe Site Boosts Electrocatalytic Oxygen Evolution of Co Site in Single-Atom-Catalyst through a Dual-Metal-Site Design<br>
+钴基单原子催化剂已被发现作为氧化反应（oer）的可能候选物，其中只有Co金属位点的性能进一步改进仍然具有有限的优化空间的挑战。优化的双原子催化剂表现出OER活性。系统的微观和阻抗研究揭示了Co和Fe金属位点之间的相互作用是提高OER性能的关键因素，其中Co位点作为活性位点，相邻的Fe作为共催化位点。 密度泛函理论（dft）的计算证实了Fe和Co之间的强轨道耦合，从而导致具有改进的电活性的d带结构。 与S和N协调的Co位点可以实现高效的位点到位点电子转移，而与N协调的Fe位点有利于Co位点的化学稳定性，以保证高效的OER。<br>
+<img src="https://ezraknotlab.github.io//post-images/1689495239934.png" alt="" loading="lazy"></p>
+<ul>
+<li>a: Co/Fe-SNC 中位点周围强轨道耦合：
+<ul>
+<li>富电子活性</li>
+<li>提高有效电荷传输</li>
+</ul>
+</li>
+<li>c: 强反键轨道键级，减少了电化学活性</li>
+<li>d： Co-3d 轨道有高峰，使得高OER电化学活性，有strong electron depletion capability强大的电子耗尽能力，其他下面其他轨道有强重叠，总体上表明各个位点间高效电子传输</li>
+<li>The Fe-3d orbital shows the eg-t2g splitting, which pins the Co-3d orbitals at the highly active position to guarantee remarkable OER performance.</li>
+<li>e: 两个Co的还因为周围环境不同而PDOS不同，电化学活性下降。</li>
+<li>f：能级分裂，电子传输效率下降。 both two types of Fe-3d orbitals have exhibited evident eg-t2g splitting near EF, revealing an electron transfer barrier for the OER process</li>
+<li>g： 掺杂后的双原子复合物D带中心上移因为d-d轨道耦合引起的协同效应。
+<ul>
+<li>Fe的3d轨道在OER期间保护Co位点，以保持对反应物和中间体的高的电活性</li>
+</ul>
+</li>
+<li>h,i: 不同吸附质间轻微线性相关</li>
+</ul>
+<h1 id="7️⃣-thoughts-on-xt-group-meeting-dos和d带中心的图说明原子掺杂效果">7️⃣ Thoughts on XT group meeting DOS和D带中心的图说明原子掺杂效果</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>比如要说明d-p轨道杂化的效果，就是原子掺杂后，DOS和D带中心的图 哪个更能说明问题 或者有什么区别？</li>
+</ul>
+<blockquote>
+<p>要说明d-p轨道杂化的效果，DOS和D带中心的图都可以用来说明问题，但它们提供的信息不同。<br>
+DOS（密度状态）图显示了在能量范围内的状态密度，包括所有轨道的贡献。在掺杂后的材料中，d-p轨道杂化会导致新的能级产生，并改变DOS图的形状和峰值位置。因此，通过比较掺杂前后的DOS图，可以看出d-p轨道杂化的影响。<br>
+D带中心图显示了d轨道在带结构中的位置。在掺杂后的材料中，d-p轨道杂化可以改变D带中心的位置。因此，通过比较掺杂前后的D带中心图，也可以看出d-p轨道杂化的影响。<br>
+两种方法都可以用来说明d-p轨道杂化的效果，但它们提供的信息有所不同。如果想要全面了解d-p轨道杂化的影响，建议同时参考DOS和D带中心图。</p>
+</blockquote>
+<blockquote>
+<p>除了DOS和D带中心图，还有其他方式可以说明d-p轨道杂化的效果，比如：<br>
+能带结构图：能带结构图可以显示材料中所有能带的能量和形状，包括d和p轨道的贡献。通过比较掺杂前后的能带结构图，可以看出d-p轨道杂化对能带结构的影响。<br>
+原子轨道成分图：原子轨道成分图显示了材料中每个原子轨道在各个能级上的贡献。通过比较掺杂前后的原子轨道成分图，可以看出哪些原子轨道参与了d-p轨道杂化，以及杂化后哪些能级发生了变化。<br>
+磁性分析：一些d-p轨道杂化材料具有磁性，通过磁性分析可以了解d-p轨道杂化对磁性的影响。<br>
+不同的方法提供不同的信息，可以根据需要选择合适的方法来说明d-p轨道杂化的效果。</p>
+</blockquote>
+<hr>
+<ul>
+<li>d-p轨道杂化的效果通常可以通过以下特征来说明：</li>
+</ul>
+<blockquote>
+<p>DOS的变化：d-p轨道杂化会导致新的能级产生，这些新能级会影响DOS的形状和峰值位置。在掺杂后的材料中，如果在费米能级附近出现了新的峰值或者DOS的形状发生了明显变化，就说明d-p轨道杂化对材料的电子结构产生了影响。<br>
+D带中心的变化：d-p轨道杂化可以改变D带中心的位置。在掺杂后的材料中，如果D带中心的位置发生了明显的变化，就说明d-p轨道杂化对材料的电子结构产生了影响。<br>
+能带结构的变化：d-p轨道杂化可以影响材料的能带结构，产生新的能带或者改变已有能带的形状。在掺杂后的材料中，如果能带结构发生了明显的变化，就说明d-p轨道杂化对材料的电子结构产生了影响。<br>
+磁性的变化：一些d-p轨道杂化材料具有磁性，d-p轨道杂化可以影响材料的磁性性质。在掺杂后的材料中，如果磁性性质发生了明显的变化，就说明d-p轨道杂化对材料的磁性产生了影响。<br>
+这些特征的变化可以说明d-p轨道杂化增强了材料的电子传输，即d-p轨道杂化可以增加材料的导电性能。</p>
+</blockquote>
+<hr>
+<h1 id="fighters-countdown">👑 Fighters Countdown</h1>
+<p><a href="#toc">↩️</a></p>
+<p>UFC 285 Countdown</p>
+<p>Since the Cameroonian UFC heavyweight champion Francis Ngannuo left for chasing better-paid fights (as heard boxing), the title is vacumn. This Sunday, an exciting ultimate fight will be performed between Jon Jones and Ciryl Gane in Paris. After three years away from the octagon, Jon Jones is back! The former UFC light heavyweight champion makes his heavyweight debut on March 4. Buttt do not forget the comain event: Valentina Shevchenko vs. Alexa Grasso!</p>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Rihanna performed at the half-time show! When the rhythm came, everybody just can't help dancing and singing.</li>
+</ul>
+<pre><code class="language-python">When the sun shine, we shine together
+Told you I'll be here forever
+Said I'll always be your friend
+Took an oath, I'ma stick it out to the end
+Now that it's raining more than ever
+Know that we'll still have each other
+You can stand under my umbrella
+You can stand under my umbrella, -ella, -ella, eh, eh, eh
+
+</code></pre>
+<ul>
+<li>For the second time, Patrick Mahomes won his SuperBowl MVP award, and KC beat Eagles by 38-35. Well-deserved!! 2023年2月13日</li>
+</ul>
+<h2 id="paperreading">📗PaperReading：</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Search some relative news releases , in order to helping entirely understanding. And usually they provide some background words which can be introduced into own presentations.</li>
+<li>Next one is using ppt to record thougts and keypoints for a clear-mindedly better note-taking experience while reading. Files also can be brought on meetings. One stone kills two birds.</li>
+</ul>
+<h2 id="the-salmon-of-doubt-困惑的三文鱼">🐟The Salmon of Doubt 《困惑的三文鱼》</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>h2g2 webpage<br>
+右边是quote：We have the first snowflake. Now let's build a blizzard. 既有决心远志的彰显，又有恒心毅力的迸发。似于“不积小流无以成江海”，但这里加了主语we，更加自然、融入其中，mission otw! us against the world .</p>
+</blockquote>
+<blockquote>
+<p>真的感觉随便翻开书的一页都会有令人忍俊不禁的语句出现，太神奇了，精彩段落词语的浓度厚重。进化论的重点在于，要是它没有把你的脑袋掀个底 朝天，那你就根本没有理解它。</p>
+</blockquote>
+<blockquote>
+<p>DNA多年前偶然地去到过澳大利亚的海曼岛，那里之前是流放犯罪分子的地方，如今却有来自世界各地的游客在这里享受着阳光，扩展自己的对自然的认识——蝠鲼，可以骑在上面的片状鱼，潜水虫（水下载具）。</p>
+</blockquote>
+<blockquote>
+<p>勃兰登堡协奏曲</p>
+</blockquote>
+<blockquote>
+<p>水下永生难忘的奇迹，关于动物的行为，对于一个热爱自然的人来说，能够震慑到自己的美好瞬间就是少有的几件可以让自己感叹时光珍贵的事件、情景之一。</p>
+</blockquote>
+<blockquote>
+<p>银河系搭车客指南之于DNA，与活着之于余华类似，在之前余华的访谈里他也提到其实作家本人最钟爱的作品大多数都不是自己最畅销的作品，余华更喜欢的是兄弟，但是类似的，活着和银河系搭车客指南给作家带来了无尽的财富，有名声名誉，有金钱机遇，使得后面的路更广，更加通畅！</p>
+</blockquote>
+<blockquote>
+<p>种一棵树，真是一种神奇的方式，一种让人感到奇妙又美好的缅怀挚友的方式（差点说成小技巧）…… 很开心，并没有悲伤，要说有的话，还是一点遗憾更为恰当，我们继续热爱生活，还有很多呢！</p>
+</blockquote>
+<blockquote>
+<p>讲一个我最近的发现：DNA生活在本世纪初，虽然接触到苹果电脑，当然也是如今的那种MAC的前身，在20年前他似乎依靠着写作带来的财富能够使得他实现”科技享用的自由“，他还接触过掌上平板等一些先进的小玩意！我们很相像，都对于新兴的技术、新奇的电子产品有着源源不断的好奇心，喜欢对于此类物品的前沿技术的认识保持更新，在使用过程中成长进步，修得更多的小技巧，甚至从中思考一些道理？或者吐槽它们的设计，或者认为自己有着更棒的主意和理解。将近20年过去了，这些技术毫无疑问已经发展地日新月异，但事实上在我看来，对于日常使用者（或者就是轻度使用者或者不那么热爱探索的人）来说，似乎也没有发生多少变化，DNA我们可以将它‘视作’当时电子产品前沿的”冲浪者“，那对于如今的轻度使用者来说，电脑也没变化特别多，除了机身重量、价格，明显的是性能，其他的软件其实变化主要是因为科技繁荣所带来的的横向发展，丰富了其他方面的软件、媒体等等，但是实际不是很多，例如DNA之前在千禧年前后生活或者旅行中写作都是使用电脑端的排版软件，如果如今他仍然在世的话，说不定在末年他还会因为对机器学习、神经网络、数据分析等方面的偶然兴趣而进入某个行业。 其实最重要的东西昨天还没想起来记：如今琳琅满目的电子产品充斥于我们的生活，眼睛周围被尽可能多的屏幕环绕着，电脑、显示器、平板电脑、手机、商业广场大屏……另外还有耳机，风靡了近十几年的有线耳机，后来的无线耳机，到如今的骨传导耳机，我发现耳朵上的负载是有越来越多的趋势了，佩戴着无线耳机，但是身边人说话却不能有效地穿过堵住耳朵眼的无线耳机，所以人们另辟蹊径，使用了骨传导，这样就解放了原本的声波传播渠道，未来还会有其他渠道？或者直接由脑波传输？谁晓得……</p>
+</blockquote>
+<blockquote>
+<p>奶奶滴，书看到最后，终于破案了！！ 一直就觉得不对劲，这不就是最后一眼嘛！ 可能是译者想要蹭银河系漫游指南的热度，才起了这个与另一个系列毫无关系的名字</p>
+</blockquote>
+<hr>
+<p>Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#toc">TOC</a></li>
+<li><a href="#1%EF%B8%8F%E2%83%A3-d%E5%B8%A6%E4%B8%AD%E5%BF%83%E7%90%86%E8%AE%BA%E4%B8%8E%E8%B4%B9%E7%B1%B3%E8%83%BD%E7%BA%A7">1️⃣ d带中心理论与费米能级</a></li>
+<li><a href="#2%EF%B8%8F%E2%83%A3-bi-p-orbitals-in-biox-for-nrr">2️⃣ Bi p orbitals in BiOx for NRR</a></li>
+<li><a href="#3%EF%B8%8F%E2%83%A3-vacancy-defected-graphene-vg-cuni-2-for-detecting-tce">3️⃣ vacancy-defected graphene VG-CuNi-2 for detecting TCE</a></li>
+<li><a href="#4%EF%B8%8F%E2%83%A3-ptni-alloy-for-orr-in-zabs">4️⃣ PtNi Alloy for ORR in ZABs</a></li>
+<li><a href="#5%EF%B8%8F%E2%83%A3-silver-clusters-for-co2rr">5️⃣ Silver Clusters for CO2RR</a></li>
+<li><a href="#6%EF%B8%8F%E2%83%A3-%E9%82%BBfe%E4%BD%8D%E7%82%B9%E9%80%9A%E8%BF%87%E5%8F%8C%E9%87%91%E5%B1%9E%E4%BD%8D%E7%82%B9%E8%AE%BE%E8%AE%A1%E4%BF%83%E8%BF%9Bcosacs-for-oer">6️⃣ 邻Fe位点通过双金属位点设计促进CoSACs for OER</a></li>
+<li><a href="#7%EF%B8%8F%E2%83%A3-thoughts-on-xt-group-meeting-dos%E5%92%8Cd%E5%B8%A6%E4%B8%AD%E5%BF%83%E7%9A%84%E5%9B%BE%E8%AF%B4%E6%98%8E%E5%8E%9F%E5%AD%90%E6%8E%BA%E6%9D%82%E6%95%88%E6%9E%9C">7️⃣ Thoughts on XT group meeting DOS和D带中心的图说明原子掺杂效果</a></li>
+<li><a href="#fighters-countdown">👑 Fighters Countdown</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#paperreading">📗PaperReading：</a></li>
+<li><a href="#the-salmon-of-doubt-%E5%9B%B0%E6%83%91%E7%9A%84%E4%B8%89%E6%96%87%E9%B1%BC">🐟The Salmon of Doubt 《困惑的三文鱼》</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-kansas-city/">https://ezraknotlab.github.io/post/ekl-kansas-city/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-kansas-city/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-kansas-city/&sharesource=qzone&title=EKL Kansas City&pics=https://ezraknotlab.github.io//images/avatar.png?v=1733402854014&summary=&lt;blockquote&gt;
+&lt;p&gt;We have the first snowflake. Now let&#39;s build a blizzard.&lt;/p&gt;
+&lt;/blockquote&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-kansas-city/&sharesource=weibo&title=EKL Kansas City + " - " + &lt;blockquote&gt;
+&lt;p&gt;We have the first snowflake. Now let&#39;s build a blizzard.&lt;/p&gt;
+&lt;/blockquote&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1733402854014 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NIGHT/">#
+                                                EKL_NIGHT
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-285v2/">
+                                                                                            EKL 285
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-284v/">
+                                                                                                    EKL 284
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1733402854014);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

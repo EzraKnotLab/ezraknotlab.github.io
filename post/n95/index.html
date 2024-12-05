@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/GhoO8sRec">
+                        📍Stories
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NzQ4NzEwOQ==&amp;action=getalbum&amp;album_id=1985166448217899009&amp;scene=173&amp;from_msgid=2247484979&amp;from_itemidx=1&amp;count=3&amp;nolastread=1#wechat_redirect">
+                        🪄Fotos
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        ⏳link
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1733402854014" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1733402854014" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/GhoO8sRec">
+                            📍Stories
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg3NzQ4NzEwOQ==&amp;action=getalbum&amp;album_id=1985166448217899009&amp;scene=173&amp;from_msgid=2247484979&amp;from_itemidx=1&amp;count=3&amp;nolastread=1#wechat_redirect">
+                            🪄Fotos
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            ⏳link
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                &#34;N95&#34;
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2023-12-27</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">13.9
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3621</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://ts1.cn.mm.bing.net/th/id/R-C.7e5ca9efa0639e40b115b97eea460a64?rik=3HDSrCwRWL6mQQ&amp;pid=ImgRaw&amp;r=0" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Dropout</li>
+<li>right questions to ask</li>
+<li>Narrow AI &amp; AGI</li>
+<li>FUCKING IRRELAVENT CLOWN.</li>
+<li>more than a fighter, Bruce Lee and Muhammad Ali</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#1%EF%B8%8F%E2%83%A3sam-altman">1️⃣SAM ALTMAN</a>
+<ul>
+<li><a href="#1">①</a></li>
+<li><a href="#2">②</a></li>
+<li><a href="#3">③</a></li>
+</ul>
+</li>
+<li><a href="#2%EF%B8%8F%E2%83%A3-right-questions-to-ask">2️⃣ right questions to ask</a></li>
+<li><a href="#3%EF%B8%8F%E2%83%A3agi-artificial-general-intelligence-%E5%BA%9F%E8%AE%AF">3️⃣AGI Artificial general intelligence-废讯</a></li>
+<li><a href="#4%EF%B8%8F%E2%83%A3alma-mater">4️⃣Alma Mater</a></li>
+<li><a href="#5%EF%B8%8F%E2%83%A3clown">5️⃣CLOWN</a></li>
+<li><a href="#fighters-%E6%A0%BC%E6%96%97%E5%93%B2%E6%80%9Dmore-than-a-fighter">👑 Fighters 格斗哲思——more than a fighter：</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+</ul>
+</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Side by Side</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.bC30m_8vw-Q2Js9-X4zTIwHaEz?rs=1&pid=ImgDetMain" alt="Image 1" style="width: 100%; height: auto;">
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.Nxnj210UxVQbVk_qeXB0wwHaEC?rs=1&pid=ImgDetMain" alt="Image 2" style="width: auto; height: auto;">
+        </div>
+    </div>
+</body>
+</html>
+<pre><code class="language-python">
+The world in a panic, the women is stranded, the men on a run
+The prophets abandoned, the law take advantage, the market is crashin', the industry wants
+Niggas and bitches to sleep in a box while they makin' a mockery followin' us
+This ain't Monopoly, watchin' for love, this ain't monogamy, y'all gettin' fucked
+Jumpin' on what the hell is that? I gotta relax when I feel (Huh, facts)
+All my descendants, they come in my sleep and say I am too real (Huh, facts)
+I'm done with the sensitive, takin' it personal, done with the black and the white, the wrong and the right
+You hopin' for change and clericals, I know the feelings that came with burial's cries
+
+
+Cameras movin' whenever I'm movin', the family suin' whatever I make
+Murder is stackin', the president actin', the government taxin' my funds in the bank
+Homies attracting the feds when I'm bracking, look at my reaction, my pupils on skates (Hold up, hold up)
+
+
+
+</code></pre>
+<h1 id="1️⃣sam-altman">1️⃣SAM ALTMAN</h1>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>Sam Altman is the CEO of OpenAI, an artificial intelligence research and development company.</p>
+</blockquote>
+<p>FROM WIKI PEDIA:<br>
+Samuel Harris Altman was born on April 22, 1985, in Chicago, Illinois,[6][7] into a Jewish family,[8] and grew up in St. Louis, Missouri. His mother is a dermatologist, while his father was a real estate broker. Altman is the eldest of four siblings—brothers Jack and Max, and sister Annie.[9] At the age of eight he received his first computer, an Apple Macintosh.[10] He attended John Burroughs School, a private school in Ladue, Missouri. In 2005, after two years at Stanford University studying computer science, he <mark>dropped out</mark> without earning a bachelor's degree.[11][12]</p>
+<p>Is this phenomenon a coincidence????</p>
+<h2 id="1">①</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>Sam Altman，大学辍学者，与一些其他成功的科技行业领袖如乔布斯（Steve Jobs）和比尔·盖茨（Bill Gates）有一些相似之处。这些人的成功故事中确实存在一些巧合，他们的一些共同的特征：</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>创业精神：</strong> 强烈的创业精神和愿景，追求在科技领域创造和推动创新。</p>
+</li>
+<li>
+<p><strong>决断力：</strong> 在某个时刻做出了决定，放弃了传统的学业路径，选择了创业的道路。</p>
+</li>
+<li>
+<p><strong>自学能力：</strong> 在职业生涯中表现出了强烈的自学能力，通过实际经验和自主学习获得了所需的知识和技能。</p>
+</li>
+<li>
+<p><strong>坚持和决心：</strong> 在面临困难和挫折时表现出坚持和决心，不轻言放弃。</p>
+</li>
+</ol>
+<p><mark>keywords</mark>：个人品质、努力和环境等因素。</p>
+<hr>
+<h2 id="2">②</h2>
+<p><a href="#toc">↩️</a><br>
+<mark>keywords</mark>：电子信息时代<br>
+这还不是最重要的巧合……：</p>
+<p>乔布斯、比尔盖茨和Sam Altman等人都是在电子信息和计算机科学领域取得了成功，并且在创业道路上选择了大学辍学。这在某种程度上可以被视为巧合，但也反映了特定时期和行业的一些趋势和机遇。</p>
+<p>在个人电脑和互联网兴起的时代，正是这些创业者崭露头角的时候。他们抓住了科技领域的机遇，提前参与并推动了计算机和互联网技术的发展。辍学成为他们成功的一部分，因为他们更专注于实际的创新和问题解决，而不仅仅是传统的学术路径。</p>
+<p>这并不是说辍学是成功的唯一途径，也有许多成功人士通过完成高等教育取得了卓越成就。巧合在于，这些著名的辍学者正好是在一个科技变革的时代出现，并且他们的决策与技术的快速发展和市场需求相吻合。成功的关键因素包括对行业趋势的洞察、创新思维、团队合作以及面对困难时的韧性。</p>
+<hr>
+<h2 id="3">③</h2>
+<p><a href="#toc">↩️</a><br>
+辍学前的基础条件：<br>
+<mark>keywords</mark>：精英教育的背景</p>
+<table>
+<thead>
+<tr>
+<th>人物</th>
+<th>出生日期</th>
+<th>家庭背景</th>
+<th>教育背景</th>
+<th>辍学时的年龄</th>
+<th>辍学时的学校</th>
+<th>早期项目经验</th>
+<th>早期项目时的年龄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steve Jobs</td>
+<td>1955-02-24</td>
+<td>中产家庭，颇有品位的采光设计师养父母</td>
+<td>大学期间在Reed College上学，但辍学</td>
+<td>19岁</td>
+<td>Reed College</td>
+<td>与Steve Wozniak共同创立了苹果公司，推出了Apple I和Apple II电脑</td>
+<td>21岁</td>
+</tr>
+<tr>
+<td>Bill Gates</td>
+<td>1955-10-28</td>
+<td>中产家庭，父亲是律师，母亲是国际慈善基金会员</td>
+<td>大学期间在哈佛大学，但辍学</td>
+<td>20岁</td>
+<td>哈佛大学</td>
+<td>与Paul Allen一起编写了BASIC解释器，创建了Traf-O-Data公司</td>
+<td>15岁</td>
+</tr>
+<tr>
+<td>Elon Musk</td>
+<td>1971-06-28</td>
+<td>南非，父亲是工程师，母亲是模特</td>
+<td>大学期间在佛罗里达大学和宾夕法尼亚大学，但辍学</td>
+<td>24岁</td>
+<td>宾夕法尼亚大学</td>
+<td>创办了Zip2公司，为报纸提供在线内容；后来创建了X.com，最终合并成为PayPal</td>
+<td>28岁</td>
+</tr>
+<tr>
+<td>Mark Zuckerberg</td>
+<td>1984-05-14</td>
+<td>中产家庭，父亲是牙医，母亲是心理医生</td>
+<td>大学期间在哈佛大学，但辍学</td>
+<td>20岁</td>
+<td>哈佛大学</td>
+<td>创建了Facebook，最初是一个校内社交网络项目</td>
+<td>19岁</td>
+</tr>
+<tr>
+<td>Sam Altman</td>
+<td>1985-04-22</td>
+<td>中产以上家庭，父亲是制药公司的高管</td>
+<td>大学期间在斯坦福大学，但辍学</td>
+<td>19岁</td>
+<td>斯坦福大学</td>
+<td>与Joe Green共同创建了Loopt社交网络应用，后来被收购</td>
+<td>19岁</td>
+</tr>
+</tbody>
+</table>
+<p>#2044 -Sam Altman<br>
+TheJoe Rogan Experience<br>
+但是你还是要看到这似乎有一定的行业局限性<br>
+乔布斯 盖茨这些都是写代码起家  但是又似乎金子在哪里都会发光  换其他行业他们还是会如此dominent</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/66edV3LAbUXa26HG1ZQaKB/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<hr>
+<h1 id="2️⃣-right-questions-to-ask">2️⃣ right questions to ask</h1>
+<p><a href="#toc">↩️</a></p>
+<p>LIKE DNA SAID BEFORE:</p>
+<blockquote>
+<p>Once you know the right question to ask, the answer is the easiest part. --DNA |</p>
+</blockquote>
+<p>尽管使用OPENAI一年多了，最近还是深深感受到了这句话，准确描述自己的问题也是一项技能。不过不幸的是，大多数时候answer 并不是 easiest part.<br>
+更严重的是，大多数时候我自己根本不知道问题出在哪里（科研中），毫无头绪。</p>
+<h1 id="3️⃣agi-artificial-general-intelligence-废讯">3️⃣AGI Artificial general intelligence-废讯</h1>
+<p><a href="#toc">↩️</a><br>
+不知道为什么这一期还在讨论这个，目前里AGI的程度还有一段距离。</p>
+<blockquote>
+<p>AGI（人工通用智能）的对立通常是Narrow AI（狭义人工智能）或弱人工智能。<br>
+目前的狭义AI还是很弱，正如昨天我问的一些东西，甚至是最简单的翻译都会出错，肉眼可见的信息输出受到一些扰动：<br>
+基特琴科·佩特洛夫（Khabib Nurmagomedov）无败记录，轻量级传奇。<br>
+乔·罗根（Jon Jones）在轻重量级表现卓越，Pound-for-Pound最佳之一。<br>
+翻译为罗根是因为在此之前我问了一些关于Joe rogan的问题，他被称为颜色评论员，很新的一个词，其实就是普通的解说嘉宾，能够辅助主播进行分析解说的，鉴于Joe Rogan本人的威望及其实力，他和DC JA的三人组我认为是体育史上最佳的组合，比ESPN NBA那四人组远好。</p>
+</blockquote>
+<hr>
+<p>回到这个话题，目前的Narrow AI已经被广泛接触，这就给人们摄取的信息带来一些垃圾，比如上面的简单的错误，还有一些写论文时候明显的专业错误，最让人憎恨的是，很多内容产出者，通常在微信公众号上发布一些文章，文章前面的引言简介通常很具有通识的特性，帮助来自不同背景的读者理解（这也是目前Narrow AI最擅长的事，远比大量内容产出者擅长），在读引言简介时你还很难分辨出这是人工写作思考的产出还是AI所作，而且你读的时候通常是不会思考这个问题的，在此之前几乎所有内容都还是人为产出，但是读到最后，作者标了一句 ’以上内容由XXXAI产出‘，立马火就上来了，不仅是毫无营养的信息，还浪费了时间……</p>
+<p>就像普通科普两个概念的文章(通常这种看标题都很像)<br>
+<a href="https://temberature.github.io/post/0-8r-7oEN/">黎巴嫩真主党与以色列和哈马斯的关系</a></p>
+<hr>
+<p><a href="https://hntelegraph.com/">黑客新闻电讯</a></p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121720.webp" alt="" loading="lazy"></figure>
+<p>这个网站使用 AI，将&quot;黑客新闻&quot;每天的热点写成一篇篇报道，以后的&quot;内容农场&quot;大概就是这种样子。</p>
+<hr>
+<p>专利流氓利用 AI 生成大量想法，然后逐一申请专利，这只是时间问题。</p>
+<p>-- Hacker News 读者</p>
+<p>@<a href="https://www.ruanyifeng.com/blog/2023/12/weekly-issue-284.html">周刊</a></p>
+<hr>
+<p>意识上载   无限月读 想到今晚的红月。</p>
+<h1 id="4️⃣alma-mater">4️⃣Alma Mater</h1>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>某登读书里面经常宣导的：用路上开车的时间听书、一天读一本书。<br>
+这些都是虚假的奋斗感和充实感，除了在这个充满压力和物欲横流的社会里麻醉自己外，毫无意义。<a href="https://x.com/urassholes/status/1739954524888895953?s=20"></a></p>
+</blockquote>
+<h1 id="5️⃣clown">5️⃣CLOWN</h1>
+<p><a href="#toc">↩️</a></p>
+<p>DC's introducing : this guy is a phenomenal clown. f**king clown</p>
+<p>Why<br>
+Currently absessed with this： Modelo brought for those who has a fighting spirit.</p>
+<iframe src="//player.bilibili.com/player.html?aid=909529906&bvid=BV1oM4y127q8&cid=1081790393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>永远有人系列，初看时候30W+播放，现在将近100W，每天中午晚上吃饭都要来一遍。</p>
+<iframe src="//player.bilibili.com/player.html?aid=969852401&bvid=BV1up4y1Y7DG&cid=243206392&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<h1 id="fighters-格斗哲思more-than-a-fighter">👑 Fighters 格斗哲思——more than a fighter：</h1>
+<p><a href="#toc">↩️</a></p>
+<p><mark>keywords</mark>：Bruce Lee and Muhammad Ali<br>
+我很少会表现出有哲学方面的思考产出，但确实到达某个点却又不得不思考，该探究的东西自然浮于水上：</p>
+<p>格斗运动与其他体育项目，如足球和篮球等，存在着独特的特质，不仅仅是一场体育比赛，更是一个引发深刻哲学思考的领域。这里没有队友got you back，更多的时候是ISRAEL 出场电锯惊魂主题音乐给你带来的无尽的绝望，从夏天到这年末，我常会回味这种带给你直面死亡的恐惧，站在八角笼里，心里会想（妈妈，我不想打了，我想回家……）。所以这独特性源于其直接的个体对抗、生存本能的表达以及文化历史的深厚影响。</p>
+<iframe src="//player.bilibili.com/player.html?aid=909529906&bvid=BV1oM4y127q8&cid=1081790393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>①这种形式不仅仅是在技术和战术上与对手较量，更是在身体和意志的层面上进行了深刻的对抗（Jiri Prochazka and Alex Pereira's intense staredown before UFC 295 clash）。这直接的身体接触激发了对于自身能力（自信与怀疑）、意志力和耐力的思考。不仅是在挑战对手，也在挑战自己。</p>
+<p><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.zVXWK06G8vFvwR52rFVVZQHaD4?rs=1&amp;pid=ImgDetMain" alt="" loading="lazy"><br>
+<mark>Jiri Prochazka and Alex Pereira's intense staredown before UFC 295 clash</mark></p>
+<p>②格斗运动常常涉及到生存本能和自我保护，在竞技过程中被迫思考关于生存、力量、技能和战略的问题。这种生存本能的体现引发了更加深刻的内省，推动思考自身在面对压力和挑战时的反应。因此，格斗运动往往成为一个个体修炼、突破极限的场所，引发了更广泛的哲学思考。</p>
+<p>③文化和历史的影响也是格斗运动中哲学思考的一部分。一些武术拥有深厚的文化传统，培养了对于尊重、自律和精神修养的哲学观念。运动员在训练中不仅仅学到了技巧，更沉淀了一种对于传统价值观的理解和尊重。</p>
+<p>④从李小龙的水一样的哲学到穆罕默德·阿里在拳击生涯中对抗种族歧视和追求信仰自由的立场，这两位格斗运动的传奇人物通过他们在竞技生涯中的独特经历，深刻探索了身体与精神之间的联系，为人们呈现了格斗运动所具有的深层哲学内涵。</p>
+<hr>
+<p><strong>李小龙的水一样的哲学：</strong></p>
+<p>李小龙不仅是一位卓越的武术家，还是一位哲学家。“水一样的哲学”表达了对灵活性、适应性和自由流动的追求。个体应该像水一样，能够适应各种情境，流动而不抗拒。这种思想不仅在武术技艺上有所体现，更深层次地涉及到生活哲学。通过格斗运动，通过身体的力量和灵活性，传达了一种在生活中应对变化、顺应环境的智慧。他的哲学超越了武术领域，成为一种追求自由与灵活性的生活态度。</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Size Example</title>
+</head>
+<body>
+    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3eb23b0cd94ffea5051b6a890d22b103?rik=JtsHOVAFW7iwbw&riu=http%3a%2f%2fimg.desmotivaciones.es%2f201106%2fBruce_1.jpg&ehk=v8eR%2bFHc%2fDf%2b7ELM1uY7wqMQGKw%2fzX4NhGG3qizHExU%3d&risl=&pid=ImgRaw&r=0" alt="Bruce Lee" width="300" height="300">
+</body>
+</html>
+<hr>
+<p><strong>穆罕默德·阿里的对抗与信仰自由：</strong></p>
+<p>穆罕默德·阿里在拳击生涯中不仅仅是一名卓越的运动员，更是一位社会改革者。他在20世纪60年代末和70年代初，积极参与了美国的种族平等运动。阿里坚定地对抗种族歧视，他的拳击生涯成为对平等和正义的象征。最为著名的是，他因拒绝参加越战而被剥夺了拳王头衔，但他坚守对抗战争的信仰。这表达了他对于个体信仰自由的坚持，他的勇气在格斗场外对抗社会不公，将拳击与人权、信仰自由等更高层面的价值联系起来。</p>
+<p>通过格斗运动，阿里不仅仅证明了个体在竞技场上的力量，更用自己的例子展示了体育如何成为社会变革的催化剂。他通过身体的力量，将格斗运动的影响扩展到更广泛的社会议题，探讨了身体与精神、运动与社会正义之间的紧密联系。</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Side by Side</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C._wJCfNRrhsrWsF1H7I0eXwHaGR?rs=1&pid=ImgDetMain" alt="Image 1" style="width: 100%; height: auto;">
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.QZRubaNnlKSuOBwOeCwlRQHaD4?rs=1&pid=ImgDetMain" alt="Image 2" style="width: auto; height: auto;">
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.GSvD4C9Hn1JMGL9C34zq9gHaF-?rs=1&pid=ImgDetMain" alt="Image 3" style="width: auto; height: auto;">
+        </div>
+    </div>
+</body>
+</html>
+<p><mark>MSG-MY PEOPLE</mark></p>
+<p>总体而言，李小龙和穆罕默德·阿里这两位传奇人物通过格斗运动的经历，呈现了这一运动所独有的深刻哲学内涵。他们通过身体的力量、技巧的展示以及对社会公义的坚守，引发了人们对于身体与精神、运动与社会责任之间关系的深刻思考。他们的哲学观念超越了竞技场，成为激励人们追求自由、灵活性和社会正义的灵感之源。<br>
+个体对抗、生存本能、文化历史和身体感受相互交织，为格斗运动注入了更为丰富的内涵，成为一个引发人生哲学思考的场所，<mark>more than a fighter</mark>。</p>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<p>普通人很难理解天才的思考过程，因为天才一方面很难向他人解释自己的想法，另一方面也不屑于这样做。</p>
+<p>-- 乔治·亨利·刘易斯，英国哲学家<br>
+@<a href="https://www.ruanyifeng.com/blog/2023/12/weekly-issue-284.html">周刊</a></p>
+<p>FUCKING IRRELAVENT CLOWN.</p>
+<p>Literally I COME FROM TRENCHES, SCARS ARE THE WAY THAT A WORRIOR'S SYMBLE OF HIS PAST. I FEAR NOTHING. FEAR IS NOT REAL.</p>
+<p>B2YB @ToyoTires</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#1%EF%B8%8F%E2%83%A3sam-altman">1️⃣SAM ALTMAN</a>
+<ul>
+<li><a href="#1">①</a></li>
+<li><a href="#2">②</a></li>
+<li><a href="#3">③</a></li>
+</ul>
+</li>
+<li><a href="#2%EF%B8%8F%E2%83%A3-right-questions-to-ask">2️⃣ right questions to ask</a></li>
+<li><a href="#3%EF%B8%8F%E2%83%A3agi-artificial-general-intelligence-%E5%BA%9F%E8%AE%AF">3️⃣AGI Artificial general intelligence-废讯</a></li>
+<li><a href="#4%EF%B8%8F%E2%83%A3alma-mater">4️⃣Alma Mater</a></li>
+<li><a href="#5%EF%B8%8F%E2%83%A3clown">5️⃣CLOWN</a></li>
+<li><a href="#fighters-%E6%A0%BC%E6%96%97%E5%93%B2%E6%80%9Dmore-than-a-fighter">👑 Fighters 格斗哲思——more than a fighter：</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/n95/">https://ezraknotlab.github.io/post/n95/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/n95/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/n95/&sharesource=qzone&title=&#34;N95&#34;&pics=https://ezraknotlab.github.io//images/avatar.png?v=1733402854014&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropout&lt;/li&gt;
+&lt;li&gt;right questions to ask&lt;/li&gt;
+&lt;li&gt;Narrow AI &amp;amp; AGI&lt;/li&gt;
+&lt;li&gt;FUCKING IRRELAVENT CLOWN.&lt;/li&gt;
+&lt;li&gt;more than a fighter, Bruce Lee and Muhammad Ali&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/n95/&sharesource=weibo&title=&#34;N95&#34; + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropout&lt;/li&gt;
+&lt;li&gt;right questions to ask&lt;/li&gt;
+&lt;li&gt;Narrow AI &amp;amp; AGI&lt;/li&gt;
+&lt;li&gt;FUCKING IRRELAVENT CLOWN.&lt;/li&gt;
+&lt;li&gt;more than a fighter, Bruce Lee and Muhammad Ali&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1733402854014 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/a-new-beginning/">
+                                                                                            ‘A new beginning’
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/starting-over-again/">
+                                                                                                    Starting Over Again 
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1733402854014);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

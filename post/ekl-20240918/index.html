@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1742745456904" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1742745456904" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20240918-锂电池叠片、卷绕工艺区别
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-09-18</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">3.3
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">972</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://0.rc.xiniu.com/g4/M00/53/3D/CgAG0mKYjgqAekBcAAnE0UVLlgc328.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>DDL永远都是第一生产力</li>
+<li>锂电池叠片、卷绕工艺区别</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://www.atonm.com//uploads/ueditor/upload/image/20221209/167056927450934454.png" alt="" loading="lazy"></figure>
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#ddl%E6%B0%B8%E8%BF%9C%E9%83%BD%E6%98%AF%E7%AC%AC%E4%B8%80%E7%94%9F%E4%BA%A7%E5%8A%9B">DDL永远都是第一生产力</a></li>
+<li><a href="#iphone-16-pro%E9%A6%96%E6%AC%A1%E9%87%87%E7%94%A8%E4%BA%86%E9%92%A2%E5%A3%B3%E7%94%B5%E6%B1%A0%E7%9A%84%E9%80%86%E5%A4%A9%E8%AE%BE%E8%AE%A1">iPhone 16 Pro首次采用了钢壳电池的逆天设计</a></li>
+<li><a href="#%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E5%92%8C%E5%8F%A0%E7%89%87%E5%B7%A5%E8%89%BA%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%A5%BD">卷绕工艺和叠片工艺哪个更好？</a><br>
+*
+<ul>
+<li><a href="#%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E9%94%82%E7%94%B5%E6%B1%A0%E5%8F%A0%E7%89%87-%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E5%8C%BA%E5%88%AB">一文读懂锂电池叠片、卷绕工艺区别！</a></li>
+<li><a href="#%E7%94%B5%E8%8A%AF%E5%88%B6%E4%BD%9C%E6%96%B9%E5%BC%8F-%E5%8F%A0%E7%89%87%E8%BF%98%E6%98%AF%E5%8D%B7%E7%BB%95">电芯制作方式-叠片还是卷绕？</a></li>
+<li><a href="#%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E8%8A%AF%E8%A3%85%E9%85%8D%E6%8A%80%E6%9C%AF%E5%AF%B9%E6%AF%94%E9%80%89%E5%8D%B7%E7%BB%95%E8%BF%98%E6%98%AF%E5%8F%A0%E7%89%87%E5%A5%BD">锂电池电芯装配技术对比，选卷绕还是叠片好？</a></li>
+<li><a href="#%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E4%B8%8E%E5%8F%A0%E7%89%87%E5%B7%A5%E8%89%BA%E7%9A%84%E5%AF%B9%E6%AF%94">卷绕工艺与叠片工艺的对比</a></li>
+<li><a href="#%E5%8F%A0%E7%89%87%E9%94%82%E7%94%B5%E6%B1%A0%E5%92%8C%E5%8D%B7%E7%BB%95%E9%94%82%E7%94%B5%E6%B1%A0%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88">叠片锂电池和卷绕锂电池的区别是什么？</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="ddl永远都是第一生产力">DDL永远都是第一生产力</h1>
+<ul>
+<li>既然明确理解了这一点，我们就应该记住这个过程，记住期间的细节，自己的状态，周围的环境。冷静下来思考我平时为什么做不到：
+<ul>
+<li>不想被其他事打扰，得抓紧只干一件事。
+<ul>
+<li><mark>环境安静，不受打扰</mark></li>
+<li><mark>专注于一件事，青蛙要一个一个吃</mark></li>
+</ul>
+</li>
+<li>尽量减少花在其他事情上的时间，压缩时间成本
+<ul>
+<li><mark>减少在不重要事情上的停留，比如快速解决吃喝拉撒</mark></li>
+</ul>
+</li>
+<li>为了满足截止日期，优先处理最重要的任务。
+<ul>
+<li><mark>规划时间块，一块一块吃</mark></li>
+</ul>
+</li>
+<li>最重要的：<mark>反思与调整</mark>：像你提到的，
+<ul>
+<li>记住DDL下的状态和细节，通过记录和反思，逐步调整自己的行为模式。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>自己设定的截止日期常常缺乏紧迫感，因为我们清楚它并不是真正的“最后期限”。这种“假DDL”难以带来同样的动力。但是：</p>
+<ol>
+<li>
+<p><strong>制造外部责任感</strong>：</p>
+<ul>
+<li><strong>公开承诺</strong>：把任务和截止日期告诉同事、朋友，甚至导师。公开的承诺会增加完成任务的压力，因为有了外部期待。</li>
+<li><strong>合作或检查点</strong>：合作工作，设定检查点，确保自己在每个阶段按时完成。</li>
+</ul>
+</li>
+<li>
+<p><strong>设置奖惩机制</strong>：</p>
+<ul>
+<li><strong>自我奖励</strong>：设定自我奖励，比如看一集剧、吃喜欢的甜点等。</li>
+<li><strong>自我惩罚</strong>：如果任务没有按时完成，设定一定的惩罚，减少娱乐时间或做一些额外的工作。</li>
+</ul>
+</li>
+<li>
+<p><strong>分阶段设定DDL</strong>：</p>
+<ul>
+<li><strong>逐步压缩时间</strong>：从较长的DDL开始，逐渐压缩每个阶段的完成时间。例如，如果原计划是两周完成任务，先给自己设定一周的DDL，观察效果，并逐渐适应短期的压力。</li>
+</ul>
+</li>
+<li>
+<p><strong>打破任务庞大的感觉</strong>：</p>
+<ul>
+<li><strong>极限时间挑战</strong>：设定短时间内完成一个子任务的目标，比如“我将在30分钟内完成这部分”，即使最后不能完全完成，也会给自己带来DDL带来的高效感。</li>
+</ul>
+</li>
+<li>
+<p><strong>定时工作法（番茄工作法）</strong>：</p>
+<ul>
+<li><strong>固定工作与休息周期</strong>：如番茄工作法，设定25分钟的专注时间，专注完成任务，然后休息5分钟。</li>
+</ul>
+</li>
+<li>
+<p><strong>心理暗示与情景塑造</strong>：</p>
+<ul>
+<li><strong>工作仪式感</strong>：打扫工位，换工作室桌搭……</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="iphone-16-pro首次采用了钢壳电池的逆天设计">iPhone 16 Pro首次采用了钢壳电池的逆天设计</h1>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">iPhone 16 Pro首次采用了钢壳电池的逆天设计，你还不下单？ <a href="https://t.co/1Kx5Ts2yGW">pic.twitter.com/1Kx5Ts2yGW</a></p>&mdash; ***土隹 (@PCNO167) <a href="https://twitter.com/PCNO167/status/1836233779763118526?ref_src=twsrc%5Etfw">September 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="卷绕工艺和叠片工艺哪个更好">卷绕工艺和叠片工艺哪个更好？</h1>
+<blockquote>
+<p>科普介绍的文章有很多，总体上个人感觉叠片更有优势但目前还有很大工艺技术提升空间，卷绕比较成熟但是性价比不够强，随着未来突破，相信都会有长进，但是似乎叠片更会突出（预测）……</p>
+</blockquote>
+<hr>
+<h3 id="一文读懂锂电池叠片-卷绕工艺区别">一文读懂锂电池叠片、卷绕工艺区别！</h3>
+<iframe src="http://www.piqs.com/NewsStd_516.html" width="750" height="800"></iframe>
+<hr>
+<h3 id="电芯制作方式-叠片还是卷绕">电芯制作方式-叠片还是卷绕？</h3>
+<iframe src="https://www.hyybattery.net/1497.html" width="750" height="800"></iframe>
+<hr>
+<h3 id="锂电池电芯装配技术对比选卷绕还是叠片好">锂电池电芯装配技术对比，选卷绕还是叠片好？</h3>
+<iframe src="https://atonm.com/article-detail-108.html" width="750" height="800"></iframe>
+<hr>
+<h3 id="卷绕工艺与叠片工艺的对比">卷绕工艺与叠片工艺的对比</h3>
+<iframe src="https://www.shuangyi-tech.com/news_409.html" width="750" height="800"></iframe>
+<hr>
+<h3 id="叠片锂电池和卷绕锂电池的区别是什么">叠片锂电池和卷绕锂电池的区别是什么？</h3>
+<iframe src="https://www.grepow.cn/hyxw/dpldchjrldcdqbssm.html" width="750" height="800"></iframe>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#ddl%E6%B0%B8%E8%BF%9C%E9%83%BD%E6%98%AF%E7%AC%AC%E4%B8%80%E7%94%9F%E4%BA%A7%E5%8A%9B">DDL永远都是第一生产力</a></li>
+<li><a href="#iphone-16-pro%E9%A6%96%E6%AC%A1%E9%87%87%E7%94%A8%E4%BA%86%E9%92%A2%E5%A3%B3%E7%94%B5%E6%B1%A0%E7%9A%84%E9%80%86%E5%A4%A9%E8%AE%BE%E8%AE%A1">iPhone 16 Pro首次采用了钢壳电池的逆天设计</a></li>
+<li><a href="#%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E5%92%8C%E5%8F%A0%E7%89%87%E5%B7%A5%E8%89%BA%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%A5%BD">卷绕工艺和叠片工艺哪个更好？</a><br>
+*
+<ul>
+<li><a href="#%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E9%94%82%E7%94%B5%E6%B1%A0%E5%8F%A0%E7%89%87-%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E5%8C%BA%E5%88%AB">一文读懂锂电池叠片、卷绕工艺区别！</a></li>
+<li><a href="#%E7%94%B5%E8%8A%AF%E5%88%B6%E4%BD%9C%E6%96%B9%E5%BC%8F-%E5%8F%A0%E7%89%87%E8%BF%98%E6%98%AF%E5%8D%B7%E7%BB%95">电芯制作方式-叠片还是卷绕？</a></li>
+<li><a href="#%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E8%8A%AF%E8%A3%85%E9%85%8D%E6%8A%80%E6%9C%AF%E5%AF%B9%E6%AF%94%E9%80%89%E5%8D%B7%E7%BB%95%E8%BF%98%E6%98%AF%E5%8F%A0%E7%89%87%E5%A5%BD">锂电池电芯装配技术对比，选卷绕还是叠片好？</a></li>
+<li><a href="#%E5%8D%B7%E7%BB%95%E5%B7%A5%E8%89%BA%E4%B8%8E%E5%8F%A0%E7%89%87%E5%B7%A5%E8%89%BA%E7%9A%84%E5%AF%B9%E6%AF%94">卷绕工艺与叠片工艺的对比</a></li>
+<li><a href="#%E5%8F%A0%E7%89%87%E9%94%82%E7%94%B5%E6%B1%A0%E5%92%8C%E5%8D%B7%E7%BB%95%E9%94%82%E7%94%B5%E6%B1%A0%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88">叠片锂电池和卷绕锂电池的区别是什么？</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20240918/">https://ezraknotlab.github.io/post/ekl-20240918/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20240918/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20240918/&sharesource=qzone&title=EKL 20240918-锂电池叠片、卷绕工艺区别&pics=https://ezraknotlab.github.io//images/avatar.png?v=1742745456904&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20240918/&sharesource=weibo&title=EKL 20240918-锂电池叠片、卷绕工艺区别 + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1742745456904 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20240923-characterai/">
+                                                                                            EKL 20240923 CharacterAI
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20240917/">
+                                                                                                    EKL 20240917
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1742745456904);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

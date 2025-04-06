@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1743957783378" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1743957783378" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20241102  TOP 10 most impressive octagon interviews
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-11-02</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">8.4
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1756</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/11/02/e0d9659887b3b86c.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>TOP 10 most impressive octagon interviews</li>
+<li>DC</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#top-10-most-impressive-octagon-interviews">TOP 10 most impressive octagon interviews</a>
+<ul>
+<li><a href="#10-ufc-226-daniel-cormier-and-brock-lesnar-octagon-interviews-callout">10 UFC 226: Daniel Cormier and Brock Lesnar Octagon Interviews ( Callout )</a></li>
+<li><a href="#9-islam-makhachev-octagon-interview-ufc-280-callout">9 Islam Makhachev Octagon Interview | UFC 280 ( Callout )</a></li>
+<li><a href="#8-khabib-nurmagomedov-announces-retirement-ufc-254-acknowledgment">8 Khabib Nurmagomedov Announces Retirement | UFC 254 ( Acknowledgment )</a></li>
+<li><a href="#7-dustin-poirier-octagon-interview-ufc-302-after-failure">7 Dustin Poirier Octagon Interview | UFC 302 ( After failure )</a></li>
+<li><a href="#6-ufc-267-glover-teixeira-octagon-interview-new-ufc-light-heavyweight-champion-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">6 UFC 267: Glover Teixeira Octagon Interview | New UFC Light Heavyweight Champion (胜者的发言)</a></li>
+<li><a href="#5-ufc-263-brandon-moreno-octagon-interview-a-promise-to-oneself">5 UFC 263: Brandon Moreno Octagon Interview ( A promise to oneself )</a></li>
+<li><a href="#4-valentina-shevchenko-octagon-interview-ufc-306-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">4 Valentina Shevchenko Octagon Interview | UFC 306 (胜者的发言)</a></li>
+<li><a href="#3-ufc-205-conor-mcgregor-octagon-interview-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">3 UFC 205: Conor McGregor Octagon Interview (胜者的发言)</a></li>
+<li><a href="#2-israel-adesanya-octagon-interview-ufc-287-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">2 Israel Adesanya Octagon Interview | UFC 287 (胜者的发言)</a></li>
+<li><a href="#1-leon-edwards-octagon-interview-ufc-278-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">1 Leon Edwards Octagon Interview | UFC 278 (胜者的发言)</a></li>
+<li><a href="#the-show-goes-on">The show goes on</a></li>
+</ul>
+</li>
+<li><a href="#dc">DC</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2024/11/02/e0d9659887b3b86c.jpg" alt="" loading="lazy"></figure>
+<p><mark>Fireboy DML, Ed Sheeran  Peru</mark></p>
+<p>这首的remix版本很多，Fireboy DML的新专有很多都会让人联想到非洲大陆的风情，绿或者黄的草原，晴天，大树与Kilimanjaro，野生动物和善舞的人们……</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/V3BtdTl3VFUxaGZNblJvOWpuYzd1UnA5UERiUzJHYmpQMmFSdkpSc1dDM3dtbUlpSXVqMG5ONFRrMDdPeGdWc2o3N3AzVHMyclBWQVlmeEd3MVBia2NmcWFtR0U2NXhmbFdIcGdiQWFaVFE9/Fireboy_DML_Ed_Sheeran_-_Peru_(Hydr0.org).mp3"></audio></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Peru, para
+Peru, para
+Peru, para
+Peru, para
+Peru, para
+Peru, para
+Peru, para
+Omoge, no be so
+Girl, you wan capture my soul
+Omoge, no be so
+Make we wan wombolobo
+Peru, para
+Peru peru, para
+I'm loo'
+Even Peru don dey para
+Tonight in Jozi (Jozi)
+I'm in Jozi
+Mo'n k'orin fun won, wan jo si (jo si)
+I'm not playin' with you, I'm not jokin' (jokin')
+My third album is loadin'
+Mi okin fa'gbo but I'm on molly
+I'm on duty but I'm on lowkey
+They wan do me, they wan do mi
+They wan do me gan, they wan do mi
+Won ni won wa mi
+Won ni won wa mi
+I'm in San Francisco jamming
+Won ni won wa mi
+Won ni won wa mi
+I just flew in from Miami
+Peru (peru), para (para)
+Peru peru para
+I'm loo'
+Even Peru don dey para
+Pour out the bottle, I wanna level up (level up)
+When I'm with you, I nevеr get enough (get еnough)
+Slow whine I'm not in a rush
+I can hear music when you're here
+Tonight, we're rolling, party 'til closing
+Since I put the ring on her finger, it's still frozen
+Love in slow motion
+I wanna feel you over me, yeah
+Somethin' magic in your eyes, yeah
+Girl, I love the way you ride it
+And it happens every time you arrive, that's right
+Girl, I want you in my life (yeah)
+If there's a heaven, then it's right here
+I will never leave your side, stay, tonight, tonight
+When you wan' see me, when you wan' see me
+I'm in West London this evening
+Givin' me the feelings, no I'm not leavin'
+Until I fly LA next weekend (next weekend)
+Peru, nah, girl, I'd rather go find somewhere quiet
+You'll glow, and I'll get lost here in your eyes
+Omoge no be so
+Girl, you just capture my soul
+Omoge no be so
+Make me wanna just take you home
+Peru, para
+Peru, Peru, para (woo)
+I'm loo (loo)
+Even Peru don dey para
+Peru, para
+Peru, Peru, para
+I'm loo
+Even Peru don dey para
+Peru, para
+Peru, Peru, para
+I'm loo
+Even Peru don dey para
+
+
+
+
+
+
+</code></pre>
+</details>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="top-10-most-impressive-octagon-interviews">TOP 10 most impressive octagon interviews</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>最近看DC赛后采访视频比较多  解说三人组的声音都极具特点 仿佛为这项运动而生。</p>
+</li>
+<li>
+<p>我认为一般octagon interview有这么四部分：</p>
+<ul>
+<li>胜者的发言</li>
+<li>致谢</li>
+<li>callout</li>
+<li>败者的发言</li>
+</ul>
+</li>
+<li>
+<p>依据这四项几乎就可以给所有interview进行分类 可以给出UFC TOP 10 most impressive interviews  胜者发言一般是回首走来的这一路 ，更多的想法我之前在每次结束后都应该写过。What a time to be alive.</p>
+</li>
+<li>
+<p>📍Opinions Are My Own</p>
+</li>
+</ul>
+<h3 id="10-ufc-226-daniel-cormier-and-brock-lesnar-octagon-interviews-callout">10 UFC 226: Daniel Cormier and Brock Lesnar Octagon Interviews ( Callout )</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>Get ur ass in</mark><br>
+<mark>Push me now, you sleep tomorrow</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sQpTaBuMa44?si=BiNfdGSMtCsn53-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="9-islam-makhachev-octagon-interview-ufc-280-callout">9 Islam Makhachev Octagon Interview | UFC 280 ( Callout )</h3>
+<p><a href="#toc">↩️</a></p>
+<p>==you know it's like what interesting Charles Oliver is number two p4p right he finished Charles now is our plan fly to all the way to Australia and fight  at pound King backyard with volk let's do it ==</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GmE2h4dTWGw?si=-nAVnXyEZM8FJtpl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="8-khabib-nurmagomedov-announces-retirement-ufc-254-acknowledgment">8 Khabib Nurmagomedov Announces Retirement | UFC 254 ( Acknowledgment )</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>Father's Plan</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/05HuTGeF5AA?si=4DaKSqPLdUpdvzjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="7-dustin-poirier-octagon-interview-ufc-302-after-failure">7 Dustin Poirier Octagon Interview | UFC 302 ( After failure )</h3>
+<p><a href="#toc">↩️</a><br>
+<mark>When times are good,be grateful, and when times are tough, be graceful.</mark></p>
+<ul>
+<li>Toss me in the fire, sink or swim. This is the hurt business</li>
+<li>Without fear there is no bravery.</li>
+<li>失利让人难过，意识到梦想难以触碰、失去的瞬间更是心碎。</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/64i6tRQm2Sw?si=WoEuiHx5tLJZaix7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="6-ufc-267-glover-teixeira-octagon-interview-new-ufc-light-heavyweight-champion-胜者的发言">6 UFC 267: Glover Teixeira Octagon Interview | New UFC Light Heavyweight Champion (胜者的发言)</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>No matter what people say don't listen to them they're going to put you down don't listen to those negative people believe in yourself keep going forward</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qDt1xjEr2mw?si=z_4TFl53XSuCqH2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="5-ufc-263-brandon-moreno-octagon-interview-a-promise-to-oneself">5 UFC 263: Brandon Moreno Octagon Interview ( A promise to oneself )</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>Maybe not today, maybe not tomorow and maybe not the next month but one day...&quot;</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i6V72yXPWz8?si=qtWoIfu0QtZqDHPS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="4-valentina-shevchenko-octagon-interview-ufc-306-胜者的发言">4 Valentina Shevchenko Octagon Interview | UFC 306 (胜者的发言)</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>四国语言</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BJsJvF5eaq4?si=1E9wIBq3Kq-oHij3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="3-ufc-205-conor-mcgregor-octagon-interview-胜者的发言">3 UFC 205: Conor McGregor Octagon Interview (胜者的发言)</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>The double champ does what fuuk he wants</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hPiw27AQYh0?si=ujDHv16Ft6Tmua5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="2-israel-adesanya-octagon-interview-ufc-287-胜者的发言">2 Israel Adesanya Octagon Interview | UFC 287 (胜者的发言)</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>Just one time in your life!</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNoODFgTq3c?si=Hz4RjH1_6LVQY2xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="1-leon-edwards-octagon-interview-ufc-278-胜者的发言">1 Leon Edwards Octagon Interview | UFC 278 (胜者的发言)</h3>
+<p><a href="#toc">↩️</a></p>
+<p><mark>There's no P4P, the belt belongs to nobody, Look at me now</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnMGm0MRYt8?si=wuS5gzf0RSbI2iwN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="the-show-goes-on">The show goes on</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>一开始准备的有Jiri和Volk，两个人After failure之后谈认识自己，休息一下重新开始，Jiri继续“回归深山老林去磨练了，真的就像宫本武藏”，Volk回去继续自己做美食烤肉的channel。</li>
+</ul>
+<h2 id="dc">DC</h2>
+<p><a href="#toc">↩️</a></p>
+<p>前段时间回味很多DC (Daniel Cormier American former mixed martial artist, in case you've no idea)的采访以及在JRE (The Joe Rogan Experience) 里面和Rogan的对话，谈起他上一段摔跤的职业生涯，DC说如今现任俄罗斯摔跤队总教练如果之前转型MMA的话，他们这一代冠军会都没有成就，因为他赢过非常多冠军，DC请来他陪练，为了备战Jon Jones，两个月他只被takedown一次，而DC每天训练都被“蹂躏&quot;，去训练都有心理负担，another tough day. 但是他也提到那位俄罗斯人对他说过，如果他自己备战一场非常重要的比赛，&quot;I would give all the work to him (opponent)&quot; 。事实上我们大多数人平时努力的时间投入成本甚至根本没有进入到讨论天赋的境界，没有多少人靠着天赋能够一路攀登幸运地到达冠军战的地步，目前这个阶段还是主要专注于自身磨炼。通常都会认为通往成功之路都是数不尽的苦难，但是实际上如果终点是你想要的，你内心自不会真的认为它只是苦难那么简单，它更是里程碑，是一种碑 ，标志着你所击杀埋葬的苦难，不是一条路上的人定不会有相似的感受。人以类聚物以群分，分类是无意识行为促成的。经常在工作岗位忙碌的人自会知道身边人哪些是在努力专注的 ，哪些是灯红酒绿的，反之花天酒地的人也会知道哪些人经常如自己一样。DC作为一个具有轻量级的身高，可能比今天一般的轻量级都还矮，但是从轻重量级起步，夺得冠军卫冕，再同时去重量级拿到冠军，卫冕，史上第二位双量级冠军，史上唯一一位在两个量级都卫冕过的冠军，但是大家的GOAT List他常不会被排到前五，大概主要是对阵火警两次和骨头一次的失利……但他很幸福了，说着自己这个年龄不会有新朋友，有lovely family和世上最好的工作。</p>
+<hr>
+<ul>
+<li>除非是在太空行走，否则这一切都会留下足迹的。从借书历史和浏览历史就可以窥探一个人的内心变化。</li>
+<li>罗德里连社交媒体都没有，冠军是这样的。 DGAF</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#top-10-most-impressive-octagon-interviews">TOP 10 most impressive octagon interviews</a>
+<ul>
+<li><a href="#10-ufc-226-daniel-cormier-and-brock-lesnar-octagon-interviews-callout">10 UFC 226: Daniel Cormier and Brock Lesnar Octagon Interviews ( Callout )</a></li>
+<li><a href="#9-islam-makhachev-octagon-interview-ufc-280-callout">9 Islam Makhachev Octagon Interview | UFC 280 ( Callout )</a></li>
+<li><a href="#8-khabib-nurmagomedov-announces-retirement-ufc-254-acknowledgment">8 Khabib Nurmagomedov Announces Retirement | UFC 254 ( Acknowledgment )</a></li>
+<li><a href="#7-dustin-poirier-octagon-interview-ufc-302-after-failure">7 Dustin Poirier Octagon Interview | UFC 302 ( After failure )</a></li>
+<li><a href="#6-ufc-267-glover-teixeira-octagon-interview-new-ufc-light-heavyweight-champion-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">6 UFC 267: Glover Teixeira Octagon Interview | New UFC Light Heavyweight Champion (胜者的发言)</a></li>
+<li><a href="#5-ufc-263-brandon-moreno-octagon-interview-a-promise-to-oneself">5 UFC 263: Brandon Moreno Octagon Interview ( A promise to oneself )</a></li>
+<li><a href="#4-valentina-shevchenko-octagon-interview-ufc-306-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">4 Valentina Shevchenko Octagon Interview | UFC 306 (胜者的发言)</a></li>
+<li><a href="#3-ufc-205-conor-mcgregor-octagon-interview-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">3 UFC 205: Conor McGregor Octagon Interview (胜者的发言)</a></li>
+<li><a href="#2-israel-adesanya-octagon-interview-ufc-287-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">2 Israel Adesanya Octagon Interview | UFC 287 (胜者的发言)</a></li>
+<li><a href="#1-leon-edwards-octagon-interview-ufc-278-%E8%83%9C%E8%80%85%E7%9A%84%E5%8F%91%E8%A8%80">1 Leon Edwards Octagon Interview | UFC 278 (胜者的发言)</a></li>
+<li><a href="#the-show-goes-on">The show goes on</a></li>
+</ul>
+</li>
+<li><a href="#dc">DC</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20241102/">https://ezraknotlab.github.io/post/ekl-20241102/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20241102/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20241102/&sharesource=qzone&title=EKL 20241102  TOP 10 most impressive octagon interviews&pics=https://ezraknotlab.github.io//images/avatar.png?v=1743957783378&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TOP 10 most impressive octagon interviews&lt;/li&gt;
+&lt;li&gt;DC&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20241102/&sharesource=weibo&title=EKL 20241102  TOP 10 most impressive octagon interviews + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TOP 10 most impressive octagon interviews&lt;/li&gt;
+&lt;li&gt;DC&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1743957783378 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241104/">
+                                                                                            EKL  Alma Mater 《当我谈跑步时我谈些什么》
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20241029/">
+                                                                                                    EKL 20241029 Ballon d&#39;Or Rodri
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1743957783378);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

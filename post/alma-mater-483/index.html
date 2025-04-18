@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1744981016772" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1744981016772" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Alma Mater 483
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-05-12</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">13.0
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3358</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/05/11/a2cc97a9b162bc32.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>reading tools</li>
+<li>K&amp;D&amp;J</li>
+<li>kendrick 👑</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#articles">Articles</a>
+<ul>
+<li><a href="#phd-tip">PhD tip:</a></li>
+<li><a href="#%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%88%91%E7%A7%B0%E4%B9%8B%E4%B8%BA%E9%97%B2%E9%B1%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B">分享一种学习方法，我称之为闲鱼学习法，步骤如下：</a></li>
+<li><a href="#rss">RSS</a></li>
+</ul>
+</li>
+<li><a href="#new-tools">new tools</a>
+<ul>
+<li><a href="#scholar-%E5%AD%A6%E6%9C%AF">scholar 学术</a></li>
+</ul>
+</li>
+<li><a href="#king-shit">King shit</a>
+<ul>
+<li><a href="#kendrick">kendrick 👑</a></li>
+</ul>
+</li>
+<li><a href="#old-time">OLD TIME</a>
+<ul>
+<li><a href="#mancity">mancity</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://cdn3.justnaija.me/uploads/music/2024/05/Kendrick-Lamar-Not-Like-Us-Drake-Diss-(JustNaija.com).mp3"></audio></p>
+<hr>
+<h1 id="articles">Articles</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://www.sciencedaily.com/releases/2024/01/240125150053.htm#google_vignette">Polymer power: Researchers enhance the safety of lithium batteries</a></li>
+<li><a href="https://thephdplace.com/i-am-autistic-do-i-have-an-advantage-as-a-researcher/">I Am Autistic: Do I Have An Advantage As A Researcher?</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzUxMDMzODg2Ng==&amp;mid=2247522756&amp;idx=1&amp;sn=2beac6d2d64b2e50b7a368b91a7a2c3d&amp;chksm=f906ab99ce71228f8aa08c12b9645c8a7568b0be467ecd302ae841e43754f32361c081474520&amp;scene=27">d能带中心——最成功的描述符</a>
+<ul>
+<li><a href="http://www.360doc.com/content/22/0808/03/72666197_1042954004.shtml">link</a></li>
+</ul>
+</li>
+<li><a href="https://tw93.fun/2024-03-03/simple.html">我的极简生活经验</a></li>
+<li><a href="https://tw93.fun/2024-04-14/musk.html">埃隆·马斯克传 - 读书笔记</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/414009313">用随机梯度下降来优化人生</a></li>
+<li><a href="https://www.freecodecamp.org/chinese/news/how-to-write-your-first-technical-book/">开发人员如何编写你的第一本技术书籍：工具、技术和资源</a></li>
+<li><a href="https://www.chemistryworld.com/news/are-we-rushing-ahead-with-ai-in-the-lab/4019424.article">Are we rushing ahead with AI in the lab?</a></li>
+<li><a href="https://www.nature.com/articles/d41586-024-01287-y">Old electric-vehicle batteries can find new purpose — on the grid</a></li>
+<li><a href="https://www.nature.com/articles/d41586-024-01118-0">Meet ‘goldene’: this gilded cousin of graphene is also one atom thick</a></li>
+<li><a href="https://www.chemistryworld.com/careers/how-to-troubleshoot-experiments/4019124.article">How to troubleshoot experiments</a></li>
+<li><a href="https://www.nature.com/articles/d41586-024-01317-9">Daily briefing: What scientists think of Netflix’s 3 Body Problem</a></li>
+<li><a href="https://www.nature.com/articles/d41586-024-01293-0">Chinese virologist who was first to share COVID-19 genome sleeps on street after lab shuts</a></li>
+<li><a href="https://zhu327.github.io/2020/05/07/%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95%E8%AE%BA/">读书方法论</a></li>
+<li>mine:
+<ul>
+<li>补充前情提要法：
+<ul>
+<li>在读历史纪实等类型的书，或者看文献时候，都同样的方法，先把相关的印象，关键词写下来，自己尽可能可以联想到的东西，即使很远看起来毫无关系，但是万一后面作为一个背景下的东西，比如说存在于同一时期，就会加深对事物的认识，更生动有趣，全面形成一张网，所以联想记忆起来也没有多大压力。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>为什么笔记工具不会让我们更聪明：因为笔记善于存储而无法激发思考，AI 人工智能也改不了这一点
+<ul>
+<li>credit：@nishuang</li>
+<li>我自己的笔记工具分几档，我使用这几档工具时，思考的比例递减、记录的比例递增：</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Notion 作为数据库，记录工作和学习有关的知识</li>
+<li>Apple Notes/苹果备忘录记录孤立的、不属于某个知识体系的信息。比如开车时迸发的好点子、比如上次什么时候换机油</li>
+<li>纸质笔记本事件相关的信息。比如原始的会议记录</li>
+<li>物理的白板、即时贴记录临时的信息。比如提醒我自己改文档里的几个错别字</li>
+</ul>
+<p>每次记录时，我都会实时地处理信息：</p>
+<ul>
+<li>分级、分类、分组，方便日后再利用信息</li>
+<li>尽量用我自己的语言记录而不是单纯保存裸信息，用自己的话强迫我把信息理解一遍，避免中国小学生式的死记硬背</li>
+<li>多记录思考的中间过程和结果</li>
+<li>把新获取的信息及时和旧信息关联起来</li>
+</ul>
+<p>等等……</p>
+<p>我相信所有的笔记、稍后再读都意味着再也不看了，与其挑战人类天然的惰性，不如获取信息时立刻就把它们处理掉、变成自己的知识</p>
+<p>而你成天换笔记工具、钻研笔记方法、分享记忆秘诀，这些自我感动的享受的只是记录带来的错觉，而不是思考和学习带来的实际结果</p>
+<p>如果你无法改进学习方法，随着笔记工具越来越强大，你输入的信息、存储的笔记的越来越多，你只会积压越来越多无法处理的裸信息…你的整体学习效率也会越来越低</p>
+<p>好多人就是算不清楚这个简单的算术</p>
+<p>原文里引用了一句话：“我们的目标不是做笔记，而是有效思考”</p>
+<hr>
+<ul>
+<li>费曼OS，一套开源的笔记系统模板，个人知识管理方案，个人 wiki 最佳实践<a href="https://github.com/howie-serious/feynman_OS">费曼OS</a></li>
+<li><mark>熟练阅读者（fluent reader）</mark><br>
+credit: @howie_serious<br>
+思维上，把阅读作为方法（read to learn），而不是想学什么的时候都得让别人教；</li>
+</ul>
+<p>在行动上，海量阅读（一年至少 20 本？我觉得至少 50 本。人大附中 6 年级要求一年课外阅读 500 万字，差不多也 50 本）；</p>
+<p>在习惯上，养成阅读的习惯，通过阅读获得优质的前额叶多巴胺快乐。没有刷短屎频的习惯，后者通过短平快刺激边缘系统获得劣质多巴胺满足；</p>
+<p>在方法上，通过行动掌握了符合脑和认知原理的阅读方法，认识到市面上速读法都是幼稚且可笑的。</p>
+<p>在结果上，通过阅读以及学习建立了扎实且全面的个人知识体系，通过阅读在不断丰富和优化自己的人生。</p>
+<hr>
+<ul>
+<li>我有一个不太地道的学习方法： credit:  @mrbear1024<br>
+·</li>
+</ul>
+<p>找一本书或一门课程的目录， 顺着目录，用chatgpt逆向获得对应主题的知识。</p>
+<p>大多数情况， 你都可以做白嫖。</p>
+<hr>
+<p>wikipedia 最好用的功能之一：知识体系框架。</p>
+<p>在读wikipedia 上的 neuroscience这个词条，顺手推荐下 wikipedia 最好用的功能之一：知识体系框架。</p>
+<p>官方的名称是 navbox，导航栏。这个表格汇聚了学科领域的所有关键概念。只要能把这些概念都理解个差不多，能自己说出来，能相互串联起来，那么，你已经建立了一个牢固的知识体系框架。</p>
+<p>剩下的，就是用梯度下降的方法，一个概念接着一个概念，逐步逼近你的目标函数啦。</p>
+<p>这个 loss 可以这么定义：客观的知识体系是 bok1（body of knowledge，知识体系的英文名称），你自己的个人知识体系是 bok2。loss=bok1-bok2。</p>
+<p>每一个概念的学习，都是训练数据集的一个 example，费曼的反馈就是 loss，然后你根据 loss 来反向传播，算个梯度，调整参数。</p>
+<p>前文有链接</p>
+<h2 id="phd-tip">PhD tip:</h2>
+<p><a href="#toc">↩️</a><br>
+if you are scared to start something because you might fail.</p>
+<p>Here’s a reminder: you’re already failing</p>
+<h2 id="分享一种学习方法我称之为闲鱼学习法步骤如下">分享一种学习方法，我称之为闲鱼学习法，步骤如下：</h2>
+<p><a href="#toc">↩️</a><br>
+credit：@mundane799699</p>
+<ol>
+<li>选择一门你想学的技能，然后简单学个入门，ok不要再继续学了。</li>
+<li>去闲鱼上架一个商品，商品内容就是这门技能相关的需求。</li>
+<li>如果有客户来问了，再根据客户的需求去学习特定方面或者深入学习。</li>
+</ol>
+<h2 id="rss">RSS</h2>
+<p><a href="#toc">↩️</a><br>
+<img src="https://pbs.twimg.com/media/GM-jyHEWYAAV5c9?format=jpg&amp;name=large" alt="" loading="lazy"></p>
+<h1 id="new-tools">new tools</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="scholar-学术">scholar 学术</h2>
+<ul>
+<li>在markdown文件里面写好笔记</li>
+<li>markmap展开笔记为map</li>
+<li>右键导出为HTML</li>
+<li>复制源码到blog在线发布</li>
+</ul>
+<h1 id="king-shit">King shit</h1>
+<h2 id="kendrick">kendrick 👑</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>所有的reaction都要及时，事后回忆再写少了很多冲动，we dont need calm here.</li>
+<li>The crown is heavy, huh  I pray they not my real friends (EUPHORIA)</li>
+<li>no one live forever</li>
+<li>这个世界在这个时刻炸了锅</li>
+<li>喜欢雨天走了路上听这个 （Metro Boomin, Coi Leray - Self Love (Spider-Man: Across the Spider-Verse)） 回不去的夏天  2023 ShangHai</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-WOonkg_ZCo?si=-Lh2pM_kAQ-k9eRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>
+<p>然后就有很多梗和梗图 LOL</p>
+</li>
+<li>
+<p>Drake gonna ask chat GPT for the response</p>
+</li>
+<li>
+<p>Drake somewhere punching the air rn</p>
+</li>
+<li>
+<p>Drake gotta assemble the navy seals of ghost writers now</p>
+</li>
+<li>
+<p>Drake the type of guy to close the door with his hips</p>
+</li>
+<li>
+<p>&quot;sir, a second plane hit the towers&quot;kung fu kenny has no mercy&quot;sir, a second plane hit the towers&quot;kung fu kenny has no mercy</p>
+</li>
+<li>
+<p>And I were like :</p>
+<ul>
+<li>我就去吃了个饭  bro</li>
+</ul>
+</li>
+<li>
+<p>KDJ这三个人很像MNC 但是还是把cole对比KDB比较好</p>
+</li>
+<li>
+<p>got me chill  The fire goes on ! 🔥</p>
+</li>
+<li>
+<p>Will you drop or not   I can't help checking the YouTube and twitter to see if there's a your new post</p>
+</li>
+</ul>
+<p>在NSQ发布之后，宣布结束，但还在等待：</p>
+<p>Meanwhile 12 hours ago:</p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C6o4830yMvE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C6o4830yMvE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C6o4830yMvE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">BEN (@macklemore) 分享的帖子</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+<hr>
+<p>回忆这场大战的初期，kdot feature like that，那又是一个特别的school day的上午，看到Applemusic的通知提示我先是一愣，很久没有出现了，除了上次和Beyonce有过一次合作，然后吃饭路上打开听，beat is so hard，metro的才华也真是让人惊叹，我脑海中只能想出“好钢用在刀刃上”，“天生我材必有用”这样的话…… 或许有些人真的天生把某个方面的能力树点满了，让人不可忽视的天赋展现。btw采样了Everlasting Bass by Rodney o and Joe Cooley 也挺好听的，用在like that里面总感觉这歌节奏有点慢。在前面这样的beat和future的铺垫之后，接着的便是KDOT开始讲话开火，MFK BIG3 N**** it's just BIG ME. 衔接节奏如此之好，现在看这首歌本应该更火，词很有力且有趣的点密集。然后COLE稳不住回怼了，就内容来看动机也主要是挂不住面子，extension之前， 但7 minute drill也并没有太强势的回呛，评价了四个专辑，并没有全部是恶意，意料之中。第二天在演唱会上又道歉，trend里面都在说mid， 拉了。LOL，现在看，和对历史人物和重大历史事件要有一定的时间后才做定论相似，时间拉长一点，距离拉远一点，结论就相对客观一点。其实COLE也是更像KDOT的人，相较之下二人的性格交集更多，内心深处都不太是会狠下心的人，I can feel it COLE. 然后就是DRAKE发了两首，第一首是从future开始嘲讽，整个一首提到很多，还有暗讽的部分，似乎是莫兰特，但我觉得咖位还不至此……但就像他说的一样 1 VS 20的形式，抛开perspective，DRAKE声音本身好听，在快节奏下音乐性极强，所以push-ups这首还不错。后面紧接着就是用AI 2PAC和snopp，一个人说完点下一个人接上，最后DRAKE再yeah接上，LMAO， we waiting on you，似乎展现了一点DRAKE的态度，虽然我们针锋相对，但是DRAKE还是有点respect，期待，以娱乐的方式展示这些东西，像是普通坏小孩恶作剧的行为。以上是发展。之后kanye不知道从哪冒出来remix like that, 还IG上发了没品的图嘲讽COLE, diss drake。（此处有神经病掠过），还有Chris brown对Quavo互相各出一拳就没了。下面就是高潮了。毫无疑问就是KDOT的时长6分钟只针对一个人的回应 euphoria，从头点到尾，充满hatred，这首有点像印象中标准的格式，前面平静地说教一番，然后点火加速，顶上hard beat后开始，真的是ass off的效果，这么多天后再回忆这些没有当时及时的震撼了，或许这就是reactions的魅力。需要时刻反馈实时感受。接着的几天到如今都是让人难以平静的时光，或许这辈子都忘不了。二人像是丢核弹级别的频繁轰炸。<img src="https://s3.bmp.ovh/imgs/2024/05/12/d60648b67eaaedf2.png" alt="" loading="lazy"> 616 LA, MEET THE GRAHAMS, FAMILY MATTERS, NOT LIKE US, THE HEART PART 6，其中MEET THE GRAHAMS直接对谈形式对话各位家人，有爆私生女的，但是似乎又消息不实，但不查实为什么要随便说啊？也有说不忠什么的，animals，世界就这样， woman, money, house, car.没什么好说的，只是我之前也会认为THE HEART PART 6肯定会总有一天发布的，结果这下被敌人偷家占领了，lol，上次我还自己写了THE HEART PART 6，备忘录也有一份。最后就是NOT LIKE US，这算是本次 war最耀眼的作品，每天都在流媒体上破纪录，在DRAKE的领域destroy surpass 他的作品，Kong fu kenny的实力。现在似乎beef结束，但是每天早上起床后第一件事就是查更平台有没有新的作品发布，疯狂的时候比如早上起来刚drop，上午听完看reaction，中午十一点吃完饭回来又drop了一首，WTF  Will you drop or not   I can't help checking the YouTube and twitter to see if there's a your new post</p>
+<figure data-type="image" tabindex="1"><img src="http://homegrownradio.net/wp-content/uploads/2022/05/giphy-2.gif" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2024/05/11/f1fbd2721395bb9c.png" alt="" loading="lazy"></figure>
+<p>其实这个也是上个专辑中很多观点的体现，很早就有很深的感知：之所以在YQ时代混乱的社会背景下，加上BLM等，没有出来说话，原因有很多，而且他这种性格纯属意料之中，换做我也是一样。绝大部分人和这个世界上的机构、媒体只是在消费那些真正受到伤害的人，消费他们的遭遇和身上的“标签”，这并不是真正的关心你，血淋淋的世界，they dont care about us. 甚至那些面具背后都隐藏着相反的一面，嘲讽和歧视。 with that being said, self-reliance and self-improvement. I guess We all need a Lu Xun in our culture.</p>
+<p>push-ups:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yNWDQpYBxic?si=zbT3VKGtQmW622EB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figure data-type="image" tabindex="3"><img src="https://s3.bmp.ovh/imgs/2024/05/12/eb4ac0f699ca83fd.png" alt="" loading="lazy"></figure>
+<h1 id="old-time">OLD TIME</h1>
+<p><a href="#toc">↩️</a></p>
+<p>突然看到了哈兰德发的广告，和COC合作，视频里面还有以他为原型的英雄出现，所以后捣鼓了一会，把游戏弄回来了~</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Haaland for the Win! That’s right, long-time player of Clash of Clans, <a href="https://twitter.com/ErlingHaaland?ref_src=twsrc%5Etfw">@ErlingHaaland</a> is coming to Clash of Clans TOMORROW!<br><br>Get ready for a full month of Challenges, Skins, Troops, Events, and more! Learn more: <a href="https://t.co/6gUgVAOuxy">https://t.co/6gUgVAOuxy</a> <a href="https://t.co/hmB0dJzRU5">pic.twitter.com/hmB0dJzRU5</a></p>&mdash; Clash of Clans (@ClashofClans) <a href="https://twitter.com/ClashofClans/status/1785172228507869389?ref_src=twsrc%5Etfw">April 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="mancity">mancity</h2>
+<ul>
+<li>2 more games left, we're now top of the table.</li>
+<li>理想生活就是加拉格尔 经常跟随着客队球迷远征   Fuck fame I just wanna live my life</li>
+<li>undeniable facts  幸福快乐在这个世界是分布不均匀的 ，豪华大都市吸引人的地方</li>
+</ul>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>借了很多书，也买了一部分，but okay 在路上了。</li>
+<li>小小小小的火   标价52   二手我买10.8  实际付款7.7   结果发现PDD一手新的6.9¥</li>
+</ul>
+<p>Life has always been and will always treat me good.</p>
+<p><audio controls="" loop="" preload=""><source src="https://highlifeng.com.ng/swahilisongs/wp-content/uploads/2023/07/J_Cole_ft_Miguel_-_Power_Trip_Explicit_.mp3"></audio></p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#articles">Articles</a>
+<ul>
+<li><a href="#phd-tip">PhD tip:</a></li>
+<li><a href="#%E5%88%86%E4%BA%AB%E4%B8%80%E7%A7%8D%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%88%91%E7%A7%B0%E4%B9%8B%E4%B8%BA%E9%97%B2%E9%B1%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B">分享一种学习方法，我称之为闲鱼学习法，步骤如下：</a></li>
+<li><a href="#rss">RSS</a></li>
+</ul>
+</li>
+<li><a href="#new-tools">new tools</a>
+<ul>
+<li><a href="#scholar-%E5%AD%A6%E6%9C%AF">scholar 学术</a></li>
+</ul>
+</li>
+<li><a href="#king-shit">King shit</a>
+<ul>
+<li><a href="#kendrick">kendrick 👑</a></li>
+</ul>
+</li>
+<li><a href="#old-time">OLD TIME</a>
+<ul>
+<li><a href="#mancity">mancity</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/alma-mater-483/">https://ezraknotlab.github.io/post/alma-mater-483/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/alma-mater-483/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/alma-mater-483/&sharesource=qzone&title=Alma Mater 483&pics=https://ezraknotlab.github.io//images/avatar.png?v=1744981016772&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;reading tools&lt;/li&gt;
+&lt;li&gt;K&amp;amp;D&amp;amp;J&lt;/li&gt;
+&lt;li&gt;kendrick 👑&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/alma-mater-483/&sharesource=weibo&title=Alma Mater 483 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;reading tools&lt;/li&gt;
+&lt;li&gt;K&amp;amp;D&amp;amp;J&lt;/li&gt;
+&lt;li&gt;kendrick 👑&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1744981016772 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/alma-mater-486/">
+                                                                                            Alma Mater 486
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/">
+                                                                                                    EKL Chaos #155 with Max Holloway
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1744981016772);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

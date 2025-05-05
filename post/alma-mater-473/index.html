@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1746432418384" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1746432418384" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Alma Mater 473
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-03-29</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">17.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4462</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/03/18/a74104f7e72db122.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>电梯算法</li>
+<li>Like That (Future and Metro Boomin song)</li>
+<li>周报收藏！</li>
+</ul>
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#weve-conquered-the-all-of-europe">We've conquered the all of Europe</a></li>
+<li><a href="#%E7%94%B5%E6%A2%AF%E7%9A%84%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95">电梯的控制算法</a>
+<ul>
+<li><a href="#hoes-does-an-elevator-work">Hoes does an elevator work?</a></li>
+<li><a href="#from-an-elevator-perspective-the-algorithm-works-as-follows">From an elevator perspective, the algorithm works as follows:</a></li>
+</ul>
+</li>
+<li><a href="#%E5%91%A8%E6%8A%A5">周报</a>
+<ul>
+<li><a href="#%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F">我的收藏😤</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9C%9F%E9%A6%99%E5%AE%9A%E5%BE%8B">真香定律</a></li>
+<li><a href="#%E6%9C%89%E6%84%8F%E6%80%9D">有意思</a></li>
+<li><a href="#blue-moon">blue moon</a></li>
+<li><a href="#ki-my-people">KI MY PEOPLE</a></li>
+<li><a href="#nature-brief">nature brief</a>
+<ul>
+<li><a href="#tweeting-your-research-paper-boosts-engagement-but-not-citations">Tweeting your research paper boosts engagement but not citations</a></li>
+<li><a href="#news-and-insights">news and insights</a></li>
+</ul>
+</li>
+<li><a href="#kendrick">kendrick 👑</a></li>
+<li><a href="#books">books</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h2 id="weve-conquered-the-all-of-europe">We've conquered the all of Europe</h2>
+<p><a href="#toc">↩️</a><br>
+not a fan of Arsenal nor Liverpool, but also feel the same as their fans, cuz we all share that same futbol.<br>
+allez and north london</p>
+<p>embed that mp3!!!</p>
+<p><audio id="audios" controls="" height="100" width="100%" preload="auto" src="https://sz-sycdn.kuwo.cn/11348a9024d663ef9e7e7bb39e826b9b/65f8428d/resource/n1/76/80/607712508.mp3"></audio></p>
+<h2 id="电梯的控制算法">电梯的控制算法</h2>
+<p><img src="https://s3.bmp.ovh/imgs/2024/03/17/af03468d350e68fd.png" alt="" width="400" height="300" loading="lazy"><br>
+很早之前发现的现象了（一般电梯分别在1 5 底层或者顶层，然而我在中间3层要乘电梯，方向向上的话是一楼的电梯过来，向下的话是五楼的电梯下来，似乎是惯性更省能量，但你知道它会停止，所以这里根本不涉及什么惯性），好奇背后的算法是怎么安排的，在X上搜也有很多话题，比如：</p>
+<blockquote>
+<p>在国内上班这段时间，不知不觉开始对着写字楼的电梯思考起了电梯算法。开始想的是算法应该是什么样，后来发觉了一个问题。那就是这么多年了，电梯还依然没有一个“撤销已选楼层”的功能。所以熊孩子才可以一直顺利地把自己的恶作剧进行下去啊。---- 新电梯有，双击或者长按</p>
+</blockquote>
+<blockquote>
+<p>被公司的电梯算法蠢哭了：一群人在楼下等着，眼见着一个电梯从二十楼下到一楼，没开门，又直接上去了……</p>
+</blockquote>
+<hr>
+<p>真正“电梯算法”elevator algorithm这个词不是指电梯的控制算法：</p>
+<blockquote>
+<p>电梯算法或 SCAN 是一种<mark>磁盘调度算法</mark>，用于确定磁盘臂和磁头在处理读写请求时的运动。==该算法是根据大楼电梯的行为而命名的，电梯会继续沿当前方向（上行或下行）运行，直到空载为止，只有在人员下楼或接载同方向的新人员时才会停下。==从实现的角度来看，硬盘会保留一个待处理读/写请求的缓冲区，以及与请求相关的磁盘编号，其中较低的磁盘编号通常表示磁盘离主轴较近，而较高的编号则表示磁盘离主轴较远。</p>
+</blockquote>
+<p>电梯算法是一种简单的算法，通过这种算法，单部电梯可以决定在哪里停靠：</p>
+<p>在同一方向有剩余请求时，继续朝同一方向行驶。<br>
+如果在该方向上没有其他请求，则停止并闲置；如果在相反方向上有请求，则改变方向。<br>
+电梯算法在计算机操作系统中作为硬盘请求调度算法得到了应用。</p>
+<p>现代电梯使用更复杂的启发式算法来决定下一个服务请求。电梯目的地调度就是一个很好的例子。它使用一种算法来决定将哪辆轿厢分配到哪里以及最佳服务时间。</p>
+<p>回到电梯控制的背后算法（含有Javascript代码实现)：<br>
+<a href="https://dev.to/jimjja/how-does-an-elevator-works-1g40">How does an elevator works?</a></p>
+<h3 id="hoes-does-an-elevator-work">Hoes does an elevator work?</h3>
+<p>Every elevator works differently based on its real-world allocation and it's fairly difficult to build such an algorithm. All algorithms might differ from each other but looking at the most basic example, an elevator is using the so-called C-SCAN algorithm. This algorithm is used for Disk Scheduling also known as I/O scheduling.</p>
+<h3 id="from-an-elevator-perspective-the-algorithm-works-as-follows">From an elevator perspective, the algorithm works as follows:</h3>
+<ul>
+<li>
+<p>Request array represents an array storing which floors the elevator has been requested from</p>
+</li>
+<li>
+<p>The elevator services always from floor 0 to the highest floor.</p>
+</li>
+<li>
+<p>While moving down, the elevator does not service any of the requests.</p>
+</li>
+<li>
+<p>When the elevator reaches the beginning (floor 0), reverse the direction.</p>
+</li>
+<li>
+<p>While moving up, the elevator services all floors one by one.</p>
+</li>
+<li>
+<p>Currently serviced floor now becomes the new position of the elevator.</p>
+</li>
+<li>
+<p>Go to step 6 until the elevator reaches the highest floor.</p>
+</li>
+<li>
+<p>If the elevator reaches the highest floor, reverse the direction and go to step 3 until all requests have been serviced.</p>
+</li>
+<li>
+<p>Going through the steps you can see that there are some performance optimisations which can be done here. For example:</p>
+</li>
+</ul>
+<p>Point 3, the elevator will be quicker if it services any outstanding requests going down to floor 0.<br>
+Point 7 - there is no point of going to the highest floor if there isn't a request for that floor<br>
+Point 8 - it will make more sense to reverse the direction once the highest request has been serviced</p>
+<hr>
+<p>发现电梯优先处理请求的顺序非常有趣。可以肯定地说，电梯最后的目的地永远是一楼，这通常是更多的share的共同必经之路</p>
+<p>请记住，这只是电梯工作的最基本方式。在很多优化和实际场景中，电梯的算法会与此完全不同，可能在大多数情况下都是如此。</p>
+<p><a href="https://www.zhihu.com/question/19747924">more info：电梯算法是怎样的？</a><br>
+电梯算法的原理非常简单，一句话：如果电梯到了你这个楼层，方向正好和你的需求一致，那么电梯就会停止，否则电梯会继续运行。一般来说，讲电梯算法会同时涉及其他两个算法，即先来先服务（First Come First Serve）算法和最短寻找时间（Shortest Seek Time First）算法。</p>
+<h2 id="周报">周报</h2>
+<p><a href="#toc">↩️</a></p>
+<p>最近感到越来越多人开始写周报了   虽然还是先对于其进行定义    大部分都是每周的科技资讯和小工具等分享，不涉及像weekend update类似的每周环球的政治或者文娱等领域的新鲜事，当然也有少部分的周报写自己周内的生活内容   坚持周更每周内容还不重复挺难得  但这也在另一方面刺激自己输出  写下来会更加在成就感的方面刺激大脑产生愉悦感 刺激更多的输出产生。</p>
+<p>一直觉得不论你做什么，你都应该关注科技行业，尤其是互联网，关注他们在日新月异的技术变革和生存压力下如何进化、学习，过程中的方法毫无疑问是可以借鉴迁移到自己的领域中，从有交叉的地方学起，会有慢慢的优势积累，显示信息的处理与查找，小的地方数据处理和科研绘图都能大大提高效率，对世界的理解也远不同于普通人</p>
+<p>还有经典的一些定律的应用，<br>
+比如很久之前初入量子化学的时候就明白的：重复造车轮子是没有意义的，这句话在生活中都适用，不仅仅是已有的成形代码搬过来就用的场景，科研绘图里面有人开源好的文件，拿过来在基础上修修补补就可以达到效果，说到这里还是特别感谢无数提供开源支持的人，为他人提供了便利牺牲了自己的利益，在这方面所以说最近的grok开源这种有钱的企业家发起的行为意义深远，一方面是反垄断，另一方面是后人或者竞争者不用耗费同样甚至更多的精力去追寻别人已经到达的地方，可以站在巨人肩膀上拿过火炬继续前行。又想起那句话，真正想着带领人类完成伟大成就的往往就是天真地将别人视作可笑的梦想当真的人。(2024年3月26日课后和ZXprof又一次交流了此类观点🗿，入学八个月，只有三次我在校园里步行，都是因为和教授们课下交谈。good time)</p>
+<h3 id="我的收藏">我的收藏😤</h3>
+<p><a href="#toc">↩️</a><br>
+to-date: 29032024</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://weekly.howie6879.com/2024/02-19~02-25.%E8%80%81%E8%83%A1%E7%9A%84%E5%91%A8%E5%88%8A%EF%BC%88%E7%AC%AC130%E6%9C%9F%EF%BC%89.html">老胡的周刊</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://ploto.me/weekly/">PlotO的周刊</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://immmmm.com/">Immmmm's Blog</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://weekly.tw93.fun/posts/153-%E9%AB%98%E7%A9%BA%E7%94%BB%E5%AE%B6">Tw93's Weekly</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://blog.ursb.me/tags/weekly/">Ursb的博客</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://segmentfault.com/blog/news">SegmentFault</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://wiki.eryajf.net/pages/1fe169/">ERYAJF Wiki</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://www.pseudoyu.com/zh/category/ideas/">伪雨的小站</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="https://flowus.cn/flowus101/share/451e115a-3cc8-427f-ba2e-29abd107c028">Flowus101</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://hao.logosc.cn/">Hao.logosc</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://osdmp.com/index.php">OSDMP</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://justgoidea.com/newsletter/">Just Go Idea</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://quail.ink/op7418">鹧鸪墨</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://github.com/Geekhyt/weekly">Geekhyt's Weekly</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://ameow.xyz/categories/weekly">喵慕の小站</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="真香定律">真香定律</h2>
+<p>真香定律=打脸定律<br>
+<a href="#toc">↩️</a></p>
+<figure data-type="image" tabindex="1"><img src="https://pica.zhimg.com/80/v2-cc6d956f07e3f719e0d913ce8aa96b86_1440w.webp?source=1def8aca" alt="" loading="lazy"></figure>
+<p>打脸的行为一直都是存在的，包括在古代。所有自说自话，言而无信的，全都是打脸定律。</p>
+<p>其实所有的定律能出现，都是基于人性基础上的，有人性的地方就存在定律。</p>
+<p>这就是为什么真香定律可以存活这么久，而且还有活力的原因。</p>
+<p>因为我们每天都可能会发生这样的行为。</p>
+<p>就像今天早上，我起床之后绕着小区跑了三圈，洗了个澡，出门准备上班了。</p>
+<p>一直觉得楼下的早餐店，人比较少，早餐种类不是很多，但是因为实在太饿了啊，那我就买了一个包子，一杯特制豆浆。</p>
+<p>结果到单位吃的时候发现，哇，这个包子比我想象中好吃很多啊，这个特制豆浆比肯德基的好喝多了，真香。于是我默默的决定明天早上还要去买...</p>
+<p>就像我们家猫来之前，我父亲死活不同意，觉得养宠物会把家里弄脏了（他有严重洁癖）结果买来拿回家第三天，已经形影不离了...</p>
+<p>好像我朋友说摩托车太危险了，被风吹的头发都乱光了，我这辈子是不会坐的，后来坐上觉得，恩...真酷</p>
+<p>很多东西不尝试不知道味道，人喜欢尝试，又怕于尝试。这样的行为就很正常不过了。</p>
+<p>所以我觉得所有的定律都是基于人性出来的，只要人性存在，定律就一直存在。</p>
+<figure data-type="image" tabindex="2"><img src="https://picx.zhimg.com/80/v2-30aa3249d3a0955f12dd702b0d537cf3_1440w.webp?source=1def8aca" alt="" width="400" height="300" loading="lazy"></figure>
+<p>最初去年的时候还和几个教授在课下讨论目前这些发表的文章里面计算的瑕疵，哦不，计算的豆腐渣工程，整个结构都感觉是垃圾边角料组成的，知道前段时间开始算第一个真正的有机大分子，才明白很多背后的“艰辛”，基础的几何优化还勉强过得去，中等级别的基组也还可以收敛，但是吸附结构就很难完美地实现预期结果，先按照基础结构的静电势分布来预测吸附位点，然后不断换位置优化，这时候就已经感觉到力不从心了，因为整个势能面确实广而复杂，极其难收敛，所以最后不得不参考很多文献里耍聪明的说法，电子之间的interaction是由什么什么基组得到的，其实就是说计算了单点能，而不是优化后的吸附构型，到此我终于有动摇似的开始理解这其中的艰难。今天，又有两个polymer 大点的有机分子，五十个原子二三百电子，已经前前后后处理了将近一个月，最初我天真地用def2-svp跑的，现在想想真是可笑，后来仅过了三五天我就换了LANL2DZ，之后一个月不断地续算处理报错，直到今天看到一些用611的才有点恍然大悟，我应该用更小的才对，之前明白先从小的算起，一步步级别爬上去还省算力，但是我这省什么省哇，LOL my bad~   回到6-311G(d,p)！！</p>
+<hr>
+<h2 id="有意思">有意思</h2>
+<p><a href="#toc">↩️</a><br>
+有意思，之前注意到一个博客使用微信朋友圈样式作为主题，颇具创意，找半天也没有看到开源地址。今天让我给找到了： icefox  一个适用于 Typecho 开源博客程序的微信朋友圈主题(大家不要去买了)。<br>
+Github https://github.com/xiaopanglian/icefox<br>
+看看效果 https://0ru.cn</p>
+<p>甚至文摘都没有及时看 所以不能依赖稍后在看这个功能</p>
+<ul>
+<li><a href="https://coolshell.cn/articles/19085.html">陈皓:谈谈我的“三观”</a></li>
+<li><a href="https://sspai.com/post/86697">现代打工人如何获得幸福？</a></li>
+<li><a href="https://sspai.com/post/86393?utm_source=dlvr.it&amp;utm_medium=twitter">善用命名法，让「搜索」成为最简单的本地文件管理方案</a></li>
+<li><a href="https://jxp73q7qjsg.feishu.cn/docx/WCNZdKDa4o2eUrxK5ElcfBXEnah">Sam Altman的创业手册</a></li>
+</ul>
+<h2 id="blue-moon">blue moon</h2>
+<p><a href="#toc">↩️</a><br>
+2024年3月11日，红蓝大战，渣叔赛季末卸任，这段争锋终会尘封，pride in battle！</p>
+<figure data-type="image" tabindex="3"><img src="https://s3.bmp.ovh/imgs/2024/03/29/0e08ca44e27dc069.png" alt="" loading="lazy"></figure>
+<p>射门还会实时显示球速距离！！ 游戏一样，暂停时间屏幕会恢复。</p>
+<h2 id="ki-my-people">KI MY PEOPLE</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">KAI lettin&#39; it fly 🏹<a href="https://twitter.com/hashtag/MFFL?src=hash&amp;ref_src=twsrc%5Etfw">#MFFL</a> <a href="https://t.co/FVCFVQOVLv">pic.twitter.com/FVCFVQOVLv</a></p>&mdash; Dallas Mavericks (@dallasmavs) <a href="https://twitter.com/dallasmavs/status/1772414870631207168?ref_src=twsrc%5Etfw">March 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>NBA Athlete Kyrie Irving talks about fasting Ramadan while playing basketball. 🏀 @kyrieirving</p>
+<p>“To be able to play 48 minutes and not do it with having a drink or any food in my stomach is nothing short of a miracle.”</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">GOD, I give you all of the glory</p>&mdash; Chief Hélà 🤞🏾 (@KyrieIrving) <a href="https://twitter.com/KyrieIrving/status/1769580739278901591?ref_src=twsrc%5Etfw">March 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="nature-brief">nature brief</h2>
+<p><a href="#toc">↩️</a><br>
+nature brief是一定要看的  像是每天早上的一杯coffee，最近连续三天都有一些特别有趣的内容：</p>
+<h3 id="tweeting-your-research-paper-boosts-engagement-but-not-citations">Tweeting your research paper boosts engagement but not citations</h3>
+<p><a href="#toc">↩️</a><br>
+<a href="https://www.nature.com/articles/d41586-024-00922-y?utm_source=Live+Audience&amp;utm_campaign=c00f8e4114-briefing-dy-20240327&amp;utm_medium=email&amp;utm_term=0_b27a691814-c00f8e4114-51041556">link</a></p>
+<figure data-type="image" tabindex="4"><img src="https://media.nature.com/w1248/magazine-assets/d41586-024-00922-y/d41586-024-00922-y_26892186.jpg?as=webp" alt="" width="400" height="300" loading="lazy"></figure>
+<blockquote>
+<p>社媒上这种账号其实不多的，而且做得好的也才几千followers，我还没有达到一千@<a href="https://x.com/EKL_Batteries?s=20">EKL</a>，但是这肯定是有好处的，人们都这么想也一定有原因存在，会使得更多人发现更多有兴趣的文章，浏览，具体会不会深入研读，比例会更少，所以最后的cite也不一定会更多，因为正经大家用到文章的时候都会在scholar上搜素，很少回想我在社媒还有篇文章要引用，所以不是个主要因素也容易理解，但是毕竟还是有意义的，常见的例证就是国内的很多文章分享速递的公众号，流水线般的制作论文速递，而且大部分人已经习惯于依赖他们被feed这类内容，all  about  cycles~</p>
+</blockquote>
+<h3 id="news-and-insights">news and insights</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>马斯克：Neuralink 公司下个产品将是「盲视」（Blindsight），助视障人群恢复视力。</p>
+</li>
+<li>
+<p>谷歌借助 AI 突破：提前 7 天预测洪灾：</p>
+</li>
+</ul>
+<blockquote>
+<p>Nearing, G., Cohen, D., Dube, V. et al. Global prediction of extreme floods in ungauged watersheds. Nature 627, 559–563 (2024). https://doi.org/10.1038/s41586-024-07145-1</p>
+</blockquote>
+<ul>
+<li>随着科学技术的进步，特别是人工智能和大数据分析的发展，预测自然灾害的能力正在不断提高。但想想哪些是不能被预测或者没有规律，目前都还是与人有关的，创造？艺术和文化风尚的trend，以及情绪和行为，虽然说如果长时间跟踪通过大数据确实可以分析，但是毕竟有些evolve的过程，复杂因素太多，不容易被数据完全捕捉，今后随着算力的提高和方法的演化，很有可能训练出这种模型将此类问题攻克……</li>
+<li>电动汽车的最大缺点是，大部分能量用来移动电池，而不是移动乘客。人类的体重并不重（大约70公斤左右），特斯拉 Y 型汽车的电池重量是770公斤（查了一圈，model Y 的电池差不多500多公斤，已经比想象的重很多了，高比能还得看下一代的锂金属配锂硫或者锂空）。所以，运送电池的耗能是运送乘客的10倍。在之前的文章里面专门讲过一次<a href="https://ezraknotlab.github.io/post/alma-mater-464/#%E8%BD%AE%E8%83%8E%E6%B1%A1%E6%9F%93">轮胎污染</a>，收集这一发展的劣势😏</li>
+</ul>
+<h2 id="kendrick">kendrick 👑</h2>
+<p><a href="#toc">↩️</a></p>
+<p>本周最大的新闻之一，diss back， 又不断地使我回想起初高中时候常常思考的观点，就是Kawhi Leonard 和King LeBron之间的区别，抛开身体天赋技巧等物理上的因素来说，Championship mentality 的程度给人感觉内部能量大不相同，当然成为一个冠军不是由这个决定的，但是给人留下的气质气场能量不一样。Theyre all elites, but there're still levels in this game.</p>
+<p><audio controls="" src="https://iprosong.com/wp-content/uploads/2024/03/Future-Metro-Boomin-Like-That-ft.-Kendrick-Lamar.mp3"></audio></p>
+<p>Lyrically, Lamar uses his surprise appearance to directly respond to &quot;First Person Shooter&quot;, rapping: &quot;Yeah, get up with me, fuck sneak dissing / &quot;First Person Shooter&quot;, I hope they came with three switches&quot;. He also rejected J. Cole's idea of the three rappers representing hip hop as its &quot;big three&quot; and claims that he alone takes the top spot: <mark>&quot;Motherfuck the big three, nigga it's just big me&quot;</mark>. Throughout his verse, Lamar compares his rivalry with Drake to Prince's reported feud with Michael Jackson (&quot;What? I'm really like that / And your best work is a light pack / Nigga, Prince outlived Mike Jack&quot;), while making references to the Click (&quot;Niggas clickin' up, but cannot be legit / No 40 Water&quot;) and Stephen King's 1983 novel Pet Sematary (&quot;'Fore all your dogs gettin' buried / That's a K with all these nines / He gon' see Pet Semetary&quot;).</p>
+<p>@wiki<a href="https://en.m.wikipedia.org/wiki/Like_That_(Future_and_Metro_Boomin_song)">Like That (Future and Metro Boomin song)</a></p>
+<blockquote>
+<p>This ain't mr. morale bro this kungfu kenny what happened to the healing 😭</p>
+</blockquote>
+<p>It's worthy to note that there're hard beats along the whole song. So I guess hard beats are here for expressing anger and seriousness strongly.<br>
+Another point I'd like to mention is that song/album is quite like a scientific paper, there're co-authors (feat singers) and corosponding author (like Jay-Z lol). All in all, it's quite like a scholar thing.</p>
+<figure data-type="image" tabindex="5"><img src="https://s3.bmp.ovh/imgs/2024/03/29/78292e6e61da0099.png" alt="" loading="lazy"></figure>
+<p>On April 16, 2018, Kendrick Lamar was awarded the Pulitzer Prize for Music for his 2017 album, DAMN. It was the first time the award had gone to a musical work outside the genres of classical music and jazz</p>
+<p>The Pulitzer committee said that the decision to give the award to Kendrick was unanimous, adding that it was “a big moment for hip-hop music and a big moment for the Pulitzers”</p>
+<p>Ted Hearne, a composer who was nominated alongside Kendrick, called him “one of the greatest living American composers, for sure.”</p>
+<p>After winning the award, Kendrick Lamar had this to say… “Been writing my whole life, to get this type of recognition is beautiful” ☁️💙</p>
+<h2 id="books">books</h2>
+<p><a href="#toc">↩️</a><br>
+为了加快最近的阅读速度和效率，打算从APPSTORE下载阅读记录的APP，刚好从小泡的截图中看到这个名字的APP，结果同时在读多个还要开会员收费，接着就Google一些免费的APP，从APPstore里面下载了半屏的阅读追踪APP，还是要中文的，毕竟大部分书籍都是中文，但是打开挨个扫描后，要不就是收费，要不就是功能单一还收费，这时候想起了notion本来之前一直在统计了，加个进度的tag也不麻烦，有YouTube教学，然后搞好了，这些都是小事，主要写下这段文字的还是想起了科研绘图时候python和origin的区别，真正从底层出发永远是最好的，优势最大化的，第一性原理的魅力，熵增的破坏性~</p>
+<hr>
+<p><audio id="audios" controls="" height="100" width="100%" preload="auto" src="https://lv-sycdn.kuwo.cn/20a8174eccb0056fe99773e7c0a28dab/66069374/resource/30106/trackmedia/M500003S42rA1T4FVI.mp3"></audio></p>
+<p>I guess this train of time would never stop for anyone。。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#weve-conquered-the-all-of-europe">We've conquered the all of Europe</a></li>
+<li><a href="#%E7%94%B5%E6%A2%AF%E7%9A%84%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95">电梯的控制算法</a>
+<ul>
+<li><a href="#hoes-does-an-elevator-work">Hoes does an elevator work?</a></li>
+<li><a href="#from-an-elevator-perspective-the-algorithm-works-as-follows">From an elevator perspective, the algorithm works as follows:</a></li>
+</ul>
+</li>
+<li><a href="#%E5%91%A8%E6%8A%A5">周报</a>
+<ul>
+<li><a href="#%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F">我的收藏😤</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9C%9F%E9%A6%99%E5%AE%9A%E5%BE%8B">真香定律</a></li>
+<li><a href="#%E6%9C%89%E6%84%8F%E6%80%9D">有意思</a></li>
+<li><a href="#blue-moon">blue moon</a></li>
+<li><a href="#ki-my-people">KI MY PEOPLE</a></li>
+<li><a href="#nature-brief">nature brief</a>
+<ul>
+<li><a href="#tweeting-your-research-paper-boosts-engagement-but-not-citations">Tweeting your research paper boosts engagement but not citations</a></li>
+<li><a href="#news-and-insights">news and insights</a></li>
+</ul>
+</li>
+<li><a href="#kendrick">kendrick 👑</a></li>
+<li><a href="#books">books</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/alma-mater-473/">https://ezraknotlab.github.io/post/alma-mater-473/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/alma-mater-473/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/alma-mater-473/&sharesource=qzone&title=Alma Mater 473&pics=https://ezraknotlab.github.io//images/avatar.png?v=1746432418384&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/alma-mater-473/&sharesource=weibo&title=Alma Mater 473 + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1746432418384 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/Alma Mater 477/">
+                                                                                            Alma Mater 477
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-299/">
+                                                                                                    EKL 299
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1746432418384);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

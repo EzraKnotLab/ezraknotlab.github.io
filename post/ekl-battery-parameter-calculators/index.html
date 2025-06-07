@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1749311114608" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1749311114608" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Battery parameter calculators
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-05-05</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">5.5
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1050</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLChaos/">EKL Chaos</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <h2>🔋 电池基本参数计算器合集</h2>
+<style>
+  input { width: 100px; margin: 4px; }
+  label { display: inline-block; width: 150px; }
+  .section { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 10px; }
+</style>
+<div class="section">
+  <h3>1. 电流 ↔ 质量 / 比容量 / 倍率换算</h3>
+  <label>质量 (mg):</label><input id="mass" type="number" step="any">
+  <label>比容量 (mAh/g):</label><input id="cap" type="number" step="any">
+  <label>倍率 (C):</label><input id="crate" type="number" step="any">
+  <label>电流 (mA):</label><input id="current" type="number" step="any">
+  <button onclick="calcCurrent()">计算</button>
+  <p id="resCurrent"></p>
+</div>
+<div class="section">
+  <h3>2. 功率计算</h3>
+  <label>电压 (V):</label><input id="voltage" type="number" step="any">
+  <label>电流 (mA):</label><input id="current2" type="number" step="any">
+  <button onclick="calcPower()">计算功率</button>
+  <p id="resPower"></p>
+</div>
+<div class="section">
+  <h3>3. 理论能量密度估算</h3>
+  <label>比容量 (mAh/g):</label><input id="ed_cap" type="number" step="any">
+  <label>平均电压 (V):</label><input id="ed_volt" type="number" step="any">
+  <button onclick="calcEnergyDensity()">计算能量密度</button>
+  <p id="resED"></p>
+</div>
+<div class="section">
+  <h3>4. 体积能量密度</h3>
+  <label>能量 (mWh):</label><input id="en_mwh" type="number" step="any">
+  <label>体积 (cm³):</label><input id="vol_cm3" type="number" step="any">
+  <button onclick="calcVolED()">计算体积能量密度</button>
+  <p id="resVolED"></p>
+</div>
+<div class="section">
+  <h3>5. 简单寿命预测</h3>
+  <label>初始容量 (mAh):</label><input id="init_cap" type="number" step="any">
+  <label>当前容量 (mAh):</label><input id="curr_cap" type="number" step="any">
+  <label>当前循环次数:</label><input id="curr_cycle" type="number">
+  <button onclick="calcLife()">预测寿命</button>
+  <p id="resLife"></p>
+</div>
+<div class="section">
+  <h3>6. 放电平台能量估算</h3>
+  <label>平均电压 (V):</label><input id="disch_volt" type="number" step="any">
+  <label>容量 (mAh):</label><input id="disch_cap" type="number" step="any">
+  <button onclick="calcDischEnergy()">计算放电能量</button>
+  <p id="resDisch"></p>
+</div>
+<div class="section">
+  <h3>7. 电化学沉积锂厚度与面容量换算</h3>
+  <label>面容量 (mAh/cm²):</label><input id="areal_cap" type="number" step="any">
+  <label>厚度 (μm):</label><input id="thick_um" type="number" step="any">
+  <button onclick="calcThicknessOrCap()">计算</button>
+  <p id="resThick"></p>
+</div>
+<div class="section">
+  <h3>8. 时间 ↔ 倍率 (C-rate) 换算</h3>
+  <label>倍率 (C):</label><input id="tr_crate" type="number" step="any">
+  <label>时间 (h):</label><input id="tr_time" type="number" step="any">
+  <button onclick="calcTimeRate()">计算</button>
+  <p id="resTimeRate"></p>
+</div>
+<div class="section">
+    <h3>9. 活性物质质量 ↔ 理论容量</h3>
+    <label>活性物质质量 (mg):</label><input id="am_mass" type="number" step="any">
+    <label>理论比容量 (mAh/g):</label><input id="am_cap" type="number" step="any">
+    <button onclick="calcTheoreticalCap()">计算容量</button>
+    <p id="resTheoCap"></p>
+</div>
+<script>
+function calcCurrent() {
+  let m = parseFloat(document.getElementById("mass").value);
+  let c = parseFloat(document.getElementById("cap").value);
+  let r = parseFloat(document.getElementById("crate").value);
+  let i = parseFloat(document.getElementById("current").value);
+  let out = document.getElementById("resCurrent");
+<p>let count = [!isNaN(m), !isNaN(c), !isNaN(r), !isNaN(i)].filter(Boolean).length;<br>
+if (count !== 3) { out.textContent = &quot;请填写任意三个数值。&quot;; return; }</p>
+<p>if (isNaN(i)) out.textContent = <code>电流 = ${(m * c * r / 1000).toFixed(3)} mA</code>;<br>
+else if (isNaN(r)) out.textContent = <code>倍率 = ${(i * 1000 / (m * c)).toFixed(3)} C</code>;<br>
+else if (isNaN(c)) out.textContent = <code>比容量 = ${(i * 1000 / (m * r)).toFixed(3)} mAh/g</code>;<br>
+else if (isNaN(m)) out.textContent = <code>质量 = ${(i * 1000 / (c * r)).toFixed(3)} mg</code>;<br>
+}</p>
+<p>function calcPower() {<br>
+let v = parseFloat(document.getElementById(&quot;voltage&quot;).value);<br>
+let i = parseFloat(document.getElementById(&quot;current2&quot;).value);<br>
+let out = document.getElementById(&quot;resPower&quot;);<br>
+if (isNaN(v) || isNaN(i)) { out.textContent = &quot;请输入电压和电流。&quot;; return; }<br>
+out.textContent = <code>功率 = ${(v * i / 1000).toFixed(3)} W</code>;<br>
+}</p>
+<p>function calcEnergyDensity() {<br>
+let c = parseFloat(document.getElementById(&quot;ed_cap&quot;).value); // 比容量 mAh/g<br>
+let v = parseFloat(document.getElementById(&quot;ed_volt&quot;).value); // 电压 V<br>
+let out = document.getElementById(&quot;resED&quot;);<br>
+if (isNaN(c) || isNaN(v)) {<br>
+out.textContent = &quot;请输入比容量和电压。&quot;;<br>
+return;<br>
+}</p>
+<p>let mWh_g = c * v;              // mWh/g<br>
+let Wh_kg = mWh_g;              // 等价于 Wh/kg<br>
+let J_g = mWh_g * 3.6;          // 1 mWh = 3.6 J<br>
+let kJ_kg = J_g;                // 等价于 kJ/kg</p>
+<p>out.innerHTML = <code>能量密度：&lt;br&gt;     • &lt;b&gt;${mWh_g.toFixed(1)} mWh/g&lt;/b&gt;&lt;br&gt;     • &lt;b&gt;${Wh_kg.toFixed(1)} Wh/kg&lt;/b&gt;&lt;br&gt;     • &lt;b&gt;${J_g.toFixed(1)} J/g&lt;/b&gt;&lt;br&gt;     • &lt;b&gt;${kJ_kg.toFixed(1)} kJ/kg&lt;/b&gt;</code>;<br>
+}</p>
+<p>function calcVolED() {<br>
+let e = parseFloat(document.getElementById(&quot;en_mwh&quot;).value);<br>
+let vol = parseFloat(document.getElementById(&quot;vol_cm3&quot;).value);<br>
+let out = document.getElementById(&quot;resVolED&quot;);<br>
+if (isNaN(e) || isNaN(vol)) { out.textContent = &quot;请输入能量和体积。&quot;; return; }<br>
+out.textContent = <code>体积能量密度 = ${(e / vol).toFixed(1)} mWh/cm³</code>;<br>
+}</p>
+<p>function calcLife() {<br>
+let init = parseFloat(document.getElementById(&quot;init_cap&quot;).value);<br>
+let curr = parseFloat(document.getElementById(&quot;curr_cap&quot;).value);<br>
+let cyc = parseInt(document.getElementById(&quot;curr_cycle&quot;).value);<br>
+let out = document.getElementById(&quot;resLife&quot;);<br>
+if (isNaN(init) || isNaN(curr) || isNaN(cyc)) { out.textContent = &quot;请输入完整数值。&quot;; return; }<br>
+let rate = curr / init;<br>
+let est = Math.round(cyc / (1 - rate));<br>
+out.textContent = <code>预测寿命 ≈ ${est} 次循环（假设线性衰减）</code>;<br>
+}</p>
+<p>function calcDischEnergy() {<br>
+let v = parseFloat(document.getElementById(&quot;disch_volt&quot;).value);<br>
+let c = parseFloat(document.getElementById(&quot;disch_cap&quot;).value);<br>
+let out = document.getElementById(&quot;resDisch&quot;);<br>
+if (isNaN(v) || isNaN(c)) { out.textContent = &quot;请输入平均电压和容量。&quot;; return; }<br>
+out.textContent = <code>放电能量 ≈ ${(v * c).toFixed(2)} mWh</code>;<br>
+}</p>
+<p>function calcThicknessOrCap() {<br>
+let cap = parseFloat(document.getElementById(&quot;areal_cap&quot;).value);<br>
+let thick = parseFloat(document.getElementById(&quot;thick_um&quot;).value);<br>
+let out = document.getElementById(&quot;resThick&quot;);</p>
+<p>if (!isNaN(cap) &amp;&amp; isNaN(thick)) {<br>
+// 面容量 → 厚度<br>
+let t = 4.85 * cap + 0.01;<br>
+out.textContent = <code>厚度 ≈ ${t.toFixed(2)} μm</code>;<br>
+} else if (isNaN(cap) &amp;&amp; !isNaN(thick)) {<br>
+// 厚度 → 面容量<br>
+let c = (thick - 0.01) / 4.85;<br>
+out.textContent = <code>面容量 ≈ ${c.toFixed(3)} mAh/cm²</code>;<br>
+} else {<br>
+out.textContent = &quot;请只填写其中一个数值。&quot;;<br>
+}<br>
+}</p>
+<p>// 新增功能对应的JS函数<br>
+function calcTimeRate() {<br>
+let crate = parseFloat(document.getElementById(&quot;tr_crate&quot;).value);<br>
+let time = parseFloat(document.getElementById(&quot;tr_time&quot;).value);<br>
+let out = document.getElementById(&quot;resTimeRate&quot;);</p>
+<p>if (!isNaN(crate) &amp;&amp; isNaN(time)) {<br>
+// C-rate -&gt; Time<br>
+let t_h = 1 / crate;<br>
+let t_m = t_h * 60;<br>
+out.textContent = <code>时间 ≈ ${t_h.toFixed(3)} 小时 (或 ${t_m.toFixed(1)} 分钟)</code>;<br>
+} else if (isNaN(crate) &amp;&amp; !isNaN(time)) {<br>
+// Time -&gt; C-rate<br>
+let c = 1 / time;<br>
+out.textContent = <code>倍率 ≈ ${c.toFixed(3)} C</code>;<br>
+} else {<br>
+out.textContent = &quot;请只填写其中一个数值。&quot;;<br>
+}<br>
+}</p>
+<p>function calcTheoreticalCap() {<br>
+let mass = parseFloat(document.getElementById(&quot;am_mass&quot;).value);<br>
+let specCap = parseFloat(document.getElementById(&quot;am_cap&quot;).value);<br>
+let out = document.getElementById(&quot;resTheoCap&quot;);<br>
+if (isNaN(mass) || isNaN(specCap)) {<br>
+out.textContent = &quot;请输入质量和理论比容量。&quot;;<br>
+return;<br>
+}<br>
+let totalCap = (mass / 1000) * specCap; // 将mg转换为g<br>
+out.textContent = <code>理论容量 = ${totalCap.toFixed(3)} mAh</code>;<br>
+}</p>
+</script>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/">https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/&sharesource=qzone&title=EKL Battery parameter calculators&pics=https://ezraknotlab.github.io//images/avatar.png?v=1749311114608&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/&sharesource=weibo&title=EKL Battery parameter calculators + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1749311114608 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLChaos/">#
+                                                EKL Chaos
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20250505/">
+                                                                                            EKL 20250505
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/">
+                                                                                                    EKL Alma Mater 《格外的活法》
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1749311114608);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

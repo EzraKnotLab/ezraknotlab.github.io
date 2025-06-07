@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1749311114608" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1749311114608" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Alma Mater 488
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-06-16</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">20.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4537</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/06/16/438f59fa89581d65.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Euro 2024</li>
+<li>阅读是一座随身携带的避难所</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#phd-productivity-plan">PhD productivity plan:</a></li>
+</ul>
+</li>
+<li><a href="#wtf-is-ai">WTF IS AI?</a>
+<ul>
+<li><a href="#%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%BB%84%E4%BB%81%E5%8B%8B-computex-2024-%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%E5%8F%8A%E7%B2%BE%E5%8D%8E%E4%BB%8B%E7%BB%8D">英伟达黄仁勋 Computex 2024 演讲全文及精华介绍</a></li>
+<li><a href="#ios-18">iOS 18</a></li>
+</ul>
+</li>
+<li><a href="#%E8%81%8A%E8%AF%BB%E4%B9%A6">聊读书</a>
+<ul>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%98%AF%E4%B8%80%E5%BA%A7%E9%9A%8F%E8%BA%AB%E6%90%BA%E5%B8%A6%E7%9A%84%E9%81%BF%E9%9A%BE%E6%89%80">阅读是一座随身携带的避难所</a>
+<ul>
+<li><a href="#%E8%AF%BB%E4%B9%A6%E5%BA%94%E8%AF%A5%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BA%AB%E5%8F%97">读书应该是一种享受</a></li>
+<li><a href="#%E8%B7%B3%E8%B7%83%E5%BC%8F%E9%98%85%E8%AF%BB%E5%92%8C%E5%B0%8F%E8%AF%B4%E8%8A%82%E9%80%89">跳跃式阅读和小说节选</a></li>
+<li><a href="#%E5%A5%BD%E5%B0%8F%E8%AF%B4%E5%BA%94%E8%AF%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7">好小说应该具有哪些特性</a></li>
+<li><a href="#%E6%B2%A1%E6%9C%89%E4%B8%80%E6%9C%AC%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E7%9A%84%E4%B9%A6">没有一本一劳永逸的书</a></li>
+<li><a href="#%E8%BF%99%E6%9C%AC%E4%B9%A6%E7%9A%84%E6%84%8F%E4%B9%89">这本书的意义</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9E%97%E8%AF%AD%E5%A0%82%E8%AF%B4%E8%AF%BB%E4%B9%A6">林语堂说读书：</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%B0%E5%BD%95%E5%BD%93%E4%B8%8B%E7%9A%84style">记录当下的style</a>
+<ul>
+<li><a href="#2024-summertime">2024 SummerTime</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BD%B1%E9%9F%B3">影音</a>
+<ul>
+<li><a href="#fight-inc-inside-the-ufc">Fight Inc: Inside the UFC</a></li>
+<li><a href="#the-donald-trump-interview">The Donald Trump Interview</a></li>
+<li><a href="#shine-bright-like-a-diamond">🎶 SHINE BRIGHT LIKE A DIAMOND 💎</a></li>
+<li><a href="#jre-2060-gary-brecka">JRE 2060 - Gary Brecka</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A8%80%E8%AE%BA">言论</a>
+<ul>
+<li><a href="#ill-start-tomorrow">&quot;I'll start tomorrow&quot;</a></li>
+<li><a href="#tip">Tip</a></li>
+<li><a href="#%E5%8F%B2%E4%B8%8A%E5%90%AB%E9%87%91%E9%87%8F%E6%9C%80%E9%AB%98%E7%9A%84cheatsheet">史上含金量最高的cheatsheet</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p>Bas - Lit ft. J. Cole, KQuick<br>
+summer time</p>
+<p><audio controls="" loop="" preload=""><source src="https://cs1.mp3.pm/download/5154637/cXRaL1o0S0plV2VGcXRvOW13a2kyRTlCR0xrL0ZhdWh4QWJPaWN3ejdIZ0h2c1JnY1BSdmhlL1l6cFdDaG80NjJnMHNHOTVmRTFieTZ0OXR4aE90QmpDSFpsdStMK3FGa2JORnNFRTFFWEZrUUhHTVR2cWJydnRCSGNxMnN0L3A/Bas_-_Lit_feat._J._Cole_KQuick_(mp3.pm).mp3"></audio></p>
+<p>You'd be surprised how many truths you can hide in flows<br>
+I'm listenin' to this beat with my eyelids closed<br>
+Thoughts keep flashin' and I keep laughin'<br>
+I never thought that I would fuck Irish hoes<br>
+Maybe Asian bitches or Caucasian bitches<br>
+Remember when I got to New York I was lost<br>
+Because all I ever saw was Jamaican bitches</p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Do you still believe in love?
+Or do you like drugs?
+Ran into a night owl rollin' White Owls
+Girl it's been awhile since I hit a White Owl
+I'm with it though, she a centerfold
+Big ol' blunt look like tentacles
+She strip in Europe, Interpol
+Don't remember her in her clothes
+I fucked her friend, damn they was close
+Let's reunite, let's get em close
+Hit 'em twice in a row, hit a flight, and I'm ghost
+That's the last time I seen her though
+She be gettin' too eager, ho
+Stamp it like it's my visa
+Cheefin' off of these berries
+When the world gets heavy and it hurts to carry
+I'm her Midnight Mercenary
+Fiend
+It's lit
+Feel the buzz?
+That's a half?
+Shit it was
+It's lit
+Feel the buzz?
+It's lit
+Feel the buzz?
+She take me to a place that I never would discover
+Might never have another, so I had to fuck her
+Reach into my pockets, damn I ain't got a rubber
+See my nigga Ron, like L. Ron Hubbard, he be outta space
+Say he got a case of straps at the back of the hotel cupboard
+Room 508, check by the safe, she say &quot;Boy you got it made
+Do you got a cape?&quot;, I ain't with the games ma, do I gotta wait?
+I'm quite impatient, intoxication got me feelin' like procreating
+Girl I'm the baker, you surely caking
+Stand back, catch my amazing graces
+Photo finish and fornication
+Photo finish and fornication
+Fiend
+It's lit
+Feel the buzz?
+That's a half?
+Shit it was
+It's lit
+Feel the buzz?
+It's lit
+Feel the buzz?
+Feel the buzz
+Can you feel the buzz?
+Feel the buzz
+Do you believe in love?
+What's your drug?
+What's your drug?
+Now comes the question of which intro do you use?
+Do you use this intro or the other intro I was talkin' on?
+But, then that let's people know I had more than one take
+So maybe we should just not use this and use the other intro
+So people would think I just took it straight through
+Yea, let's do that
+You'd be surprised how many truths you can hide in flows
+I'm listenin' to this beat with my eyelids closed
+Thoughts keep flashin' and I keep laughin'
+I never thought that I would fuck Irish hoes
+Maybe Asian bitches or Caucasian bitches
+Remember when I got to New York I was lost
+Because all I ever saw was Jamaican bitches
+I ain't barely know what Jamrock was
+Lil' country nigga God damn I was
+To you niggas talkin' online until you make it this high
+Then you could never understand this buzz, well
+Maybe if you put yourself in the shoes
+Of a nigga comin' straight out the South
+No gold grill just a east coast feel
+And a set of crooked teeth in his mouth
+Make them hoes bounce, that can't get enough
+Niggas say I made it I ain't make it enough
+Man hang that nigga, you a real lame ass nigga
+If you ain't got my tape in your truck
+Cole, uhm world don't you forget that
+I think I lost my mind round the same time I lost my six pack
+But no sit-ups for me, long as my dick still get up for me
+Long as a ho still give up for me
+She usually charge but she get us for free
+Woah, that's TMI, lil' something like TMZ
+Scared of the days you'll be seeing me
+'Cause my girl do not play, coach DNP
+That's something for the hoop fans
+Just copped her the coupe man
+No drop top but a slot on the roof that can slide out
+And get a little sun while you ride out
+Ced on the beat let me vibe out
+We was 15 with a ASR up in my house
+Writin' rhymes out, momma made it happen
+Could've been a lawyer but I made it rappin', he made it rappin'
+Now at the shows he the main attraction
+Another shot of Henny so I'm faded askin'
+How long do this drug called fame be lastin' &quot;It's lit, feel the buzz?&quot;
+Another shot of Henny so I'm faded askin'
+How long do this drug called fame be lastin', that's deep
+Feel the buzz?
+It's lit
+Feel the buzz?
+Feel the buzz?
+
+
+</code></pre>
+</details>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WCWubSL5LeE?si=MxxGK7QAaQh10xPW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="phd-productivity-plan">PhD productivity plan:</h2>
+<p><a href="#toc">↩️</a><br>
+Start by reading 1 page<br>
+Start by writing 1 paragraph<br>
+Start by researching 1 question<br>
+Start by applying 1 method<br>
+Start by analysing 1 dataset<br>
+Start by emailing 1 contact<br>
+Start by attending 1 event<br>
+Start by taking 1 break</p>
+<p>Start today</p>
+<p>Repeat tomorrow</p>
+<p><a href="https://oldwestenglish.github.io/grammar/#/">薄冰英语语法</a></p>
+<h1 id="wtf-is-ai">WTF IS AI?</h1>
+<p><a href="#toc">↩️</a><br>
+<a href="https://techcrunch.com/2024/06/01/what-is-ai-how-does-ai-work/">LINK</a></p>
+<p>AI 最擅长做下面的事情。</p>
+<p>（1）快速创作低价值的书面作品，比如一篇博客文章的草稿，里面包含你想说的内容的总体思路。</p>
+<p>（2）完成低级编码任务，比如初级程序员从一个项目复制到另一个项目的代码，或者从 Stack Overflow 复制代码。</p>
+<p>（3）对会议、论文和数据库进行总结和排序。AI 非常擅长干这个，因为它本来就是围绕从大量无序数据中提取有用信息的概念构建的。</p>
+<p>（4）从大量数据----天文观测、蛋白质相互作用、临床结果----发现其中的模式。AI 虽然本身并没有做出任何发现，但研究人员可以利用它们来加速自己的发现。</p>
+<p>（5）AI 是令人惊讶的健谈者，可以永无止境地谈下去，而且对每个话题都很了解，不带评判性，并且反应迅速！</p>
+<p>AI 最大的风险在于，它们不知道如何说&quot;我不知道&quot;。</p>
+<p>当 AI 遇见以前从未遇见的东西时会发生什么？由于没有现成的模式可供遵循，它只是根据以前模式所反映的一般规则进行猜测。因此它的反应可能很笼统、很奇怪或不恰当。我们将这种现象称为幻觉。</p>
+<p>令人不安的是，AI 不会告诉你，哪些是它的幻觉，哪些是事实。</p>
+<p>如果你要求 AI 总结一些研究并给出引用，它可能会编造一些不存在的论文和作者，你根本分不出来。</p>
+<p>而且，按照目前 AI 模型的构建方式，没有任何实用的方法可以防止幻觉。</p>
+<h2 id="英伟达黄仁勋-computex-2024-演讲全文及精华介绍">英伟达黄仁勋 Computex 2024 演讲全文及精华介绍</h2>
+<p><a href="#toc">↩️</a><br>
+<a href="https://xiaohu.ai/p/8941">link</a></p>
+<h2 id="ios-18">iOS 18</h2>
+<p><a href="#toc">↩️</a></p>
+<p>IOS18更新：</p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C8DL0VwiMWO/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C8DL0VwiMWO/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C8DL0VwiMWO/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Pubity (@pubity) 分享的帖子</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+<h1 id="聊读书">聊读书</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="阅读是一座随身携带的避难所">阅读是一座随身携带的避难所</h2>
+<p>rating: ⭐⭐⭐</p>
+<p>info:</p>
+<ul>
+<li>作者: [英] 威廉·萨默塞特·毛姆</li>
+<li>出版社: 江西人民出版社</li>
+<li>rating：8.4  @<a href="https://book.douban.com/subject/35140008/">douban</a></li>
+</ul>
+<blockquote>
+<p>以下是阅读本书时随笔：</p>
+</blockquote>
+<ul>
+<li>自己读当然是为了更好地理解与思考，同时在阅读时候能够有更细致的观察，从而引发更深度的洞察与收获</li>
+<li>不是为了真的学习怎么写小说，not my business</li>
+<li>每天睡前25分钟的番茄钟  不能多也不能少，不能少是要每天习惯坚持，不能多是要控制 虽然经常性会遇到精彩的地方舍不得断离美梦一样，但是为了正常的作息和习惯坚持，还是要控制</li>
+<li>就此再写一个读书的技巧方法论，常写常新，cuz this’s a life-long process  八九十岁都会常读常新，进度和体会还是要时刻记录的，和每天的、陈旧的报纸一样 有时效性 也可以见证成长 复习技巧</li>
+</ul>
+<h3 id="读书应该是一种享受">读书应该是一种享受</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>很多道理是已熟知的，依兴趣而读，放弃也是okay的，时机不成熟或者就是目前的经历还是让你提不起兴趣或者感受不到趣味或者本身没有多少艺术气息</li>
+<li>早上起来读科学哲学，下午闲暇时间杂文诗集，睡前小说</li>
+<li>But remeber it's all about experience 专注于让你激情澎湃的旅程，像看一场球一样  英超西甲  contagious  就是迷幻的旅程，过程中享受就像是被幻境麻醉一样，逍遥自在</li>
+<li>白噪音可以，但还是不要chill songs 一有人说话就不能集中精力</li>
+</ul>
+<h3 id="跳跃式阅读和小说节选">跳跃式阅读和小说节选</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>难以从头到尾保持兴趣不减</li>
+<li>有些章节甚至看标题就知道要不要读了，就像筛选文献一样</li>
+</ul>
+<h3 id="好小说应该具有哪些特性">好小说应该具有哪些特性</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>普世感染</li>
+<li>趣味持久</li>
+</ul>
+<h3 id="没有一本一劳永逸的书">没有一本一劳永逸的书</h3>
+<p><a href="#toc">↩️</a><br>
+现学现用，我跳过了第二章，从22页跳到264页~</p>
+<p>💎</p>
+<blockquote>
+<p>我自以为是地相信，人类在进化过程中为了生存需要构想出宗教和上帝的观念，这些观念在过去——或许现在也是——表现成某种有利于种族生存的价值观，我们只能在历史层面予以解释，并不能视其为真实的存在。虽然我自视为不可知论者，但在内心深处，我认为理智的人必须拒绝上帝这种假设。</p>
+</blockquote>
+<blockquote>
+<p>然而，如果根本不存在那个将我投进永恒之火的上帝，也根本不存在被永恒之火吞噬的灵魂，如果我仅仅是被生存竞争推动的机械力量的玩物，人们反复教导给我的善，意义到底在哪里？于是，我开始阅读伦理学。在潜心读完一部部令人生畏的巨著后，我得出结论：人生的目的只是为了寻求自身的快乐，并不为别的，那些舍己为人的行为也只是为满足人们的一种幻想——实现自己所寻求的、做一名慷慨者的快乐。既然未来是不确定的，及时行乐理当是一种常识。在我看来，是与非不过是两个词语，行为准则只是人们为了保护各自的利益而约定的一种习俗。追求自由的人并不一定要遵循那些准则，除非他认为它们对他并无妨碍。</p>
+</blockquote>
+<blockquote>
+<p>到24岁时，我已建立起一套完整的哲学体系。它有两条基础的原理：物的相对性和人的圆周率。后来我才意识到，物的相对性并不是什么新发现。人的圆周率倒可能是深刻的，但我现在绞尽脑汁，也想不起它的意思了。<br>
+我似乎在哪里读到过，费希特曾说，一个人抱持怎样的哲学观念取决于他是一个怎样的人。<br>
+与屁股决定脑袋的政治方面意识形态差不多，看看保守党选民都是什么样的人，再看看民主党选民，对二者做主成分分析，提取特征……</p>
+</blockquote>
+<ul>
+<li>不要改变别人，同时认为自己的才是对的，要求别人也同样生活</li>
+<li>认真地阅读一本书，就像是在与作者进行</li>
+</ul>
+<h3 id="这本书的意义">这本书的意义</h3>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>最终我认定，这样一本完整而使我满意的书是永远无法找到的，因为它只能是我自身的一种表达。于是我做出大胆的决定，这本书必须由我自己来写。我细心研读那些研究生攻读哲学学位的必读书，一本接着一本。在我看来，这样至少能够给写作提供一个基础。我想在这个基础上，辅以我积累四十年的生活知识（在产生这个念头时，我正好40岁），再加上我准备花几年的时间悉心研究的一些哲学名著，我想我有能力写出这样一本书，实现自己的愿望。对于其他人，这本书不会有任何价值，顶多是一个热爱思考的灵魂（这个词并不确切，姑且这么说）的写照，体现出这个人比一般职业哲学家丰富一点的生活经验。我清楚地知道，在哲学思维上我毫无天赋，因此我准备在理论收集上多下功夫。这些理论不仅要满足我的心智，还要满足（或许比我的心智更重要的）我所有的感情、本能和根深蒂固的偏见——很难把与生俱来的偏见和本能区分开。以这些理论为基础，我将建立一个对自身有效，并能指引我生活之路的哲学体系。</p>
+</blockquote>
+<p>作为一个不可知论者，我得出的实用性结论是：你只管做人，只当上帝并不存在。</p>
+<h2 id="林语堂说读书">林语堂说读书：</h2>
+<p><a href="#toc">↩️</a><br>
+开茅塞，除鄙见，得新知，广识见，养性灵。</p>
+<h1 id="记录当下的style">记录当下的style</h1>
+<p><a href="#toc">↩️</a><br>
+过一段时间就应该记录下当前这一小段时间生活的范式，走过的路像一场魔术。以前疫情封在酒店天天看直播，看博人，后来晚上看直播，现在看mercy，有趣~</p>
+<h2 id="2024-summertime">2024 SummerTime</h2>
+<p><a href="#toc">↩️</a><br>
+football&amp;summer： 还是八年前，同样是欧洲杯，瑞士头牌沙奇里，法国葡萄牙决战争锋，C罗伤退，配角挺身而出最终捧杯，而一路闪耀的格子与吉鲁则在家门口留下遗憾。2016，也是中考之年，足球和夏天~还有好几个女孩。 上次欧洲杯则是疫情相关，留下记忆的同样是东道主遗憾未能触摸到奖杯，但这并不是主要的。三狮的三个年轻人在点球大战中没有顶住压力，最后将我们热爱的足球事件上升到社会部分人对于种族的攻击，当时还写了一篇文<a href="https://mp.weixin.qq.com/s/vBRxsEze6ubNUrTaTj6tvQ">#When you win ,you’re English ,when you lose you’re black.</a></p>
+<ul>
+<li>自然界不允许真空存在，社会允许邪恶存在，大部分时候还是世界充满爱的。pandemic 让人感觉时间过得快，甚至像是消失一样，只留下一抹记忆。</li>
+<li>终究还是会留下点遗憾的。通常人们最喜欢的球星都是小时候看球敬仰的，但不巧这个时期极少有机会去实现愿望，现场见证偶像触碰巅峰，每一代人都这样，80后的MJ，90后的KOBE,AI。等到自己成人之后奋斗有了经济能力，但这样的愿景再无可能实现。希望下一个版本的地球online会为人类修复这个bug。</li>
+<li>球一进，观众席塑料啤酒杯全部像火箭一样迸射向天空！ 永远属于足球的场景</li>
+</ul>
+<h1 id="影音">影音</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="fight-inc-inside-the-ufc">Fight Inc: Inside the UFC</h2>
+<p><a href="#toc">↩️</a><br>
+在roku免费看的三集  两小时内倍速结束<br>
+<a href="https://therokuchannel.roku.com/details/cbdcc1fabffc788860197de22b67aa6b/fight-inc-inside-the-ufc-s1-e3-building-sandcastles">link</a></p>
+<h2 id="the-donald-trump-interview">The Donald Trump Interview</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Donald Trump Interview 🇺🇸<br><br>Our first full-length podcast on X… <a href="https://t.co/aRiforlhca">pic.twitter.com/aRiforlhca</a></p>&mdash; IMPAULSIVE (@impaulsive) <a href="https://twitter.com/impaulsive/status/1801369329981919752?ref_src=twsrc%5Etfw">June 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="shine-bright-like-a-diamond">🎶 SHINE BRIGHT LIKE A DIAMOND 💎</h2>
+<p><a href="#toc">↩️</a><br>
+Chills watching Dustin Poirier's EPIC #UFC302 walkout 😮‍💨</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎶 SHINE BRIGHT LIKE A DIAMOND 💎<br><br>Chills watching Dustin Poirier&#39;s EPIC <a href="https://twitter.com/hashtag/UFC302?src=hash&amp;ref_src=twsrc%5Etfw">#UFC302</a> walkout 😮‍💨 <a href="https://t.co/aGbe7aOoPi">pic.twitter.com/aGbe7aOoPi</a></p>&mdash; UFC on TNT Sports (@ufcontnt) <a href="https://twitter.com/ufcontnt/status/1797663282721157333?ref_src=twsrc%5Etfw">June 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="jre-2060-gary-brecka">JRE 2060 - Gary Brecka</h2>
+<p>https://ogjre.com/episode/2060-gary-brecka</p>
+<h1 id="言论">言论</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>生活是构建memory的过程  人们死前会遗憾  主要是自己的legacy不能永存  未来有了脑机接口来储存记忆的技术  孩子们可以体会到祖父母的记忆  有意义了</li>
+<li>这个世界的副本运行到这个程度大家已经可以总结出很多物理现象及其背后的理论了：* 盗版的视频、电视剧电影等流媒体资源，还有软件等等，最全的绝对是俄罗斯的网站，我一般就用yandex，太逆天，别的中英文搜索引擎搜一天都没有俄语搜索引擎有效~</li>
+<li>甚至全网的英文原流媒体视频都搜不到，却能有俄语已经配音的。</li>
+<li>Frank 的一封信
+<ul>
+<li>就是这种感觉 ， 一个人慢慢成长，别急，一路上都是milestone</li>
+<li><img src="https://s3.bmp.ovh/imgs/2024/06/16/e791c58d643b8e46.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+<li>最终能不能成为最好并不是最重要和最值得关心的  重要的是真诚的想要成为最好的心。</li>
+<li>每次应该都有年终盘点的TOP10 书影音 很少有moment或者days
+<ul>
+<li>rainy mornings running listening podcast  Trevor Noah</li>
+</ul>
+</li>
+<li>Write little and often.</li>
+<li>A good nap solves a lot of productivity problems. （@lexfridman Jun 11）</li>
+</ul>
+<h2 id="ill-start-tomorrow">&quot;I'll start tomorrow&quot;</h2>
+<p><a href="#toc">↩️</a><br>
+The biggest lie you tell yourself is that you'll do something you should really be doing tomorrow or at some other time. This often leads to not doing it at all, resulting in a loss of trust in yourself. You keep putting something off until you reach a point where you completely abandon it because you lack confidence in yourself.</p>
+<p>If you truly intend to do something or really need to, do it now without hesitation and without excuses, because that's when you'll overcome yourself and it will be much easier for you in the future. You don't even have to do the whole thing; on the contrary, start small, because often the beginning is the hardest and requires the most effort. The more you overcome this initial hurdle, the easier it will be to continue.</p>
+<p>So, the next time you have something planned, whether it's chores like homework or cleaning, or things you've always wanted to do like a solo date or learning a new language, start NOW in small steps and don't put it off to the future, because then you'll NEVER do it.</p>
+<h2 id="tip">Tip</h2>
+<p><a href="#toc">↩️</a></p>
+<ol>
+<li>
+<p><strong>The 5-Minute Rule</strong><br>
+If it takes less than 5 minutes, do it now. Yes, even if it’s getting up to stretch. Procrastination is for stretching, not tasks!</p>
+</li>
+<li>
+<p><strong>Eat the Frog First</strong><br>
+Tackle the hardest task first thing in the morning. Frogs taste better when you’re not thinking about them all day.</p>
+</li>
+<li>
+<p><strong>Pomodoro Technique</strong><br>
+Work for 25 minutes, then take a 5-minute break. Repeat. Because even tomatoes need a break!</p>
+</li>
+<li>
+<p><strong>Make a To-Do List</strong><br>
+Write down your tasks. Checking them off feels like a tiny victory dance every time.</p>
+</li>
+<li>
+<p><strong>Set Alarms</strong><br>
+Use alarms to remind you of tasks. Because nothing says &quot;Get back to work&quot; like a phone screaming at you.</p>
+</li>
+<li>
+<p><strong>Delegate</strong><br>
+Share tasks with others. Remember, teamwork makes the dream work (and gives you more Netflix time).</p>
+</li>
+<li>
+<p><strong>Avoid Multitasking</strong><br>
+Focus on one task at a time. Multitasking is just doing multiple things poorly at once.</p>
+</li>
+<li>
+<p><strong>Use Apps and Tools</strong><br>
+Utilize productivity apps. Let technology be the boss that tells you to get back to work.</p>
+</li>
+<li>
+<p><strong>Break Tasks into Chunks</strong><br>
+Divide tasks into smaller, manageable parts. Eating an elephant is easier one bite at a time, not that you should eat elephants.</p>
+</li>
+<li>
+<p><strong>Set Boundaries</strong><br>
+Learn to say no. Protect your time like it’s the last slice of pizza.</p>
+</li>
+<li>
+<p><strong>Reward Yourself</strong><br>
+Give yourself a treat after completing tasks. Because who doesn’t work faster for chocolate?</p>
+</li>
+<li>
+<p><strong>Keep a Calendar</strong><br>
+Schedule your tasks and appointments. Because remembering everything is for elephants and computers, not humans.</p>
+</li>
+<li>
+<p><strong>Take Care of Yourself</strong><br>
+Get enough sleep, exercise, and eat well. A tired brain is like a computer running Windows 95. Slow and prone to crash.</p>
+</li>
+<li>
+<p><strong>Limit Social Media</strong><br>
+Use social media blockers during work hours. Facebook and Instagram can wait; your research paper can’t.</p>
+</li>
+<li>
+<p><strong>Reflect and Adjust</strong><br>
+Review your progress regularly and adjust as needed. It’s like GPS rerouting you after a wrong turn.</p>
+</li>
+</ol>
+<h2 id="史上含金量最高的cheatsheet">史上含金量最高的cheatsheet</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Top 4 Productivity Methods <a href="https://t.co/WsF4t0T2il">pic.twitter.com/WsF4t0T2il</a></p>&mdash; Atomic Habits | James Clear (@1AtomicHabits) <a href="https://twitter.com/1AtomicHabits/status/1802279958615871635?ref_src=twsrc%5Etfw">June 16, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#phd-productivity-plan">PhD productivity plan:</a></li>
+</ul>
+</li>
+<li><a href="#wtf-is-ai">WTF IS AI?</a>
+<ul>
+<li><a href="#%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%BB%84%E4%BB%81%E5%8B%8B-computex-2024-%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%E5%8F%8A%E7%B2%BE%E5%8D%8E%E4%BB%8B%E7%BB%8D">英伟达黄仁勋 Computex 2024 演讲全文及精华介绍</a></li>
+<li><a href="#ios-18">iOS 18</a></li>
+</ul>
+</li>
+<li><a href="#%E8%81%8A%E8%AF%BB%E4%B9%A6">聊读书</a>
+<ul>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%98%AF%E4%B8%80%E5%BA%A7%E9%9A%8F%E8%BA%AB%E6%90%BA%E5%B8%A6%E7%9A%84%E9%81%BF%E9%9A%BE%E6%89%80">阅读是一座随身携带的避难所</a>
+<ul>
+<li><a href="#%E8%AF%BB%E4%B9%A6%E5%BA%94%E8%AF%A5%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BA%AB%E5%8F%97">读书应该是一种享受</a></li>
+<li><a href="#%E8%B7%B3%E8%B7%83%E5%BC%8F%E9%98%85%E8%AF%BB%E5%92%8C%E5%B0%8F%E8%AF%B4%E8%8A%82%E9%80%89">跳跃式阅读和小说节选</a></li>
+<li><a href="#%E5%A5%BD%E5%B0%8F%E8%AF%B4%E5%BA%94%E8%AF%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7">好小说应该具有哪些特性</a></li>
+<li><a href="#%E6%B2%A1%E6%9C%89%E4%B8%80%E6%9C%AC%E4%B8%80%E5%8A%B3%E6%B0%B8%E9%80%B8%E7%9A%84%E4%B9%A6">没有一本一劳永逸的书</a></li>
+<li><a href="#%E8%BF%99%E6%9C%AC%E4%B9%A6%E7%9A%84%E6%84%8F%E4%B9%89">这本书的意义</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9E%97%E8%AF%AD%E5%A0%82%E8%AF%B4%E8%AF%BB%E4%B9%A6">林语堂说读书：</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%B0%E5%BD%95%E5%BD%93%E4%B8%8B%E7%9A%84style">记录当下的style</a>
+<ul>
+<li><a href="#2024-summertime">2024 SummerTime</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BD%B1%E9%9F%B3">影音</a>
+<ul>
+<li><a href="#fight-inc-inside-the-ufc">Fight Inc: Inside the UFC</a></li>
+<li><a href="#the-donald-trump-interview">The Donald Trump Interview</a></li>
+<li><a href="#shine-bright-like-a-diamond">🎶 SHINE BRIGHT LIKE A DIAMOND 💎</a></li>
+<li><a href="#jre-2060-gary-brecka">JRE 2060 - Gary Brecka</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A8%80%E8%AE%BA">言论</a>
+<ul>
+<li><a href="#ill-start-tomorrow">&quot;I'll start tomorrow&quot;</a></li>
+<li><a href="#tip">Tip</a></li>
+<li><a href="#%E5%8F%B2%E4%B8%8A%E5%90%AB%E9%87%91%E9%87%8F%E6%9C%80%E9%AB%98%E7%9A%84cheatsheet">史上含金量最高的cheatsheet</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/alma-mater-488/">https://ezraknotlab.github.io/post/alma-mater-488/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/alma-mater-488/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/alma-mater-488/&sharesource=qzone&title=Alma Mater 488&pics=https://ezraknotlab.github.io//images/avatar.png?v=1749311114608&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Euro 2024&lt;/li&gt;
+&lt;li&gt;阅读是一座随身携带的避难所&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/alma-mater-488/&sharesource=weibo&title=Alma Mater 488 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Euro 2024&lt;/li&gt;
+&lt;li&gt;阅读是一座随身携带的避难所&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1749311114608 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/alma-mater-489/">
+                                                                                            Alma Mater 489
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/Alma Mater 487/">
+                                                                                                    Alma Mater 487
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1749311114608);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

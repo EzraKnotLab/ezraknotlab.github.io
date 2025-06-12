@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1749713006629" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1749713006629" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Alma Mater 487
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-06-03</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">29.4
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7319</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/06/03/d2b15352e5570520.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>桶川跟踪狂杀人事件</li>
+<li>清水洁</li>
+<li>I love when you count me out</li>
+<li>YOU REALLY NOT ON SHIT~</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E6%A1%B6%E5%B7%9D%E8%B7%9F%E8%B8%AA%E7%8B%82%E6%9D%80%E4%BA%BA%E4%BA%8B%E4%BB%B6">📚桶川跟踪狂杀人事件</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A1%88%E5%8F%91">第一章 案发</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%81%97%E8%A8%80">第二章 遗言</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E9%80%AE%E6%8D%95">第五章 逮捕</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%91%A9%E6%93%A6">第七章 摩擦</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#paperreading">📗PaperReading：</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<hr>
+<p>Double Negative (Skeleton Milkshake)<br>
+Dominic Fike</p>
+<p><audio controls="" loop="" preload=""><source src="https://mp3lka.com/download.php?file=eyJpZCI6IjUwOTExIiwidXJsIjoiZG9taW5pYy1maWtlLWRvdWJsZS1uZWdhdGl2ZS1za2VsZXRvbi1taWxrc2hha2UiLCJ0eXBlIjoibG9hZCJ9"></audio></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">If you were here for the other night
+You'd be terrified
+You know I think the lines you're afraid of
+Are all made up
+
+Nobody's gonna grant this for you
+If it don't make you smile
+I watched your skeleton shake all evening
+And bless your heart for trying
+
+Scary watching it wearing off of me so fast
+Last night it was smashed, you asked me come back
+And then I said
+
+No problem, I'll send my location
+She hit me four times
+I was in the whip before I knew it
+Don't cry when I see your frustration
+I wanna slow it down but
+Nobody woulda let me if I
+
+Coulda told her
+Maybe if you feel outta place
+It's because you are
+It's because you are
+It's because you are
+
+Changing right in front of me
+Changing right in front of me
+Going through phases right in front of my face
+Inviting me to a place
+I said
+Changing right in front of me
+Changing right in front of me
+Going through passes right in front of my face
+Inviting me to a place
+And I said
+
+No problem, I'll send my location
+She hit me four times
+I was in the whip before I knew it
+Don't cry when I see your frustration
+I wanna slow it down but
+Nobody woulda let me if I
+
+Coulda told her
+Maybe if you feel outta place
+It's because you are
+It's because you are
+It's because you are
+
+
+</code></pre>
+</details>
+<hr>
+<h1 id="桶川跟踪狂杀人事件">📚桶川跟踪狂杀人事件</h1>
+<p><a href="#toc">↩️</a></p>
+<hr>
+<ul>
+<li>收藏想读是 2022-03-13    ， 如今2023五月底才读完，用时一周</li>
+<li>清水洁，1958年生于东京，日本著名调查记者。曾供职于新潮社《FOCUS》杂志，后转到日本电视台社会部。自担任杂志记者以来，一直致力于以犯罪、事故为中心的调查报道。代表作有《桶川跟踪狂杀人事件》《杀人犯就在那里——被隐蔽的北关东连续幼女诱拐杀人事件》等。曾获日本记者会议（JCJ）大奖、日本推理作家协会奖、新潮纪实奖、日本民间放送联盟奖优秀奖等荣誉。</li>
+</ul>
+<hr>
+<h2 id="第一章-案发">第一章 案发</h2>
+<ul>
+<li>摄影师打工人的日常   还有工作细节 去案发现场的路上尽管坐车脑子也不能闲着<br>
+路况畅通，感觉是个好兆头。不过移动期间，脑袋也不能放空休息。我用眼角余光留意车用电视画面，脑中模拟抵达现场后该做的事。要做的事堆积如山。决定要采访哪些对象
+<ul>
+<li>同行间竞争和利益 人脉</li>
+<li>我 -周刊记者  VS 那些参加记者俱乐部的警方一面的  新闻管控组织 这已经是社会背景了</li>
+<li>insdent feeling:  悬疑推理是各种文学作品里最接近科研的一个种类，超过科普类和小说，行文或者阅读之旅时候整个思维紧绷着，很严肃的想逻辑严谨，丝毫不想错过一些细节，而且还要考虑大局。</li>
+<li>探案时候也容易进入死胡同，这和实验非常像，一些info容易引导你走向可能不理想的地方，调整的方法？更多地全面info
+<ul>
+<li>好不容易找到一个愿意采访的学长：
+<ul>
+<li>诗织是被小松跟警方杀死的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第二章-遗言">第二章 遗言</h2>
+<p>“诗织是被小松跟警方杀死的。”<br>
+我才刚要开始采访而已。在微妙的时机冒出来的这句话，令我措手不及。<br>
+感觉就像在哨声响起十秒后就被进球的守门员。请等一下，我什么都还没问啊？还是我听错了？<br>
+我还来不及振作起来，第二发鱼雷急速接近，下一秒就爆炸了。一身西装的那名青年急促地说：<br>
+“小松是跟踪狂。诗织全都告诉我跟阳子了。</p>
+<ul>
+<li>
+<p>虽然这是发生在1999年  但是还是太为先进了，几乎是最近五年内国内才被爆出来这种  男的伪装成高富帅搭讪  然后给女生买贵的东西 一步步吸引  然后男的暴怒无常 像个神经病一样  暴力猥琐难以预测  然后女的一步步进入陷进  心理创伤 全面崩塌  女被男像玩偶一样控制 因为这时候通常已经有了把柄  做的什么事公之于众 或者威胁告诉女的父母 要求不能分手 甚至男和女父亲对峙   操控女方做事 变态 比如割手腕等等    这个小松目前就是这样    这样的人一般还会有通病 比如家庭背景有缺陷 从小没有得到父母正确关爱  或者童年或者成长有阴影创伤等等  这个剧本如今来看已经烂透了  但是确实容易想象上个世纪还是令人震撼的  但也容易理解  上个世纪日本还是很风光的一段时间  发展水平相当不错 也就出现如今我们的社会会有这样的情形 很多因素共同推到这的</p>
+</li>
+<li>
+<p>很大一部分遇到这种情况找警察他们也不愿意给帮助 谁会愿意给自己找活呢  他们都只是普通的警察 可能很多人在位混钱的 并不是真的有什么正义感要做一个警察  所以一般都会推脱这是民事 很难处理 所以就不管了  小打小闹   正常一家被一个这样的人困扰确实很让人紧张和窒息……</p>
+</li>
+</ul>
+<hr>
+<h2 id="第五章-逮捕">第五章 逮捕</h2>
+<ul>
+<li>血淋淋的地狱   行人都是鬼混</li>
+<li>funny  巴勒斯坦流血毁灭才会招来近几年西方倾向于承认，最近爱尔兰、西班牙、乌克兰……</li>
+<li>不管我怎么努力都拒人千里之外的副署长，以及无视于怒骂的我、埋首行政工作的刑警和职员。这里到底是什么鬼地方？</li>
+<li>我完全可以理解那天诗织和父母来这里求助之后，如何陷人了绝望。这里病人膏育。这里没有半个“人”。诗织遭遇了两个不幸。一个是认识了小松，另一个就是住在上尾署的辖区里。</li>
+<li>上个世纪可能还会惊讶   放在今天 新闻业这么发达  大家也早已见怪不怪了  没有正义  只有利益</li>
+<li>我在先前得到诗织朋友的信任 所以他父亲也愿意和我见面  最后久保田被捕   我准备发文章</li>
+</ul>
+<hr>
+<h2 id="第七章-摩擦">第七章 摩擦</h2>
+<p>我两次报道警署的不作为  QTMD  拿着纳税人的钱  就和医院等机构一样  吸干人民的血  每次给办事人民的钱条子上不写金额  时候填大金额去令多余的钱   正事来的时候怕事    什么都不是 you really not shit  真正让人生活无望的  和那些古代高官贵人管着衙门欺负穷人一样</p>
+<hr>
+<p>主要就是警署一方面了   引起公众不安  开始立法  普遍篡改笔录  警方诱导媒体丑化被害人  酒家三流女  警方不会实地考察  在案件发生后已经给这案件写好了剧本该怎么解释</p>
+<p>就是诗织的遗言   小松和警察</p>
+<p>虽然有了新的立法  但这件事和法律并无太大关系</p>
+<p>她看不到今年的樱花 听不到今年的蝉声，她的季节就这样嘎然结束了</p>
+<p>后记</p>
+<p>我女儿也在十四岁去世了  所以related</p>
+<hr>
+<ul>
+<li>当然还有《足利女童连续失踪事件》，可以做专题性阅读，但是留到下次，先别拖着这次~</li>
+</ul>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>最近发现有除了lofi girl那种背景音乐，还有很多例如XXX 1 hour of chill songs，前天就听了<a href="https://youtu.be/nfitZKO1jM0?si=x5S-a6pYov7u6vRm">jcole</a>的合集，很不错，还有<a href="https://youtu.be/O7RnNTXPvvo?si=n9pVNke_pUlNHcyO">Mac Miller</a>，不如出些工作室的记录背景，此外就是比较常规的下雨天的窗外雨声，某个大城市的大厦周围，study with me.</p>
+</li>
+<li>
+<p>近一两年cozy的氛围似乎是收到日韩的影响，比如印象里地铁里压抑的氛围，国内的大都市里也别无异样，随后就是更多的文艺作品流漏出面对社会压力和压抑的氛围的多样的生活style，《东京八平米》，《明亮的夜晚》等（还有很多影视的，没看过……），都影响了东亚如今的部分年轻一代对于生活看法，对于理想的安静平凡的氛围的向往。这方面内容的逐渐增加趋势使得我通过听播客内容感受到，尤其之前的图书《我的阿勒泰》，直到近日的电视剧版，很多频道都在讨论远离城市里打工奢华和喧嚣，去边远城市环抱自然得到心里的平静与安逸，享受生活。fuck 需要出去看看苏格兰、新西兰人的生活，是生活，你并不是历史这辆马车的轮子。</p>
+<ul>
+<li>想起其实孔雀菩提里面也有一小段写的是西南地方现在年轻一对的生活，但稍微不同。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://waitbutwhy.com/2015/03/7-3-billion-people-one-building.html">wait but why:7.3 Billion People, One Building</a>  从多个维度和很多其他有趣的角度真正地描述震撼给你我们这个地球上人还是太多了。</p>
+<ul>
+<li>一方面是老龄化，另一方面又是老毛病，人实在太多。深远地影响其他生物进化（<a href="https://www.solidot.org/story?sid=78261">人类是地球最可怕的捕食者</a>，袋鼠等有袋动物对人类的恐惧远远超过其他任何捕食者。）</li>
+<li><img src="https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/03/All-Humans-600x418.png" alt="" loading="lazy"></li>
+<li><img src="https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/03/Africa.jpg" alt="" loading="lazy"></li>
+<li>LOL</li>
+<li><img src="https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/03/NYC1.jpg" alt="" loading="lazy"></li>
+<li><img src="https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/03/NYC2.jpg" alt="" loading="lazy"></li>
+<li><img src="https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/03/108B-1024x787.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.sciencedaily.com/releases/2024/05/240523112609.htm">New milestone for lithium metal batteries</a>:Scientists develop a porous structures for lithium metal batteries.  是这篇文章<a href="https://onlinelibrary.wiley.com/doi/10.1002/advs.202402156">Facile Lithium Densification Kinetics by Hyperporous/Hybrid Conductor for High-Energy-Density Lithium Metal Batteries</a> Advanced Science, 2024: 2402156.</p>
+<ul>
+<li>ScienceDaily made it overratedly with those words...</li>
+</ul>
+</li>
+</ul>
+<h2 id="paperreading">📗PaperReading：</h2>
+<p><a href="#toc">↩️</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"《控糖革命》","children":[{"content":"[法]杰西·安左佩斯","children":[],"payload":{"lines":"2,3"}}],"payload":{"lines":"0,1"}},{"content":"为什么要控糖","children":[{"content":"葡萄糖为什么重要","children":[{"content":"极端饮食对身体有坏处","children":[{"content":"寻求一种可持续的生活方式，而不是节食","children":[],"payload":{"lines":"12,13"}},{"content":"适度控糖","children":[],"payload":{"lines":"13,15"}}],"payload":{"lines":"10,11"}},{"content":"葡萄糖不是一切","children":[{"content":"除了葡萄糖外，更要注意脂肪、果糖和胰岛素","children":[],"payload":{"lines":"17,18"}},{"content":"环境非常关键","children":[{"content":"不能简单地根据一种食物的血糖曲线来判断这种食物是“好”的还是“坏”的。我们必须将这种食物与其替代品进行比较。","children":[],"payload":{"lines":"19,20"}}],"payload":{"lines":"18,20"}},{"content":"科学依据","children":[],"payload":{"lines":"20,22"}}],"payload":{"lines":"15,16"}}],"payload":{"lines":"8,9"}},{"content":"植物如何生成葡萄糖","children":[{"content":"光合作用产物","children":[{"content":"葡萄糖以不同的形式存在“淀粉、纤维、糖类”","children":[],"payload":{"lines":"25,27"}}],"payload":{"lines":"24,27"}}],"payload":{"lines":"22,23"}},{"content":"葡萄糖如何进入血液","children":[{"content":"饮食中没有葡萄糖会怎样","children":[{"content":"饮食方法","children":[{"content":"通过刻意限制碳水化合物的摄入量，让人体内的葡萄糖处于一个极低的水平，来刺激身体通过燃烧脂肪来提供能量","children":[],"payload":{"lines":"35,36"}}],"payload":{"lines":"34,36"}},{"content":"观点","children":[{"content":"碳水化合物在生物学上并不是必要的（我们不需要通过吃糖来维持生存）。是快速获得能量的途径，也是人类饮食中的一道美味，并且已经被食用了数百万年。","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"36,39"}}],"payload":{"lines":"32,33"}}],"payload":{"lines":"27,28"}},{"content":"为什么我们比原来吃了更多的葡萄糖","children":[{"content":"食品加工的基础流程是，首先去掉纤维，然后再将淀粉和糖进行浓缩。","children":[],"payload":{"lines":"41,42"}},{"content":"在吃甜的东西时，一种被称为多巴胺的化学物质会刺激我们的大脑。吃甜食是获得多巴胺最简单的方式。","children":[],"payload":{"lines":"42,43"}},{"content":"我们一定要明白：伸手去拿糖果不是我们的错。这不是意志力的问题——根本不是。而是因为久远而古老的进化过程告诉我们，吃彩虹糖才是正确的选择。","children":[],"payload":{"lines":"43,44"}},{"content":"物竞天择和自然规律的选择","children":[],"payload":{"lines":"44,46"}}],"payload":{"lines":"39,40"}},{"content":"发现葡萄糖峰值","children":[{"content":"早期研究表明，空腹血糖的最佳范围为72～85 mg/dL。我们应该努力避免餐后葡萄糖水平升高超过30 mg/dL","children":[{"content":"空腹全血血糖单位","children":[],"payload":{"lines":"49,50"}}],"payload":{"lines":"48,50"}},{"content":"吃甜食更有害，甜食中含有食用糖，或者叫蔗糖。蔗糖是一种双糖，由葡萄糖和果糖缩合脱水形成。如果我们吃的是甜食，那么甜食在造成葡萄糖峰值的同时，也会造成看不见的果糖峰值，因此甜食导致的葡萄糖峰值对身体造成的伤害比淀粉类食物导致的葡萄糖峰值更大。","children":[],"payload":{"lines":"50,51"}},{"content":"减低葡萄糖峰值可以预防炎症的产生，降低患炎症类疾病风险","children":[],"payload":{"lines":"51,53"}}],"payload":{"lines":"46,47"}}],"payload":{"lines":"6,7"}},{"content":"出现“葡萄糖”峰值，有哪些危害","children":[{"content":"峰值出现时体内的三大变化","children":[{"content":"自由基和氧化应激","children":[{"content":"当线粒体无法消耗多余的葡萄糖，会释放自由基小分子。当有太多的自由基需要中和时，我们的身体就会处于一种氧化应激的状态","children":[{"content":"氧化应激状态","children":[],"payload":{"lines":"62,64"}}],"payload":{"lines":"61,64"}}],"payload":{"lines":"59,60"}},{"content":"糖化反应与炎症","children":[{"content":"美拉德反应褐变","children":[{"content":"科学家发现，婴儿胸腔的软骨是白色的，而年近90岁的人的软骨会变成褐色。人们称之为美拉德反应。","children":[],"payload":{"lines":"67,68"}},{"content":"当一个葡萄糖分子与另一种类型的分子碰撞时，就会发生褐变。这会引起一种反应——第二个分子会被“糖化”。当一个分子被糖化后，这个分子就被破坏了","children":[],"payload":{"lines":"68,69"}},{"content":"我们体内的葡萄糖越多，发生的糖化反应就越多一旦一个细胞被糖化，那么，这个细胞就被永久损伤了","children":[],"payload":{"lines":"69,70"}}],"payload":{"lines":"66,70"}},{"content":"体内过多的自由基、氧化应激和糖化反应的结合会造成全身性炎症。炎症是一种保护措施，是身体在努力对抗入侵者。慢性炎症会对身体造成伤害。","children":[],"payload":{"lines":"70,72"}}],"payload":{"lines":"64,65"}},{"content":"胰岛素和脂肪堆积","children":[{"content":"胰腺分泌胰岛素，将多余的葡萄糖存储在身体单元中，脱离身体循环，从而降低葡萄糖水平，保护我们不被伤害","children":[],"payload":{"lines":"74,75"}},{"content":"葡萄糖和果糖的存储方式","children":[{"content":"胰岛素会将多余葡萄糖储存到","children":[{"content":"肝脏","children":[{"content":"转化成糖原，相当于植物将葡萄糖转化成淀粉","children":[],"payload":{"lines":"78,79"}}],"payload":{"lines":"77,79"}},{"content":"肌肉","children":[],"payload":{"lines":"79,80"}},{"content":"脂肪","children":[{"content":"果糖不能转化为糖原存储在肝脏或肌肉，转化的唯一方式是转化为脂肪存储","children":[],"payload":{"lines":"81,82"}}],"payload":{"lines":"80,82"}}],"payload":{"lines":"76,82"}},{"content":"转化图","children":[],"payload":{"lines":"82,83"}},{"content":"果糖产生的脂肪会使身体出现不好的情况","children":[{"content":"脂肪在肝脏中积累，导致非酒精性脂肪性肝病发生","children":[],"payload":{"lines":"84,85"}},{"content":"在身体及内脏之间的脂肪细胞被填满→长胖","children":[],"payload":{"lines":"85,86"}},{"content":"脂肪会进入血液，增加患心脏病的风险","children":[{"content":"造成不好的血脂→动脉硬化","children":[{"content":"参考参数","children":[],"payload":{"lines":"88,89"}}],"payload":{"lines":"87,89"}}],"payload":{"lines":"86,89"}}],"payload":{"lines":"83,89"}},{"content":"建议","children":[{"content":"有两种相同热量的食物，择不含果糖的咸香美味食物，而不选择含有果糖的甜食的另一个原因。没有果糖意味着变成脂肪的分子会更少。","children":[],"payload":{"lines":"90,91"}},{"content":"保持血糖平稳，在胰岛素水平较低时燃烧脂肪，葡萄糖峰值出现2小时后","children":[],"payload":{"lines":"91,93"}}],"payload":{"lines":"89,93"}}],"payload":{"lines":"75,93"}}],"payload":{"lines":"72,73"}}],"payload":{"lines":"57,58"}},{"content":"葡萄糖峰值是如何让我们生病的","children":[{"content":"短期影响","children":[{"content":"持续的饥饿感","children":[{"content":"饭后饥饿，葡萄糖峰值低的食物会有更强的饱腹感","children":[],"payload":{"lines":"98,99"}},{"content":"持续饥饿是胰岛素水平较高的表现","children":[],"payload":{"lines":"99,100"}},{"content":"改变","children":[{"content":"通过使我们的血糖曲线平稳化来降低我们的胰岛素水平","children":[],"payload":{"lines":"101,102"}}],"payload":{"lines":"100,102"}}],"payload":{"lines":"97,102"}},{"content":"食欲旺盛","children":[{"content":"当血糖水平稳定时，食欲并不旺盛。但是葡萄糖水平开始下降时，食欲会增加","children":[],"payload":{"lines":"103,104"}}],"payload":{"lines":"102,104"}},{"content":"慢性疲劳","children":[{"content":"太多的葡萄糖会使线粒体停止工作，然后能量生产就会受到影响，会感到疲惫不堪","children":[],"payload":{"lines":"105,106"}}],"payload":{"lines":"104,106"}},{"content":"糟糕的睡眠","children":[],"payload":{"lines":"106,107"}},{"content":"感冒和冠状病毒并发症","children":[{"content":"血糖水平高的人群更容易感染病毒，也更容易出现并发症，并且由感染病毒引发的死亡率是血糖水平正常人群的2倍多。","children":[],"payload":{"lines":"108,109"}}],"payload":{"lines":"107,109"}},{"content":"更棘手的妊娠糖尿病","children":[],"payload":{"lines":"109,110"}},{"content":"潮热和盗汗","children":[],"payload":{"lines":"110,111"}},{"content":"偏头痛","children":[],"payload":{"lines":"111,112"}},{"content":"记忆和认知功能问题","children":[],"payload":{"lines":"112,113"}},{"content":"更难管理的1型糖尿病","children":[{"content":"是一种自身免疫性疾病，胰腺中控制胰岛素分泌的细胞不再工作，导致患者无法分泌胰岛素，因此无法控制血糖水平","children":[],"payload":{"lines":"114,116"}}],"payload":{"lines":"113,116"}}],"payload":{"lines":"95,96"}},{"content":"长期危害","children":[{"content":"痤疮和其他皮肤问题","children":[{"content":"炎症，使血糖曲线平稳化的饮食方式能够明显降低粉刺的发生概率","children":[],"payload":{"lines":"119,120"}}],"payload":{"lines":"118,120"}},{"content":"衰老与关节炎","children":[{"content":"葡萄糖峰值出现得越频繁，衰老速度越快","children":[],"payload":{"lines":"121,122"}},{"content":"保持血糖曲线平稳，辅以锻炼和减少压力控制，才是抗衰老的有效方法","children":[],"payload":{"lines":"122,123"}}],"payload":{"lines":"120,123"}},{"content":"阿尔茨海默病与痴呆","children":[{"content":"慢性炎症几乎是所有慢性退行性疾病的关键诱因。","children":[],"payload":{"lines":"124,125"}}],"payload":{"lines":"123,125"}},{"content":"患癌症的风险加大","children":[{"content":"炎症促使癌细胞繁殖","children":[],"payload":{"lines":"126,127"}}],"payload":{"lines":"125,127"}},{"content":"精神障碍","children":[{"content":"抑郁、情绪低落","children":[],"payload":{"lines":"128,129"}}],"payload":{"lines":"127,129"}},{"content":"肠道问题","children":[{"content":"较高的血糖水平会加重肠漏综合征的症状，从而导致食物过敏或者其他免疫性疾病","children":[],"payload":{"lines":"130,131"}}],"payload":{"lines":"129,131"}},{"content":"心脏病","children":[{"content":"引起心脏病的是一种名为β型低密度脂蛋白的特殊类型的胆固醇","children":[],"payload":{"lines":"132,133"}}],"payload":{"lines":"131,133"}},{"content":"不孕症和多囊卵巢综合征","children":[{"content":"胰岛素水平越高，症状越明显,胰岛素会刺激卵巢分泌更多的睾酮","children":[],"payload":{"lines":"134,135"}}],"payload":{"lines":"133,135"}},{"content":"高血糖和糖尿病","children":[{"content":"糖尿病前期症状","children":[],"payload":{"lines":"136,137"}},{"content":"高血糖：葡萄糖水平超过85mg/dL时，免疫系统会受到抑制","children":[],"payload":{"lines":"137,138"}}],"payload":{"lines":"135,138"}},{"content":"体重增加","children":[{"content":"通过吃葡萄糖就能快速获得能量，过剩就会产生脂肪","children":[],"payload":{"lines":"139,140"}},{"content":"饮食中果糖比重越来越高，果糖的主要来源是蔗糖、果汁等，果糖会转化为脂肪。","children":[],"payload":{"lines":"140,142"}}],"payload":{"lines":"138,142"}}],"payload":{"lines":"116,117"}}],"payload":{"lines":"93,94"}},{"content":"为什么我们会看到不同的葡萄糖峰值","children":[{"content":"个体差异的原因","children":[{"content":"身体对同样的食物作出反应的方式会因人而异","children":[{"content":"同一个人在不同时期对同一种食物的反应不同","children":[],"payload":{"lines":"147,148"}}],"payload":{"lines":"146,148"}},{"content":"遗传差异","children":[{"content":"双胞胎血糖水平和其峰值变化","children":[],"payload":{"lines":"149,151"}}],"payload":{"lines":"148,151"}}],"payload":{"lines":"144,145"}},{"content":"“葡萄糖”峰值的成因","children":[{"content":"消化过程的差异","children":[{"content":"肠道菌群","children":[{"content":"有助于发酵、分解未消化的碳水化合物","children":[],"payload":{"lines":"155,156"}},{"content":"纤维是微生物最喜欢的食物","children":[],"payload":{"lines":"156,157"}}],"payload":{"lines":"154,157"}},{"content":"体内菌群的差异会直接影响我们对葡萄糖的反应","children":[],"payload":{"lines":"157,159"}}],"payload":{"lines":"153,159"}}],"payload":{"lines":"151,152"}},{"content":"生活方式与血糖水平","children":[{"content":"睡眠、压力、运动方式等都影响血糖水平","children":[{"content":"睡眠时间少会导致葡萄糖峰值水平增加","children":[],"payload":{"lines":"162,163"}},{"content":"遗传差异","children":[],"payload":{"lines":"163,164"}},{"content":"血糖上升不明显是因为大量运动","children":[],"payload":{"lines":"164,166"}}],"payload":{"lines":"161,166"}}],"payload":{"lines":"159,160"}},{"content":"饮食对血糖水平的影响","children":[{"content":"吃的东西的差异会影响葡萄糖峰值","children":[{"content":"食物的纤维含量","children":[{"content":"在含糖量相同的情况下，含纤维量多的食物所产生的葡萄糖峰值会更低","children":[],"payload":{"lines":"170,171"}}],"payload":{"lines":"169,171"}},{"content":"食物的脂肪含量","children":[{"content":"脂肪会影响胃排空速度，胃排空速度减慢，葡萄糖释放到肠道的速度会减慢","children":[],"payload":{"lines":"172,173"}}],"payload":{"lines":"171,173"}},{"content":"食物的酸性","children":[{"content":"吃酸的东西会降低餐后葡萄糖峰值","children":[],"payload":{"lines":"174,175"}}],"payload":{"lines":"173,175"}},{"content":"食物中的抗性淀粉","children":[{"content":"进食的食物中抗性淀粉含量越高，葡萄糖水平峰值越低","children":[],"payload":{"lines":"176,177"}}],"payload":{"lines":"175,177"}},{"content":"运动和饮食结构对比","children":[],"payload":{"lines":"177,178"}},{"content":"其他吃的东西","children":[],"payload":{"lines":"178,180"}}],"payload":{"lines":"168,180"}}],"payload":{"lines":"166,167"}}],"payload":{"lines":"142,143"}},{"content":"小结","children":[{"content":"别让任何人告诉你什么食物是好的、什么食物是不好的","children":[],"payload":{"lines":"182,183"}},{"content":"在进食过程中，观察自己葡萄糖峰值变化","children":[{"content":"身体状况不佳时的应对","children":[{"content":"在我们压力大、睡眠不足、缺乏锻炼或者吃高糖食物后，我们的葡萄糖水平会上升。长期积累会导致慢性疾病。","children":[],"payload":{"lines":"185,186"}}],"payload":{"lines":"184,186"}},{"content":"建议","children":[{"content":"采用较好的生活方式保持健康（通过锻炼、充足睡眠、冥想和较低压力水平）","children":[],"payload":{"lines":"187,189"}}],"payload":{"lines":"186,189"}}],"payload":{"lines":"183,189"}}],"payload":{"lines":"180,181"}}],"payload":{"lines":"55,56"}},{"content":"如何避免葡萄糖峰值出现","children":[{"content":"一日三餐，顺序有讲究","children":[{"content":"重要性","children":[{"content":"进餐顺序会直接影响我们身体对葡萄糖的反应。吃饭顺序的变化能使餐后血糖峰值降低75%。","children":[],"payload":{"lines":"196,197"}}],"payload":{"lines":"195,197"}},{"content":"影响餐后血糖的原因","children":[{"content":"纤维、蛋白质和脂肪会使胃排空速度变慢，葡萄糖释放速度减慢，餐后血糖峰值降低","children":[],"payload":{"lines":"198,199"}}],"payload":{"lines":"197,199"}},{"content":"怎样进餐更健康","children":[{"content":"先吃纤维含量高的蔬菜，再吃蛋白质、脂肪类的食物，最后吃淀粉类食物和糖类食物。","children":[],"payload":{"lines":"200,201"}}],"payload":{"lines":"199,201"}},{"content":"提升整体饮食质量","children":[{"content":"通过先吃纤维、蛋白质和脂肪类食物，可以提升整体饮食质量，使我们更容易控制饮食中的卡路里摄入量。","children":[],"payload":{"lines":"202,204"}}],"payload":{"lines":"201,204"}}],"payload":{"lines":"193,194"}},{"content":"吃含淀粉的食物前，先吃一盘沙拉","children":[{"content":"影响","children":[{"content":"吃沙拉后，纤维会在胃中形成一道天然屏障，阻止淀粉和糖类的快速吸收，从而减少葡萄糖峰值出现的概率。","children":[],"payload":{"lines":"207,208"}}],"payload":{"lines":"206,208"}},{"content":"做法","children":[{"content":"吃含淀粉的食物前，先吃一盘含有丰富纤维的沙拉，可以显著降低餐后血糖峰值。","children":[],"payload":{"lines":"209,211"}}],"payload":{"lines":"208,211"}}],"payload":{"lines":"204,205"}},{"content":"喝苹果醋，抑制葡萄糖上升","children":[{"content":"作用","children":[{"content":"苹果醋中的乙酸可以抑制淀粉分解酶的活性，减少淀粉的分解和吸收，从而降低葡萄糖峰值。","children":[],"payload":{"lines":"214,215"}}],"payload":{"lines":"213,215"}},{"content":"方法","children":[{"content":"在进食高淀粉食物前，喝一小杯稀释的苹果醋（1-2汤匙苹果醋兑1杯水）可以帮助控制餐后血糖水平。","children":[],"payload":{"lines":"216,218"}}],"payload":{"lines":"215,218"}}],"payload":{"lines":"211,212"}},{"content":"散步十分钟，减缓葡萄糖吸收","children":[{"content":"益处","children":[{"content":"进餐后散步可以促进胰岛素的作用，加速葡萄糖的利用和代谢，从而降低餐后血糖峰值。","children":[],"payload":{"lines":"221,222"}}],"payload":{"lines":"220,222"}},{"content":"建议","children":[{"content":"在进餐后散步十分钟，可以有效减少葡萄糖峰值的出现。","children":[],"payload":{"lines":"223,225"}}],"payload":{"lines":"222,225"}}],"payload":{"lines":"218,219"}},{"content":"优质睡眠，保持血糖稳定","children":[{"content":"睡眠与血糖的关系","children":[{"content":"优质睡眠可以调节胰岛素分泌，保持血糖稳定，减少葡萄糖峰值的出现。","children":[],"payload":{"lines":"228,229"}}],"payload":{"lines":"227,229"}},{"content":"睡眠建议","children":[{"content":"保持规律的作息时间，确保每天有充足的睡眠，有助于控制血糖水平。","children":[],"payload":{"lines":"230,232"}}],"payload":{"lines":"229,232"}}],"payload":{"lines":"225,226"}}],"payload":{"lines":"191,192"}},{"content":"控糖生活的其他建议","children":[{"content":"多吃高纤维食物","children":[{"content":"纤维的好处","children":[{"content":"高纤维食物可以减缓葡萄糖的吸收，降低餐后血糖峰值。","children":[],"payload":{"lines":"239,240"}}],"payload":{"lines":"238,240"}},{"content":"食物建议","children":[{"content":"多吃蔬菜、水果、全谷物和豆类等高纤维食物。","children":[],"payload":{"lines":"241,243"}}],"payload":{"lines":"240,243"}}],"payload":{"lines":"236,237"}},{"content":"饮食中加入适量的蛋白质和脂肪","children":[{"content":"蛋白质和脂肪的作用","children":[{"content":"蛋白质和脂肪可以延缓胃排空，减缓葡萄糖的吸收，从而降低餐后血糖峰值。","children":[],"payload":{"lines":"246,247"}}],"payload":{"lines":"245,247"}},{"content":"食物建议","children":[{"content":"在每餐中加入适量的蛋白质和健康脂肪，如鱼类、鸡肉、牛油果、坚果等。","children":[],"payload":{"lines":"248,250"}}],"payload":{"lines":"247,250"}}],"payload":{"lines":"243,244"}},{"content":"控制甜食和高糖饮料的摄入","children":[{"content":"甜食和高糖饮料的危害","children":[{"content":"甜食和高糖饮料含有大量的葡萄糖和果糖，会迅速升高血糖水平，导致葡萄糖峰值的出现。","children":[],"payload":{"lines":"253,254"}}],"payload":{"lines":"252,254"}},{"content":"建议","children":[{"content":"尽量减少甜食和高糖饮料的摄入，选择健康的替代品，如水、无糖茶和低糖水果。","children":[],"payload":{"lines":"255,257"}}],"payload":{"lines":"254,257"}}],"payload":{"lines":"250,251"}},{"content":"学会阅读食品标签","children":[{"content":"了解食品成分","children":[{"content":"学会阅读食品标签，可以帮助我们了解食品的成分和糖含量，避免摄入过多的糖分。","children":[],"payload":{"lines":"260,261"}}],"payload":{"lines":"259,261"}},{"content":"建议","children":[{"content":"选择低糖、低碳水化合物、高纤维的食品，帮助控制血糖水平。","children":[],"payload":{"lines":"262,264"}}],"payload":{"lines":"261,264"}}],"payload":{"lines":"257,258"}},{"content":"养成规律的运动习惯","children":[{"content":"运动的好处","children":[{"content":"规律的运动可以促进胰岛素的作用，帮助控制血糖水平。","children":[],"payload":{"lines":"267,268"}}],"payload":{"lines":"266,268"}},{"content":"运动建议","children":[{"content":"每周进行至少150分钟的中等强度有氧运动，如快走、游泳、骑自行车等，有助于保持血糖稳定。","children":[],"payload":{"lines":"269,271"}}],"payload":{"lines":"268,271"}}],"payload":{"lines":"264,265"}},{"content":"管理压力","children":[{"content":"压力与血糖的关系","children":[{"content":"高压力水平会导致血糖水平升高，增加葡萄糖峰值的出现。","children":[],"payload":{"lines":"274,275"}}],"payload":{"lines":"273,275"}},{"content":"压力管理建议","children":[{"content":"通过冥想、深呼吸、瑜伽等方法，学会管理压力，有助于控制血糖水平。","children":[],"payload":{"lines":"276,278"}}],"payload":{"lines":"275,278"}}],"payload":{"lines":"271,272"}}],"payload":{"lines":"234,235"}},{"content":"总结","children":[{"content":"坚持平衡饮食","children":[],"payload":{"lines":"284,285"}},{"content":"规律运动","children":[],"payload":{"lines":"285,286"}},{"content":"保持良好的睡眠和心理状态","children":[],"payload":{"lines":"286,287"}},{"content":"学会管理压力","children":[],"payload":{"lines":"287,289"}}],"payload":{"lines":"280,281"}}]},{})</script>
+</body>
+</html>
+<ul>
+<li>其他笔记：
+<ul>
+<li><a href="https://scottyeung.top/2024/control-sugar/">《控糖革命》读书笔记</a> @YeungYeah 的乱写地  <mark>餐前喝醋汁，餐后多运动</mark></li>
+<li><a href="https://book.douban.com/annotation/130938891/">吃得多反而能减重降糖</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/694702241">读书笔记68《控糖革命》</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E6%A1%B6%E5%B7%9D%E8%B7%9F%E8%B8%AA%E7%8B%82%E6%9D%80%E4%BA%BA%E4%BA%8B%E4%BB%B6">📚桶川跟踪狂杀人事件</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A1%88%E5%8F%91">第一章 案发</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%81%97%E8%A8%80">第二章 遗言</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E9%80%AE%E6%8D%95">第五章 逮捕</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%91%A9%E6%93%A6">第七章 摩擦</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#paperreading">📗PaperReading：</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/Alma Mater 487/">https://ezraknotlab.github.io/post/Alma Mater 487/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/Alma Mater 487/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/Alma Mater 487/&sharesource=qzone&title=Alma Mater 487&pics=https://ezraknotlab.github.io//images/avatar.png?v=1749713006629&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;桶川跟踪狂杀人事件&lt;/li&gt;
+&lt;li&gt;清水洁&lt;/li&gt;
+&lt;li&gt;I love when you count me out&lt;/li&gt;
+&lt;li&gt;YOU REALLY NOT ON SHIT~&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/Alma Mater 487/&sharesource=weibo&title=Alma Mater 487 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;桶川跟踪狂杀人事件&lt;/li&gt;
+&lt;li&gt;清水洁&lt;/li&gt;
+&lt;li&gt;I love when you count me out&lt;/li&gt;
+&lt;li&gt;YOU REALLY NOT ON SHIT~&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1749713006629 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/alma-mater-488/">
+                                                                                            Alma Mater 488
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-302/">
+                                                                                                    EKL 302
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1749713006629);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

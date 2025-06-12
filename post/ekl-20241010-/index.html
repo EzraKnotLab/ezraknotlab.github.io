@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1749713006629" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1749713006629" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20241010 - NobelPrize
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-10-10</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">6.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1331</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://analyticsindiamag.com/wp-content/uploads/2024/10/Screenshot-2024-10-09-at-6.41.17%E2%80%AFPM.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>The Nobel Prize in Physics 2024
+<ul>
+<li>used physics to find patterns in information   John Hopfield   Geoffrey Hinton</li>
+</ul>
+</li>
+<li>The Nobel Prize in Chemistry 2024
+<ul>
+<li>David Baker“for computational protein design”</li>
+<li>Demis Hassabis “for protein structure prediction”</li>
+<li>John Jumper“for protein structure prediction”</li>
+</ul>
+</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#fighters">👑 Fighters</a></li>
+<li><a href="#nobelprize">NobelPrize</a></li>
+<li><a href="#ai-%E7%9B%B8%E5%85%B3">AI 相关</a></li>
+<li><a href="#dear-researchers-send-us-your-lab-hacks">Dear researchers: send us your lab hacks</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/UE5RMUdrVHVmVzE2cjljQ201SlZ4NXdwa1U1ZmJ3Sm1PenF3aURFVkc1eC9oYnZ1dWlqSXhtbTBmRjQ2QlpEL0RVQVZSM3BuN0ttb0NPK0l1SzNkeXB2akRYVWJyWUFpTE9pNEFzaVlsMFU9/Wiz_Khalifa_Empire_Of_The_Sun_-_The_Thrill_(Hydr0.org).mp3"></audio></p>
+<p><mark>Wiz Khalifa, Empire Of The Sun<br>
+The Thrill</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">[Wiz Khalifa:]
+Searching for the thrill of it, thrill of it
+Say that it's love, but to me it's looking counterfeit
+I get done with one, and move right on to another bitch
+Yeah, college educated, she graduated
+Any bill she can't front, her parents paid it
+The show was far, you the only one with a car
+And your girlfriends, but being that she's a big fan, of course she made it
+Most girls wanna hide the fact that the thrill, they chase it
+But you, just wanna get drunk tonight and fuck someone famous
+So I just name a time and a place and your game for it
+Value player, hotel room, meet you there
+
+[Empire of the Sun:]
+Walking on a dream
+How can I explain
+Talking to myself
+(Just travelin' the world)
+Will I see again
+(Tryin' different drugs and girls)
+
+[Empire of the Sun:]
+We are always running for the thrill of it, thrill of it
+Always pushing up the hill searching for the thrill of it
+On and on and on we are calling out and out again
+Never looking down, I'm just in awe of what's in front of me
+
+[Wiz Khalifa:]
+And I'm addicted to champagne
+Fuck the room, we buy the whole wing
+Bitches I Taylor Gang that
+They just wanna know where the planes at
+
+(Take the little one outta there
+Or like, just turn it down
+And then I'm um probably just gonna go back smoke another one in an hour
+Just get real airy, fuckin' dreamy and shit)
+
+[Wiz Khalifa:]
+Wake up drunk, go to sleep fucked up
+We both amazed at what we just done
+Mixing drinks, knowing we'll regret this
+Ain't been asleep yet, room service bringing us breakfast
+All this money, darling, what else is left to do
+But smoke and enjoy my presidential view
+Got a swimming pool in my living room
+On stage, interviews, tons of sour, let's consume
+
+[Empire of the Sun:]
+We are always running for the thrill of it, thrill of it
+Always pushing up the hill searching for the thrill of it
+On and on and on we are calling out and out again
+Never looking down, I'm just in awe of what's in front of me
+
+[Wiz Khalifa:]
+And I'm addicted to champagne
+Fuck the room, we buy the hallway
+Bitches I Taylor Gang that
+They just wanna know where the planes at
+
+And I'm addicted to champagne
+Fuck the room, we buy the hallway
+Bitches I Taylor Gang that
+They just wanna know where the planes at
+
+(What's this?
+Burn after rollin?
+Yeah, that's what it is
+Until I drop the next one
+It's just that)
+
+(Catch me I'm falling down
+Catch me I'm falling down)
+
+[Empire of the Sun:]
+Don't Stop!…
+Just keep going on
+I'm your!…
+Shoulder to lean upon
+So come on!…
+And deliver from inside
+All we got is tonight
+That is right, till first light!
+
+[Wiz Khalifa:]
+(I'm stoned
+This is what, mix tape number 6? 7?
+I don't know, but um, good weeds still in the building
+Your bitch still hittin me on whatever I use on the computer these days
+Everything's going how it's supposed to be
+Yes, Taylor Gang over everything...)
+
+
+</code></pre>
+</details>
+<hr>
+<h1 id="fighters">👑 Fighters</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>攻打敌方城池是刻在人类的DNA里的   这样的体育赛事简单有效，每周的足球比赛大家就是攻城池。</li>
+</ul>
+<h1 id="nobelprize">NobelPrize</h1>
+<p><a href="#toc">↩️</a><br>
+Maybe I am a physicist?  在诺物理奖颁出后，有ML的工作者在X上这样调侃道。很多AI ML方向的人也感叹，原来我一直都在研究物理。前几天还在思考，最近一两年确实AI有些革变，但是又发现没有诺贝尔奖这种级别的，比图灵更广泛、知名度高点的奖项，诺贝尔奖各项似乎是先生生前决定好的，但是瑞典皇家学会也可以新建立专属于AI领域的奖项，毕竟在今天这个学科已经成熟到不能忽视，也不能用其他学科来涵盖，引领与未来接轨。</p>
+<iframe src="http://news.sciencenet.cn/htmlnews/2024/10/531174.shtm" width="750" height="800"></iframe>
+<p>下午五点揭晓化学奖，预测有可能的有机：卡宾，不对称催化，离子液体应该不会，无机：多相催化，分析： DNA相关 测序（可能性小），生化：RNA 抗氧化自由基（应该不可能），物化：分子电子学？，高分子：自由基聚合（整个都不太可能），材料：高温超导，MOF，能源：DSSB 钙钛矿太阳能电池（较为可能），理论： AIMD。  综上，MOF&gt;钙钛矿&gt;高温超导&gt;AIMD&gt;不对称催化&gt;卡宾……  如果是其他  还挺意外的，但这里面谁得都感觉水平还是不太足，相较之前来说，MOF总感觉有待应用拓展，钙钛矿也一样，高温超导有意义，但是这条路上已经发过很多，AIMD很伟大，但是似乎有点小众？后面都不太了解，感觉会意义差点味道。</p>
+<p><a href="https://cn.chem-station.com/%e5%8c%96%e5%ad%a6%e6%9d%82%e8%ae%b0/2024/10/%e5%8c%96%e5%ad%a6%e7%a9%ba%e9%97%b4%e8%af%ba%e8%b4%9d%e5%b0%94%e5%8c%96%e5%ad%a6%e5%a5%96%e5%be%97%e4%b8%bb%e9%a2%84%e6%b5%8b%e3%80%902024%e5%b9%b4%e5%ba%a6%e3%80%91.html">OTHER PREDTS</a></p>
+<p>Nobel Prize in Physiology or Medicine: Biology<br>
+Nobel Prize in Chemistry: Biology<br>
+Nobel Prize in Physics: Sounds like Biology</p>
+<iframe src="https://cn.chem-station.com/%e5%8c%96%e5%ad%a6%e6%9d%82%e8%ae%b0/2024/10/%e8%af%ba%e8%b4%9d%e5%b0%94%e5%8c%96%e5%ad%a6%e5%a5%96%e3%80%902024%e5%b9%b4%e5%ba%a6%e3%80%91.html" width="750" height="800"></iframe>
+<hr>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">一图了解 AlphaFold2 原理？汉化版来了！<br><br>诺贝尔奖官方给出了一张科普 AlphaFold2 原理的图，我也给大家做好了汉化和中文排版，方便大家了解！<br><br>另外，别忘了，早在上半年的 5 月 8 号，更更更强的 AlphaFold 3 已经问世了，详见：<a href="https://t.co/pt9mpX3izJ">https://t.co/pt9mpX3izJ</a> <a href="https://t.co/RQcJ9qvo01">https://t.co/RQcJ9qvo01</a> <a href="https://t.co/C57mifakP7">pic.twitter.com/C57mifakP7</a></p>&mdash; -Zho- (@ZHO_ZHO_ZHO) <a href="https://twitter.com/ZHO_ZHO_ZHO/status/1843991401928986922?ref_src=twsrc%5Etfw">October 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="ai-相关">AI 相关</h1>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">人工智能发展史的一些关键里程碑：<br><br>1943年：沃伦·麦卡洛克（Warren McCulloch）和沃尔特·皮茨（Walter Pitts）提出了人工神经元模型，这是神经网络研究的基础。…</p>&mdash; 向阳乔木 (@vista8) <a href="https://twitter.com/vista8/status/1843898925364936812?ref_src=twsrc%5Etfw">October 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="dear-researchers-send-us-your-lab-hacks">Dear researchers: send us your lab hacks</h1>
+<p><a href="#toc">↩️</a></p>
+<p><a href="https://www.nature.com/articles/d41586-024-03217-4">link</a></p>
+<hr>
+<p>读书环境需要时间和物质条件来改善，有时候周末不得不背着餐布和便携椅去遥远的树下 晒太阳看书 缓眼睛</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#fighters">👑 Fighters</a></li>
+<li><a href="#nobelprize">NobelPrize</a></li>
+<li><a href="#ai-%E7%9B%B8%E5%85%B3">AI 相关</a></li>
+<li><a href="#dear-researchers-send-us-your-lab-hacks">Dear researchers: send us your lab hacks</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20241010-/">https://ezraknotlab.github.io/post/ekl-20241010-/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20241010-/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20241010-/&sharesource=qzone&title=EKL 20241010 - NobelPrize&pics=https://ezraknotlab.github.io//images/avatar.png?v=1749713006629&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The Nobel Prize in Physics 2024
+&lt;ul&gt;
+&lt;li&gt;used physics to find patterns in information   John Hopfield   Geoffrey Hinton&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The Nobel Prize in Chemistry 2024
+&lt;ul&gt;
+&lt;li&gt;David Baker“for computational protein design”&lt;/li&gt;
+&lt;li&gt;Demis Hassabis “for protein structure prediction”&lt;/li&gt;
+&lt;li&gt;John Jumper“for protein structure prediction”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20241010-/&sharesource=weibo&title=EKL 20241010 - NobelPrize + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The Nobel Prize in Physics 2024
+&lt;ul&gt;
+&lt;li&gt;used physics to find patterns in information   John Hopfield   Geoffrey Hinton&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The Nobel Prize in Chemistry 2024
+&lt;ul&gt;
+&lt;li&gt;David Baker“for computational protein design”&lt;/li&gt;
+&lt;li&gt;Demis Hassabis “for protein structure prediction”&lt;/li&gt;
+&lt;li&gt;John Jumper“for protein structure prediction”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1749713006629 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241013/">
+                                                                                            EKL TESLA-We Robot &amp; Gooddays
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-307-you-shi-yi-nian-yan-hu-cheng/">
+                                                                                                    EKL 307 又是一年盐湖城
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1749713006629);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

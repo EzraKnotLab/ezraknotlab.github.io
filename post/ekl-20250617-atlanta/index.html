@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250617 Atlanta
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-06-17</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">14.4
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">2764</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/06/17/ccad773ea20eee11.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>TAA 2 RM</li>
+<li>UFC Fight Night: Usman vs Buckley</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#taa">TAA</a></li>
+<li><a href="#ufc-fight-night-usman-vs-buckley">UFC Fight Night: Usman vs Buckley</a>
+<ul>
+<li><a href="#ufc-317">UFC 317</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#summer-fike">Summer Fike</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://pendujatt.com.se/load/59112052/1335407/Time%20To%20Say%20Goodbye.mp3"></audio></p>
+<p><mark>Time To Say Goodbye 	Andrea Bocelli, Matteo Bocelli, Hans Zimmer</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+
+
+Sarah:
+Quando sono sola
+sogno all'orizzonte
+e mancan le parole,
+si lo so che non c'è luce
+in una stanza quando manca il sole,
+se non ci sei tu con me, con me.
+Su le finestre
+mostra a tutti il mio cuore
+che hai accesso,
+chiudi dentro me
+la luce che
+hai incontrato per strada.
+ 
+Time to say goodbye.     --     Con te partirò.
+Paesi che non ho mai
+veduto e vissuto con te,
+adesso sì li vivrò.
+Con te partirò
+su navi per mari
+che, io lo so,
+no, no, non esistono più,
+it's time to say goodbye.     --     con te io li vivrò.
+ 
+Andrea:
+Quando sei lontana
+sogno all'orizzonte
+e mancan le parole,
+e io si lo so
+che sei con me, con me,
+tu mia luna tu sei qui con me,
+mio sole tu sei qui con me,
+con me, con me, con me.
+ 
+Time to say goodbye.     --     Con te partirò.
+Paesi che non ho mai
+veduto e vissuto con te,
+adesso sì li vivrò.
+Con te partirò
+su navi per mari
+che, io lo so,
+no, no, non esistono più,
+ 
+Both:
+con te io li rivivrò.
+Con te partirò
+su navi per mari
+che, io lo so,
+no, no, non esistono più,
+con te io li rivivrò.
+Con te partirò
+ 
+Io con te.
+
+
+
+When I'm alone I dream of the horizon and words fail me.
+There is no light in a room where there is no sun
+and there is no sun if you're not here with me, with me.
+From every window unfurls my heart the heart that you have won.
+Into me you've poured the light,
+the light that you found by the side of the road.
+
+Time to say goodbye.
+Places that I've never seen or experienced with you.
+Now I shall, I'll sail with you upon ships across the seas,
+seas that exist no more,
+it's time to say goodbye.
+
+Andrea Bocelli
+When you're far away I dream of the horizon and words fail me.
+And of course I know that you're with me, with me.
+You, my moon, you are with me.
+My sun, you're here with me with me, with me, with me.
+
+Time to say goodbye.
+Places that I've never seen or experienced with you.
+Now I shall, I'll sail with you upon ships across the seas,
+seas that exist no more,
+
+Both
+I'll revive them with you.
+I'll go with you upon ships across the seas,
+seas that exist no more,
+I'll revive them with you.
+I'll go with you.
+
+You and me.
+
+
+
+
+</code></pre>
+</details>
+<iframe src="https://embed.mymixtapez.com/player/song/1239343" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+<hr>
+<p>&quot;It's Up&quot;<br>
+(feat. 21 Savage, Young Thug)</p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+
+[Drake:]
+I love all my friends
+Thinkin' about this life I provide for them
+This world has some real things dividin' them
+My right hand, he's Muslim, I'll die for him
+My road manager is drunk as hell at 5 p.m.
+I get knocked down, they help me rise again
+Ref 1 leave the game, I'm sayin' bye with him
+Drake, turn this shit the fuck up
+
+[Young Thug:]
+I don't care about my opps (I don't care about my opps)
+I don't care about my opps (I don't care about no opps)
+I don't care about my opps (I don't care about no opp)
+Yeah, take a pic (Take a pic), Richard Millie, no stopwatch (Let's go, uh-uh)
+Take a pic of your lips gobblin' on my cock (Let's go, uh-uh, shit)
+I don't care 'bout no motherfuckin' watch, nah (I don't care 'bout no, uh, nah)
+I don't care 'bout no high-end thot (Nah, nah, nah)
+Bitch, you just a (Bitch, you just a), bystander
+Christian Dior pajama, Gucci up under, body number
+
+[Drake:]
+I just picked up somethin' from Mercedes, it's a one of one
+Black exterior the one that I want, red inside like that time of the month
+Blood money, that's how I got this, blood money, that's how I got this
+We can vacation wherever we want 'cause I don't care where none of my opps is
+
+I told the promoter tonight, put me across from they section
+We don't play patty cake, they just be lettin' us in, we don't do the inspection
+I can't sleep at night with Thug at Cobb County Corrections
+I think he did enough reflectin', I think my brother learned his lesson
+It's all just a part of the game, we all gotta roll with protection
+And just like the motherfuckin' judge, the hammers come out for objections
+Nigga, what's up? A hundred and forty-three Rolexes in my collection
+I put the horns on the front of the 'Bach, you know Drizzy gon' roll like a Texan
+She textin' she love me, the Mexicans love me, I'm out here just makin' connections
+And Junior Boy rollin' like Cinco de Mayo, he may hold a fifth in possession
+The way that I'm used to playin' the politics, swear I could win the election
+You niggas is overprotective with hoes, I'm already over the next one
+I'm at 48 with Ty and the vino, we drunk, it's not even a question
+These niggas tryna send a message, well, leave that shit down at reception, ayy
+
+[Young Thug:]
+I don't care about my opps (I don't care about my opps)
+I don't care about my opps (I don't care about no opps)
+I don't care about my opps (I don't care about no opp)
+Yeah, take a pic (Take a pic), Richard Millie, no stopwatch (Let's go, uh-uh)
+Take a pic of your lips gobblin' on my cock (Let's go, uh-uh, shit)
+I don't care 'bout no motherfuckin' watch, nah (I don't care 'bout no, uh, nah)
+I don't care 'bout no high-end thot (Nah, nah, nah)
+Bitch, you just a (Bitch, you just a), bystander
+Christian Dior pajama, Gucci up under, body number (Woo)
+
+[Drake:]
+I just picked up somethin' from Mercedes, it's a one of one
+Black exterior the one that I want, red inside like that time of the month
+Blood money, that's how I got this, blood money, that's how I got this
+We can vacation wherever we want 'cause I don't care where none of my opps is
+
+[21 Savage:]
+You hang around too many niggas that's pussy, you gotta be pussy
+If it's on sight, up your gun on me, all that muggin' and lookin'
+Yeah, niggas doin' all that woofin', pussy
+4L bomb shit, walk inside the store, that switch in my armpit
+I go wherever, I keep a Beretta, and niggas ain't on shit
+My opps together, but I don't discriminate, I got 'em both hit
+Them niggas be lyin', they niggas be dyin' and they don't never post shit
+No rap cap come out my mouth, made a couple songs, think he hot now
+Hit his ass up, he think he Pac now, broad daylight, he got shot down
+Chopper bullets make his ass hop 'round, bloodshed, ain't no way to stop now
+Goin' live'll get your ass popped now, seem like everybody want an opp now
+Leavin' him flatline, Slaughter Gang, knife in the back, I'm on that time
+Turn him to a hashtag, make him a &quot;long live,&quot; niggas ain't my kind
+Tried and true, I'ma pop mine, I was seventeen with a Glock 9
+I wanna see red, stop sign, I wanna see red, Clifford
+She keep tryna rip off my zipper, I moved to LA, I'm a Clipper
+He think with his dick, he a tricker, get your bitch out the car 'fore we blick her
+We put an AirTag on his car, he in Miami by Brickell
+Say hello to the four-nickel, I got a magazine, who got an issue?
+Givin' out smoke, pussy, my trigger finger broke
+Don't try me like no ho, I always let it blow
+I pull up, fah, score, nigga, we caught him by that store
+How much you wanna bet they ass won't stand right there no more?
+I'm Slaughter Gang OVO
+A half a million a show, but I still walk in with that pole, idiot
+
+[Drake:]
+Ayy, I'm feelin' like 2 Chainz, T.R.U.
+Bitch, I'm 21, bitch, I'm not 22
+Knockin' off the namebrand niggas in your crew
+Heard you miss your dogs, now it's long live who?
+Idiot
+Yeah
+
+</code></pre>
+</details>
+<p>I know you desperate for a change at the pen glide<br>
+But the only real change come from inside</p>
+<h1 id="taa">TAA</h1>
+<p><a href="#toc">↩️</a><br>
+TAA成功转会Real Madrid CF，皇马一般球星转会来的新闻发布会都非常经典，最后的发言必是Hala Madrid，从CR7，到Kylian Mbappé，但是这次特别的是，一个操着利物浦口音的English，几乎全程讲着非常流利的西班牙语来发言，十分流畅，可能辞藻不是非常华丽，能听得出来字句比较简单，但确实一丝都没有卡顿。因此这段视频立马就成trend，就连Duolingo又立马出来打广告了，还有一些meme</p>
+<ul>
+<li>Trent Alexander-Arnold speaking in fluent Spanish at his Real Madrid unveiling</li>
+<li>继续学习~lol  几乎可以下载下来当作学习材料。因为之前看过中文版和西语版的马尔克斯的《我们八月见》，接来下准备一点点啃略萨的封笔之作《献给你，我最后的沉默》<a href="https://www.163.com/dy/article/JT6RRF9J0514BQ68.html">Intro:秘鲁著名作家略萨走完“小说般的人生” </a></li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">thanks for your 1000 day spanish streak trent! <a href="https://t.co/57X0hLEVkR">https://t.co/57X0hLEVkR</a></p>&mdash; Duolingo (@duolingo) <a href="https://twitter.com/duolingo/status/1933186162765734345?ref_src=twsrc%5Etfw">June 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Money can change anything 💔💔 <a href="https://t.co/1ZGZemgwQX">https://t.co/1ZGZemgwQX</a> <a href="https://t.co/gtZj2lrFp7">pic.twitter.com/gtZj2lrFp7</a></p>&mdash; Wessi 💎 (@_Wessinho) <a href="https://twitter.com/_Wessinho/status/1933136028464042126?ref_src=twsrc%5Etfw">June 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Mum, Trent is speaking fluent Spanish!&quot; <a href="https://t.co/pwnMJxLk6H">pic.twitter.com/pwnMJxLk6H</a></p>&mdash; Troll Football (@TrollFootball) <a href="https://twitter.com/TrollFootball/status/1933138571009159256?ref_src=twsrc%5Etfw">June 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Trent Alexander-Arnold speaking in fluent Spanish at his Real Madrid unveiling 🇪🇸 <a href="https://t.co/vgxJZU7c3J">pic.twitter.com/vgxJZU7c3J</a></p>&mdash; Sky Sports News (@SkySportsNews) <a href="https://twitter.com/SkySportsNews/status/1933119156376703079?ref_src=twsrc%5Etfw">June 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Cristiano&quot; &quot;Best Player itw&quot; <a href="https://t.co/Efhtw5zmwh">https://t.co/Efhtw5zmwh</a> <a href="https://t.co/EWDq3ixaea">pic.twitter.com/EWDq3ixaea</a></p>&mdash; Wessi 💎 (@_Wessinho) <a href="https://twitter.com/_Wessinho/status/1933160364826382558?ref_src=twsrc%5Etfw">June 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="ufc-fight-night-usman-vs-buckley">UFC Fight Night: Usman vs Buckley</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Don't miss a moment of UFC Fight Night: Usman vs Buckley, live from State Farm Arena in Atlanta, Georgia on June 14, 2025.</li>
+<li>时代变了 像是某种成长起来陪伴你的动漫动画要终结了 最后的阶段  全是感动或者说失去了才会珍惜</li>
+<li>甚至都有了chant  LET's GO USMAN, 每次shot a takedown都会有欢呼</li>
+<li>以前usman卫冕的时候 全是嘘声 任何引入地面的fight都会被嘘声覆盖 被认为boring  audience总是chant against him</li>
+<li>usman也很情绪化 强憋着嘴角 不漏出泪水 惠特曼和亨利胡夫都在边角 到目前为止 都像是和leon的比赛走向，前四回合都是完全地dominant</li>
+<li>buckley还是挺快的</li>
+<li>站着，冰冷汗水从膝盖后面留下</li>
+</ul>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://pendujatt.com.se/load/14425992/1882032/Time%20To%20Say%20Goodbye.mp3"></audio></p>
+<p><mark>Time To Say Goodbye 	Sarah Brightman, Andrea Bocelli</mark></p>
+<ul>
+<li>所有这样的周日都适合以time to say goodbye来结尾</li>
+<li>感恩</li>
+<li>可能是这歌悲伤和欢快都会应景吧，悠长的音调 唯美的男女音</li>
+<li>Antlanta in the books UPS and downs part of the journey</li>
+<li>嘟桑的first win since 2021，时间经不住回头看，这么久了。USMAN的体型在打MASVIDAL的时候，前胸后背几乎是隆起的肌肉，粗壮的大腿，细细的小腿，身形像是2015年左右时候的LeBron一样。</li>
+</ul>
+<h2 id="ufc-317">UFC 317</h2>
+<p>晚上睡前 看了Ilia Topuria vs Max Holloway | FULL FIGHT，Ilia是那种可以前期抗住你的任何普通攻击，耐心沉着，但是只要他在后期抓到机会，就会像狙击手一样，只需要扣动一次扳机，就可以终结对手。</p>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>2025年6月14日：梦到还有两个妹妹  一个小茹  一个ciro  半梦半醒的状态死活想不起来</p>
+</li>
+<li>
+<p>可能叫ciro吧  或者coco 实在想不起来  太可爱</p>
+</li>
+<li>
+<p>2025年6月14日20:31:18，前几天经常睡到早上六点左右就自然醒了，有部分原因是有光照进来，或者有鸟叫，后面我每次睡前都会全部关好窗子和窗帘，最近气温上升，我又为了空气流通凉快些，索性打开窗帘和窗户。今天凌晨到三四点，狂风暴雨，天上像是一番番戏轮着上演，还时不时打雷，吵得我半梦半醒，一方面也懒得去关窗，就自然这样享受着，任它传来声响。人类就是喜欢外面风雨交加，而肉体置身于住所内，感受着安逸，也是一种lofi vibe. 更有意思的是，就这样半梦半醒或者断断续续地做梦，我梦到还有两个妹妹，一个小茹，一个ciro（可能是吧，半梦半醒的状态死活想不起来，扣不到梦里记忆的那一环），四五六岁的小朋友也太可爱了，还没上学，所以没认识什么朋友，也就是偶尔和邻居家小朋友玩一玩，但她们主要的世界里面还是只有我，我们一起吃饭，一起看电视，一起晒太阳，不论干啥她都屁股后面跟着，想起Parker Poirier。可惜没法一直保持在五六岁，时间这趟单程列车也不会倒退或者暂停，一辈子就这样一次的记忆，快乐成长！</p>
+</li>
+<li>
+<p>刚看完李飞飞上学时候遇到这种“歧视”  <a href="https://www.solidot.org/story?sid=81564">女孩的数学表现从上学起开始落后</a></p>
+</li>
+</ul>
+<h1 id="summer-fike">Summer Fike</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://s3.bmp.ovh/imgs/2025/06/17/ccad773ea20eee11.png" alt="" loading="lazy"></p>
+<p>KEVIN ABSTRACT &amp; DOMINIC FIKE ARE GEEZER</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oG6mPNxG1_g?si=MmIADWjXhA8yPbhF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>又到夏天， Fike is all about Summer.</li>
+</ul>
+<hr>
+<p>|￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|<br>
+| Don't Push To Production On Tuesday   |<br>
+|＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|<br>
+\ (•◡•) /<br>
+\      /<br>
+——<br>
+|     |<br>
+|_   |_</p>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#taa">TAA</a></li>
+<li><a href="#ufc-fight-night-usman-vs-buckley">UFC Fight Night: Usman vs Buckley</a>
+<ul>
+<li><a href="#ufc-317">UFC 317</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#summer-fike">Summer Fike</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250617-atlanta/">https://ezraknotlab.github.io/post/ekl-20250617-atlanta/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250617-atlanta/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250617-atlanta/&sharesource=qzone&title=EKL 20250617 Atlanta&pics=https://ezraknotlab.github.io//images/avatar.png?v=1751556861234&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TAA 2 RM&lt;/li&gt;
+&lt;li&gt;UFC Fight Night: Usman vs Buckley&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250617-atlanta/&sharesource=weibo&title=EKL 20250617 Atlanta + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TAA 2 RM&lt;/li&gt;
+&lt;li&gt;UFC Fight Night: Usman vs Buckley&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1751556861234 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20250623-baku/">
+                                                                                            EKL 20250623 Baku
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20250612-bs/">
+                                                                                                    EKL 20250612 BS
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1751556861234);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

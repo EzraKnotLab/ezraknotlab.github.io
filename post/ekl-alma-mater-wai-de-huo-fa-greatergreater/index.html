@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Alma Mater 《格外的活法》
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-04-25</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">26.7
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">6073</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>World Book Day</li>
+<li>GNX tour 阴阳是入口，多维是终点。</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E6%A0%BC%E5%A4%96%E7%9A%84%E6%B4%BB%E6%B3%95-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">📚《格外的活法》-- 读书笔记</a>
+<ul>
+<li><a href="#pre">Pre :</a></li>
+<li><a href="#%E5%86%85%E5%AE%B9">内容：</a>
+<ul>
+<li><a href="#01%E7%A6%BB%E5%BC%80%E5%85%AC%E5%8F%B8%E8%81%8C%E5%91%98%E8%BA%AB%E4%BB%BD%E6%88%91%E7%9C%9F%E7%9A%84%E5%B0%B1%E4%B8%80%E4%B8%AA%E4%BA%BA%E4%BA%86%E4%B8%93%E8%AE%BF%E5%B8%82%E5%9C%BA%E9%87%8C%E7%9A%84%E4%BA%8C%E6%89%8B%E4%B9%A6%E5%BA%97%E4%B9%8C%E6%8B%89%E6%8B%89%E5%BA%97%E4%B8%BB%E5%AE%87%E7%94%B0%E6%99%BA%E5%AD%90">01离开公司职员身份，我真的就一个人了：专访“市场里的二手书店乌拉拉”店主宇田智子</a></li>
+<li><a href="#02%E4%BD%A0%E7%9A%84%E5%9E%83%E5%9C%BE%E8%A1%A8%E7%8E%B0%E5%87%BA%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%93%E8%AE%BF%E6%90%9E%E7%AC%91%E8%89%BA%E4%BA%BA%E6%B3%B7%E6%B3%BD%E7%A7%80%E4%B8%80">02你的垃圾，表现出你的人生：专访搞笑艺人泷泽秀一</a></li>
+<li><a href="#03%E4%B8%AD%E5%9B%BD%E6%91%87%E6%BB%9A%E7%BC%96%E8%88%9F%E8%AE%B0%E4%B8%93%E8%AE%BFchinese-rock-data-base%E5%88%9B%E5%BB%BA%E8%80%85%E9%A6%99%E5%8F%96%E4%B9%89%E4%BA%BA">03中国摇滚编舟记：专访CHINESE ROCK DATA BASE创建者香取义人</a></li>
+<li><a href="#04%E8%80%81%E5%A4%AA%E5%A4%AA%E4%BE%BF%E5%BD%93%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86%E4%B8%93%E8%AE%BF%E7%8B%AC%E7%AB%8B%E6%91%84%E5%BD%B1%E5%B8%88%E7%A6%8F%E5%B2%9B%E6%B7%B3%E5%8F%B2">04老太太，便当准备好了：专访独立摄影师福岛淳史</a></li>
+<li><a href="#05%E4%B8%BA%E6%9C%AA%E6%9D%A5%E4%B8%A4%E7%99%BE%E5%B9%B4%E7%9A%84%E7%BA%AF%E6%89%8B%E5%B7%A5%E5%A4%A7%E5%8E%A6%E4%B8%93%E8%AE%BF%E4%B8%80%E7%BA%A7%E5%BB%BA%E7%AD%91%E5%B8%88%E5%86%88%E5%90%AF%E8%BE%85">05为未来两百年的“纯手工”大厦：专访一级建筑师冈启辅</a></li>
+<li><a href="#06%E6%88%91%E4%BB%8B%E7%BB%8D%E7%9A%84%E6%98%AF%E6%99%AE%E9%80%9A%E7%94%9F%E6%B4%BB%E5%8D%B4%E8%A2%AB%E7%A7%B0%E4%B8%BA%E5%8F%A6%E7%B1%BB%E4%B8%93%E8%AE%BF%E6%91%84%E5%BD%B1%E8%AE%B0%E8%80%85%E9%83%BD%E7%AD%91%E5%93%8D%E4%B8%80">06我介绍的是普通生活，却被称为另类：专访摄影记者都筑响一</a></li>
+<li><a href="#07%E5%9C%A8%E5%88%AB%E4%BA%BA%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%E4%B8%93%E8%AE%BF%E5%8D%8E%E4%BA%BA%E6%9A%B4%E8%B5%B0%E6%97%8F%E6%80%92%E7%BD%97%E6%9D%83%E5%88%9B%E5%A7%8B%E4%BA%BA%E6%B1%AA%E6%A5%A0">07在别人土地上成长：专访华人暴走族“怒罗权”创始人汪楠</a></li>
+<li><a href="#08%E4%BA%BA%E4%B8%8E%E4%BA%BA%E7%9A%84%E7%9B%B4%E6%8E%A5%E4%BA%A4%E6%B5%81%E6%9C%89%E6%97%B6%E8%83%BD%E8%B6%85%E8%B6%8A%E6%94%BF%E6%B2%BB%E4%B8%93%E8%AE%BF%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BE%8E%E5%86%9B%E5%9F%BA%E5%9C%B0">08人与人的直接交流有时能超越政治：专访曾经的美军基地</a></li>
+<li><a href="#09%E6%88%91%E4%BB%AC%E5%B0%B1%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%BF%99%E9%87%8C%E6%88%91%E4%BB%AC%E6%B2%A1%E7%9A%84%E9%80%89%E6%97%A5%E6%9C%AC%E7%A6%8F%E5%B2%9B%E8%AE%BF%E9%97%AE%E8%AE%B0">09我们就生活在这里，我们没的选：日本福岛访问记</a></li>
+<li><a href="#10%E6%88%91%E5%AD%98%E7%9A%84%E4%B8%80%E7%99%BE%E4%B8%87%E9%83%BD%E6%B2%A1%E4%BA%BA%E9%A2%86%E4%B8%93%E8%AE%BF%E6%96%87%E8%BA%AB%E5%8C%A0%E4%BA%BA%E4%B8%89%E4%BB%A3%E7%9B%AE%E9%9B%95%E4%BD%91%E8%A5%BF">10我存的一百万，都没人领：专访文身匠人三代目雕佑西</a></li>
+</ul>
+</li>
+<li><a href="#">📚</a></li>
+<li><a href="#world-book-day">World Book Day</a></li>
+</ul>
+</li>
+<li><a href="#gnx-tour-%E9%98%B4%E9%98%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%A4%9A%E7%BB%B4%E6%98%AF%E7%BB%88%E7%82%B9">GNX tour 阴阳是入口，多维是终点。</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Baby Keem &amp; Kendrick Lamar&#39;s &#39;family ties&#39; has now surpassed 1 BILLION streams on Spotify 📈🔥<br><br>It becomes Baby Keem&#39;s first song to reach this milestone. <a href="https://t.co/Y6c4OTzZzN">pic.twitter.com/Y6c4OTzZzN</a></p>&mdash; Kurrco (@Kurrco) <a href="https://twitter.com/Kurrco/status/1914753921828184142?ref_src=twsrc%5Etfw">April 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.70clacks.co/uploads/new/music/2024/09/Baby-Keem-family-ties-ft-Kendrick-Lamar-(HipHopKit.com).mp3"></audio></p>
+<p><mark>family ties (feat. Kendrick Lamar) Baby Keem</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Jump in that— (huh, huh), summon that bitch
+Jump in that— (huh, huh), jump in that fire, jump in that bitch
+Hittin' that fire, jump in that whip, thumbin' that bitch
+Cum in that bitch (ho), drummin' that— (huh, huh)
+Drummin' that bitch (yeah)
+
+Chopper doin' circles, it's a Vert', Vert'
+Take him to the projects, he's a nerd (Pop out)
+I see niggas hittin' corners in the motherfuckin' 'burbs, huh (Pop out)
+Done politickin' with the competition, what's the word? (Yeah)
+Put that on my mama, nigga, ate in the process
+Niggas tryna tippy toe through the progress
+Tongue-tied when the truth is an object
+What's the pros and cons of this next check?
+When nobody 'round, I was independent
+In the 90s, sittin' bum with the windows tinted
+Had a bomb, got a strap at the party
+Where the fuck niggas? At the party
+Beat 'em up (Bounce), beat 'em up, beat 'em up, beat 'em up (ah)
+I was seein' double in the projects
+Mad at myself when I put it to the side
+Mama had to cater for the coupe
+That we rode after school on the way to Popeyes (Bounce)
+And niggas wanna play both sides
+It's a red dot, don't get on the wrong red eye
+It's a headshot, let me get who are them guys
+Fuck around and bury two of them guys
+I'm OD in Paris, I'm OD in France
+I thought that I told you, I need the advance
+Put down your IG and look through my lens
+A million to grandma, who did I offend?
+The girl of your dreams to me is a fan
+I netted ten million and did a lil' dance
+I'm fuckin' the world, I unzip my pants
+My uncle G told me that I had a chance
+So then I popped out and did it again
+And did it again and did it again
+I can not respect them, where did he begin?
+Advice from the council, let nobody in
+Been swervin' through rumors
+Avoidin' the trends and duckin' the hoes
+I'm duckin' the loonies that come with the shows
+I'm grateful to Man-Man, he opened up doors
+And bung' on the tour bus to come and compose
+I reach to the stars on my tippy toes
+This greatest success where most niggas fold
+I tell you my past, that shit don't get old
+But how could you ask like I don't be rappin' my raps?
+These critics got everyone tapped
+You gotta relax, the city where nobody sleep
+Just tap in and ask where I'm at, ho
+
+Smoking on your top five tonight, tonight
+Yeah, I'm smokin' on your, what's her name, tonight, tonight
+Smokin' on you, shores, ain't two-nine, yeah, two
+
+I am the omega, pgLang, Rollie gang, SIE
+Don't you address me unless it's with four letters
+I thought you'd known better
+I been duckin' the pandemic, I been, social gimmicks
+I been duckin' the overnight activists, yeah
+I'm not a trending topic, I'm a—
+Hold on, y'all niggas playin' with me, man
+I am the omega, pgLang, Rollie gang, SIE
+Don't you address me unless it's with four letters
+Bitch, I thought you'd known better
+I been duckin' the pandemic, I been duckin' the social gimmicks
+I been duckin' the overnight actavis, yeah
+I'm not a trending topic, I'm a prophet
+I answer to Metatron and Gambriel
+Bitch, looking for a better me
+I am a legacy, I come from the seventy
+The Al Green offspring, guns and the melody
+The big shot, wrist on cryotherapy
+Soon as I press that button
+Nigga better get right like the ambulance comin'
+Us two on a light, Keem been through nothin'
+Dave Free got at least one B in the oven
+I'm trippin', I'm juugin', my mental is amazing, brother
+Pop off, only on occasions, brother
+Rich nigga, momma know I made it, brother
+Go figure, never caught cases, brother
+Face it, brother, gracious brother?
+New flows comin', be patient, brother
+Show my ass and take you out of class
+I can multitask like Megan, brother
+2021, I ain't takin' no prisoner
+Last year, y'all fucked up all the listener
+Who went platinum? I call that a visitor
+Who the fuck backin' 'em? All been falsified
+The facts mean this a vaccine, and the game need me to survive
+The Elohim, the rebirth
+Before you get to the Father, you gotta holla at me first, bitch
+Smokin' on top fives
+Motherfuck that album, fuck that single
+Burn that hard drive (Burn that shit)
+Ain't nobody safe
+When I come up killin' everybody that's outside (Who you with?)
+Yeah, Kanye changed his life
+But me, I'm still an old school Gemini (Lil' bitch)
+Let me jump in this bitch
+
+Let me jump in this bitch
+Two phones, but I only bring one in this bitch
+One daughter, but they all my sons in this bitch
+No hoes, ain't shit gettin' done in this bitch
+I'm scary, I got a gun in this bitch
+Smokin' on top fives, stop playin', I'm that guy
+Number two DM'ing my bitch
+That's cool, I don't ask why
+
+</code></pre>
+</details>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/UXRhemNQcUpxN2ZwWkd4VWpvTXViaTFGSkFBNnl6eDZvdUlTeEVjSVJPOXdkZU5NbUpRMXI1UFdPVTRKN0wxUTJOdHlrK2lObHhyMUNKK1FXcDFDL2xzOTdINlJSS0xvT1RLc2FWZ2xVTjg9/Kendrick_Lamar_-_The_Heart_Part_5_(Hydr0.org).mp3"></audio></p>
+<p><mark>Kendrick Lamar The Heart Part 5</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">As I get a little older
+I realize life is perspective
+And my perspective may differ from yours
+I wanna say thank you to everyone that's been down with me
+All my fans, all my beautiful fans
+Anyone who's ever gave me a listen
+All my people
+
+I come from a generation of pain, where murder is minor
+Rebellious and Margielas'll chip you for designer
+Belt buckles and clout, overzealous if prone to violence
+Make the wrong turn, be it will or the wheel alignment
+Residue burned, mist of the inner-city
+Miscommunication to keep homi' detective busy
+No protection is risky
+Desensitized, I vandalized pain, covered up and camouflaged
+Get used to hearing arsenal rain
+Analyze, risk your life, take the charge
+Homies done fucked your baby mama once you hit the yard
+That's culture
+Twenty-three hour lockdown, then somebody called
+Said your lil nephew was shot down, the culture's involved
+I done seen niggas do seventeen, hit the halfway house
+Get out and get his brains blown out, looking to buy some weed
+Car wash is played out, new GoFundMe accounts'll proceed
+A brand-new victim'll shatter those dreams, the culture
+
+(I want, I want, I want, I want)
+But I want you to want me too (I want, I want, I want, I want)
+I want the hood to want me back (I want, I want, I want, I want)
+I want the hood
+
+Look what I done for you (look what I done for you)
+Look what I done for you
+
+I said I do this for my culture
+To let y'all know what a nigga look like in a bulletproof Rover
+In my mama's sofa was a doo-doo popper
+Hair trigger, walk up closer, ain't no Photoshopping
+Friends bipolar, grab you by your pockets
+No option if you froze up, always play the offense
+Niggas going to work and selling work, late for work
+Working late, praying for work, but he on paperwork
+That's the culture, point the finger, promote ya
+Remote location, witness protection, they gon' hold ya
+The streets got me fucked up
+Y'all can miss me
+I wanna represent for us
+New revolution was up and moving
+I'm in Argentina wiping my tears full of confusion
+Water in between us, another peer's been executed
+History repeats again
+Make amends, then find a nigga with the same skin to do it
+
+But that's the culture, crack a bottle
+Hard to deal with the pain when you're sober
+By tomorrow we forget the remains, we start over
+That's the problem
+Our foundation was trained to accept whatever follows
+
+Dehumanized, insensitive
+Scrutinize the way we live for you and I
+Enemies shook my hand, I can promise I'll meet you
+In the land where no equal is your equal
+Never say I ain't told ya, nah
+In the land where hurt people hurt more people
+Fuck calling it culture
+
+(I want, I want, I want, I want)
+But I want you to want me too (I want, I want, I want, I want)
+I want the hood to want me back (I want, I want, I want, I want)
+I want the hood
+
+Look what I done for you (look what I done for you)
+Look what I done for you
+
+Take the drums out
+
+Celebrate new life when it come back around
+The purpose is in the lessons we learning now
+Sacrifice personal gain over everything
+Just to see the next generation better than ours
+I wasn't perfect, the skin I was in had truly suffered
+Temptation, impatience, everything that the body nurtures
+I felt the good, I felt the bad and I felt the worry
+But all-in-all, my productivity had stayed urgent
+
+Face your fears, always knew that I would make it here
+Where the energy is magnified and persevered
+Consciousness is synchronized and crystal-clear
+Euphoria is glorified and made His
+Reflecting on my life and what I done
+Paid dues, made rules, change outta love
+Them same views made schools change curriculums
+But didn't change me staring down the barrel of the gun
+
+Should I feel resentful I didn't see my full potential?
+Should I feel regret about the good that I was into?
+Everything is everything, this ain't coincidental
+I woke up that morning with more heart to give you
+As I bleed through the speakers, feel my presence
+
+To my brother, to my kids, I'm in heaven
+To my mother, to my sis, I'm in heaven
+To my father, to my wife, I am serious, this is heaven
+To my friends, make sure you counting them blessings
+To my fans, make sure you make them investments
+And to the killer that sped up my demise
+I forgive you, just know your soul's in question
+I seen the pain in your pupil when that trigger had squeezed
+And though you did me gruesome, I was truly relieved
+I completed my mission, wasn't ready to leave
+But fulfilled my days, my Creator was pleased
+
+I can't stress how I love y'all
+I don't need to be in flesh just to hug y'all
+The memories recollect just because y'all
+Celebrate me with respect
+The unity we protect is above all
+
+And, Sam, I'll be watching over you
+Make sure my kids watch all my interviews
+Make sure you live out our dreams we produced
+Keep that genius in your brain on the move
+
+And to my neighborhood, let the good prevail
+Make sure them babies and the leaders outta jail
+Look for salvation when troubles get real
+'Cause you can't help the world until you help yourself
+
+And I can't blame the hood the day that I was killed
+Y'all had to see it, that's the only way to feel
+And though my physical won't reap the benefits
+The energy that carry on emits still
+I want you
+
+</code></pre>
+</details>
+<hr>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/04/25/84944bf61fdd07ac.png" alt="" loading="lazy"></figure>
+<h1 id="格外的活法-读书笔记">📚《格外的活法》-- 读书笔记</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Rating⭐⭐⭐⭐ （4/5)</li>
+<li>April 05, 2025 →April 25, 2025</li>
+<li><a href="https://book.douban.com/subject/36331621/">DouBan</a></li>
+</ul>
+<p>作者: [日] 吉井忍<br>
+出版社: 文汇出版社<br>
+出品方: 新经典文化<br>
+出版年: 2025-2<br>
+页数: 304<br>
+定价: 79.00元<br>
+装帧: 平装<br>
+ISBN: 9787549639762</p>
+<h2 id="pre">Pre :</h2>
+<ul>
+<li><a href="https://www.xiaoyuzhoufm.com/episode/67dc61a0dd11f9c8c10bdd64">197 《格外的活法》：要夺回活着的喜悦感！不止读书 2025年3月21日 08:00</a></li>
+</ul>
+<summary>内容简介</summary>
+<details>
+<pre><code class="language-c">
+“路变窄了，但还可以走”
+
+日籍华语作家吉井忍全新力作
+
+在不那么完美的日子，守住那份“标准规格之外”的自由
+
+【内容简介】
+
+在极致追求效率的社会，总会 有人站在时代前列，发挥先锋模范的作用，写出激发人心的励志故事。但我们在生活中也会遇到一种人，她/他会让你叹赏：对于自己的人生，竟可以做出这样的选择。
+
+作家吉井忍走入日本的大街小巷，历时七年，采访各行各业的普通人，探访12种主流秩序外的格外活法。
+
+有人早上起床在东京街头回收垃圾，晚上在剧场讲段子引得众人发笑，“世上没有所谓的垃圾，但一旦扔掉，它就变成垃圾了。”
+
+有人离开日本面积最大的书店，在南方小岛开了家日本面积最小的旧书店，发现“一旦离开公司职员身份，我真的就一个人了”。
+
+有人19年盖一栋楼，从自己动手浇灌混凝土开始，在只鼓励人成为“消费者”的社会当一个“创造者”……
+
+这些人可能是你的邻居，或商店街角落中一家小店的店主，面对日常无数的琐碎和烦躁，她/他们不着急寻找答案，而是选择接受状态模糊的自己，以现有的能力面对不确定性，留给自己自由思考的空间——面向人生，继续提问，继续追问。
+
+·
+
+【编辑推荐】
+
+★日籍华语作家吉井忍新作：在不那么完美的日子，守住那份”标准规格之外”的自由
+
+大学毕业后出国游荡各地，不买房不上班，甘愿落后几圈用自己的节奏慢跑，如此二十年后，吉井忍从北京回到东京。此时的日本面临高度老龄化和贫富分化，主流之外的容身之处越来越少。
+
+“跳出胜负束缚之后的路，该怎么走？”带着这样的问题，她将目光转向日本街巷、各行各业的普通人，她/他们在社会由盛转衰之后，不强迫自己嵌套进标准规格中，在不那么残酷、也不那么完美的日子里，用心固守自己的底线，守住一份尊严。
+
+★探访12种格外的活法，探索无限种人生的可能：路变窄了，但还可以走
+
+在极致追求效率的社会，总会有人站在时代的前列，发挥先锋模范的作用。但我们在生活中也会遇到一种人，她/他会让你叹赏：对于自己的人生，竟可以做出这样的选择。
+
+这些人都不是“奇特人物”，也不是翻山越岭方可见面的仙人，而可能是你的邻居，或商店街角落的店主。她/他们跳脱出或躺平或内卷的游戏规则，在标准规格之外开辟出自己的天地。吉井忍用一贯细腻的笔触，书写普通人生活在不确定性之中挣扎、笨拙、退却后又迈进的日常，献给每一个认真生活的人。
+
+★不一样的日本漫游指南，在街头巷尾、历史缝隙之间触摸最鲜活的市井日本
+
+在冲绳熙熙攘攘的市场中走进一家旧书店，推开一扇通往冲绳历史与文化的门；在横滨闹中取静的文身工作坊品味昭和人情和义理；在福岛遇见坚守原地的人，一窥那个慌不择路的时代……在一次次与人的真诚连接中重新发现日本。
+
+★著名书装设计师陆智昌操刀设计，愿每个人都能找到自己的那把椅子坐下
+
+156张摄影图，全书彩印，图文并茂。纯质纸印刷，锁线胶订，翻阅柔顺，质感舒适。
+
+</code></pre>
+</details>
+<h2 id="内容">内容：</h2>
+<ul>
+<li>书其实是收录了之前在很多平台上零散发表的故事，本次采访的对象主要是日本人，他们来自于不同的行业，工作内容小众，但同时或多或少与书籍有一丝的关系，部分对象和中国也有一定的联系，以下是十个章节的标题：</li>
+</ul>
+<h3 id="01离开公司职员身份我真的就一个人了专访市场里的二手书店乌拉拉店主宇田智子">01离开公司职员身份，我真的就一个人了：专访“市场里的二手书店乌拉拉”店主宇田智子</h3>
+<ul>
+<li>主要讲一个在冲绳开书店的店主宇田智子，设计到地理背景，文化（与主岛之间，琉球）和历史（美军基地……）等等，幸运的是在遇见这本书的前几天我刚好好奇地看了看群岛的地图，注意到这里，后来又在podcast中听了一个中国人现代的视角，所以背景知识相较之前非常充足，很有意思。</li>
+</ul>
+<h3 id="02你的垃圾表现出你的人生专访搞笑艺人泷泽秀一">02你的垃圾，表现出你的人生：专访搞笑艺人泷泽秀一</h3>
+<ul>
+<li>收垃圾员，日本垃圾分类出了名的严格，也有规定时间来扔垃圾并处理，这是一个垃圾处理人员的视角，他所观察到的这个世界，从垃圾联系世间百态的思考，在闲暇时间还做漫才表演……</li>
+</ul>
+<h3 id="03中国摇滚编舟记专访chinese-rock-data-base创建者香取义人">03中国摇滚编舟记：专访CHINESE ROCK DATA BASE创建者香取义人</h3>
+<ul>
+<li>日本小伙中国留学过，出于热爱做了关于中国摇滚的统计，网址、 DATA BASE，本世纪初和新裤子、痛仰乐队等很多音乐人都有过联系。</li>
+</ul>
+<h3 id="04老太太便当准备好了专访独立摄影师福岛淳史">04老太太，便当准备好了：专访独立摄影师福岛淳史</h3>
+<ul>
+<li>同样也是一种当下典型的对于日本的印象——老龄化严重，独立摄影师福岛淳史是一位外卖员，给独居老人送便当，大部分独居老人腿脚不便，久居床上，摄影师福岛淳史会在生活上帮助他们，同时会摄影记录一些瞬间，虽然一开始会有羞涩不便的时期，但后来愈发成熟……</li>
+</ul>
+<h3 id="05为未来两百年的纯手工大厦专访一级建筑师冈启辅">05为未来两百年的“纯手工”大厦：专访一级建筑师冈启辅</h3>
+<ul>
+<li>建筑师冈启辅对于艺术的追求，一开始还有女友的支持，后来“固执”……</li>
+</ul>
+<h3 id="06我介绍的是普通生活却被称为另类专访摄影记者都筑响一">06我介绍的是普通生活，却被称为另类：专访摄影记者都筑响一</h3>
+<ul>
+<li>时尚杂质摄影师，编辑撰稿人，情色创造力与艺术。</li>
+</ul>
+<h3 id="07在别人土地上成长专访华人暴走族怒罗权创始人汪楠">07在别人土地上成长：专访华人暴走族“怒罗权”创始人汪楠</h3>
+<ul>
+<li>原先日本人入侵东三省，在这边的日本人口很多，后来返回的时候，汪楠的亲生父母都是中国人，但是他的继母是日本人，父亲带全家偷渡去了日本，但是汪楠作为外国来的常被欺负，后来和同伴组成某种黑社会组织，再后来入狱之后爱好阅读……</li>
+</ul>
+<h3 id="08人与人的直接交流有时能超越政治专访曾经的美军基地">08人与人的直接交流有时能超越政治：专访曾经的美军基地</h3>
+<ul>
+<li>似乎讲的不是冲绳的美军基地，但是感觉排版和冲绳安排在一起会更有联系一些，主要写由于美军基地的存在给周围日本的文化和人们生活习惯、选择、风格的影响，娱乐场所，潮流风尚……</li>
+</ul>
+<h3 id="09我们就生活在这里我们没的选日本福岛访问记">09我们就生活在这里，我们没的选：日本福岛访问记</h3>
+<ul>
+<li>福岛核辐射事件对人们的影响，以及“重建、重归生活”后人们生活的变化，人口变少，是一个原先的捕鱼人的视角……</li>
+</ul>
+<h3 id="10我存的一百万都没人领专访文身匠人三代目雕佑西">10我存的一百万，都没人领：专访文身匠人三代目雕佑西</h3>
+<ul>
+<li>纹身师作为第三代传人，他和第一代师父之间的渊源，以及对当今纹身行业的看法。</li>
+</ul>
+<h2 id="">📚</h2>
+<ul>
+<li>最大的感受是这个年龄我们的人生仍然是含苞待放 至少还没有真正地铺开呢</li>
+<li>因为你会在不同故事的结束与开启之间自然抽离出来，联想到自己周围可以采访到的对象，发现同龄人大多还没有真正进入一些行业，所以生活姿态大同小异，没有什么特殊的故事和生活场景值得我感兴趣好奇想要去采访的。</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>小林纪晴http://www.kobayashikisei.com/<br>
+1968年出生於日本长野县。 　　东京工艺大学短期学部摄影科毕业後，进入报社担任摄影师工作。 　　1991年离职，出发前往亚洲六个国家旅行。 　　1995年发表《ASIA JAPANESE》 　　写真集《DAYS ASIA》获得1997年的日本写真协会新人奖。 　　著有《ASIAN JAPANESE 2》、《亚洲旅行物语Asian Generation》、《ASIAROAD》、《东京装置》、《Homeland》、《亚洲少年》、《Tokyo Generation》、《河内之犬、曼谷之象、恒河之火》、《ASIAN JAPANESE 3》、《暗室》等。</p>
+</li>
+<li>
+<p>https://www.kobayashi-kisei.com</p>
+</li>
+</ul>
+<iframe src="https://www.kobayashi-kisei.com/portfolio1-%E5%AD%B5%E5%8C%96%E3%81%99%E3%82%8B%E5%A4%9C%E3%81%AE%E5%95%BC%E3%81%8D%E5%A3%B0/" width="750" height="800"></iframe>
+<h2 id="world-book-day">World Book Day</h2>
+<p>Wed, Apr 23, 2025是世界读书日，每到这时候都会有铺天盖地的劝读和记笔记等技巧类的blog推文出来：</p>
+<ul class="contains-task-list">
+<li><a href="https://sspai.com/post/98522">用 AI 秘书治好了我的「数字仓鼠症」——如何让 AI 劝自己阅读</a>这篇是偏技术类，结合Notion等软件工具建设自身的阅读工具流，折腾只适合初始阶段阅读者，感觉经历过之后对于自动化、智能化等类型的阅读工具流兴致并不会太高了……一般美观简洁的notion阅读笔记界面就够了imo。</li>
+<li><a href="https://mp.weixin.qq.com/s/q3FNP4xLHELC1JyeFu48RQ">为什么我们要读整本书？</a>  “劝读”</li>
+<li><a href="https://sspai.com/post/66152">关于读书</a>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8558045"><label class="task-list-item-label" for="task-item-8558045"> 多年读书经验的总结。文章将读书的问题分为「应不应该读」「要不要读」「应该读什么」「应该怎样读」四个方面，篇幅足足有一万字。</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7651401"><label class="task-list-item-label" for="task-item-7651401">  读书日podcast:</label>
+<ul>
+<li><a href="https://www.xiaoyuzhoufm.com/episode/6808f0ff7a449ae858480ea0">螺丝在拧紧：Vol. 102 对话罗丹妮：图书市场断崖式下滑，真实的体感如何？</a></li>
+<li><a href="https://www.xiaoyuzhoufm.com/episode/6807540acdd692da15f272a6">Talk三联：EP196 罗新×杨潇×杨大壹：在书与大地间，如何用“漂流”抵抗固态人生？</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114392242850261&bvid=BV1qqL3zDEYd&cid=29586424173&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<hr>
+<h1 id="gnx-tour-阴阳是入口多维是终点">GNX tour 阴阳是入口，多维是终点。</h1>
+<ul>
+<li>起因是在Luther的MV出来之后，看到<a href="https://x.com/dissectpodcast">Dissect Podcast</a>在Threads中解读了“Kendrick Lamar's &quot;Luther&quot; video is dominated by circles”频繁出现的圆圈，舞台是圆柱形的，和在SuperBowl Halftime show同样借助游戏手柄的设计，按键也有圆柱形作为舞台。近二十年思考制作了五六张专辑，似乎结构用意很快就能明白大致意思，但这个故事也像读书一样，你固然可以听解读书籍的播客或者博主的读书分享，以下感觉整个大意都明白了，没什么必要再亲自进入那个世界探索，但是经历读书和listen albums这个过程会更加深刻，结合自身环境容易启发思考，更有价值的宝藏往往会埋藏的更深。</li>
+<li>在《Family Ties》中提到“Gemini”（双子座），这不仅是一个星座的引用，更承载着他一贯的主题：二元性。始终围绕着自我与社会、暴力与和平、信仰与堕落、公众形象与内心真实等对立面展开。Gemini（双子）不仅仅是两个个体的对立，而是一个灵魂中两种面向的拉扯。阴阳强调的不是简单的黑白对立，而是一种你中有我、相生相克的动态平衡。</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Did you notice how Kendrick Lamar&#39;s &quot;Luther&quot; video is dominated by circles? Here&#39;s why. 🔴 🧵 <a href="https://t.co/DwFmF2b3yI">pic.twitter.com/DwFmF2b3yI</a></p>&mdash; Dissect Podcast (@dissectpodcast) <a href="https://twitter.com/dissectpodcast/status/1910745028563263574?ref_src=twsrc%5Etfw">April 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>从最初“我与世界”的对立，走到了“世界的多个版本在我心中的映射”。</li>
+<li>从“二元对立”到“多重维度”的转化：
+<ul>
+<li>
+<ol>
+<li>“阴阳”是二元，但并不等于“简单的二元”：阴阳在东方哲学中，彼此互根互生，在阴中有阳，在阳中有阴，强调的是“变动中的关系”而不是静态的对立。所以，“阴阳”本身就不是封闭的二维模型，它是 循环式、多维层叠的结构。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>从“二元”到“多维度”：进化<br>
+早期专辑（如《GKMC》）确实很多是二元对立构图，比如：善与恶、街头与家庭、信仰与堕落。但从《TPAB》起，他开始关注：权力结构、群体身份、经验中的多重现实。到了《MMBS》——他不再仅仅讨论“两种力量”，而是进入了：自我 vs 家庭 vs 世代创伤，理性 vs 情绪 vs 群体预期，父亲角色 vs 儿子角色 vs 公共偶像。这些都是三维甚至多维交错的结构。他不只是分裂为两个自己，而是陷入一个交织的镜厅（hall of mirrors）——每面镜子都映出他不同的过去、责任、创伤、选择。</li>
+<li>圆柱（Cylinder）= 多维空间的隐喻：圆柱体象征的是空间性、连续性、镜像性。它不是简单的线性或平面结构，而是有“卷动”、“包裹”、“反射”的含义。他已经不再只是在“两极之间摆荡”（阴阳、黑白、爱恨），而是 开始观察这些对立在自己内心深处的“复合共存” —— 他可以同时愤怒、悲伤、信仰、怀疑，并从多个层级思考自己的存在。</li>
+</ul>
+<iframe id="embedPlayer" src="https://embed.music.apple.com/us/playlist/kendrick-lamar-essentials/pl.8155ebe08de7423ca2b29929c8adeebd?itscg=20416&amp;itsct=pl_kendrick_essentials_nfl_site_sbfy25app=music&amp;amp;itsct=music_box_player&amp;amp;itscg=30200&amp;amp;ls=1&amp;amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);" title="Apple Music Kendrick Lamar X Super Bowl LIX"></iframe>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>Cancel culture，还是体量太小了，不知道大家都是带着面具装傻还是真的傻。每次网上出现有争议有关cancel某某的话题，都有人跳出来解释道观众们不要总想象自己关注的大V是完人，没有缺点。 事实是这样吗？nobody give a shit 在网上cancel网暴别人的人永远不会崇拜自己关注的人，认为他们完美。相反地，他们像苍蝇一样，处于人性之恶，只是希望造成负面的“热闹”</p>
+</li>
+<li>
+<p>The_Last_of_Us_S02E02： 中途火萤的成员被丧尸追的时候，画面让人窒息，尤其是在墙边躲在被压迫的铁网下匍匐前进，这个场景的设计可以看出director的思考用意</p>
+</li>
+<li>
+<p>这玩意看的我都会背了: <a href="https://youtu.be/57pGarTBJrU?si=wJ-xVTbiEMvUJm5P">Dave Chappelle Stand-Up Monologue 2025 - SNL</a></p>
+</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/57pGarTBJrU?si=wJ-xVTbiEMvUJm5P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>
+<p>最近差不多适应了185 pace/min，步频快但是心率还是上不去，100-120之间，感觉还是有点太低了，甚至怀疑手表有问题……</p>
+<ul>
+<li>好的身体状态：PG 罗齐尔 齐耶赫 边锋普遍轻盈比较好 皇马双星  马赫雷斯  登贝莱  neymar jR</li>
+</ul>
+</li>
+<li>
+<p>Izzy最近在UFC314之后，先是和Kamaru一起训练，最近又和Sean O'Malley一起训练，子弹之前也有这样，像是从东海岸一路向西到LA，旅行修炼，像是洛克李，鸣人，自来也修行。</p>
+</li>
+</ul>
+<hr>
+<p>I am very judgmental</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E6%A0%BC%E5%A4%96%E7%9A%84%E6%B4%BB%E6%B3%95-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">📚《格外的活法》-- 读书笔记</a>
+<ul>
+<li><a href="#pre">Pre :</a></li>
+<li><a href="#%E5%86%85%E5%AE%B9">内容：</a>
+<ul>
+<li><a href="#01%E7%A6%BB%E5%BC%80%E5%85%AC%E5%8F%B8%E8%81%8C%E5%91%98%E8%BA%AB%E4%BB%BD%E6%88%91%E7%9C%9F%E7%9A%84%E5%B0%B1%E4%B8%80%E4%B8%AA%E4%BA%BA%E4%BA%86%E4%B8%93%E8%AE%BF%E5%B8%82%E5%9C%BA%E9%87%8C%E7%9A%84%E4%BA%8C%E6%89%8B%E4%B9%A6%E5%BA%97%E4%B9%8C%E6%8B%89%E6%8B%89%E5%BA%97%E4%B8%BB%E5%AE%87%E7%94%B0%E6%99%BA%E5%AD%90">01离开公司职员身份，我真的就一个人了：专访“市场里的二手书店乌拉拉”店主宇田智子</a></li>
+<li><a href="#02%E4%BD%A0%E7%9A%84%E5%9E%83%E5%9C%BE%E8%A1%A8%E7%8E%B0%E5%87%BA%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%93%E8%AE%BF%E6%90%9E%E7%AC%91%E8%89%BA%E4%BA%BA%E6%B3%B7%E6%B3%BD%E7%A7%80%E4%B8%80">02你的垃圾，表现出你的人生：专访搞笑艺人泷泽秀一</a></li>
+<li><a href="#03%E4%B8%AD%E5%9B%BD%E6%91%87%E6%BB%9A%E7%BC%96%E8%88%9F%E8%AE%B0%E4%B8%93%E8%AE%BFchinese-rock-data-base%E5%88%9B%E5%BB%BA%E8%80%85%E9%A6%99%E5%8F%96%E4%B9%89%E4%BA%BA">03中国摇滚编舟记：专访CHINESE ROCK DATA BASE创建者香取义人</a></li>
+<li><a href="#04%E8%80%81%E5%A4%AA%E5%A4%AA%E4%BE%BF%E5%BD%93%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86%E4%B8%93%E8%AE%BF%E7%8B%AC%E7%AB%8B%E6%91%84%E5%BD%B1%E5%B8%88%E7%A6%8F%E5%B2%9B%E6%B7%B3%E5%8F%B2">04老太太，便当准备好了：专访独立摄影师福岛淳史</a></li>
+<li><a href="#05%E4%B8%BA%E6%9C%AA%E6%9D%A5%E4%B8%A4%E7%99%BE%E5%B9%B4%E7%9A%84%E7%BA%AF%E6%89%8B%E5%B7%A5%E5%A4%A7%E5%8E%A6%E4%B8%93%E8%AE%BF%E4%B8%80%E7%BA%A7%E5%BB%BA%E7%AD%91%E5%B8%88%E5%86%88%E5%90%AF%E8%BE%85">05为未来两百年的“纯手工”大厦：专访一级建筑师冈启辅</a></li>
+<li><a href="#06%E6%88%91%E4%BB%8B%E7%BB%8D%E7%9A%84%E6%98%AF%E6%99%AE%E9%80%9A%E7%94%9F%E6%B4%BB%E5%8D%B4%E8%A2%AB%E7%A7%B0%E4%B8%BA%E5%8F%A6%E7%B1%BB%E4%B8%93%E8%AE%BF%E6%91%84%E5%BD%B1%E8%AE%B0%E8%80%85%E9%83%BD%E7%AD%91%E5%93%8D%E4%B8%80">06我介绍的是普通生活，却被称为另类：专访摄影记者都筑响一</a></li>
+<li><a href="#07%E5%9C%A8%E5%88%AB%E4%BA%BA%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%E4%B8%93%E8%AE%BF%E5%8D%8E%E4%BA%BA%E6%9A%B4%E8%B5%B0%E6%97%8F%E6%80%92%E7%BD%97%E6%9D%83%E5%88%9B%E5%A7%8B%E4%BA%BA%E6%B1%AA%E6%A5%A0">07在别人土地上成长：专访华人暴走族“怒罗权”创始人汪楠</a></li>
+<li><a href="#08%E4%BA%BA%E4%B8%8E%E4%BA%BA%E7%9A%84%E7%9B%B4%E6%8E%A5%E4%BA%A4%E6%B5%81%E6%9C%89%E6%97%B6%E8%83%BD%E8%B6%85%E8%B6%8A%E6%94%BF%E6%B2%BB%E4%B8%93%E8%AE%BF%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BE%8E%E5%86%9B%E5%9F%BA%E5%9C%B0">08人与人的直接交流有时能超越政治：专访曾经的美军基地</a></li>
+<li><a href="#09%E6%88%91%E4%BB%AC%E5%B0%B1%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%BF%99%E9%87%8C%E6%88%91%E4%BB%AC%E6%B2%A1%E7%9A%84%E9%80%89%E6%97%A5%E6%9C%AC%E7%A6%8F%E5%B2%9B%E8%AE%BF%E9%97%AE%E8%AE%B0">09我们就生活在这里，我们没的选：日本福岛访问记</a></li>
+<li><a href="#10%E6%88%91%E5%AD%98%E7%9A%84%E4%B8%80%E7%99%BE%E4%B8%87%E9%83%BD%E6%B2%A1%E4%BA%BA%E9%A2%86%E4%B8%93%E8%AE%BF%E6%96%87%E8%BA%AB%E5%8C%A0%E4%BA%BA%E4%B8%89%E4%BB%A3%E7%9B%AE%E9%9B%95%E4%BD%91%E8%A5%BF">10我存的一百万，都没人领：专访文身匠人三代目雕佑西</a></li>
+</ul>
+</li>
+<li><a href="#">📚</a></li>
+<li><a href="#world-book-day">World Book Day</a></li>
+</ul>
+</li>
+<li><a href="#gnx-tour-%E9%98%B4%E9%98%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%A4%9A%E7%BB%B4%E6%98%AF%E7%BB%88%E7%82%B9">GNX tour 阴阳是入口，多维是终点。</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/">https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/&sharesource=qzone&title=EKL Alma Mater 《格外的活法》&pics=https://ezraknotlab.github.io//images/avatar.png?v=1751556861234&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;World Book Day&lt;/li&gt;
+&lt;li&gt;GNX tour 阴阳是入口，多维是终点。&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/&sharesource=weibo&title=EKL Alma Mater 《格外的活法》 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;World Book Day&lt;/li&gt;
+&lt;li&gt;GNX tour 阴阳是入口，多维是终点。&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1751556861234 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/">
+                                                                                            EKL Battery parameter calculators
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20250415-the-best-is-blessed/">
+                                                                                                    EKL 314
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1751556861234);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

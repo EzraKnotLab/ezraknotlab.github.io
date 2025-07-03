@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Alma Mater 464
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-02-08</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">15.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3308</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/03/09/30d4ae74793e8f4a.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>星星_余华_北京文学1984年01期</li>
+<li>《小亲疙瘩》——莫言</li>
+<li>L to the OG</li>
+<li>Apple Vision Pro</li>
+<li>《首尔之春》</li>
+<li>《周处除三害》</li>
+<li>《人生每一步都算数》</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#online-resources">📗online resources</a></li>
+<li><a href="#2reading">📗2Reading：</a></li>
+<li><a href="#3-l-to-the-og">☕3 L to the OG</a></li>
+<li><a href="#4">📗4</a></li>
+<li><a href="#5">📗5</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#apple-vision-pro%E8%8B%B9%E6%9E%9C%E5%A4%B4%E7%9B%94%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98">Apple Vision Pro苹果头盔的最大问题</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E8%80%85%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93-gpu-%E7%9F%A5%E8%AF%86">开发者需要知道 GPU 知识</a></li>
+<li><a href="#%E8%A8%80%E8%AE%BA">言论</a></li>
+<li><a href="#%E5%91%A8%E5%88%8A">周刊</a>
+<ul>
+<li><a href="#%E7%94%B5%E6%B1%A0%E6%B0%B4%E6%B3%A5">电池水泥</a></li>
+<li><a href="#%E8%BD%AE%E8%83%8E%E6%B1%A1%E6%9F%93">轮胎污染</a></li>
+<li><a href="#we-will-all-become-boring">We will all become boring</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A6%96%E5%B0%94%E4%B9%8B%E6%98%A5">🔵《首尔之春》</a></li>
+<li><a href="#%EF%B8%8Fstories">⚜️stories</a></li>
+<li><a href="#%EF%B8%8F%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3">🎞️《周处除三害》</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="online-resources">📗online resources</h1>
+<p><a href="#toc">↩️</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9433808"> 余华：<br>
+<a href="https://xiandangdai.xiusha.com/y/yuhua/index.html">1余华作品集</a><br>
+<a href="https://www.99csw.com/book/2423/index.htm">2余华短篇精选集<label class="task-list-item-label" for="task-item-9433808"> 余华：
+[1余华作品集](https://xiandangdai.xiusha.com/y/yuhua/index.html)
+[2余华短篇精选集](https://www.99csw.com/book/2423/index.htm)</label></li>
+</ul>
+<summary>contents</summary>
+<details>
+<pre><code class="language-c">我能否相信自己 (序)
+爱情故事
+蹦蹦跳跳的游戏
+黄昏里的男孩
+空中爆炸
+阑尾
+两个人的历史
+命中注定
+女人的胜利
+朋友
+十八岁出门远行
+死亡叙述
+他们的儿子
+往事与刑罚
+为什么没有音乐
+我没有自己的名字
+我为什么要结婚
+西北风呼啸的中午
+鲜血梅花
+炎热的夏天
+在桥上
+祖先
+</code></pre>
+</details>
+<hr>
+<pre><code>&lt;iframe src=&quot;https://www.douban.com/group/topic/300445995/?_i=7402170-hX6Hfr&quot; width=&quot;750&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt;
+
+</code></pre>
+<p><a href="https://zhuanlan.zhihu.com/p/431232258?utm_id=0">星星_余华_北京文学1984年01期</a></p>
+<h1 id="2reading">📗2Reading：</h1>
+<p><a href="#toc">↩️</a><br>
+<a href="https://www.chinawriter.com.cn/n1/2023/0614/c418925-40013363.html">《人民文学》2023年第6期｜莫言：小亲疙瘩（节选）</a></p>
+<p><a href="https://www.douban.com/group/topic/297267011/?_i=7402305-hX6Hfr">《小亲疙瘩》——莫言 </a></p>
+<iframe src="https://baijiahao.baidu.com/s?id=1769998510403117111&wfr=spider&for=pc" width="750" height="800"></iframe>
+<h1 id="3-l-to-the-og">☕3 L to the OG</h1>
+<p><a href="#toc">↩️</a></p>
+<p>L to the motherfuckin' OG<br>
+<img src="https://img3.doubanio.com/view/subject/m/public/s33651677.jpg" alt="" width="400" height="300" loading="lazy"></p>
+<summary>contents</summary>
+<details>
+<pre><code class="language-c">Good evening, everyone
+Thank you for being here to honor my dad's life and work
+So when Rhea was planning this thing
+She asked me to help out with
+A tribute of a certain flavor
+Just remember, I'm not a professional
+Born on the North Bank, king of the East Side
+50 years strong, now he's rolling in a stick ride
+Handmade suits, raking in loot
+Five-star general, y'all best salute
+Yo, bitches be catty, but the King Kong daddy
+Rock all the haters while we go roll a fatty
+Squiggle on the decks, Kenny on the rhymes
+And Logan big ballin' on Hampton's time
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro, see
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro
+A-1 ratings, 80K wine
+Never going to stop baby, fuck father time
+Bro, don't get it twisted, I've been through hell
+But since I stan dad, I'm alive and well
+Shaper of views, creator of news
+Father of many, paid all his dues
+So don't try to run your mouth at the king
+Just pucker up, bitch, and go kiss the ring
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro, see
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro, see
+L to the OG
+Dude be the OG
+A-N he playing
+Playing like a pro
+When I say L, you say OG
+L to the (OG)
+L to the (OG)
+L to the (OG)
+L to the (OG)
+L to the (OG)
+L to the motherfuckin' OG
+</code></pre>
+</details>
+<h1 id="4">📗4</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://s3.bmp.ovh/imgs/2024/02/22/474592f03e344fc4.png" alt="" width="400" height="300" loading="lazy"></p>
+<h1 id="5">📗5</h1>
+<p>《人生每一步都算数》<br>
+<a href="#toc">↩️</a><br>
+飞往美国的航班是下午的，我最终并未如大家预期的那样登上飞机，而是毅然选择了另一条道路：上山出家。</p>
+<p>汽车穿过繁华喧闹的城区，逐渐驶向大山，一路上我内心既有期待，又有担忧。我的内心是愧疚的，父母一定对我非常失望，我甚至不愿意去想父母会做何反应……</p>
+<p>午餐前，我已到达寺院。下午，我给麻省理工学院负责招生的教授发去邮件，告诉她我的决定。教授很快这样回复我：<br>
+Dear Zhiyu Liu，</p>
+<p>I was very moved by your letter and although I am very sorry you will not be coming to MIT，I am very very happy for you. From the tone of the letter，it is clear that now you found your path and you seem very very happy. This is the most important moment of somebody's life：to recognize one's path!</p>
+<p>I would love to visit your temple at some point with my family. I am sure it would be a wonderful experience，so please keep in touch and let me know how your studies progress.</p>
+<p>Good luck with your new future and thank you again for letting us know your decision.</p>
+<p>Best regards</p>
+  <iframe src="//player.bilibili.com/player.html?aid=624233305&bvid=BV18b4y1A7US&cid=1416811522&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>focus on your own way.<br>
+omwtbarca</p>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="apple-vision-pro苹果头盔的最大问题">Apple Vision Pro苹果头盔的最大问题</h2>
+<p><a href="#toc">↩️</a><br>
+<a href="https://www.ruanyifeng.com/blog/2024/02/weekly-issue-290.html">科技爱好者周刊（第 290 期）：苹果头盔的最大问题</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Side by Side</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024021801.webp" alt="Image 1" style="width: 100%; height: auto;">
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024021802.webp" alt="Image 2" style="width: auto; height: auto;">
+        </div>
+    </div>
+</body>
+</html>
+<h2 id="开发者需要知道-gpu-知识">开发者需要知道 GPU 知识</h2>
+<figure data-type="image" tabindex="1"><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111306.webp" alt="" width="400" height="300" loading="lazy"></figure>
+<blockquote>
+<p>AI 大量使用 GPU 运算，本文介绍开发者需要知道的 GPU 知识。前半部分是概念，后半部分是 GPU 编程，可以只看前半部分。</p>
+</blockquote>
+<h2 id="言论">言论</h2>
+<p>很多书籍都说，乐观是幸福、健康和长寿的关键。但是，英国巴斯大学的一项研究表明，乐观实际上与较低的认知有关，认知能力高的人对未来往往更加现实和悲观。</p>
+<p>这也许表明，认知能力低的人更可能幸福、健康和长寿？</p>
+<p>当然，过度乐观可能会导致糟糕的财务决策，比如过度消费和负债，使得生活状况很糟糕。</p>
+<p>-- 巴斯大学</p>
+<h2 id="周刊">周刊</h2>
+<h3 id="电池水泥">电池水泥</h3>
+<p><a href="#toc">↩️</a><br>
+<a href="https://www.science.org/content/article/electrified-cement-could-turn-houses-and-roads-nearly-limitless-batteries">link</a></p>
+<p>家庭如果使用蓄电池储存电力，价格非常昂贵，而且电池很占空间。</p>
+<p>麻省理工学院的科学家，想出了一个解决办法，把电池放进了水泥，让电力储存在水泥里面，从而房子本身就能蓄能。<br>
+<img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080209.webp" alt="" loading="lazy"></p>
+<p>他们在水泥中掺入导电的炭黑，形成两个导电层，从而组成了一个超级电容，可以快速充电。</p>
+<p>研究团队的实验结果是，45立方米的混凝土可以储存10度电，足够普通家庭一天的使用。</p>
+<p>@<a href="https://www.ruanyifeng.com/blog/2024/03/weekly-issue-291.html">周刊</a></p>
+<hr>
+<h3 id="轮胎污染">轮胎污染</h3>
+<p><a href="#toc">↩️</a><br>
+<a href="https://dynomight.net/tires/">link</a></p>
+<p>电动车总体上是一种更清洁的交通工具，但是有一个方面，它比燃油车的污染更严重。</p>
+<p>那就是轮胎。汽车行驶时，轮胎与地面摩擦产生磨损，（轮胎和路面的）微粒散布在环境中，造成污染。</p>
+<p>电动车的重量普遍比同级别燃油车重20%，原因是电池很重。举例来说，特斯拉 Model Y 单单是电池，就重770公斤，相比之下，一辆大众甲壳虫燃油车的整体重量也只有820公斤，而后者的续航还要大于前者。</p>
+<p>电动车多出来的重量，会造成轮胎更快的磨损，导致更大的污染。</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024022704.webp" alt="" loading="lazy"></figure>
+<h3 id="we-will-all-become-boring">We will all become boring</h3>
+<p><a href="#toc">↩️</a><br>
+Loneliness, liberalism, and the traditional family</p>
+<p><a href="https://www.louiseperry.co.uk/p/we-will-all-become-boring">link</a><br>
+NB: I’m going to be publishing occasional Substack essays – both free and paywalled – alongside the MMM podcast: weekly bonus episodes for founding members plus weekly or bi-weekly interviews. I’ve now started work on my next book, The Case For Having Kids, and will be using these essays as a drawing board, to work through ideas and elicit feedback.</p>
+<h2 id="首尔之春">🔵《首尔之春》</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>The coup in Africa</li>
+<li>The 2 man's bald face
+<ul>
+<li>After reading Wikipedia： he became president twice in eight years after he seized power, and he was not bad in economy and diplomacy, especially in the relations between South Korea and North Korea.</li>
+</ul>
+</li>
+</ul>
+<p>At the beginning of his appointment, Jang Tae-wan, the commander of the capital garrison, made it clear for many times that he was not interested in politics, but the above thought that he was one of the few honest men and was given great trust. Because he was not familiar with the rules of the game, he was upright and loyal, and finally he could not resist the heavy encirclement of the enemy. Come down rationally and seriously think about your wishes? Strengths? Even if there is one in since heaven gave the talent, let it be employed!, we should choose our own path and make a good decision. When it comes to making decisions such as investing in stocks in Mao Dong's basically harmless podcast, smart people often think that the more uncertainties they have, the more confident they will make decisions. However, in the face of many changes that have been made, they tend to develop in an uncontrolled direction, because smart people may often miss the perfect opportunity.<br>
+<img src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2899437044.webp" alt="首尔之春 서울의 봄 2023)" loading="lazy"><br>
+wiki:https://zh.wikipedia.org/zh-cn/%E5%85%A8%E6%96%97%E7%85%A5</p>
+<p>忽左忽右:<a href="https://podcasts.google.com/u/1/feed/aHR0cHM6Ly9qdXN0cG9kbWVkaWEuY29tL3Jzcy9sZWZ0LXJpZ2h0LnhtbA/episode/aHR0cHM6Ly9kdHMucG9kdHJhYy5jb20vcmVkaXJlY3QubXAzL2p1c3Rwb2RtZWRpYS5jb20vYXVkaW8vbGVmdC1yaWdodC9sZWZ0cmlnaHQtZXAzMDYtMjAyNDAyMjMubXAz?sa=X&amp;ved=0CAUQkfYCahcKEwiozvql0saEAxUAAAAAHQAAAAAQAg">306 汉江暗流：兵变与韩国转型前史</a></p>
+<blockquote>
+<p>The film Seoul Spring, which exploded in South Korea, provided a new narrative version of the &quot;Double Twelve&quot; story in 1979, and also reflected the attitude of a new generation of Koreans towards this ambiguous history of good and evil. In this issue, we will go back to the history of military intervention in South Korea since 1960. Since the Second Republic, how did Lu Shi graduates and intelligence agencies become the core of upper-level politics in South Korea? What kind of factional struggle is behind the classical rule of park chung-hee? Looking back today, are these negative political legacies really gone? Welcome to the wonderful sharing brought by Liu Yi and Sha Qingqing!</p>
+</blockquote>
+<p><mark>Another point is the fault of JiangHu. Rightous people often receive unfair treatment.</mark></p>
+<h2 id="️stories">⚜️stories</h2>
+<p><a href="#toc">↩️</a></p>
+<p>&quot;In DC, there was an incident of a 25-year-old seemingly white male youth, an active-duty military member, self-immolating in protest. It started with seeing the photo in the morning military news, then watching the video interpretation, and just now, I went back to the original video. On a side note (different media forms present vastly different depths of emotional impact, be it video, images, perhaps music, books?). When watching, I was speechless, didn't cry, silently watching the person shouting, then tightly clenching fists while spinning in circles, trying to stand straight, and finally unable to resist falling to the ground. Before falling, the hat on the head burned and fell to the ground, followed by the clothes, pants, falling down, for some reason the right leg formed a triangle with the ground, and then the image only showed this gray-white triangle. Where else could be more reminiscent of a battlefield?&quot;</p>
+<p>油然而生 and 火焰从骨头崩发燃至全身</p>
+<hr>
+<p>This is why you can't trust anything: 'Cancel Culture' is a form of boycott often initiated online. It usually happens when celebrities make statements or engage in behaviors on social media platforms that are deemed offensive or unacceptable, leading to various forms of public backlash. <a href="https://weibo.com/1495486812/K361ztIid">As a form of punishment, they may lose endorsement deals, sponsorship opportunities, or even disappear from the public eye.</a></p>
+<p><a href="https://new.qq.com/rain/a/20200907A0JVYG00">l</a></p>
+<p>At first, it was Colby who said 'fuck cancel culture' during a pre-match weigh-in interview. I didn't pay much attention to it at the time, but the scene of that phrase has been in my head. The official Chinese translation given at the time was (online violence), and I didn't fully grasp the term until recently when I read news from The New York Times about Kanye being 'canceled' for a long time. I misunderstood it before.</p>
+<p><a href="https://new.qq.com/rain/a/20200907A0JVYG00">“取消文化”的来龙去脉和政治正确</a></p>
+<hr>
+<p><a href="https://youtu.be/RKJsMNU54UM?si=btqPvZLNRuMR2msD">Catfishing</a>: lie to somebody about who you are.网恋诈骗钓鱼  猫钓</p>
+<p>所以为什么所有人都在戴着面具？ N95 take off</p>
+<h2 id="️周处除三害">🎞️《周处除三害》</h2>
+<p><a href="#toc">↩️</a><br>
+写到关于周处除三害 周處除三害 <a href="https://movie.douban.com/subject/36151692/">电影</a>整体结构和起初河边的错误有异曲同工之处，类别不尽相同，却都有悬疑的元素，尤其是前者的第三个案子，两个电影都是明显的三个故事。值得关注的就是电影的中文名和英文名The Pig, the Snake, and the Pigeon背后的出处以及寓意了。</p>
+<p>中文：通缉犯陈桂林（阮经天 饰）生命将尽，却发现自己在通缉榜上只排名第三，他决心查出前两名通缉犯的下落，并将他们一一除掉。陈桂林以为自己已成为当代的周处除三害，却没想到永远参不透的贪嗔痴，才是人生终要面对的罪与罚。<br>
+　　影片引用的“周处除三害”典故，见于《晋书·周处传》和《世说新语》。据记载，少年周处身形魁梧，武力高强，却横行乡里，为邻人所厌。后周处只身斩杀猛虎孽蛟，他自己也浪子回头、改邪归正，至此三害皆除。</p>
+<p>英文：<a href="https://posts.careerengine.us/p/65e42dc0b74d8f2079fc0f49?from=marquee">refer</a></p>
+<p>“The Pig , The Snake and The Pigeon”是佛教中的概念，代表 three poisons（三毒），或许对应汉语里的“贪”，“嗔”，“痴”三个概念。在“生命之轮”（the wheel of life）的中心，这三毒（poisons）分别用猪（pig）、鸟（bird，即pigeon）和蛇（snake），分别代表无知（ignorance）、执念（attachment）和怨恨（aversion）。正如生命之轮（梵语: bhavacakra）所示，这三种毒会导致业力（karma）的产生，从而导致在六界（six realms）轮回（samsara)中重生（rebirth）。<br>
+上文提到的：无知（ignorance）、执念（attachment）和恨（aversion）就是中国佛教里常说的“贪嗔痴”，再简单阐述一下其定义：<br>
+1.贪，对顺的境界起贪爱，非得到不可，否则心不甘，情不愿。<br>
+2.嗔，对逆的境界生嗔恨，不称心如意就发脾气，不理智，意气用事。<br>
+3.痴，不明事理，是非不明，善恶不分，颠倒黑白。</p>
+<p><img src="https://static.careerengine.us/api/aov2/https%3A_%7C__%7C_mmbiz.qpic.cn_%7C_mmbiz_jpg_%7C_r9urYCreMVZQZZUQCy7uCqudJDEcMJ5icdJxwBtwJ2LeW4pGD2sWx5t7XfjqOWvSuiaFqlLQV5hBOew2jKckZVzQ_%7C_640%3Fwx_fmt%3Djpeg%26from%3Dappmsg" alt="" loading="lazy">图的中心有三种动物，就是前面说的猪、蛇、鸽子，它们分别代表了佛教所谓的“三毒”：贪、嗔、痴。</p>
+<p><a href="https://www.storm.mg/lifestyle/4882554?mode=whole">refer</a></p>
+<p>中文片名</p>
+<p>取自经典故事“周处除三害”。童话中的周处讲述山中虎患与水中蛟灾后，发现自己就是第三害，因此奋发向上，将自己改造成好人，从此三害尽除。但作为现代版本的“周处”，主角陈桂林，并不像童话的周处获得美好结局。他没有成为邻里欢迎的博学好人而活下去，而是接受枪决伏法。<br>
+陈桂林，从头到尾都是坏人。他误会自己得了绝症，为了“人死留名”而决定干一票大的，因此决定去杀通缉要犯。虽然以恶制恶让他有相较“正义”的时刻，但解决方式始终残暴。某些电影片段，笔者在看阮经天扮演的陈桂林时，只感觉自己彷佛看到了恶虎，面目狰狞且充满杀气，即将出笼。英文片名</p>
+<p>《周处除三害》。<br>
+在《The Pig The Snake And The Pigeon》这个片名中，提到了三种动物：猪（Pig）、蛇（Snake）、鸽子（Pigeon）。<br>
+这三种动物存在于佛教轮回图的圆心，代表了佛家所说的三毒“贪嗔痴”。这三者是主角的心魔，也对应了故事中的三大通缉要犯。贪，对应鸽子，是隐居澎湖的“尊者”之象征，表面和善，暗中却骗走信徒的所有家当。嗔，对应蛇，象征了脑中卡了子弹而动辄发怒的“香港仔”。痴，对应猪，也是主角陈桂林的象征，他不仅为了“虚名”犯痴，从头到尾更被想要忏悔人生的张贵卿所欺瞒。</p>
+<hr>
+<p>Paid in Full!</p>
+<figure data-type="image" tabindex="3"><img src="https://s3.bmp.ovh/imgs/2024/03/09/8abaa912d6c91473.png" alt="" loading="lazy"></figure>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#online-resources">📗online resources</a></li>
+<li><a href="#2reading">📗2Reading：</a></li>
+<li><a href="#3-l-to-the-og">☕3 L to the OG</a></li>
+<li><a href="#4">📗4</a></li>
+<li><a href="#5">📗5</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#apple-vision-pro%E8%8B%B9%E6%9E%9C%E5%A4%B4%E7%9B%94%E7%9A%84%E6%9C%80%E5%A4%A7%E9%97%AE%E9%A2%98">Apple Vision Pro苹果头盔的最大问题</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E8%80%85%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93-gpu-%E7%9F%A5%E8%AF%86">开发者需要知道 GPU 知识</a></li>
+<li><a href="#%E8%A8%80%E8%AE%BA">言论</a></li>
+<li><a href="#%E5%91%A8%E5%88%8A">周刊</a>
+<ul>
+<li><a href="#%E7%94%B5%E6%B1%A0%E6%B0%B4%E6%B3%A5">电池水泥</a></li>
+<li><a href="#%E8%BD%AE%E8%83%8E%E6%B1%A1%E6%9F%93">轮胎污染</a></li>
+<li><a href="#we-will-all-become-boring">We will all become boring</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A6%96%E5%B0%94%E4%B9%8B%E6%98%A5">🔵《首尔之春》</a></li>
+<li><a href="#%EF%B8%8Fstories">⚜️stories</a></li>
+<li><a href="#%EF%B8%8F%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3">🎞️《周处除三害》</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/alma-mater-464/">https://ezraknotlab.github.io/post/alma-mater-464/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/alma-mater-464/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/alma-mater-464/&sharesource=qzone&title=Alma Mater 464&pics=https://ezraknotlab.github.io//images/avatar.png?v=1751556861234&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;星星_余华_北京文学1984年01期&lt;/li&gt;
+&lt;li&gt;《小亲疙瘩》——莫言&lt;/li&gt;
+&lt;li&gt;L to the OG&lt;/li&gt;
+&lt;li&gt;Apple Vision Pro&lt;/li&gt;
+&lt;li&gt;《首尔之春》&lt;/li&gt;
+&lt;li&gt;《周处除三害》&lt;/li&gt;
+&lt;li&gt;《人生每一步都算数》&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/alma-mater-464/&sharesource=weibo&title=Alma Mater 464 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;星星_余华_北京文学1984年01期&lt;/li&gt;
+&lt;li&gt;《小亲疙瘩》——莫言&lt;/li&gt;
+&lt;li&gt;L to the OG&lt;/li&gt;
+&lt;li&gt;Apple Vision Pro&lt;/li&gt;
+&lt;li&gt;《首尔之春》&lt;/li&gt;
+&lt;li&gt;《周处除三害》&lt;/li&gt;
+&lt;li&gt;《人生每一步都算数》&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1751556861234 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/8713/">
+                                                                                            &#39;87+13&#39;
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/my-people/">
+                                                                                                    My People
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1751556861234);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

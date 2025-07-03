@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1751556861234" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250505
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-05-05</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">20.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4394</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/05/05/6a4dacb423bc2a82.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>last dance 318</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#%E6%96%87%E5%9C%A8%E5%AF%85%E9%80%80%E4%BC%91%E5%90%8E%E5%BC%80%E4%B9%A6%E5%BA%97-podcast">文在寅退休后开书店？ podcast</a></li>
+<li><a href="#last-dance-318">last dance 318</a></li>
+<li><a href="#%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%E5%8F%AF%E8%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E8%B0%8E%E8%A8%80">”气候变化可能是一个谎言。“</a></li>
+<li><a href="#fight-night-ufc-on-espn-machado-garry-vs-prates-kansas-city-27-apr">Fight Night UFC on ESPN: Machado Garry vs. Prates  Kansas City 27 Apr</a></li>
+<li><a href="#fight-nightufc-on-espn-sandhagen-vs-figueiredo-des-moines">Fight NightUFC on ESPN: Sandhagen vs. Figueiredo Des Moines,</a></li>
+<li><a href="#%E5%9C%86%E6%A1%8C%E4%BC%9A%E8%AE%AE">圆桌会议</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/OEFKVEE0bXZRY3ZKZGMyalNNR2lrNG5JdVRGR3Z2RXZ1amJObXdDejQvQU1mcHhWM1lXOUp0dGE2TFhPMTcva1ViclZVMG5IWnlFZGFTTWVVUjFyYXcxS1BZRkNkN2ZSR3ZwbWVLYWlkQkU9/Kanye_West_Rihanna_-_All_Of_The_Light_(Hydr0.org).mp3"></audio></p>
+<p><mark>All of the Lights Song by Kanye West ‧ 2010</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">All of the lights,
+(lights, lights)
+All of the lights
+Turn up the lights in here, baby
+Extra bright, I want y'all to see this
+Turn up the lights in here, baby
+You know what I need, want you to see everything
+Want you to see all of the lights
+Fast cars, shooting stars
+(All of the lights, all of the lights)
+Until it's Vegas everywhere we are
+(All of the lights)
+If you want it, you can get it for the rest of your life
+If you want it, you can get it for the rest of your life
+Something wrong, I hold my head
+MJ gone, our nigga dead
+I slapped my girl, she called the feds
+I did that time and spent that bread
+I'm heading home, I'm almost there
+I'm on my way, heading up the stairs
+To my surprise, a nigga replacing me
+I had to take him to that ghetto university
+Cop lights, flash lights, spotlights
+Strobe lights, street lights
+(All of the lights, all of the lights)
+Fast life, drug life, thug life
+Rock life, every night
+(All of the lights)
+Turn up the lights in here, baby
+Extra bright, I want y'all to see this
+Turn up the lights in here, baby
+You know what I need, want you to see everything
+Want you to see all of the lights
+Restraining order, can't see my daughter
+Her mother, brother, grandmother hate me in that order
+Public visitation, we met at Borders
+Told her she take me back
+I'll be more supportive
+I made mistakes,
+bumped my head
+Courts sucked me dry
+I spent that bread
+She need her daddy, baby please
+Can't let her grow up in that ghetto university
+Cop lights, flash lights, spotlights
+Strobe lights, street lights
+(All of the lights, all of the lights)
+Fast life, drug life, thug life
+Rock life, every night
+(All of the lights)
+Turn up the lights in here, baby
+Extra bright, I want y'all to see this
+Turn up the lights in here, baby
+You know what I need, want you to see everything
+Want you to see all of the lights
+Getting mine, baby
+Got to let these niggas know
+Getting right, babe
+You should go and get your own
+Getting mine, baby
+Got to let these niggas know
+Getting right, babe
+You should go and get your own
+Unemployment line, credit card declined
+Did I not mention I was about to lose my mind?
+And also was about to do that line
+K, okay, you know we going all the way this time
+We going all the way this time
+We going all the way this time
+(We going all the way this time)
+We going all the way this time
+Turn up the lights in here, baby
+Extra bright, I want y'all to see this
+Turn up the lights in here, baby
+You know what I need, want you to see everything
+Want you to see all of the lights
+Whoa, whoa
+(I tried to tell you but all I could say was ohh)
+Whoa, whoa
+(I tried to tell you but all I could say was ohh)
+Whoa, whoa
+(I tried to tell you but all I could say was ohh)
+Whoa, whoa
+(I tried to tell you but all I could say)
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/OEFKVEE0bXZRY3ZKZGMyalNNR2lrNG5JdVRGR3Z2RXZ1amJObXdDejQvQU1mcHhWM1lXOUp0dGE2TFhPMTcva2RsRGJoZE5hcmZ3aS94dDY1d09taEtGYm5yMUtMSG11clVOS0N2dGx0THc9/Kanye_West_-_Runaway_(Hydr0.org).mp3"></audio></p>
+<p><mark>Runaway Song by Kanye West ‧ 2010</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Look at ya, look at ya, look at ya, look at ya
+Look at ya, look at ya, look at ya, look at ya
+Look at ya, look at ya, look at ya, look at ya
+Look at ya (ladies and gentlemen), look at ya, look at ya, look at ya (ladies, ladies, and gentlemen)
+And I always find, yeah, I always find something wrong
+You been puttin' up with my shit just way too long
+I'm so gifted at finding what I don't like the most
+So, I think it's time (so, I think it's time) for us to have a toast
+Let's have a toast for the douchebags
+Let's have a toast for the assholes
+Let's have a toast for the scumbags
+Every one of them that I know
+Let's have a toast for the jerk-offs
+That'll never take work off
+Baby, I got a plan
+Run away fast as you can
+She find pictures in my email
+I sent this bitch a picture of my dick
+I don't know what it is with females
+But I'm not too good at that shit
+See, I could have me a good girl
+And still be addicted to them hoodrats
+And I just blame everything on you
+At least you know that's what I'm good at
+And I always find, yeah, I always find
+Yeah, I always find something wrong
+You been puttin' up with my shit just way too long
+I'm so gifted at finding what I don't like the most
+So, I think it's time (so, I think it's time) for us to have a toast
+Let's have a toast for the douchebags
+Let's have a toast for the assholes
+Let's have a toast for the scumbags
+Every one of them that I know
+Let's have a toast for the jerk-offs
+That'll never take work off
+Baby, I got a plan
+Run away fast as you can
+Run away from me, baby
+Ah, run away
+Run away from me, baby (look at ya, look at ya, look at ya)
+Run away
+When it starts to get crazy (look at ya, look at ya, look at ya)
+Then run away
+Babe, I got a plan, run away as fast as you can
+Run away from me, baby
+Run away
+Run away from me, baby (look at, look at, look at, look at, look at, look at, look at ya)
+Run away
+When it starts to get crazy (look at ya, look at ya, look at ya, look at ya)
+Why can't she just run away?
+Baby, I got a plan
+Run away as fast as you can (look at ya, look at ya, look at ya)
+24-7, 365, pussy stays on my mind
+I-I-I, I did it, alright, alright, I admit it (look at ya, look at ya, look at ya, look at ya)
+Now pick your next move, you could leave or live with it (look at ya, look at ya, look at ya, look at ya)
+Ichabod Crane with that motherfuckin' top off
+Split and go where? Back to wearing knockoffs?
+Haha, knock it off, Neimans, shop it off
+Let's talk over mai tais, waitress, top it off (look at ya)
+Hoes like vultures, wanna fly in your Freddy loafers
+You can't blame 'em, they ain't never seen Versace sofas (look at ya, look at ya, look at ya, look at ya)
+Every bag, every blouse, every bracelet
+Comes with a price tag, baby, face it (look at ya, look at ya, look at ya, look at ya)
+You should leave if you can't accept the basics
+Plenty hoes in the baller-nigga matrix
+Invisibly set, the Rolex is faceless
+I'm just young, rich, and tasteless, P
+Never was much of a romantic
+I could never take the intimacy
+And I know I did damage
+'Cause the look in your eyes is killing me
+I guess you knew of that advantage
+'Cause you could blame me for everything
+And I don't know how I'ma manage
+If one day, you just up and leave
+And I always find, yeah, I always find something wrong
+You been puttin' up with my shit just way too long
+I'm so gifted at finding what I don't like the most
+So, I think it's time (so, I think it's time) for us to have a toast
+Let's have a toast for the douchebags
+Let's have a toast for the assholes
+Let's have a toast for the scumbags
+Every one of them that I know
+Let's have a toast for the jerk-offs
+That'll never take work off
+Baby, I got a plan
+Run away fast as you can
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://townsquare.media/site/189/files/2011/09/Rihanna-We-Found-Love-feat.-Calvin-Harris.mp3"></audio></p>
+<p><mark>We Found Love Song by Rihanna ‧ 2011</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Yellow diamonds in the light
+Now we're standing side by side
+As your shadow crosses mine
+What it takes to come alive
+It's the way I'm feeling, I just can't deny
+But I've gotta let it go
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+Shine a light through an open door
+Love and life, I will divide
+Turn away 'cause I need you more
+Feel the heartbeat in my mind
+It's the way I'm feeling, I just can't deny
+But I've gotta let it go
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+Yellow diamonds in the light
+Now we're standing side by side
+As your shadow crosses mine (mine, mine, mine)
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+We found love in a hopeless place
+</code></pre>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://s3.bmp.ovh/imgs/2025/05/05/6a4dacb423bc2a82.png" alt="" loading="lazy"></p>
+<h2 id="文在寅退休后开书店-podcast">文在寅退休后开书店？ podcast</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>在这一集里面<a href="https://podcasters.spotify.com/pod/show/ao-zhang/episodes/ep-e31vsc2">在韩国，见前总统文在寅是一种怎么样的感受？</a>，有人分享去韩国庆尚南道梁山市平山村，文在寅退休后在乡下开书店成“网红打卡点”，游客还可以合影。
+<ul>
+<li><a href="https://hb.dzwww.com/p/p66I6QVMjG6.html">文在寅退休后在乡下开书店成“网红打卡点”：下午4点“上岗”和顾客合影，店里还卖中文书</a></li>
+<li><a href="https://www.sohu.com/a/711753361_112589">在文在寅书店买一本书，你就能够和文在寅合影 </a></li>
+<li><a href="https://m.thepaper.cn/wifiKey_detail.jsp?contid=21617527&amp;from=wifiKey#">退休后的文在寅：读书、遛狗与挥之不去的“青瓦台魔咒”</a></li>
+<li><a href="https://m.huxiu.com/article/3613791.html">这家书店，怎么成了中国年轻人韩国游的必去景点？</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="last-dance-318">last dance 318</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>2025/04/26 11:33 早上醒来last dance日期确定✅</p>
+</li>
+<li>
+<p>FC 318: Holloway vs. Poirier 3 is an upcoming mixed martial arts event produced by the Ultimate Fighting Championship that will take place on July 19, 2025, at the Smoothie King Center in New Orleans, Louisiana.</p>
+</li>
+<li>
+<p>My king</p>
+</li>
+<li>
+<p>有那么一瞬间  像是梦到一样   UFC318 comain  Justin gaethje vs paddy</p>
+</li>
+<li>
+<p>mental rest vs physical rest，每次需要休息时候的考虑。<a href="https://integrishealth.org/resources/on-your-health/2023/july/the-seven-forms-of-rest-and-why-you-need-all-of-them">The Seven Forms of Rest and Why You Need All of Them</a></p>
+</li>
+</ul>
+<h2 id="气候变化可能是一个谎言">”气候变化可能是一个谎言。“</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>看到一个论断，最初是Jordan Peterson最近做客JRE，不得不承认，JRE能做到今天这样的规模，有一定程度上是Rogan个人兴趣爱好广泛，本身comedian也有一定喜剧效果，再加上某些群体特爱的“阴谋论”，常驻的热门话题就那些，甚至有点“老掉牙”，比如UFO, 蜥蜴人，光明会……还有社会热点谜题等等。现代网络充斥fake news，还有一些假“真理”，尽管社交平台上满是这些，至少聪明人会被锻炼地越来越警觉，难以真正相信这里面的阴谋结论、话术，难以被训教，要想真正说服自己相信某个结论，只能develop 自己的 skills——Research，只有自己去深挖。但还有一点值得提的是，有些阴谋论在尘埃落定之前，确实有一定的趣味性，可以带着批判性像阅读一部小说一样踏上这个旅程……总之阴谋论作为一种“叙事娱乐”，在真假未明之间，激发了人类的猎奇心理。聪明人逐渐在虚假信息中锻炼出了“免疫力”，最终需要靠自己建立研究能力（develop skills）来判断真假。或许可以这样看待：当前后真相时代的特征：情绪和叙事 &gt; 证据和理性。Rogan 提供的不是“真理”，而是一种进入争议话题的入口体验。</li>
+<li>回到正题，最近很巧，很多偶然接触到的话题都和气候变化有关：盖茨日记长提的话题，尤其在印度和非洲，平均气温等等；看老高与小茉的视频，也有相关的讲解，还有煤的演变……</li>
+</ul>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114393048156894&bvid=BV1VWLgzrEKB&cid=29589833520&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<pre><code>* 煤炭的形成过程。煤是由古代的植物经过长时间的地质变化形成的。几十米厚的煤层是由于在石炭纪，地球的环境温暖湿润，植物繁茂，大量的植物死亡后沉积在沼泽中，经过长时间的压缩和变化形成的。而今天的植物无法形成煤炭，是因为地球的环境和分解者已经发生了变化。或许植物和动物一样，本能就是繁殖生长，尽管古早时期植物生存的环境二氧化碳远高，但是他们总洋溢于高二氧化碳的生长环境，并且不断繁殖。
+</code></pre>
+<p>Jordan Peterson，乔丹·伯恩特·彼得森（英语：Jordan Peterson，1962年6月12日—）是加拿大多伦多大学的心理学教授，临床心理学家和文化批评家[1]。他的主要研究领域是异常心理、社会心理的和人格心理学，特别是宗教信仰和思想体系方面的心理学以及个人性格的评估和改进。之前也做客过<a href="https://zh.gov-civ-guarda.pt/five-traits-that-boost-your-connectional-intelligence">乔丹·彼得森（Jordan Peterson）谈乔·罗根（Joe Rogan）：性别悖论和竞争的重要性</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QBEZhjnZTks?si=Ans_0MUdbAvt9p16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>这是一个threads：</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">气候变化可能是一个谎言。<br><br>NASA 传感器数据显示，地球上的植物比 30 年前多了 20%。<br><br>而在最近一次参加罗根播客节目时……<br><br>乔丹·彼得森曝光了究竟是谁从让人们恐惧全球变暖中获利。<br><br>下面是你需要知道的震撼真相：🧵 <a href="https://t.co/Lr5qLTGbTU">pic.twitter.com/Lr5qLTGbTU</a></p>&mdash; 柴郡🔔｜Crypto+AI Plus (@0xCheshire) <a href="https://twitter.com/0xCheshire/status/1916046101758767480?ref_src=twsrc%5Etfw">April 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>几十年来，我们被不断警告即将到来的气候灾难。</p>
+<p>海平面上升，沙漠扩张，物种大灭绝。</p>
+<p>这些叙事影响政策、左右投资、催生了数十亿美元的资助项目。</p>
+<p>但如果最重要的气候故事从未被真正讲述过呢？</p>
+<p>正向的环保新闻无法带来点击量，无法驱动募资，也无法合理化紧急权力的授予。</p>
+<p>灾难卖得出去，进步却卖不出去。</p>
+<p>这种激励机制深刻地塑造了我们听到的信息。</p>
+<p>“想象一个世界，能源充足到连最贫困的人都能负担得起。这不值得成为我们的愿景吗？”</p>
+<p>他主张，气候政策应以丰裕为目标，而不是以匮乏为手段——应致力于让生活更好，而不仅仅是减少痛苦。</p>
+<p>这是环保与人类繁荣并举的世界观。</p>
+<p>这个故事背后，隐藏着一条深刻的真理：</p>
+<p>我们选择讲述的故事，决定了世界的回应。</p>
+<p>彼得森表明，只要突出不同的数据点，我们就可以彻底改变对重大问题的看法。</p>
+<p>问题是：谁来控制这些叙事？</p>
+<p>太长时间以来，叙事权掌握在机构、媒体巨头和既得利益者手中。</p>
+<p>这就是为什么我们无条件相信气候灾难论。</p>
+<hr>
+<p>总结几个点：</p>
+<ul>
+<li>气候变化≠气候灾难：</li>
+</ul>
+<p>NASA 数据确实显示“植被增多”等局部正向指标；</p>
+<p>但这不代表全球变暖无害，而是说明问题更复杂，不能只靠情绪化灾难叙事引导。</p>
+<ul>
+<li>主流叙事 vs. 利益动机：</li>
+</ul>
+<p>“灾难”有流量，“希望”没传播力；</p>
+<p>如果环保议题被当作募资和控制的工具，那么我们应该警惕的不只是“气候变化是否真实”，而是谁掌控了“讲述”的权力。</p>
+<ul>
+<li>Peterson式叙事的优势：</li>
+</ul>
+<p>用哲学、人性、心理视角切入；</p>
+<p>他主张的“繁荣式环保”思维，某种程度上提供了对比当前环保限缩主义的替代方案。</p>
+<h2 id="fight-night-ufc-on-espn-machado-garry-vs-prates-kansas-city-27-apr">Fight Night UFC on ESPN: Machado Garry vs. Prates  Kansas City 27 Apr</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Prelims有Jaqueline Amorim won by submission,  Ikram Aliskerov TKO in R1, 算是重回正轨，正常brick by brick肯定会进到排名内，还有很多需要打磨。</li>
+<li>Randy Brown KO R2 Nicolas Dalby，Randy身体优势在次中太明显，速度还比较快，所以一般对手很难摸到，力量也不差，所以终结也不太出乎意料，有点像Kevin Holland，但是毕竟技术还比较糙，所以还得需要很大进步才能在Rankings内崭露头角。</li>
+<li>中间两场boring-ass, 然后就是主戏！！</li>
+<li>想起来张明扬在称重仪式上对视常常会有腮帮会和鱼呼吸一样鼓起来，一上一下节奏像是呼吸一样。</li>
+<li>张明扬R1 TKO Anthony Smith，没有多少意外，一方面张明扬本身技术身体都不错，Anthony Smith挂手套之战，就要退役了。印象深的是赛后张明扬说的：当一肘到狮心脑袋上裂开流血时候，他才意识到比赛才开始，确实是这样，对于Anthony Smith脸上挂彩经常有，这些vets如Glover Teixeira，都是“浴血奋战”，在”血泊“中继续推进向前。下一场会更加好看~</li>
+<li>Main event是lan Machado Garry won by UD VS Carlos Prates. lan Machado Garry发挥正常，calculated, high IQ. Ian Garry和巴西人待在一起，训练，认为自己一半巴西人，一半爱尔兰人，甚至说自己是最好的巴西WW，比巴西人更巴西人，除去这些，他也自己说学到的最好的，应该是从Alex Pereira和Charles, get stunned but keep fighting. 输赢是重要，但是那只是结果的两种，并不能让你停下脚步。 champ最重要的是从对待失败的态度中区别。</li>
+<li>反而Carlos Prates状态稍差，game plan也差点意思，导致后期被动，难以翻盘。但是卡普出场像thug，很精神。sick</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I don’t care, man. Carlos Prates is still so sick.<br><br>He could lose 10 consecutive fights and would probably still be one of my favorite fighters. <a href="https://t.co/Icr3MbV2mA">pic.twitter.com/Icr3MbV2mA</a></p>&mdash; I AM SATURDAY (@I_AM_SATURDAY) <a href="https://twitter.com/I_AM_SATURDAY/status/1917061104175374688?ref_src=twsrc%5Etfw">April 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<pre><code>*  https://youtube.com/shorts/jN4hQ9j79hg?si=K_Riz_zXaF2X_L5N
+</code></pre>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@khanssky0/video/7497873505468484882" data-video-id="7497873505468484882" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@khanssky0" href="https://www.tiktok.com/@khanssky0?refer=embed">@khanssky0</a> Carlos Prates 🇧🇷 Entrance | Walkout UFC Fight Night <a title="shorts" target="_blank" href="https://www.tiktok.com/tag/shorts?refer=embed">#shorts</a> <a title="ufc" target="_blank" href="https://www.tiktok.com/tag/ufc?refer=embed">#ufc</a> <a title="ufcfightnight" target="_blank" href="https://www.tiktok.com/tag/ufcfightnight?refer=embed">#ufcfightnight</a> <a title="mma" target="_blank" href="https://www.tiktok.com/tag/mma?refer=embed">#mma</a> <a title="mmafighter" target="_blank" href="https://www.tiktok.com/tag/mmafighter?refer=embed">#mmafighter</a> <a title="entrance" target="_blank" href="https://www.tiktok.com/tag/entrance?refer=embed">#entrance</a> <a title="ufcfighter" target="_blank" href="https://www.tiktok.com/tag/ufcfighter?refer=embed">#ufcfighter</a> <a title="ianmachadogarry" target="_blank" href="https://www.tiktok.com/tag/ianmachadogarry?refer=embed">#ianmachadogarry</a> <a target="_blank" title="♬ オリジナル楽曲  - Khan’s Sky" href="https://www.tiktok.com/music/オリジナル楽曲-Khan’s-Sky-7497878695181323025?refer=embed">♬ オリジナル楽曲  - Khan’s Sky</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<pre><code>*  是这首歌：
+</code></pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkqyIoYAXV8?si=X2U2TN09eaSxXzO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="fight-nightufc-on-espn-sandhagen-vs-figueiredo-des-moines">Fight NightUFC on ESPN: Sandhagen vs. Figueiredo Des Moines,</h2>
+<ul>
+<li>Dutch Reinier de Ridder 灭了Bo Nickal， 又一超新星陨落。</li>
+<li>没眼看  在OF上figg要求Sandhagen给诱惑,Sandhagen won by TKO in R2</li>
+<li>地面缠斗总有两人的腿交互缠在一起，太容易扭伤，pity，伤病总是不好的</li>
+</ul>
+<h2 id="圆桌会议">圆桌会议</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>总觉得相互交流时候圆桌形式最舒服，involved的三四个人都在视线之内，不同频繁转头，也很舒服，可以聊一些深入的话题，引发思考，相互交流有价值的见解，丰富认识。</li>
+</ul>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>[❇️在看]： <a href="https://github.com/zijie0/HumanSystemOptimization?tab=readme-ov-file">HumanSystemOptimization<br>
+（中文）</a></li>
+<li>EKL Alma Mater 《可能的世界》on the way!</li>
+<li>早上早起的方法之一是睡觉时候可以窗帘拉开一半，天亮时候光照到房间，一定强度后会自然醒来，或者窗开着，有外面的鸟叫声传来。</li>
+<li>醒了就难再睡着，但就是这种神智不清时候的思考，思维还比较发散，有可能会发现当前问题一个偶然的解。</li>
+<li>Relief washes over me the instant I dive into a book. 西边的围墙外落日，草地中间长椅上蚊虫 蚂蚁蜘蛛  头顶上嘈杂的鸟叫。知识才是最强大的穹顶</li>
+<li>几篇源自《读库》的短篇文章，饶有趣味：https://z.arlmy.me/posts/Note/Note_Duku2022/</li>
+<li>vibe:</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DI4hrdBz3bw/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DI4hrdBz3bw/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DI4hrdBz3bw/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Nature 🌲🌳 (@natural_._scenery) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DI8HopyPz7C/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DI8HopyPz7C/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DI8HopyPz7C/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">sonder’s presence ᡣ𐭩 (@mycinegraphics) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<hr>
+<ul>
+<li><a href="https://onlinelibrary.wiley.com/doi/10.1111/mms.12906">The first three records of killer whales (Orcinus orca) killing and eating blue whales (Balaenoptera musculus)</a>文章全是照片LOL</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DJFw1WphOwm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DJFw1WphOwm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DJFw1WphOwm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Hashem Al-Ghaili (@hashem.alghaili) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<ul>
+<li><a href="https://www.pnas.org/doi/10.1073/pnas.2425219121">喜欢看专业的新闻稿，故事和科学原理讲得既普罗大众化，还专业性强地让人佩服，尤其是对于特定情形下细节表述，真是enjoy</a></li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#%E6%96%87%E5%9C%A8%E5%AF%85%E9%80%80%E4%BC%91%E5%90%8E%E5%BC%80%E4%B9%A6%E5%BA%97-podcast">文在寅退休后开书店？ podcast</a></li>
+<li><a href="#last-dance-318">last dance 318</a></li>
+<li><a href="#%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%E5%8F%AF%E8%83%BD%E6%98%AF%E4%B8%80%E4%B8%AA%E8%B0%8E%E8%A8%80">”气候变化可能是一个谎言。“</a></li>
+<li><a href="#fight-night-ufc-on-espn-machado-garry-vs-prates-kansas-city-27-apr">Fight Night UFC on ESPN: Machado Garry vs. Prates  Kansas City 27 Apr</a></li>
+<li><a href="#fight-nightufc-on-espn-sandhagen-vs-figueiredo-des-moines">Fight NightUFC on ESPN: Sandhagen vs. Figueiredo Des Moines,</a></li>
+<li><a href="#%E5%9C%86%E6%A1%8C%E4%BC%9A%E8%AE%AE">圆桌会议</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250505/">https://ezraknotlab.github.io/post/ekl-20250505/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250505/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250505/&sharesource=qzone&title=EKL 20250505&pics=https://ezraknotlab.github.io//images/avatar.png?v=1751556861234&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;last dance 318&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250505/&sharesource=weibo&title=EKL 20250505 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;last dance 318&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1751556861234 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/image-editor-turn-your-photo-to-3d-deluxe/">
+                                                                                            Image Editor: Turn Your Photo to 3D (Deluxe)
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-battery-parameter-calculators/">
+                                                                                                    EKL Battery parameter calculators
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1751556861234);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

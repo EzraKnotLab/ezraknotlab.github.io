@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1753065905824" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1753065905824" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Chaos #155 with Max Holloway
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-04-29</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">11.0
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">2548</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLChaos/">EKL Chaos</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/f20444f4-aa83-44f0-a962-3b10773eecce/celc202300739-toc-0001-m.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <p><a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/celc.202300739">Developments, Novel Concepts, and Challenges of Current Collectors: From Conventional Lithium Batteries to All-Solid-State Batteries</a></p>
+<p>rate:⭐⭐</p>
+<figure data-type="image" tabindex="1"><img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/3149d879-20e7-43da-8c8a-497a50e0fce6/celc202300739-fig-0001-m.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>The current collectors applied in different kind of lithium batteries.</p>
+</blockquote>
+<hr>
+<figure data-type="image" tabindex="2"><img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/21332f92-5ffd-4570-9441-35e4966a8a92/celc202300739-fig-0009-m.jpg" alt="Theoretic performance of lithium-alloys and metals" loading="lazy"></figure>
+<hr>
+<figure data-type="image" tabindex="3"><img src="https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/adb8e79e-5062-44ab-a065-393864be9684/celc202300739-fig-0008-m.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>Principles for current collector selection between LIBs and ASSLBs.</p>
+</blockquote>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"综述","children":[{"content":"1.总体目标","children":[{"content":"高电子导电性","children":[],"payload":{"lines":"5,6"}},{"content":"高抗腐蚀性","children":[],"payload":{"lines":"6,7"}},{"content":"高电化学稳定性","children":[],"payload":{"lines":"7,8"}},{"content":"高机械强度","children":[],"payload":{"lines":"8,9"}},{"content":"与活性电极材料接触性良好","children":[],"payload":{"lines":"9,10"}},{"content":"经济可行性","children":[],"payload":{"lines":"10,11"}},{"content":"轻量","children":[],"payload":{"lines":"11,12"}}],"payload":{"lines":"4,5"}},{"content":"2.铜铝箔的特性","children":[{"content":"铝箔","children":[{"content":"Al不能作为负极集流体","children":[{"content":"Al的晶隙尺寸与Li的原子尺寸接近，在阳极侧形成了Al Li合金，导致活性Li的消耗非常大。","children":[],"payload":{"lines":"16,17"}}],"payload":{"lines":"15,17"}},{"content":"Al优良的稳定性但强度和抗腐蚀性不足","children":[],"payload":{"lines":"17,18"}},{"content":"Ni泡沫正极好但会与锂合金化","children":[],"payload":{"lines":"18,19"}}],"payload":{"lines":"14,15"}},{"content":"铜箔","children":[{"content":"阳极侧采用Cu和Ti金属箔。","children":[{"content":"Ti稳定但太贵","children":[{"content":"镍箔和不锈钢( SUS，导电差 )箔由于具有宽电压窗口的电化学稳定性，可用于两侧。","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"21,23"}}],"payload":{"lines":"20,23"}}],"payload":{"lines":"19,20"}},{"content":"其他","children":[],"payload":{"lines":"23,24"}}],"payload":{"lines":"13,14"}},{"content":"3.传统集流体","children":[{"content":"厚度","children":[{"content":"通过使用添加剂的组合，成功地将<mark>商用铜箔的厚度</mark>( 9μm )降低到4.5 μ m。","children":[],"payload":{"lines":"29,30"}},{"content":"集流体的厚度和屈服应力对其电阻和弹塑性行为的影响存在尺寸效应问题。","children":[],"payload":{"lines":"30,31"}},{"content":"集流体厚度越薄，长径比越大，电阻越大，进而影响电流分布，造成能量和功率损失。","children":[],"payload":{"lines":"31,32"}}],"payload":{"lines":"28,29"}},{"content":"分类：","children":[{"content":"1.过渡金属材料","children":[{"content":"a.表面修饰","children":[{"content":"","children":[{"content":"提升电子导电性和抗腐蚀性","children":[],"payload":{"lines":"36,37"}},{"content":"降低锂成核过点位，调控沉积行为","children":[],"payload":{"lines":"37,38"}},{"content":"碳coating有良好的电子导电性，高比表面积，抗氧化性，更强的变形能力","children":[],"payload":{"lines":"38,40"}}],"payload":{"lines":"36,40"}},{"content":"","children":[{"content":"[ 111 ]取向的纳米孪晶，突出了集流体晶体取向的重要影响。","children":[],"payload":{"lines":"42,43"}},{"content":"均匀分布在Cu箔上的亲锂Ag颗粒","children":[],"payload":{"lines":"43,44"}}],"payload":{"lines":"42,44"}}],"payload":{"lines":"35,36"}},{"content":"b.几何设计","children":[{"content":"可调节孔隙结构的非动态智能Cu集流体，通过调节颗粒间距离，快速适应高电流密度","children":[],"payload":{"lines":"45,46"}},{"content":"具有许多微孔的3D Al集流体","children":[],"payload":{"lines":"46,47"}}],"payload":{"lines":"44,45"}}],"payload":{"lines":"33,34"}},{"content":"2.碳基材料","children":[{"content":"","children":[{"content":"机械完整性以适应体积变化","children":[],"payload":{"lines":"48,49"}},{"content":"优越的离子导电性、","children":[],"payload":{"lines":"49,50"}},{"content":"大的可利用表面积","children":[],"payload":{"lines":"50,51"}},{"content":"丰富的官能团化化学以增加对锂金属活性材料的亲和力","children":[],"payload":{"lines":"51,53"}}],"payload":{"lines":"48,53"}},{"content":"","children":[{"content":"采用石墨纸( GP )作为LMBs的阳极集流体，GP不仅具有超轻、高导电性、良好的机械和化学稳定性，而且可以抑制金属锂与传统铜箔之间发生的电偶腐蚀。","children":[],"payload":{"lines":"55,56"}},{"content":"Cu / Cu3P异质结构嵌入碳纳米纤维( Cu / Cu3P - N - CNF复合材料)作为多功能集流体用于锂沉积。","children":[],"payload":{"lines":"56,57"}}],"payload":{"lines":"55,57"}}],"payload":{"lines":"47,48"}},{"content":"3.锂合金材料","children":[{"content":"","children":[{"content":"虽然集流体与金属锂之间的有害合金化反应会导致可利用的活性锂减少，但当合金化反应可逆时，在循环过程中既允许Li +的嵌入又允许Li +的脱出，是锂电池正常工作的基础之一。","children":[],"payload":{"lines":"58,59"}},{"content":"锂合金具有理想的锂形核和生长特性。当金属锂直接在集流体上生长时，集流体是否允许均匀的锂成核和生长取决于Li +吸附的自由能和Li在其上的表面扩散势垒。","children":[],"payload":{"lines":"59,61"}}],"payload":{"lines":"58,61"}},{"content":"","children":[{"content":"合金化材料作为箔状阳极：铝、铟、锡和铅能量密度比石墨基系统提高了40 %的潜力(图4b )。证明了","children":[],"payload":{"lines":"63,64"}},{"content":"对集流体表面进行初始化学预锂化处理，可以显著提高无阳极金属锂电池中集流体锂离子的形核率。","children":[],"payload":{"lines":"64,65"}}],"payload":{"lines":"63,65"}}],"payload":{"lines":"57,58"}},{"content":"4.新型材料","children":[{"content":"","children":[{"content":"MXene: 柔性、轻质的MXene纸代替CuCC作为LIBs中Si负极的集流体","children":[],"payload":{"lines":"66,67"}},{"content":"金属有机骨架( MOF )","children":[],"payload":{"lines":"67,68"}},{"content":"金属玻璃纤维( MGF )等新型材料","children":[],"payload":{"lines":"68,69"}},{"content":"具有超轻、优异的电化学稳定性、耐火性、高强度、柔韧性等优点。","children":[],"payload":{"lines":"69,71"}}],"payload":{"lines":"66,71"}},{"content":"","children":[{"content":"MXene 纸代替铜箔作集流体","children":[],"payload":{"lines":"73,74"}},{"content":"MGF金属玻璃纤维取代铜箔，超轻阻燃柔韧性好","children":[],"payload":{"lines":"74,75"}},{"content":"复合集流体，三明治结构","children":[],"payload":{"lines":"75,77"}}],"payload":{"lines":"73,77"}}],"payload":{"lines":"65,66"}},{"content":"小结：","children":[{"content":"集流体通常被要求与所负载的电极材料具有较强的相互作用和粘附力。<mark>合适的形状和合适的集流体表面性质至关重要。</mark>","children":[],"payload":{"lines":"78,79"}},{"content":"金属锂的沉积过程可以简单地分为<mark>成核</mark>和<mark>生长</mark>两部分，","children":[{"content":"锂核的分布状态由集流体的表面状态决定","children":[],"payload":{"lines":"80,81"}},{"content":"成核形态与电解液的组成有关","children":[],"payload":{"lines":"81,82"}},{"content":"生长行为与SEI膜的性质有关","children":[],"payload":{"lines":"82,83"}}],"payload":{"lines":"79,83"}}],"payload":{"lines":"77,78"}}],"payload":{"lines":"32,33"}}],"payload":{"lines":"27,28"}},{"content":"4.ASSLMB的集流体","children":[{"content":"1.传统型","children":[{"content":"高压下固态的界面兼容性（与液系不同）","children":[],"payload":{"lines":"85,86"}},{"content":"界面应力很重要，但研究只有Ni Cu SUS","children":[],"payload":{"lines":"86,87"}},{"content":"电池部件都会影响导锂导电，不考虑化学反应，从集流体本身特点出发：","children":[{"content":"集流器界面上的锂+导电性和电子导电性都受到了限制，而改进集流器的电子接触可能是提高高速率性能的途径。","children":[],"payload":{"lines":"88,89"}}],"payload":{"lines":"87,89"}},{"content":"由于众所周知的化学不稳定性，在 ASSLB 中，即使铜和硫化物电解液没有直接接触，也会发生铜集电体腐蚀。","children":[{"content":"导电的 CuxS 枝晶（可能是脆性失效，和电解液副反应）","children":[],"payload":{"lines":"90,91"}}],"payload":{"lines":"89,91"}},{"content":"商业上要求越轻越对电池整体能量密度更加有利","children":[],"payload":{"lines":"91,92"}},{"content":"但对于固态锂金属电池来说，良好的固固界面接触需要较高的内部压力，固态电解质和电极之间通常需要施加高压力，所以伴随循环内部压力变化也比较大，要求集流体有更好的机械强度，否则容易失效，产生副反应影响寿命","children":[],"payload":{"lines":"92,94"}}],"payload":{"lines":"84,85"}},{"content":"2.修饰型","children":[{"content":"挑战：","children":[{"content":"锂离子界面迁移困难","children":[{"content":"多功能复合夹层，Li和SE间塑性离子通道","children":[],"payload":{"lines":"97,98"}},{"content":"类似的策略：<mark>塑性和高离子电导的缓冲中间夹层作CuCC的修饰界面</mark>","children":[{"content":"表层涂石墨","children":[],"payload":{"lines":"99,100"}},{"content":"碳纸替代","children":[],"payload":{"lines":"100,101"}},{"content":"锂合金涂层","children":[{"content":"原子能和Li形成合金互溶，从而降低成核过电位","children":[],"payload":{"lines":"102,103"}}],"payload":{"lines":"101,103"}},{"content":"银-碳涂层","children":[],"payload":{"lines":"103,104"}}],"payload":{"lines":"98,104"}}],"payload":{"lines":"96,104"}},{"content":"固态界面副反应多","children":[{"content":"固态要求有高压的环境，所以会导致SEI破裂，电解液消耗锂，CE降低","children":[],"payload":{"lines":"105,106"}},{"content":"多次循环界面接触变差，<mark>铜上修饰缓冲夹层有利于缓解</mark>","children":[],"payload":{"lines":"106,107"}},{"content":"锂合金，如 Li-Ag、Li-Mg、Li-Al、Li-Au 等，具有可逆地剥离和镀锂的能力","children":[],"payload":{"lines":"107,108"}},{"content":"SE侧 LiC6 层的高 Li+ 电导率、延展性以及锂银合金化反应调节锂沉积","children":[],"payload":{"lines":"108,109"}},{"content":"三明治状超薄（13.2 μm）TMCC，缩短了热传导路径，减少热损失，缓解局部热点形成。","children":[],"payload":{"lines":"109,114"}}],"payload":{"lines":"104,114"}}],"payload":{"lines":"95,96"}}],"payload":{"lines":"94,95"}}],"payload":{"lines":"83,84"}},{"content":"5.总结","children":[{"content":"未来方向：","children":[{"content":"高硬度CC","children":[{"content":"适配固态高压界面","children":[],"payload":{"lines":"119,120"}}],"payload":{"lines":"118,120"}},{"content":"电化学窗口筛选 界面相容化学稳定的CC","children":[],"payload":{"lines":"120,121"}},{"content":"物理和电子接触良好","children":[{"content":"界面自适应的弹力","children":[],"payload":{"lines":"122,123"}},{"content":"塑性和应力释放","children":[],"payload":{"lines":"123,124"}}],"payload":{"lines":"121,124"}},{"content":"锂合金表现出相对较高的电化学等效性","children":[{"content":"尽管合金本身具有电子导电性，但许多合金的高锂扩散率会随着电荷状态的变化而发生数量级的变化","children":[],"payload":{"lines":"125,126"}},{"content":"合金反应本身会产生高内应力，导致材料内部屈服和变形<br>\n探索失效机制，搞清楚怎么电化学窗口筛选","children":[],"payload":{"lines":"126,128"}}],"payload":{"lines":"124,128"}}],"payload":{"lines":"117,118"}},{"content":"三个失效破裂","children":[{"content":"集流体","children":[],"payload":{"lines":"129,130"}},{"content":"SEI","children":[],"payload":{"lines":"130,131"}},{"content":"SSE","children":[],"payload":{"lines":"131,132"}},{"content":"固态要求有高压的环境，所以会导致SEI破裂，电解液消耗锂，CE降低","children":[],"payload":{"lines":"132,133"}}],"payload":{"lines":"128,129"}}],"payload":{"lines":"114,115"}}],"payload":{"lines":"2,3"}},{})</script>
+</body>
+</html>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/">https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/&sharesource=qzone&title=EKL Chaos #155 with Max Holloway&pics=https://ezraknotlab.github.io//images/avatar.png?v=1753065905824&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-chaos-155-with-max-holloway/&sharesource=weibo&title=EKL Chaos #155 with Max Holloway + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1753065905824 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLChaos/">#
+                                                EKL Chaos
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/alma-mater-483/">
+                                                                                            Alma Mater 483
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-300/">
+                                                                                                    EKL 300
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1753065905824);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

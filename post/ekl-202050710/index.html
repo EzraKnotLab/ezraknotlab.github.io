@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLPub">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                        🌌Me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1756109243429" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1756109243429" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLPub">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://omwtbarca.mysxl.cn/about-me">
+                            🌌Me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 202050710
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-07-13</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">17.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3750</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/07/13/4a9962d23d265302.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Hawaii</li>
+<li>Countdown 318</li>
+<li>回溯、穿越UFC 254</li>
+<li>New albums drop</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#good">Good</a>
+<ul>
+<li><a href="#hawaii">Hawaii</a></li>
+<li><a href="#countdown-318">Countdown 318</a></li>
+<li><a href="#%E5%9B%9E%E6%BA%AF-%E7%A9%BF%E8%B6%8Aufc-254">回溯、穿越UFC 254</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#new-albums-drop">new albums drop</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://cdn3.mp3gaa.xyz/swahilisongs/wp-content/uploads/2023/06/Sam_Smith_-_Money_On_My_Mind.mp3"></audio></p>
+<p><mark>Sam Smith – Money On My Mind</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">When I signed my deal, I felt pressure
+Don't wanna see the numbers, I wanna see heaven
+You say could you write a song for me?
+I say I'm sorry I won't do that happily
+When I go home
+I tend to close the door
+I never wanted more
+So sing with me
+Can't you see?
+I don't have money on my mind
+Money on my mind
+I do it for, I do it for the love
+I don't have money on my mind
+Money on my mind
+I do it for, I do it for the love
+I do it for the love
+I do it for the love
+Please don't get me wrong, I wanna keep it moving
+I know what that requires, I'm not foolish
+Please can you make this work for me?
+'Cause I'm not a puppet, I will work against your strings
+When I go home
+I tend to close the door
+I never wanted more
+So sing with me
+Can't you see?
+I don't have money on my mind
+Money on my mind
+I do it for, I do it for the love
+I don't have money on my mind
+Money on my mind
+I do it for, I do it for the love
+I do it for the love
+I do it for the love
+When the sun will set, don't you fret
+No, I have no money on my mind
+No money on my mind
+No money on my mind
+No, I have have money on my mind
+When the sun will set, don't you fret
+No, I have no money on my mind
+No money on my mind
+No money on my mind
+No, I have have money on my mind
+Just love
+Money on my mind
+Money on my mind
+I do it for, I do it for the love
+I don't have money on my mind
+Money on my mind
+I do it for, I do it for the love
+I do it for the love
+I do it for the love
+
+
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://fine.sunproxy.net/file/dVN0VisyeUtRZjhoT1NFUUE1cWJ5dUowVjBoTlk4d1NZMENNcSs4dkVXbEdZNEtnNEVKL2pKSmZzWDkxbUFxU0k0QVB5eHIvQU05YUQ1QmRBdmw0ekZRcXNjbkFFZUp5bzl3NU5DMUlNTVE9/21_Savage_-_Bank_Account_(FeelMP3.com).mp3"></audio></p>
+<p><mark>21 savage - bank account</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Ooh, ooh, oh, oh, oh, ow, ow
+Wow, wow, wow, ah, ow, ow, ow
+I buy a new car for the b- (for real)
+I tear down the mall with the b- (for real)
+You can't even talk to the b- (nah)
+She f- with bosses and sh- (on God)
+I pull up in 'Raris and sh- (skrrt)
+With choppas and Harleys and sh- (for real)
+I be Gucci'd down (Gucci)
+You wearin' Lacoste and sh-
+Yeah, Moncler, yeah, fur came off a bear, yeah (yeah)
+Triple homicide, put me in a chair, yeah (in jail)
+Triple cross the plug, we do not play fair, yeah (on God)
+Got 'em tennis chains on and they real blingy (bling)
+Draco make you do the chicken head like Chingy (Ching)
+Walk in Neiman Marcus and I spend a light 50 (50)
+Please proceed with caution, shooters, they be right with me (21)
+Bad-bad, cute face and some nice t-
+75 hunnid on a Saint Laurent jacket (yeah)
+-, be careful when you dumpin' yo' ashes
+I ain't no sucker, I ain't cuffin' no action (nah)
+The skreets raised me (wild), I'm a whole ba- (wild, wild, wild)
+I bought a 'Rari just so I can go faster (skrrt)
+- tryna copy me, they playin' catch up (21)
+I might pull up in a Ghost, no Casper (21)
+I been smokin' gas and I got no asthma
+I got 1, 2, 3, 4, 5, 6, 7, 8 M's in my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account (on God)
+I got 1, 2, 3, 4, 5, 6, 7, 8 shooters ready to gun you down, yeah (fast)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down (on God)
+Yeah, dawg (yeah, huh), nah, for real, dawg (21)
+Straight up out the six, now got a house in the Hills, dawg (21)
+Wanna see a body, -? Get you killed, dawg (wet)
+Wanna tweet about me, -? Get you killed, dawg (wet)
+Killed dawg, I'm a real dawg (21), you a lil' dawg (21)
+Bill dawg, want a bil', dawg, chasin' mills, dawg (yeah)
+Dunk right in your b- like O'Neal, dawg (wet)
+Plus I shoot like Reggie Mill', dawg (21)
+Choppa sting you like a eel, dawg (fast)
+I got 1, 2, 3, 4, 5, 6, 7, 8 M's in my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account (on God)
+I got 1, 2, 3, 4, 5, 6, 7, 8 shooters ready to gun you down, yeah (fast)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down (on God)
+Ruler clip, sent a ruler hit
+Pull up on your b-, she say that I got a ruler d-
+Spray your block down, we not really with that ruh-rah sh-
+Glock cocked now, I don't really give no f- 'bout who I hit
+Yeah, your b-, she get jiggy with me, keep that Siggy with me
+-, I'm Mad Max, you know I got Ziggy with me
+Keep a mad mag in case a - wanna get busy with me
+'Rari matte black, and I got a Bentley with me
+I got 1, 2, 3, 4, 5, 6, 7, 8 M's in my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account, yeah (on God)
+In my bank account (on God)
+I got 1, 2, 3, 4, 5, 6, 7, 8 shooters ready to gun you down, yeah (fast)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down, yeah (on God)
+Ready to gun you down (on God)
+75 hunnid on a Saint Laurent jacket
+-, be careful where you dumpin' your ashes
+I ain't no sucker, I ain't cuffin' no action
+The streets raised me, I'm a whole ba-
+
+</code></pre>
+</details>
+<hr>
+<h1 id="good">Good</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="hawaii">Hawaii</h2>
+<p>因为在此前书籍，音乐等各种领域接触Hawaii的元素挺多的，恰好遇到这次天佑出战陪送钻石退役之战，仔细整理下自己所遇到的关于夏威夷的好奇和思考（更多还是从Max和村上春树那边发现的细节）。</p>
+<p>Alright, 就来聊聊夏威夷这块神奇的地方，从国家归属的角度，跟美国、日本、英国这仨国家的关系。</p>
+<p><strong>先说说美国 (The US):</strong></p>
+<p>哎，这可能是最直接也最复杂的一层关系了。毕竟现在夏威夷是美国的第50个州，这事儿是板上钉钉的。怎么说呢，每次看到夏威夷的新闻，后面都会跟着 &quot;(State  State of Hawaii)&quot;。但心里总觉得，夏威夷跟美国本土好像又有点不一样。</p>
+<p>我感觉这种不一样，一部分是因为地理位置吧，它离美国本土那么远，感觉更像是在太平洋上的一颗明珠，跟亚洲这边的联系反而更紧密一些。还有一部分，可能就是历史上夏威夷王国曾经存在过，那种独立自主的印记还是在的。虽然现在已经是美国的一部分了，但总觉得“Aloha State”有自己的灵魂，不像其他州那样“美国味儿”那么浓。当然啦，作为美国的州，政治、经济、文化上肯定是跟美国本土联系非常紧密的，去夏威夷玩也感觉跟在美国其他地方差不多，用美元，说英语（虽然当地也有自己的 Pidgin English 很有意思）。只是骨子里，它还是带着一股浓浓的夏威夷风情，这种感觉挺奇妙的。</p>
+<p><strong>再说说日本 (Japan):</strong></p>
+<p>我最开始注意到夏威夷和日本的联系，确实也是因为村上春树。他经常在那边跑步写作，就觉得这两个地方之间肯定有什么特别的吸引力。后来再看一些资料，才知道原来历史上有很多日本人移民到夏威夷。</p>
+<p>你想啊，那么多的日本人在那边扎根生活，肯定也把很多日本的文化带过去了。有时候看到一些夏威夷当地人的面孔，真的会觉得有点亚洲人的感觉。还有像 Max Holloway，他老婆和孩子，嗯，确实挺像日本小孩的。这可能就是文化融合的体现吧。夏威夷的食物里，像寿司、拉面这些日式料理真的非常普遍，甚至还有夏威夷自己改良的日式美食。感觉日本文化在夏威夷留下了很深的印记，这种亲近感是能感觉到的。</p>
+<p><strong>最后聊聊英国 (The UK):</strong></p>
+<p>英国跟夏威夷的关系，说实话，一开始我还没太注意到。直到看到Max walkout时候批的夏威夷的州旗，我才“哦！”了一声。那个左上角的米字   Union Jack (英国国旗)，真的是很显眼。<br>
+这跟夏威夷王国早期的历史有关。那时候，夏威夷国王卡美哈美哈一世跟英国的关系挺好的，甚至还曾将夏威夷置于英国的保护之下。虽然这段时间不长，但这个 Union Jack 就一直保留在了夏威夷的国旗上，作为一种历史的纪念吧。这感觉挺有意思的，一个太平洋上的岛屿，现在的美国领土，国旗上居然有英国的元素。这就像是在不经意间提醒着人们，夏威夷的历史比我们想象的要丰富和复杂得多。</p>
+<p>总的来说，夏威夷这个地方真的挺有意思的，它像一个文化的大熔炉，融合了波利尼西亚的传统、美国的现代、日本的细腻，甚至还有一丝英国的印记。这几个国家都在不同的历史时期，以不同的方式，在夏威夷留下了自己的痕迹，也让今天的夏威夷呈现出一种独特而迷人的风貌。我挺想有机会亲自去夏威夷感受一下这种多元文化的碰撞和融合的。</p>
+<h2 id="countdown-318">Countdown 318</h2>
+<ul>
+<li>Last dance!</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F9UPQDJDA6U?si=qYwf-2kM7cT4f9gn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>
+<p>已经可以想象多年之后我还会在某个random的下午或者晚上，打开YT搜 UFC318 countdown，embed series， pre/post fight conferences……</p>
+</li>
+<li>
+<p>Fight week即将开始，enjoy the very last time... the walkout, the noise...</p>
+</li>
+<li>
+<p>Shine bright like a diamond.</p>
+<p><audio controls="" loop="" preload=""><source src="https://offblogmedia.com/wp-content/uploads/2025/03/Rihanna_-_Diamonds_Offblogmedia.com.mp3"></audio></p>
+</li>
+</ul>
+<p><mark>Rihanna - Diamonds</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Shine bright like a diamond
+Shine bright like a diamond
+Find light in the beautiful sea, I choose to be happy
+You and I, you and I, we're like diamonds in the sky
+You're a shooting star I see, a vision of ecstasy
+When you hold me, I'm alive
+We're like diamonds in the sky
+I knew that we'd become one right away
+Oh, right away
+At first sight I felt the energy of sun rays
+I saw the life inside your eyes
+So shine bright tonight
+You and I
+We're beautiful like diamonds in the sky
+Eye to eye
+So alive
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shining bright like a diamond
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shining bright like a diamond
+We're beautiful like diamonds in the sky
+Palms rise to the universe, as we moonshine and molly
+Feel the warmth, we'll never die
+We're like diamonds in the sky
+You're a shooting star I see, a vision of ecstasy
+When you hold me, I'm alive
+We're like diamonds in the sky
+At first sight I felt the energy of sun rays
+I saw the life inside your eyes
+So shine bright
+Tonight
+You and I
+We're beautiful like diamonds in the sky
+Eye to eye
+So alive
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shining bright like a diamond
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shining bright like a diamond
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shine bright like a diamond
+So shine bright
+Tonight
+You and I
+We're beautiful like diamonds in the sky
+Eye to eye
+So alive
+We're beautiful like diamonds in the sky
+Shine bright like a diamond
+Shine bright like a diamond
+Shine bright like a diamond, oh yeah
+Shine bright like a diamond
+Shine bright like a diamond
+Shine bright like a diamond
+Shine bright like a diamond
+
+</code></pre>
+</details>
+<h2 id="回溯-穿越ufc-254">回溯、穿越UFC 254</h2>
+<ul>
+<li>
+<p>重温了整个  从赛前发布会到比赛再到赛后  回看 Khabib and his father, Abdulmanap: An animated short story | Father's Plan</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qhT25r7OR3w?si=JMudCFAjbIN-J6GV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</li>
+<li>
+<p>默默泪水奔涌出眼眶，忍不住眼泪流到裤腰</p>
+</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aKpkokAABC4?si=F9tyhGDkj7ixhxD6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>
+<p>&quot;sacrifice,&quot; &quot;dedication,&quot; and &quot;discipline&quot;</p>
+</li>
+<li>
+<p>多难的任务在事后看来都会有不必要的恐惧  难以行动</p>
+</li>
+<li>
+<p>打不死的虫子</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">“If God destroys my plans, its maybe because my plans could destroy me” <br>- Ilia Topuria ☦️ <a href="https://t.co/Q9s1vnqa5e">pic.twitter.com/Q9s1vnqa5e</a></p>&mdash; ChristianMMA 🇯🇵☦️ (@ChristianityMMA) <a href="https://twitter.com/ChristianityMMA/status/1941284550979748065?ref_src=twsrc%5Etfw">July 4, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/07/13/82fec0d45ea28296.png" alt="" loading="lazy"></figure>
+<ul>
+<li>br动画想起2021年，利物浦夺冠    对一个城市  不只是一代人 三代人  串联起几十年的人生 红军的长征</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LWJ5D16hX3U?si=lCC2B7-MWDv479p6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>放假就是rest  mentally   只想要一个人 cozy  跑步和读书  最好是海边或者岛屿   像村上春树在夏威夷一样</p>
+</li>
+<li>
+<p>racist piece of shit。在北美其他主流的四大运动中，可能主要由于黑人运动员占比大，整个community也比较团结，white不可能会有一些racist言论，对黑人更是红线，对亚裔也很少有。但是其他更小的一些，就比较乱，除了对黑人的红线还是在USA不能碰之外，对亚裔是时不时就会出现，white pieceshit太多了，典型的那种来自德州等中西部，sean stricland,还有一些white comedians，但是还是不要上升的race的高度，尽管他们生活风格类似，属于那个群体，但还是尽量不要这么分析。这些人就和身边有过的人一样，是那种嘴贱，生活中其他方面不如意或者被打压过，所以想居高临下的占便宜来取悦自己，当你反驳，他会说relax bro，我就是开个玩笑，你怎么开不起玩笑，你们这个群体怎么都这样 等等。这就是piece of shit，而且似乎他已经得到过他应有的报应或者it s on the way。</p>
+</li>
+<li>
+<p>还有最近oasis主场加拉格尔有辱亚裔的言论，后面删帖道歉，mancity因为发布有关OASIS回归演唱会的post也收到抵制，被unfollow  disappointed，整体上欧洲race情况并没有美国那么敏感，虽然都有移民，但是似乎还是欧洲整体受教育程度更高一些   言多必失，加拉格尔那个B话本来就挺多的</p>
+</li>
+<li>
+<p>做了个奇怪的梦，不知道怎么滴，不同时间线上的一些人分别聚集到X家，X一个人给大家做饭，时间似乎也就是下午下课后晚上自习前的那顿饭，吃完大家都是要继续回去学习的，thats my G,她做饭其他人吃饭，我进去厨房我们kiss... 自然地 thanks for you being you</p>
+</li>
+<li>
+<p>fuck  喝一半的大瓶发酵酸奶放在不起眼的桌角，再次发现已是几天之后，作为培养皿想必细菌已经在里面进化出了一个高级文明社会了。犹记得上次忘记喝完酸奶的教训，但是我还是忘了  浪费 抱歉奶牛……</p>
+</li>
+<li>
+<p>最近Speed在欧洲直播，特别是东欧和巴尔干半岛，但是由于时差，就像看欧冠一样，黄金时间得熬夜  所以没时间关注，但是由于血与蜜之地等等原因，我心理还是希望能够借这种特殊的直播活动，在屏幕上窥探那个社会 那个世界</p>
+<ul>
+<li>想起刘子超从塞维利亚过了去科索沃的桥之后，他们是那群同样问刘子超科索沃和塞族哪边强大的小孩们吗</li>
+</ul>
+</li>
+<li>
+<p>最近像是有什么魔力，总感觉每天睡前可以梦到些特别的人或者事情，结果真的会梦到一些，总之有趣的故事，无论是可怕的还是美好的，总之i love stories</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/07/13/4a9962d23d265302.png" alt="" loading="lazy"></figure>
+<h1 id="new-albums-drop">new albums drop</h1>
+<ul>
+<li>最近有几多新专drop, 前几天有Drazy直播drop了《What Did I Miss?》</li>
+<li>今天有JB release new album 《SWAG》</li>
+<li>clipse里面也有KDOT的features</li>
+<li>good time to be alive</li>
+</ul>
+<hr>
+<p>Be specific and focus with actions.<br>
+No more repeated cycles.<br>
+Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#good">Good</a>
+<ul>
+<li><a href="#hawaii">Hawaii</a></li>
+<li><a href="#countdown-318">Countdown 318</a></li>
+<li><a href="#%E5%9B%9E%E6%BA%AF-%E7%A9%BF%E8%B6%8Aufc-254">回溯、穿越UFC 254</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#new-albums-drop">new albums drop</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-202050710/">https://ezraknotlab.github.io/post/ekl-202050710/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-202050710/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-202050710/&sharesource=qzone&title=EKL 202050710&pics=https://ezraknotlab.github.io//images/avatar.png?v=1756109243429&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hawaii&lt;/li&gt;
+&lt;li&gt;Countdown 318&lt;/li&gt;
+&lt;li&gt;回溯、穿越UFC 254&lt;/li&gt;
+&lt;li&gt;New albums drop&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-202050710/&sharesource=weibo&title=EKL 202050710 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hawaii&lt;/li&gt;
+&lt;li&gt;Countdown 318&lt;/li&gt;
+&lt;li&gt;回溯、穿越UFC 254&lt;/li&gt;
+&lt;li&gt;New albums drop&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1756109243429 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-318/">
+                                                                                            EKL 318
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20250703/">
+                                                                                                    EKL 20250703
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1756109243429);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

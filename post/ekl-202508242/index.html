@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1756631679328" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1756631679328" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250824
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-08-25</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">16.9
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4098</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLChaos/">EKL Chaos</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/08/25/b58b55cd8acbf101.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Fast charging technologies in detail</li>
+<li>low-temperature degradation</li>
+<li>self-recharging</li>
+<li>lithium-ion silicon-carbon batterie</li>
+<li>18650-format与21700电池格式对比</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%EF%B8%8F">⚒️</a>
+<ul>
+<li><a href="#1-how-to-quickly-charge-your-smartphone-fast-charging-technologies-in-detail">1. How to quickly charge your smartphone: fast charging technologies in detail</a>
+<ul>
+<li><a href="#%E4%B8%BB%E6%B5%81%E5%BF%AB%E5%85%85%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB">主流快充技术分类</a></li>
+<li><a href="#%E5%BF%AB%E5%85%85%E5%8D%8F%E8%AE%AE%E5%AF%B9%E6%AF%94%E4%B8%80%E8%A7%88">快充协议对比一览</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+<li><a href="#2-a-case-study-on-low-temperature-degradation-and-self-recharging-of-a-smartphone-lithium-ion-battery">2. A case study on low-temperature degradation and self-recharging of a smartphone lithium-ion battery</a></li>
+<li><a href="#3explaining-lithium-ion-silicon-carbon-batteries-a-new-type-of-battery-technology-that-is-already-in-our-devices">3.Explaining lithium-ion silicon-carbon batteries: a new type of battery technology that is already in our devices</a></li>
+<li><a href="#18650-format%E4%B8%8E21700%E7%94%B5%E6%B1%A0%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94">18650-format与21700电池格式对比</a>
+<ul>
+<li><a href="#%E6%AF%94%E8%BE%83%E8%A1%A8%E6%A0%BC">比较表格</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93-2">总结</a></li>
+</ul>
+</li>
+<li><a href="#4your-smartphone-actually-has-a-smaller-battery-than-you-think">4.Your smartphone actually has a smaller battery than you think</a>
+<ul>
+<li><a href="#%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E8%A1%8C%E4%B8%BA%E4%B8%8E%E7%94%B5%E6%B1%A0%E6%94%BE%E7%94%B5%E5%80%8D%E7%8E%87%E8%A1%8C%E4%B8%BA%E7%9A%84%E5%85%B3%E7%B3%BB">日常使用的行为与电池放电倍率行为的关系</a></li>
+<li><a href="#iphone-14-pro-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%94%B5%E6%B1%A0%E6%94%BE%E7%94%B5%E5%80%8D%E7%8E%87%E8%A1%8C%E4%B8%BA%E6%8E%92%E5%BA%8F%E4%BB%8E%E9%AB%98%E5%88%B0%E4%BD%8E">iPhone 14 Pro 使用过程中电池放电倍率行为排序（从高到低）</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93-3">总结</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<figure data-type="image" tabindex="1"><img src="https://muzlob.net/images/cover/charlie-puth/charlie-puth-hero.jpg" alt="" loading="lazy"></figure>
+<p><mark>Hero - Charlie Puth</mark></p>
+<p><audio controls="" loop="" preload=""><source src="https://cdn.muzlob.net/?h=JGraYpdVSCgTta-Gvk0QENVCi4mAbprG9cKBRFUgum4qbOpVjkp-Cx7Ino7KWy0U0kOI"></audio></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">I wanna stop by and play it cool
+It's hard to talk with all these people in your room
+I try to lock eyes and give you clues
+So you can come and follow me out by the pool (yeah)
+
+My blood pressure elevates
+When I call you out for bein' fake
+And I don't want to be mean
+But I'm not gonna shut up instead
+I know who you really are
+And your so-called friend's quotation marks
+I don't wanna make a scene
+She cut me off and that's when she said
+
+I don't need a hero, I don't want to be saved
+But I said: I'll be here every night and day
+Oh, I don't need a hero but if you let me stay
+Oh, I can still be here every night and day
+
+You hide your feelings (you hide your feelings)
+You medicate (you medicate)
+You're doing shit that's keeping both of us awake
+Make me the villain (make me the villain)
+I know it helps
+But I'm not gonna run like everybody else (no)
+
+My blood pressure elevates
+When I call you up for bein' fake
+And I don't want to be mean
+But I'm not gonna shut up instead
+I know who you really are (really are)
+And your so-called friend's quotation marks
+I don't wanna make a scene
+She cut me off and that's when she said
+
+I don't need a hero, I don't want to be saved (don't want to be saved)
+But I said: I'll be here every night and day
+Oh, I don't need a hero but if you let me stay (if you let me stay)
+Oh, I can still be here every night and day
+(I don't need a hero)
+(Ah, I said I'll be here)
+
+Lovin' you ain't easy
+But I'm never gonna stop it
+I know that night I lost my head
+And I was bein' out of pocket
+I wasn't tryna start a fight
+Or tell you how to live your life
+I just wanted (I just wanted)
+You to know I fuckin' cared
+She said
+
+I don't need a hero, I don't want to be saved (don't want to be saved)
+But I said: I'll be here every night and day
+Oh, I don't need a hero but if you let me stay (if you let me stay)
+Oh, I can still be here every night and day
+(I don't need a hero, I don't want to be saved)
+(But I said: I'll be here)
+Every night and day, oh
+
+Oh, I don't need a hero but if you let me stay
+Oh, I can still be here every night and day, oh
+
+
+
+</code></pre>
+</details>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/08/25/b58b55cd8acbf101.png" alt="" loading="lazy"></figure>
+<h1 id="️">⚒️</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>起因是发现一篇帖子<a href="https://eb43.github.io/articles/fast-charging-technologies-in-detail.html">How to quickly charge your smartphone: fast charging technologies in detail</a>，作者:<a href="https://eb43.github.io/portfolio-page.html">blog page</a>,因为blog是托管在GitHub上的，所以找着去GitHub看了一眼，主页上有乌克兰的loc，头像性别女，看起来像是网图，加上Achives里面看到其实blog早期的内容是全俄语，或者说“乌克兰语”，后面几乎全是英语的表达，因此推断是源于乌克兰的，这里面有一篇就是讲ongoing war，在开战初期22-23年，还刷到过一个女bloger写作的生活记录，尤其是要被迫出离的情景，带上电脑家当焦急的趁车，空气中弥漫着不确定性和紧张感，没人知道何时会结束还会不会回来，就这样写了一篇日记。</li>
+<li>上面是联想了一些题外话，主要是发现blog主页很多发布的有关电池研究的一些articles，还有一些在YT的视频在右栏，这些有关电池的研究是商业方面，个人、”业余“研究者的探索，明显有别于学术方面的视角，而对象主要是大家比较关心的，PC、手机等便携式电子设备的商用电池，还有电动汽车等，主要在于多个方面的手机电池的使用，在详细阅读之前，有必要搞清楚一些概念和关注点的区别。</li>
+</ul>
+<h2 id="1-how-to-quickly-charge-your-smartphone-fast-charging-technologies-in-detail">1. How to quickly charge your smartphone: fast charging technologies in detail</h2>
+<p><a href="https://eb43.github.io/articles/fast-charging-technologies-in-detail.html">link</a></p>
+<ul>
+<li>背景：
+<ul>
+<li>商业快充关注的是整个充电系统（车+桩）的充电功率（kW），而学术界快充关注的是电池单体（Cell）所能承受的充电倍率（C-rate）。 学术界的突破是商业应用的基础。 学术界通过材料和机理创新，开发出能够承受更高倍率（如4C、6C）的电芯。然后，商业界将这些高性能电芯集成到先进的整车平台（如800V架构）中，并辅以强大的BMS和热管理系统，最终为用户提供安全、可靠、高效的高功率快充体验。</li>
+</ul>
+</li>
+</ul>
+<p>维度 (Dimension)	商业快充 (Commercial Fast Charging)	学术界快充 (Academic Fast Charging)<br>
+核心指标	功率 (Power, kW)	倍率 (C-rate)<br>
+优化对象	充电系统 (充电桩、线缆、BMS、热管理)	电池单体 (电极材料、电解液、界面)<br>
+关键公式	P=V×I	I=C-rate×Capacity<br>
+主要策略	提升系统电压 (如800V)，以降低电流和热损耗	提升电芯耐受电流的能力，以提高充放电倍率<br>
+主要瓶颈	系统成本、热管理、充电桩普及、安全性	负极析锂、离子传输速率、界面稳定性<br>
+研究范畴	系统工程、电力电子、热管理	材料科学、电化学、物理化学</p>
+<h3 id="主流快充技术分类">主流快充技术分类</h3>
+<ul>
+<li>USB Power Delivery (USB-PD) / USB-PD PPS</li>
+<li>Qualcomm Quick Charge (QC) 系列   QC 是高通开发的快充协议，目前主流版本包括 QC4、QC4+ 和 QC5。</li>
+<li>MediaTek Pump Express  联发科推出的 Pump Express 曾支持直接供电进入电池以减少机身发热（DIRECT CHARGING）。</li>
+<li>OPPO VOOC / SuperVOOC ／ OnePlus Warp  协议采用“高电流 + 双芯电池 + 充电模块外置”设计，能提供极高的充电效率和速度。  - SuperVOOC 2.0 曾实现 65 W，之后提升至 100 W（理论上可达 240 W），并保持与 USB-PD 的一定兼容性</li>
+<li>小米 HyperCharge、摩托罗拉 TurboPower、三星 AFC/SFC、华为 SCP</li>
+</ul>
+<ul>
+<li><strong>小米 HyperCharge</strong>：T 部分型号支持 120 W（旗舰最高约 90 W）。</li>
+<li><strong>摩托罗拉 TurboPower</strong>：不同机型速率不同，但最高可达 125 W。</li>
+<li><strong>三星 Adaptive Fast Charging / Super Fast Charging</strong>：新机支持最高约 45 W，需要在设置中开启。</li>
+<li><strong>华为 Fast Charge / SuperCharge</strong>：早期标准约 18 W，SCP 可达 100 W:contentReference。</li>
+</ul>
+<hr>
+<h3 id="快充协议对比一览">快充协议对比一览</h3>
+<table>
+<thead>
+<tr>
+<th>特性项</th>
+<th>USB-PD / PPS</th>
+<th>QC4/4+/5</th>
+<th>Pump Express 4.0</th>
+<th>VOOC / SuperVOOC</th>
+<th>其他厂商协议（MI/Huawei/...）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>协议类型</td>
+<td>国际标准（通用广泛）</td>
+<td>高通专有 / 兼容 USB-PD</td>
+<td>联发科专有 / 已兼容 USB-PD</td>
+<td>OPPO 提供，兼容性较强</td>
+<td>品牌专属，兼容性视品牌而定</td>
+</tr>
+<tr>
+<td>电压类型</td>
+<td>可调（主要配置电压）</td>
+<td>可变 / 可兼容 USB-PD</td>
+<td>可变电压</td>
+<td>主要依靠高电流供电</td>
+<td>varies</td>
+</tr>
+<tr>
+<td>最高功率</td>
+<td>高达 240 W（USB-PD 3.1）</td>
+<td>约 100 W</td>
+<td>依赖于 USB-PD 限制</td>
+<td>100 W（理论可达 240 W）</td>
+<td>最高可达 120–125 W</td>
+</tr>
+<tr>
+<td>特点</td>
+<td>通用、高兼容性</td>
+<td>广泛设备支持、高效率</td>
+<td>减少手机发热</td>
+<td>极高效率（双电池、分离电路）</td>
+<td>各品牌优化算法</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="总结">总结</h3>
+<ul>
+<li>从智能手机快充发展出发，深入剖析了多种主流快充协议及其技术特点。目前主要提升快充速度是P=UI，为降低焦耳热的产生Q=I^2Rt，主要策略是提升U来加速充电。</li>
+<li>目前最具通用性和生态支持的是 USB-PD（尤其是 PPS），可满足大多数设备需求。</li>
+<li>最值得关注的技术细节是关于文中一些对于配置的总结，充电器和充电器线以及手机充电最大功率之间的关系，手机充电器的最大功率一般很难达到，因此匹配的充电器线的额定最大电流是可以适配的，但如果擅自更换更大功率的充电器头，充电器线可能会扛不住快充产生的焦耳热，I↑，Q↑，因此会容易过热，起火等安全事故。</li>
+<li>无线快充在线圈上就会损失近一半的电量，因此效率目前还较低，而且转化产生的热量主要分布在快充装置的面板上，无疑还会增加充电时候的手机发热。</li>
+<li>总体上当然会有同学术研究上类似的规律和分析方法，但是二者会互补见解，加深认识。</li>
+</ul>
+<h2 id="2-a-case-study-on-low-temperature-degradation-and-self-recharging-of-a-smartphone-lithium-ion-battery">2. A case study on low-temperature degradation and self-recharging of a smartphone lithium-ion battery</h2>
+<p><a href="https://eb43.github.io/articles/smartphone-li-ion-battery-loses-27-percent-of-charge-when-frozen-slightly-below-zero-degrees-celsius.html">link</a></p>
+<ul>
+<li>这篇比较普通，更多是原理上解释，基础的规律： 智能手机 Li-ion 电池在约 −4 °C下的电量损失与自恢复机理</li>
+<li>电池在冷冻环境中电量显示降低，以及恢复至室温后为何电量会“回升”</li>
+<li>在低温环境中，电解液粘度增大、离子迁移率下降，从而导致内阻增强和容量下降。</li>
+<li>智能手机电池置于约 −4 °C 环境数小时，使之整体降温并达热平衡后，检测到电压为约 3.611 V，对应电池显示电量约 <strong>10 %</strong>。</li>
+<li>随后在室温下回温约 1 小时，电压升至约 3.857 V，对应电量约 <strong>37 %</strong>。</li>
+<li>“电量回升”实为电池内部化学反应恢复活性，尤其是电解质电导率提升（从 −4 °C 到 25 °C，电导率从约 0.5 mS/cm 上升至 1.2 mS/cm），使得电池管理系统重新“读取”出更真实的状态。  本质上，并未增加任何电能，而是设备对当前剩余电量的 **更准确“显示”。</li>
+</ul>
+<h2 id="3explaining-lithium-ion-silicon-carbon-batteries-a-new-type-of-battery-technology-that-is-already-in-our-devices">3.Explaining lithium-ion silicon-carbon batteries: a new type of battery technology that is already in our devices</h2>
+<p><a href="https://eb43.github.io/articles/Lithium%20silicon%20carbon%20(LSC)%20batteries%20explained%20-%202024.html">link</a><br>
+<a href="https://eb43.github.io/articles/Silicon-Carbon-Batteries-Promised-Power-Revolution-What-Went-Wrong-by-Eugen-Barilyuk_Aug-2025-Medium.html">扩展阅读:Silicon-Carbon Batteries Promised a Power Revolution. What Went Wrong?</a></p>
+<ul>
+<li>介绍Lithium-ion Silicon-Carbon (LSC) batteries，主要是硅碳负极的特点，并且统计了目前很多厂商都有应用，大多数是国内耳熟能详的大厂，有很多荣耀手机产品已经搭载使用。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>参数</strong></th>
+<th><strong>LiFePO4</strong></th>
+<th><strong>NMC</strong></th>
+<th><strong>LSC</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>能量密度</strong></td>
+<td>较低 (~90-150 Wh/kg)</td>
+<td>较高 (~150-220 Wh/kg)</td>
+<td>极高 (潜在 &gt;300 Wh/kg)</td>
+</tr>
+<tr>
+<td><strong>循环寿命</strong></td>
+<td>极高 (~2000-5000次)</td>
+<td>中等 (~1000-2000次)</td>
+<td>有潜力，仍在测试中</td>
+</tr>
+<tr>
+<td><strong>安全性</strong></td>
+<td>极佳（化学稳定性高）</td>
+<td>中等（存在起火风险）</td>
+<td>研究中，安全性待验证</td>
+</tr>
+<tr>
+<td><strong>成本</strong></td>
+<td>初始成本较高，长期经济性好</td>
+<td>较为经济</td>
+<td>预计较高</td>
+</tr>
+<tr>
+<td><strong>充放电速度</strong></td>
+<td>中等至高</td>
+<td>高</td>
+<td>潜在极高</td>
+</tr>
+<tr>
+<td><strong>工作温度范围</strong></td>
+<td>宽广 (-20°C 至 60°C)</td>
+<td>中等 (-10°C 至 50°C)</td>
+<td>研究中，数据不足</td>
+</tr>
+<tr>
+<td><strong>应用场景</strong></td>
+<td>储能系统、电动车、太阳能电池</td>
+<td>电动车、便携电子产品、电动工具</td>
+<td>高级电动车、高能量需求场景</td>
+</tr>
+</tbody>
+</table>
+<h2 id="18650-format与21700电池格式对比">18650-format与21700电池格式对比</h2>
+<h3 id="比较表格">比较表格</h3>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>18650</strong></th>
+<th><strong>21700</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>尺寸</strong></td>
+<td>直径18mm，长度65mm，圆柱形</td>
+<td>直径21mm，长度70mm，圆柱形</td>
+</tr>
+<tr>
+<td><strong>重量</strong></td>
+<td>约45-50g</td>
+<td>约60-75g</td>
+</tr>
+<tr>
+<td><strong>标称电压</strong></td>
+<td>3.6V/3.7V（满电4.2V）</td>
+<td>3.6V/3.7V（满电4.2V）</td>
+</tr>
+<tr>
+<td><strong>容量范围</strong></td>
+<td>2000-3500mAh</td>
+<td>3000-5000mAh</td>
+</tr>
+<tr>
+<td><strong>能量密度</strong></td>
+<td>高，但低于21700</td>
+<td>更高，提供更大容量和功率</td>
+</tr>
+<tr>
+<td><strong>放电电流</strong></td>
+<td>通常5-20A（高性能型号更高）</td>
+<td>通常10-40A（高性能型号更高）</td>
+</tr>
+<tr>
+<td><strong>常见化学成分</strong></td>
+<td>LiCoO2、NCM、NCA、LiMn2O4</td>
+<td>NCM、NCA、LiMn2O4</td>
+</tr>
+<tr>
+<td><strong>应用场景</strong></td>
+<td>手电筒、电子烟、笔记本、电动车</td>
+<td>电动车（如特斯拉新车型）、储能系统、高性能设备</td>
+</tr>
+<tr>
+<td><strong>安全性</strong></td>
+<td>需保护电路，过充/短路风险</td>
+<td>类似18650，需保护电路</td>
+</tr>
+<tr>
+<td><strong>成本</strong></td>
+<td>较低，生产技术成熟</td>
+<td>较高，但性能更优</td>
+</tr>
+<tr>
+<td><strong>标准化程度</strong></td>
+<td>高度标准化，广泛兼容</td>
+<td>逐渐普及，兼容性稍逊</td>
+</tr>
+</tbody>
+</table>
+<h3 id="总结-2">总结</h3>
+<p>18650和21700是两种常见的圆柱形锂离子电池格式，名称分别来源于其尺寸（18mm×65mm和21mm×70mm）。18650因其高度标准化、成本低且应用广泛，常用于手电筒、电子烟、笔记本电脑和早期电动车（如特斯拉Model S）。其容量通常在2000-3500mAh，适合中小功率设备，但能量密度和放电能力相对有限。</p>
+<p>21700作为“升级版”，体积稍大，容量（3000-5000mAh）和放电电流更高，能量密度更优，适合高性能应用，如现代电动车（特斯拉Model 3/Y）、储能系统和无人机。21700的性能优势使其逐渐取代18650在高功率场景中的应用，但成本略高，兼容性稍逊。</p>
+<p><strong>选择建议</strong>：</p>
+<ul>
+<li><strong>18650</strong>：适合预算有限、设备兼容性要求高或中小功率场景。</li>
+<li><strong>21700</strong>：适合追求更高容量和功率的现代化设备，尤其是电动车辆和储能系统。</li>
+</ul>
+<h2 id="4your-smartphone-actually-has-a-smaller-battery-than-you-think">4.Your smartphone actually has a smaller battery than you think</h2>
+<p><a href="https://eb43.github.io/articles/Your%20smartphone%20actually%20has%20a%20smaller%20battery%20than%20you%20think.html">link</a><br>
+有一些相关监测的app教程，<a href="https://eb43.github.io/articles/Your%20smartphone%20does%20not%20show%20all%20settings.%20How%20to%20access%20hidden%20Android%20settings%20-.html">Your smartphone does not show all settings. How to access hidden Android settings</a></p>
+<ul>
+<li><a href="https://eb43.github.io/android-battery-voltage-indicator-in-status-bar.html">Android battery voltage indicator in status bar</a></li>
+<li><a href="https://eb43.github.io/android-battery-temperature-app.html">Android battery temperature indicator app</a></li>
+<li><a href="https://eb43.github.io/articles/how-to-monitor-android-smartphone-battery-voltage-and-practical-benefits-of-knowing-voltage-level_by-Eugen-Barilyuk_Medium.html">How to monitor Android smartphone battery voltage and practical benefits of knowing voltage level</a></li>
+</ul>
+<h3 id="日常使用的行为与电池放电倍率行为的关系">日常使用的行为与电池放电倍率行为的关系</h3>
+<p><a href="https://eb43.github.io/articles/Your%20smartphone%20actually%20has%20a%20smaller%20battery%20than%20you%20think.html#:~:text=Look%20at%20the,by%20your%20smartphone.">启发</a></p>
+<h3 id="iphone-14-pro-使用过程中电池放电倍率行为排序从高到低">iPhone 14 Pro 使用过程中电池放电倍率行为排序（从高到低）</h3>
+<p>针对 iPhone 14 Pro（电池容量 3200 mAh，标称电压 3.7V）在手机使用过程中的放电倍率（C-rate）行为排序，从高到低描述典型使用场景对电池性能、温度、寿命和安全性的影响。放电倍率基于实际使用场景的电流需求推算，结合锂离子电池特性。</p>
+<table>
+<thead>
+<tr>
+<th><strong>放电倍率</strong></th>
+<th><strong>典型使用场景</strong></th>
+<th><strong>行为描述</strong></th>
+<th><strong>影响</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>高倍率（1.5C-2C）</strong></td>
+<td><strong>重度使用</strong>：高负载游戏（如《原神》）、4K视频录制、5G视频流+GPS导航</td>
+<td>电流约4.8A-6.4A，电池约30-40分钟放空。屏幕、芯片、5G模块高功耗导致高放电率。</td>
+<td>- <strong>性能</strong>：电压略降，容量利用率约85-90%，续航约4-5小时。<br>- <strong>温度</strong>：显著升温（35-45°C），机身发热明显。<br>- <strong>寿命</strong>：加速老化，循环寿命缩短（如300-500次后容量降至80%）。<br>- <strong>安全</strong>：中等风险，iOS热管理限制性能以防过热，需避免高温环境。</td>
+</tr>
+<tr>
+<td><strong>中等倍率（0.5C-1.5C）</strong></td>
+<td><strong>日常高负载</strong>：视频播放、社交媒体+5G、拍照/短视频编辑</td>
+<td>电流约1.6A-4.8A，电池约40分钟-2小时放空。常见于日常多任务操作。</td>
+<td>- <strong>性能</strong>：电压稳定，容量利用率约90-95%，续航约6-8小时。<br>- <strong>温度</strong>：温和升温（30-40°C），机身温热但可接受。<br>- <strong>寿命</strong>：适度老化，循环寿命较长（500-800次）。<br>- <strong>安全</strong>：低风险，内置保护电路和iOS优化确保安全。</td>
+</tr>
+<tr>
+<td><strong>低倍率（0.2C-0.5C）</strong></td>
+<td><strong>轻度使用</strong>：浏览网页、短信、待机、音乐播放</td>
+<td>电流约0.64A-1.6A，电池约2-5小时放空。低功耗任务为主，屏幕亮度低。</td>
+<td>- <strong>性能</strong>：最高容量利用率（近100%），电压极稳定，续航可达12-20小时。<br>- <strong>温度</strong>：几乎无升温（&lt;30°C），机身保持凉爽。<br>- <strong>寿命</strong>：最长循环寿命（&gt;800次），容量衰减最慢。<br>- <strong>安全</strong>：极低风险，热失控可能性最小。</td>
+</tr>
+<tr>
+<td><strong>超低倍率（&lt;0.2C）</strong></td>
+<td><strong>待机或极低负载</strong>：锁屏待机、偶尔查看通知</td>
+<td>电流&lt;0.64A，电池可维持数天。A16芯片和iOS优化大幅降低待机功耗。</td>
+<td>- <strong>性能</strong>：容量利用率最高，接近标称3200mAh，续航可达2-3天。<br>- <strong>温度</strong>：无明显升温（环境温度）。<br>- <strong>寿命</strong>：老化极慢，接近理论最大循环寿命（&gt;1000次）。<br>- <strong>安全</strong>：最高安全性，无过热风险。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="总结-3">总结</h3>
+<ul>
+<li><strong>高倍率（1.5C-2C）</strong>：重度使用（如高负载游戏、4K录制）导致电池快速放电，续航短、发热明显，长期如此会加速容量衰减。建议间歇使用或降低亮度/关闭5G以减轻负载。</li>
+<li><strong>中等倍率（0.5C-1.5C）</strong>：日常使用（如视频、社交媒体）最常见，续航和寿命平衡，iPhone 14 Pro 的优化（如动态岛管理、A16效率）使这一区间表现良好。</li>
+<li><strong>低倍率（0.2C-0.5C）</strong>：轻度使用场景续航最佳，电池寿命最长，适合轻用户或非高峰时段。</li>
+<li><strong>超低倍率（&lt;0.2C）</strong>：待机或极低负载时，iPhone 14 Pro 展现极佳能效，电池几乎无损耗。</li>
+</ul>
+<hr>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%EF%B8%8F">⚒️</a>
+<ul>
+<li><a href="#1-how-to-quickly-charge-your-smartphone-fast-charging-technologies-in-detail">1. How to quickly charge your smartphone: fast charging technologies in detail</a>
+<ul>
+<li><a href="#%E4%B8%BB%E6%B5%81%E5%BF%AB%E5%85%85%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB">主流快充技术分类</a></li>
+<li><a href="#%E5%BF%AB%E5%85%85%E5%8D%8F%E8%AE%AE%E5%AF%B9%E6%AF%94%E4%B8%80%E8%A7%88">快充协议对比一览</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+<li><a href="#2-a-case-study-on-low-temperature-degradation-and-self-recharging-of-a-smartphone-lithium-ion-battery">2. A case study on low-temperature degradation and self-recharging of a smartphone lithium-ion battery</a></li>
+<li><a href="#3explaining-lithium-ion-silicon-carbon-batteries-a-new-type-of-battery-technology-that-is-already-in-our-devices">3.Explaining lithium-ion silicon-carbon batteries: a new type of battery technology that is already in our devices</a></li>
+<li><a href="#18650-format%E4%B8%8E21700%E7%94%B5%E6%B1%A0%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94">18650-format与21700电池格式对比</a>
+<ul>
+<li><a href="#%E6%AF%94%E8%BE%83%E8%A1%A8%E6%A0%BC">比较表格</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93-2">总结</a></li>
+</ul>
+</li>
+<li><a href="#4your-smartphone-actually-has-a-smaller-battery-than-you-think">4.Your smartphone actually has a smaller battery than you think</a>
+<ul>
+<li><a href="#%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E8%A1%8C%E4%B8%BA%E4%B8%8E%E7%94%B5%E6%B1%A0%E6%94%BE%E7%94%B5%E5%80%8D%E7%8E%87%E8%A1%8C%E4%B8%BA%E7%9A%84%E5%85%B3%E7%B3%BB">日常使用的行为与电池放电倍率行为的关系</a></li>
+<li><a href="#iphone-14-pro-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%94%B5%E6%B1%A0%E6%94%BE%E7%94%B5%E5%80%8D%E7%8E%87%E8%A1%8C%E4%B8%BA%E6%8E%92%E5%BA%8F%E4%BB%8E%E9%AB%98%E5%88%B0%E4%BD%8E">iPhone 14 Pro 使用过程中电池放电倍率行为排序（从高到低）</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93-3">总结</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-202508242/">https://ezraknotlab.github.io/post/ekl-202508242/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-202508242/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-202508242/&sharesource=qzone&title=EKL 20250824&pics=https://ezraknotlab.github.io//images/avatar.png?v=1756631679328&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast charging technologies in detail&lt;/li&gt;
+&lt;li&gt;low-temperature degradation&lt;/li&gt;
+&lt;li&gt;self-recharging&lt;/li&gt;
+&lt;li&gt;lithium-ion silicon-carbon batterie&lt;/li&gt;
+&lt;li&gt;18650-format与21700电池格式对比&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-202508242/&sharesource=weibo&title=EKL 20250824 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast charging technologies in detail&lt;/li&gt;
+&lt;li&gt;low-temperature degradation&lt;/li&gt;
+&lt;li&gt;self-recharging&lt;/li&gt;
+&lt;li&gt;lithium-ion silicon-carbon batterie&lt;/li&gt;
+&lt;li&gt;18650-format与21700电池格式对比&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1756631679328 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKLChaos/">#
+                                                EKL Chaos
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-fn-shanghai-2025/">
+                                                                                            EKL FN Shanghai 2025
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-319/">
+                                                                                                    EKL 319
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1756631679328);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

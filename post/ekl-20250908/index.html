@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1759652479028" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1759652479028" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250908
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-09-15</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">31.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7808</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/09/15/8d13c9d8e0fedbf7.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Once in a life time</li>
+<li>边角料与Boss主角</li>
+<li>阿喀琉斯之踵</li>
+<li>John F. Kennedy  on the Space Effort Sept. 12, 1962</li>
+<li>The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#temporary">Temporary</a><br>
+*
+<ul>
+<li><a href="#%E6%AD%8C%E6%9B%B2-%E8%83%8C%E6%99%AF">歌曲&amp; 背景</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BE%B9%E8%A7%92%E6%96%99%E4%B8%8Eboss%E4%B8%BB%E8%A7%92">边角料与Boss主角</a></li>
+<li><a href="#%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B9%8B%E8%B8%B5">阿喀琉斯之踵</a></li>
+<li><a href="#read-later">Read Later</a></li>
+<li><a href="#scholar">SCHOLAR</a>
+<ul>
+<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F%E7%9A%84%E6%A5%B7%E6%A8%A1sebastian-starke">博士生的楷模：Sebastian Starke</a>
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%986%E7%8B%AC%E7%AB%8B%E6%80%9D%E8%80%83">问题6：独立思考</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#another-one">Another one</a>
+<ul>
+<li><a href="#%E4%B8%87%E7%89%A9%E7%BB%93%E5%90%88%E8%81%94%E5%90%88%E6%80%9D%E8%80%83">万物结合联合思考、</a></li>
+<li><a href="#the-one-month-knowledge-sprint-how-to-read-books-take-action-and-change-your-life">The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change Your Life</a></li>
+<li><a href="#%E8%83%A1%E7%84%95%E5%BA%B8%E7%BA%BF">胡焕庸线</a></li>
+</ul>
+</li>
+<li><a href="#911">911</a></li>
+<li><a href="#fewer-sandwich-papers-please">Fewer Sandwich Papers, Please</a>
+<ul>
+<li><a href="#%E8%A2%AB%E8%AE%A4%E4%B8%BA%E6%9C%89%E6%9C%9B%E8%B6%85%E8%B6%8A%E4%B8%AD%E5%9B%BD%E5%90%8C%E8%A1%8C%E8%8D%B7%E5%85%B0%E7%94%B5%E6%B1%A0%E5%85%AC%E5%8F%B8%E7%94%A8100%E7%A1%85%E9%98%B3%E6%9E%81%E6%9B%BF%E4%BB%A3%E7%9F%B3%E5%A2%A8%E5%B0%86%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E6%8E%92%E6%94%BE%E9%99%8D%E4%BD%8E85">被认为有望超越中国同行：荷兰电池公司用100%硅阳极替代石墨，将二氧化碳排放降低85%</a></li>
+<li><a href="#john-f-kennedy-address-at-rice-university-on-the-space-effort-sept-12-1962">John F. Kennedy Address at Rice University on the Space Effort  Sept. 12, 1962</a></li>
+<li><a href="#%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%8A%80%E8%83%BD%E6%9B%B4%E9%87%8D%E8%A6%81">知识重要，技能更重要</a></li>
+<li><a href="#trends">trends</a></li>
+<li><a href="#nano-banana">Nano Banana</a></li>
+<li><a href="#ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%BB%8F%E6%B5%8E">AI驱动的注意力经济</a></li>
+</ul>
+</li>
+<li><a href="#fighters">👑 Fighters</a><br>
+*
+<ul>
+<li><a href="#2025%E5%B9%B49%E6%9C%8812%E6%97%A5-once-in-a-life-time">2025年9月12日-Once in a life time</a></li>
+<li><a href="#historic-weekend">historic weekend</a></li>
+<li><a href="#%E8%A5%BF%E8%B4%9D-%E9%A2%84%E5%88%B6">西贝-预制</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://www.zhihu.com/question/1947764196272988325">幼儿误吞电池 10 小时导致终身残疾，误吞电池会有哪些具体危害？这类情况该如何急救？</a></li>
+<li><a href="https://www.zhihu.com/question/1903705711734678919">固态电池的发展会成为下一个投资风口吗？</a></li>
+</ul>
+<h1 id="temporary">Temporary</h1>
+<p><a href="#toc">↩️</a><br>
+Song by Eminem and Skylar Grey ‧ 2024</p>
+<p><audio controls="" loop="" preload=""><source src="https://cdn3.mp3gaa.xyz/swahilisongs/wp-content/uploads/2024/07/Eminem_-_Temporary.mp3"></audio></p>
+<p><mark>Temporary Song by Eminem and Skylar Grey ‧ 2024</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+
+
+A lot of people ask me, am I afraid of death?
+The truth is, I think what scares me the most
+Is not being able to say all the things I wanna say to you
+When I'm no longer here
+So this song is for Hailie for when that day comes
+Where's Hailie? Where's she at?
+This ain't Hailie
+Who is it?
+It's a monster (ahh)
+I've been waiting all night for the sunrise
+To take away the dark sky
+You're the dad monster and them are the baby monsters and I'm the mom monster
+Oh
+All it takes is a new day sometimes
+To get me in a better state of mind
+Give me a kiss, monster, give me a kiss
+Love you (I love you)
+If I could just fall asleep
+I'd be lost in a dream
+But right now, it's misery
+And I just have to remember
+That when a heart breaks, it ain't broken forever
+The pieces will grow back together
+And in time, I'll be fine
+The tears are temporary
+Yeah, so Hailie Jade, I wrote you this song
+To help you cope with life now that I'm gone
+How should I start? Just wanna say
+Look after Alaina, Stevie, and Uncle Nate
+And, sweetie, be strong, I know I was your rock
+And I still am, saying goodbye is just not
+Ever easy, why you crying? Just stop
+Hailie, baby, dry your eye, this is not
+Forever
+That when a heart breaks, it ain't broken forever
+The pieces will grow back together
+And in time, I'll be fine
+The tears are temporary
+Daddy
+What?
+When I used to have this when I was a little kid
+Baby, are you okay?
+Yeah, and you will get over me and move on
+You can play me on repeat on a song
+But don't you dare shed a tear, what'd I tell you?
+&quot;Straighten up, little soldier, &quot; them times when I held you
+Jade, it'll be okay, baby, I'm here, Hay
+I'm watchin' you right now, baby girl, I vow
+I will protect you, your guardian angel
+As hard as this may feel, us parting is painful
+And, darling, the rain will drive you insane still
+You will remain strong, Hailie, just hang on
+It won't be too long, I need you to move on
+And remember, it will get better
+'Cause times heals and when a
+When a heart breaks, it ain't broken forever
+The pieces will grow back together
+And in time, I'll be fine
+The tears are temporary
+The bad days will start to get better
+And we'll be laughin' together
+And tonight, when I cry
+The tears are temporary
+I know this big girl
+And she's really pretty
+You know what her name is?
+Hailie
+Hailie, how did you know?
+Yeah, and if there's days where you wanna lock yourself in your room and cry
+Just think about how when you were little, how you and I
+Back and forth to the studio, we used to drive
+You strapped in the backseat 'cause you were my
+Little sidekick, yeah, sweetie, I know this hurts
+Bean, I'm wishing your pain away
+Remember this, Hailie Jade
+There's gonna be rainy days
+I promise you'll get through 'em and make it regardless
+Fuck it, Jade, I'll be honest
+I knew that you was gonna take this the hardest
+Sweetie, get up, I know that is is breaking your heart, it's
+The hardest thing I ever wrote (daddy)
+Hailie, sweetheart, it's okay for you to let me go
+Baby, I promise you that when a-
+When a heart breaks, it ain't broken forever
+The pieces will grow back together
+And in time, I'll be fine
+The tears are temporary
+The bad days will start to get better
+And we'll be laughin' together
+And tonight when I cry
+The tears are temporary
+What's your favorite song?
+My favorite song right now
+Mine and your favorite song, but
+I like this part
+That's your favorite part, dad?
+You're taping me, bitch
+I got you on tape cussin'
+Can you hear?
+Yeah
+No, bitch
+No what?
+No, I said, I said, no, bitch
+Okay, no cussin'
+
+
+
+
+</code></pre>
+</details>
+<ul>
+<li>歌曲里面采样了很多生活片段的录音，MV里面有影像，印象最深的是最后采样了一段他们之间的对话，小小的Hailie突然嘴里说出了bitch这个词，大家都很吃惊。</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/temporary/1755022517"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaK9Wi5ho0o?si=UM0Kb5X-4qkLjwGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h3 id="歌曲-背景">歌曲&amp; 背景</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>《Temporary》是Eminem（阿姆）与Skylar Grey合作的一首歌，收录于他2024年发行的第十二张专辑《The Death of Slim Shady (Coup de Grâce)》。这首歌发行于2024年7月12日，词曲由Eminem、Skylar Grey（本名Holly Hafermann）和Luis Resto创作，由Eminem与Skylar Grey共同制作。  歌曲是一首致献女儿Hailie（海莉）的情歌，Eminem在钢琴旋律下唱出对死亡的恐惧，担忧自己有朝一日说不出对女儿的爱与关怀。这首歌他希望在自己去世之后，Hailie能听到它，记得他的爱，并在他离开后照顾好自己的兄弟姐妹和叔叔。他也坦言这是“他写过最难的一首歌”。  2024年10月3日，官方MV上线，画面交替呈现海莉幼年与近期的家庭影像：从童年画面到她告诉父亲自己怀孕的温馨片段，最后海莉拿出“爷爷”球衣和超声照片，暗示Eminem即将成为祖父的喜悦时刻。</li>
+</ul>
+<p>《Temporary》是一首极具情感张力的家庭倾诉之作，融合Eminem对父亲身份的深刻反思、对女儿未来的爱与期望，以及将家庭感受具体化的真情流露。MV把这份情感具象化，让人更能感受到Eminem作为父亲的脆弱与执着。</p>
+<h1 id="边角料与boss主角">边角料与Boss主角</h1>
+<p><a href="#toc">↩️</a><br>
+上次和 R 博士一起吃饭，聊到一些想法。有时候真是奇妙，某些瞬间会让我感叹费曼学习法：在谈话里边说边组织语言，效果往往比我事先独自思考时更惊艳。写作其实也是类似的，虽然看起来讨论、写作和“纯粹思考”是不同的流程，但偏偏就是在这些貌似“不直接相关”的过程里，大脑像被加了氮气一样，思考被推到更深的层次。</p>
+<p>结合我一直以来的想法，大概可以这样表达：像 UCLA、Stanford、MIT 那些领域大牛，发在 Nature、Science 上的成果，的确是对领域而言极有价值的新规律、新结论。但这些 boss 级别的结果，往往不是凭空掉下来的，而是由很多“小兵”一步步垒出来的。大规律需要无数分散的小规律、小招式来支撑和推导。</p>
+<p>只是这些“小兵成果”，往往是不被大多数人重视的。小规律，可能就是一篇看似没那么震撼、发在比 Nature、Science 更“边角”的期刊 B 上的论文；小招式，则可能是某些数据分析方法、定义策略、描述符……这些东西单独看似乎意义不大。但在这些大牛的组里，却常常被非常认真地对待，并且在组内代代传承，不会一遍遍地重复造轮子，更不会陷在“维轮子论”里。</p>
+<p>因此，在某些轰动的 Nature、Science 出现之前，细心的人其实能在前期那些“期刊 B”里嗅到苗头。到最后，当大成果真的出现时，对他们而言并不会太震撼——因为一切早已埋下伏笔。这样的例子数不胜数。比如 2022 年 Nano Letters 上就有一篇关于高电流密度锂沉积的文章，没过多久，同一个人就把类似主题投到了 Nature，封面比较震撼的锂沉积的本征形态即菱形十二面体。那种“果然如此”的感觉，其实就是边角料和主角之间的连线。</p>
+<ul>
+<li>回顾：<a href="https://www.mittrchina.com/news/detail/12499">MIT科技评论：科学家捕捉菱形十二面体，挑战锂电沉积两大长期结论，为研究活泼金属电沉积行为提供新视角</a></li>
+</ul>
+<h1 id="阿喀琉斯之踵">阿喀琉斯之踵</h1>
+<p><a href="#toc">↩️</a><br>
+“阿喀琉斯之踵”，这是一个来自古希腊神话的隐喻，用来形容一个人或事物唯一的致命弱点。</p>
+<p>故事是这样的——阿喀琉斯是特洛伊战争里最强的战士，他的母亲忒提斯在他出生时，为了让他刀枪不入，把他浸在冥河（Styx）里。可是她当时是抓着孩子的脚后跟，所以那一小块地方没有被河水浸到。于是，阿喀琉斯全身上下都坚不可摧，唯独脚跟是致命的弱点。后来，他就是在战争中被一支射中脚跟的箭击中，从而丧命。</p>
+<p>从那以后，“Achilles’ heel”（阿喀琉斯之踵）就成了一个成语，用来指代再强大的人或系统，也会有一个脆弱点。比如说，一个超级聪明的人，可能因为情感上特别敏感而受伤；一个性能超强的机器，可能因为一个小小的设计缺陷而彻底失效。</p>
+<p>我很喜欢这个隐喻：没有绝对的完美。就算是神话里最厉害的英雄，也要带着缺陷去战斗。</p>
+<h1 id="read-later">Read Later</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>稍后阅读这个功能总像是未来的自己站在你身旁默不作声地接住你现在像未来扔的垃圾；所有难搞的任务都给未来的自己……</li>
+<li><a href="https://blog.numericcitizen.me/2025/09/08/why-all-this.html">Why All This? September 8, 2025 8:14pm </a></li>
+</ul>
+<pre><code class="language-c">Why All This?
+September 8, 2025 8:14pm
+Food for thought
+
+Longer posts
+
+Apps &amp; Services
+
+Newsletter
+
+Read later services (Readwise, Pocket, Readwise, Inoreader, etc.), bookmarking apps and services (Anybox, Raindrop, etc.), downloading, summarizing, and tagging—whether used together or separately—the issue remains the same: I rarely revisit content. Content quickly becomes outdated and loses relevance. This pattern reflects a common challenge in digital content management. Despite the ease of saving and organizing information for future reference, the practical use of these saved digital tidbits often diminishes over time. As new information emerges and contexts change, what once seemed valuable or interesting can fade into obscurity, making the effort of saving feel less worthwhile. This raises questions about the effectiveness of these tools and whether they truly serve my long-term informational needs.
+
+</code></pre>
+<h1 id="scholar">SCHOLAR</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="博士生的楷模sebastian-starke">博士生的楷模：Sebastian Starke</h2>
+<ul>
+<li><a href="https://pengsida.notion.site/Sebastian-Starke-1713fe292ff1808eb33be93ea2d79ad9">原文出处（文章日期：2025年1月4日）：link</a></li>
+<li>作者总结了Sebastian Starke博士的研究风格（值得学习的地方），还有以此反思自己的“错误”，很多点都很有参考意义，并非空大的探讨。</li>
+</ul>
+<ol>
+<li>**有非常明确且长期的目标，问题驱动式科研。**他的论文始终在解决Character Control系统中的各种问题，从早期的简单周期性运动控制，到后面的复杂运动控制，征服了Character Control方向的一座座高山。</li>
+<li>**总能找到有价值的问题。**可能受益于Taku组的长期积累，Sebastian的论文总能找到Character Control中优先级最高的问题，而不是把精力花在一些无关痛痒或暂时不重要的问题上。</li>
+<li>**不畏难地填坑，挑战“没答案”的问题。**Sebastian猛就猛在敢去攻克难题、不断填坑。Character Control方向的一大重要问题是目标动作的复杂度。他师兄Daniel Holden的PFNN解决了简单周期运动，他的Local Motion Phase进一步提升，解决了组合式运动，然后又通过DeepPhase（SIGGRAPH最佳论文）解决了复杂非周期运动，几乎解决了动作复杂性的这一问题。</li>
+<li>**极强的技术能力。**前面3个研究风格让Sebastian把精力集中在解决最重要的问题上，但要能解决问题，靠的是Sebastian本人极强的技术能力，包括广阔的技术积累、深入的技术思考、硬核的工程能力。Sebastian应该把Character Control相关的技术栈都摸了遍，包括Motion Capture、Fitting、Animation、Deep Learning、Unity等。</li>
+<li>**尝鲜新技术。**Sebastian的论文里总会尝试那一时期的前沿技术，比如DeepPhase中探索了Representation Learning在motion中的应用。我相信，如果他只是沿着Local Motion Phase的技术路径去解决复杂非周期运动的控制问题，不太可能会有这么大的效果提升。</li>
+</ol>
+<hr>
+<ul>
+<li>作者的反思（借鉴学习）
+<ul>
+<li>
+<ol>
+<li><strong>缺少长期目标，没有专注解决一个方向上的问题。</strong></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><strong>倾向于解决容易的问题，没有去寻找最有价值的问题。</strong></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li><strong>缺少把问题解决到99%程度的意识。</strong></li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li><strong>把时间浪费在解决“有答案”的问题。</strong></li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li><strong>论文阅读面窄，技术积累少。</strong></li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li><strong>没有尝鲜新技术。</strong></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="问题6独立思考">问题6：独立思考</h3>
+<p><a href="#toc">↩️</a><br>
+Q: “你的教授像你一样每天在研究这个问题吗？他说的就是对的吗？我在 MIT 的时候，很多教授表示，我最好的学生从来不听我的话，但是他们会拿出更好的解决问题的方法。”<br>
+Q: “这些都是别人说的，你自己的看法呢？”</p>
+<aside>
+💡
+<p>反思：做科研要独立思考，总结出自己的一套。</p>
+</aside>
+<hr>
+<h1 id="another-one">Another one</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>水果也网红一样了  阳光玫瑰没人要了便宜   麒麟瓜还是贵</p>
+</li>
+<li>
+<p>神马都可以网红化，水果现在就是这样，有过气品种，有新潮上市的，阳光玫瑰今年特别便宜，麒麟瓜今年也是“粉墨登场”，使得传统劲旅西沙瓜黯然失色。科研领域也是这样的，前言热门方向也有波动的现象</p>
+</li>
+<li>
+<p>可能最终级的AI model在the most high那边  毕竟他那边人的数据最全   With that being said</p>
+</li>
+<li>
+<p>沉积  沉淀 You can't rush the greatness</p>
+<ul>
+<li>有很长时间的打磨 Izzy在国内沉淀再去澳洲拼搏之后才一路从UFC登基，Poatan glory双冠王退役再就业，一路杀上来，can't wait for his next fight 是你的 你得去earn  没有什么弯道超车  YIRI也是在日本经过磨练之后沉淀才使得之后的冠军之路更加顺利</li>
+<li>想起高三时候有上一届的清华学姐返校宣讲，讲述自己高三拼搏时候这样激励自己：计算出清华录取人数，用自己的行动给被淘汰的N个人一个交代</li>
+<li>&quot;The route is simple   I outwork people for living&quot;</li>
+<li>厚积薄发  前三分之一最重要</li>
+<li>上坡总是苦难的  证明在进步</li>
+<li>只有下坡才是轻松的</li>
+</ul>
+</li>
+<li>
+<p>Oh, you don't have a name?  I'll just call u a BICH.</p>
+</li>
+<li>
+<p>梦到还有一个小妹妹  四五岁小孩子最可爱 长大了没那么可爱</p>
+</li>
+<li>
+<p>时间不等人，遇到能够享受的要及时慢下来享受，像是2015-2018的银河战舰VS巴萨王朝，BBC vs MSN，“曼城王朝”，“NFL酋长王朝”，看就要享受的看，it'll never be the same,没有王朝能够长久，享受当下 珍惜</p>
+</li>
+</ul>
+<h2 id="万物结合联合思考">万物结合联合思考、</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>工作和生活像是DNA的两条链，分离独立又对应结合螺旋上升</li>
+<li>锂金属沉积遇到的能垒趋势，像跑步，像做很多事，比如对于跑10km来说，前3km可能是进入状态最困难的，5-8km就像挂空挡一样滑行，对于3km来说，第一个1km是最需要专心调整的，我称之为“三分之一定律”，有点像加速度的理论，小时候坐摩托车上爸就给我讲过，加油门加档是最费油的时候，因为要加速度不断变大，到稳定速度在80迈时候，一直保持就可以，并不会耗费太多，当然后面我们也知道稳定速度燃料更能够充分燃烧。简单来说，有点完事开头难的意思，但有不仅如此，这是个loop，墙里面的人能够不断加深体会，持续深耕，墙外人又难以进入，跨不过barrier，进入不了loop。进一步，生活就是个生态圈，是一个loop，而这个loop由很多balance组成，像是各种平衡。个人角度来说，一个人就是一个system，存在一个loop循环，balance指的并不是大气\生态等等平衡，而是自己身体的内在和外在循环中的各种，生理上有健康的指标，生活中有见识、情绪、热情爱好等一些平衡、取舍、时间分配，会涉及到一些所谓中庸或者自洽的思想。就像电池研究一样，整体上是一个system，依赖的是loop充放电的循环，但是这其中的loop又有各式各样的balance组成，电解液成分的balance，正负极结构的balance，这只是粗略的分类……To lead a better life, mind your own bussiness well, take yourself 1st, always learn something, record your thoughts as they are easy-come and easy-go, then keep your self updated.</li>
+<li>there's a temple in your heart, I, a universe of atoms, an atom in the universe.  一个人就是一个system，keep self clean.  网上能找到的jcole和Kendrick Lamar Interview很少，加起来一只手都能数过来，大家在不同的波段，live in a bubble with family , 只用作品说话，只有作品会在可见光处向外界传递信息，jcole甚至有几个子嗣外界都不知道</li>
+<li>天才一般基础条件是有过人的能力，全面以及专业的能力，尤其创造力，这些到达门槛之后就进入了天才这个圈子，但是更让天才名号出名的是稀奇古怪的行为说一些匪夷所思的话，加上某些特定的品质，比如kanye古怪反常的出街打扮，后期耐人寻味的音乐制作口味，但同时采访时候也会承认自己是jealous，god 本身就是个jealous god，其他领域的天才也是，画画、古典音乐、体育……</li>
+</ul>
+<h2 id="the-one-month-knowledge-sprint-how-to-read-books-take-action-and-change-your-life">The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change Your Life</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>I break down the process of conducting a month-long sprint into four parts:<a href="https://www.scotthyoung.com/blog/2025/09/09/knowledge-sprint/?ck_subscriber_id=1713476175">Source</a></li>
+</ul>
+<p>Choose a theme.<br>
+Take action.<br>
+Get books.<br>
+Adjust based on feedback.<br>
+<img src="https://s3.bmp.ovh/imgs/2025/09/15/71d19c2891284f98.png" alt="" loading="lazy"></p>
+<ul>
+<li>不是学校里面先阅读学习再练习巩固，而是从习题里面边解决问题边阅读学习</li>
+<li>What you read will then change your direction rather than provide the entire road map.</li>
+<li>You should read books in this order:</li>
+</ul>
+<p>Textbooks.<br>
+Credible popular books based on expert consensus (not polemics).<br>
+Interesting books that may not be consensus opinions.</p>
+<h2 id="胡焕庸线">胡焕庸线</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>最早还是在圆桌派真正意识到这种现象：众所周知我国从东南到西北有明显的发展水平的降低趋势，著名的就是“黑河-腾冲线”。</li>
+<li>In case udk: 在中国的人口地理版图上，有一条重要的分界线——“胡焕庸线”。</li>
+</ul>
+<p>胡焕庸线又叫黑河——腾冲线。是由中国地理学家胡焕庸在1935年提出的人口密度对比线，即从黑龙江黑河开始，经过大兴安岭、张家口、榆林、兰州、昌都，到云南腾冲结束，把中国大陆分成两大部分。</p>
+<p>胡焕庸线大致沿着45°倾斜的直线，该线东南部43.8%的国土居住着94.1%的人口，而该线西北部56.2%的国土只居住着5.9%的人口，因此胡焕庸线在某种程度上体现了中国城镇化水平的分割线。</p>
+<p>线的西北方向，是“大漠长河孤烟”，线的另一头，是“小桥流水人家”。</p>
+<ul>
+<li>具体的说，这个现象就是窦文涛所说的，本世纪早期或者上世纪火热的那些演唱家、歌手等，如今在东南沿海演出已经不再那么火爆，受众已经熟悉，但是他们可以在今天进一步从东南逐步向内陆走向西北，会发现他们还会慢慢受到追捧，很多名人现在会在西北西南二三线城市开演唱会等等，新鲜的受众之前并没有机会亲眼目睹这些。这只是音乐行业的现象，当然文娱体育类也会一定程度上有类似的趋势，给人的感觉是明明时光机不存在，但是还是会有点“穿越的感觉”，像是这个平行宇宙的bug之一。旅居、移民什么的也有点类似，从一个文化进入另一种文化，从头开始学习适应，走别人的老路，体会经典，仍会在今天感到快乐。</li>
+</ul>
+<h1 id="911">911</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>2025年9月11日:今天很多次填写日期，意识到是911，早些有新闻爆有保守派的活动人士在犹他州的一大学演讲回答问题间隙被枪杀，每次这种炸裂的社会新闻爆出来之后Internet就疯了一样，算法推荐此类内容像洪水一样奔袭过来，淹没了一切日常的posts，有点像2024rap beef那时候，有人drop diss song，Internet都会炸锅。（又想到一个有意思的，总会有contender在新科冠军夺冠之后大放厥词说champ就是easy money，然后有好事媒体转发podcast的clip片段，然后点开comments之后就会笑翻在评论区，各种meme，还有些mean words，上次看Paulo说Khamzat，有人说Khamzat'll win by dick slap, lmao hhhhhh) 被枪杀的画面也go viral, 麦吉尼说最好不要看，确实所有这种画面都生理不适，生理，就是人大脑习惯于观察到完整的人类的身体，稍微有点异常的画面都会让人不寒而栗，早前泡椒PG在印第安纳步行者时候断腿的画面现在还在我脑子里，还有Conor和钻石三番战时候断脚踝，画面诡异，惨不忍睹。谈到Conor，说竞选总统也两三年了，今年似乎真的正式要竞选了，最近和Elon还打电话，Elon公开支持Conor, 看到有人说Conor是属于坏孩子那种，哈哈哈哈，可能比DJT更神经病，核按钮会在手里按着玩的那种……死者是Charlie Kirk American political activist and author，在大学里的活动期间，不得不谈起大学和社会区别，从2023年以色列-哈马斯战争之后，校园里面有反犹主义活动，国会听证会邀请了三所顶尖大学的校长作证：哈佛大学（Harvard University）的Claudine Gay、宾夕法尼亚大学（University of Pennsylvania, Penn）的Liz Magill，以及麻省理工学院（MIT）的Sally Kornbluth。听证会因三位校长对关键问题的回应而引发巨大争议，最终导致Gay和Magill辞职。这被视为美国高等教育界的一次重大危机，暴露了大学在言论自由、反犹主义和校园抗议管理方面的困境。虽然看起来总体上发达的城市倾向于蓝色，中部地区“欠发达”红色，大部分东西两岸顶尖大学都是“自由民主”的蓝色，大学里不管怎么样都应该是言论自由才对，这更像是安全问题，意识形态的差异导致的枪杀行为</li>
+<li><a href="https://www.bbc.com/zhongwen/articles/cly15lwr7ypo/simp">查理·柯克遇害：曾与其辩论的剑桥大学生谴责枪击事件</a></li>
+</ul>
+<h1 id="fewer-sandwich-papers-please">Fewer Sandwich Papers, Please</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>refer1:<a href="https://doi.org/10.1021/acsenergylett.2c02197">Fewer Sandwich Papers, Please</a></li>
+<li>refer2:1<a href="https://doi.org/10.1021/acsenergylett.4c0199">Should We Publish Fewer Papers?</a></li>
+<li>两篇都是ACS energy letters主编所作，算是呼吁少点“publish or perish” culture，在如今的时代背景下分散的探讨了很多角度：
+<ul>
+<li>有用AI的，但是创造力难以替代，这也正是关键瓶颈所需要的</li>
+<li>高质量的，人们通常值得花更多时间，而非AI总结  fact</li>
+<li>尽管低JIF，但是坚持做自己认为正确的</li>
+</ul>
+</li>
+<li>工商行业发展或者文娱等领域的进化，大部分都是一开始早期、初期阶段提出问题的人在思考问题、挖掘规律、解决问题，或者形成某种艺术风格，用创造力推进作品到达更高的境界，在此不久后他们几乎都会像奶油一样被资本这些“苍蝇”发现，之后奶油蛋糕被膨胀做大，同时也有更多被腐蚀浪费，只有极少数人拥有定力，仍然默默在抛开这些干扰思考着本质，不谈网红这些，在music industry，去年有<a href="https://www.apple.com/hk/en/newsroom/2024/05/apple-music-reveals-top-10-albums-of-all-time-on-100-best-list/">Apple Music 100 Best Albums</a>，里面本世纪专辑并不多，虽然如今狂潮一般的年发行量，工业成熟、技术先进，但是很难抵前面那些巨人，The Beatles 、Prince   、MJ、Beyoncé   难以超越。</li>
+</ul>
+<h2 id="被认为有望超越中国同行荷兰电池公司用100硅阳极替代石墨将二氧化碳排放降低85">被认为有望超越中国同行：荷兰电池公司用100%硅阳极替代石墨，将二氧化碳排放降低85%</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://www.mittrchina.com/news/detail/15225">link</a></li>
+</ul>
+ <iframe src="https://www.mittrchina.com/news/detail/15225" width="750" height="800"></iframe>
+<ul>
+<li>硅负极的应用，优势是高理论比容，但是应用瓶颈一直是体积膨胀巨大。不同于石墨阳极生产中的浆料涂覆工艺，该公司的生产工艺利用等离子体来产生能量，因此无需溶剂或粘合剂进行粘合，从而可以完全跳过耗能的干燥步骤，进而让这一工艺更加具备节能优势。与此同时，这种单步骤的工艺可以将阳极直接沉积到集流体上，而集流体 100% 采用再生铜，这让这家位于荷兰的公司更加具备采购优势。该公司利用等离子气相沉积技术在薄铜片上生长了海绵状硅柱，这种技术无需湿法化学工艺，具有更好的可持续性，能够直接地沉积纯硅阳极。</li>
+</ul>
+<h2 id="john-f-kennedy-address-at-rice-university-on-the-space-effort-sept-12-1962">John F. Kennedy Address at Rice University on the Space Effort  Sept. 12, 1962</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>最近NASA炸裂的新发现比较多，先是测试出类似新在火星发现有机物质，可能意味着存在远古生物——[NASA 宣布毅力号漫游车去年在火星耶泽罗陨石坑（Jezero Crater）附近一古老干涸河床采集到的一块岩石样本可能保存了古代微生物生命的证据。该样本被命名为“蓝宝石峡谷（Sapphire Canyon）”，采集自名叫 Cheyava Falls 的岩石。潜在的生物特征是指可能具有生物起源的物质或结构，但需要更多数据或进一步研究才能得出是否存在生命的结论。相关研究报告发表在《自然》期刊上。]  (https://www.solidot.org/story?sid=82280)
+<ul>
+<li><a href="https://www.scientificamerican.com/article/is-there-life-on-mars-this-rock-may-hold-the-answer/">This Rock May Hold Proof of Life on Mars</a></li>
+<li><a href="https://www.jpl.nasa.gov/news/nasa-says-mars-rover-discovered-potential-biosignature-last-year/">NASA Says Mars Rover Discovered Potential Biosignature Last Year</a></li>
+<li><a href="https://www.nature.com/articles/s41586-025-09413-0">nature:Redox-driven mineral and organic associations in Jezero Crater, Mars</a></li>
+</ul>
+</li>
+<li>然后，在开会时候摸鱼，顺便就想起来了著名的约翰肯尼迪在莱斯大学的演讲（主要是nature brief最近有推送这个quote和答题），可能是人类有史以来最伟大的演讲之一，也可能是科技史以来最伟大的演讲，没有之一：<a href="https://www.rice.edu/kennedy">link:John F. Kennedy Address at Rice University on the Space Effort Sept. 12, 1962</a></li>
+<li>这里面有让人感动的话很多，但节选这最后一段：
+<ul>
+<li>Well, space is there, and we're going to climb it, and the moon and the planets are there, and <mark>new hopes for knowledge and peace are there</mark>. And, therefore, as we set sail we ask God's blessing on the most hazardous and dangerous and greatest adventure on which man has ever embarked.</li>
+</ul>
+</li>
+<li>很久之前，可能初中时候看到有段讨论这种科学探索的意义，燃烧经费那么多，尤其在纳税人对经费分配比较敏感的条件下，但是实际上宇宙空间探索所带来的科学技术进步对于普罗大众来说是更加无形的，事实上每次新的突破都有很多由这些充满希望与理想的科学任务引发。</li>
+<li>另一方面，就像史强在三体里面说的，人是打不死的小强，就算是飞蝇扑火，我们也要前进，探索，求知。</li>
+</ul>
+ <iframe src="https://www.rice.edu/kennedy" width="750" height="800"></iframe>
+<h2 id="知识重要技能更重要">知识重要，技能更重要</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/1950575859149800475">吴恩达来信：知识重要，技能更重要</a></li>
+</ul>
+<h2 id="trends">trends</h2>
+<p><a href="#toc">↩️</a><br>
+媒体总会报道一些类似某国某校研究团队历时几十年的研究发现某种行为会影响身体器官寿命的发现，总会怀疑样本大小和可靠性，尽管有些可能发表在顶级期刊，但我更喜欢那种两种大事件之间的相关性研究，比如香烟销量与患肺癌人数随年份的变化，两条曲线都是直线上升后衰减的火山型，但是患肺癌人数的曲线在横坐标年份上稍微滞后。最近又有类似这种：Heatwaves can be directly linked to carbon emissions from specific companies：Quilcaille, Y., Gudmundsson, L., Schumacher, D.L. et al. Systematic attribution of heatwaves to the emissions of carbon majors. Nature 645, 392–398 (2025). https://doi.org/10.1038/s41586-025-09450-9</p>
+<h2 id="nano-banana">Nano Banana</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Nano Banana工作室拍摄肖像照提示词：</li>
+</ul>
+<p>给图里的人生成工作室拍摄肖像照片,黑色背景,黑色T恤,采用侧光和半身像的构图<br>
+Nano Banana似乎更擅长手办化照片还有更改pose<br>
+但还是不如当初GPT4-o 的吉普力风格震撼和风靡， Nano Banana甚至吉普力风格都不对</p>
+<h2 id="ai驱动的注意力经济">AI驱动的注意力经济</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://www.solidot.org/story?sid=82304">社交媒体的末日</a></li>
+<li><a href="https://www.noemamag.com/the-last-days-of-social-media/">The Last Days Of Social Media</a></li>
+</ul>
+<h1 id="fighters">👑 Fighters</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Canelo vs. Crawford: Press Conference | LIVE on Netflix September 13  两种文化的碰撞</li>
+<li>《What's Up Danger》  最后一次发布会宣传背景音乐，   两张metro操刀专辑很好</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/dtmf/1787023936"></iframe>
+<h3 id="2025年9月12日-once-in-a-life-time">2025年9月12日-Once in a life time</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>今天最后一场巡回发布会结束  很友好  皮鞋西裤黑背心 canelo帅</p>
+</li>
+<li>
+<p>就像9320奇迹时候解说员说的 I swear you'll never ever see this again</p>
+</li>
+<li>
+<p>看到赛前Canelo用脖子高位平板支撑和俯卧撑，Islam之前手腕正反变换做俯卧撑，现在改手握的丁字单点支撑俯卧撑，下一步是不是一阳指俯卧撑 LOL</p>
+<ul>
+<li>Canelo的脖子和头一样粗，全是肌肉，抗打又灵活。也有Spider Sense Tingling Moment，像钻石那样的闪躲。</li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/09/15/f459ee35b772012e.png" alt="" loading="lazy"></figure>
+<ul>
+<li>UFC 320在十月初，Alex Periera将会再一次walkout with his spirits</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/itsari/214473961"></iframe>
+<ul>
+<li>之后MSG的card将会是Islam登上第二座大山的机会</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/dreams/1661557983"></iframe>
+<ul>
+<li>两位的walkout song都是纯音乐，狂野激进，无惧无畏，但又有另类的“空虚孤独”。</li>
+</ul>
+<h2 id="historic-weekend">historic weekend</h2>
+<p><a href="#toc">↩️</a><br>
+<img src="https://s3.bmp.ovh/imgs/2025/09/15/8d13c9d8e0fedbf7.png" alt="" loading="lazy"></p>
+<ul>
+<li>一开始bud上来节奏比较强，轻度高，我想作为挑战者这也正常，只是和canelo这种，你早期这么高强度，后期最好有体能担保，要不然后几局来个body shot击腹就finished，结果bud一路体能在线，输出多于Canelo，臂长有优势，出击频率高，这是在顶级六边形战士，最后canelo lost by UD, 对于canelo来说，确实 a lot on the line，本来输多赢少，但是为独立日敬献，这是油然而生的热爱和无谓的勇气，并不会影响他仍然作为一代英雄，对于bud来说，赢了这场超级大战，仍然不败，简直直接坐上天梯更升一步。</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/09/15/f52903cd59594fd1.png" alt="" loading="lazy"></figure>
+<ul>
+<li>今天有noche UFC  还有Boxing  晚上有曼市德比，明天有年初超级碗的rematch
+<ul>
+<li>每次赛前就是为了听那一声blue moon</li>
+<li>City 3-0 United  Foden甩头冲顶  太帅了，Erling, Doku都是正常发挥了。3-0碾压局 下半场早早就睡觉了</li>
+</ul>
+</li>
+</ul>
+<h2 id="西贝-预制">西贝-预制</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://1q43.blog/post/11997/">我不吃西贝，主要是它不够预制</a></li>
+<li>晚上围观了一下西贝与罗永浩，罗永浩的直播</li>
+</ul>
+<hr>
+<hr>
+<p>|￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|<br>
+| Don't Push To Production                |<br>
+|＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|<br>
+\ (•◡•) /<br>
+\      /<br>
+——<br>
+|     |<br>
+|_   |_</p>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#temporary">Temporary</a><br>
+*
+<ul>
+<li><a href="#%E6%AD%8C%E6%9B%B2-%E8%83%8C%E6%99%AF">歌曲&amp; 背景</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BE%B9%E8%A7%92%E6%96%99%E4%B8%8Eboss%E4%B8%BB%E8%A7%92">边角料与Boss主角</a></li>
+<li><a href="#%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B9%8B%E8%B8%B5">阿喀琉斯之踵</a></li>
+<li><a href="#read-later">Read Later</a></li>
+<li><a href="#scholar">SCHOLAR</a>
+<ul>
+<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F%E7%9A%84%E6%A5%B7%E6%A8%A1sebastian-starke">博士生的楷模：Sebastian Starke</a>
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%986%E7%8B%AC%E7%AB%8B%E6%80%9D%E8%80%83">问题6：独立思考</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#another-one">Another one</a>
+<ul>
+<li><a href="#%E4%B8%87%E7%89%A9%E7%BB%93%E5%90%88%E8%81%94%E5%90%88%E6%80%9D%E8%80%83">万物结合联合思考、</a></li>
+<li><a href="#the-one-month-knowledge-sprint-how-to-read-books-take-action-and-change-your-life">The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change Your Life</a></li>
+<li><a href="#%E8%83%A1%E7%84%95%E5%BA%B8%E7%BA%BF">胡焕庸线</a></li>
+</ul>
+</li>
+<li><a href="#911">911</a></li>
+<li><a href="#fewer-sandwich-papers-please">Fewer Sandwich Papers, Please</a>
+<ul>
+<li><a href="#%E8%A2%AB%E8%AE%A4%E4%B8%BA%E6%9C%89%E6%9C%9B%E8%B6%85%E8%B6%8A%E4%B8%AD%E5%9B%BD%E5%90%8C%E8%A1%8C%E8%8D%B7%E5%85%B0%E7%94%B5%E6%B1%A0%E5%85%AC%E5%8F%B8%E7%94%A8100%E7%A1%85%E9%98%B3%E6%9E%81%E6%9B%BF%E4%BB%A3%E7%9F%B3%E5%A2%A8%E5%B0%86%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E6%8E%92%E6%94%BE%E9%99%8D%E4%BD%8E85">被认为有望超越中国同行：荷兰电池公司用100%硅阳极替代石墨，将二氧化碳排放降低85%</a></li>
+<li><a href="#john-f-kennedy-address-at-rice-university-on-the-space-effort-sept-12-1962">John F. Kennedy Address at Rice University on the Space Effort  Sept. 12, 1962</a></li>
+<li><a href="#%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%8A%80%E8%83%BD%E6%9B%B4%E9%87%8D%E8%A6%81">知识重要，技能更重要</a></li>
+<li><a href="#trends">trends</a></li>
+<li><a href="#nano-banana">Nano Banana</a></li>
+<li><a href="#ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%BB%8F%E6%B5%8E">AI驱动的注意力经济</a></li>
+</ul>
+</li>
+<li><a href="#fighters">👑 Fighters</a><br>
+*
+<ul>
+<li><a href="#2025%E5%B9%B49%E6%9C%8812%E6%97%A5-once-in-a-life-time">2025年9月12日-Once in a life time</a></li>
+<li><a href="#historic-weekend">historic weekend</a></li>
+<li><a href="#%E8%A5%BF%E8%B4%9D-%E9%A2%84%E5%88%B6">西贝-预制</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250908/">https://ezraknotlab.github.io/post/ekl-20250908/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250908/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250908/&sharesource=qzone&title=EKL 20250908&pics=https://ezraknotlab.github.io//images/avatar.png?v=1759652479028&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Once in a life time&lt;/li&gt;
+&lt;li&gt;边角料与Boss主角&lt;/li&gt;
+&lt;li&gt;阿喀琉斯之踵&lt;/li&gt;
+&lt;li&gt;John F. Kennedy  on the Space Effort Sept. 12, 1962&lt;/li&gt;
+&lt;li&gt;The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250908/&sharesource=weibo&title=EKL 20250908 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Once in a life time&lt;/li&gt;
+&lt;li&gt;边角料与Boss主角&lt;/li&gt;
+&lt;li&gt;阿喀琉斯之踵&lt;/li&gt;
+&lt;li&gt;John F. Kennedy  on the Space Effort Sept. 12, 1962&lt;/li&gt;
+&lt;li&gt;The One-Month Knowledge Sprint: How to Read Books, Take Action, and Change&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1759652479028 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-quizlet-and-sci-papers/">
+                                                                                            EKL Quizlet &amp; Sci-Papers
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20250830-revisit/">
+                                                                                                    EKL 20250830 Revisit
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1759652479028);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

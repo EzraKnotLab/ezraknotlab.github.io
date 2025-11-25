@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1764053665473" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1764053665473" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20251109
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-11-09</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">19.5
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4265</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://jingshengluo.github.io/images/gallery/b88b836a3aad4731ef15e0d589655491.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Pavel Durov</li>
+<li>Allow himself to “recover a bit</li>
+<li>N-G 曲线</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#lex-fridman-podcast-482-pavel-durov-telegram-freedom-censorship-money-power-human-nature">Lex Fridman Podcast-#482 – Pavel Durov: Telegram, Freedom, Censorship, Money, Power &amp; Human Nature</a></li>
+<li><a href="#allow-himself-to-recover-a-bit">Allow himself to “recover a bit</a>
+<ul>
+<li><a href="#from-abdulmanap-nurmagomedovs-book">🦅 📕 From Abdulmanap Nurmagomedov's book:</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93%E5%B0%B1%E6%98%AF">总结就是：</a></li>
+</ul>
+</li>
+<li><a href="#%E6%82%BC%E5%BF%B5%E6%B2%83%E6%A3%AE%E4%BC%9F%E5%A4%A7%E4%B8%8E%E9%94%99%E8%AF%AF%E5%B9%B6%E5%AD%98">悼念沃森：伟大与错误并存</a></li>
+<li><a href="#%E4%BA%AC%E9%83%BD%E5%A5%96%E5%AE%98%E7%BD%91%E5%A7%9A%E6%9C%9F%E6%99%BA%E6%BC%94%E8%AE%B2%E5%AE%9E%E5%BD%95">京都奖官网姚期智演讲实录</a></li>
+<li><a href="#1%E5%88%86%E9%92%9F%E8%B4%B9%E7%B1%B3%E4%BC%B0%E7%AE%97">1分钟费米估算</a></li>
+<li><a href="#podacst-%E8%A5%BF%E8%A5%BF%E5%BC%97%E9%AB%98%E9%80%9F%E4%B8%8E%E5%88%98%E5%AD%90%E8%B6%85%E5%89%8D%E5%BE%80%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E7%A5%9E%E7%A7%98%E7%9A%84%E5%9B%BD%E5%AE%B6%E4%B9%8B%E4%B8%80-%E6%89%BE%E6%9C%8B%E5%8F%8B">Podacst-《西西弗高速》与刘子超前往世界上最神秘的国家之一 | 找朋友</a></li>
+<li><a href="#video-podcast-%E8%B7%9F%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%8E%9D%E4%BD%9C%E8%80%85%E9%BE%9A%E4%B8%87%E8%8E%B9%E7%9A%84%E4%B8%80%E6%AC%A1%E5%BE%88%E6%9C%89%E6%94%B6%E8%8E%B7%E7%9A%84%E8%81%8A%E5%A4%A9">Video Podcast: 跟《岛屿的厝》作者龚万莹的一次很有收获的聊天</a></li>
+<li><a href="#joe-rogan-experience-2401-avi-loeb">Joe Rogan Experience #2401 - Avi Loeb</a></li>
+<li><a href="#jre-2404-elon-musk">JRE  #2404 - Elon Musk</a></li>
+<li><a href="#news">News:</a></li>
+<li><a href="#scholar">Scholar</a></li>
+<li><a href="#portfolio-and-prosper">“portfolio  and prosper.”</a></li>
+<li><a href="#viewing-the-chinese-academic-society-as-a-catalytic-chamber">Viewing the Chinese academic society as a catalytic chamber.</a></li>
+<li><a href="#publish-but-dont-perish-to-publish">publish, but don’t perish to publish!</a></li>
+<li><a href="#naturephd-training-needs-a-reboot-in-an-ai-world">Nature:PhD training needs a reboot in an AI world</a></li>
+<li><a href="#can-ai-be-truly-creative">Can AI be truly creative?</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#n-g-%E6%9B%B2%E7%BA%BF">N-G 曲线</a>
+<ul>
+<li><a href="#%E5%BC%95%E9%87%8F%E5%AD%90%E6%9D%82%E5%BF%97%E5%8F%91%E4%BA%86%E4%B8%80%E7%AF%87%E9%9D%9E%E5%B8%B8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%96%87%E7%AB%A0%E9%A1%BF%E6%82%9Finsight%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E5%8E%9F%E7%90%86">引：《量子杂志》发了一篇非常有趣的文章：《顿悟（insight）的神经科学原理》</a></li>
+</ul>
+</li>
+<li><a href="#eureka-aint-many-that-are-built-like">Eureka Ain't many that are built like</a></li>
+<li><a href="#next-ufc-322-countdown-full-episode">Next: UFC 322 Countdown - Full Episode</a></li>
+</ul>
+</p>
+<p><mark>La noche de anoche Song by Bad Bunny and Rosalía ‧ 2020</mark></p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/la-noche-de-anoche/1542103215"></iframe>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Yo sé que esto no volverá a pasar
+Pero si volviera a pasar
+Sé que sería tu debilidad
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú me decías que morías por mí
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Eh-eh, eh-eh
+Tú me dejaste el cuerpo caliente, infierno
+Pero me dejaste el corazón frío, invierno
+Soñando que contigo e' que duermo (dime, papi)
+Dime, mami
+¿Esa noche quién la borra?
+Tú me besaste y se me cayó la gorra
+Sin mucha labia, sin mucha cotorra
+Cuando toy contigo dejo que la vibra corra
+Y que la luna nos supervise
+Con esa boquita suena rico to lo que tú me dice'
+Hicimo pose' que yo má' nunca hice
+Tú te mojaste pa que yo me bautice
+Y me ponga serio, serio
+Tú y yo juntos creando un imperio
+Eso' ojito' tienen un misterio
+Pero al final na de lo nuestro fue en serio
+Y ya me ha pasao que me han ilusionao
+Y ya me ha pasao que me han abandonao
+Y ya me ha pasao que no está' a mi lao
+Y ya me ha pasao
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Yo encima de ti, tú encima de mí
+Que yo me iría otra vez pa Japón (hey)
+Papi, qué penita tú, qué maldición (mmm)
+La paleta es dulce, azúcar de algodón (yeh)
+Y es la única que me llega hasta al corazón
+Yo no me olvido, la suerte está echada (bum)
+Se me enredaba el pelo en la pantalla
+Saber que solo lo hago de leyenda (¡uh!)
+Lo subo al cielo, yo soy su Messiah
+El Benito es un diablillo y es un ángel
+Lo tengo juqueao como si fuera tote
+Baby, entre nosotro nunca competimo
+Si preguntan, dice: &quot;Ella to los récords bate&quot;
+Y ya me ha pasao que me han ilusionao
+Y ya me ha pasao que me han abandonao
+Y ya me ha pasao que no está' a mi lao
+Y ya me ha pasao
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Mmm-jum
+Mmm-jum
+Mmm-jum
+Mmm-jum
+
+
+
+</code></pre>
+</details>
+<h1 id="lex-fridman-podcast-482-pavel-durov-telegram-freedom-censorship-money-power-human-nature">Lex Fridman Podcast-#482 – Pavel Durov: Telegram, Freedom, Censorship, Money, Power &amp; Human Nature</h1>
+<ul>
+<li><a href="https://podcasts.apple.com/cn/podcast/482-pavel-durov-telegram-freedom-censorship-money-power/id1434243584?i=1000729428681">link</a></li>
+<li>Pavel Durov is the founder and CEO of Telegram.</li>
+<li>超长的时间，中途甚至听得chills，谈到很多全球性广泛的话题，学生还需不需要公开成绩排名，竞争成长…… 适合  struggling的学生、家长</li>
+<li>Pavel Durov小时候和哥哥同屋异床睡觉，他问哥哥很多问题，尼安德特人，Dinosaur……感觉这些topics也就是男孩在这个时期最为着迷，现在很多小朋友也是，简直无穷的动力让父母周末带去不同的博物馆……He also said  &quot;my brother is my wikipedia&quot;, Got me chills</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/482-pavel-durov-telegram-freedom-censorship-money-power/id1434243584?i=1000729428681"></iframe>
+<h1 id="allow-himself-to-recover-a-bit">Allow himself to “recover a bit</h1>
+<p>Umar的post-fight press conferenece听了前半段就感觉这是有史以来最意义深远的一段，前面也有看到评论有人说喜欢fighter从这种视角分享精神世界的进化，这次更像是将将近前三十年所有的感悟和精华讲了出来，并且结合鲜活的实例：A brutally honest insight here from Umar.<br>
+Much respect to him for sharing this with the fans. Always cool to listen to a fighter describe the mental game. 像这样的家族能够产出的精神财富在历史的长河中也是独一无二的，不是金钱那种可以相提并论的。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HdZgMwXRW90?si=TSzGnYrpR07XBTYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li><a href="https://ezraknotlab.github.io/post/ekl-321/#%E6%9F%94%E5%92%8C%E9%9F%A7-%E4%B9%8C%E9%A9%AC%E5%B0%94%E7%9A%84%E9%A3%9E%E5%88%80%E7%89%87%E4%B8%80%E6%A0%B7%E7%9A%84%E9%A3%9E%E8%B8%A2:~:text=321%20Eye%20Poke-,%E6%9F%94%E5%92%8C%E9%9F%A7%20%E4%B9%8C%E9%A9%AC%E5%B0%94%E7%9A%84%E9%A3%9E%E5%88%80%E7%89%87%E4%B8%80%E6%A0%B7%E7%9A%84%E9%A3%9E%E8%B8%A2,-A%20brutally%20honest">上次Umar在赛后发布会上分享了很多</a>，有一部分是关于Khabib的一些生活细节，有一段提到了Khabib的recovery和rest的区别：</li>
+</ul>
+<h2 id="from-abdulmanap-nurmagomedovs-book">🦅 📕 From Abdulmanap Nurmagomedov's book:</h2>
+<p>&quot;Even when there were no fights coming, Khabib didn't rest, but he can allow himself to “recover a bit.” Resting, I will emphasize once again, is not allowed — otherwise you can drop your conditioning down to the level of 3 points out of 5, and that is unacceptable.</p>
+<p>But recovering, yes, that’s allowed. “Recovery” here means active recovery of energy.</p>
+<p>What do I mean by this?<br>
+Obviously: cycling, hiking, playing volleyball, soccer, long and slow jogs, sauna, steam room with Siberian brooms.<br>
+In other words — an activity level where your blood circulates 3 times faster than in normal daily life.</p>
+<p>This constant movement keeps your brain, heart, liver in tone — the key organs responsible for maintaining readiness.</p>
+<p>The effect is enhanced by healthy food, communication with friends and relatives, visiting your hometown, places connected with your family history of many generations.&quot;</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🦅 📕 From Abdulmanap Nurmagomedov&#39;s book:<br><br>&quot;Even when there were no fights coming, Khabib didn&#39;t rest, but he can allow himself to “recover a bit.” Resting, I will emphasize once again, is not allowed — otherwise you can drop your conditioning down to the level of 3 points out… <a href="https://t.co/GGBGUoJetb">pic.twitter.com/GGBGUoJetb</a></p>&mdash; Home of Fight (@Home_of_Fight) <a href="https://twitter.com/Home_of_Fight/status/1982260845976408066?ref_src=twsrc%5Etfw">October 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="总结就是">总结就是：</h2>
+<ul>
+<li>主动恢复 (Active Recovery，保持核心机能，保持好奇心、洞察力、和灵感循环。</li>
+</ul>
+<ol>
+<li>
+<p>精神慢跑：“广度优先”，探索更广的话题，强度也不必保持平时的水平。。</p>
+</li>
+<li>
+<p>动态切磋：低风险，做平时事务的边角料，或者准备工作，不耗费大脑思考，甚至只耗费时间的那种低性价比劳动。很多运动员在职业training之于也会train些别的，比如boxing和长跑甚至ultra marathon。</p>
+</li>
+<li>
+<p>精神排毒和热情修复：互联网可以看一些相关的内容（unfollow一些内容），在“纯粹的智慧”和“原始热情”驱动下，类似于呼吸自由的空气。</p>
+</li>
+<li>
+<p>部落连接 (家人/家乡)：聊天，闲聊和幻想， 重连“热情来源”，语言输出同时锻炼、重组思考逻辑链条。</p>
+</li>
+</ol>
+<h1 id="悼念沃森伟大与错误并存">悼念沃森：伟大与错误并存</h1>
+<p><a href="https://mp.weixin.qq.com/s/x0qJfRzlRPoqha5muMQIpQ">饶议科学2025年11月8日08:46北京 悼念沃森：伟大与错误并存</a></p>
+<h1 id="京都奖官网姚期智演讲实录">京都奖官网姚期智演讲实录</h1>
+<ul>
+<li><a href="https://www.tsinghua.edu.cn/info/1182/88830.htm">姚期智：做研究最好的方法是提出深刻、大胆和关键性的问题</a></li>
+</ul>
+<p>我从Glashow教授那里学到，在科学上你必须大胆，你必须坚持不懈地坚持你的信仰。</p>
+<p>我从他身上学到的另一件事是，数学和物理是不同的。对于物理学家来说，最重要的是能够找出物理现实的真相，而不是坚持精确的数学论证。我认为这种务实精神对我以后的研究有很大帮助。</p>
+<p>还有一件事是我从Glashow教授那里学到的：生活应该是有趣的。</p>
+<p>1971年春天，作为一个年轻的学生，我跟随他去法国马赛的CNRS（Centre national de la recherche scientifique，法国国家科学研究中心）休假。这是一个多么神奇和迷人的城市，那也是我第一次来欧洲。那年夏天的晚些时候，他带我去了意大利西西里的一个暑期学校。</p>
+<p>这是一次非常美妙的经历。Gladshow教授给我上的这一课让我明白，生活的乐趣和对知识的追求可以兼而有之。</p>
+<h1 id="1分钟费米估算">1分钟费米估算</h1>
+<p>原则就是用最少的已知信息，估算一个极其复杂的问题。<br>
+答案不求精确，只求“差不多就行”。它由物理学家 恩里科·费米 发明，他在曼哈顿计划中用这招估原子弹威力、估中微子数量，次次命中 10倍以内。<mark>精确是数学的终点，估算是科学的起点。</mark></p>
+<p>经典案例：芝加哥有多少钢琴调音师？零数据起步，1分钟出结果：芝加哥人口 ≈ 300万<br>
+平均每户3人 → 100万户<br>
+1/100户有钢琴 → 1万架<br>
+钢琴一年调一次<br>
+调音师一天调2架，一年干200天 → 400架/人<br>
+1万 ÷ 400 = 25人</p>
+<p>答案：20~50个 （实际查到：41个 bingo~）</p>
+<h1 id="podacst-西西弗高速与刘子超前往世界上最神秘的国家之一-找朋友">Podacst-《西西弗高速》与刘子超前往世界上最神秘的国家之一 | 找朋友</h1>
+<p><a href="https://www.xiaoyuzhoufm.com/episode/690c87bbd99642be96c4397d">Show Notes</a>里面有很多关于土库曼斯坦的照片。</p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/20-%E4%B8%8E%E5%88%98%E5%AD%90%E8%B6%85%E5%89%8D%E5%BE%80%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E7%A5%9E%E7%A7%98%E7%9A%84%E5%9B%BD%E5%AE%B6%E4%B9%8B%E4%B8%80-%E6%89%BE%E6%9C%8B%E5%8F%8B/id1770713549?i=1000735551213"></iframe>
+<h1 id="video-podcast-跟岛屿的厝作者龚万莹的一次很有收获的聊天">Video Podcast: 跟《岛屿的厝》作者龚万莹的一次很有收获的聊天</h1>
+<ul>
+<li><a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/">去年的Book Notes——EKL Alma Mater 《岛屿的厝》</a><br>
+30岁辞职写作，非科班出身怎么成为作家？【干杯吧，姐妹！】</li>
+</ul>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115502223591350&bvid=BV1vT2FBrEDt&cid=33756155353&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<h1 id="joe-rogan-experience-2401-avi-loeb">Joe Rogan Experience #2401 - Avi Loeb</h1>
+<ul>
+<li>最近老看到3I/ATLAS的一些推送的，然后看到JR post这篇，心里有点波澜……</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/2401-avi-loeb/id360084272?i=1000733899865"></iframe>
+<blockquote>
+<p>Avi Loeb, PhD, is a theoretical physicist and Frank B. Baird, Jr., Professor of Science at Harvard University. He is the author of several books, the most recent of which is &quot;Interstellar: The Search for Extraterrestrial Life and Our Future in the Stars.&quot;</p>
+</blockquote>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EaAun27gftk?si=c6Gylzcf6NmAh3e1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1 id="jre-2404-elon-musk">JRE  #2404 - Elon Musk</h1>
+<ul>
+<li>Elon Musk第四次 ？</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O4wBUysNe2k?si=EtzY7kjolPmoLgoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1 id="news">News:</h1>
+<p>Zohran Mamdani wins election and becomes New York City’s first Muslim Mayor.</p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/YAwzlt_afZg?si=HoZ_y6nDliG6hT7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/yEX1xJcvRqI?si=kL3OXY5ZSmR3hrXp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1 id="scholar">Scholar</h1>
+<h1 id="portfolio-and-prosper">“portfolio  and prosper.”</h1>
+<p><a href="https://www.nature.com/articles/s41562-019-0689-0.epdf?shared_access_token=050rgiwP34zqmU7SsbizOtRgN0jAjWel9jnR3ZoTv0M2GVzrhV2qY9cloav4FiD_XkoSqGmVVrkGmpkSOkXMQcrtOXLNPF2_I_nj4iVc_E8Ts3e2stkQqK4prhM9SM0XxE82jj82RN1v3-p9RgfAlQ%3D%3D">link</a><br>
+TLDR (too long didn’t read): Science is about doing and sharing. Students of science (at all levels) spend time learning how to do things and should consider documenting their skills in a shareable portfolio,  like a website or GitHub repository.  Or, to paraphrase Spock, “portfolio  and prosper.”</p>
+<h1 id="viewing-the-chinese-academic-society-as-a-catalytic-chamber">Viewing the Chinese academic society as a catalytic chamber.</h1>
+<p><a href="https://www.nature.com/articles/s41562-019-0684-5.epdf?shared_access_token=5lM_Z-xUSpLidT5ToIYm0NRgN0jAjWel9jnR3ZoTv0O0taYlBUZ7bWBxH5PT5CYGzldlchiAjxWUAAjbMx6n_955BWepaqFTzvIgFAE4TQ2qv69tqPB0v670DI7inAt3-Jsc77Vrm5sr3iVkckcogg%3D%3D">link</a></p>
+<p>以德国Fraunhofer-Gesellschaft应用研究与产业协同为典范，创造“1+1&gt;2”的价值</p>
+<h1 id="publish-but-dont-perish-to-publish">publish, but don’t perish to publish!</h1>
+<p><a href="https://www.nature.com/articles/s41562-019-0669-4.epdf?shared_access_token=gAnagnfYNDbIZIezh2rgf9RgN0jAjWel9jnR3ZoTv0MsxJJBcDumBx0MfZ5jKcrGdNMQ6cGs3rF435vvrhvj0GzkH1RpBO2iWP8ZFMcBHqY3pMEwZfbmrn9amz0znZOps-n7zVTdXqGlFQ23dlStXA%3D%3D">link</a></p>
+<ul>
+<li>Listen to your peers. They can be an incredible source of comfort and inspiration.</li>
+<li>Think independently. Seize opportunities. Be courageous. Take some risks. Be as productive as you can, because at the end of the day publications will matter.</li>
+</ul>
+<h1 id="naturephd-training-needs-a-reboot-in-an-ai-world">Nature:PhD training needs a reboot in an AI world</h1>
+<p><a href="https://www.nature.com/articles/d41586-025-03572-w">link</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4577435"><label class="task-list-item-label" for="task-item-4577435">  现场实时的解决能力</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7694355"><label class="task-list-item-label" for="task-item-7694355">  code确实越来越依靠Ai  但是毕竟又不是早期的手写code考试  能code就能用AI</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8664423"><label class="task-list-item-label" for="task-item-8664423">  Oral defences, live problem-solving and reflective commentary on research decisions might become more important than a written thesis.</label></li>
+</ul>
+<h1 id="can-ai-be-truly-creative">Can AI be truly creative?</h1>
+<p><a href="https://www.nature.com/articles/d41586-025-03570-y">Chatbots and AI models are challenging ideas about who — or what — can create art, music and more.</a></p>
+<ul>
+<li>Creativity is difficult to characterize and measure, but researchers have coalesced on a standard definition: the ability to produce things that are both original and effective. They also have a range of tests for it, from interpreting abstract figures to suggesting alternative uses for a brick.</li>
+</ul>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>NFL on CBS 的commentator总是很激情地喊“Touch down” you can kiss him and goodbye~</li>
+<li>同时想起interact 和AI模型的交流，似乎人工神经网络的优越于生物神经网络，可预见未来生物体中镶嵌人工神经网络的可能性，对话中明显AI会更能全局联系所有的数据信息来思考，会提出人类都会忽略的已有的数据关系，从而推导出令人意想不到、容易忽略的新鲜信息，启发进一步深入研究。</li>
+<li>感觉现在的LLM都这样，不管哪一家，同一个对话窗同一个话题交互久了就开始逻辑混乱不再输出有效信息了，开始答非所问，或者随机排列组合前面的回答</li>
+<li>评价体系的通货膨胀，  zotero标签也是越用越不够了</li>
+<li>要大义的善 , 原则优先，情绪其次。不要面面俱到的善, 过于软弱，and people can smell it, too respectful  ：</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Daniel Cormier was shocked after being asked if he ever wished he was athletic 😅<br><br>&quot;This girl comes up to me and goes, &#39;Hey DC, you ever wish you were athletic?&#39; I’m like, what is wrong with you? I saw the video — what they didn’t show in the video is how bad I cussed everybody… <a href="https://t.co/RaN19Wjx8v">pic.twitter.com/RaN19Wjx8v</a></p>&mdash; Red Corner MMA (@RedCorner_MMA) <a href="https://twitter.com/RedCorner_MMA/status/1984112010209173933?ref_src=twsrc%5Etfw">October 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>我觉得可以在GitHub上托管一个当代网络艺术馆   放一些Internet undefeated的照片 很有价值</li>
+<li>Source: <a href="https://www.domon.cn/2025-10yue-yue-du-shu-zhai/">2025年10月阅读书摘</a>:<br>
+<a href="https://www.domon.cn/2025-10yue-yue-du-shu-zhai/#:~:text=%E5%9B%9E%E6%9C%9B%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%A8%E9%A9%AC%EF%BC%8C%E6%88%91%E6%80%BB%E7%BB%93%E4%BA%86%E4%B8%A4%E6%9D%A1%EF%BC%9A%E4%B8%80%E5%AE%9A%E8%A6%81%E8%80%90%E5%BE%97%E4%BD%8F%E6%9C%80%E5%88%9D%E7%9A%84%E6%85%A2%EF%BC%8C%E4%B8%80%E5%AE%9A%E8%A6%81%E9%A1%B6%E5%BE%97%E4%BD%8F%E6%9C%80%E5%90%8E%E7%9A%84%E5%BF%AB%E3%80%82%E4%BA%BA%E7%94%9F%E6%AD%A3%E8%AF%A5%E5%A6%82%E6%AD%A4%E3%80%82">回望我的第一个全马，我总结了两条：一定要耐得住最初的慢，一定要顶得住最后的快。人生正该如此。</a></li>
+</ul>
+<h1 id="n-g-曲线">N-G 曲线</h1>
+<ul>
+<li>
+<p>“万物皆可N-G曲线”（Nucleation-Growth Curve）,一个普适的底层模型，类比到几乎所有领域的启动难度、初期成本和指数级加速现象。类似于帕累托原则（28法则）、万事开头难、临界点突破等概念。</p>
+</li>
+<li>
+<p>“前 20% 最难，后 80% 自动滚雪球。”系统有「成核能垒」——初始启动成本最高。</p>
+</li>
+<li>
+<p>或许“越难启动的事，越值得做”，因为高成核壁垒 = 天然护城河，熬过N期的人，天然进入稀疏区</p>
+</li>
+<li>
+<p>Running时候的heart rate也这样</p>
+</li>
+</ul>
+<pre><code class="language-c">难度 ↑
+   |       △ 成核能垒
+   |      /  \
+   |     /    \  快速生长
+   |    /      \
+   |   /        \________ 饱和
+   |_________________________→ 进度
+      0%   20%     100%
+</code></pre>
+<h2 id="引量子杂志发了一篇非常有趣的文章顿悟insight的神经科学原理">引：《量子杂志》发了一篇非常有趣的文章：《顿悟（insight）的神经科学原理》</h2>
+<p><a href="https://www.quantamagazine.org/how-your-brain-creates-aha-moments-and-why-they-stick-20251105/">How Your Brain Creates ‘Aha’ Moments and Why They Stick</a></p>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">《量子杂志》发了一篇非常有趣的文章：《顿悟（insight）的神经科学原理》<br><br>顿悟是一种大脑在瞬间完成意义重组（representational change）的过程，由视觉皮层识别模式、海马体检测预测误差、杏仁核赋予情绪显著性共同驱动，从而产生“aha moment”并强化记忆。<br><br>===…</p>&mdash; howie.serious (@howie_serious) <a href="https://twitter.com/howie_serious/status/1986305034741817468?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<pre><code class="language-c">
+&gt; 顿悟是一种大脑在瞬间完成意义重组（representational change）的过程，由视觉皮层识别模式、海马体检测预测误差、杏仁核赋予情绪显著性共同驱动，从而产生“aha moment”并强化记忆。
+
+===
+
+&gt; 我们以为理解是一种线性过程：信息进入大脑，经过分析与推理，得出结论。但事实恰恰相反。真正的理解往往像一道闪电，突然照亮一个原本混沌的世界。这种突然而来的领悟——“啊哈时刻”——并非魔法，而是大脑在瞬间完成了意义的重组。
+
+这种重组被称为“表征改变”。在此之前，大脑所看到的，只是无意义的线条、噪声、混乱的片段；而在顿悟的那一刻，它们被重新组织为新的整体，原本陌生的图像变得清晰、有意义。人类的学习与创造，其实都依赖于这种从“无意义”到“有意义”的跃迁。
+
+更迷人的是，这种认知的闪光不仅带来喜悦，还能刻进记忆。科学家在实验中发现，当人们识别出被隐藏在抽象黑白图像中的物体时，大脑的视觉皮层、海马体与杏仁核几乎同时被点亮。视觉识别、情绪反应与记忆编码在一瞬间合流——这正是为什么“啊哈”的瞬间让知识变得难以忘怀。学习的愉悦，其实是大脑在奖励自己完成了一次“世界重构”。
+
+教育的意义，也许正是在此。真正的学习，不是被动接受知识，而是引导学生经历自己的“顿悟时刻”。当一个孩子亲手揭开谜底，他不仅记住了答案，也重塑了理解世界的方式。
+
+“啊哈”并非只是认知的瞬间，而是人类意识的一个窗口——在那一闪之中，我们看见大脑如何把混乱变成秩序，把模糊变成意义，也看见自己如何在理解的光中被改变。
+</code></pre>
+<h1 id="eureka-aint-many-that-are-built-like">Eureka Ain't many that are built like</h1>
+<ul>
+<li>没有多少人体会过Eureka 的幸福时刻</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/last-of-my-kind-feat-paul-cauthen/1737086117"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114883127418326&bvid=BV1TugbzKEse&cid=31160338748&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<p><mark>Last of My Kind Song by Shaboozey ‧ 2024</mark></p>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.70clacks.co/uploads/music/2025/04/Shaboozey-feat-Paul-Cauthen-Last-Of-My-Kind-Ft-Paul-Cauthen-(HipHopKit.com).mp3"></audio></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Ain't many that are built like me
+I'm the last of my kind
+I grew up on a backroad, baby
+I know how to survive (Hey)
+Been out with the young guns blazin'
+So you better not try
+
+You won't ever find another like me
+I'm the last of my kind (Huh)
+
+Yeah, yeah
+I'm the last of my kind
+Yeah, yeah
+I'm the last of my kind
+(You'll be lookin' for a really long time)
+
+Got folks that carry some shit, uh, can't cross state lines
+Duckin' cops in the dirty hills, baby, we ain't payin' no fines
+If you comin' to the sticks then maybe, bring a four-wheel drive
+You'll never find another like me, I'm the last of my kind
+
+You won't ever find another like me
+I'm the last of my kind
+
+Yeah, yeah
+I'm the last of my kind
+Yeah, yeah
+I'm the last of my kind
+
+Try to find another just like me
+You'll be lookin' for a really long time 'cause I'm
+Yeah, yeah
+I'm the last of my kind
+
+This world can be a son of a bitch
+Well, look through my eyes
+Can't always climb to safety, sometimes you gotta fight (Yeah)
+Got get it if you want it, keep the fire burnin' inside
+
+You won't ever find another like me
+'Cause I'm the last of my kind
+
+Yeah, yeah
+I'm the last of my kind
+Yeah, yeah
+I'm the last of my kind (Hey)
+
+[Post-Chorus: Shaboozey]
+Try to find another just like me
+You'll be lookin' for a really long time 'cause I'm
+Yeah, yeah
+I'm the last of my kind
+
+I'm the last of my kind (Told you twice now, oh-oh, right there)
+I'm the last of my kind (Last of my kind)
+Yeah, y'all can take anyway
+Sometimes I'm still standin'
+Hahaha
+
+Up high in the red rock mountain, almost lost my mind (Uh)
+I'll be out where the black birds hangin', circle 'round them skies (Hey)
+Can't wait much longer, baby, yeah, it's my time
+You won't ever find another like me, I'm the last of my kind
+
+
+
+</code></pre>
+</details>
+<h1 id="next-ufc-322-countdown-full-episode">Next: UFC 322 Countdown - Full Episode</h1>
+<ul>
+<li>有一段关于伟丽在天坛拍的，可能是未来会播出的纪录片素材：</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yYAX5j4Ev48?si=sfvivsgOI6vNyVqS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>可能是历史上唯一一次的双王升重  历史机遇 也是唯一一次 最后一个冠军出场但是legacy不如前面三个人的</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#lex-fridman-podcast-482-pavel-durov-telegram-freedom-censorship-money-power-human-nature">Lex Fridman Podcast-#482 – Pavel Durov: Telegram, Freedom, Censorship, Money, Power &amp; Human Nature</a></li>
+<li><a href="#allow-himself-to-recover-a-bit">Allow himself to “recover a bit</a>
+<ul>
+<li><a href="#from-abdulmanap-nurmagomedovs-book">🦅 📕 From Abdulmanap Nurmagomedov's book:</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93%E5%B0%B1%E6%98%AF">总结就是：</a></li>
+</ul>
+</li>
+<li><a href="#%E6%82%BC%E5%BF%B5%E6%B2%83%E6%A3%AE%E4%BC%9F%E5%A4%A7%E4%B8%8E%E9%94%99%E8%AF%AF%E5%B9%B6%E5%AD%98">悼念沃森：伟大与错误并存</a></li>
+<li><a href="#%E4%BA%AC%E9%83%BD%E5%A5%96%E5%AE%98%E7%BD%91%E5%A7%9A%E6%9C%9F%E6%99%BA%E6%BC%94%E8%AE%B2%E5%AE%9E%E5%BD%95">京都奖官网姚期智演讲实录</a></li>
+<li><a href="#1%E5%88%86%E9%92%9F%E8%B4%B9%E7%B1%B3%E4%BC%B0%E7%AE%97">1分钟费米估算</a></li>
+<li><a href="#podacst-%E8%A5%BF%E8%A5%BF%E5%BC%97%E9%AB%98%E9%80%9F%E4%B8%8E%E5%88%98%E5%AD%90%E8%B6%85%E5%89%8D%E5%BE%80%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E7%A5%9E%E7%A7%98%E7%9A%84%E5%9B%BD%E5%AE%B6%E4%B9%8B%E4%B8%80-%E6%89%BE%E6%9C%8B%E5%8F%8B">Podacst-《西西弗高速》与刘子超前往世界上最神秘的国家之一 | 找朋友</a></li>
+<li><a href="#video-podcast-%E8%B7%9F%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%8E%9D%E4%BD%9C%E8%80%85%E9%BE%9A%E4%B8%87%E8%8E%B9%E7%9A%84%E4%B8%80%E6%AC%A1%E5%BE%88%E6%9C%89%E6%94%B6%E8%8E%B7%E7%9A%84%E8%81%8A%E5%A4%A9">Video Podcast: 跟《岛屿的厝》作者龚万莹的一次很有收获的聊天</a></li>
+<li><a href="#joe-rogan-experience-2401-avi-loeb">Joe Rogan Experience #2401 - Avi Loeb</a></li>
+<li><a href="#jre-2404-elon-musk">JRE  #2404 - Elon Musk</a></li>
+<li><a href="#news">News:</a></li>
+<li><a href="#scholar">Scholar</a></li>
+<li><a href="#portfolio-and-prosper">“portfolio  and prosper.”</a></li>
+<li><a href="#viewing-the-chinese-academic-society-as-a-catalytic-chamber">Viewing the Chinese academic society as a catalytic chamber.</a></li>
+<li><a href="#publish-but-dont-perish-to-publish">publish, but don’t perish to publish!</a></li>
+<li><a href="#naturephd-training-needs-a-reboot-in-an-ai-world">Nature:PhD training needs a reboot in an AI world</a></li>
+<li><a href="#can-ai-be-truly-creative">Can AI be truly creative?</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#n-g-%E6%9B%B2%E7%BA%BF">N-G 曲线</a>
+<ul>
+<li><a href="#%E5%BC%95%E9%87%8F%E5%AD%90%E6%9D%82%E5%BF%97%E5%8F%91%E4%BA%86%E4%B8%80%E7%AF%87%E9%9D%9E%E5%B8%B8%E6%9C%89%E8%B6%A3%E7%9A%84%E6%96%87%E7%AB%A0%E9%A1%BF%E6%82%9Finsight%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6%E5%8E%9F%E7%90%86">引：《量子杂志》发了一篇非常有趣的文章：《顿悟（insight）的神经科学原理》</a></li>
+</ul>
+</li>
+<li><a href="#eureka-aint-many-that-are-built-like">Eureka Ain't many that are built like</a></li>
+<li><a href="#next-ufc-322-countdown-full-episode">Next: UFC 322 Countdown - Full Episode</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20251105/">https://ezraknotlab.github.io/post/ekl-20251105/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20251105/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20251105/&sharesource=qzone&title=EKL 20251109&pics=https://ezraknotlab.github.io//images/avatar.png?v=1764053665473&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pavel Durov&lt;/li&gt;
+&lt;li&gt;Allow himself to “recover a bit&lt;/li&gt;
+&lt;li&gt;N-G 曲线&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20251105/&sharesource=weibo&title=EKL 20251109 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pavel Durov&lt;/li&gt;
+&lt;li&gt;Allow himself to “recover a bit&lt;/li&gt;
+&lt;li&gt;N-G 曲线&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1764053665473 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-322-mecca-msg-nyc1/">
+                                                                                            EKL 322 Mecca MSG NYC
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-321/">
+                                                                                                    EKL 321
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1764053665473);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

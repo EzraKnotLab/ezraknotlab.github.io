@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1765383949270" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1765383949270" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 321
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-10-27</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">33.4
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7647</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/10/27/c4d4292acd9c0469.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Hypnopompic State</li>
+<li>UFC 321</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E5%86%99%E4%BD%9C%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%AC%A1%E8%A6%81%E6%84%8F%E4%B9%89">写作的两个次要意义</a></li>
+<li><a href="#%E5%A4%A7%E6%99%BA%E8%8B%A5%E6%84%9A%E5%96%84%E8%89%AF%E4%B9%9F%E6%98%AF%E6%9E%81%E8%87%B4%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E8%80%85%E7%9A%84%E5%B7%A5%E5%85%B7">大智若愚，善良也是极致利己主义者的工具</a></li>
+<li><a href="#time-to-retire-the-turing-test">Time to retire the Turing test?</a><br>
+*
+<ul>
+<li><a href="#%E6%84%9F%E7%9F%A5%E7%9A%84%E7%8E%B0%E5%AE%9E%E4%B8%8E%E8%99%9A%E6%8B%9F%E8%BE%B9%E7%95%8C">感知的现实与虚拟边界</a></li>
+<li><a href="#%E5%88%9A%E6%9F%94%E5%B9%B6%E6%B5%8E-%E7%9F%9B%E7%9B%BE">“刚柔并济”&amp; 矛盾</a></li>
+<li><a href="#%E8%BF%90%E5%8A%A8-%E9%87%8F%E5%8C%96%E4%B8%8E%E6%84%9F%E7%9F%A5%E8%AE%A4%E8%AF%86%E8%87%AA%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7">运动、量化与感知，认识自我的工具</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#%E5%82%AC%E9%86%92%E7%8A%B6%E6%80%81hypnopompic-state">“催醒状态”（Hypnopompic State）</a>
+<ul>
+<li><a href="#%E8%AE%AD%E7%BB%83%E9%9B%86-%E6%B5%8B%E8%AF%95%E9%9B%86-%E9%AA%8C%E8%AF%81%E9%9B%86">训练集 测试集 验证集</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BE%B9%E5%81%9A%E8%BE%B9%E6%80%9D%E8%80%83">边做边思考</a></li>
+<li><a href="#paper-reading">paper reading</a></li>
+<li><a href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E7%9A%84%E5%AF%BF%E5%91%BD%E4%B8%8E%E5%BF%83%E8%B7%B3%E6%AC%A1%E6%95%B0">哺乳动物的寿命与心跳次数</a></li>
+<li><a href="#%E5%8D%97%E9%82%AE%E5%8F%88%E6%82%84%E6%82%84%E7%BB%99%E5%AD%A6%E7%94%9F%E9%A5%AD%E5%8D%A1%E5%85%85%E9%92%B1%E4%BA%86">“南邮又悄悄给学生饭卡充钱了”</a></li>
+<li><a href="#33">33%</a></li>
+<li><a href="#ufc-321">UFC 321</a>
+<ul>
+<li><a href="#the-card">The card</a></li>
+<li><a href="#%E6%9F%94%E5%92%8C%E9%9F%A7-%E4%B9%8C%E9%A9%AC%E5%B0%94%E7%9A%84%E9%A3%9E%E5%88%80%E7%89%87%E4%B8%80%E6%A0%B7%E7%9A%84%E9%A3%9E%E8%B8%A2">柔和韧  乌马尔的飞刀片一样的飞踢</a></li>
+<li><a href="#till-next-msg">Till next - MSG</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p><mark>La noche de anoche Song by Bad Bunny and Rosalía ‧ 2020</mark></p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/la-noche-de-anoche/1542103215"></iframe>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Yo sé que esto no volverá a pasar
+Pero si volviera a pasar
+Sé que sería tu debilidad
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú me decías que morías por mí
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Eh-eh, eh-eh
+Tú me dejaste el cuerpo caliente, infierno
+Pero me dejaste el corazón frío, invierno
+Soñando que contigo e' que duermo (dime, papi)
+Dime, mami
+¿Esa noche quién la borra?
+Tú me besaste y se me cayó la gorra
+Sin mucha labia, sin mucha cotorra
+Cuando toy contigo dejo que la vibra corra
+Y que la luna nos supervise
+Con esa boquita suena rico to lo que tú me dice'
+Hicimo pose' que yo má' nunca hice
+Tú te mojaste pa que yo me bautice
+Y me ponga serio, serio
+Tú y yo juntos creando un imperio
+Eso' ojito' tienen un misterio
+Pero al final na de lo nuestro fue en serio
+Y ya me ha pasao que me han ilusionao
+Y ya me ha pasao que me han abandonao
+Y ya me ha pasao que no está' a mi lao
+Y ya me ha pasao
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Yo encima de ti, tú encima de mí
+Que yo me iría otra vez pa Japón (hey)
+Papi, qué penita tú, qué maldición (mmm)
+La paleta es dulce, azúcar de algodón (yeh)
+Y es la única que me llega hasta al corazón
+Yo no me olvido, la suerte está echada (bum)
+Se me enredaba el pelo en la pantalla
+Saber que solo lo hago de leyenda (¡uh!)
+Lo subo al cielo, yo soy su Messiah
+El Benito es un diablillo y es un ángel
+Lo tengo juqueao como si fuera tote
+Baby, entre nosotro nunca competimo
+Si preguntan, dice: &quot;Ella to los récords bate&quot;
+Y ya me ha pasao que me han ilusionao
+Y ya me ha pasao que me han abandonao
+Y ya me ha pasao que no está' a mi lao
+Y ya me ha pasao
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Porque la noche de anoche fue
+Algo que yo no puedo explicar
+Eso era dando y dándole sin parar
+Tú encima de mí, yo encima de ti
+Mmm-jum
+Mmm-jum
+Mmm-jum
+Mmm-jum
+
+
+
+</code></pre>
+</details>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5omY8jVrSM?si=rkbZvoY-Jzn5G1D-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://embed.mymixtapez.com/player/song/1239343" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
+<hr>
+<p>&quot;It's Up&quot;<br>
+(feat. 21 Savage, Young Thug)</p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+
+[Drake:]
+I love all my friends
+Thinkin' about this life I provide for them
+This world has some real things dividin' them
+My right hand, he's Muslim, I'll die for him
+My road manager is drunk as hell at 5 p.m.
+I get knocked down, they help me rise again
+Ref 1 leave the game, I'm sayin' bye with him
+Drake, turn this shit the fuck up
+
+[Young Thug:]
+I don't care about my opps (I don't care about my opps)
+I don't care about my opps (I don't care about no opps)
+I don't care about my opps (I don't care about no opp)
+Yeah, take a pic (Take a pic), Richard Millie, no stopwatch (Let's go, uh-uh)
+Take a pic of your lips gobblin' on my cock (Let's go, uh-uh, shit)
+I don't care 'bout no motherfuckin' watch, nah (I don't care 'bout no, uh, nah)
+I don't care 'bout no high-end thot (Nah, nah, nah)
+Bitch, you just a (Bitch, you just a), bystander
+Christian Dior pajama, Gucci up under, body number
+
+[Drake:]
+I just picked up somethin' from Mercedes, it's a one of one
+Black exterior the one that I want, red inside like that time of the month
+Blood money, that's how I got this, blood money, that's how I got this
+We can vacation wherever we want 'cause I don't care where none of my opps is
+
+I told the promoter tonight, put me across from they section
+We don't play patty cake, they just be lettin' us in, we don't do the inspection
+I can't sleep at night with Thug at Cobb County Corrections
+I think he did enough reflectin', I think my brother learned his lesson
+It's all just a part of the game, we all gotta roll with protection
+And just like the motherfuckin' judge, the hammers come out for objections
+Nigga, what's up? A hundred and forty-three Rolexes in my collection
+I put the horns on the front of the 'Bach, you know Drizzy gon' roll like a Texan
+She textin' she love me, the Mexicans love me, I'm out here just makin' connections
+And Junior Boy rollin' like Cinco de Mayo, he may hold a fifth in possession
+The way that I'm used to playin' the politics, swear I could win the election
+You niggas is overprotective with hoes, I'm already over the next one
+I'm at 48 with Ty and the vino, we drunk, it's not even a question
+These niggas tryna send a message, well, leave that shit down at reception, ayy
+
+[Young Thug:]
+I don't care about my opps (I don't care about my opps)
+I don't care about my opps (I don't care about no opps)
+I don't care about my opps (I don't care about no opp)
+Yeah, take a pic (Take a pic), Richard Millie, no stopwatch (Let's go, uh-uh)
+Take a pic of your lips gobblin' on my cock (Let's go, uh-uh, shit)
+I don't care 'bout no motherfuckin' watch, nah (I don't care 'bout no, uh, nah)
+I don't care 'bout no high-end thot (Nah, nah, nah)
+Bitch, you just a (Bitch, you just a), bystander
+Christian Dior pajama, Gucci up under, body number (Woo)
+
+[Drake:]
+I just picked up somethin' from Mercedes, it's a one of one
+Black exterior the one that I want, red inside like that time of the month
+Blood money, that's how I got this, blood money, that's how I got this
+We can vacation wherever we want 'cause I don't care where none of my opps is
+
+[21 Savage:]
+You hang around too many niggas that's pussy, you gotta be pussy
+If it's on sight, up your gun on me, all that muggin' and lookin'
+Yeah, niggas doin' all that woofin', pussy
+4L bomb shit, walk inside the store, that switch in my armpit
+I go wherever, I keep a Beretta, and niggas ain't on shit
+My opps together, but I don't discriminate, I got 'em both hit
+Them niggas be lyin', they niggas be dyin' and they don't never post shit
+No rap cap come out my mouth, made a couple songs, think he hot now
+Hit his ass up, he think he Pac now, broad daylight, he got shot down
+Chopper bullets make his ass hop 'round, bloodshed, ain't no way to stop now
+Goin' live'll get your ass popped now, seem like everybody want an opp now
+Leavin' him flatline, Slaughter Gang, knife in the back, I'm on that time
+Turn him to a hashtag, make him a &quot;long live,&quot; niggas ain't my kind
+Tried and true, I'ma pop mine, I was seventeen with a Glock 9
+I wanna see red, stop sign, I wanna see red, Clifford
+She keep tryna rip off my zipper, I moved to LA, I'm a Clipper
+He think with his dick, he a tricker, get your bitch out the car 'fore we blick her
+We put an AirTag on his car, he in Miami by Brickell
+Say hello to the four-nickel, I got a magazine, who got an issue?
+Givin' out smoke, pussy, my trigger finger broke
+Don't try me like no ho, I always let it blow
+I pull up, fah, score, nigga, we caught him by that store
+How much you wanna bet they ass won't stand right there no more?
+I'm Slaughter Gang OVO
+A half a million a show, but I still walk in with that pole, idiot
+
+[Drake:]
+Ayy, I'm feelin' like 2 Chainz, T.R.U.
+Bitch, I'm 21, bitch, I'm not 22
+Knockin' off the namebrand niggas in your crew
+Heard you miss your dogs, now it's long live who?
+Idiot
+Yeah
+
+</code></pre>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<h1 id="写作的两个次要意义">写作的两个次要意义</h1>
+<p><a href="#toc">↩️</a></p>
+<hr>
+<p><mark>清理垃圾释放内存</mark>和<mark>知识认识的蒸馏提取</mark>，尽管它们可能不是写作的主要目的，却具有标志性的意义。</p>
+<ul>
+<li>生活中积累了杂乱的思绪、情绪和信息，写作通过将这些内容外化到纸面或屏幕上，帮助梳理混乱的内心世界，释放认知负担。这种“倾倒”行为本身具有仪式感，标志着一种主动的自我整理。</li>
+<li>写作还可以迫使将模糊的想法结构化、精炼化，类似于化学中的蒸馏过程，去除杂质，提取精华。在写作时，零散的知识片段被组织、连接、提炼成更清晰的观点或结论。这个过程不仅加深了对知识的理解，还可能催生新的洞见，之前有讨论过这部分，有时候对话时候会进一步深入，不经意间、没有太耗费努力地就可以得到更新的发现。（知识的主动加工和内化）</li>
+</ul>
+<h1 id="大智若愚善良也是极致利己主义者的工具">大智若愚，善良也是极致利己主义者的工具</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>选择在合适时机以朴素的方式表达深刻洞见，洞悉沉默的战略价值。</li>
+</ul>
+<p>表面上，善良是无私的道德行为，但从极致利己主义的角度看，善良可以成为一种策略，用以构建信任、获取社会资本或达成长期目标。</p>
+<h1 id="time-to-retire-the-turing-test">Time to retire the Turing test?</h1>
+<ul>
+<li>
+<p>早上打开email，今天的Nature Briefing 标题是<a href="https://mailchi.mp/nature/daily-briefing-13894618?e=e61717d875">Time to retire the Turing test?</a>，随着围棋被AI“攻克”后，似乎原有人类占优的领域一步步“沦陷”。通过图灵测试——一个询问计算机的书面对话能否被误认为是人类对话的思想实验——对目前最优秀的人工智能（AI）模型来说是小菜一碟。</p>
+</li>
+<li>
+<p>然后上午需要将部分手写笔记（Pad上APP）转换为文字版，但是截图后发给grok，输出一堆错乱的文字，很久之前也试过chatgpt, 也不行，最终gemini能够识别30-50%，手写中文字体的识别难度相当大，更不用说繁体，当然如果能够顺利攻克简体，繁体也不是很难的突破：</p>
+</li>
+</ul>
+<ol>
+<li><strong>中文字符的复杂性</strong></li>
+</ol>
+<ul>
+<li><strong>字符数量庞大</strong>，相比英文的26个字母，中文字符的多样性对AI模型的训练数据和泛化能力提出了极高要求。</li>
+<li><strong>结构复杂</strong>，中文字符由笔画、部首和结构组成，笔画繁多（如“龘”有48画），结构多样（如左右、上下、包围等）。手写体中，笔画的变形、连写或省略进一步增加了识别难度。</li>
+<li><strong>同形异义与近似字</strong>：如“己”“已”“巳”或“土”“士”，这些字在手写时可能因笔迹潦草而难以区分，AI需要极高的上下文理解能力或精细的特征提取能力。</li>
+</ul>
+<ol start="2">
+<li><strong>手写体的多样性与个性化</strong></li>
+</ol>
+<ul>
+<li><strong>书写风格差异</strong>：不同人的笔迹差异巨大，从工整的楷书到潦草的草书，甚至同一个人的书写风格也可能因情境（如匆忙或疲惫）而变化。AI需要处理这种高变异性，远超印刷体识别的难度。</li>
+<li><strong>非标准书写</strong>：手写体常包含不规范的笔顺、笔画缺失、连笔、涂改等现象。例如，“草书”中的字形可能与标准字形大相径庭，AI需要从抽象的形态中推断正确字符。</li>
+<li><strong>噪声干扰</strong>：手写文本可能出现在复杂背景（如纸张污渍、褶皱）中，或受到扫描质量、光线等影响，增加了预处理难度。</li>
+</ul>
+<ol start="3">
+<li><strong>AI技术层面的挑战</strong></li>
+</ol>
+<ul>
+<li><strong>数据需求</strong>：训练手写中文识别模型需要海量的标注数据，覆盖各种书写风格、字体和场景。公开数据集（如CASIA-HWDB）虽然提供了一些资源，但难以涵盖所有手写变体，尤其是个性化笔迹。</li>
+<li><strong>模型复杂度</strong>：传统OCR（光学字符识别）技术对印刷体效果较好，但对手写体需结合深度学习（如CNN、Transformer）来捕捉复杂特征。模型需要在高维特征空间中区分数千个类别，同时保持对变形的鲁棒性，这对计算资源和算法设计要求极高。</li>
+<li><strong>上下文依赖</strong>：中文手写识别往往需要结合上下文信息（如词语搭配、语法）来提高准确率。例如，潦草的“日”可能被误识为“目”，但通过上下文（如“明天” vs. “眼睛”）可推断正确结果。这要求模型具备一定的语言理解能力，增加了技术难度。</li>
+<li><strong>实时性与泛化性</strong>：实际应用（如手机输入法、档案数字化）要求模型在低资源设备上快速运行，同时对未见过的笔迹风格保持泛化能力，这对模型优化（如轻量化、迁移学习）提出更高要求。</li>
+</ul>
+<hr>
+<ul>
+<li>或许这是下一个值得攀登的高山。</li>
+</ul>
+<h3 id="感知的现实与虚拟边界">感知的现实与虚拟边界</h3>
+<p>生活在一个现实世界，身体的感知是人类独有的优势。跑步时感受到的疲惫、喜悦、甚至痛苦，都是AI无法企及的领域。AI或许在网络世界中拥有超乎人类的计算和分析能力，但它缺乏对现实世界的直接感知。无论是数据的处理速度，还是对信息的整合能力，AI已经展现出惊人的潜力。</p>
+<p>未来，传感器技术可能会让AI更接近现实世界的感知。，智能穿戴设备已经能通过传感器捕捉心率、温度等信息，AI可以据此分析我们的状态。但即使如此，AI的“感知”仍然是间接的，基于数据的推断，而非真正的体验。这正是人类在当下的优势：我们不仅能感知，还能赋予这些感知意义。</p>
+<h2 id="刚柔并济-矛盾">“刚柔并济”&amp; 矛盾</h2>
+<p>与开始思考合金的刚柔并济一样，看似感觉上相互矛盾的存在或复杂耦合无解的看似没有关系，其本质还是对问题本质认识不够清晰，解开之时就不再因矛盾而困惑。</p>
+<ul>
+<li>“刚”与“柔”看似矛盾，但本质上是通过微观结构的协同作用实现的。合金的强度（刚性）可能来自晶体结构的有序排列或强化相，而韧性（柔性）则依赖于缺陷的控制或能量的分散机制。</li>
+<li>复杂系统中看似无关或矛盾的现象，往往是因为尚未找到统一的底层规律或框架。像量子力学中的波粒二象性，乍看矛盾，但通过数学描述和实验验证，我们认识到这是电子等粒子的内在属性，而非真正对立。哲学上，矛盾的对立统一规律也提示我们，矛盾的双方可能在更高层次上统一。</li>
+</ul>
+<p>所以，或许解开困惑的关键在于：</p>
+<ol>
+<li><strong>深入本质</strong>：找到现象背后的机制或规律，比如合金中原子、晶界、位错的相互作用。</li>
+<li><strong>系统思维</strong>：从整体视角看待耦合关系，而非孤立地看“刚”或“柔”。</li>
+<li><strong>跨尺度分析</strong>：从微观（原子、分子）到宏观（材料性能）建立联系，矛盾往往在跨尺度中被化解。</li>
+</ol>
+<h2 id="运动-量化与感知认识自我的工具">运动、量化与感知，认识自我的工具</h2>
+<p>跑步时，汗水滑过皮肤，心跳在胸腔里回响。每次运动都是一次对身体的“检查”：膝盖隐隐作痛可能是姿势不对，呼吸急促或许提醒需要调整节奏。倾听身体的信号，了解它的极限与潜力。</p>
+<p>现代科技为运动注入了新的维度：量化。跑步手表记录的心率、配速、步频、卡路里消耗等数据，将抽象的运动体验转化为清晰的数字。这些数字不仅看到当下的表现，还能帮助规划未来，调整强度，避免过度训练。</p>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>社媒通过双击like来引导推送：在社交媒体的海洋里，我们似乎被算法悄然“囚禁”，然后住在茧房。但我最近有意识地点赞多样化内容，主动引导算法，拓宽视野。探索新话题、清理关注列表。</li>
+<li>加速是主观发起的  加速度就是一种potential   在positive  loop里  越思考越大脑活跃，极速</li>
+<li>不知道是不是故意设计的  北半球房子的阳台却在朝北面一侧   男厕小便池和走廊在一条线上。</li>
+<li>摩擦=  接触+相互交流<a href="https://lenciel.com/2025/10/another-1024-day/">link</a></li>
+<li>Dave drop  new album  --  his 3rd album  <mark>at the age of 27</mark></li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/the-boy-who-played-the-harp/1847992481"></iframe>
+<ul>
+<li>folo更新甚至可以AI总结、页面里面就可以read paper了:</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/10/27/a6d3cc7f350ccc90.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p>还记得很早前，第一次讲组会时候分享了从社媒了解到的一些V2G技术：</p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115429225796661&bvid=BV1BusnzPEfY&cid=33360054453&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</li>
+<li>
+<p>逛本科时候关注的一些学术主页（我成为SCIblog），然后不断走向“岔路”，发现一篇<a href="https://watermelon4lyfe.wordpress.com/">西瓜研究：The Great Watermelon Study of 2015</a>：</p>
+</li>
+</ul>
+<pre><code class="language-c">
+ 让我们从我们真正关心的问题开始新的一年。没错，西瓜。我们都去过那里，站在杂货店里，盯着大纸箱的西瓜，威胁地坐在绷紧的木托盘上。你想知道，有这么多选择，我怎么能自信地选择适合我的西瓜。这样的决定沉重地压在你的心上，因为如果事情进展不顺利，你可能会后悔整整一周。你从年长的亚洲妇女那里得到启示，自信地敲瓜。他们真的知道一些我不知道的事情，从这样一个无害的龙头中了解一个甜瓜的完整内部结构吗？也许通过几十年的经验，他们已经知道了西瓜的秘密，但事实证明这是一个严守的秘密。只有公开的谣言给了我们一个关于西瓜龙头真相的暗示。
+
+然而，今天是一个新时代的开始。在这里，这些笼罩在猜测和迷信中的被严密保护的秘密被推到科学的审视之下。让我们一起踏上这个旅程，探索水龙头和其他附带方法的秘密，最终让我们所有人都能以最大的信心选择我们的瓜。
+
+
+</code></pre>
+<pre><code>* 然后测量基础物理参数，另外还有光谱表征
+</code></pre>
+<ul>
+<li>
+<p><a href="https://www.nature.com/articles/s41562-025-02292-5">Nature Human Behaviour:How to develop good research questions</a></p>
+</li>
+<li>
+<p>当自己想拖延的时候，做另一件有价值的事情。心理上时间长会有因为熟悉而产生对于环境的倦怠，所以可以切换办公场所，文章写不下去，就抽一本书看看，数据不想处理，就换个视频学学拓展兴趣</p>
+</li>
+<li>
+<p>Small actions compound over time</p>
+</li>
+<li>
+<p>决定和选择大多数时候都比付出、过程重要。选择适合高效的劳动工具总会比劳动时长重要。Wise decision maker，评估优先级，倒推与量化，反思与调整</p>
+</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DQASZzpje-G/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DQASZzpje-G/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DQASZzpje-G/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Stefan Khuc (@stefan.khc) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<ul>
+<li><a href="https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/#:~:text=%E5%BE%88%E6%97%A9%E4%B9%8B%E5%89%8D%E5%B0%B1%E8%A7%89%E5%BE%97%E5%BD%93%E4%B8%8B%E7%9A%84%E5%BE%88%E5%A4%9A%20podcasts%E6%9C%AC%E8%B4%A8%E5%B0%B1%E6%98%AF%E5%9C%86%E6%A1%8C%E5%AF%B9%E8%B0%88%EF%BC%88%E6%AF%94%E5%A6%82%E5%9C%86%E6%A1%8C%E6%B4%BE%E8%BF%99%E7%A7%8D%E5%BD%A2%E5%BC%8F%EF%BC%89%EF%BC%8C%E8%B6%8A%E6%9D%A5%E8%B6%8A%E8%B6%8B%E5%90%8C%EF%BC%8C%E5%BE%88%E5%A4%9A%E5%89%8D%E4%BA%9B%E5%B9%B4%E5%9C%A8Spotify%E4%B8%8A%E7%8E%B0%E5%9C%A8%E9%83%BD%E4%B9%9F%E5%9C%A8Youtube%E4%B8%8Apost%E5%87%BA%E8%A7%86%E9%A2%91%E7%89%88%EF%BC%8CJRE%E8%BF%98%E6%9C%89whats%20now%E2%80%A6%E2%80%A6%E9%83%BD%E6%98%AF%E9%82%80%E8%AF%B7%E4%B8%8D%E5%90%8C%E5%98%89%E5%AE%BE%E8%BF%9B%E8%A1%8C%E4%BB%B7%E5%80%BC%E4%BC%A0%E9%80%92%E8%BE%93%E5%87%BA%E5%AD%A6%E4%B9%A0%EF%BC%8C%E6%B6%89%E5%8F%8A%E5%88%B0%E4%B8%8D%E5%90%8C%E9%A2%86%E5%9F%9F%E8%AF%9D%E9%A2%98%E3%80%81%E8%AE%A4%E7%9F%A5%E5%A3%81%E5%9E%92%E3%80%82%E4%BD%86%E6%98%AF%E6%B6%89%E5%8F%8A%E5%88%B0%E8%AF%AD%E8%A8%80%E7%9A%84%E8%89%BA%E6%9C%AF%EF%BC%8C%E5%B7%A6%E5%8F%B3%E9%80%A2%E6%BA%90%20%E6%80%BB%E9%9C%80%E8%A6%81%E5%B0%86%E8%BE%9B%E8%BE%A3%E8%AE%BD%E5%88%BA%E8%AF%B4%E6%88%90%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%E7%9A%84%E6%A0%B7%E5%AD%90%EF%BC%8C%E4%B8%80%E5%8F%A5%E8%AF%9D%20%E7%B1%BB%E4%BC%BC%E7%9A%84%E8%A7%82%E7%82%B9%E8%A1%A8%E8%BE%BE%E5%BD%A2%E5%BC%8F%E7%9A%84%E4%B8%8D%E5%90%8C%E4%BC%9A%E5%AF%BC%E8%87%B4%E5%AE%8C%E5%85%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E6%95%88%E6%9E%9C">之前写的</a>:</li>
+</ul>
+<blockquote>
+<p>当下的很多 podcasts本质就是圆桌对谈（比如圆桌派这种形式），越来越趋同，很多前些年在Spotify上现在都也在Youtube上post出视频版，JRE还有whats now……都是邀请不同嘉宾进行价值传递输出学习，涉及到不同领域话题、认知壁垒。但是涉及到语言的艺术，左右逢源 总需要将辛辣讽刺说成友善提醒的样子，一句话 类似的观点表达形式的不同会导致完全不同的效果</p>
+</blockquote>
+<p>本期episode也探讨了当下形式的变化:</p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/%E5%81%9A%E6%92%AD%E5%AE%A2-%E6%9C%AC%E6%9D%A5%E5%BA%94%E8%AF%A5%E4%BB%8E%E4%BB%8E%E5%AE%B9%E5%AE%B9%E6%B8%B8%E5%88%83%E6%9C%89%E4%BD%99-ai%E6%9D%A5%E4%BA%86%E4%B9%9F%E5%88%AB%E5%8C%86%E5%8C%86%E5%BF%99%E5%BF%99%E8%BF%9E%E6%BB%9A%E5%B8%A6%E7%88%AC/id1493417568?i=1000732374994"></iframe>
+<h1 id="催醒状态hypnopompic-state">“催醒状态”（Hypnopompic State）</h1>
+<ul>
+<li>每次将要醒来之前 介于在清醒和做梦之间 有个浅的意识  会自己思考 不自觉的思考最近的问题  只是没办法及时记录</li>
+<li>今天在未完全清醒的状态想的是三指快速对于眼前画面截图（这点清醒意识还是有的）</li>
+<li><a href="https://en.wikipedia.org/wiki/Hypnopompia">Hypnopompia Wikipedia</a>
+<ul>
+<li>Hypnopompia (also known as hypnopompic state) is the state of consciousness leading out of sleep, a term coined by the psychical researcher Frederic Myers. Its mirror is the hypnagogic state at sleep onset; though often conflated, the two states are not identical and have a different phenomenological character. Hypnopompic and hypnagogic hallucinations are frequently accompanied by sleep paralysis, which is a state wherein one is consciously aware of one's surroundings but unable to move or speak.</li>
+</ul>
+</li>
+<li><a href="https://www.bbc.com/future/article/20131205-how-sleep-makes-you-more-creative">How sleep makes your mind more creative</a>
+<ul>
+<li>Author info: <mark>Thomas Patten Stafford</mark> was an American Air Force officer, test pilot, and NASA astronaut, and one of 24 astronauts who flew to the Moon. He also served as Chief of the Astronaut Office from 1969 to 1971.</li>
+<li>梦境的一个有趣的方面：the creation of connections between things that didn't seem connected before. When you think about it, this isn't too unlike a description of what creative people do in their work – connecting ideas and concepts that nobody thought to connect before in a way that appears to make sense. 难怪有些人如此重视睡眠后的即刻、如梦似幻的精神状态——被称为睡眠惰性或催眠状态。</li>
+<li><mark>信息关联和记忆需要时间，尤其是睡眠offline时。</mark>
+<ul>
+<li><em>The experiment illustrates that combining what we know to generate new insights requires time, something that many might have guessed. Perhaps more revealingly it also shows the power of sleep in building remote associations. Making the links between pieces of information that our daytime rational minds see as separate seems to be easiest when we're offline, drifting through the dreamworld.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.psychologytoday.com/us/blog/lucid-story/202409/liminal-dreams-the-creative-sweet-spot">Liminal Dreams: The Creative Sweet Spot</a></li>
+</ul>
+<h2 id="训练集-测试集-验证集">训练集 测试集 验证集</h2>
+<ul>
+<li>
+<p>分别对应睡眠状态，催醒状态，白天日常工作状态（验证&amp;收集）<br>
+训练集（睡眠状态）：模型学习和构建知识的基础阶段。<br>
+测试集（催醒状态）：检验模型在未知数据上的真实能力。<br>
+验证集（白天日常工作状态）：用于调优和验证模型，模拟工作中的试错与改进。</p>
+</li>
+<li>
+<p><a href="https://m.okjike.com/originalPosts/68f36542cc3970b79da16cc8">做梦是防止过度拟合和崩溃的一种方式</a></p>
+</li>
+<li>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S2666389921000647">paper from 2021, Patterns: The overfitted brain: Dreams evolved to assist generalization </a></p>
+</li>
+</ul>
+<h1 id="边做边思考">边做边思考</h1>
+<ul>
+<li>在半山腰的思维和所处环境使得自己的大脑神经触及的范围就在一定时间范围所对应的区域，而这些区域会随着时间变化，因此在山脚下难想象思考出在半山腰的解决办法，尽管要未雨绸缪，但是也不一定需要太上力，综合成本的角度来说，在山脚下为解决一个半山腰的问题而思考的时间成本可能远大于及时在半山腰的时间成本</li>
+<li>“未雨绸缪”虽然重要，但过度提前投入资源去解决尚未面临的问题，可能并不经济，因为随着时间推移，环境和条件的变化会带来新的视角和解决方案。</li>
+</ul>
+<h1 id="paper-reading">paper reading</h1>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This was my experience in grad school, and now I&#39;ve seen some evidence to suggest a trend 🤔 <a href="https://t.co/omYuU2N1U0">pic.twitter.com/omYuU2N1U0</a></p>&mdash; Tom Silver (@tomssilver) <a href="https://twitter.com/tomssilver/status/1982186138568630776?ref_src=twsrc%5Etfw">October 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>想起来施一公在书里面说自己看到一篇paper感觉没啥好的，去办公室和导师谈论，但是导师的视角里这里面却又很多新鲜有价值的东西，不同人背景不一样，甚至头脑中当前highlighted的知识都很快会变化，也就是说同一个人不同时期（很短时间内）也会看到的内容，关注的重点、角度不一致，参加会议提问环节也很明显能反应这个规律。 Take it all</li>
+</ul>
+<h1 id="哺乳动物的寿命与心跳次数">哺乳动物的寿命与心跳次数</h1>
+<p>Fun fact：  有被广泛接受的是，很多动物包括人，一生的寿命有限，背后有一部分是心跳的总次数是额定的，三千万次？  尽管很多人都活不到都用完，但是毕竟越靠后越不利，或许想要活的长，秘诀就是心跳heart rate慢下来，但是question is that how exactly should you do?  实际上有点悖论，得通过运动来高强度heart rate来获得缓慢的静息heart rate，从而节省总heart rate次数，<br>
+短期的“失”换来长久的“得”。</p>
+<p>有失有得 重要是 有得放矢 ，混沌之中找出秩序</p>
+<h1 id="南邮又悄悄给学生饭卡充钱了">“南邮又悄悄给学生饭卡充钱了”</h1>
+<p>“南邮又悄悄给学生饭卡充钱了”，感觉时隔多年后，我又一次看到这样的新闻，这次不得不写点什么：If you know you know，上一次听到类似学校暗暗给学生饭卡充钱还是2020s初，学校网站上财务系统会自动统计每月消费情况，分类而且还会绘制出曲线趋势，那时候平均每月吃饭和超市消费500-700￥，近乎90%都是食堂消费，洗漱等方面费用可以忽略，超市里消费也几乎偶尔购买运动后饮料，除此之外衣服方面购物也是季节性的，总体上消费水平很稳定，极少在外面吃饭，原因很多，经验主义选择，习惯和规律性，校内监管的安全性等等，对于“穷学生”来说，或许很多都代表一个家庭的希望，父母苦心经营二十年，担不起风险，就像一个大山里的孩子写道:“父亲像一张弓;蓄一生之力要把孩子射出大山。”  这样背景下，很多时候数据分析作为一种工具可以mapping很多人行为的散点图，总结分类，给予一定支持帮助。</p>
+<h1 id="33">33%</h1>
+<p><a href="#toc">↩️</a></p>
+<p>理论上所有情形下的成功都是33%概率，而勇敢去做会将33提升到50，这将是很重要的一步，最具有性价比的收获。</p>
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/7gml3S4gms">pic.twitter.com/7gml3S4gms</a></p>&mdash; Top 1% Men (@dtop1percentmen) <a href="https://twitter.com/dtop1percentmen/status/1980506890141323323?ref_src=twsrc%5Etfw">October 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="ufc-321">UFC 321</h1>
+<p><a href="#toc">↩️</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9OR7tcmVwU?si=u9uyYkYfBShYFYDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>每次都不由自主地感慨，TOM ASPINALL现在作为80亿最强男，速度快，幽默善良又诚实谦虚，尽管也爱好纹身，但是真的在场内外都是best，极其罕见，可能也由于Jon Jones的衬托显得Tom太过伟大。</li>
+<li>TOM ASPINALL的爸爸是英国早期很少有的BJJ黑带，而且是自学成才，早期参加很多巴西人过来开的seminar，然后有了ASPINALL的fighting文化，和热刺名宿Sonny 很像，父亲都作为各自职业道路的引路人，甚至他们是第一批开路的先驱，托举起来各自儿子的冠军之路，尽管有人会说这种是“雇佣兵”或者“傀儡”行为，儿子似乎作为父亲的作品，当然二者家庭氛围都是极好的，明显都有教养，友善诚实，父母之间关系和谐融洽，完美的家庭。TOM已有家庭儿女，而孙兴愍似乎前几年感情生活都会受到父亲的管制教导，极其自律</li>
+<li>汤姆TOM ASPINALL作为HW重量级 ,而且低 体脂率 ，原来和Anthony Davis一样，原本是灵活的小个子，后期突然体块增长，所以才在重量级中的灵活和快速显得鹤立鸡群</li>
+</ul>
+<hr>
+<p>又是一年阿布扎比站，关于280还记忆犹新，October 22, 2022，那天正好图书馆慌忙闭馆，回去group chat都炸了锅，有人突兀的发了一句“还是看看远处的280吧”，现在我还记得场景。Islam Makhachev戴冠为王。美洲之外的UFC big events不多，差不多每年只有UK和UAE，月份也比较固定，但是比赛时间仍然照顾北美观众，对于UK本地来说，时间都比较阴间，凌晨选手比赛，观众去场馆里，UAE时间比较良好一些，但是local晚间黄金时间是北京时间的午夜，但是每次UAE的card都不差，甚至一般都是优于很多USA本土和UK的cards。</p>
+<ul>
+<li>Tom Aspinall:也压力挺大  输了被人唠  不如骨头和铁血</li>
+<li>突然发现power slap直播还有西语频道的，今后可以练听力了 LOL</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aNm-LdrvEBA?si=YO5_qQR-3BNmHOvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="the-card">The card</h2>
+<ul>
+<li>重量级就算有胃袋也是分成像腹肌的那种六块 LOL 参考Chris Barnett,毕竟转身后脚跟高扫KO的重量级极罕见</li>
+<li>近距离的冷招，比如转身鞭拳和转身肘击，速度太快，观众看得像突然误吞大块食物一样，惊恐地吼叫一声。</li>
+<li>目前为止前四场全是判定，主赛精彩咯。正打字，Valter Walker win by submission
+<ul>
+<li>全部四场比赛全是RI sub via heel hook也太crazy了</li>
+</ul>
+</li>
+<li>秋冬，最幸福的就是热牛奶和活动热身后像是活化的身体。</li>
+<li>LW轻量级还是太地狱了，普通的prelims都是极高的质量。</li>
+<li>prelims最后一场冷不丁的高扫，然后直板板地面朝canvas倒下，brutal  -- 25岁Aussie</li>
+<li>阿布扎比的Etihad arena，对于曼市人来说，四舍五入还是主场，熟悉的citizen</li>
+<li>也是R1啦，Gane double eye poked Tom, 上一代重量级很多都玩得“挺脏”，之后Belal和Bisping都现身说法。<br>
+<mark>The Truth Behind Tom Aspinall's UFC 321 Eye Poke</mark></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JNzOuhrHMUc?si=96W0EhKtF3SAVlP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="柔和韧-乌马尔的飞刀片一样的飞踢">柔和韧  乌马尔的飞刀片一样的飞踢</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A brutally honest insight here from Umar. <br><br>Much respect to him for sharing this with the fans. Always cool to listen to a fighter describe the mental game. <a href="https://t.co/L6SYo6fQFa">https://t.co/L6SYo6fQFa</a></p>&mdash; Spinnin Backfist (@SpinninBackfist) <a href="https://twitter.com/SpinninBackfist/status/1982292215587037516?ref_src=twsrc%5Etfw">October 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">😳 🦅 Umar Nurmagomedov was brutally honest on why he’s not on Khabib’s level yet:<br><br>“Khabib could come home from a tough trip, arrive at 12 at night, change clothes, and go run. If he didn’t manage to get even one training session during the day, he would still hit pads at home… <a href="https://t.co/gLorHwwTkZ">pic.twitter.com/gLorHwwTkZ</a></p>&mdash; Home of Fight (@Home_of_Fight) <a href="https://twitter.com/Home_of_Fight/status/1982206899614519327?ref_src=twsrc%5Etfw">October 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🦅 📕 From Abdulmanap Nurmagomedov&#39;s book:<br><br>&quot;Even when there were no fights coming, Khabib didn&#39;t rest, but he can allow himself to “recover a bit.” Resting, I will emphasize once again, is not allowed — otherwise you can drop your conditioning down to the level of 3 points out… <a href="https://t.co/GGBGUoJetb">pic.twitter.com/GGBGUoJetb</a></p>&mdash; Home of Fight (@Home_of_Fight) <a href="https://twitter.com/Home_of_Fight/status/1982260845976408066?ref_src=twsrc%5Etfw">October 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<p>🦅 📕 From Abdulmanap Nurmagomedov's book:</p>
+<p>&quot;Even when there were no fights coming, Khabib didn't rest, but he can allow himself to “recover a bit.” Resting, I will emphasize once again, is not allowed — otherwise you can drop your conditioning down to the level of 3 points out of 5, and that is unacceptable.</p>
+<p>But recovering, yes, that’s allowed. “Recovery” here means active recovery of energy.</p>
+<p>What do I mean by this?<br>
+Obviously: cycling, hiking, playing volleyball, soccer, long and slow jogs, sauna, steam room with Siberian brooms.<br>
+In other words — an activity level where your blood circulates 3 times faster than in normal daily life.</p>
+<p>This constant movement keeps your brain, heart, liver in tone — the key organs responsible for maintaining readiness.</p>
+<p>The effect is enhanced by healthy food, communication with friends and relatives, visiting your hometown, places connected with your family history of many generations.&quot;</p>
+<hr>
+<p>😳 🦅 Umar Nurmagomedov was brutally honest on why he’s not on Khabib’s level yet:</p>
+<p>“Khabib could come home from a tough trip, arrive at 12 at night, change clothes, and go run. If he didn’t manage to get even one training session during the day, he would still hit pads at home at night.</p>
+<p>The difference between us is that he gave all of himself to this. And we don’t. You have to be honest.</p>
+<p>At 12 at night, I can force myself to go run maybe 5 times out of 10, because I think: ‘He did it. He went. He worked. So I must, if I want to achieve something.’</p>
+<p>He was fanatical about training.</p>
+<p>Maybe also because the Almighty gave him this physical strength.</p>
+<p>In the gym, everything works for me — I can control guys, I can go for submissions. But in the cage, he (Khabib) is psychologically much stronger than me. And in the cage I feel like something is missing. I’ll keep striving.&quot;</p>
+<p>via<br>
+@ufc<br>
+press conference</p>
+ <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reece James on Instagram and it feels like he is talking to me 🥹, powerful words <a href="https://t.co/boI4G1KTML">pic.twitter.com/boI4G1KTML</a></p>&mdash; 🌹𝓐𝓴𝓾𝓪𝓱 𝓦𝓻𝓲𝓽𝓮𝓼🌹💙 (@akuahwritess) <a href="https://twitter.com/akuahwritess/status/1981338616870699043?ref_src=twsrc%5Etfw">October 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<h2 id="till-next-msg">Till next - MSG</h2>
+<p><a href="#toc">↩️</a></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115441456388673&bvid=BV143skzGEyP&cid=33422312322&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<hr>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/10/27/c4d4292acd9c0469.png" alt="" loading="lazy"></figure>
+<p>又一次的，PPV结束的周日有premier league matches 另外本周日还是国家德比</p>
+<ul>
+<li>看AVL vs MCI, 画面有人憨憨的，认真一看好像是Jadon Sancho，搜了一下还真是</li>
+</ul>
+<hr>
+<p>He a fan, he a fan, he a fan (Mm) He a fan, he a fan</p>
+<p>He a fan, he a fan, he a fan (Mm) He a fan, he a fan</p>
+<p>He a fan, he a fan, he a fan (Mm) He a fan, he a fan</p>
+<hr>
+<ul>
+<li>The question is that why you talk sht! live rent free</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-gB819j-H54?si=rIQkUlThJKLuhLa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<p>“Tomorrow will be the first sunrise of the rest of ur life, make it what u want. And remember happiness is a choice”</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E5%86%99%E4%BD%9C%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%AC%A1%E8%A6%81%E6%84%8F%E4%B9%89">写作的两个次要意义</a></li>
+<li><a href="#%E5%A4%A7%E6%99%BA%E8%8B%A5%E6%84%9A%E5%96%84%E8%89%AF%E4%B9%9F%E6%98%AF%E6%9E%81%E8%87%B4%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E8%80%85%E7%9A%84%E5%B7%A5%E5%85%B7">大智若愚，善良也是极致利己主义者的工具</a></li>
+<li><a href="#time-to-retire-the-turing-test">Time to retire the Turing test?</a><br>
+*
+<ul>
+<li><a href="#%E6%84%9F%E7%9F%A5%E7%9A%84%E7%8E%B0%E5%AE%9E%E4%B8%8E%E8%99%9A%E6%8B%9F%E8%BE%B9%E7%95%8C">感知的现实与虚拟边界</a></li>
+<li><a href="#%E5%88%9A%E6%9F%94%E5%B9%B6%E6%B5%8E-%E7%9F%9B%E7%9B%BE">“刚柔并济”&amp; 矛盾</a></li>
+<li><a href="#%E8%BF%90%E5%8A%A8-%E9%87%8F%E5%8C%96%E4%B8%8E%E6%84%9F%E7%9F%A5%E8%AE%A4%E8%AF%86%E8%87%AA%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7">运动、量化与感知，认识自我的工具</a></li>
+</ul>
+</li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+<li><a href="#%E5%82%AC%E9%86%92%E7%8A%B6%E6%80%81hypnopompic-state">“催醒状态”（Hypnopompic State）</a>
+<ul>
+<li><a href="#%E8%AE%AD%E7%BB%83%E9%9B%86-%E6%B5%8B%E8%AF%95%E9%9B%86-%E9%AA%8C%E8%AF%81%E9%9B%86">训练集 测试集 验证集</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BE%B9%E5%81%9A%E8%BE%B9%E6%80%9D%E8%80%83">边做边思考</a></li>
+<li><a href="#paper-reading">paper reading</a></li>
+<li><a href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E7%9A%84%E5%AF%BF%E5%91%BD%E4%B8%8E%E5%BF%83%E8%B7%B3%E6%AC%A1%E6%95%B0">哺乳动物的寿命与心跳次数</a></li>
+<li><a href="#%E5%8D%97%E9%82%AE%E5%8F%88%E6%82%84%E6%82%84%E7%BB%99%E5%AD%A6%E7%94%9F%E9%A5%AD%E5%8D%A1%E5%85%85%E9%92%B1%E4%BA%86">“南邮又悄悄给学生饭卡充钱了”</a></li>
+<li><a href="#33">33%</a></li>
+<li><a href="#ufc-321">UFC 321</a>
+<ul>
+<li><a href="#the-card">The card</a></li>
+<li><a href="#%E6%9F%94%E5%92%8C%E9%9F%A7-%E4%B9%8C%E9%A9%AC%E5%B0%94%E7%9A%84%E9%A3%9E%E5%88%80%E7%89%87%E4%B8%80%E6%A0%B7%E7%9A%84%E9%A3%9E%E8%B8%A2">柔和韧  乌马尔的飞刀片一样的飞踢</a></li>
+<li><a href="#till-next-msg">Till next - MSG</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-321/">https://ezraknotlab.github.io/post/ekl-321/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-321/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-321/&sharesource=qzone&title=EKL 321&pics=https://ezraknotlab.github.io//images/avatar.png?v=1765383949270&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hypnopompic State&lt;/li&gt;
+&lt;li&gt;UFC 321&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-321/&sharesource=weibo&title=EKL 321 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hypnopompic State&lt;/li&gt;
+&lt;li&gt;UFC 321&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1765383949270 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20251105/">
+                                                                                            EKL 20251109
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20251012/">
+                                                                                                    EKL 20251012
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1765383949270);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

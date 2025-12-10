@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLResearch">
+                        🖼️Research
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                        📑Publications
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1765383949270" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1765383949270" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLResearch">
+                            🖼️Research
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/publications">
+                            📑Publications
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 318
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-07-21</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">27.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">5999</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/07/21/92727ae5d00ec70c.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>The very last dance</li>
+<li>钻石落幕</li>
+<li>TOM</li>
+<li>取色值</li>
+<li>脱口秀</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E9%83%BD%E8%AF%B4%E9%BE%99%E5%9C%BA%E6%82%9F%E9%81%93">都说龙场悟道</a>
+<ul>
+<li><a href="#%E8%BF%99%E9%AC%BC%E5%A4%A9%E6%B0%94%E5%92%8C%E4%B8%80%E4%BA%9B%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3">这鬼天气和一些有的没的胡思乱想</a></li>
+</ul>
+</li>
+<li><a href="#the-very-last-dance">The very last dance</a></li>
+<li><a href="#historical-weekend">Historical Weekend</a>
+<ul>
+<li><a href="#ufc-318-morning-weigh-in-show">UFC 318: Morning Weigh-In Show</a></li>
+</ul>
+</li>
+<li><a href="#2025%E5%B9%B47%E6%9C%8819%E6%97%A5">2025年7月19日</a></li>
+<li><a href="#%E9%92%BB%E7%9F%B3%E8%90%BD%E5%B9%95-2025%E5%B9%B47%E6%9C%8820%E6%97%A5">钻石落幕  2025年7月20日</a></li>
+<li><a href="#tom">TOM</a></li>
+<li><a href="#%E5%8F%96%E8%89%B2%E5%80%BC">取色值</a></li>
+<li><a href="#%E8%84%B1%E5%8F%A3%E7%A7%80">脱口秀</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.70clacks.co/uploads/new/music/2024/09/Baby-Keem-family-ties-ft-Kendrick-Lamar-(HipHopKit.com).mp3"></audio></p>
+<p><mark>family ties (feat. Kendrick Lamar) Baby Keem</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Jump in that— (huh, huh), summon that bitch
+Jump in that— (huh, huh), jump in that fire, jump in that bitch
+Hittin' that fire, jump in that whip, thumbin' that bitch
+Cum in that bitch (ho), drummin' that— (huh, huh)
+Drummin' that bitch (yeah)
+
+Chopper doin' circles, it's a Vert', Vert'
+Take him to the projects, he's a nerd (Pop out)
+I see niggas hittin' corners in the motherfuckin' 'burbs, huh (Pop out)
+Done politickin' with the competition, what's the word? (Yeah)
+Put that on my mama, nigga, ate in the process
+Niggas tryna tippy toe through the progress
+Tongue-tied when the truth is an object
+What's the pros and cons of this next check?
+When nobody 'round, I was independent
+In the 90s, sittin' bum with the windows tinted
+Had a bomb, got a strap at the party
+Where the fuck niggas? At the party
+Beat 'em up (Bounce), beat 'em up, beat 'em up, beat 'em up (ah)
+I was seein' double in the projects
+Mad at myself when I put it to the side
+Mama had to cater for the coupe
+That we rode after school on the way to Popeyes (Bounce)
+And niggas wanna play both sides
+It's a red dot, don't get on the wrong red eye
+It's a headshot, let me get who are them guys
+Fuck around and bury two of them guys
+I'm OD in Paris, I'm OD in France
+I thought that I told you, I need the advance
+Put down your IG and look through my lens
+A million to grandma, who did I offend?
+The girl of your dreams to me is a fan
+I netted ten million and did a lil' dance
+I'm fuckin' the world, I unzip my pants
+My uncle G told me that I had a chance
+So then I popped out and did it again
+And did it again and did it again
+I can not respect them, where did he begin?
+Advice from the council, let nobody in
+Been swervin' through rumors
+Avoidin' the trends and duckin' the hoes
+I'm duckin' the loonies that come with the shows
+I'm grateful to Man-Man, he opened up doors
+And bung' on the tour bus to come and compose
+I reach to the stars on my tippy toes
+This greatest success where most niggas fold
+I tell you my past, that shit don't get old
+But how could you ask like I don't be rappin' my raps?
+These critics got everyone tapped
+You gotta relax, the city where nobody sleep
+Just tap in and ask where I'm at, ho
+
+Smoking on your top five tonight, tonight
+Yeah, I'm smokin' on your, what's her name, tonight, tonight
+Smokin' on you, shores, ain't two-nine, yeah, two
+
+I am the omega, pgLang, Rollie gang, SIE
+Don't you address me unless it's with four letters
+I thought you'd known better
+I been duckin' the pandemic, I been, social gimmicks
+I been duckin' the overnight activists, yeah
+I'm not a trending topic, I'm a—
+Hold on, y'all niggas playin' with me, man
+I am the omega, pgLang, Rollie gang, SIE
+Don't you address me unless it's with four letters
+Bitch, I thought you'd known better
+I been duckin' the pandemic, I been duckin' the social gimmicks
+I been duckin' the overnight actavis, yeah
+I'm not a trending topic, I'm a prophet
+I answer to Metatron and Gambriel
+Bitch, looking for a better me
+I am a legacy, I come from the seventy
+The Al Green offspring, guns and the melody
+The big shot, wrist on cryotherapy
+Soon as I press that button
+Nigga better get right like the ambulance comin'
+Us two on a light, Keem been through nothin'
+Dave Free got at least one B in the oven
+I'm trippin', I'm juugin', my mental is amazing, brother
+Pop off, only on occasions, brother
+Rich nigga, momma know I made it, brother
+Go figure, never caught cases, brother
+Face it, brother, gracious brother?
+New flows comin', be patient, brother
+Show my ass and take you out of class
+I can multitask like Megan, brother
+2021, I ain't takin' no prisoner
+Last year, y'all fucked up all the listener
+Who went platinum? I call that a visitor
+Who the fuck backin' 'em? All been falsified
+The facts mean this a vaccine, and the game need me to survive
+The Elohim, the rebirth
+Before you get to the Father, you gotta holla at me first, bitch
+Smokin' on top fives
+Motherfuck that album, fuck that single
+Burn that hard drive (Burn that shit)
+Ain't nobody safe
+When I come up killin' everybody that's outside (Who you with?)
+Yeah, Kanye changed his life
+But me, I'm still an old school Gemini (Lil' bitch)
+Let me jump in this bitch
+
+Let me jump in this bitch
+Two phones, but I only bring one in this bitch
+One daughter, but they all my sons in this bitch
+No hoes, ain't shit gettin' done in this bitch
+I'm scary, I got a gun in this bitch
+Smokin' on top fives, stop playin', I'm that guy
+Number two DM'ing my bitch
+That's cool, I don't ask why
+
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://thecomeupshow.com/wp-content/uploads/2010/08/Lil_Wayne-Right_Above_It_f_Drake.mp3"></audio></p>
+<p><mark>Lil Wayne x Drake – Right Above It (CDQ)</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">[Drake]
+Who really tryna f-ck with Hollywood Cole? I'm with Marley Gee, bro
+Flying Holly Grove chicks to my Hollywood shows
+And I want to tell you something that you prolly should know
+This that Slumdog Millionaire Bollywood flow
+And ahhh My real friends never hearin' from me
+Fake friends write the wrong answers on the mirror for me
+That's why I pick and choose, I don't get sh-t confused
+I got a small circle, I'm not with different crews
+We walk the same path, but got on different shoes
+Live in the same building, but we got different views
+I got a couple cars I never get to use
+Don't like my women single, I like my chicks in twos
+And these days all the girls is down to roll
+I hit the strip club and all them bitches find the floor
+Plus I just sipped and so this shit is movin' kinda slow
+Just tell my girl to tell her friend that it's time to go
+
+[Lil Wayne]
+Now tell me how you love it
+You know you at the top when only heaven's right above it
+We on
+It's Young Money, motherf-cker
+If you ain't runnin' wit it, run from it, motherf-cker, all right
+
+Now somebody show some money in this bitch
+And I got my bees with me like some honey in this bitch, ya dig?
+I got my gun in my boo purse
+And I don't bust back, because I shoot first
+
+Meet me on the fresh train
+Yes, I'm in the building, you just on the list of guest names
+And all of my riders do not give a f-ck, X Games
+Guns turn you boys into bitches, sex change
+And I smoke 'til I got chest pains
+And you n-ggas know I rep my game like Jesse James
+Women all possessive, and they wanna possess Wayne
+I been fly so long I fell asleep on the p-p-plane
+Skinny pants and some Vans
+Call me Triple 8, get my advance in advance, Amen
+As the world spin and dance in my hands
+Life is a beach, I'm just playin' in the sand
+Uh, wake up and smell the p-ssy
+You n-ggas can't see me, but never overlook me
+I'm on the paper trail, it ain't no tellin' where it took me
+Yeah, and I ain't a killa, but don't push me
+
+Now tell me how you love it
+You know you at the top when only heaven's right above it
+We on
+It's Young Money, motherf-cker
+If you ain't runnin' wit it, run from it, motherf-cker, all right
+[Hook]
+Now somebody show some money in this bitch
+And I got my bees with me like some honey in this bitch, ya dig?
+I got my gun in my boo purse
+And I don't bust back, because I shoot first
+
+How do he say what's never said?
+Beautiful black woman, I bet that bitch look better red
+Limpin' off tour 'cause I made more off my second leg
+Bird-bi-birdman Junior, eleventh grade
+Ball on automatic start
+I could hand it to Drake or do a quarterback draw
+Wildcat offense, check the paw prints
+We in the building, n-ggas in apartments
+N-now, c'mon, be my blood donor
+Flow so nice, she ain't gotta put a rug on her
+Do it big, and let the small fall under that
+
+Damn, where you stumbled out?
+From where they make gumbo at
+Kane got the f-ckin' beat jumpin' like a jumping jack
+You know me, I get on this bitch and have a heart attack
+Hip-hop, I'm the heart of that, bitch, nothin' short of that
+President Carter, Young Money Democrat
+
+Now tell me how you love it
+You know you at the top when only heaven's right above it
+We on
+It's Young Money, motherf-cker
+If you ain't runnin' wit it, run from it, motherf-cker, all right
+
+Now somebody show some money in this bitch
+And I got my bees with me like some honey in this bitch, ya dig?
+I got my gun in my boo purse
+And I don't bust back, because I shoot first
+
+</code></pre>
+</details>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<h1 id="都说龙场悟道">都说龙场悟道</h1>
+<ul>
+<li>
+<p>监狱里可能真的有大把时间可以用来peace your mind，作息规律，有规矩限制，所以客观上几乎不会受到什么外界诱惑，环境下可以更低精力成本的自律，就连劳动也是规律的。</p>
+</li>
+<li>
+<p>起源于前些天我在查一些词源，因为很多事物都是有迹可循的，尤其是北美地区，历史没有那么久，所以近现代发生的事情我们会更熟悉一些这其中的来龙去脉，记忆自动串联。具体的来说，我主要好奇一些地名、人名背后的意义，比如某些城市人的姓很奇怪，非拉丁语系，涉及到一系列因为移民和本地化的衍化等等，著名的就爱尔兰饥荒等等，这些历史背景太多了，甚至地球仪上随手一指就能挖点类似的信息出来……  在查找这些之后，我又想起Malcolm X著名的那句话：&quot;My alma mater was books, a good library.... I could spend the rest of my life reading, just satisfying my curiosity.&quot;- Malcolm X  这都高中时候收藏的名言了，后来学点西语，但是还是没有实际深究为什么母校是alma mater，这明显不是英语：“Alma Mater” 是一个拉丁语短语，直译为“养育之母”或“慈母”。在现代英语中，它通常指一个人就读过的学校、学院或大学，尤其是指对其学术和人生发展有重要影响的教育机构。这个词带有一种情感色彩，表达对母校的怀念、感恩或忠诚。Alma：拉丁语，意为“滋养的”“仁慈的”或“养育的”，形容母亲的慈爱特质。<br>
+Mater：拉丁语，意为“母亲”。这个短语最早出现在古罗马文化中，用来形容某些女神（如Ceres或Cybele），象征她们作为“养育者”或“大地之母”的角色。</p>
+</li>
+<li>
+<p>读到一篇文章讲 The Education of Malcolm X <a href="https://www.millersbookreview.com/p/education-of-malcolm-x">link</a> ，从街头小混混，各种不良嗜好和危害社会的行为，到进监狱看书悟道。一直在学习。</p>
+</li>
+</ul>
+<pre><code class="language-c">Like his brother, now Malcolm X’s face was forever in a book. “You couldn’t have gotten me out of books with a wedge,” he said. He read as much as fifteen hours a day. At night he kept going by a stray beam of light that shone through his cell door. He eyesight later suffered, and he blamed the long hours and poor light for the glasses he wore the rest of his life. The trade was worth it.
+
+</code></pre>
+<ul>
+<li>You should revisit what you really believe, not just taken from others</li>
+<li>He was never done learning.</li>
+<li><a href="https://www.aaihs.org/malcolm-x-in-the-courtroom/">Malcolm X in the Courtroom</a></li>
+<li>犯错才不是最可怜的，最可怜的是甚至不知道哪里出错。</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>前一篇讲夏威夷和日本的一些关系，今天看到有纽约客文章 <a href="https://www.newyorker.com/magazine/2008/06/09/haruki-murakami-the-running-novelist?utm_campaign=falcon_FCzP&amp;utm_brand=tny&amp;utm_medium=social&amp;utm_source=twitter&amp;utm_social-type=owned&amp;mbid=social_twitter">The Running Novelist<br>
+By Haruki Murakami</a>，村上春树的一些体悟。另外，夏威夷很多地名也看起来像是日语衍生的英语。</p>
+</li>
+<li>
+<p>Max正好repost这个</p>
+</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/T3oRTzBgg1">https://t.co/T3oRTzBgg1</a> <a href="https://t.co/ipapmSYnkO">pic.twitter.com/ipapmSYnkO</a></p>&mdash; Max Holloway (@BlessedMMA) <a href="https://twitter.com/BlessedMMA/status/1944816719031148619?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="这鬼天气和一些有的没的胡思乱想">这鬼天气和一些有的没的胡思乱想</h2>
+<p>最近这天儿，真是热到爆炸。感觉所有形容热的词儿都用光了，每天出门都像是进了蒸笼。这么热的天，就忍不住琢磨一些乱七八糟的事儿。就说一个地方的发展吧，最开始…</p>
+<p>说真的，这酷暑对生产力的打击是实实在在的，不光工厂里机器要罢工，坐在办公室的打工人也蔫儿了吧唧的，效率直线下降。突然想起以前李光耀说的话，这位新加坡的“国父”说过，空调对新加坡的发展简直是神助攻，说是历史上最伟大的发明之一都不为过！（李光耀曾說，促成新加坡奇蹟的關鍵之一就是空調，因為一旦室內溫度超過23°C，人類的睡眠、認知和工作表現就會明顯惡化，甚至死亡率也會急劇上升。）话说回来，空调是用电的，电能转化成凉风是爽了，但是产生的热量最终还是会排放到环境中，通过大气环流，结果就是全球一起“发烧”。享受了一时的凉爽，却给地球增加了负担。</p>
+<p>总有那么一种论调，说社会进步靠的是少数精英，符合那个所谓的“二八法则”。但我总觉得吧，现实情况可能比这复杂得多。Standup comedy有段子说现在还有人争论地球是圆的还是平的。如今人们还在讨论什么earth is ground or flat。  the truth is that the earth is Fucked.</p>
+<p>昨天还刷到一条新闻，格陵兰岛那边，居民一觉醒来发现家门口飘来一座巨大的冰山。那些北欧国家，以前日子过得挺悠哉，没怎么拼命搞工业，结果现在呢？全球变暖的大潮一来，谁也跑不了，极端天气说来就来。更别提非洲和拉丁美洲的朋友们了，他们可能没怎么享受过工业发展的好处，却要承受更严重的气候灾难。或许大家真的应该放慢脚步，像北欧一些国家那样，chill一点，珍惜当下的每一天。从老高与小茉那里听说挪威丹麦的监狱条件都比酒店好，人性化这一块……与其在各种无谓的竞争里内卷，不如好好享受生活。你看那些议会啊，总统啊，也别天天吵了，不如一起去跑跑步，享受一下生活的美好。</p>
+<p>总觉得现在这世界，很多事情都挺魔幻现实主义的。天气热得不像话，匪夷所思的观点有人追捧，气候变化就在眼前发生… 忍不住 много думать</p>
+<ul>
+<li>晚上随便找了一间自习室，进去之后关了空调，一人独享幽闭空间，然后不久后有人保温杯装热水走进来，把我关了的空调开开调到22度，我说了才调到25，然后过一会就开始一直不停吸鼻涕。You don't have to.</li>
+</ul>
+<h1 id="the-very-last-dance">The very last dance</h1>
+<ul>
+<li>2025年7月17日  媒体日，后面还有press conference，搞一堆回忆杀，各路人马回忆DP的生涯最佳时刻，有KO Conor，也有IC的冠军时刻，也有KO BSD那个right hook，最后补的那一拳真是像宰人一样  哈哈哈哈  每次看到那一幕都会浮现这个想法。</li>
+<li>确定lilwayne会伴随walkout，然后也确定会有the boss作为背景音乐，估计会是串烧设计，有diamond，或者Wayne的歌，最后the boss，贯穿生涯，定是pay the cost be the boss~~~</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DMMC3RkKojh/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMMC3RkKojh/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DMMC3RkKojh/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">DIAMOND💎⚔️ (@poirier.grr) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<hr>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DMMGyHpvfD1/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMMGyHpvfD1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DMMGyHpvfD1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Georges St-Pierre (@georgesstpierre) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<blockquote>
+<p>J’ai passé beaucoup de temps à travailler mon handstand aux barres parallèles depuis mon opération à l’épaule, et aujourd’hui jai reusis! Je ne suis pas encore à 100 %, mais c’est une étape importante dans ma rééducation de l’épaule. Je suis fier de n’avoir jamais abandonné !</p>
+</blockquote>
+<blockquote>
+<p>自从我的肩部手术以来,我花了很多时间在平行杆上工作,今天我重复使用ja!我还没有达到100%,但这是我肩部康复的重要一步。我很自豪我从未放弃。</p>
+</blockquote>
+<h1 id="historical-weekend">Historical Weekend</h1>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DML6TklBref/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DML6TklBref/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DML6TklBref/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">On The Ropes (@ontheropescombat) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<p>ontheropescombat<br>
+This Saturday, fight fans are in for a treat with 3 unmissable bouts across boxing and MMA!</p>
+<p>🥊 In boxing, Oleksandr Usyk takes on Daniel Dubois for the undisputed heavyweight title in a high-stakes showdown. 🔥</p>
+<p>🥊 Also in boxing, legendary Manny Pacquiao returns to the ring to face Mario Barrios in a thrilling welterweight clash. Can the icon turn back the clock one more time? 🌟</p>
+<p>🏆 In MMA, UFC 318 brings fireworks as Max Holloway battles Dustin Poirier for the BMF belt, marking the final dance of “The Diamond.” Expect emotion, power, and all-out war in the Octagon. 🔥👊</p>
+<h2 id="ufc-318-morning-weigh-in-show">UFC 318: Morning Weigh-In Show</h2>
+<ul>
+<li>
+<p>2025年7月19日00:09:28 weight in show有时候比大部分比赛都有趣，涉及广泛，还有小游戏，品食环节，回顾TOP list……太funny</p>
+</li>
+<li>
+<p>这当然也同时是一种“巡回演出Show”，上次在IFW的weight in show上DC就说，呼吁所有的路易斯阿娜州的一些特色饭店restaurant联系他，在美食品尝的环节可以展示自己州的特色风味。想到年初NFL 在新奥尔良举办了Superbowl，虽然UFC的events没有那么广泛的影响力，上次在路易斯阿娜举办也是十几年前了，但这确实也是一次“文旅宣传的窗口”（如果使用国内local的词汇来理解），展示这里特色美食，风土人情，独特文化。人民勤劳努力……</p>
+</li>
+<li>
+<p>州里面凝聚力也得到提升，整体笼罩着团结、欣欣向荣的氛围。路易斯阿娜两个主要的球队，NBA鹈鹕，NFL圣徒，尤其圣徒队徽和州旗上都有 Fleur-de-lis（百合花纹章）（象征这里独特的heritage，团结和社区精神的代表，与法国殖民、法裔文化相关，当然从州名上就可以看出，以法国国王路易十四的名字命名）。文化方面还有Jazz的发展，承载了路易斯安那人对自身文化的热爱。<mark>We all should have something to be proud of, because those are the reasons we live for.</mark> Having something to be proud of—whether it’s a personal achievement, cultural heritage, or community spirit—gives life meaning and purpose. In the case of Louisiana and the New Orleans Saints, the Fleur-de-lis is a powerful symbol of their shared history and identity, reflecting French roots and local pride. It’s like a badge of honor that connects people to their past and inspires them to keep pushing forward.</p>
+</li>
+<li>
+<p>独特的这些代表性的实体实际上都是文化、精神等凝聚发展的一种载体。</p>
+<ul>
+<li>百合花饰是一种自鸢尾所设计出的符号。百合花饰既可作为纯粹的装饰品使用，但在作为纹章使用时，也含有“政治的、王权的、艺术的、象征性的”等意义，同时百合花也是法国的国花。百合花饰在与法国王室有关的旗帜及纹章上尤其多见，被视为法国象征之一。魁北克省的旗帜上就有百合花饰的图案。在法国和天主教文化中与纯洁、光明和圣母玛利亚有关，这也与“圣徒”这一名称有一定的宗教共鸣。</li>
+</ul>
+</li>
+</ul>
+<p>宣传片里元素都有了：UFC 318: Holloway vs Poirier 3 | Cold Open</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tTQYouH-ZCo?si=iFNNpTaXvWXLzs99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/the-house-of-the-rising-sun/726189776"></iframe>
+<p><mark>House of the Rising Sun 动物乐队的歌曲 ‧ 1964 年</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">There is a house in New Orleans
+They call the Rising Sun
+And it's been the ruin of many a poor boy
+Dear God, I know I was one
+My mother was a tailor
+She sewed my new blue jeans
+And my father was a gamblin' man
+Way down in New Orleans
+And the only thing a gambler needs
+Is a suitcase and a trunk
+And the only time he's satisfied
+Is when he's a drunk
+Oh, mother, tell your children
+Not to do what I have done
+To spend your lives in sin and misery
+In the house of the rising sun
+I got one foot on the platform
+And another on the train
+And I'm going back to New Orleans
+To wear that ball and chain
+There is a house in New Orleans
+They call the Rising Sun
+And it's been the ruin of many a poor boy
+Dear God, I know I was one
+Dear God, I know I was the one
+
+</code></pre>
+</details>
+<hr>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114883714621022&bvid=BV18HgtzMEmH&cid=31161320843&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/last-of-my-kind-feat-paul-cauthen/1737086117"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114883127418326&bvid=BV1TugbzKEse&cid=31160338748&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<h1 id="2025年7月19日">2025年7月19日</h1>
+<ul>
+<li>周六跑步本不在checklist里，但是有强烈的感觉就是得来一次，然后就出发了。同日落方向跑总是会思绪万千，一方面好像前方有目标指引你前进，沉舟侧畔千帆过，周围虽然环境变化，但它总在那里。等到确实日落西山或者进到云层之后，有感觉真的再也追不上了，陪伴也只能到此结束了，没有什么比失去希望最让人难过。即使以后还有无数个轮回，但再也不一样了 it'll never be the same.   Feel good just get emotional</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/right-above-it-feat-drake/1443198545?l=en-GB"></iframe>
+<ul>
+<li>像科比退役那天 我一个人待在操场偏僻的地方，一个人更是享受难过的情绪，珍贵，也不一定所有难过的情绪都是负面的。</li>
+<li>和3C回来复出的时候一样，欢快的节奏，脸上笑容，雀跃的四肢，甚至七窍都散发出希望的味道。这也是年轻的魅力吧，有时间就还有希望。只要希望在，就绝不会真正结束。</li>
+<li>似乎这也是繁衍生息的意义，保持住生育率，AGI发展什么样，星际殖民什么样 you never know</li>
+</ul>
+<hr>
+<p>🥊 Oleksandr Usyk 五回合KO了 Daniel Dubois，乌克兰人真的身体条件各方面不占优势，拿着差的条件占领最高位置，令人敬佩。</p>
+<p>🥊 Manny Pacquiao returns to the ring to face Mario Barrios，苦战平局。</p>
+<p>🏆 In MMA, UFC 318 brings fireworks as Max Holloway battles Dustin Poirier for the BMF belt, marking the final dance of “The Diamond.” Expect emotion, power, and all-out war in the Octagon. 🔥👊</p>
+<hr>
+<h1 id="钻石落幕-2025年7月20日">钻石落幕  2025年7月20日</h1>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ready to toe the line one final time 👊<br><br>[ <a href="https://twitter.com/hashtag/UFC318?src=hash&amp;ref_src=twsrc%5Etfw">#UFC318</a> | <a href="https://twitter.com/DustinPoirier?ref_src=twsrc%5Etfw">@DustinPoirier</a> ] <a href="https://t.co/pHrpEk4y6X">pic.twitter.com/pHrpEk4y6X</a></p>&mdash; UFC (@ufc) <a href="https://twitter.com/ufc/status/1946767178172403712?ref_src=twsrc%5Etfw">July 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>随着5rounds 25mins最后铃声响起，Max与Dustin抱在一起，Dustin生涯最后一场正式结束，二人互有KD，但是Max输出volume更多，更积极，所以最终判定拿到胜利也在情理之中。第二回合还在想Dustin确实身体机能不如当年了，移动变慢，速度不再，身体过了30岁就开始巅峰之后的下坡之路。</li>
+<li>这样的性格也像正直乖巧、优秀努力的学生一样，整个生涯都无比正确，没有任何负面新闻，优秀的父亲、丈夫，同时对于community的贡献、精神认同也是有目共睹，fame也有，longevity也有，Izzy甚至说如果你有Dustin在UFC一半的成绩，你都应该感到庆幸。最终，这场体面的last dance也完美、如愿地在LA落幕，tbh, 很多很多champ都么有这样的待遇，当你回想之前的一些champ……</li>
+<li>It'll never be the same.</li>
+<li>See you again.</li>
+<li>所有结束了，下午吃完饭正好赶上难遇的阴天，沿着公路跑步，光着上身也不会晒伤，穿过桥洞，穿过大桥，一路向西，故事远未完结，更不必考虑会不会完结， keep going.</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DMNX3GVsWyE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DMNX3GVsWyE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DMNX3GVsWyE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Discipline | Mindset | Motivation (@beatlazines) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DLzz8mZsK5a/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DLzz8mZsK5a/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DLzz8mZsK5a/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">THE HUSTLE CULTURE ® (@thehustle.culture) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<h1 id="tom">TOM</h1>
+<ul>
+<li>
+<p>看到comment， 在Tom Aspinall UFC 304的walkout视频下面：<br>
+@Kaiidox：Walkout longer than the fight! He is him for sure</p>
+<p>可能是目前唯一一个UFC roster里面walkout song 的时长比实际上比赛时间还长的fighter，这种“奇迹”或许也只会发生在HW，而想到Tom只有一次意外腿伤之外，他八次UFC胜利中有六次在第一回合中途终结对手，并以两分两秒的成绩保持着UFC最短平均比赛时间纪录。</p>
+</li>
+<li>
+<p>算是gentleman，人格上善良、诚实、聪明，物理身体上作为重量级手脚轻快，从小被父亲训练、英格兰，想到和Sonny 孙兴慜 (Son Heung-min)一样，家教算比较严格，彬彬有礼，诚实善良。家庭和谐完美，事业上也勤恳努力，真的少有缺点，可能不会太“张牙舞爪”，会没有那么幽默，实际上也比较幽默了。</p>
+</li>
+<li>
+<p>善良、诚实、聪明三者兼具，可以依靠</p>
+</li>
+</ul>
+<h1 id="取色值">取色值</h1>
+<ul>
+<li>颜色搭配，有时候取色设计也会耗点时间，常选比较舒服的颜色，莫兰迪……</li>
+<li>有时候有一系列搭配可以选，比如
+<ul>
+<li>有些名画配色，从世界著名的作品里面取出的主题色，如梵高的作品色系，达芬奇……</li>
+<li>之前用喜欢的球队的主题色系，如巴塞罗那、皇家马德里、曼城、PSG……</li>
+<li>最近看到有各rapper的</li>
+</ul>
+</li>
+</ul>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114862558547060&bvid=BV1z5u8zoEQy&cid=31085822891&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<h1 id="脱口秀">脱口秀</h1>
+<ul>
+<li>最早看国内脱口秀是小学随我爸晚上看《今晚80后脱口秀》了，按那个时候的作息，节目每次都是差不多午夜播出了，话题主要是近期社会议题什么的。上大学后一开始就去南京东路看过几次线下开放麦，庆幸那个时候看拼盘的票价便宜，一般都不到一百，还能看到最早期的”明星“拼盘的阵容，甚至在同一场里看到邱瑞、黑灯、杨波、南瓜等人……  所以在下线时候就稍微了解了部分comedian的背景、表达的赛道。</li>
+<li>那时候倒没大关注校内的社团，毕竟去观看表演应该都是免费的。直到最近在节目上看到些校友，其中一个甚至还是同级，LOL  网上甚至还可以查到学号……
+<ul>
+<li><a href="https://www.xiaoyuzhoufm.com/episode/6579d293991e2ee608c82cc5">Vol.7 对话于渤：同济毕业，国企工作，下班去喜剧联盒国讲段子</a></li>
+<li><a href="https://www.xiaoyuzhoufm.com/episode/658ace9520d779b49df09cfe">Vol.9 对话小穆&amp;小介：深扒同济脱口秀社团血泪史</a></li>
+<li><img src="https://p3.itc.cn/q_70/images03/20210503/29a44ccdce1847ab9cf89830aa775cf4.jpeg" alt="" loading="lazy"> <a href="https://www.sohu.com/a/464417111_712343">source:【开放麦】同话青春，济语百年 校园脱口秀大赛欢乐落幕! 2021-05-03 21:35</a></li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/07/21/92727ae5d00ec70c.png" alt="" loading="lazy"></figure>
+<hr>
+<p>Should believe youself, do something that can be proud of, and give uself props.</p>
+<p>Discipline is nothing but self-respect at the highest level.</p>
+<p>Consistency is More Important than Passion.</p>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E9%83%BD%E8%AF%B4%E9%BE%99%E5%9C%BA%E6%82%9F%E9%81%93">都说龙场悟道</a>
+<ul>
+<li><a href="#%E8%BF%99%E9%AC%BC%E5%A4%A9%E6%B0%94%E5%92%8C%E4%B8%80%E4%BA%9B%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3">这鬼天气和一些有的没的胡思乱想</a></li>
+</ul>
+</li>
+<li><a href="#the-very-last-dance">The very last dance</a></li>
+<li><a href="#historical-weekend">Historical Weekend</a>
+<ul>
+<li><a href="#ufc-318-morning-weigh-in-show">UFC 318: Morning Weigh-In Show</a></li>
+</ul>
+</li>
+<li><a href="#2025%E5%B9%B47%E6%9C%8819%E6%97%A5">2025年7月19日</a></li>
+<li><a href="#%E9%92%BB%E7%9F%B3%E8%90%BD%E5%B9%95-2025%E5%B9%B47%E6%9C%8820%E6%97%A5">钻石落幕  2025年7月20日</a></li>
+<li><a href="#tom">TOM</a></li>
+<li><a href="#%E5%8F%96%E8%89%B2%E5%80%BC">取色值</a></li>
+<li><a href="#%E8%84%B1%E5%8F%A3%E7%A7%80">脱口秀</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-318/">https://ezraknotlab.github.io/post/ekl-318/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-318/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-318/&sharesource=qzone&title=EKL 318&pics=https://ezraknotlab.github.io//images/avatar.png?v=1765383949270&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The very last dance&lt;/li&gt;
+&lt;li&gt;钻石落幕&lt;/li&gt;
+&lt;li&gt;TOM&lt;/li&gt;
+&lt;li&gt;取色值&lt;/li&gt;
+&lt;li&gt;脱口秀&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-318/&sharesource=weibo&title=EKL 318 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The very last dance&lt;/li&gt;
+&lt;li&gt;钻石落幕&lt;/li&gt;
+&lt;li&gt;TOM&lt;/li&gt;
+&lt;li&gt;取色值&lt;/li&gt;
+&lt;li&gt;脱口秀&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1765383949270 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-202550809/">
+                                                                                            EKL 202550809
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-202050710/">
+                                                                                                    EKL 202050710
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1765383949270);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

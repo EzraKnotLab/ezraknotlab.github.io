@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250519
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-05-19</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">15.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">2913</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/05/19/54dfe4a0facc0573.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Tom Aspinall</li>
+<li>Double champ status loading</li>
+<li>EKL Alma Mater 《离岛》 loading otw</li>
+<li>City💙</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#tom-aspinall">Tom Aspinall</a></li>
+<li><a href="#double-champ-status-loading">Double champ status loading</a></li>
+<li><a href="#ekl-alma-mater-%E7%A6%BB%E5%B2%9B-loading-otw">EKL Alma Mater 《离岛》 loading otw</a></li>
+<li><a href="#city">City💙</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+</p>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-luther-(HipHopKit.com).mp3"></audio></p>
+<p><mark>luther (feat. SZA) Kendrick Lamar</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">If this world were mine
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+Fah-fah, fah-fah-fah, fah-fah, fah
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+It's a vibe, do your dance, let 'em watch
+She a fan, he a flop, they just wanna kumbaya, nah
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+It go in (when you), out (ride it), do it real slow (slide)
+Baby, you a star, strike, pose
+When I'm (when you) with you (with me) everything goes (slow)
+Come and (put that) put that (on my) on my (titi) soul (soul)
+'Rari (red), crown (stack), wrist (stay) froze (really)
+Drip (tell me), pound (if you) on the way home (love me)
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+I can't lie
+I trust you, I love you, I won't waste your time
+I turn it off just so I can turn you on
+I'ma make you say it loud
+I'm not even trippin', I won't stress you out
+I might even settle down for you, I'ma show you I'm a pro
+I'ma take my time and turn it off
+Just so I can turn you on, baby
+
+Weekends, get it poppin' on the low
+Better days comin' for sure
+I know you're comin' for
+Better days
+
+If this world were mine
+</code></pre>
+</details>
+<h1 id="tom-aspinall">Tom Aspinall</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>经常和一个人谈话交流或者关注一个人的发言，会发现有部分观点对方会重复地多次表达，这是大脑对于世界形成的认识，call it “价值观”之类的。比如Tom Aspinall经常会表达说自己会fear，称重仪式上他这样说过，podcast里面他也这样说，两个二百多磅的重量级clash，通常会有一方unconcious, 被裁判分开。所以风险总会在的，说自己不害怕的人要不是傻，要不就是在说谎。重要的是二百多磅的重量级的男人，okay to say I'm feared.</p>
+</li>
+<li>
+<p>像之前Paddy说的， A man can cry, say something. 除了这种对于男人tough的印象要求的“言论”， 还有一些方面，比如穿衣服。之前有一次答辩是在秋天，我还有球队那种薄围脖在身上，有个男JS说我好奇今天天气还OK，你不热吗？我没回复。像是很多人在将近下班时候的下午看到有人穿还相对厚的衣服，明明天气气温不低，可能会觉得对方是weirdo， idiot，但事实上很可能他只是早出晚归，在外看到的没阳光的时间比你多而已，也或许比你更加艰苦奋斗，next time, see everything but say nothing. STFU</p>
+</li>
+<li>
+<p>Tom 在11 November 2023成为IC，马上要两年了，统一战还没有被提上日程，而Islam因为升重要vacate title, 如果这样的话，还不如大家多几个IC，人人都是冠军岂不是皆大欢喜。Glory就在于champ是独一无二至上的存在，如果像boxing一样，WBC IBC等一堆belt，含金量大打折扣。</p>
+</li>
+<li>
+<p>在听Tom Aspinall 的walkout，第一首当然是曼市supersonic - oasis city fan; 第二首是<br>
+move on up by Curtis mayfield，旋律那么熟悉，但是想不起来是什么，最后找到后发现是Kanye Touch the Sky (feat. Lupe Fiasco)中采样过，采样的意义就是让经典不断新生，legends never die</p>
+</li>
+<li>
+<p>大都市的球会都会有种特色，像是巴塞罗那之于西班牙人，皇家马德里之于马德里竞技，曼联之于曼城…… 前者俱乐部都较与后者有着更为华丽的冠军底蕴和辉煌的历史， 因此国际化更强，fan中国际化比例多，但是相较之下本地人更favor后者球队，本地人在后者俱乐部中占比更高。</p>
+</li>
+</ul>
+<h1 id="double-champ-status-loading">Double champ status loading</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Ali说Islam可能会在Perth夺第二条腰带，不仅如此，有可能真的会两场Russia VS Australia冠军战，也有可能在阿布扎比，或者每年十一月的MSG。 MSG像是MMA BOXING的Mecca，Goat在这里登上王座或者成“神”登宵，从Ali到Tyson，再到GSP， Jon Jones。更不用说其他运动在这里所创造下的历史。</li>
+</ul>
+<hr>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.70clacks.co/uploads/new/music/2024/09/Future-Red-Leather-Ft-Metro-Boomin-J-Cole-(HipHopKit.com).mp3"></audio></p>
+<blockquote>
+<p>Cozy vibe # J.Cole</p>
+</blockquote>
+<p><mark>Future – Red Leather Ft Metro Boomin &amp; J. Cole</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">So you thinkin' that you gon', I ain't gon'
+Speak from my heart, you know what I'm sayin'?
+I'm one thousand
+Yeah
+
+I done turned a dancer to a trophy
+I done balled with rings like Kobe
+Never send a tweet with emotions, uh
+She heard I sip lean, she got emotional
+Codeine got my heart like opium
+I can feel her heart beatin' when I'm huggin' her
+Take me back to Kingston to see my ancestors
+Pissin' on your grave in some red leather
+
+Turbo Panamera, the seat bird feathers
+Keep light on mе like Carmelo
+Don't lie to mе, I'm on God levels
+Forever's not long enough
+If it's endless, what we doin'?
+Either you a rebel or what we doin'?
+Toast codeine, trap stars, what we doin'?
+A few remain nameless deserve my dedication
+I just want my movement like Larry Davis
+Came from Amsterdam, had my head up
+Screenshot bitches got me fed up
+Playin' with the white for green like a Celtic
+She ain't tryna share me, she thinkin' selfish
+I just bought my young bitch some new Rosettas
+Went to Tokyo, I had to hit the ghetto
+Like to kick it with her 'cause she play soccer
+Introduced her to some goons, nigga, and some robbers
+Now she want that Bentayga and it's obvious
+Real patience for them big faces and I got it
+Still faded from the last night off molly
+The ones work at Magic, work at Follies
+I just left Onyx and caught a body
+Fuck your wife at the back of King of Diamonds
+Turn me on, she don't care I put my thumb in
+Leave me all alone, I'm throwin' a party
+How I'm gon' have commitment in this world of sin?
+Try my best to love you in this world we in
+Take another look at every foreign I'm in
+End up with the bitches that I started with
+I must've been on a pill when I recorded this
+Had the stick in my hand while I was typin' it
+I know I'm arrogant, but don't be trifling
+I iced out you once and you got iced again
+These guitars sound like Parliament
+I just blowed a check, baby, pardon me
+All-black trim, dark burgundy
+Keep it real with me, no perjury
+Put them bags on her arm like weighed sand
+Saks Fifth Avenue, she ran through eighty bands
+Got your passport ready, we some aliens
+Got my transporter up out my radius
+Got my transporter, whip Mercedes-Benz
+I could never give up on what we had
+Abracadabra, make my side bitch better
+Chanel trench, pussy taste like pineapple
+I'ma stay down with you, but don't give me a headache
+Lifestyle's radical, please excuse the medies
+California housing, gettin' better with my veggies
+Audemars, Richard Mille came in a FedEx
+Smash her like a grudge that I ain't never gettin' deaded
+Sippin' on mud while I'm lookin' at my presi'
+Presidential tints in the back, I done made it
+Bitch, you better stay on your shit, you gettin' graded
+Take you to a spa in Saint Barts, is you ready?
+Whip the double-R with the stars in the headrest
+Caught up with these broads, baby, did I change the address?
+Times got hard and I fucked off your lashes
+Everything real, I got my gold veneers added
+Motherfuckin' addict, but I will rock a Patek
+If your love was a drug, maybe it would be acid
+I know I lost your trust, but I made you relapse
+I gotta be on a pill to tell you how I'm feelin'
+I tippy-toe and I dance with the devil
+I'll take a whole boat out to Bahamas
+Shawty ride for a real one like a gunner
+
+I done turned a dancer to a trophy
+I done balled with rings like Kobe
+Never send a tweet with emotions, uh
+She heard I sip lean, she got emotional
+Codeine got my heart like opium
+I can feel her heart beatin' when I'm huggin' her
+Take me back to Kingston to see my ancestors
+Pissin' on your grave in some red leather
+Pissin' on your grave in some red leather
+
+Forever's not long enough
+If it's endless, what we doin'?
+Toast codeine, trap stars, what we doin'? (Yeah)
+
+Pluto got twenty girlfriends, damn, I'm doin' it wrong
+Cut off all my hoes, now I'm only puttin' you in a song
+Day one, shawty been with me from the playground
+Hey now, baby, that's the reason I was playin' 'round
+Runnin' like a chicken with his head cut off
+Through the streets where the freaks love the red leather
+On my shoulder blades, in my older age
+See the error of my ways, but I'm still not totally over all the temptation
+Why does sin give you all the sensation?
+Yeah, I'm with Future up in Onyx just wastin'
+A lot of money on a stripper education
+Throw so much paper that we causin' the inflation
+Now it's late and I'm gettin' impatient
+Might run a train on a bitch, Penn Station
+Nah, I'm playin', I'm just lit, gettin' wasted
+And she whisper in my ear she wanna taste it
+Damn, you makin' it hard for me
+But I'm stayin' strong, I got authority
+Willpower, when I dub a baddie, I feel power
+Me and Astro six-foot-four, we the Twin Towers
+Twin Glocks with the switch piece that extend shots
+It's a metaphor for the boy when you in proximity
+I can't stop right now, they gon' remember me forever
+My story's more clever, my similes was better
+My energy was never on some toughest nigga shit
+I was just a conscious rapper that would fuck a nigga bitch
+I was just a college nigga from a rougher premises
+Kept my nose out the streets, but I love to get a whiff
+Of the action, with risk comes attraction
+The blicks get to blastin', I turn into a track star
+Wanted all the hoes, what the fuck you think I rap for?
+I been tryna slang the same wood since Hacksaw
+Jim Duggan, runnin' through the Ville in my Timbs, thuggin'
+Now I'm with Young Metro in the VIP, bitch, it's incomin'
+Coppin' all this liquor for these hoes like we McLovin
+Thinkin' to myself: Could I really be with one woman?
+Hmm, I think so
+But it's hard when you with your dogs at the freak show
+Thinkin' I could bag Rubi Rose with a keystroke
+Ego, ask yourself is that gon' bring you peace, though?
+
+(Shit, I don't know)
+Forever's not long enough
+If it's endless, what we doin'?
+Either you a rebel, what we doin'?
+Toast codeine, trap stars, what we doin'?
+</code></pre>
+</details>
+<hr>
+<h1 id="ekl-alma-mater-离岛-loading-otw">EKL Alma Mater 《离岛》 loading otw</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>可能是这几个月听cozy vibe music比较多，像是lofi，作背景来提高生产力，enjoy peaceful mind</p>
+</li>
+<li>
+<p>包括IG上一些code， study， reading的vibe ：<img src="https://s3.bmp.ovh/imgs/2025/05/19/42ef9a3ccdd0098e.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>从听music，即使是Future – Red Leather Ft Metro Boomin &amp; J. Cole这种rap music 的 style，到看书，主要都是日本，群岛，以及其他国家，北非，南美，东欧，西亚……feeling relaxed and happy  从前面的巴尔干半岛的<a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/">EKL Alma Mater 《血与蜜之地》</a>到日本的<a href="https://ezraknotlab.github.io/post/ekl-alma-mater-wai-de-huo-fa-greatergreater/">EKL Alma Mater 《格外的活法》</a>再到各地都有的<a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslesske/">EKL Alma Mater 《可能的世界》</a>，还有相关主题的podcast。再到最近再叙Momodou，聊了聊近况，以后，以及新的life style，Bright Days Ahead！</p>
+</li>
+<li>
+<p>最近在读《离岛》，离岛，指远离本土的、隔绝 于世的岛屿。日本不止是东京、京都、大阪、北海道……日本有400多个有人的离岛。每200个日本人之中，就有一个生活在离岛。</p>
+<ul>
+<li>作者库索的评论<a href="https://book.douban.com/review/15763466/">离岛是人类的困境，离岛是人类的未来</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://book.douban.com/subject/36754484/">No.7 豆瓣2024年度中国文学（非小说类）—— 离岛</a></p>
+</li>
+</ul>
+<h1 id="city">City💙</h1>
+<p><a href="#toc">↩️</a><br>
+FA Cup loss<br>
+Crystal Palace 1 Full-time 0 Man City    Sat, May 17</p>
+<ul>
+<li>开局先丢一个，比分保持到了终场CP举起奖杯。</li>
+<li>上半场有BS获得一个点球，以为会是KDB老队长来罚点，毕竟是他的最后一次代表ManCity的决赛，实际上是Haaland拿球给了Omar Marmoush ，大家都退到禁区外，但是主裁迟迟不吹响口中的哨子，我看着他站在十二码点前面，甚至有些尴尬，脸上表情也甚是复杂，我第六感简直太强了  每次感觉要丢点球的时候都丢了    观察微表情  不自信大多就没了</li>
+<li>新买了下赛季的球衣，官方新在微信开的店，会员7折，折后将近400￥，往年都是将近600的光版原价购买，每年一件，仅一件里面沉淀着一年的事件记录…… Go get another one.<br>
+<img src="https://s3.bmp.ovh/imgs/2025/05/19/54dfe4a0facc0573.png" alt="" loading="lazy"></li>
+<li>快递外包装上就有logo</li>
+</ul>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>No, Sir~</li>
+</ul>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#tom-aspinall">Tom Aspinall</a></li>
+<li><a href="#double-champ-status-loading">Double champ status loading</a></li>
+<li><a href="#ekl-alma-mater-%E7%A6%BB%E5%B2%9B-loading-otw">EKL Alma Mater 《离岛》 loading otw</a></li>
+<li><a href="#city">City💙</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250519/">https://ezraknotlab.github.io/post/ekl-20250519/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250519/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250519/&sharesource=qzone&title=EKL 20250519&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tom Aspinall&lt;/li&gt;
+&lt;li&gt;Double champ status loading&lt;/li&gt;
+&lt;li&gt;EKL Alma Mater 《离岛》 loading otw&lt;/li&gt;
+&lt;li&gt;City💙&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250519/&sharesource=weibo&title=EKL 20250519 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tom Aspinall&lt;/li&gt;
+&lt;li&gt;Double champ status loading&lt;/li&gt;
+&lt;li&gt;EKL Alma Mater 《离岛》 loading otw&lt;/li&gt;
+&lt;li&gt;City💙&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20250528/">
+                                                                                            EKL 20250528  bich Sit down
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-315-1/">
+                                                                                                    EKL 315
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

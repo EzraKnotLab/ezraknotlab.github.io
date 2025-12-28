@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20241205 Crazy-ass Card  
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-12-05</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">6.7
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1233</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/12/05/6682077bdd99dc7c.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Chrome标签页的群组管理</li>
+<li>GOAT just from features</li>
+<li>Crazy-ass Card UFC 311</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#chrome%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E7%BE%A4%E7%BB%84%E7%AE%A1%E7%90%86">Chrome标签页的群组管理</a></li>
+<li><a href="#the-goat-just-from-features">the GOAT just from features</a></li>
+<li><a href="#crazy-ass-card-ufc-311">Crazy-ass Card  UFC 311</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/TitQZDJmaTVRTzZNT0h0TTNvVFRzaFRqVk9qY1lMSm9RYkh1dHIrMDVGMytSUldtckZoanM0bUZ1ZktYZC96Y1VROFdrR1J0Q0JxVU4zdVpPRlgwUERwTHo1RjV0RmZvaVlGd3BQci9sMUk9/J._Cole_Bas_Central_Cee_Might_Delete_Later_-_H.Y.B._(Hydr0.org).mp3"></audio></p>
+<p><mark>J. Cole – H.Y.B. Ft Bas &amp; Central Cee</mark><br>
+<mark>Hide your bitch, hide your wife</mark><br>
+<mark>My career in a nutshell, these bums never did nothin' but fail</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+Listen, baby
+I've got news
+I've got bad news for you
+And we ball like TNT, watch these hoes all pick a side
+Bitches flock like TMZ everytime we come outside
+Called a Uber SUV, how many gon' fit inside? Yeah
+Hide your bitch, hide your wife, yeah
+Bagged your bitch in my slide, yeah
+Pray the dogs never die, yeah
+42 come alive, yeah
+Hide your bitch, hide your wife
+I'm allergic to cap
+I can't hear these niggas rap without an EpiPen
+You'll never see me in Giuseppe
+I find 'em tacky, look what I'm stepping in
+Some shit I designed, but Italians callin' 'em Indy 5000s
+Or maybe 500
+I kick the door down, if I want it and niggas won't let me in (let me in), uh
+My career in a nutshell, these bums never did nothin' but fail
+They gon' see I'm the one when the dust settles
+They gon' see I'm the one
+A-B-C-D-E-F-G, H-I-J-K, mm, M-N-O-P
+That's little me in the classroom askin': What's L?, uh
+I never been known to take those
+Your girl saw me and her face froze
+You better be lucky I'm faithful
+Please test me, I ace those
+My money been growin' like eight fold, uh
+You know how I hate goals
+I can't tell if they turning green from the envy
+Or is it the fake gold? (Uh)
+I move through the street one deep, I keep forgettin' I'm J. Cole
+I feel like a regular nigga, I just got a very irregular bankroll
+Word to Puma, I've been gettin' Pesos
+My account like the end of a rainbow
+Everytime that I spit it's a flame throw
+Me, Bas, and Central is NATO
+And we ball like TNT, watch these hoes all pick a side
+Bitches flock like TMZ everytime we come outside
+Called a Uber SUV, how many gon' fit inside? Yeah
+Hide your bitch, hide your wife, yeah (skrrt)
+Bagged your bitch in my slide, yeah
+Pray the dogs never die, yeah
+42 come alive, yeah
+Hide your bitch, hide your wife
+Lord forgive me as I'm a sinner
+The way that I live, I'm preparing for hell
+I don't know why you're mad, you should probably thank me
+'Cause I been airin' your girl
+If I get some top, we can take the chase, 'cause we know the area well
+Thank God I'm not far off a 100 Ms
+I gotta thank Ron Perry as well
+I don't even know why they stepped in the ring
+A few seconds in and they're throwin' the towel in
+When we pull into the town
+Neighbours sayin': How the hell they get them houses?
+Now I'm in some different locations
+I don't even know how to pronounce them
+Award shows, I bring my pouch in, I ain't even pullin' out my
+I can't get packed by TMZ, tryna fit for things in the G63
+I'ma give one thing to my bro YG
+I'ma handle the rest and jeet all three
+The back so big and we all gassed up
+How the fuck did she fit in them Diesel jeans?
+I can't compete 'cause they ain't in my league
+Oh, please, it ain't even a equal beef
+At least hit man in the abdominal, bro
+It don't even count if below the knee
+Block life, chillin' with a horrible ho
+She gonna get down and blow the team
+Me and the guys was borrowing clothes
+Like: Bro, let me hold that coat this week
+Now it's after hours, I've shutdown Harrods
+I bring out the AmEx and go on a spree
+And we ball like TNT, watch these hoes all pick a side
+Bitches flock like TMZ everytime we come outside
+Called a Uber SUV, how many gon' fit inside? Yeah
+Hide your bitch, hide your wife, yeah
+Bagged your bitch in my slide, yeah
+Pray the dogs never die, yeah
+42 come alive, yeah
+Hide your bitch, hide your wife
+
+</code></pre>
+</details>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113598563093233&bvid=BV1PziXY9Esg&cid=27188330936&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<ul>
+<li>DC小女儿小小的棺材</li>
+</ul>
+<h2 id="chrome标签页的群组管理">Chrome标签页的群组管理</h2>
+<p><a href="#toc">↩️</a><br>
+很久没有使用过Chrome的群组管理标签页了，上一次可能两三年前了，这个功能很简单，将打开的标签页进行分类管理到一起，很适合拖延症，就是某种“稍后阅读”的功能，这种功能大多数只是收藏，事后很少打开。之后渐渐不再使用这个功能，原因很明显，Chrome是电脑上偷吃内存最大的应用程序，尽管Chrome优化之后说明了未使用的标签直到使用时候才会被唤醒，不会消耗很多内存，事实上打开任务管理器，不论何时Chrome都是高居第一……所以以后就不再这样囤标签页，有事速战速决，完成不了也要关闭标签页，等到下次工作时候再找到重新打开。</p>
+<h2 id="the-goat-just-from-features">the GOAT just from features</h2>
+<p><a href="#toc">↩️</a><br>
+Funny how the way people trust and treat words today. 从jcole的ladies and gentlemen that gotta to end，到Lives Matter，再到enough is enough，好像这也像日常用语的某种词汇贬值，女生闺蜜之间的爱你是再见的意思， interesting.</p>
+<h2 id="crazy-ass-card-ufc-311">Crazy-ass Card  UFC 311</h2>
+<p><a href="#toc">↩️</a><br>
+First PPV of 2025 is a BANGER 🔥</p>
+<p>@MAKHACHEVMMA  vs @ArmanUFC  2<br>
+@MerabDvalishvil  vs  @UNmgdv</p>
+<ul>
+<li>LW被广泛认为最受关注度的量级，P4P King再战Arman，两个年轻人山顶出发时相遇，下次又将山顶相见。</li>
+<li>Umar同样得到title shot，Khabib调侃一晚上要连着两个冠军战边角，LOL</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dana White really cooked with this Los Angeles card on January 18th 😮‍💨 <a href="https://twitter.com/hashtag/UFC311?src=hash&amp;ref_src=twsrc%5Etfw">#UFC311</a> <a href="https://t.co/Ie6rp37DoA">pic.twitter.com/Ie6rp37DoA</a></p>&mdash; Happy Punch (@HappyPunch) <a href="https://twitter.com/HappyPunch/status/1864489657397891557?ref_src=twsrc%5Etfw">December 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">First PPV of 2025 is a BANGER 🔥<a href="https://twitter.com/MAKHACHEVMMA?ref_src=twsrc%5Etfw">@MAKHACHEVMMA</a> vs <a href="https://twitter.com/ArmanUfc?ref_src=twsrc%5Etfw">@ArmanUFC</a> 2<a href="https://twitter.com/MerabDvalishvil?ref_src=twsrc%5Etfw">@MerabDvalishvil</a> vs <a href="https://twitter.com/UNmgdv?ref_src=twsrc%5Etfw">@UNmgdv</a> <a href="https://twitter.com/hashtag/UFC311?src=hash&amp;ref_src=twsrc%5Etfw">#UFC311</a> at the <a href="https://twitter.com/IntuitDome?ref_src=twsrc%5Etfw">@IntuitDome</a> | 🎟️: <a href="https://t.co/dX45J0Cwpw">https://t.co/dX45J0Cwpw</a> <a href="https://t.co/QE3Evz1uQr">pic.twitter.com/QE3Evz1uQr</a></p>&mdash; UFC (@ufc) <a href="https://twitter.com/ufc/status/1864474176905416709?ref_src=twsrc%5Etfw">December 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#chrome%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E7%BE%A4%E7%BB%84%E7%AE%A1%E7%90%86">Chrome标签页的群组管理</a></li>
+<li><a href="#the-goat-just-from-features">the GOAT just from features</a></li>
+<li><a href="#crazy-ass-card-ufc-311">Crazy-ass Card  UFC 311</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20241205/">https://ezraknotlab.github.io/post/ekl-20241205/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20241205/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20241205/&sharesource=qzone&title=EKL 20241205 Crazy-ass Card  &pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chrome标签页的群组管理&lt;/li&gt;
+&lt;li&gt;GOAT just from features&lt;/li&gt;
+&lt;li&gt;Crazy-ass Card UFC 311&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20241205/&sharesource=weibo&title=EKL 20241205 Crazy-ass Card   + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chrome标签页的群组管理&lt;/li&gt;
+&lt;li&gt;GOAT just from features&lt;/li&gt;
+&lt;li&gt;Crazy-ass Card UFC 311&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-310/">
+                                                                                            EKL 310 &amp; AFC West champions
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20241203/">
+                                                                                                    EKL 20241203-The Party Never Ends
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

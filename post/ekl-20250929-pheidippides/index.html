@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 320 Pheidippides
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-10-05</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">28.3
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7079</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/10/02/8969cc1c199206d6.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h1 id="keywords">Keywords</h1>
+<ul>
+<li>Half M</li>
+<li>Bad Bunny</li>
+<li>Jane Goodall</li>
+<li>El getaway</li>
+</ul>
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li><a href="#keywords">Keywords</a></li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#harry-styles-sub-3">Harry Style's sub 3</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%8F%AF%E9%9D%A0%E7%9A%84%E5%A4%AA%E5%A4%9A%E4%BA%86-%E5%83%8F%E5%BE%B7%E5%9B%BD%E4%BA%BA%E4%B8%80%E6%A0%B7%E4%B8%A5%E8%B0%A8">数据不可靠的太多了 像德国人一样严谨</a>
+<ul>
+<li><a href="#fireboy">Fireboy</a></li>
+</ul>
+</li>
+<li><a href="#will-ai-save-humanity-or-end-it-with-mustafa-suleyman">Will AI Save Humanity or End It? with Mustafa Suleyman</a></li>
+<li><a href="#bad-bunny-%E5%9D%8F%E7%97%9E%E5%85%94">Bad Bunny (坏痞兔)</a></li>
+<li><a href="#jane-goodall">Jane Goodall</a></li>
+<li><a href="#el-getaway">El getaway</a></li>
+<li><a href="#one-liner">one-liner</a></li>
+<li><a href="#ufc-320">UFC 320</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://cs1.mp3.pm/download/225743841/QmExQjAvejFXSnRBTzNhUjNKeHdrWWcxNUdydUd6cjVNK2dpTVN0bjdnZHIxaER6V2h4b1BleTdtb3ZRMldUT0RBR2l3TUVzWkhFeDgyL0Z2ZitUeWc0dHdMUjlZZGdsd25zd3VSZ29NTmZTbUJVUGVQK3RVOS93TnE1ZXVrMGY/BIA_-_LONDON_Feat._J._Cole_(mp3.pm).mp3"></audio></p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/london/1617656020"></iframe>
+<p><mark>BIA – LONDON Ft. J. Cole</mark></p>
+<p><mark>We see a opp, it's G-code, we blow his top, now he's volcanic</mark></p>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/01/22/307f3c625bd62698.png" alt="" loading="lazy"></figure>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">I'm in London, I like to go shop at the mall (yeah)
+Shop at the store, shop in the—, ah, ah (yeah)
+(Aziz, Aziz)
+BIA, BIA, yeah (buss)
+Yeah
+
+I'm in London, I like to go and shop at the mall
+Shop at the Prada, shop at the store
+Shop in the tropics, stop at Dior (ah, ah)
+Louis Vuitton cover my toes
+Throw on my trousers, look at my bricks
+These are my tennis, look at my shoes (look at my shoes)
+Chrome Heart socks in sandals
+Mans outside in Crocs in shambles (damn)
+Please quick talk, no ramble
+Soon as they send their bread, I cancel, ooh (ah, ah)
+I like to tango, twistin' and tangle, testin' the angles
+Up in the bank though, I got the same goals
+You with the same hoes, I like the bankroll
+(Boo-boo-boo-boo)
+
+Pricey, pricey, pricey, he wanna fuck 'cause I'm icy (ah, ah)
+He never met no one like me
+It's pretty funny how now they all like me, innit?
+This ain't rented straight from the plane I boarded
+Maybe you can't afford it
+I'm with my dawgs and we out in Shoreditch (go, go)
+Shoreditch, Shoreditch, Shoreditch
+You got a shortage on your funds
+And I got a long clip on my guns
+Sounds like fun, I got no shortage, I'm no bum
+Reach for my pearls, and, you done
+Reach for the purses (big bankroll, bitch)
+Wearing designer, I'm in the future
+I got a future, I'm in a new truck
+I'm in the booth, yeah, drinkin' kombucha (boom, boom, boom, boom)
+Singin' with Smiley, speak of me highly
+Tryna go Kylie, I woke up finally, suffer in silence, wakin' up violent
+Checkin' the finance, choosin' the finest
+That's the environment, I'm 'bout to time it
+I bought a Timex, AP, ooh, I'm checkin' my timin', ooh (ah, ah)
+Cleanin' my watch, cleanin' the top (Ah, ah, ah)
+Gettin' my job, I got a job
+Kick game, kick game, kick game, Jumpman
+Nike, Nike, very good check, they like me (cash)
+Mans tell me he like me, he wanna fuck me, very likely (yes, haha)
+Can't even honor it, man
+(I think that's true, I think that's true)
+BIA, BIA, yeah
+
+I'm in London, I like to go and shop at the mall
+Shop at the Prada, shop at the store
+Shop in the tropics, stop at Dior (ah, ah)
+Louis Vuitton cover my toes
+Throw on my trousers, look at my bricks
+These are my tennis, look at my shoes (look at my shoes)
+Chrome Heart socks in sandals
+Mans outside in Crocs in shambles (damn)
+Please quick talk, no ramble
+Soon as they send their bread, I cancel, ooh (ah, ah)
+I like to tango, twistin' and tangle, testin' the angles
+(They absolutely adore me in London)
+Up in the bank though, I got the same goals
+You with the same hoes, I like the bankroll
+
+Plane just landed, Heathrow, hop off the G4 standard
+We see a opp, it's G-code, we blow his top, now he's volcanic
+Please don't panic over my lingo, both of my feet so planted
+Gold weddin' ring on my finger, but yet I'm still killin' 'em single handed
+Drum on the gun like I'm Ringo
+I'm in this bitch with no chain like I'm Django
+We from the ends where they know that they can't go
+She go both ways so I'm tastin' the rainbow
+Yummy, they got no more bread, they're crummy
+The same way that Melo was starin' at Rih is the way that I stare at the money
+I'm ready to risk it all if I lift it, bet I won't miss it, you a statistic
+Thought shit was sweet till we popped up and popped off the top of your mystic
+I go ballistic
+Hopped out the drop, got the drop on an opp, now I'm opportunistic
+I like to shop in the District
+Coppin' this, coppin' that, I'm proper capitalistic, uh
+Dreamer, Dreamer runnin' the game in my signature trainers
+Balenciaga for joggers, I might just wear Crocs at the O2 arena
+Splendid, got no limits, should have a tank on my pendant
+Blokes goin' broke tryna keep up with Cole, but I make it back soon as I spend it
+Maybach tinted: Scuse me, sir, but ain't that rented?
+I'm offended, straight cash for my Benzes, we don't pay back interest
+Aim at fences when I swing, pay respects and kiss my ring
+Even Elizabeth said I'm king, haha (well, he's bloody well right, isn't he? Haha)
+Why would I choose between this one or that one
+When I know that I can have both?
+I laugh at these rappers for cappin'
+I guess TIP ain't the only one out here with jokes
+Mans don't want smoke
+(I just don't understand
+I don't even think they should be allowed to breathe the same air as him if you asked me)
+
+I'm in London, I like to go and shop at the mall
+Shop at the Prada, shop at the store
+Shop in the tropics, stop at Dior (ah)
+
+
+
+</code></pre>
+</details>
+<hr>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Ousmane Dembélé获得了今年的金球奖，可以说是毫无悬念了。从当初在巴萨熬夜打游戏早上训练迟到的青涩小年轻，因为不职业的行为而坐板凳上，印象中有两个大失误，第一个是安菲尔德奇迹前的first leg at Camp Nou, 三比零领先的情况下第四球没有推进，机会是Leo给创造的。然后在2022世界杯上总决赛输给了Argentina，有机会浪费…… 但是都还好，在那之后重建的路上也能挑大梁，从刚一开始来就是无逆足的怪物，左右脚均衡，射术也还算精湛，突破能力强，转会PSG后刮起青年风暴，终成正果，实至名归。名字分析也很有意思，明显的法国籍阿拉伯语来源与西非根源。奥巴梅杨早期和登贝莱一起在多特，后面在barca汇合。 #talent</li>
+<li>之前写过想起来了  忙碌时候的状态  很久不刷新的社交媒体会有大量推送的post涌出   还有另一个   你甚至会边走路边穿外套</li>
+</ul>
+<h2 id="harry-styles-sub-3">Harry Style's sub 3</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DO7TYnaj53Z/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DO7TYnaj53Z/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DO7TYnaj53Z/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">The Running Week (@therunningweek) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/10/02/4812a2e47ff10ec4.jpg" alt="" loading="lazy"></figure>
+<h2 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>有时候重复造轮子是有必要的  因为你不知道前人造的轮子质量好不好  有时候甚至你不确定前人造的是不是轮子</p>
+</li>
+<li>
+<p>成核和生长；  打炮枪口方向 和子弹，  韵母和声母</p>
+</li>
+<li>
+<p>SEIrunning 、人生都很像， 28原理 ， 一说前面几圈百分之二十就决定所有之后的level， 但也有说后面是个动态更新的过程  同样重要。</p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/0GfH4DZjw9_UVaUAGvg1ng">走过“科学大爆炸”，科学突破性正在递减？|《自然》长文</a></p>
+<ul>
+<li>虽然关于如何衡量突破和创新的辩论仍在继续，但新产生的共识似乎是科学创新确实变难了。</li>
+<li>这里的一个主要论点是，经济生产力的增长——最终由创新和新技术驱动——几十年来一直在富裕国家呈下降趋势。比如，经济学家Robert Gordon在他2016年的《美国增长的起落》（The Rise and Fall of American Growth ）一书中指出，20世纪所经历的快速发展的时代——得益于一次性的技术升级，如汽车、抽水马桶和电灯——已经结束了。</li>
+<li>如果科学的投入回报比确实在缩小，那么，需要责怪的对象有很多。</li>
+<li>最明显的一点——正如研究人员在邮件中告诉Funk的那样——是科研人员如今被写基金、行政任务和教学搞得分身乏术，让他们没有时间进行原创性思考。一项荷兰研究发现，荷兰大学的全职教授用于科研的时间只占20%不到。</li>
+<li>与半个世纪前相比，现代研究人员因为学术职业和研究经费的刻板架构，选择一条不寻常路的自由比以前少了很多，剑桥大学的科学史学家Patricia Fara说。沃森和克里克在努力发现著名的DNA结构时，实际上放弃了他们还没完成的博士学位，她说，“如果他们现在敢逃走，就像他们当时脱离主要研究项目好几个月那样，他们就完蛋了。”她说。另一个可能解释是，在极大的发表压力下，研究人员只能“切香肠”，把一个想法平摊到更多论文中去，使每篇论文的突破性或创新性变小了。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/-rGJjOlRTDQhJrbCIvygZw">污染大？易爆炸？为什么电动汽车的黑锅这么多？</a></p>
+</li>
+<li>
+<p>晚上做梦就像2021 2022那时候的Midjourney一样  毫无逻辑的画面和故事的发展   离奇但是又有点上头的味道</p>
+</li>
+<li>
+<p>梦到和朋友轻实战 戴上glovesboxing还行  有模有样  stance也能切换  然后转入地面上位膝盖施加压力还能把对方submit了   但是大脑渲染这一切画面太耗CPU了 然后就画面中断梦戛然而止</p>
+</li>
+<li>
+<p>最近梦到的内容都很有意思  要不就是已经计划的事情在梦里提前发生 要不就是奇奇怪怪的名人闯了进来，梦到和余华聊现在的流媒体</p>
+</li>
+<li>
+<p>阅读<a href="https://wangyurui.com/posts/zai-du-mao-xuan-lun-chi-jiu-zhan-972544e3">再读毛选：《论持久战》</a> 感叹伟人远见卓识，少有人就算有足够年岁阅历都难有这般分析、判断能力和豪迈心胸和勇气。</p>
+<ul>
+<li>自1937年卢沟桥事变后，日军迅速攻占北平、天津、上海等重要城市。彼时，国内既弥漫着“亡国论”的消极情绪，也因平型关、台儿庄等战役的胜利而滋生了盲目乐观的“速胜论”。与此同时，党内分歧和国际压力也日益加剧。共产国际代表王明主张“一切服从统一战线”，反对毛泽东坚持的独立自主、持久抗战的思想，激起党内政治风波。国际上，由于日军攻势迅猛，对华援助严重不足，中国面临被孤立的困境。</li>
+<li>在这种复杂局势下，1938年5月，毛泽东在延安凤凰山脚下的窑洞中“闭关”九天九夜，反复修改文稿，最终完成了五万余字的演讲稿，这便是《论持久战》的初稿，脱稿后毛泽东已筋疲力尽。</li>
+</ul>
+</li>
+<li>
+<p>还有一些 dick head，非要在校园里乱改通行道路，跟幼儿园一样，今天这段路要改单行道，明天一半单行一般正常但中间有分隔，迫使人在左转之后必须逆行与来往车辆共享半个通道，别说拍脑袋想出来的设计。今天停车场入口栏杆工作了，明天就是摆设，要不就是直接关了。还有那种开车停到路口中间不知往哪走的，也有停到路口上下人的，而且你可能会在同一天看到这些，还有左转打右转向灯的，走到路口毫无预见地左转而去，逆行和路口加油门的就更为常见了，常见到嘴里叼着烟的就是保安，吃饭时候四五个逆行并排的，闲着没事重置停的自行车电动车位置的……坐门口文件夹盒子一挡玩手机的。</p>
+</li>
+<li>
+<p>很早之前就觉得当下的很多 podcasts本质就是圆桌对谈（比如圆桌派这种形式），越来越趋同，很多前些年在Spotify上现在都也在Youtube上post出视频版，JRE还有whats now……都是邀请不同嘉宾进行价值传递输出学习，涉及到不同领域话题、认知壁垒。但是涉及到语言的艺术，左右逢源 总需要将辛辣讽刺说成友善提醒的样子，一句话 类似的观点表达形式的不同会导致完全不同的效果</p>
+</li>
+</ul>
+<h1 id="数据不可靠的太多了-像德国人一样严谨">数据不可靠的太多了 像德国人一样严谨</h1>
+<ul>
+<li><a href="https://www.munich-business-school.de/insights/en/2024/stereotypes-or-reality-the-truth-about-the-germans/">Stereotypes or Reality? The truth about the Germans</a></li>
+</ul>
+<p>想起来偶尔看过一次吴浩然的直播切片，到最后阶段，感激之情总是油然而生，感谢此时此刻自己能够健康，有时间安排的权力，能够踏上这段旅程，平安地做自己所热爱的事，世间最大的幸福也莫过于此。</p>
+<h2 id="fireboy">Fireboy</h2>
+<p><a href="#toc">↩️</a></p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/peace-by-piece-ep/1835546949"></iframe>
+<ul>
+<li>stereotype就是自然进化的躯体、大脑综合系统对于所经历事物的聚类分析，建模拟合，从大数据中提出主成分，过滤了次要信息之后所记忆的主要信息，然后形成网络。</li>
+<li>Fireboy DML (Nigerian singer-songwriter)和Pharrell Williams (American singer and songwriter) 就是已经形成的两团神经网络，古典轻快欢乐的前奏一出来，即使菲董名字没有在主唱或者feature的位置显示出来，我都确信这type就是他设计的，刨一刨credits果然就是。Fireboy DML在2020s之后，异域异军突起，非洲大陆流出的一股清流，虽然人们大部分还是住在Nigeria城区什么的，但是轻快的节奏让人产生那片大陆上广袤草地、高山峡谷、野生动物的无限遐想，总是快乐美好和充满希望。</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/peace-by-piece-ep/1835546949"></iframe>
+<h1 id="will-ai-save-humanity-or-end-it-with-mustafa-suleyman">Will AI Save Humanity or End It? with Mustafa Suleyman</h1>
+<p><a href="#toc">↩️</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tQ5wO1lznCQ?si=Hzd2uAsJCOM8ta1B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+<li>Trevor podcast  讨论AI 进化速率减慢，   nature  文章分析  摩尔定律</li>
+</ul>
+<h1 id="bad-bunny-坏痞兔">Bad Bunny (坏痞兔)</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Puerto Rican rapper and record producer</li>
+<li>JayZ公司方面最近官宣2026超级碗中场嘉宾为Bad Bunny，然后本周SNL嘉宾也是Bad Bunny，又是一波西语狂潮，上一次印象中还是Shakira，当然Shakira在之前就有很多世界杯的曝光了。</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bad Bunny speaks about his Super Bowl performance in Spanish at end of SNL monologue: <br><br>“If you didn’t understand what I just said, you have 4 months to learn.” <a href="https://t.co/bT5ujmmh3P">pic.twitter.com/bT5ujmmh3P</a></p>&mdash; Pop Crave (@PopCrave) <a href="https://twitter.com/PopCrave/status/1974685431456579610?ref_src=twsrc%5Etfw">October 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bad Bunny imitamdo a Quico de “El Chavo del Ocho” en Saturday Night Live. ⭐️ <br> <a href="https://t.co/RlzU9nGRNy">pic.twitter.com/RlzU9nGRNy</a></p>&mdash; Bad Bunny HQ (@BBPRTV) <a href="https://twitter.com/BBPRTV/status/1974701892782657702?ref_src=twsrc%5Etfw">October 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">just some guys inventing spanish <a href="https://t.co/g6E881ZHFa">pic.twitter.com/g6E881ZHFa</a></p>&mdash; Saturday Night Live - SNL (@nbcsnl) <a href="https://twitter.com/nbcsnl/status/1974705694164009065?ref_src=twsrc%5Etfw">October 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h1 id="jane-goodall">Jane Goodall</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://www.infzm.com/contents/304297">珍·古道尔去世：“我怎么可能放慢脚步？”</a></li>
+</ul>
+<blockquote>
+<p>当地时间10月1日，珍·古道尔研究所在社交媒体上发布消息称，该研究所当日上午获悉，联合国和平使者、珍·古道尔研究所创始人珍·古道尔因自然原因去世，当时她正在加利福尼亚州进行美国巡回演讲。</p>
+</blockquote>
+<blockquote>
+<p>作为当今最著名的动物行为学家和动物保育人士之一，91岁的珍·古道尔仍在世界各地演讲，宣讲环境保护的重要性。</p>
+</blockquote>
+ <iframe src="https://www.infzm.com/contents/304297" width="750" height="800"></iframe>
+<ul>
+<li><a href="https://www.nature.com/articles/d41586-025-03209-y">Nature: Jane Goodall’s legacy: three ways she changed science</a></li>
+</ul>
+ <iframe src="https://www.nature.com/articles/d41586-025-03209-y" width="750" height="800"></iframe>
+<pre><code class="language-C">With great sadness, the Jane Goodall Institute confirmed this morning the passing of the organization’s founder, Dr. Jane Goodall, age 91 who died peacefully in her sleep while in Los Angeles, CA for her speaking tour in the United States.
+
+Dr. Goodall’s life and work not only made an indelible mark on our understanding of chimpanzees and other species, but also of humankind and the environments we all share. She inspired curiosity, hope and compassion in countless people around the world, and paved the way for many others — particularly young people who gave her hope for the future.
+
+In 1960 Dr. Goodall established the longest running wild chimpanzee study in Gombe National Park, Tanzania which continues to this day. She pioneered and sustained the Jane Goodall Institute’s community-centered conservation initiatives across the chimpanzee range for over four decades. Her legacy includes the creation of JGI’s international environmental and humanitarian youth program Roots &amp; Shoots, which is actively driving change in 75 countries and counting around the world.
+
+The Jane Goodall Institute is incredibly grateful to all our supporters, partners, and friends, especially during this difficult time. To add a personal remembrance of Dr. Goodall and continue her legacy for future generations, please visit JaneGoodall.org/RememberingJane
+</code></pre>
+<h1 id="el-getaway">El getaway</h1>
+<p><a href="#toc">↩️</a></p>
+<p>挺有意思，在29号晚上看到了一点秋天风景的posts，尤其像是海岛边的那种vibe，秋天还有那张平原上微黄地丛林，恰好积攒了很多数据没有处理，适合coding，决定向南出发。出去地铁转高铁，感觉比回家路还长，慢吞吞地走，地铁将近两小时，然后铁路上三四个小时。中午出发，到达已是太阳西落，还有一小段需要打黑车走，恰巧火车站对面有，等候将近二十分钟后出发，一路上夜间穿隧道，隧道外也只是看到道路两侧高耸的山在夜间的黑影，只有稀少的几盏灯点缀在山间。到达酒店已经晚上八点，收拾好出去九点多转一圈，吃了酸辣粉步行看了夜景。10月1号早上起来才第一次看到白天的日光下风景，然后打车出发去瀛湖。司机师傅还接了另一个小伙去火车站的，一共两个乘客，他上车后先问了司机十一点半能到火车站不？（本地话，偏四川的方言）司机说到不了（这两次遇到的司机都是老实热情的type）。然后小伙在后排包里掏出来零食开始吃，外面阴着，将要下雨的样子，云雾在道路两侧的山间缭绕，车内关严着车窗，尽管我走到哪都戴着口罩，mixed味道还是传到鼻子里，虽然从生物角度说，用进废退，但是常经历这种复杂环境的洗礼，或许后面味觉都不能分辨这些…… 接着他和司机开始方言交流，能听懂大概意思，他说昨天晚上看抖音，新能源的电动车着火，瞬间车全部都烧坏了。我看了眼司机右手握的挡杆，那正坐的车应该是油动的，司机笑着说现在很多三元的就是容易起火，小伙说谁知道呢，他们偷工减料的，司机说“那没办法，卷的不行。”对话就告一段路，我继续看着道路两侧郁郁葱葱的山，绕出县城之后，山底下的村落确实少了不少。进入高速后，司机问我确认下路咋走，他之前不小心点了确认已到达目的地，我给他看了三种路线，继续走了许久之后，出了高速，司机那边手机播报右转，司机或许比较熟悉路，V字形山路选择了急左转，稍微占了逆向的道，正下山的大卡车来了声急刹，问题不大之后，一路开始上山，从这里开始，十几二十公里的路，一路上持续听了几百遍导航所播报的“掉头！”和“已为您重新规划路线”。就像小学中学抄作业中的词语一样，一个字频繁地写几十遍，你会开始思考和怀疑这个字的结构，也偶尔会不知道怎么写。为什么反方向这个行为是掉头，和头有什么关联？“掉”原指“摇动、摆动”或“落、坠落”，如“掉尾”形容鱼尾摆动。后来引申为“转动、转向”等含义。宋代文献中，“掉头”常用于形容人摇头或转身，表示拒绝或不屑，如“掉头不顾”。“掉头”逐渐从描述人或动物的动作扩展到更广义的“转向”行为。  导航这样不厌其烦地提醒很久之后，后排的小伙也烦躁了起来，说“我刚才距离市里就8公里，现在20多公里了。” 司机说“刚才出口和转弯路都走错了，导航有问题”，从语气里我很难听出来这时候的司机是微笑歉意地解释还是同样没耐心地只是回复一嘴，我试图不明显地用眼角去观察他的表情，但好像为时已晚，司机表情已重置，亦可能司机刚才也是面无表情。我们继续听着导航不断地播报“掉头”，我看着几处的滑坡堆积在道路旁的石土，弯曲的道路转弯处悬崖边上几处人家，车驶近一看大多数也是废旧无人的废房，还有几处道路旁像是倒锥形的山坡，像是在葱郁树木皮肤之下暴露出来的紧密排布的细胞，稍有窒息感，再加上不停的大幅左右转弯，精神实际上很难放松下来，路边偶尔有几家坐落在石阶之上，如海岛风格那样。</p>
+<hr>
+<p>到达目的地后，司机特意叮嘱我手机上确认一下。我下车后背包先将外套口袋装的前天买的李子吃了，漫步走到游客中心，这里几乎一个外来人都没有，本地人像是养老院一样闲坐着话家常，柜台有阿姨过来问我几个人，我说酒店怎么住，她说农家乐什么的，我问了价格，她说三到五百，包含上岛游览坐船等的费用，我说我对游览不感兴趣，主要想找个清静的地方休闲办公看风景，岛上也可以。接着她走出门叫了远处另一个阿姨过来，说明情况后，过来的阿姨（感觉认识人太多了，最近总是能看到陌生人想到自己认识的人，有时候甚至忍不住想笑，阿姨有点像王聪，短头发，明显染过的微黑带灰），说岛上一晚上三百（景区广播不停地播放着爱国主题的一些歌曲，《我爱你中国》等，祖国生日快乐），我还背着包，双手抱在胸前，摇摇头，“太贵了，太贵了，二百行不行？”阿姨坚定地回复“不行，哪有二百的？” 见状没戏，我说“最多就220，行不行，那些游览坐船的项目我也不感兴趣，我只要个房间可以有风景然后办公就行” 又磨了两三轮，阿姨说她给老板打电话问问，说完她就拿着手机拨通电话放在右脸颊一边走向西边，说有个学生，谈谈条件能不能优惠点，等他们打完电话，阿姨走来给我说260，不行就算了，还得先付钱再去。我付了钱，跟着走到岛上在民宿二楼，她给我看二楼上有台钢琴，有大落地窗和阳台，楼下也有家庭聚会那种两三处的会议桌，客厅很大，还有很多沙发，适合集体包一层活动。只是阳台没有插座，她给我找了两个插线板，我可以放下电脑开始干活。放音乐布置一番后，我还是从阳台换到了客厅外链接的挑廊，搬好桌椅开始干活。下面雨天过后树上滴雨在桌布上，滴滴答答声响。岛上有柚子树 篮球场 游泳馆……</p>
+<p>最近感觉全天不断挠痒痒，手背上前几天落几只黑色小飞虫，一开始我感觉是阴雨湿气天出现的果蝇还是什么虫子，结果吃饭的时候小小的，却咬的让人突然一疼，相较之下那么大体型的蚊子偶尔叮人都会让人毫无知觉。第一天第二天咬过的手背地方上会有较为明显的血色小圆点分布，今天开始特别痒，而且有轻微突起地像小水包。</p>
+<hr>
+<p>另外，我很不喜欢自己出去的时候，离开自己舒适的环境，但同时还会有可能处在不安全的环境中，尤其雨夜的时候，滴滴答答，一会忽烈忽缓的雨水滴落在小二楼的屋顶，望着手机里预报的天气，未来一周都是雨，不断的雨，看样子第二天白天也不会小，因此会担心被困，还可能出行路况不好，甚至同时会遇到只有小时候听天气预报里面听到的地质灾害，自然雄伟，同时又脆弱，天灾人祸都难以预测，能做到的就是记住教训，记住那种不安全的感觉，稳步顺利地回归到安全的环境。</p>
+<figure data-type="image" tabindex="3"><img src="https://s3.bmp.ovh/imgs/2025/10/02/8ab27ad9f4225499.jpg" alt="" loading="lazy"></figure>
+<p><img src="https://s3.bmp.ovh/imgs/2025/10/02/f66b3eb6cb4261c1.jpg" alt="" loading="lazy"><br>
+<img src="https://s3.bmp.ovh/imgs/2025/10/02/18d3e61a6742ff0c.jpg" alt="" loading="lazy"><br>
+<img src="https://s3.bmp.ovh/imgs/2025/10/02/8969cc1c199206d6.jpg" alt="" loading="lazy"></p>
+<ul>
+<li>今天坐车上想到山地和平原上新能源电动车性能需求不同   要类似无人机的高倍率 长寿面 高容量  还要拐弯四个轮子🛞韧性强耐用
+<ul>
+<li>山城路况明显不同于平原，弯弯绕绕，很少有笔直的公路段，而且急左急右的转弯，老练的司机甚至都不会提前减速，都是一边转弯时一边看情况踩刹车，自如的时候甚至只用左手半握着方向盘下半部，左胳膊肘垫在膝盖上，一边点着手机上地图软件，或点开微信群消息。</li>
+</ul>
+</li>
+<li>科学探索在空间时间上似乎是永无止境的   你以为研发出来了当下完美满足需求的产品技术   但是空间时间上你都不清楚真正的需求会包含哪些   就像当初氟利昂作为新一代制冷剂粉墨登场大杀四方   直到后面人们才看到它的另一面</li>
+<li>臭氧空洞，人類距離滅絕最近的一次 | 老高與小茉 Mr &amp; Mrs Gao</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VdF4cd0SitU?si=2aDquBWAbX0SsjwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1 id="one-liner">one-liner</h1>
+<p><a href="#toc">↩️</a></p>
+<p>海明威最廣為流傳、被認為是「最短的小說」的作品，是六個詞的短篇：「售：嬰兒鞋，全新。」（For sale: Baby shoes. Never worn.）。我喜欢这种“Oneliner”，通常指一句简短、犀利、有冲击力的话，常见于脱口秀、rap，以最精炼的语言表达深刻或幽默的意思，类似“one-liner” jokes或punchline。现在industry里像For sale: Baby shoes. Never worn.在横纵两种维度都意义深远，让人无限联想。能live rent-free in my mind大多是Drizzy的“hands on your knees”，还有Future的“If I lose a carat, she might choke”，Kdot的“Smoking on top fives<br>
+Motherfuck that album, fuck that single Burn that hard drive (burn that shit)”，尤其是Burn that hard drive，means all your work is just shit.</p>
+<h1 id="ufc-320">UFC 320</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>早上起来八点多已经过了early prelims，从prelims开始看，比较熟的不太多，Patchy Mix 还lost by SD</li>
+<li>说实话这card就是最后三场撑起来的，断档的存在。</li>
+<li>最近一两年每次轻重这几个人的比赛 总是火星撞地球都难以形容，真的两个行星的碰撞一样  总会让人张开嘴看  勇气 warriors</li>
+<li>在Alex Pereira之前的轻重可不是这样的，甚至和FlyWeight一样比较死。</li>
+<li>Jiří Procházka VS Khalil Rountree: 第二回合过半才发现是三回合的比赛，当然了，主赛倒数第三场当然是三回合的比赛，但是希望是五回合，不留遗憾
+<ul>
+<li>KRJ同样像上一场一样，calculated同时自律在自己的节奏里面，加上自己拥有的爆发力，counter反击所以赢下前两回合，R3 JP找到自己节奏，chao混沌，加上KRJ体能稍微下滑。就和赛前DC给的key to victory一样，KRJ不能让比赛在chaos中，那样会有利于JP，虽然在外人看来是CHAOS，但是在JIRI，这才是自己的核心节奏，道心价值所在，捷克人有自己的哲学，LHW轻重和LW轻量级现在一样好看，甚至不亚于轻量级，提速又力量</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>no gameplan</li>
+<li>no defense</li>
+<li>no strategy</li>
+</ul>
+<p>just a warrior spirit, vibes and schizophrenia</p>
+<ul>
+<li>Cory Sandhagen VS Merab Dvalishvili，两个判定王    Cory技巧更多，打体能怪也可以的 ， 溜起来打点靠技巧boxing就好，只要能够takedown defence。Cory有飞膝，速率快，身长体瘦，比较灵动。
+<ul>
+<li>没太大意外，和一开始想的一样，两个判定王打满5R，但是Cory和Umar都给人可惜的感觉，差一口气，本身都有机会的，但是Cory还是TDD有点差，Umar是前几回合就手受伤。也渐渐感觉这些卫冕使得对理想中解决Merab的fighter描边更清楚了，体能必须要有，还要有TDD，能够赢得的方式要不就是高一等的地面，柔术，要不就是站立有重炮终结，Merab的conbo也不差，也可以在站立像钻石星尘拳，一顿输出TKO。现在前五基本肃清了，如果顺着轮的话，运气好一点宋亚东甚至可以等title shot ,LOL</li>
+<li>第五回合R5时候突然神离，感觉每张fight card都像是课程表，一场match就是一堂课，间歇就是课间休息，并没有只在看比赛，而是见识各种不同风格，源于不同国家、文化，周围环境。感觉也只有在USA，本土选手在对战国外选手时候，本土选手会迎接到更多的嘘声，哈哈哈</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Main event: Magomed Ankalaev VS Alex Pereira: 太快了，妈的   哈哈哈哈哈  第一反应是  what the fuck is this？？？？？
+<ul>
+<li>R1 开局直接就前压，太熟悉了，一点都不用热身，就感觉直接冲着头来的，左钩只要一下即可结束。</li>
+<li>实际上是在高压后后手重拳击倒之后砸击TKO</li>
+</ul>
+</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Alex Pereira knocks out Magomed Ankalaev (2025) <a href="https://t.co/Be8T5gU5sp">pic.twitter.com/Be8T5gU5sp</a></p>&mdash; Fight Pics That Go Hard (@fightpicsgohard) <a href="https://twitter.com/fightpicsgohard/status/1974701399993966876?ref_src=twsrc%5Etfw">October 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<ul>
+<li>Hold your balance and don't forget to push limits all the time.</li>
+</ul>
+<hr>
+<p>Only fire, only grind, only forward.<br>
+Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#keywords">Keywords</a></li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#harry-styles-sub-3">Harry Style's sub 3</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%8F%AF%E9%9D%A0%E7%9A%84%E5%A4%AA%E5%A4%9A%E4%BA%86-%E5%83%8F%E5%BE%B7%E5%9B%BD%E4%BA%BA%E4%B8%80%E6%A0%B7%E4%B8%A5%E8%B0%A8">数据不可靠的太多了 像德国人一样严谨</a>
+<ul>
+<li><a href="#fireboy">Fireboy</a></li>
+</ul>
+</li>
+<li><a href="#will-ai-save-humanity-or-end-it-with-mustafa-suleyman">Will AI Save Humanity or End It? with Mustafa Suleyman</a></li>
+<li><a href="#bad-bunny-%E5%9D%8F%E7%97%9E%E5%85%94">Bad Bunny (坏痞兔)</a></li>
+<li><a href="#jane-goodall">Jane Goodall</a></li>
+<li><a href="#el-getaway">El getaway</a></li>
+<li><a href="#one-liner">one-liner</a></li>
+<li><a href="#ufc-320">UFC 320</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/">https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/&sharesource=qzone&title=EKL 320 Pheidippides&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250929-pheidippides/&sharesource=weibo&title=EKL 320 Pheidippides + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20251012/">
+                                                                                            EKL 20251012
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-quizlet-and-sci-papers/">
+                                                                                                    EKL Quizlet &amp; Sci-Papers
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

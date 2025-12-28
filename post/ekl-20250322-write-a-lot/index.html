@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20250322 Write a Lot
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-03-22</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">14.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3324</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NIGHT/">EKL_NIGHT</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/03/23/7088835c2cc21a78.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>《文思泉涌》</li>
+<li>UFC LONDON</li>
+<li>Conver w Pedro</li>
+<li>The morning routine</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#2025%E5%B9%B43%E6%9C%8823%E6%97%A5-ufc-london">2025年3月23日 UFC LONDON</a>
+<ul>
+<li><a href="#conver">Conver</a></li>
+</ul>
+</li>
+<li><a href="#the-morning-routine">The morning routine</a></li>
+<li><a href="#playboy-carti-dropped-kdot-features-15-mar-2025">Playboy Carti dropped KDOT features  15 Mar 2025</a></li>
+<li><a href="#21-savage">21 Savage</a></li>
+<li><a href="#city">City</a></li>
+<li><a href="#%E6%96%87%E6%80%9D%E6%B3%89%E6%B6%8Chow-to-write-a-lot-a-practical-guide-to-productive-academic-writing">《文思泉涌》How to Write a Lot: A Practical Guide to Productive Academic Writing</a>
+<ul>
+<li><a href="#%E6%96%B9%E6%B3%95%E6%8A%80%E5%B7%A7%E7%B1%BB%E4%B9%A6%E7%B1%8D%E5%86%99%E4%BD%9C">方法技巧类书籍写作</a>
+<ul>
+<li><a href="#%E5%BF%85%E8%A6%81%E6%80%A7">必要性</a></li>
+<li><a href="#%E5%B1%80%E9%99%90%E6%80%A7">局限性</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#scholar">Scholar</a>
+<ul>
+<li><a href="#blog">BLOG</a></li>
+<li><a href="#ssf-scientific-storytelling-framework">SSF  Scientific Storytelling Framework</a></li>
+<li><a href="#%E4%BA%86%E8%A7%A3%E4%BD%BF%E7%94%A8%E6%83%85%E8%8A%82%E8%9E%BA%E6%97%8B%E7%94%A8%E6%95%B0%E6%8D%AE%E8%AE%B2%E6%95%85%E4%BA%8B">了解使用情节螺旋用数据讲故事</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-luther-(HipHopKit.com).mp3"></audio></p>
+<p><mark>luther (feat. SZA) Kendrick Lamar</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">If this world were mine
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+Fah-fah, fah-fah-fah, fah-fah, fah
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+It's a vibe, do your dance, let 'em watch
+She a fan, he a flop, they just wanna kumbaya, nah
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+It go in (when you), out (ride it), do it real slow (slide)
+Baby, you a star, strike, pose
+When I'm (when you) with you (with me) everything goes (slow)
+Come and (put that) put that (on my) on my (titi) soul (soul)
+'Rari (red), crown (stack), wrist (stay) froze (really)
+Drip (tell me), pound (if you) on the way home (love me)
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+I can't lie
+I trust you, I love you, I won't waste your time
+I turn it off just so I can turn you on
+I'ma make you say it loud
+I'm not even trippin', I won't stress you out
+I might even settle down for you, I'ma show you I'm a pro
+I'ma take my time and turn it off
+Just so I can turn you on, baby
+
+Weekends, get it poppin' on the low
+Better days comin' for sure
+I know you're comin' for
+Better days
+
+If this world were mine
+</code></pre>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>每次将要起床前的快速眼动时期会更大概率做梦</li>
+<li>今天梦到很快读完了一本看起来很难读的书</li>
+<li>Puc licker &amp; Dic sucker</li>
+<li>maybe someone just wear their weakness</li>
+<li>or born with weakness as their skin</li>
+<li>bias也是基于现实世界建立的典型认知，就像训练出来的模型一样，训练集越广泛，模型更精准一些。布莱顿这两三年的崛起依靠智能算法这也是人尽皆知，他们从大数据训练模型取代传统球探，甚至依靠大数据选择更合适本俱乐部的教练。就在我写这句话的同时，徐阳也在提他们基于大数据选择 (Man City 2-2 v Brighton - 15 Mar 2025)。</li>
+<li>不能目标仅仅是紧跟时代潮流，今天的信息技术变革飞快，目标至少也是要站在这浪尖上，紧跟第一个吃螃蟹的人。很多依靠信息差、时间差谋利，如果一旦二者差距变小，头部的优势便很快失去，不再保有优势。这或许是一个短暂的对于技术乐观主义者友好的奖励时期。</li>
+<li>数据无疑有好有坏，质量参差不齐，对于普通人来说，人与人间较为私下的交流比社会上普遍现象更难获得相关信息，比如大众一般基础到的信息无疑是每日的新闻，尤其源自官方媒体的社会新闻，此类最为大众化。但是相较之下，更为亲切贴合个人实际的个人社交话题就更为私密，缺少公开信息，好在这个时代，默默涌现点此类信息源——Podcast. 如今的播客成为一种大众讨论分享家长里短，更为私人生活的媒体。这类信息数字化，更便捷，无成本，能够用于训练自己的bias模型，不用实际广泛社交消耗那么多能量，就能够更全面的建立对社会多方面的认知。</li>
+<li>和前面多次说过的code、笔记的哲学一样，帮助别人也是，在别人的路上会看到自己这条路上看不到的风景、遇不到的坎坷，这些东西就和笔记一样，日后返回来帮助自己。</li>
+<li>独立思考的时间、机会越来越少，最近几乎been buried by tons of work, 除了跑步，骑行，吃饭等可以思考的时间外，还可以如厕时候，重要的是不拿手机 LOL</li>
+</ul>
+<hr>
+<h2 id="2025年3月23日-ufc-london">2025年3月23日 UFC LONDON</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>L，I SINCELY APPRECIATE EVERY SINGLE SUNDAY.  I'M LIKE A BIRTHDAY BOY EVERYTIME.</li>
+<li>由于UFC LONDON这card主赛在周日早上四点开始，所以定了个五点的闹钟，但是在闹钟未响起来之前清醒了，三场主赛都一般，预料之中的boring，Brady还好，地面断头台绞了Leon。目前看Welterweight冠军门口堵满了，Shavkat Rakhmonov要title，Brady要，Buck也要，但是schedule的下一个是JDM，Usman如果再赢一场比较大的，由legacy的加成，也可能会排在序列中。但是！！ 现在一旦Belal丢了冠军，下一个人都不会出现在以上提及之中，definitely should be Islam.</li>
+</ul>
+<h3 id="conver">Conver</h3>
+<ul>
+<li>London早场，所以八点结束后又继续回床上睡觉，一觉醒来十二点了。收拾东西，处理任务，然后三点出去吃饭遇见了Pedro.</li>
+<li>我们讨论了UFC, CHAMPIONS LEAGUE, MO SALAH, 2014 WORLD CUP, NEYMAR JR. 除了很多体育之外，还有生活传统，文化…… 他给我看了下左手无名指上微黄反光的ring，告诉我他结婚了，wife还在Angola，我低头继续吃盘子里炒成丁的苗条，饱腹和美味感让我满意。他翻出了手机里拍的照片，左手转过来手机屏幕给我看，无意间说出了 this's my friend. 可能是我们在这之前谈论中提到很多次friend，所以一张嘴说错了。他很快纠正说了一遍wife。我笑着说 right right，also your best friend. LOL 能够感受到天南海北大家拥有自己不同的幸福，无论贫穷富贵，走在正道上平安幸福才是真正拥有的。</li>
+<li>后来我们又谈rap music， pick a side on KDOT or Drake. 他说他喜欢KDOT些，更old school, 包括上一代人JayZ, Pac, 50 cent. 他反问我，我说I‘m fan of both. 即使我在来这吃饭的路上也在循环DRAKE的playlist，但是personally I‘m into KDOT's personality. He's Messi type guy. 5'7 I'm Messi. girl~</li>
+<li>边说边吃完了饭，我起身准备骑车七八公里去修下车，他说要去忙会，我们就告了别。我一路沿河堤骑七八公里，周末下午群众开车在河堤边野餐饮茶，放风筝比较多。一路上继续着Drrizy的melody vibe，different type, 感叹能够带给别人快乐和意义，我们就叫他artist.</li>
+<li>修好后原路返回，总共骑行将近二十公里后，回来休息一会处理任务之后又出去跑步，由于前面膝盖运动已经不少了，所以跑了三公里就回来休息。后面就是继续处理任务，洗澡，睡觉。每周日都只有中午一顿饭，一般都在赛后发布会的时间段去餐馆里吃，也算一种 fasting.</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/03/23/7088835c2cc21a78.jpg" alt="" loading="lazy"></figure>
+<h2 id="the-morning-routine">The morning routine</h2>
+<ul>
+<li>前段时间偶然被推送的，健身黑人版的“精致集帅的一天”，镜像版之前集美出门擦火车、高铁等公共区域一样精致，两三天后，这果然也成了一种讽刺的meme/trend.</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">not him starting a trend i&#39;m crying😭 <a href="https://t.co/F5WFC38LbC">pic.twitter.com/F5WFC38LbC</a></p>&mdash; 𝗱𝗮𝗻𝗻𝘆🫧💚 (@beyoncegarden) <a href="https://twitter.com/beyoncegarden/status/1903624970980175878?ref_src=twsrc%5Etfw">March 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The morning routine <a href="https://t.co/HLhpwpKib8">pic.twitter.com/HLhpwpKib8</a></p>&mdash; Tips For Men - Fashion | Essentials | Luxury (@tipsformenx) <a href="https://twitter.com/tipsformenx/status/1902608673022595531?ref_src=twsrc%5Etfw">March 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="playboy-carti-dropped-kdot-features-15-mar-2025">Playboy Carti dropped KDOT features  15 Mar 2025</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>playboy carti drop了专辑，三十首歌里面KDOT feature了三首，质量整体看评价好像也一般，feature的三首也当乐子、新闻一样看待，娱乐性还可以</li>
+<li>仇恨变得更真实，爱变得更虚假，但当你这么出色的时候，就应该接受这样的情况。<br>
+Source: https://www.lyricsbull.com/good-credit-lyrics-playboi-carti/</li>
+</ul>
+<h2 id="21-savage">21 Savage</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>有点CYBERPUNK</li>
+</ul>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ApbhENVYL_A?si=dXhv1x0RsVNeT1lK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<p>Jimmy Cooks<br>
+Song by Drake ‧ 2022</p>
+<p>Gotta throw a party for my day ones<br>
+They ain't in the studio, but they'll lay somethin'<br>
+Rest in peace to Drama King, we was straight stuntin'<br>
+If I let my nigga 21 tell it, you a pussy<br>
+Spin a block twice like it ain't nowhere to park (21)</p>
+<h2 id="city">City</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>(Man City 2-2 v Brighton - 15 Mar 2025)</li>
+<li>胡桑诺夫还娃娃脸呢  年轻稚嫩 未来可期，这种或许也是中亚人自己的“鲜肉脸” LOL</li>
+</ul>
+<h2 id="文思泉涌how-to-write-a-lot-a-practical-guide-to-productive-academic-writing">《文思泉涌》How to Write a Lot: A Practical Guide to Productive Academic Writing</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>书就一百六十页，一个午休的时间就细读完了，</li>
+</ul>
+<ul>
+<li>制定时间表 严格遵守</li>
+<li>最好的自控就是让客观环境不需要自控。</li>
+<li>由此可见，写作本身孕育了继续写下去的基础。</li>
+<li>有些人认为他们为灵感而生，所以他们应该允许自己等待灵感来唤醒他们。每当我听到这样的布道时，总是很难掩饰我内心的不屑。在我看来，没有什么比这种说法更荒诞了，就是一个鞋匠说他要等待灵感，或是牛油烛小商贩在等待神的旨意来融化牛油也没有这么荒诞。有一次有人告诉我最可靠的有助写作的方法是在椅子上涂一点鞋线蜡。我宁愿相信鞋线蜡也不相信灵感。</li>
+<li>正如凯斯（Keyes, 2003:49）所说，“认真的写作者笔耕不辍，不论有无灵感。随着时间推移，他们发现规律性显然是比灵感更靠谱的朋友”。</li>
+<li>目标设定也是写作过程中的一个环节</li>
+<li>在房子外面是看不着里面的大象的</li>
+<li>INTRO写论文的问题缘由和理论依据</li>
+</ul>
+<h3 id="方法技巧类书籍写作">方法技巧类书籍写作</h3>
+<p><a href="#toc">↩️</a></p>
+<h4 id="必要性">必要性</h4>
+<ul>
+<li>精益求精，写作等工作技巧永远没有真正完备之说，只有无止境的进化升级，所有偶尔看到这种工具书还是会想从中汲取哪怕一点有利于涨进技巧的 takeaways</li>
+</ul>
+<h4 id="局限性">局限性</h4>
+<ul>
+<li>很纠结，质量有好有坏，就像大量的成功学书籍一样，全篇正确道路的描述，很少能用的实用技巧</li>
+<li>但个人的角度出发，很容易理解，大多数人自己的“小招”，也就是所谓的”高效学习方法、习惯“都是自己个性化开发的，一辈子也没有多少，而且这些技巧习惯比较”只可意会，不可言传“，写成方法技巧类书籍更是要求更高。自己倾囊相授，读者也不一定会get到笔者的良苦用心。</li>
+</ul>
+<h2 id="scholar">Scholar</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="blog">BLOG</h3>
+<ul>
+<li>
+<p><a href="https://annaclemens.com/blog/streamlined-scientific-paper-writing-process/">How to submit in 8 weeks or less: My streamlined scientific paper writing process</a></p>
+</li>
+<li>
+<p>A: Develop the story</p>
+<ul>
+<li>telling one coherent story throughout your research paper.</li>
+<li>defining your story as the very first step</li>
+<li>refer:<a href="https://annaclemens.com/blog/story-structure-scientific-paper/">how to tell a story in a scientific paper.</a>
+<ul>
+<li>The specific problem you’re solving with your research?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>B: Outline every section for flow</p>
+<ul>
+<li>Once having an outline, writing becomes much easier: Intro, Meths, Results, Discus</li>
+<li>If working with co-authors, agreeing on the outlines of each section before moving on to the writing stage matters.</li>
+</ul>
+</li>
+<li>
+<p>C: Produce a clear and concise draft</p>
+<ul>
+<li>all about writing clearly and concisely</li>
+<li>start each writing session by reading through what you wrote in your last writing session.
+<ul>
+<li>an excellent warm-up, eases you into writing mode and builds momentum.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>D: Self-edit (and know when to stop!)</p>
+<ul>
+<li>letting your draft sit for at least a few days without looking at it. This break allows you to return with fresh eyes, making it easier to spot weaknesses and inconsistencies. <mark>For a objective revisit</mark></li>
+<li>4-Step Self-Editing Process:
+<ul>
+<li>全文逻辑</li>
+<li>上下衔接，删除无关</li>
+<li>精简冗长，简洁明了</li>
+<li>格式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>E: Packaging for publication</p>
+</li>
+</ul>
+<h3 id="ssf-scientific-storytelling-framework">SSF  Scientific Storytelling Framework</h3>
+<ul>
+<li><a href="https://annaclemens.com/blog/story-structure-scientific-paper/">Science Storytelling: Telling a Story with Data</a>
+<ul>
+<li>reader will find it easier to read and remember.</li>
+<li>a well-written story more persuading than a simple report of the scientific data you obtained.</li>
+<li>Humans are story junkies.   人类记忆、理解功能就是这样进化的。想起来小时候纪录片解密，比如最强大脑或者吉尼斯世界纪录上，一些选手一次性看几秒几百位的0101二进制编码之后，过一段时间完整还原数字的序列，方法就是他们在0和1的杂乱顺序之间编故事，最后还原一下这个故事就能够顺便还原数字序列，同样这个道理方法也在世界记忆大师Nelson Dellis（美国记忆力大赛季军）好几年前在视频里也讲过自己的<a href="https://space.bilibili.com/1311695662?spm_id_from=333.337.0.0">多种记忆方法</a>，包括具体的编故事方法，从自己的房间出发到外面，一路所见和需要记忆的东西联系起来。</li>
+<li>让人好奇、兴奋、紧张的故事，Something that just isn’t quite right.  问题非常严峻</li>
+</ul>
+</li>
+</ul>
+<h3 id="了解使用情节螺旋用数据讲故事">了解使用情节螺旋用数据讲故事</h3>
+<ul>
+<li>多看与专业领域相关的news 类型的报道写作，或者私人blogs, 用词能够既精准又有趣。当然学术性用词和商业娱乐等新闻报道的写作用词会稍有不同，但是合适的情况下修改借用也有妙效。</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#2025%E5%B9%B43%E6%9C%8823%E6%97%A5-ufc-london">2025年3月23日 UFC LONDON</a>
+<ul>
+<li><a href="#conver">Conver</a></li>
+</ul>
+</li>
+<li><a href="#the-morning-routine">The morning routine</a></li>
+<li><a href="#playboy-carti-dropped-kdot-features-15-mar-2025">Playboy Carti dropped KDOT features  15 Mar 2025</a></li>
+<li><a href="#21-savage">21 Savage</a></li>
+<li><a href="#city">City</a></li>
+<li><a href="#%E6%96%87%E6%80%9D%E6%B3%89%E6%B6%8Chow-to-write-a-lot-a-practical-guide-to-productive-academic-writing">《文思泉涌》How to Write a Lot: A Practical Guide to Productive Academic Writing</a>
+<ul>
+<li><a href="#%E6%96%B9%E6%B3%95%E6%8A%80%E5%B7%A7%E7%B1%BB%E4%B9%A6%E7%B1%8D%E5%86%99%E4%BD%9C">方法技巧类书籍写作</a>
+<ul>
+<li><a href="#%E5%BF%85%E8%A6%81%E6%80%A7">必要性</a></li>
+<li><a href="#%E5%B1%80%E9%99%90%E6%80%A7">局限性</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#scholar">Scholar</a>
+<ul>
+<li><a href="#blog">BLOG</a></li>
+<li><a href="#ssf-scientific-storytelling-framework">SSF  Scientific Storytelling Framework</a></li>
+<li><a href="#%E4%BA%86%E8%A7%A3%E4%BD%BF%E7%94%A8%E6%83%85%E8%8A%82%E8%9E%BA%E6%97%8B%E7%94%A8%E6%95%B0%E6%8D%AE%E8%AE%B2%E6%95%85%E4%BA%8B">了解使用情节螺旋用数据讲故事</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20250322-write-a-lot/">https://ezraknotlab.github.io/post/ekl-20250322-write-a-lot/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20250322-write-a-lot/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20250322-write-a-lot/&sharesource=qzone&title=EKL 20250322 Write a Lot&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《文思泉涌》&lt;/li&gt;
+&lt;li&gt;UFC LONDON&lt;/li&gt;
+&lt;li&gt;Conver w Pedro&lt;/li&gt;
+&lt;li&gt;The morning routine&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20250322-write-a-lot/&sharesource=weibo&title=EKL 20250322 Write a Lot + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《文思泉涌》&lt;/li&gt;
+&lt;li&gt;UFC LONDON&lt;/li&gt;
+&lt;li&gt;Conver w Pedro&lt;/li&gt;
+&lt;li&gt;The morning routine&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NIGHT/">#
+                                                EKL_NIGHT
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20250326/">
+                                                                                            EKL 20250330-Twisted Fantasy
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-313/">
+                                                                                                    EKL 313
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

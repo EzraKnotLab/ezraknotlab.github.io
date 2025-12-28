@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL  Alma Mater 《岛屿的厝》
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-10-28</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">9.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">1970</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://gw.alicdn.com/imgextra/O1CN01Ybhke0267ix9t3T5e_!!6000000007615-2-yinhe.png_.webp" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>《岛屿的厝》</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E5%A4%A7%E5%8E%9D%E9%9B%A8%E6%9A%9D%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F">大厝雨暝⭐️⭐️⭐️⭐️⭐️</a>
+<ul>
+<li><a href="#%E6%B5%AE%E6%A2%A6%E8%8A%92%E6%9E%9C%E6%A0%91">浮梦芒果树</a></li>
+<li><a href="#%E6%B5%93%E9%9B%BE%E6%88%8F%E5%8F%B0">浓雾戏台</a></li>
+<li><a href="#%E8%8F%9C%E5%B8%82%E9%92%9F%E5%A3%B0-%E4%BB%8E%E4%B8%A4%E4%BB%A3%E4%BA%BA%E7%9C%8B%E5%B0%8F%E5%B2%9B%E4%B8%8A%E4%BA%BA%E7%89%A9%E6%88%90%E9%95%BF%E9%A3%8E%E9%9B%A8%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F">菜市钟声   从两代人看小岛上人物成长风雨⭐️⭐️⭐️⭐️⭐️</a></li>
+<li><a href="#%E5%87%BA%E5%B1%B1">出山</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/WU9zK2h0dkw5eUNIL0t5ek52UjJHYWsxcisvc2tyZHRJMjJhQ2QvTkpsQlI5bzE5MGhpdE5IMVVJZDNNTFVhVnkzWS9GbnpPejlackJUYVJYNWRLeVFtVTlXTno4akFLQWJ1TDg4M2NObmM9/Future_Metro_Boomin_-_Like_That_(Hydr0.org).mp3"></audio></p>
+<p><mark>Like That Song by Future, Kendrick Lamar, and Metro Boomin</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Gotta fire my joint up on this bitch
+Young Metro, Metro, young Metro, three times
+Yeah
+Stickin' to the code, all these hoes for the streets
+I put it in her nose, it's gon' make her pussy leak
+Pussy niggas told, ain't gon' wake up out they sleep
+You can't hear that switch, but you can hear them niggas scream
+All my hoes do shrooms, nigga, all my hoes do coke
+20-carat ring, I put my fingers down her throat (uh, uh, uh)
+If I lose a carat, she might choke (uh, uh, uh)
+I know she gon' swallow, she a G.O.A.T. (uh, uh, uh)
+Freeband nigga, bring the racks in
+Got the shooters in the corner like the pack in
+She think 'cause she exotic bitch, she attractive
+That's that shit'll get you put up out the section, brrt
+And the motto still the same
+Ball like I won a championship game
+You know these hoes hungry, they gon' fuck for a name
+I put her on the gang, she get fucked for a chain
+Got your girl in this bitch, she twirlin' on the dick (he was once a thug, he was, he -)
+(He was once a thug, he was, he -)
+I got syrup in this bitch, turn up in this bitch (he was once a thug, he was, he -)
+And it's 'bout the 'Ercs in this bitch, get murked in this bitch (he was once a thug, he was, he -)
+All these pointers on me baby, you know it's game time (he was once a thug, he was, he -)
+Bring a friend, bitch, we fucked 'em at the same time (he was once a thug, he was, he -)
+I'm a different nigga, no, we not the same kind (he was once a thug, he was, he -)
+You can have that lil' - 'cause she ain't mine (yeah) (he was once a thug from around the way)
+Young dope dealer, sellin' dope, is you like that? (If you like that)
+Kickin' doors, kickin' in doors, is you like that? (Yeah)
+Young throwed nigga, sellin' lows, is you like that? (Yeah)
+All 24, you on go, is you like that? (If you like that)
+Niggas from the bottom really like that (if you like that) (he was once a thug, he was, he -)
+Steppin' in Balencis if you like that (if you like that) (he was once a thug, he was, he -)
+Pop another bottle if you like that (if you like that) (he was once a thug, he was, he -)
+(He was once a thug from around the way)
+These niggas talkin' out of they necks
+Don't pull no coffin out of your mouth
+I'm way too paranoid for a threat
+Ayy-ayy, let's get it, bro
+D-O-T, the money, power, respect
+The last one is better
+Say, it's a lot of goofies with a check
+I mean, ah, I hope them sentiments symbolic
+Ah, my temperament bipolar, I choose violence
+Okay, let's get it up, it's time for him to prove that he's a problem
+Niggas clickin' up, but cannot be legit, no 40 water, tell 'em
+Ah, yeah, huh, yeah, get up with me (he was once a thug, he was, he -)
+Fuck sneak dissin', first person shooter (he was once a thug, he was, he -)
+I hope they came with three switches (he was once a thug, he was, he -)
+I crash out, like, &quot;Fuck rap, &quot; this Melle Mel if I had to (he was once a thug, he was, he -)
+Got two T's with me, I'm snatchin' chains and burnin' tattoos
+It's up, lost too many soldiers not to play it safe
+If he walk around with that stick, it ain't Andre 3K
+Think I won't drop the location? I still got PTSD
+Motherfuck the big three, nigga, it's just big me
+Nigga, bum, what? I'm really like that (he was once a thug, he was, he -)
+And your best work is a light pack (he was once a thug, he was, he -)
+Nigga, Prince outlive Mike Jack (he was once a thug, he was, he -)
+Nigga, bum, 'fore all your dogs gettin' buried (he was once a thug, he was, he -)
+That's a K with all these nines, he gon' see Pet Sematary (he was once a thug from around the way)
+Nigga, bum
+Young dope dealer, sellin' dope, is you like that? (If you like that, yeah, yeah)
+Kickin' doors, kickin' in doors, is you like that? (How?, yeah)
+Young throwed nigga, sellin' lows, is you like that? (Holy water, Holy water, yeah)
+All 24, you on go, is you like that? (If you like that)
+Niggas from the bottom really like that (if you like that) (he was once a thug, he was, he -)
+Steppin' in Balencis if you like that (if you like that) (he was once a thug, he was, he -)
+Pop another bottle if you like that (if you like that) (he was once a thug, he was, he -)
+(He was once a thug from around the way)
+Young dope dealer, sellin' dope, is you like that?
+Kickin' doors, kickin' in doors, is you like that?
+Young throwed nigga, sellin' lows, is you like that?
+All 24, you on go, is you like that? (If you like that)
+Niggas from the bottom really like that (if you like that) (he was once a thug, he was, he -)
+Steppin' in Balencis if you like that (if you like that) (he was once a thug, he was, he -)
+Pop another bottle if you like that (if you like that) (he was once a thug, he was, he -)
+(He was once a thug, he was, he -)
+Candy banging dope niggas was young, slangin' powder
+Walk in the strip club, make it rain for three hours
+Locked in and now I got my Phantom and my driver
+Perc'd out, took chances in my hood like Nevada
+Surfed out outside, white interior, lasagna
+Hundred thousands I just cashed out on designer
+Gotta devour, nigga, I learned that in the jungle
+Once I sell this low, that's a million in a week
+
+
+</code></pre>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<p>2024年10月13日看完   2024年10月15日一早看到<br>
+podcast：https://www.xiaoyuzhoufm.com/episode/670da408b5509a9cfbfc9449</p>
+<p>龚万莹，生于厦门鼓浪屿，英国曼彻斯特大学硕士，北师大硕士。作品发表于《人民文学》《收获》《钟山》《十月》《西湖》等。作品入围中国好小说排行榜、收获文学榜、扬子江评论排行榜、中国当代文学研究会新锐榜、《北京文学》当代文学排行榜等。</p>
+<h1 id="大厝雨暝️️️️️">大厝雨暝⭐️⭐️⭐️⭐️⭐️</h1>
+<p>女性作者的视角   小时候淘气和舅舅的儿子  表哥  妈妈和爸爸 奶奶  住在厝 （北方话四合院）的故事  可爱风趣幽默像是能拍成动画一样   小时候的事怕是主要回忆纪实叙事 也有少部分细节虚构吧</p>
+<p>主要是我和阿嬷的羁绊  关系   从小时候偷吃被教训  我们同住一个祖传的厝之下  后面睡一起下雨太大  厝塌了  后修补   父母忙挣钱   事后阿嬷也精神气爽 我和她一起去墓园看  幽静的坐在一起的时光难忘于心</p>
+<h2 id="浮梦芒果树">浮梦芒果树</h2>
+<p>抽象的    梵高画风的世界</p>
+<p>这一篇杂文集能证明很多方面的能力   想象力  独特的闽南小岛风格故事和叙事    很独特的出发点</p>
+<p>看标题猜故事背景</p>
+<p>这芒果树毕竟是奶奶的爸爸时期的  所以从小到大感觉在院子里有灵气   做梦和芒果树一起飞  抓虫子</p>
+<p>夜海皇帝鱼</p>
+<p>玉兔和小菲已经靠在她们妈妈的腿上睡着了，小菲发出轻微的鼾声。我还很精神，但过了一会儿，我还是众望所归地闭上眼睛。我偷偷在想长大以后，是不是也要来沙滩聊天，趁孩子睡着后，互相讲老公的坏话。</p>
+<h2 id="浓雾戏台">浓雾戏台</h2>
+<p>在大时代背景下上一辈人没太多文化也是同样打工的命   小孩子读书是出路  但毕竟看世界少  路也少   小岛青年出路</p>
+<h2 id="菜市钟声-从两代人看小岛上人物成长风雨️️️️️">菜市钟声   从两代人看小岛上人物成长风雨⭐️⭐️⭐️⭐️⭐️</h2>
+<p>小岛上没有手表的时候有钟楼敲钟报时</p>
+<p>玉兔的爸爸添丁和妈妈阿霞  阿霞能干又漂亮  厂里下班就去和妹妹地摊</p>
+<p>生活永远比文艺作品里描述得苦涩无聊数百倍</p>
+<p>围绕不同人物讲述故事  且之间的衔接及其丝滑  人物比较多   有贪图花花世界的水螺  添丁之前送女儿跳舞 在钟楼里和水螺接触后跑出岛  出轨多年后又回来  留阿霞和玉兔在一起生活   玉兔变坚强  阿霞也是女子身干男人不敢干的活  回来后添丁稍微改变  但是玉兔要结婚了  转眼二年级到结婚</p>
+<p>其实类似孔雀菩提  都是有点点相互关联的短篇集 但是确实结构精湛 故事完整 背后信息也回味无穷</p>
+<p>闽南话   干  干你老母  马蹄酥  嘿嘿😁</p>
+<h2 id="出山">出山</h2>
+<p>小菲这孙女从小到欧洲留学工作与外公的联系  父母家境经常不好  才会有这些奇奇怪怪的难忘的经历   家暴男  还有小地区的文化  还是小岛太小</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E5%A4%A7%E5%8E%9D%E9%9B%A8%E6%9A%9D%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F">大厝雨暝⭐️⭐️⭐️⭐️⭐️</a>
+<ul>
+<li><a href="#%E6%B5%AE%E6%A2%A6%E8%8A%92%E6%9E%9C%E6%A0%91">浮梦芒果树</a></li>
+<li><a href="#%E6%B5%93%E9%9B%BE%E6%88%8F%E5%8F%B0">浓雾戏台</a></li>
+<li><a href="#%E8%8F%9C%E5%B8%82%E9%92%9F%E5%A3%B0-%E4%BB%8E%E4%B8%A4%E4%BB%A3%E4%BA%BA%E7%9C%8B%E5%B0%8F%E5%B2%9B%E4%B8%8A%E4%BA%BA%E7%89%A9%E6%88%90%E9%95%BF%E9%A3%8E%E9%9B%A8%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F">菜市钟声   从两代人看小岛上人物成长风雨⭐️⭐️⭐️⭐️⭐️</a></li>
+<li><a href="#%E5%87%BA%E5%B1%B1">出山</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/">https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/&sharesource=qzone&title=EKL  Alma Mater 《岛屿的厝》&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《岛屿的厝》&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessdao-yu-de-cuo-greatergreater/&sharesource=weibo&title=EKL  Alma Mater 《岛屿的厝》 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《岛屿的厝》&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241029/">
+                                                                                            EKL 20241029 Ballon d&#39;Or Rodri
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20241028/">
+                                                                                                    EKL Alma Mater 《挽救计划》
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

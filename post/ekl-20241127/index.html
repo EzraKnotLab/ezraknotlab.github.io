@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Alma Mater 《足利女童连续失踪事件》
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-12-01</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">23.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">6136</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">EKLStories</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/12/01/8295c5955691a9f5.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>犯罪悬疑专题</li>
+<li>两个《开学第一课》</li>
+<li>I'd take your enemies in front of God luther (feat. SZA) Kendrick Lamar</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#2024%E5%B9%B411%E6%9C%8824%E6%97%A5">2024年11月24日</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BB%99%E4%BD%A0%E8%AE%B2%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B">给你讲一些故事：</a></li>
+<li><a href="#1-id-take-your-enemies-in-front-of-god">① I'd take your enemies in front of God</a><br>
+*
+<ul>
+<li><a href="#in-case-you-dont-know">In case you don't know:</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B6%B3%E5%88%A9%E5%A5%B3%E7%AB%A5%E8%BF%9E%E7%BB%AD%E5%A4%B1%E8%B8%AA%E4%BA%8B%E4%BB%B6-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">《足利女童连续失踪事件》-- 读书笔记</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%8A%A8%E6%9C%BA">第一章 动机</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%8E%B0%E5%9C%BA">第二章 现场</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A7%94%E6%89%98">第三章 委托</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%86%B3%E6%96%AD">第四章 决断</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%8A%A5%E9%81%93">第五章 报道</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%88%90%E6%9E%9C">第六章 成果</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%BF%BD%E8%B8%AA">第七章 追踪</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%B7%B7%E4%B9%B1">第八章 混乱</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%BC%BA%E9%9C%87">第九章 强震</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E5%B1%B1%E9%81%93">第十章 山道</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E8%AD%A6%E9%92%9F">第十一章 警钟</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li>
+<li><a href="#%E6%96%87%E5%BA%93%E6%9C%AC%E5%90%8E%E8%AE%B0">文库本后记</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%85%E6%B0%B4%E6%B4%81%E7%9A%84%E8%BF%99%E4%B8%A4%E6%9C%AC%E9%9D%9E%E8%99%9A%E6%9E%84%E5%92%8C%E5%AD%97%E6%AF%8D%E8%A1%A8%E8%B0%9C%E6%A1%88%E8%BF%99%E7%A7%8D%E8%99%9A%E6%9E%84%E7%9A%84%E5%8C%BA%E5%88%AB">清水洁的这两本非虚构和字母表谜案这种虚构的区别</a></li>
+<li><a href="#%E7%8A%AF%E7%BD%AA%E6%82%AC%E7%96%91%E4%B8%93%E9%A2%98-%E4%B9%A6%E5%BD%B1%E5%9B%9E%E9%A1%BE">犯罪悬疑专题 —— 书影回顾：</a>
+<ul>
+<li><a href="#%E5%96%9C%E5%89%A7">喜剧：</a></li>
+</ul>
+</li>
+<li><a href="#2-%E4%B8%A4%E4%B8%AA%E4%B8%BB%E9%A2%98%E7%B1%BB%E4%BC%BC%E7%9A%84%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE">② 两个主题类似的《开学第一课》</a></li>
+<li><a href="#music-j-cole-chris-brown">Music J. Cole &amp;  Chris Brown</a>
+<ul>
+<li><a href="#2024%E5%B9%B412%E6%9C%881%E6%97%A5">2024年12月1日</a></li>
+</ul>
+</li>
+<li><a href="#mancity-nobel-10%E5%B9%B4%E4%BB%8E%E6%90%9E%E7%AC%91%E8%AF%BA%E5%A5%96%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%AF%BA%E5%A5%96">Mancity &amp; Nobel  10年，从“搞笑诺奖”到真正的诺奖</a></li>
+<li><a href="#mancity">ManCity</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-luther-(HipHopKit.com).mp3"></audio></p>
+<p><mark>luther (feat. SZA) Kendrick Lamar</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">If this world were mine
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+Fah-fah, fah-fah-fah, fah-fah, fah
+
+Hey, Roman numeral seven, bae, drop it like it's hot
+If this world was mine, I'd take your dreams and make 'em multiply
+If this world was mine, I'd take your enemies in front of God
+Introduce 'em to that light, hit them strictly with that fire
+It's a vibe, do your dance, let 'em watch
+She a fan, he a flop, they just wanna kumbaya, nah
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+It go in (when you), out (ride it), do it real slow (slide)
+Baby, you a star, strike, pose
+When I'm (when you) with you (with me) everything goes (slow)
+Come and (put that) put that (on my) on my (titi) soul (soul)
+'Rari (red), crown (stack), wrist (stay) froze (really)
+Drip (tell me), pound (if you) on the way home (love me)
+
+In this world, concrete flowers grow
+Heartache, she only doin' what she know
+Weekends, get it poppin' on the low
+Better days comin' for sure
+If this world were
+If it was up to me
+I wouldn't give these nobodies no sympathy
+I'd take away the pain, I'd give you everything
+I just wanna see you win, wanna see
+If this world
+
+I can't lie
+I trust you, I love you, I won't waste your time
+I turn it off just so I can turn you on
+I'ma make you say it loud
+I'm not even trippin', I won't stress you out
+I might even settle down for you, I'ma show you I'm a pro
+I'ma take my time and turn it off
+Just so I can turn you on, baby
+
+Weekends, get it poppin' on the low
+Better days comin' for sure
+I know you're comin' for
+Better days
+
+If this world were mine
+</code></pre>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D7liwdjvhWc?si=-tKNp7WSLZ-MhC_j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<p>Kendrick Lamar GNX lyrics</p>
+<p>Only thing better right now is livin' right now when I can't spare no feelings<br>
+Quiet on set but my aura loud, I never get through hood shit and wisdom<br>
+The money out here, young man, fuck holdin' your hand<br>
+You'll die broke tryna play victim<br>
+The little ideas I told made people go rogue until God gave me a big one</p>
+<p>[Verse 1]<br>
+Reincarnated with love<br>
+My Gemini twin back, powerin' up<br>
+No more handshakes and hugs<br>
+The energy only circulate through us<br>
+Everybody must be judged<br>
+But this time, God only favorin' us<br>
+Twenty yеars in, still got that pain dedicated to bear our truth<br>
+Thе headache can speak with a vigilant tongue<br>
+The predicate this time is fuck you<br>
+I'm carryin' heavier hearts right now<br>
+I can power lift with Olympians too<br>
+I'm carryin' various darts right now<br>
+I desert this bitch like tiramisù<br>
+See, we gon' body for body, I hand you a body<br>
+I'm probably a better masseuse<br>
+I really don't bother nobody but they run it by me if I got to clear out the r—<br>
+Christ!</p>
+<hr>
+<h2 id="2024年11月24日">2024年11月24日</h2>
+<p><a href="#toc">↩️</a><br>
+喜欢每一个fight day之后rainy的氛围  能够平静心灵来消化自己的感受。世界就是无数个圈子，不同的“生态圈” 不论高低都有好的也有坏的，当然高端的里面优秀人才多，但也不乏很多pieces of shit掺杂其中，UFC，hiphop就是，有人吸毒犯罪，家暴强奸，也有人慈善扶贫，帮助教导他人。高中时候第一节物理课还记忆犹新，一般高中老师三年换一届学生，轮到我们这批新生，老师课堂上看着大家，感叹道XX同学上届学生也有，名字长相不一样，但是给人的印象都是相似的，比如通常内向腼腆学习还不错的。之前podcast里面也听到过，有人认为所谓的内部梗，也就是某个特定人群圈子内部才会听懂的梗，但整个世界也某种程度上是个圈子，比如中文脱口秀的梗只有懂中文才会听得懂。更不用说行业，公司等等圈子。</p>
+<h1 id="给你讲一些故事">给你讲一些故事：</h1>
+<h1 id="1-id-take-your-enemies-in-front-of-god">① I'd take your enemies in front of God</h1>
+<p><a href="#toc">↩️</a><br>
+YellowstoneS5E11看到一半，Kelce半夜醒了之后白天去推进父亲“自杀”案件的审理调查，法医草草得出结论输出报告，警局也慢慢吞吞，虽然是阿美莉卡，但是就像Kelce对法医说的，你桌子上放的什么事还能比一州之长的死还重要的，Kelce督促着立刻一起去重新审查尸体，结果&quot;他杀&quot;的sign非常多。让我想起了平日里自己推进生活中的事项，有看不见、心理上的畏惧，房间里的大象……当然更相似的是来自清水洁的两本书，《足利女童连续失踪事件》和《桶川跟踪狂杀人事件》。不该赋予太多人不该值得的信任。Kelce在几乎确定结论之后直接去州政府找Jimmy，在路上他给Beth打电话，Beth告诉他别去，把那个mtfk留给她处理，Kelce还是去找了Jimmy，冲进去将其击倒，Jimmy辩解不是他做的。Beth唯一的依靠是Rip，Rip现在还不知道全部，这些情形真实又无助，太多黑暗和难以言说的不公平，就像前面的《luther (feat. SZA) Kendrick Lamar》里所说 I'd take your enemies in front of God 很多电影里也有这样类似的故事，最后有人牺牲的代价将犯罪分子拿下，或者同归于尽，<mark>I'd take your enemies in front of God</mark></p>
+<h3 id="in-case-you-dont-know">In case you don't know:</h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://ezraknotlab.github.io/post/Alma%20Mater%20487/">📚《桶川跟踪狂杀人事件》读书笔记</a></li>
+<li><a href="https://ezraknotlab.github.io/post/ekl-20240917/">因果报应 Maharaja (2024) nota</a></li>
+</ul>
+<h1 id="足利女童连续失踪事件-读书笔记">《足利女童连续失踪事件》-- 读书笔记</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Rating⭐⭐⭐⭐</li>
+<li>July 19, 2024 → July 29, 2024</li>
+</ul>
+<h2 id="第一章-动机">第一章 动机</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>小地区内界限划分，警察推脱责任，人性使然，应该让AI来取代！公正无私勤奋 no bias</li>
+<li>嫌疑人自证加上官方的DNA检测吻合，似乎案子被板上钉钉 严丝合缝了，但是为什么有五个案件相似，其他的案子莫名其妙的结束了。会不会真相与事实完全颠倒，凶手可能就是你在街上擦肩而过的人……  所有的官方资料就是主观编写的，只可参考不能直接倚仗，第一性原理，全部一手重来。</li>
+</ul>
+<h2 id="第二章-现场">第二章 现场</h2>
+<p><a href="#toc">↩️</a><br>
+之前被判的嫌疑人xue家 是个萝莉控 去弹珠厅还是校车司机，要素拉满，似乎警民关系多年未挣破，警察压力也大，这么完美的嫌疑人，就给归案邀功吧~  案子就这个剧情先结了。和上一个作品很像，警察早就给你安排好了故事应该怎么讲~</p>
+<h2 id="第三章-委托">第三章 委托</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>事情远远没有表象那么简单背后的逻辑很深
+<ul>
+<li>DNA这项技术也是新加入到侦探中，还有很多局限使用者没有充分意识到，人性的懒惰使得他们找到了模糊的证据就坐到树下乘凉休息了，拿及笄当拐棍拄。</li>
+<li>就像VAR刚进入涉及一样，争议太多，需要进化，需要有人监督，不能出现上层权利真空从而马虎行事。</li>
+<li>拿到最终结果的这条故事链很长，首先试验鉴定就有误差，（理科生DNA），试验方法本身就有缺陷和灵敏度限制，人为误差 人为错误。这也仅仅是技术上的，回到社会运行方面，实验结果层层鉴定上报，又有可以添油加醋的机会，更改结果也是可能的</li>
+<li>第一性原理出发，保持质疑！</li>
+<li>去现场重新出发。</li>
+<li>梦到了开头的情形，四个孩子在我床边玩要我开盒子，刚打开我醒了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="第四章-决断">第四章 决断</h2>
+<p><a href="#toc">↩️</a><br>
+找到了一个妈妈采访</p>
+<h2 id="第五章-报道">第五章 报道</h2>
+<p><a href="#toc">↩️</a><br>
+很多细节类似于前一个案子  腐败</p>
+<h2 id="第六章-成果">第六章 成果</h2>
+<p><a href="#toc">↩️</a><br>
+美国的司法体制混乱 但好在商业多样性强 所以相关法律法规迭代也快比如</p>
+<ul>
+<li>DNA检测只能确定不匹配 不能确定一定匹配</li>
+<li>只有可重复鉴定多次的式样才可以作为证据</li>
+</ul>
+<blockquote>
+<p>先进的技术确实证实先前嫌疑人是无辜的 ，随后释放  “但是你还我人生</p>
+</blockquote>
+<ul>
+<li>就算你真的是无辜的 但也不能保证审判或者检察官会公正认真的办案，洞察出你的冤枉</li>
+<li>各种文书随意摆弄你的人生  故事线就这样被安排</li>
+</ul>
+<h2 id="第七章-追踪">第七章 追踪</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>铁皮盒子从一开始出现在梦里就是特别的东西，贯穿到鲁邦的房子形状，是一本小说的很好的记忆点，关键词能够让我回忆起故事脉络和很多细节。</li>
+<li>DNA完全吻合了鲁邦   案子几乎要完结  但是书才一半</li>
+</ul>
+<h2 id="第八章-混乱">第八章 混乱</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>错判或者使用DNA鉴定出现失误对于历来的案例都有影响  其公正性 准确性 这背后影响着整个国家社会的相关体制，因此这楼太高，动不得基础，提出异议还得考虑颜面</li>
+<li>体制’必须要保护的’  要不然会’否定’之前的决定 展露出以前的错误丑态</li>
+<li>就像很多非洲国家所谓民主一样  事实上不一定要有  但是表面上一定不能无，因为还要靠此来获得国际社会的支持……</li>
+</ul>
+<h2 id="第九章-强震">第九章 强震</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>与体制battle 错误   东日本大地震</li>
+</ul>
+<h2 id="第十章-山道">第十章 山道</h2>
+<p><a href="#toc">↩️</a><br>
+是另一起有疑点的案件</p>
+<ul>
+<li>每个证据的证明力极弱，却又相互印证</li>
+</ul>
+<h2 id="第十一章-警钟">第十一章 警钟</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>媒体选择性报道拱火</li>
+<li>没人真的在意我们  只是利益 kdot shit</li>
+<li>抓错了人  警钟从未响起</li>
+</ul>
+<h2 id="后记">后记</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>凶手还是没有确定，案子未破</li>
+<li>社会影响强烈，水很深，于很多原因都不能撬动司法体制，即使它只有短短的历史</li>
+<li>还是和前面举的例子稍微类似，VAR   技术的使用是迭代的，需要慢慢成熟互相磨合，不能太依赖DNA技术，尤其是一开始就完全依赖，在没有掌握方法原理的情况下。</li>
+<li>法律这只手有时候太过于巨大，拍下来即使无罪的人也无法挽回错误的判决</li>
+<li>法律判决的DNA技术和比赛辅助裁判的VAR类似但又不是一个级别的。</li>
+<li>同样也是很好的一个认识科学发展的视角，类似很久以前亚里士多德同时期很多学者根据实验现象提出很多猜想，虽然只有很少部分在今天被证明是正确的，但是那些错误的猜想也很大程度上引发了对于正确真理的探索，努力仍然不可忽视，和授予诺奖的最初发现者也相似。一定程度上有些许同情相关机构的教授和DNA检测员，科学需要时间发展成长，本质如此，希望我们能在AI的帮助下尽快找到目前阶段的最优解。</li>
+<li>同样，引用亚里士多德的观点，<mark>自然厌恶真空</mark>。 人类对于权利和利益甚至懒惰的贪婪与追逐这一丑陋的方面渗透在社会上的各个角落里。</li>
+</ul>
+<h2 id="文库本后记">文库本后记</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>2024年7月26日23:20:41写：</p>
+</blockquote>
+<blockquote>
+<p>刑事案件此类书籍还挺有意思的，发生的是真实的故事，主要的主题总会remind me这是一个真实的世界，弱肉强食且危机时刻存在，人类社会也是自然的一部分。人性和兽性总会引人深思。</p>
+</blockquote>
+<blockquote>
+<p>虽然  受害者，凶手，审判者，各个角落里都隐藏着人性的弱点和可恨之处。  当然，一般很少时候有受害者自身的错误导致，但其实也不至于罕见。虚荣和贪婪通常是，还有不自尊自爱…… 凶手更可恶些，冰冷和无法被唤醒的良心，低劣的品德，贪婪…… 当然清水洁这两本更为突出和罕见地展现了社会以及相关司法体制内部的锈迹斑斑的迹象，通通为人性的丑陋所腐蚀。工作人员贪婪好功名利禄，懒惰，缺乏正义感，急功近利，大多数人工作还是为了利益，警局上班也追求劳动价值的性价比，能马马虎虎的结束案件，拿到奖励就可以，这背后有提前写小说一样的给案件编好剧情，还有利用权利打压受害人，掩盖真相，权钱交换，还有很多很多。但是没什么可以做的，总会有人这样，所以或许需要忠诚、公平的AI来取代……</p>
+</blockquote>
+<h1 id="清水洁的这两本非虚构和字母表谜案这种虚构的区别">清水洁的这两本非虚构和字母表谜案这种虚构的区别</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>明显不同的两类题材，但我想说不同类型的感触</li>
+<li>清水洁这种基于现实事件的 阅读起来总会比较沉重 阴云笼罩，夹杂着对受害者的同情和悲悯之心，同时又真切地感受到自身对于血淋淋的社会的认知提高，自我保护的警觉性提升，偶尔会紧张，像看今日说法一样。</li>
+<li>字母表谜案这种也是近五年超火的题材，很多著名的日本小说家之手所著的悬疑推理，读起来精神高度紧张又好奇，本质是虚构出去的产品，与电视剧类似，满足爽感，紧凑的剧情发展像是带上读者坐过山车一样刺激又兴奋，但是体现出的社会教育意义又相较少些，对于一个成年人来说，不可不读，但又不要读太多，更有意义的是清水洁那种类型。对于娱乐来说，也不失为一种愉快的选择。</li>
+</ul>
+<h1 id="犯罪悬疑专题-书影回顾">犯罪悬疑专题 —— 书影回顾：</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>最先读清水洁的《桶川跟踪狂杀人事件》，现在印象最深或者说感受到最铭心的教训还是这个世界纷繁复杂，一件事牵涉到的部分远比普通人认为的那么多，整个事件的链条也远比人们想象得长，因此各个环节，每个犄角旮旯都存在出问题的可能性。人们通常关注的两类人物：被害人和嫌疑人，当然他们之间故事发生的动机背后可以窥探个人人性中的善与恶。但实际上这些东西我们在甚至小时候看得津津有味的《今日说法》中就早可以感受到这些东西，可能普遍存在。最让人感受到反差或者意外的是以前所没有意识到的角度——普遍的社会大环境。常见的受害人和嫌疑人之间都是情爱、权利和金钱等纠纷，但是办案过程中，阻挡在真相却是让人意想不到的一关又一关。比如公安局也有来自上级的压力，办案人员自身考虑安全和利益，为尽快结案领赏或者完成任务，轻信替罪者，甚至直接编织好一条故事线，套在案件上来结案，毫不顾忌冤枉无辜的后果。媒体一窝蜂的追热点，可能会给破案造成干扰不说，还会被不法分子利用，他们大多只关心利益，不是都值得相信。整个链条上各个角色虽各有轻重，但如若一节遭到腐蚀，整个车辆必将失控。社会的多面性已不是几何术语能够描述的清楚的。</li>
+<li>《足利女童连续失踪事件》 2024-07-29 读过<br>
+[日] 清水洁 / 曾玉婷 / 文汇出版社 / 2022-7 / 49.00元</li>
+<li>Rate： 💛💛💛💛🩶</li>
+<li>《桶川跟踪狂杀人事件》 2024-05-29 读过<br>
+[日] 清水洁 / 王华懋 / 四川人民出版社 / 2021-2 / 45.00元</li>
+<li>Rate： 💛💛💛💛💛</li>
+<li>在这两本书以后，高强度超高倍速（甚至油猴安装脚本）过滤很多相关题材电影（按时间先后排序）：
+<ul>
+<li>《河边的错误》   2024-01-07</li>
+<li>Rate： 💛💛💛💛🩶</li>
+</ul>
+</li>
+<li>《首尔之春 / 서울의 봄 / 12.12：首尔之春(台) / 12.12: The Day》</li>
+<li>Rate： 💛💛💛💛🩶2024-02-25</li>
+<li>
+<ul>
+<li>《周处除三害 / 周處除三害 / The Pig, the Snake, and the Pigeon 》</li>
+</ul>
+</li>
+</ul>
+<p>2024-03-03 Rate： 💛💛💛💛💛<br>
+整体结构和起初《河边的错误》有异曲同工之处，类别不尽相同，却都有悬疑的元素，尤其是前者的第三个案子，两个电影都是明显的三个故事。另外值得关注的就是电影的中文名和英文名The Pig, the Snake, and the Pigeon背后的出处以及寓意了。</p>
+<ul>
+<li>《破墓》 2024-05-03  Rate： 💛💛🩶🩶🩶</li>
+<li>《三大队 / 请转告局长，三大队任务完成了 / Endless Journey》  2024-08-14  Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/35280899/"><em>扫黑·决不放弃</em> / 扫黑·拨云见日 / 拨云见日</a>》 2024-08-17 2024-03-03 Rate： 💛💛💛💛💛</li>
+<li>《<a href="https://movie.douban.com/subject/35164328/"><em>扫黑·决战</em> / 扫黑·两面人 / Break Through the Darkness</a>》 2024-08-17   Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/34436452/"><em>第八个嫌疑人</em> / 第8个嫌疑人 / Dust To Dust</a> 》  2024-08-17 Rate： 💛💛💛💛🩶</li>
+<li>《<a href="https://movie.douban.com/subject/33447633/"><em>坚如磐石</em> / 黑洞 / Under the Light</a>》 2024-08-18 Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/36208094/"><em>第二十条</em> / 正当防卫 / Article 20</a>》  2024-08-18  Rate： 💛💛💛💛🩶</li>
+<li>《<a href="https://movie.douban.com/subject/35068653/"><em>误杀2</em> / Fireflies in the Sun / 迫在眉睫 中国版</a>》 2024-08-20 Rate： 💛💛💛💛🩶</li>
+<li>《<a href="https://movie.douban.com/subject/35197639/"><em>扫黑行动</em> / 扫黑行动之临界点 / The Tipping Point</a> 》 2024-08-22 Rate： 💛🩶🩶🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/36822550/"><em>打黑</em> / Black Storm</a>》 2024-08-25 Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/35267224/"><em>孤注一掷</em> / 捕鱼行动 / 捕鱼之放手一搏</a>》 2024-09-14 Rate： 💛💛💛💛💛</li>
+<li></li>
+</ul>
+<h2 id="喜剧">喜剧：</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>《八角笼中 / Never Say Never / Octagonal 》  2024-08-15 Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/36430322/"><em>末路狂花钱</em> / The Last Frenzy</a>》   2024-08-17  Rate： 💛💛💛🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/26816104/"><em>从21世纪安全撤离</em> / Evacuate from the 21st Century</a> 》 2024-09-08 Rate： 💛💛💛💛💛</li>
+<li>《<a href="https://movie.douban.com/subject/36975801/"><em>无名之火</em> / For the Family's Sake / 以家之名</a>》  2024-09-14 Rate： 💛💛🩶🩶🩶</li>
+<li>《<a href="https://movie.douban.com/subject/36293009/"><em>怒火12小时</em> / 怒火十二小时</a> 》 2024-09-14 Rate： 💛🩶🩶🩶🩶</li>
+</ul>
+<h1 id="2-两个主题类似的开学第一课">② 两个主题类似的《开学第一课》</h1>
+<p><a href="#toc">↩️</a><br>
+Kendrick Lamar有被人称为北美鲁迅，LOL，第一次看到这个是在《Mr. Morale &amp; the Big Steppers》的专辑的评论里面。</p>
+<hr>
+<p>现在说说真正的鲁迅，周树人本人:<br>
+鲁迅有名言“男人有两大爱好：拉良家妇女下水，劝风尘女子从良；女人有两大爱好：和穷人谈钱，和富人谈感情”揭示了男女之间的一些普遍现象和问题，反映了鲁迅对人性和社会的深刻洞察和独到见解。挑战和反抗男女不平等和文化偏见，具有超越时空的普遍意义和价值。它适用于其他人际关系和社会关系，提出人与人之间应以尊重和理解为基础，以真诚和一致为标志，以平等和公正为目标。</p>
+<hr>
+<p><mark>男人有两大爱好：拉良家妇女下水，劝风尘女子从良</mark>。我待过两个地方，没开学前遇到第一课都是同样的主题：男性对待男女的区别，我觉得后面的画面大家其实就能够自己脑补各个角色的神情了。当然不是所有男人都是这样，但是这个比例也不小，somehow you can just tell a decent man from his face. Same thing, you can tell a bitch from her face.</p>
+<h1 id="music-j-cole-chris-brown">Music J. Cole &amp;  Chris Brown</h1>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>最近吃饭时候刷到这个clip，才想起来这是小布什的声音。</p>
+</blockquote>
+<hr>
+<p>J. Cole sampled Gorge bush#jcole #georgebush #sampled #rap #rapmusic #music #lyrics #songs #shorts<br>
+No Role Modelz · J. Cole</p>
+<p>https://youtube.com/shorts/bKXKwbzJTMs?si=uD7SqsWJNNE0MAgg</p>
+<iframe width="315" height="560"
+src="https://youtube.com/embed/bKXKwbzJTMs?si=pdybibnGPT32g8DL"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+<hr>
+<p>Chris Brown Better Dancer Then The Pros #chrisbrown #dancer #dancing #music #live #concert #rap #omg</p>
+<p>https://youtube.com/shorts/iAEpB5fca1o?si=PYJsriNjDZFB3-ct</p>
+<iframe width="315" height="560"
+src="https://youtube.com/embed/iAEpB5fca1o?si=_C69iAXaMEYBNJ7V"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+<hr>
+<ul>
+<li><a href="https://docs.document360.com/docs/embed-youtube-shorts">Embed 一个YouTubeshorts的方法（包含gif教程，极其简单）</a></li>
+</ul>
+<pre><code class="language-python">
+&lt;iframe width=&quot;315&quot; height=&quot;560&quot;
+src=&quot;https://www.youtube.com/embed/&lt;Shorts_video_code&gt;&quot;
+title=&quot;YouTube video player&quot;
+frameborder=&quot;0&quot;
+allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot;
+allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+
+</code></pre>
+<h2 id="2024年12月1日">2024年12月1日</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>梦到梅西来到校园里 大家都忙 加上我只有两个人要他签名 简单聊了两句 后面发现他就变成一个电竞选手了</li>
+<li>昨天是萨村成立125周年，很多俱乐部成员都有posts，晚上九点北京的黄金时间正好有比赛，回去之后打开看了一会就关了，下半场就没再看，一方面是因为还有很多事情需要处理，另外是发现场上有些小将都不认识，想想自从Leo去PSG之后，对于Barca的记忆像是就停留在了疫情那年，再也没有更新，很久没看到德容，当年还是小甜菜，现在儿子都挺大了，Pedri那年征战各个赛场，苦成了老头变成很多meme，加维我也没看过直播的比赛，哈维来了又走，当然救球队于水火之中，即使最后下课，他的功绩也是无比卓越的，弗里克现在带的也挺好，等特尔施特根回来。</li>
+</ul>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CGcp1Kfs3nE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CGcp1Kfs3nE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看这篇帖子</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CGcp1Kfs3nE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Keep Doing (@omwtbarca) 分享的帖子</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<ul>
+<li>今天早上醒来发现右手上从初中开始戴的Curry手环不见了，很有可能摘手套时候在手套上一起被摘下丢掉了，将近十年，除了高考我不记得还有在什么情形下摘下过它，是我身边陪伴我时间最长的东西。出走了，是一种自由，而我将以此视为得到《GNX》的某种形式上的平衡。但是每次调整位置的小动作习惯依然在。</li>
+</ul>
+<ul>
+<li>驴子、老虎和狮子的寓言</li>
+<li>突然发现PPT里面也有<a href="https://ezraknotlab.github.io/post/EKL%20Chaos_159/">TNT Sports Serif</a>这个字体，链接是我前面所写的一篇关于EKL Chaos #159 TNTSerifUV-visTDDFT的介绍。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://sun9-78.userapi.com/impg/HCU4xpAAyn61h7qud-HSv1_hdozukrUPuJvVCg/kv6DBw6Vy6g.jpg?size=1280x720&amp;quality=95&amp;sign=d6dce9e6de185195552746f06e81717e&amp;type=album" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2024/06/25/840dd6d0daa63da8.png" alt="" loading="lazy"></figure>
+<h1 id="mancity-nobel-10年从搞笑诺奖到真正的诺奖">Mancity &amp; Nobel  10年，从“搞笑诺奖”到真正的诺奖</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li><a href="https://news.sciencenet.cn/htmlnews/2024/12/535035.shtm">一项“荒诞”研究，让她比肩3位诺奖得主: link</a><br>
+唯一先后获得“搞笑诺贝尔奖”和诺贝尔奖的人，是英国曼彻斯特大学物理学家安德烈·海姆。</li>
+</ul>
+<p>1997年，海姆还是一名初出茅庐的研究人员。一个周五的晚上，在他当时任职的荷兰奈梅亨大学，海姆将水倒入正在产生巨大磁场的仪器里，发现水并未流出，而是神奇地悬浮了起来。这违反了当时对磁性的认识，让海姆和他的同事震惊不已。</p>
+<p>海姆非常兴奋，又用一系列物体做了悬浮实验，最后，他成功地使一只小青蛙悬浮起来，就像练就了“轻功”。</p>
+<p>2000年，因为这只可爱的小青蛙，海姆获得“搞笑诺贝尔奖”。他对独自接受该奖项心存疑虑，于是找到英国布里斯托大学的理论物理学家迈克尔·贝里，共同接受奖项。后者是一位德高望重的科学家，拥有终身教职，并且是描述悬浮青蛙的论文的共同作者。</p>
+<p>海姆经常谈起他的青蛙实验，以及好奇心对科学发展的价值。自获得“搞笑诺贝尔奖”后，每个周五的晚上，海姆都要做一些“不合常规”的实验。</p>
+<p>2004年，海姆在研究石墨，他想要制备出极薄的石墨。然而，抛光机只能将石墨磨到10微米。</p>
+<p>一个周五的晚上，海姆无意中瞥见垃圾桶中的胶带，他“心生一计”，用胶带粘出了一个原子厚度的石墨烯！</p>
+<p>2010年，因首次制备出石墨烯，并证明了其独特的物理和化学性质，海姆和康斯坦丁·诺沃肖洛夫共同获得了诺贝尔物理学奖。</p>
+<p>或许，“搞笑诺贝尔奖”和诺贝尔奖只差一步之遥，不变的是驱动科学探索的好奇心。</p>
+<h1 id="mancity">ManCity</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Physical and psychological consistency</li>
+<li>Don't forget that you never walk alone.</li>
+<li>Although I'm a City fan.</li>
+<li>MatchDay!!   Come City!</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#2024%E5%B9%B411%E6%9C%8824%E6%97%A5">2024年11月24日</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BB%99%E4%BD%A0%E8%AE%B2%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B">给你讲一些故事：</a></li>
+<li><a href="#1-id-take-your-enemies-in-front-of-god">① I'd take your enemies in front of God</a><br>
+*
+<ul>
+<li><a href="#in-case-you-dont-know">In case you don't know:</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B6%B3%E5%88%A9%E5%A5%B3%E7%AB%A5%E8%BF%9E%E7%BB%AD%E5%A4%B1%E8%B8%AA%E4%BA%8B%E4%BB%B6-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">《足利女童连续失踪事件》-- 读书笔记</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%8A%A8%E6%9C%BA">第一章 动机</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%8E%B0%E5%9C%BA">第二章 现场</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A7%94%E6%89%98">第三章 委托</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%86%B3%E6%96%AD">第四章 决断</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%8A%A5%E9%81%93">第五章 报道</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%88%90%E6%9E%9C">第六章 成果</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%BF%BD%E8%B8%AA">第七章 追踪</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%B7%B7%E4%B9%B1">第八章 混乱</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%BC%BA%E9%9C%87">第九章 强震</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E5%B1%B1%E9%81%93">第十章 山道</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E8%AD%A6%E9%92%9F">第十一章 警钟</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li>
+<li><a href="#%E6%96%87%E5%BA%93%E6%9C%AC%E5%90%8E%E8%AE%B0">文库本后记</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%85%E6%B0%B4%E6%B4%81%E7%9A%84%E8%BF%99%E4%B8%A4%E6%9C%AC%E9%9D%9E%E8%99%9A%E6%9E%84%E5%92%8C%E5%AD%97%E6%AF%8D%E8%A1%A8%E8%B0%9C%E6%A1%88%E8%BF%99%E7%A7%8D%E8%99%9A%E6%9E%84%E7%9A%84%E5%8C%BA%E5%88%AB">清水洁的这两本非虚构和字母表谜案这种虚构的区别</a></li>
+<li><a href="#%E7%8A%AF%E7%BD%AA%E6%82%AC%E7%96%91%E4%B8%93%E9%A2%98-%E4%B9%A6%E5%BD%B1%E5%9B%9E%E9%A1%BE">犯罪悬疑专题 —— 书影回顾：</a>
+<ul>
+<li><a href="#%E5%96%9C%E5%89%A7">喜剧：</a></li>
+</ul>
+</li>
+<li><a href="#2-%E4%B8%A4%E4%B8%AA%E4%B8%BB%E9%A2%98%E7%B1%BB%E4%BC%BC%E7%9A%84%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E8%AF%BE">② 两个主题类似的《开学第一课》</a></li>
+<li><a href="#music-j-cole-chris-brown">Music J. Cole &amp;  Chris Brown</a>
+<ul>
+<li><a href="#2024%E5%B9%B412%E6%9C%881%E6%97%A5">2024年12月1日</a></li>
+</ul>
+</li>
+<li><a href="#mancity-nobel-10%E5%B9%B4%E4%BB%8E%E6%90%9E%E7%AC%91%E8%AF%BA%E5%A5%96%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%AF%BA%E5%A5%96">Mancity &amp; Nobel  10年，从“搞笑诺奖”到真正的诺奖</a></li>
+<li><a href="#mancity">ManCity</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20241127/">https://ezraknotlab.github.io/post/ekl-20241127/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20241127/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20241127/&sharesource=qzone&title=EKL Alma Mater 《足利女童连续失踪事件》&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;犯罪悬疑专题&lt;/li&gt;
+&lt;li&gt;两个《开学第一课》&lt;/li&gt;
+&lt;li&gt;I&#39;d take your enemies in front of God luther (feat. SZA) Kendrick Lamar&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20241127/&sharesource=weibo&title=EKL Alma Mater 《足利女童连续失踪事件》 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;犯罪悬疑专题&lt;/li&gt;
+&lt;li&gt;两个《开学第一课》&lt;/li&gt;
+&lt;li&gt;I&#39;d take your enemies in front of God luther (feat. SZA) Kendrick Lamar&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/GhoO8sRec/">#
+                                                EKLStories
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241203/">
+                                                                                            EKL 20241203-The Party Never Ends
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-macau-and-gnx/">
+                                                                                                    EKL Macau &amp; GNX!
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

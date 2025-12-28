@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Alma Mater 《血与蜜之地》
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-02-05</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">35.1
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">9564</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2025/02/05/083655d3d1644a80.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>巴尔干半岛</li>
+<li>斯洛文尼亚、克罗地亚、塞尔维亚</li>
+<li>波黑、黑山、阿尔巴尼亚</li>
+<li>马其顿、希腊</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E8%A1%80%E4%B8%8E%E8%9C%9C%E4%B9%8B%E5%9C%B0-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">📚《血与蜜之地》-- 读书笔记</a>
+<ul>
+<li><a href="#before-reading">Before Reading</a></li>
+</ul>
+</li>
+<li><a href="#made-by-me">Made by me</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A%E5%A4%9C%E6%99%9A%E7%9A%84%E8%A7%92%E8%90%BD">第一章 斯洛文尼亚：夜晚的角落</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%90%A8%E6%A0%BC%E5%8B%92%E5%B8%83%E5%BF%83%E7%A2%8E%E5%8D%9A%E7%89%A9%E9%A6%86">第二章 萨格勒布：心碎博物馆</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%BE%BE%E5%B0%94%E9%A9%AC%E6%8F%90%E4%BA%9A%E5%86%B0%E4%B8%8E%E7%81%AB%E4%B9%8B%E6%AD%8C">第三章 达尔马提亚：冰与火之歌</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%BB%91%E5%B1%B1%E5%8E%BB%E5%B1%B1%E5%B7%85%E5%91%BC%E5%96%8A">第四章 黑山：去山巅呼喊</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%8E%AB%E6%96%AF%E5%A1%94%E5%B0%94i%E8%A7%A3%E4%BD%93%E6%A6%82%E8%A6%81">第五章 莫斯塔尔Ⅰ：解体概要</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E8%8E%AB%E6%96%AF%E5%A1%94%E5%B0%94ii%E9%97%AE%E9%A2%98%E7%9A%84%E6%A0%B8%E5%BF%83">第六章 莫斯塔尔Ⅱ：问题的核心</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%90%A8%E6%8B%89%E7%83%AD%E7%AA%9D%E5%9B%B4%E5%9F%8E%E8%AE%B0%E5%BF%86">第七章 萨拉热窝：围城记忆</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%96%AF%E9%9B%B7%E5%B8%83%E9%9B%B7%E5%B0%BC%E5%AF%9F%E6%BC%AB%E9%95%BF%E7%9A%84%E9%98%B4%E5%BD%B1">第八章 斯雷布雷尼察：漫长的阴影</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E8%B4%9D%E5%B0%94%E6%A0%BC%E8%8E%B1%E5%BE%B7i%E8%93%9D%E8%89%B2%E7%81%AB%E8%BD%A6">第九章 贝尔格莱德Ⅰ：蓝色火车</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%B4%9D%E5%B0%94%E6%A0%BC%E8%8E%B1%E5%BE%B7ii%E8%82%96%E5%83%8F%E4%B8%8E%E8%A7%82%E5%AF%9F">第十章 贝尔格莱德Ⅱ：肖像与观察</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%A7%91%E7%B4%A2%E6%B2%83i%E9%9B%AA%E8%90%BD%E8%8D%92%E5%8E%9F">第十一章 科索沃Ⅰ：雪落荒原</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0-%E7%A7%91%E7%B4%A2%E6%B2%83ii%E9%BB%91%E9%B8%9F%E4%B9%8B%E5%9C%B0">第十二章 科索沃Ⅱ：黑鸟之地</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E5%A5%A5%E8%B5%AB%E9%87%8C%E5%BE%B7%E5%A4%A7%E6%B9%96%E4%B9%8B%E5%A3%B0">第十三章 奥赫里德：大湖之声</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E6%96%AF%E7%A7%91%E6%99%AE%E9%87%8C%E8%BA%81%E5%8A%A8%E7%9A%84%E8%A7%A3%E6%9E%90">第十四章 斯科普里：躁动的解析</a></li>
+<li><a href="#%E5%B0%BE%E5%A3%B0-%E9%9B%85%E5%85%B8%E6%88%91%E6%84%9A%E8%A0%A2%E7%9A%84%E5%BF%83">尾声 雅典：我愚蠢的心</a></li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/UXRhemNQcUpxN2ZwWkd4VWpvTXViaTFGSkFBNnl6eDZvdUlTeEVjSVJPOXdkZU5NbUpRMXI1UFdPVTRKN0wxUTJOdHlrK2lObHhyMUNKK1FXcDFDL2xzOTdINlJSS0xvT1RLc2FWZ2xVTjg9/Kendrick_Lamar_-_The_Heart_Part_5_(Hydr0.org).mp3"></audio></p>
+<p><mark>Kendrick Lamar The Heart Part 5</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">As I get a little older
+I realize life is perspective
+And my perspective may differ from yours
+I wanna say thank you to everyone that's been down with me
+All my fans, all my beautiful fans
+Anyone who's ever gave me a listen
+All my people
+
+I come from a generation of pain, where murder is minor
+Rebellious and Margielas'll chip you for designer
+Belt buckles and clout, overzealous if prone to violence
+Make the wrong turn, be it will or the wheel alignment
+Residue burned, mist of the inner-city
+Miscommunication to keep homi' detective busy
+No protection is risky
+Desensitized, I vandalized pain, covered up and camouflaged
+Get used to hearing arsenal rain
+Analyze, risk your life, take the charge
+Homies done fucked your baby mama once you hit the yard
+That's culture
+Twenty-three hour lockdown, then somebody called
+Said your lil nephew was shot down, the culture's involved
+I done seen niggas do seventeen, hit the halfway house
+Get out and get his brains blown out, looking to buy some weed
+Car wash is played out, new GoFundMe accounts'll proceed
+A brand-new victim'll shatter those dreams, the culture
+
+(I want, I want, I want, I want)
+But I want you to want me too (I want, I want, I want, I want)
+I want the hood to want me back (I want, I want, I want, I want)
+I want the hood
+
+Look what I done for you (look what I done for you)
+Look what I done for you
+
+I said I do this for my culture
+To let y'all know what a nigga look like in a bulletproof Rover
+In my mama's sofa was a doo-doo popper
+Hair trigger, walk up closer, ain't no Photoshopping
+Friends bipolar, grab you by your pockets
+No option if you froze up, always play the offense
+Niggas going to work and selling work, late for work
+Working late, praying for work, but he on paperwork
+That's the culture, point the finger, promote ya
+Remote location, witness protection, they gon' hold ya
+The streets got me fucked up
+Y'all can miss me
+I wanna represent for us
+New revolution was up and moving
+I'm in Argentina wiping my tears full of confusion
+Water in between us, another peer's been executed
+History repeats again
+Make amends, then find a nigga with the same skin to do it
+
+But that's the culture, crack a bottle
+Hard to deal with the pain when you're sober
+By tomorrow we forget the remains, we start over
+That's the problem
+Our foundation was trained to accept whatever follows
+
+Dehumanized, insensitive
+Scrutinize the way we live for you and I
+Enemies shook my hand, I can promise I'll meet you
+In the land where no equal is your equal
+Never say I ain't told ya, nah
+In the land where hurt people hurt more people
+Fuck calling it culture
+
+(I want, I want, I want, I want)
+But I want you to want me too (I want, I want, I want, I want)
+I want the hood to want me back (I want, I want, I want, I want)
+I want the hood
+
+Look what I done for you (look what I done for you)
+Look what I done for you
+
+Take the drums out
+
+Celebrate new life when it come back around
+The purpose is in the lessons we learning now
+Sacrifice personal gain over everything
+Just to see the next generation better than ours
+I wasn't perfect, the skin I was in had truly suffered
+Temptation, impatience, everything that the body nurtures
+I felt the good, I felt the bad and I felt the worry
+But all-in-all, my productivity had stayed urgent
+
+Face your fears, always knew that I would make it here
+Where the energy is magnified and persevered
+Consciousness is synchronized and crystal-clear
+Euphoria is glorified and made His
+Reflecting on my life and what I done
+Paid dues, made rules, change outta love
+Them same views made schools change curriculums
+But didn't change me staring down the barrel of the gun
+
+Should I feel resentful I didn't see my full potential?
+Should I feel regret about the good that I was into?
+Everything is everything, this ain't coincidental
+I woke up that morning with more heart to give you
+As I bleed through the speakers, feel my presence
+
+To my brother, to my kids, I'm in heaven
+To my mother, to my sis, I'm in heaven
+To my father, to my wife, I am serious, this is heaven
+To my friends, make sure you counting them blessings
+To my fans, make sure you make them investments
+And to the killer that sped up my demise
+I forgive you, just know your soul's in question
+I seen the pain in your pupil when that trigger had squeezed
+And though you did me gruesome, I was truly relieved
+I completed my mission, wasn't ready to leave
+But fulfilled my days, my Creator was pleased
+
+I can't stress how I love y'all
+I don't need to be in flesh just to hug y'all
+The memories recollect just because y'all
+Celebrate me with respect
+The unity we protect is above all
+
+And, Sam, I'll be watching over you
+Make sure my kids watch all my interviews
+Make sure you live out our dreams we produced
+Keep that genius in your brain on the move
+
+And to my neighborhood, let the good prevail
+Make sure them babies and the leaders outta jail
+Look for salvation when troubles get real
+'Cause you can't help the world until you help yourself
+
+And I can't blame the hood the day that I was killed
+Y'all had to see it, that's the only way to feel
+And though my physical won't reap the benefits
+The energy that carry on emits still
+I want you
+
+</code></pre>
+</details>
+<hr>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2025/02/05/083655d3d1644a80.png" alt="" loading="lazy"></figure>
+<h1 id="血与蜜之地-读书笔记">📚《血与蜜之地》-- 读书笔记</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Rating⭐⭐⭐⭐⭐</li>
+<li>January 23, 2025 → February 5, 2025</li>
+<li><a href="https://book.douban.com/subject/37022123/">DouBan</a></li>
+</ul>
+<p><img src="https://inews.gtimg.com/om_bt/O4d5Nt6sSwJcZyv2zud9eFvmkWE6tC3aYvXmVIf1hWrskAA/641" alt="" loading="lazy"><br>
+作者: 刘子超<br>
+出版社: 文汇出版社<br>
+出品方: 新经典文化<br>
+副标题: 穿越巴尔干的旅程<br>
+出版年: 2024-10<br>
+页数: 400<br>
+定价: 79.00元<br>
+装帧: 精装<br>
+丛书: 新经典·刘子超作品<br>
+ISBN: 9787549643295<br>
+Label: No.5 豆瓣2024年度中国文学（非小说类）</p>
+<p><mark>内容简介</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">
+从北到南，由冬入春，穿越素有“欧洲火药桶”之称的巴尔干半岛。8个国家，23个城镇，再度见证世界的细碎与广阔。
+
+这里诞生了奠定欧洲文明基础的古希腊文明和拜占庭文明，也是天主教、东正教、伊斯兰教分庭抗礼的场所。这里是大国兵戎相见的战场，也是社会主义和资本主义两种意识形态交锋与较量的熔炉。
+
+往事并不如烟。跟随刘子超的脚步，沿着现代历史开始的道路，来到血与蜜之地。火车穿越于山谷的黑色皱褶，历史的幽灵总在不经意间出现，帝国的残影荡漾在亮绿的河水中，人类的爱与恨，将一一清晰地浮现在眼前。
+
+这是一本四处漫游的旅行文学，却讲了一个个寻找家园的故事。酷儿与诗人，难民和毒贩，凶手和受害者，信徒与商人，悉数登场。
+
+在斯洛文尼亚，他闯入一场诗歌沙龙，看见诗人如何用语言重建家园；在黑山的深夜，少女接线员忙着为遥远的美国人订比萨，自己却从未尝过一口；活在南斯拉夫旧梦中的克罗地亚青年，可以修好一切东西，却修不好自己；选择“躺平”的波黑银行职员，却大声质问中国年轻人：“你们生活在中国，为什么要躺平？”结识塞尔维亚的电商教父，他感受着全球化的浪潮，眼里的世界平滑且没有任何阻碍；碰见希腊经济危机下成长的一代，他们喊着左翼口号，大声地说：“我们也是巴尔干国家。”
+
+巴尔干变得不只是一个地理概念，更像一个形容词，充满伤痛、挣扎、求索和希冀的复杂含义。穿越历史漫长的阴影，抵达布满弹孔的时间现场，一路收集飘零人的血色故事，去探索一个更具普遍性的问题，一个始于巴尔干却与我们每个人都相关的问题：在充满不确定性的当下，我们何处为家？
+
+</code></pre>
+</details>
+<hr>
+<h2 id="before-reading">Before Reading</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>刘子超  四五年前就极有热情，但是自此之后总是断断续续，没能读完一个整本的作品，但是除纸质书外，媒体方面的关注倒一直都及时跟进。包括李乌鸦在<a href="https://podcasts.apple.com/us/podcast/%E5%86%8D%E9%97%AE%E5%88%98%E5%AD%90%E8%B6%85-i%E4%BA%BA%E6%83%B3%E5%9C%A8%E6%97%85%E8%A1%8C%E4%B8%AD%E4%BA%A4%E6%9C%8B%E5%8F%8B-%E7%BA%AF%E9%9D%A0%E5%96%9D%E9%85%92%E5%A5%BD%E4%BD%BF%E5%90%97-%E4%B8%B2%E5%8F%B0/id1704303601?i=1000677855101">podcast</a>里面多次采访过刘子超，包括最新一次关于血与蜜之地。</li>
+</ul>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/%E5%86%8D%E9%97%AE%E5%88%98%E5%AD%90%E8%B6%85-i%E4%BA%BA%E6%83%B3%E5%9C%A8%E6%97%85%E8%A1%8C%E4%B8%AD%E4%BA%A4%E6%9C%8B%E5%8F%8B-%E7%BA%AF%E9%9D%A0%E5%96%9D%E9%85%92%E5%A5%BD%E4%BD%BF%E5%90%97-%E4%B8%B2%E5%8F%B0/id1704303601?i=1000677855101"></iframe>
+<ul>
+<li>第一次为争素材经历，在当地报名一个诗人峰会，假装当一个诗人，硬着头皮上去讲话，难忘的尴尬经历</li>
+<li>巴尔干这个地方小国家特别多，自然就涉及到国家，民族的认同问题，尤其是很多国家历史上也像中亚诸多国家合体为一个大国苏联一样，随着南斯拉夫的解体，各国组成体之间以前存在的冲突矛盾暴露于表面，语言相近但是各自并不认同与对方说的是同一种语言，这点和苏联的组成国也很像，比如乌克兰人不认为和俄罗斯人一样都说的是Russian， 但总体上语言相近，只有个别“个性化”修饰。因此这些地方的很多方面认识可以与中亚诸多国家进行对比加深认识，合并相似项，但是还要注意一点，也是最难以忽略的故事线— 战争，包括两次世界大战和北约对于中国驻南使馆的轰炸。
+<ul>
+<li>二战之后世界大多数角落渐渐都有民族主义觉醒， 拉美，非洲，中西亚， 但是人们却很少去关注这个诸多欧洲帝国主义国家眼皮下的区域—巴尔干半岛地区。</li>
+</ul>
+</li>
+<li>认同： 像<a href="https://ezraknotlab.github.io/post/ekl-20250106/#:~:text=%E7%9B%96%E5%A5%87%E5%92%8C%E9%9C%8D%E6%B4%9B%E5%A8%81%E7%9A%84%E8%BF%9B%E5%9C%BA%E9%9F%B3%E4%B9%90%E4%B9%9F%E5%92%8C%E4%BB%96%E4%BB%AC%E7%9A%84%E9%82%A3%E5%9C%BA%E6%AF%94%E8%B5%9B%E5%90%8C%E6%A0%B7%E5%AE%8C%E7%BE%8E%EF%BC%8C%E6%89%93%E5%A4%B4%E7%9A%84%E6%98%AF%E9%9C%8D%E6%B4%9B%E5%A8%81%EF%BC%8C%E5%B8%A6%E6%9C%89%E7%9D%80%E5%A4%8F%E5%A8%81%E5%A4%B7%E9%A3%8E%E6%83%85%E7%9A%84%E9%9F%B3%E4%B9%90%E6%AC%A2%E5%BF%AB%E5%9C%B0%E9%A3%98%E8%8D%A1%E5%9C%A8%E5%9C%BA%E9%A6%86%E5%86%85%EF%BC%8C%E9%9A%8F%E5%90%8E%E7%9A%84%E6%98%AF%E7%9B%96%E5%A5%87%EF%BC%8C%E9%9F%B3%E4%B9%90%E6%98%AFDirty%20Heads%E7%9A%84Celebrate%EF%BC%8C%E6%AD%8C%E8%AF%8D%E5%A4%A7%E6%84%8F%E5%B0%B1%E6%98%AF%E8%87%AA%E5%B7%B1%E7%8B%AC%E8%87%AA%E4%B8%80%E4%BA%BA%E5%9C%A8%E5%8A%AA%E5%8A%9B%E6%89%93%E6%8B%BC%EF%BC%8C%E6%80%BB%E6%9C%89%E4%B8%80%E5%A4%A9%E5%BD%93%E8%87%AA%E5%B7%B1%E5%9B%9E%E5%88%B0%E5%AE%B6%E5%90%8E%E5%8F%AF%E4%BB%A5%E5%92%8C%E5%A6%88%E5%A6%88%E3%80%81%E5%A6%B9%E5%A6%B9%E4%B8%80%E8%B5%B7%E5%BA%86%E7%A5%9D%E3%80%82%E5%89%8D%E8%80%85%E6%98%AF%E5%AF%B9%E4%BA%8E%E5%AE%B6%E4%B9%A1%E7%9A%84%E7%83%AD%E7%88%B1%EF%BC%8C%E5%90%8E%E8%80%85%E6%98%AF%E5%AF%B9%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%80%9D%E5%BF%B5%EF%BC%8C%E8%99%BD%E7%84%B6%E9%83%BD%E5%9C%A8%E5%90%8C%E4%B8%80%E7%89%87land%20of%20freedom%E4%B9%8B%E4%B8%8A%EF%BC%8C%E4%BD%86%E6%98%AF%E5%BD%92%E5%B1%9E%E7%9A%84%E8%B1%A1%E5%BE%81%E6%80%A7%E7%9A%84%E5%9C%88%E5%AD%90%E5%A4%A7%E5%B0%8F%E4%B8%8D%E5%90%8C%EF%BC%8C%E7%B1%BB%E4%BC%BC%E7%9A%84%E8%BF%98%E6%9C%89Alex%20Perera%E7%9A%84%E4%BD%8D%E4%BA%8E%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%A3%AE%E6%9E%97%E7%9A%84%E6%BA%90%E8%B5%B7%E9%83%A8%E8%90%BD%EF%BC%8C%E4%B8%8D%E4%B8%80%E6%A0%B7%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9C%88%E5%AD%90%EF%BC%8C%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E7%B2%BE%E7%A5%9E%E8%AE%A4%E5%90%8C%EF%BC%8C%E5%8D%B4%E9%83%BD%E6%9C%89%E7%9D%80%E5%90%8C%E6%A0%B7%E7%9A%84%E5%BC%BA%E5%A4%A7%E4%BD%9C%E7%94%A8%E2%80%94%E2%80%94%E5%B8%A6%E7%BB%99%E4%BA%BA%E4%BB%AC%E7%94%B1%E7%B2%BE%E7%A5%9E%E8%AE%A4%E5%90%8C%E5%BC%95%E5%8F%91%E7%9A%84%E5%9B%A2%E7%BB%93%E5%A5%8B%E8%BF%9B%E7%9A%84%E5%8A%9B%E9%87%8F%E3%80%82">前面讲过的MAX， Alex perera</a>， 民族认同等不同形式上的精神认同会给一个人或者国家带来难以描述的、强大又经久不衰的力量。</li>
+<li>家家有本难念的经，国家也是，大国的竞争，小国的生存。</li>
+</ul>
+<h1 id="made-by-me">Made by me</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>书中也有细节提到刘子超和别人讨论交谈时候会拿出笔记本记录，还有相机。</p>
+</li>
+<li>
+<p>想到旅行文学的发展，从比较传统中认识的“拉美的旅行文学”，到如今风格独特的刘子超这类作品的自然+社会纪实的旅行文学，超脱于读者本身的条件限制，可以让我感受到三维空间——地球上遥远的天边的近况，还有四维空间——他们过去的伤痛和骄傲。像是科研新开的口子一样，这样的研究对象，AKA载体，可能会越来越少，除了有过战争冲突、民族主义、宗教信仰的地方，其他地方没什么太深的可以写作，旅行除了观赏自然风景，更有人文建筑及其背后的历史脉络，留下的满足如此条件的地方不多了。</p>
+</li>
+<li>
+<p>波什尼亚克人的困境与巴勒斯坦人极其相似，“墙”的另一侧人们过着完全不一样的物质条件优渥的生活，但也有本质不同，波什尼亚克人和邻居本质上说着同样的语言，有相似容貌，享用相同的美食……  #shitty world</p>
+</li>
+<li>
+<p>借此书作为显微镜，深入地了解了下克族、塞族、波族共居的那片土地，尽管各自都有民族主义引起的冲突与矛盾，但是新生代年轻人之间似乎这种敌对气氛并不浓烈，但是社会整体还有时时刻刻都有些相关的气味弥漫……毕竟历史无法抹去。混乱给人们的生活笼罩上一层灰蒙蒙的苍穹，年轻人、中年人，那些想打拼的人们却失去内心的强烈的欲望，理想的工作、政府内工作岗位都需要贿赂或者关系才可以得到，遍地的腐败，加上头顶之上时刻可能爆发的冲突，使得人们不敢梦想太多。他们也羡慕在中国，只要你足够努力，一定能有所收获。而对他们来说，那片土地唯一能够得到整个世界的关注，可能就是能是由于新一轮激烈的战争冲突。</p>
+</li>
+<li>
+<p>无数个小人物织构的大故事 史诗叙事</p>
+</li>
+<li>
+<p><a href="https://podcasts.apple.com/cn/podcast/%E7%8E%B0%E5%9C%BA-%E7%8E%B0%E5%9C%BA/id1751641957?i=1000685493277">https://podcasts.apple.com/cn/podcast/现场-现场/id1751641957?i=1000685493277</a> 这期《现场现场》podcast也讨论了关于记者采访的遇到的问题，刘子超在游历期间也被认识的短期司机带着访问一些当地的受害者，经历者…</p>
+</li>
+<li>
+<p>一个人旅行似荒野生存一样，面临不同的情形，又像一只生长在野外的花，看看自己究竟能不能在此生存绽放。</p>
+</li>
+<li>
+<p>记录当前阅读方式细节：iPhone相机识字粘贴，notion笔记 章节间有五个旅行相册，但似乎都是被安排在对应内容的大章节之后的，所以读者阅读顺序应该先翻开旅行相册看看一张张生动的照片，而后在前面的章节阅读过程中找到对应的故事叙述。</p>
+</li>
+<li>
+<p>熟悉的冰冷的西北风，公园里冬日暖阳下冰冷的石凳，室外无处躲藏，只得避在一堵墙的南面。远处的鸟叫，还有三两只狗断断续续的争吵，以及不知从哪时不时发出的诡异的机械声，在这里似乎又只有我一个人能够听到……</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/imgs/2025/02/05/0756d15626dde835.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p>突然明白，时不时响起的混杂的声音，似警报和机械尖锐的声音，都是为了驱赶输电网塔上面的鸟类，而冰面下吨吨的声音也见怪不怪了……</p>
+</li>
+<li>
+<p>太阳尽落西山，一朵暗蓝的云彩飘在西山之山，像着悬浮的石头<br>
+<img src="https://s3.bmp.ovh/imgs/2025/02/05/825e9073b2d45618.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>随书附带有巴尔干地区的小地图，从地理角度非常容易入手理解这个地区纷繁复杂的矛盾，主要发生在邻国间，当然剧烈的冲突都发生的交界处，甚至三个国家间的冲突剧烈爆发在夹在中间的小国家地盘上……</p>
+</li>
+<li>
+<p>另外地图上不同颜色标出了宗教信仰的分布情况，及其信众对应的民族。</p>
+<ul>
+<li>克罗地亚地靠欧洲，天主教居多；塞尔维亚靠俄罗斯，认同多靠东斯拉夫信仰东正教，阿尔巴尼亚较居南，离阿拉伯地区更近些……</li>
+<li><img src="https://s3.bmp.ovh/imgs/2025/02/05/40d53b83cf5f12f7.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+<li>
+<p>因为历史上被殖民、联盟、政治中心或者权利的转移，冲突下人口的迁移、语言等等原因，国界难划分，民族间杂居，各民族和国家间的冲突永远难纠缠清，一定程度上像巴以冲突那样。</p>
+</li>
+<li>
+<p>每当这个时候我会唤醒那深刻的、对于秦始皇大一统的认识。</p>
+</li>
+</ul>
+<h1 id="第一章-斯洛文尼亚夜晚的角落">第一章 斯洛文尼亚：夜晚的角落</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>第一次为争素材经历，在当地报名一个诗人峰会，假装当一个诗人，硬着头皮上去讲话，难忘的尴尬经历。</li>
+<li>和安娜，在萨格勒布相遇的女孩，勤劳能干，多才多艺， 互相谈论生活文化，podcast里也有提及</li>
+<li>阿丽达说，在南斯拉夫内部，克罗地亚和塞尔维亚代表了两种势均力敌的气质和倾向—克罗地亚人信奉天主教，塞尔维亚人信奉东正教；克罗地亚人使用拉丁字母，塞尔维亚人使用西里尔字母。双方若能弥合分歧，南斯拉夫就有望实现真正的统一，建立起一个强盛的国家。反之，一旦分歧无法调和，南斯拉夫就会走向分裂和战争。</li>
+</ul>
+<h1 id="第二章-萨格勒布心碎博物馆">第二章 萨格勒布：心碎博物馆</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>和阿丽达坐下观赏风景，讨论过去和现在的区别，就是正常的两个人对话</li>
+<li>”就像乌克兰人和俄罗斯人，克罗地亚人和塞尔维亚人原本也可以成为最好的朋友。然而，一切都变得无法挽回。从此以后，他们不得不紧绷神经，在外人的叹息声中，走上各自的道路。</li>
+</ul>
+<ul>
+<li>萨格勒布有一家心碎博物馆，收集世界各地情侣分手的物品</li>
+<li>即使是个人的分手故事，也带着与众不同的历史重量</li>
+<li>战争时期的爱情  新冠时期的爱情 逃亡时期</li>
+</ul>
+<h1 id="第三章-达尔马提亚冰与火之歌">第三章 达尔马提亚：冰与火之歌</h1>
+<p><a href="#toc">↩️</a><br>
+📍拿破仑入侵是克罗地亚历史上的一个插曲，时间短暂，却影响深远。从法国人那里，克罗地亚人开始接触到民族主义理念，自我意识也随之嬗变。此后，克罗地亚人就开始在“两个自我”之间不断摇摆：时而倾向于泛斯拉夫的情感，时而倒向对抗塞尔维亚的诉求。历史的浪潮多次证明，克罗地亚每一次在冰与火之间摇摆之时，往往也是战乱与动荡之时。</p>
+<p>📍从高处俯瞰老城，满眼皆是白石与红瓦，有一种根植于历史的富足气息。想象一下，早在1317年，这里就建立了至今仍在运营的药房；1436年就有了至今仍在使用的供水系统。1347年，当黑死病席卷欧洲，导致三分之一人口死亡时，杜布罗夫尼克率先建立起世界上第一套完整的隔离制度：所有外来人员必须在海上的岛屿隔离四十天后方可上岸。当地人将“隔离”称为 “quarantine”拉丁语中“四十天”的意思。历史学家认为，这个时间长度受到了《圣经》的启发。例如，诺亚方舟在洪水中漂浮四十日夜，耶稣在荒野中禁食四十天。</p>
+<h1 id="第四章-黑山去山巅呼喊">第四章 黑山：去山巅呼喊</h1>
+<p><a href="#toc">↩️</a><br>
+📍我随意选了一条尚有人气的街道，沿路找到一家旅馆。招牌的油漆已经剥落，窗户也有破损，不过倒有一个前台女孩守在门口。我付了房费，接过钥匙，在她的指引下，沿着狭窄的楼梯拾级而上，来到了二层的客房。<br>
+走廊不能说没有打扫，但只是打扫到某一条界线，然后清洁员似乎想起了更重要的事，就任由扫起来的灰尘留在了那里。房间还算整洁，我只住一晚，也就没花心思细看。我放下行李，锁上房门，回到街上，<mark>准备探索这座我此生大概只会来一次的小城。</mark>  （有很多时候去一个遥远的地方，当我自己去到一个遥远的、偏僻之地，当时就会意识到很可能此生只次一次。）</p>
+<h1 id="第五章-莫斯塔尔i解体概要">第五章 莫斯塔尔Ⅰ：解体概要</h1>
+<p><a href="#toc">↩️</a><br>
+📍大巴最终抵达车站时，我与伊丝朵拉告别，并交换了联系方式。我注意到她的签名档里写着一句拉丁谚语：“Dosis sola facit venenum，意为“剂量决定毒性”。这或许是伊丝朵拉在实验室工作时的格言，然而这句话恐怕同样适用于波黑乃至整个巴尔干地区：适度的民族主义可以凝聚人心，一旦超过某个临界点，它就可能成为毁灭的毒药。</p>
+<ul>
+<li>走到波黑，地理上这个国家也夹在塞尔维亚和克罗地亚之间，克族和塞族当然在波黑这个国家的分布也是靠近各自对应的大民族主义的国家，第三个民族则是波什尼亚克族。</li>
+</ul>
+<p>📍在埃斯梅尔看来，大塞尔维亚主义和大克罗地亚主义有一个共同之处，那就是都想吞并波黑这片土地。在他们的认知中，波什尼亚克族是一个虚构的民族，不过是土耳其人征服巴尔干后改信伊斯兰教的塞尔维亚人或克罗地亚人。<br>
+📍早在战争开始前，塞尔维亚总统米洛舍维奇和克罗地亚总统图季曼就曾秘密在铁托的伏伊伏丁那狩猎小屋会晤，商讨分割波黑的计划，决定将这片土地一分为二，分别纳入塞尔维亚和克罗地亚的疆域之内。<br>
+“但棘手的问题只有一个，那就是如何划分莫斯塔尔。”埃斯梅尔说，“因为莫斯塔尔正好处在夹缝地带，西面以克罗地亚人为主，东面以塞尔维亚人为主。”经过一连串的秘密策划，克族和塞族达成了共识，以莫斯塔尔东部的主要商业街—铁托元帅大道作分界线。这一决定意味着整个穆斯林老城区将处于克族的控制之下。当时，大部分波什尼亚克人对这些秘密协议一无所知，仍然相信自己和克族人有着共同的愿景：那就是反对塞族的扩张，获得自治权</p>
+<h1 id="第六章-莫斯塔尔ii问题的核心">第六章 莫斯塔尔Ⅱ：问题的核心</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>遇到了达米尔和叶莲娜。这里工作的薪资并不高，还在为生计劳苦奔波，达米尔带我去默主哥耶，有传闻三个小孩在那里见到了圣母，因此很多人每年都去那里朝圣，达米尔和陌生人在网站上约定沙发客 ，和他的聊天中理解了这里社会现状，达米尔最后坦言自己是同性恋。</li>
+<li>叶莲娜父母来自不同背景，三十岁前求学工作等不同经历让她来到这里当老师，给来自不同背景的孩子教育，伟大的女性总会将种族等异同放下，用爱感化，并且相信着希望的存在。</li>
+</ul>
+<h1 id="第七章-萨拉热窝围城记忆">第七章 萨拉热窝：围城记忆</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>“诗人”普林西普掀开了第一次世界大战的序幕，而“画家”希特勒开启了第二次世界大战的篇章。</li>
+</ul>
+<p>📍库斯图里卡在著作《我身在历史何处》中，将安德里奇视为理解伊斯兰教、天主教和东正教复杂关系的桥梁。库斯图里卡引用了安德里奇的一段话：“穆斯林望着伊斯坦布尔，塞尔维亚人望着莫斯科，而克罗地亚人望着梵蒂冈。他们的爱寄托在远方，而他们的恨却横亘在眼前。爱那么远，恨却那么近。”<br>
+<mark>萨拉热窝，这个爱与恨的交汇点，长期以来被誉为“欧洲的耶路撒冷”。</mark></p>
+<p>📍或许正是这些错综复杂的因素，共同造成了对萨拉热窝长达一千四百二十五天的围困。这场围困不仅被证明是可持续的，对于那些关键的参与者来说，它甚至带来了某种利益。<br>
+对于塞族围攻者而言，围城使得萨拉热窝陷人绝境，这转化为了一种有力的政治筹码，也成功地分散了国际社会对巴尔干其他地区更为严重暴行的关注。对萨拉热窝的领导层来说，长期的围困使他们能够紧握权力，巩固政治地位，同时赢得国际社会的同情与支持。在联合国和西方国家看来，围困既展示了他们提供的人道主义援助，又避免了冲突的进一步扩大和难民的大量涌入。对于媒体记者而言，围城中的萨拉热窝如同一座剧院，提供了观察战争的最佳位置。萨拉热窝不同于偏远且难以进入的莫斯塔尔，成了最易进人的军事热点地区。至于那些在围困中寻求利润的黑市商贩，持久的围城创造了一个利润丰厚的市场，成为他们“学习市场经济的最佳课程”。</p>
+<h1 id="第八章-斯雷布雷尼察漫长的阴影">第八章 斯雷布雷尼察：漫长的阴影</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>斯雷布雷尼察位于波黑东部，紧邻塞尔维亚边墘，是塞族共和国境内的一块波什尼亚克族飞地。1995年7月，波黑战争已近尾声，这里发生了一起震惊世界的种族屠杀事件。波黑塞族军队在拉特科•姆拉迪奇将军的指挥下，占领了联合国划定的“安全区”，在短短数日内屠杀了近八千名波什尼亚克族男性。这场惨绝人寰的屠杀，后来被国际刑事法庭定性为种族灭绝，成为自第二次世界大战以来，欧洲最严重的种族屠杀事件。<br>
+如今，斯雷布雷尼察已经淡出人们的视野。我想去那里看看近三十年后的情况，走访大屠杀的幸存者。我原本打算乘长途汽车前往。不过，大屠杀之后，斯雷布雷尼察的常住人口骤滅，到了冬季，连长途汽车也停运了。</li>
+</ul>
+<p>阿德南作为导游带我游离</p>
+<p>📍<mark>我问阿德南，是什么支撑着他这么拼命地工作。他说，是他的儿子。每次看到儿子，他都觉得自己再辛苦也是值得的。</mark>“我还想再要两个孩子，”他说，“穆斯林喜欢大家庭。”“不担心未来吗？”“当然会担心。但归根结底，我也只能过好自己的生活，不是吗？”</p>
+<p>📍阿德南停顿片刻，又接着说道：“你看，那些月人五百欧的人关心民族主义，月入一千欧的人想着买新车，月人两千欧的人悠闲地谈论天气。<mark>问题的根源在于经济，只要经济稳定，一切都不成问题。</mark><br>
+回想铁托时代，波黑并没有那么严重的民族矛盾。”</p>
+<h1 id="第九章-贝尔格莱德i蓝色火车">第九章 贝尔格莱德Ⅰ：蓝色火车</h1>
+<p><a href="#toc">↩️</a><br>
+📍踏上巴尔干的旅途后，塞尔维亚就成为一个挥之不去的名字。在1990年代发生的四场南斯拉夫战争中，塞尔维亚被西方舆论普遍视为“施暴者”。海牙国际法庭公布的战争嫌犯人数也从一个侧面佐证了这一点：十八名克罗地亚族，五名波什尼亚克族，而塞族却有六十二人之多。<br>
+在这六十二名塞族人中，既包括塞尔维亚前总统米洛舍维奇（2006年死于狱中），也有波黑塞族共和国前总统卡拉季奇和塞族武装部队将军姆拉迪奇（两人被判处终身监禁）。他们是萨拉热窝围城和斯雷布雷尼察大屠杀的始作俑者，但在不少塞尔维亚人眼中，至今仍被视民族英雄。<br>
+所以，该如何理解这段历史？<br>
+当我们试图用文字描述一段复杂的历史时，往往只能将其简化——攻击者与被攻击者、受害者与施暴者——身份往往被迅速划定，并固化成不容置疑的事实。然而，巴尔干的历史却让我愈发感到，纯粹的黑白分明往往只存在于三流的好莱坞电影中。<br>
+历史是由不同甚至经常相互冲突的叙事构成的网络。要真正理解过去，意味着要审视历史的多样性和复杂性，而非仅仅将其看作黑白分明的简单故事。历史的真相往往隐藏在不同色彩线条的交错中，由一系列灰色地带共同塑造。因此，在前往塞尔维亚之前—特别是在经历了波黑之后—我感到自己必须放下对这个国家的成见，尽量以一个旁观者的立场，观察和感受这个国家的现实。</p>
+<ul>
+<li>这也是整个巴以冲突中后代之间矛盾的死结所在…  之前我在<a href="https://ezraknotlab.github.io/post/Alma%20Mater%20477/#%E6%9F%A0%E6%AA%AC%E6%A0%91">《柠檬树》</a>也有体会到。</li>
+</ul>
+<ul>
+<li>听了前面朋友的建议—去贝尔格莱德就要去看看夜生活。所以被朋友介绍和一个女孩一起去夜店，在那里认识一个塞尔维亚的杰克马—彼德洛维奇，还有一个要做TIKTOK培训的曾经的ins网红女。</li>
+</ul>
+<h1 id="第十章-贝尔格莱德ii肖像与观察">第十章 贝尔格莱德Ⅱ：肖像与观察</h1>
+<p><a href="#toc">↩️</a><br>
+<mark>两则小故事</mark></p>
+<p>📍我问彼得洛维奇先生，从早年的网络博主，到如今的电商教父，他是如何始终屹立潮头，保持进取，不被时代淘汰的？彼得洛维奇先生喜欢这个问题。他的嘴角微微上扬。<br>
+“我想先问你一个问题。”他说，“梵高被誉为史上最伟大的画家之一，但在他的有生之年，却从未成功卖出过一幅作品。你有没有思考过，这是为什么？”我摇摇头，等待下文。<br>
+“稍有艺术史常识的人都知道这背后的答案。”彼得洛维奇先生看了看我，“让梵高名垂青史的，是一个叫乔安娜的女性—他的弟媳。她整理出版了梵高所有的书信。这本书非常成功，让人们对梵高的人生有了更深刻的了解。从那时起，梵高的画作价值才开始急剧上升，受到越来越多人的推崇和爱戴。”彼得洛维奇先生停下来，喝了一口咖啡。“究竟是什么改变了这一切？因为人们发现了一个动人的故事，于是与那些艺术品建立起了情感联系。这个故事成了梵高作品的灵魂，使得梵高的每一幅画作不再只是一幅简单的画作。”<br>
+彼得洛维奇先生清了清嗓子。</p>
+<hr>
+<p>📍“<mark>这个例子告诉我们，一个引人入胜的故事，正是区分大品牌和普通品牌的关键。如果故事够好，产品也不错，那一场都会水到渠成</mark>。记者们会争相免费给你写报道，因为他们也在寻找好故事，而好故事会自然而然地传开。但如果没有故事，或者故事平淡无奇，那就得掏腰包请人家来写。这样也能有点效果，不过效果多半也就那么回事了。”</p>
+<hr>
+<p>“如果你关注过眉妆行业，可能听说过‘阿纳斯塔西娅•比佛利山庄’这个牌子。这个品牌的背后有一个了不起的故事。在塞尔维亚，这个故事可能没人知道，但在美国，可以说是家喻户晓。<br>
+“品牌的创始人叫阿纳斯塔西娅•索阿雷，罗马尼亚人，出生在黑海边的康斯坦察。1980年代，她二十岁出头的时候，在家乡开了一家美容院。她当时就意识到，在罗马尼亚这种压抑创意的社会主义国家，她不可能有什么大的作。她决定要去一个更自由的地方。<br>
+“她带着年幼的女儿，历经千辛万苦来到美国，在洛杉矶找了一份美容师的工作。她很快发现，这边的女性似乎不太关心自己的眉毛。<br>
+“阿纳斯塔西娅常去图书馆阅读艺术史方面的书籍。她注意到，像达•芬奇这样的文艺复兴大师，在画人物肖像的时候，对眉毛特别在意。她开始跟客户们聊起这些事情。慢慢地，在好莱坞的圈子里，人们开始传言，说有个叫阿纳斯塔西娅的罗马尼亚女人，能给你弄出一个超美的眉形。<br>
+“阿纳斯塔西娅把一个古老的理念重新带回了化妆品界。那些细细的眉毛真的不好看，还让人显老。你知道黑白电影里的玛琳．黛德丽吧？”彼得洛维奇先生问我，“她在银幕上看着像四五十岁，实际上她那会儿才二十岁出头，都是因为那时候流行那种细眉。”“阿纳斯塔西娅终于开起了她自己的美容沙龙。她迎来的头几批客户居然是辛迪•克劳馥和娜奥米•坎贝尔这样的超级明星。接着，阿纳斯塔西娅又推出了以自己名字命名的化妆品。</p>
+<p>-所以，结论是什么？<mark>结论就是，顶级品牌都有一个好故事，而这正是它们的价值所在。</mark>”彼得洛维奇先生用手指被了敲桌面，“那你呢，我的朋友？你有没有一个能打动人心的故事？如果还没有，那你就得动动脑筋啦！如果有，那你就应该用当下最流行的方式去讲述这个故事！”</p>
+<p>红鼻子大叔干掉杯中啤酒，也起身准备去上夜班。当他得知我是一名作家后，突然动情地说：“我知道无论是作家还是音乐家，谋生都很艰难。但不管遇到什么困难，你一定要坚持自己的梦想。”我注意到他的眼角闪着泪光，于是点点头，告诉他，我一定全力以赴。</p>
+<hr>
+<h1 id="第十一章-科索沃i雪落荒原">第十一章 科索沃Ⅰ：雪落荒原</h1>
+<p><a href="#toc">↩️</a><br>
+📍我和利里顿聊了起来。我没话找话，问他的名字是什么意思。利里顿说，在阿尔巴尼亚语里，“利里顿”是“自由”的意思—只有1991年或1992年出生的科索沃男孩才会叫这个名字。他进一步解释说，1990年代初，塞尔维亚剥夺了科索沃的自治权，科索沃的阿尔巴尼亚族愤然抗议。当时，很多父母都会给孩子起名“自由—利里顿”。<br>
+“我们班上就有好几个利里顿。”利里顿说。<br>
+“那你是不是科索沃最著名的利里顿？”<br>
+“不是我。”利里顿笑起来，“有一个足球运动员也叫利里顿。他在马来西亚踢球，后来成了马来西亚公民。”<br>
+这似乎有点像叫“建国”或“建军”的孩子，最后离开中国，<br>
+移民国外了，我心中暗想。</p>
+<h1 id="第十二章-科索沃ii黑鸟之地">第十二章 科索沃Ⅱ：黑鸟之地</h1>
+<p><a href="#toc">↩️</a><br>
+📍科索沃（Kosovo）又被称为“黑鸟之地”。这个名字源自塞尔维亚语 “kos”，意为“黑鸟”。据说，科索沃平原上常有大量黑鸟出没，因而得名。1389年6月28日，在那场决定命运的战役中，奥斯曼土耳其人一举击败塞尔维亚人，死者的遗体被留在旷野上，成为黑鸟盘旋啄食的对象。</p>
+<h1 id="第十三章-奥赫里德大湖之声">第十三章 奥赫里德：大湖之声</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>北马其顿，奥赫里德的风景优美</li>
+<li>马其顿族和阿尔巴尼亚族的恩怨</li>
+<li>与女孩约瓦娜——简短的故事、谈论</li>
+</ul>
+<h1 id="第十四章-斯科普里躁动的解析">第十四章 斯科普里：躁动的解析</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>希腊与北马其顿的渊源，保加利亚也反对其加入欧盟，周边国家都认为马其顿属于他们自己，因为历史原因。事实上，这些群体的身份认同多基于宗教而非民族……</li>
+<li>“奥斯曼土耳其对巴尔干半岛有着深刻的影响，这是我对土耳其感兴趣的原因。”拉塔科斯基先生说，“你或许不知道，<mark>在土耳其语中，“bal’这个词代表‘蜜’，‘kan’这个词代表‘血’。这两个词组合成‘Balkan’（巴尔干），共同构成‘血与蜜’的寓意。可以说，这个词汇组合精辟地揭示了巴尔干地区的复杂性和矛盾性。”</mark></li>
+</ul>
+<h1 id="尾声-雅典我愚蠢的心">尾声 雅典：我愚蠢的心</h1>
+<p><a href="#toc">↩️</a><br>
+📍奥斯曼帝国解体之后，萨洛尼卡的居民被重新归类：穆斯林成为土耳其人，东正教徒成为希腊人。1923年至 1924年间，希腊与土耳其进行了史无前例的人口大交换：所有生活在土耳其的希腊人被要求离开土耳其，而所有生活在希腊的土耳其人则必须离开希腊。<br>
+这场人口交换涉及约两百万人，无论是否情愿，他们都被连根拔起，离开祖先生活了数个世纪的土地，重新扎根于陌生的环境。<br>
+许多希腊人被重新安置在萨洛尼卡，而萨洛尼卡的土耳其人则被迁往小亚细亚。我想起自己在土耳其伊兹密尔等地的旅行经历—那些山间荒废的村庄，许多就是在萨洛尼卡重新安家的希腊人的故乡。他们被迫离开世代居住的土地，迁移到了我眼前的这座城市，成了民族主义的难民。<br>
+也许，从长远来看，这是明智的办法，然而这样的疗法似乎与疾病本身一样令人痛苦。</p>
+<p>📍1999年，当我跟随抗议的人群走在北京街头时，我并不完全明白内心深处那股情绪的根源。此刻，那些曾经隐藏或难以察觉的事物，已经变得更加清晰。在这片血与蜜的大地上，民族主义带给人们的归属与认同感，不可能只带来心灵的慰藉和凝聚力，它也可能以动荡、愤怒和反叛的形式显现。在这个全球化的世界上，我们面临着诸多危机和挑战，回归民族主义是否能够解决这些问题？<br>
+我喝尽杯中酒，感到未来是如此虚妄而动人。在这个世界上，<br>
+鲜有事物比虚妄的希望更动人。</p>
+<ul>
+<li>希腊由于金融危机，各项政策偏向支出紧缩，因此影响了教育，学生上街抗议，“我”加入其中和瓦莱莉了解情况。虽然希腊旅游业较为兴旺，但是游客、难民、移民给本地人带来是生活成本的上升，似乎欧洲很多地方都面临如此困境，比如去年看到很多次关于巴塞罗那的新闻，本地工人罢工，公交停运，本地人不愿意太多的游客过来，使得物价提高，生活压力陡增。</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://s3.bmp.ovh/imgs/2025/02/05/b863bae51cbbe879.png" alt="" loading="lazy"></figure>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E8%A1%80%E4%B8%8E%E8%9C%9C%E4%B9%8B%E5%9C%B0-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">📚《血与蜜之地》-- 读书笔记</a>
+<ul>
+<li><a href="#before-reading">Before Reading</a></li>
+</ul>
+</li>
+<li><a href="#made-by-me">Made by me</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A%E5%A4%9C%E6%99%9A%E7%9A%84%E8%A7%92%E8%90%BD">第一章 斯洛文尼亚：夜晚的角落</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%90%A8%E6%A0%BC%E5%8B%92%E5%B8%83%E5%BF%83%E7%A2%8E%E5%8D%9A%E7%89%A9%E9%A6%86">第二章 萨格勒布：心碎博物馆</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%BE%BE%E5%B0%94%E9%A9%AC%E6%8F%90%E4%BA%9A%E5%86%B0%E4%B8%8E%E7%81%AB%E4%B9%8B%E6%AD%8C">第三章 达尔马提亚：冰与火之歌</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%BB%91%E5%B1%B1%E5%8E%BB%E5%B1%B1%E5%B7%85%E5%91%BC%E5%96%8A">第四章 黑山：去山巅呼喊</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%8E%AB%E6%96%AF%E5%A1%94%E5%B0%94i%E8%A7%A3%E4%BD%93%E6%A6%82%E8%A6%81">第五章 莫斯塔尔Ⅰ：解体概要</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E8%8E%AB%E6%96%AF%E5%A1%94%E5%B0%94ii%E9%97%AE%E9%A2%98%E7%9A%84%E6%A0%B8%E5%BF%83">第六章 莫斯塔尔Ⅱ：问题的核心</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%90%A8%E6%8B%89%E7%83%AD%E7%AA%9D%E5%9B%B4%E5%9F%8E%E8%AE%B0%E5%BF%86">第七章 萨拉热窝：围城记忆</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%96%AF%E9%9B%B7%E5%B8%83%E9%9B%B7%E5%B0%BC%E5%AF%9F%E6%BC%AB%E9%95%BF%E7%9A%84%E9%98%B4%E5%BD%B1">第八章 斯雷布雷尼察：漫长的阴影</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E8%B4%9D%E5%B0%94%E6%A0%BC%E8%8E%B1%E5%BE%B7i%E8%93%9D%E8%89%B2%E7%81%AB%E8%BD%A6">第九章 贝尔格莱德Ⅰ：蓝色火车</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%B4%9D%E5%B0%94%E6%A0%BC%E8%8E%B1%E5%BE%B7ii%E8%82%96%E5%83%8F%E4%B8%8E%E8%A7%82%E5%AF%9F">第十章 贝尔格莱德Ⅱ：肖像与观察</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%A7%91%E7%B4%A2%E6%B2%83i%E9%9B%AA%E8%90%BD%E8%8D%92%E5%8E%9F">第十一章 科索沃Ⅰ：雪落荒原</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0-%E7%A7%91%E7%B4%A2%E6%B2%83ii%E9%BB%91%E9%B8%9F%E4%B9%8B%E5%9C%B0">第十二章 科索沃Ⅱ：黑鸟之地</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E5%A5%A5%E8%B5%AB%E9%87%8C%E5%BE%B7%E5%A4%A7%E6%B9%96%E4%B9%8B%E5%A3%B0">第十三章 奥赫里德：大湖之声</a></li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E6%96%AF%E7%A7%91%E6%99%AE%E9%87%8C%E8%BA%81%E5%8A%A8%E7%9A%84%E8%A7%A3%E6%9E%90">第十四章 斯科普里：躁动的解析</a></li>
+<li><a href="#%E5%B0%BE%E5%A3%B0-%E9%9B%85%E5%85%B8%E6%88%91%E6%84%9A%E8%A0%A2%E7%9A%84%E5%BF%83">尾声 雅典：我愚蠢的心</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/">https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/&sharesource=qzone&title=EKL Alma Mater 《血与蜜之地》&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;巴尔干半岛&lt;/li&gt;
+&lt;li&gt;斯洛文尼亚、克罗地亚、塞尔维亚&lt;/li&gt;
+&lt;li&gt;波黑、黑山、阿尔巴尼亚&lt;/li&gt;
+&lt;li&gt;马其顿、希腊&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessxie-yu-mi-zhi-di-greatergreater/&sharesource=weibo&title=EKL Alma Mater 《血与蜜之地》 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;巴尔干半岛&lt;/li&gt;
+&lt;li&gt;斯洛文尼亚、克罗地亚、塞尔维亚&lt;/li&gt;
+&lt;li&gt;波黑、黑山、阿尔巴尼亚&lt;/li&gt;
+&lt;li&gt;马其顿、希腊&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-312/">
+                                                                                            EKL 312
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20250205/">
+                                                                                                    EKL 20250205 5-Grammys Winner KENNY
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

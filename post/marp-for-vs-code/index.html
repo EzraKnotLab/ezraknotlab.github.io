@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Marp for VS Code
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2025-11-25</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">3.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">996</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLChaos/">EKL Chaos</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>md2PPT</li>
+<li>Work Reports</li>
+<li>Mindmap</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#%E6%B2%89%E7%9D%A1%E7%9A%84%E5%AE%9D%E8%97%8Fmarp-for-vs-code">沉睡的宝藏：Marp for VS Code</a>
+<ul>
+<li><a href="#marp-%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BC%A0%E7%BB%9F-ppt-%E5%88%B6%E4%BD%9C%E7%9A%84%E4%B8%89%E5%A4%A7%E7%97%9B%E7%82%B9">Marp 解决了传统 PPT 制作的三大痛点：</a>
+<ul>
+<li><a href="#1-%E4%B8%93%E6%B3%A8%E5%86%85%E5%AE%B9%E5%91%8A%E5%88%AB%E6%8E%92%E7%89%88%E5%9C%B0%E7%8B%B1">1. 专注内容，告别排版地狱</a></li>
+<li><a href="#2-%E5%8E%9F%E7%94%9F%E6%94%AF%E6%8C%81-latex">2. 原生支持 LaTeX</a></li>
+<li><a href="#3-%E5%AE%8C%E7%BE%8E%E7%9A%84%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE">3. 完美的代码高亮</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#mindmap-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE">Mindmap (思维导图)</a>
+<ul>
+<li><a href="#%E5%8F%AA%E9%9C%80%E8%A6%81%E7%94%A8-markdown-%E7%9A%84%E6%A0%87%E9%A2%98%E5%92%8C%E5%88%97%E8%A1%A8">只需要用 Markdown 的标题和列表</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E6%98%AFwork-reports">最重要的是Work Reports</a></li>
+</ul>
+</p>
+<h2 id="沉睡的宝藏marp-for-vs-code">沉睡的宝藏：Marp for VS Code</h2>
+<p><a href="#toc">↩️</a><br>
+Marp 和 Markmap 这两个工具，其实几年前就被我安装在 VS Code 里了。Markmap 我还偶尔用它来画思维导图，但 Marp 几乎就没打开过。我一直以为它只是个简陋的预览工具，才发现，我错得离谱！</p>
+<p>在 Gemini 的提醒下，重新试用了它，简单来说，<strong>Marp for VS Code 是一个 VS Code 插件，它能让你用最纯粹的 Markdown，写出专业、精美、所见即所得的幻灯片。</strong></p>
+<h3 id="marp-解决了传统-ppt-制作的三大痛点">Marp 解决了传统 PPT 制作的三大痛点：</h3>
+<p><a href="#toc">↩️</a></p>
+<h4 id="1-专注内容告别排版地狱">1. 专注内容，告别排版地狱</h4>
+<p>Marp 的核心哲学是“Markdown 源码即幻灯片”。</p>
+<p><strong>上手简单：</strong></p>
+<ol>
+<li>在 VS Code 市场安装 <strong>&quot;Marp for VS Code&quot;</strong> 插件。</li>
+<li>新建一个 <code>.md</code> 文件。</li>
+<li>在文件顶部写上 &quot;Marp 启动&quot; 三件套：<pre><code class="language-yaml">---
+marp: true
+theme: default
+---
+</code></pre>
+</li>
+<li>开始写你的 Markdown。<strong>用 <code>---</code> (三个减号) 来分割每一页 PPT</strong>。</li>
+<li>点击 VS Code 右上角的“预览”按钮。</li>
+</ol>
+<p>你会看到一个实时更新的幻灯片预览窗口。<strong>左边是代码，右边是幻灯片</strong></p>
+<h4 id="2-原生支持-latex">2. 原生支持 LaTeX</h4>
+<p>在 Marp 里写公式</p>
+<p>行内公式，块级公式，不用截图，再也不用和 Word 的公式编辑器搏斗，所见即所得，清晰无码。</p>
+<h4 id="3-完美的代码高亮">3. 完美的代码高亮</h4>
+<p>Marp 原生支持 Markdown 的代码块高亮，需要指定语言：</p>
+<pre><code class="language-python">import numpy as np
+
+def calculate(sigma, omega, F):
+    delta_E = (sigma * omega) / F
+    return delta_E
+</code></pre>
+<ul>
+<li>在 VS Code 右上角点击 Marp 图标，选择 &quot;Export Slide Deck...&quot;。可以直接导出 PDF 和 PTX 格式！</li>
+<li>Marp 为了 100% 保证你的 LaTeX 公式和代码高亮在 PowerPoint 里“不翻车”，不能在 PowerPoint 里编辑文字。永远只修改你的 .md 源文件。</li>
+</ul>
+<h2 id="mindmap-思维导图">Mindmap (思维导图)</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Markmap既然提到了 Marp，就不得不提一下我那另一个“沉睡的插件”：Markmap。和 Marp（Markdown -&gt; Slides）不同，Markmap 的功能是：Markdown -&gt; Mindmap (思维导图)。我之前用过几次，它非常适合在项目初期梳理思路。</li>
+</ul>
+<h3 id="只需要用-markdown-的标题和列表">只需要用 Markdown 的标题和列表</h3>
+<ul>
+<li>写一个大纲，Markmap 就能一键将其转换成一个可交互、可缩放的思维导图。</li>
+<li>我如何使用它？
+<ul>
+<li>构思阶段 (Markmap)：在准备一个报告时，我先用 Markmap 写出大纲，理清报告的结构和逻辑。</li>
+<li>写作阶段 (Marp)：将 Markmap 的大纲复制过来，在 Marp 的 .md 文件中，把 --- 加在每个一级或二级标题之间，然后开始在每一页填充具体内容（公式、代码、图表）。一个负责“发散”和“构建”，一个负责“收敛”和“呈现”。</li>
+<li>Markdown 统一我的工作流Marp + Markmap + VS Code 改变了我的工作流。</li>
+</ul>
+</li>
+</ul>
+<h1 id="最重要的是work-reports">最重要的是Work Reports</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>有了Marp + Markmap ，可以写一Weekly Reports, 每周一个文件，中记录各种思考的问题，只作记录的draft，作为草稿即可，文字搜索功能可以检索。</li>
+<li>另一个是总体的每周Weekly Reports嵌入为一页PPT的md文件，最终Marp导出交流方便，也方便PDF格式回溯，多平台可预览。</li>
+<li>另外一个好处就是：像问：&quot;今天的5件有利科研推进的事：&quot;这种比较多余或者silly的question一样，但是凡事预则立，不预则废，每天能够写下，至少是满足一定的工作量，不至于真的推进度为0，甚至为达到一定阈值，也会正向促进推进任务。</li>
+<li>对于Weekly Reports也是，不只是空空的服务于so-called “年终总结”，更多是心理上要达到一定的工作量，稳步推进。</li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#%E6%B2%89%E7%9D%A1%E7%9A%84%E5%AE%9D%E8%97%8Fmarp-for-vs-code">沉睡的宝藏：Marp for VS Code</a>
+<ul>
+<li><a href="#marp-%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BC%A0%E7%BB%9F-ppt-%E5%88%B6%E4%BD%9C%E7%9A%84%E4%B8%89%E5%A4%A7%E7%97%9B%E7%82%B9">Marp 解决了传统 PPT 制作的三大痛点：</a>
+<ul>
+<li><a href="#1-%E4%B8%93%E6%B3%A8%E5%86%85%E5%AE%B9%E5%91%8A%E5%88%AB%E6%8E%92%E7%89%88%E5%9C%B0%E7%8B%B1">1. 专注内容，告别排版地狱</a></li>
+<li><a href="#2-%E5%8E%9F%E7%94%9F%E6%94%AF%E6%8C%81-latex">2. 原生支持 LaTeX</a></li>
+<li><a href="#3-%E5%AE%8C%E7%BE%8E%E7%9A%84%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE">3. 完美的代码高亮</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#mindmap-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE">Mindmap (思维导图)</a>
+<ul>
+<li><a href="#%E5%8F%AA%E9%9C%80%E8%A6%81%E7%94%A8-markdown-%E7%9A%84%E6%A0%87%E9%A2%98%E5%92%8C%E5%88%97%E8%A1%A8">只需要用 Markdown 的标题和列表</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E6%98%AFwork-reports">最重要的是Work Reports</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/marp-for-vs-code/">https://ezraknotlab.github.io/post/marp-for-vs-code/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/marp-for-vs-code/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/marp-for-vs-code/&sharesource=qzone&title=Marp for VS Code&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;md2PPT&lt;/li&gt;
+&lt;li&gt;Work Reports&lt;/li&gt;
+&lt;li&gt;Mindmap&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/marp-for-vs-code/&sharesource=weibo&title=Marp for VS Code + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;md2PPT&lt;/li&gt;
+&lt;li&gt;Work Reports&lt;/li&gt;
+&lt;li&gt;Mindmap&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLChaos/">#
+                                                EKL Chaos
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20251123/">
+                                                                                            EKL 20251123
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-322-mecca-msg-nyc1/">
+                                                                                                    EKL 322 Mecca MSG NYC
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

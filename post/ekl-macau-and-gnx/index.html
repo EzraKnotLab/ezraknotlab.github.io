@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Macau &amp; GNX!
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-11-23</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">24.7
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">4872</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">EKL_daily</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/11/23/25d2273f8ab141cb.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>KDOT!!! GNX!!!</li>
+<li>UFC Macau!!!</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gnx">👑GNX :</a>
+<ul>
+<li><a href="#reactions">reactions：</a></li>
+<li><a href="#i-told-u">#I told u</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#ufcmacau">UFCMacau</a></li>
+<li><a href="#fitness">Fitness</a></li>
+<li><a href="#english-mma">English MMA</a>
+<ul>
+<li><a href="#donnie-yen-%E7%94%84%E5%AD%90%E4%B8%B9">Donnie Yen (甄子丹)</a></li>
+<li></li>
+</ul>
+</li>
+<li><a href="#yellowstone-united-in-grief">Yellowstone - United In Grief</a></li>
+</ul>
+</li>
+<li><a href="#mancity">ManCity</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a>
+<ul>
+<li><a href="#2024%E5%B9%B411%E6%9C%8822%E6%97%A5">2024年11月22日</a></li>
+<li><a href="#i-trust-you-l-love-youi-wont-waste-your-time">I trust you, l love you,<br>
+I won't waste your time</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="gnx">👑GNX :</h1>
+<p>Hold on, Hold on Hear me out!</p>
+<ul>
+<li>七点零几醒了调整被子，但是反常地拿起了手机要刷一刷，平常不这样。打开IG前两条分别是KDOT大号和小号 NEW WWWWW ALBUM DROPED！！！ 身体一阵chilled 呼吸节奏都是紊乱的</li>
+<li>然后是看到讨论关于super bowl的争议</li>
+<li>可能这张专辑会因为beef和其他事 质量不会一如既往   但是无所谓 历史地位早已经有保证</li>
+<li>还有一件事mind-blowing， Conor突然被法院判决前几年强奸的案子 被抓捕现场视频流出</li>
+<li>Till next time KDOT drops another album, I'll never touch my phone when I wake up in the morning laying on bed.<br>
+<img src="https://s3.bmp.ovh/imgs/2024/11/23/25d2273f8ab141cb.png" alt="" loading="lazy"></li>
+</ul>
+<p><mark>Dear 2024, you've treat me so well. THX</mark></p>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-squabble-up-(HipHopKit.com).mp3"></audio></p>
+<p><mark>Kendrick Lamar – squabble up</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">God knows
+I am reincarnated
+I was stargazin’
+Life goes on, I need all my babies (Gyah, gyah)
+
+Woke up lookin’ for the broccoli
+High-key, keep a horn on me, that Kamasi
+IP, ownership, the blueprint is by me
+Mr. Get Off, I get off at my feet
+When I hear music, it makes me dance
+You got the music, now is your chance
+A yee nigga couldn’t try me in the tri-state
+Buddy pass, bet I get him splashed ’til he hydrated
+Bounce out, know he spook town, eyes dilated
+I got the money and the power both gyratin’
+
+I feel good, get the fuck out my face
+Look good, but she don’t got no taste
+I walk in, walked out with the safe
+Mando, let me know what the play
+
+What the fuck?
+I got hits, I got bucks, I got new paper cuts
+I got friends, I got foes, but they all sitting ducks
+Hit his turf and get crackin’, double back like a deluxe
+Fifty deep, but it ain’t deep enough
+Fuck a plea, there he go, beat him up
+Fallin’ from my money tree and it grow throughout the months
+Spit a loogie at the camera, speed off, yeah, it’s us
+
+I feel good, get the fuck out my face
+Look good, but she don’t got no taste
+I walk in, walked out with the safe
+Mando, let me know what the play
+
+Squabble up, squabble up
+Squabble up, squabble up
+Squabble up (Mm, mm), squabble up (Mm, mm)
+Squabble up (Mm, mm), squabble up
+
+Hol’ up (Hol’ up)
+Where you from? (Where you from?)
+My bitch (My bitch)
+I’m finna go dumb (Finna go dumb)
+Sideways (Sideways)
+Bunk skunk (Bunk skunk)
+Fever (Fever)
+I’m on one (I’m on one)
+
+Thunk, thunk, thunk, thunk, thunk, baby rockin’ it
+Quid pro quo, what you want? ‘Cause I’m watchin’ it
+Work on the floor, let me know if you clockin’ it
+Brodie won’t go, but I know that he poppin’ it
+It was woof tickets on sale ’til I silenced it
+Pipe down, young, these some whole other politics
+Bitch with him and some bitch in him, that’s a lot of bitch
+Don’t hit him, he got kids with him, my apologies
+Ghetto child, it was Black &amp; Milds with the Smirnoff
+Yeehaw, we outside, whoadie ’bout to kill him off
+Blaps on blaps, it’s a fact, this a brick of raw
+Tell me why the fuck you niggas rap if it’s fictional?
+Tell me why the fuck you niggas fed if you criminal?
+“Ayy, Dot, can I get a drop?” I’m like, “Nigga, nah”
+Ace boon coon from the Westside to Senegal
+It’s a full moon, let the wolves out, I been a dog (Ah)
+
+I feel good, get the fuck out my face
+Look good, but she don’t got no taste
+I walk in, walked out with the safe
+Mando, let me know what the play
+
+Squabble up, squabble up
+Squabble up, squabble up
+Squabble up (Mm, mm), squabble up (Mm, mm)
+Squabble up (Mm, mm), squabble up
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://hhk.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-wacced-out-murals-(HipHopKit.com).mp3"></audio></p>
+<p><mark>Kendrick Lamar – wacced out murals</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">Siento aquí tu presencia
+La noche de anoche
+Y nos ponemos a llorar
+
+Yesterday, somebody whacked out my mural
+That energy’ll make you niggas move to Europe
+But it’s regular for me, yeah, that’s for sure
+The love and hate is definite without a cure
+All this talk is bitch-made, that’s on my Lord
+I’ll kill ’em all before I let ’em kill my joy
+I done been through it all, what you endure?
+It used to be fuck that nigga, but now it’s plural
+Fuck everybody, that’s on my body
+My blick first, then God got me
+I watch ’em pander with them back-handed compliments
+Put they head on a Cuban link as a monument
+I paid homage and I always mind my business
+I made the—
+I never lost who I am for a rap image
+It’s motivation if you wonder how I did it
+
+Yeah, nigga, go and up your rank
+Know you a god even when they say you ain’t
+Yeah, nigga, keep your feelings out the way
+Never let no one put smut up on your name
+Yeah, nigga, keep your head down and work like I do
+But understand everybody ain’t gon’ like you
+Yeah, nigga, if they say it’s love, you’ve been lied to
+A couple rules of engagements, I’ma guide you
+
+Que refleja en tu mirada
+La noche, tú y yo
+
+Ridin’ in my GNX with Anita Baker in the tape deck, it’s gon’ be a sweet love
+Fuck apologies, I wanna see y’all geeked up
+Don’t acknowledge me, then maybe we can say it’s fair
+Take it to the internet and I’ma take it there
+Miss my uncle Lil’ Mane, he said that he would kill me if I didn’t make it
+Now I’m possessed by a spirit and they can’t take it
+Used to bump Tha Carter III, I held my Rollie chain proud
+Irony, I think my hard work let Lil Wayne down
+Whatever, though, call me crazy, everybody questionable
+Turn me to an eskimo, I drew the line and decimals
+Snoop posted “Taylor Made,” I prayed it was the edibles
+I couldn’t believe it, it was only right for me to let it go
+Won the Super Bowl and Nas the only one congratulate me
+All these niggas agitated, I’m just glad they showin’ they faces
+Quite frankly, plenty artists, but they outdated
+Old-ass flows, tryna convince me that you they favorite
+This is not for lyricists, I swear it’s not the sentiments
+Fuck a double entendre, I want y’all to feel this shit
+Old soul, bitch, I probably built them pyramids
+Ducking strays when I rap battled in the Nickersons
+Where you from? Not where I’m from, we all indigenous
+Against all odds, I squabbled up for them dividends
+Against all odds, I showed up as a gentleman
+I done lost plenty friends, sixteen to be specific
+Put that on my kids’ children, we gon’ see the future first
+They like, “Dot big trippin,” I just want what I deserve
+What bridge they done burnt? All of them, it’s over with
+I’m doin’ what COVID did, they’ll never get over it
+
+Yeah, nigga, go and up your rank
+Know you a god even when they say you ain’t
+Yeah, nigga, keep your feelings out the way
+Never let no one put smut up on your name
+Yeah, nigga, keep your head down and work like I do
+But understand everybody ain’t gon’ like you
+Yeah, nigga, if they say it’s love, you’ve been lied to
+A couple rules of engagements, here to guide you
+
+Niggas from my city couldn’t entertain old boy
+Promisin’ bank transactions and even bitcoin
+I never peaced it up, that shit don’t sit well with me
+Before I take a truce, I’ll take ’em to Hell with me
+If that money got in the hands of a crash dummy
+Could jeopardize my family and burden the ones who love me
+Niggas mad ’cause I decided not to pretend
+Y’all stay politically correct, I’ma do what I did
+Ain’t no sympathy here, this shit’s hilarious
+It’s a lot of opinions, but no power to carry it
+2025, they still movin’ on some scary shit
+Tell ’em quit they job and pay the real niggas they severance
+Don’t insult my intelligence, I’m not just for the television
+Teleport to Bullets Road and dig up all my relatives
+Okay, nigga, let’s settle it, these niggas been fake loyal
+Since y’all pandering to choose a side, let me do it for you
+Okay, fuck your hip-hop, I watched the party just die
+Niggas cackling about— while all of y’all is on trial
+Niggas thought that I was antisocial when I stayed inside of my house
+You better off to have one woman, everything tricky right now
+You niggas live in denial
+Ayy, fuck anybody empathetic to the other side, I vow
+A bitch nigga love bitch niggas, they exist with ’em in style
+Exterminate ’em right now
+Make Katt Williams and them proud, the truth ’bout to get loud
+No juice iniside of my cup, I sober up and knock ’em all off
+Don’t let no white comedian talk about no Black woman, that’s law
+I know propaganda work for them, and fuck whoever that’s close to them
+The niggas that coon, the niggas that bein’ groomed, slide on both of them
+You ever ate Cap’n Crunch and proceeded to pour water in it?
+Pulled over by the law, you ridin’ dirty, so you can’t argue with ’em?
+Then make it to be a star, bare your soul and put your heart up in it?
+Well, I did
+Whacked the murals out, but it ain’t no legends if my legend ends
+
+Kendrick Lamar wacced out murals lyrics meaning
+Kendrick Lamar’s “wacced out murals” (or “Watch The Party Die”) critiques the current state of hip-hop, addressing issues like glorification of negative behaviors, lack of authenticity, and moral decay in the industry.
+
+Through vivid imagery and religious references, Kendrick calls for a renewal of hip-hop culture and a return to more meaningful, socially responsible artistry.
+</code></pre>
+</details>
+<hr>
+<p><audio controls="" loop="" preload=""><source src="https://jn3.awamedia.store/uploads/music/2024/11/Kendrick-Lamar-tv-off-(JustNaija.com).mp3"></audio></p>
+<p><mark>Kendrick Lamar – tv off</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">[Part I]
+
+All I ever wanted was a Black Grand National
+Fuck being rational, give ’em what they ask for
+
+It’s not enough (Ayy)
+Few solid niggas left, but it’s not enough
+Few bitches that’ll really step, but it’s not enough
+Say you bigger than myself, but it’s not enough (Huh)
+I get on they ass, yeah, somebody gotta do it
+I’ll make them niggas mad, yeah, somebody gotta do it
+I’ll take the G-pass, shit, watch a nigga do it
+Huh, we survived outside, all from the music, nigga, what?
+
+They like, “What he on?”
+It’s the Alpha and Omega, bitch, welcome home
+This is not a song
+This a revelation, how to get a nigga gone
+You need you a man, baby, I don’t understand, baby
+Pay your bill and make you feel protected like I can, baby
+Teach you somethin’ if you need correction, that’s the plan, baby
+Don’t put your life in these weird niggas’ hands, baby (Woah)
+
+It’s not enough (Ayy)
+Few solid niggas left, but it’s not enough
+Few bitches that’ll really step, but it’s not enough
+Say you bigger than myself, but it’s not enough (Huh)
+I get on they ass, yeah, somebody gotta do it
+I’ll make them niggas mad, yeah, somebody gotta do it
+I’ll take the G-pass, shit, watch a nigga do it
+Huh, we survived outside, all from the music, nigga, what?
+
+Hey, turn this TV off
+Ain’t with my type activities? Then don’t you get involved
+Hey, what, huh, how many should I send? Send ’em all
+Take a risk or take a trip, you know I’m trippin’ for my dog
+Who you with? Couple sergeants and lieutenants for the get back
+This revolution been televised, I fell through with the knick-knacks
+Hey, young nigga, get your chili up, yeah, I meant that
+Hey, black out if they act out, yeah, I did that
+Hey, what’s up, though?
+I hate a bitch that’s hatin’ on a bitch and they both hoes
+I hate a nigga hatin’ on them niggas and they both broke
+If you ain’t coming for no chili, what you come for?
+Nigga feel like he entitled ’cause he knew me since a kid
+Bitch, I cut my granny off if she don’t see it how I see it, hm
+Got a big mouth but he lack big ideas
+Send him to the moon, that’s just how I feel, yellin’
+
+It’s not enough (Ayy)
+Few solid niggas left, but it’s not enough
+Few bitches that’ll really step, but it’s not enough
+Say you bigger than myself, but it’s not enough
+
+[Part II]
+
+Huh
+Huh, huh
+Hey
+Hey (Mustard on the beat, ho)
+
+Mustard
+Niggas actin’ bad, but somebody gotta do it
+Got my foot up on the gas, but somebody gotta do it
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+
+Ain’t no other king in this rap thing, like siblings
+Nothing but my children, one shot, they disappearin’
+I’m in a city with a flag, be gettin’ thrown like it was pass interference
+Padlock around the building
+Crash, pullin’ up in unmarked truck just to play freeze tag
+With a bone to pick like it was sea bass
+So when I made it out, I made about fifty K from a show
+Tryna show niggas the ropes before they hung from a rope
+I’m prophetic, they only talk about it how I get it
+Only good for saving face, seen the cosmetics
+How many heads I gotta take to level my aesthetics?
+Hurry up and get your muscle up, we out the plyometric
+Nicarana by the lux, soon as I up the highest metric
+The city just made it sweet, you could die, I bet it
+They mouth get full of deceit, let these cowards tell it
+Walk in New Orleans with the etiquette of L.A., yellin’
+
+Mustard (Ah, man)
+Niggas actin’ bad, but somebody gotta do it
+Got my foot up on the gas, but somebody gotta do it
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+Huh, turn this TV off, turn this TV off
+
+Shit gets crazy, scary, spooky, hilarious
+Crazy, scary, spooky, hilarious
+Shit gets crazy, scary, spooky, hilarious
+Crazy, scary, spooky, hilarious
+Shit gets crazy, scary, spooky, hilarious
+Crazy, scary, spooky, hilarious
+Shit gets crazy, scary, spooky, hilarious
+Crazy, scary, spooky, hilarious
+</code></pre>
+</details>
+<hr>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">MUSTAAAAARRRRRRRD ‼️ <a href="https://t.co/5VRsGDveLG">pic.twitter.com/5VRsGDveLG</a></p>&mdash; Sho (@Shoyoumomo_) <a href="https://twitter.com/Shoyoumomo_/status/1860150820744134831?ref_src=twsrc%5Etfw">November 23, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Omg lol <a href="https://t.co/FaKpkizTFG">https://t.co/FaKpkizTFG</a></p>&mdash; Mustard (@mustard) <a href="https://twitter.com/mustard/status/1860108041934590108?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/3GH1oP97By">pic.twitter.com/3GH1oP97By</a></p>&mdash; Complex Music (@ComplexMusic) <a href="https://twitter.com/ComplexMusic/status/1860057207536255070?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<p>今天无限循环：</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It is speculated that Kendrick Lamar will release a SECOND album in the near future after the snippet he teased earlier was not on &#39;GNX&#39; 👀🔥<br><br> <a href="https://t.co/ooz2F2yhD7">pic.twitter.com/ooz2F2yhD7</a></p>&mdash; Hip Hop All Day (@HipHopAllDayy) <a href="https://twitter.com/HipHopAllDayy/status/1860021413891178530?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>希望这是下一个album</p>
+<h2 id="reactions">reactions：</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Kendrick just dropped album 🤩 <a href="https://t.co/IEy1ooW0kS">pic.twitter.com/IEy1ooW0kS</a></p>&mdash; Atlético de Madrid (@atletienglish) <a href="https://twitter.com/atletienglish/status/1860015604515639662?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Kendrick dropped&quot; <a href="https://t.co/W6dD1aTQX2">pic.twitter.com/W6dD1aTQX2</a></p>&mdash; B/R Football (@brfootball) <a href="https://twitter.com/brfootball/status/1860009347310584100?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">To my fellow <a href="https://twitter.com/kendricklamar?ref_src=twsrc%5Etfw">@kendricklamar</a> fans, send this to your boss ✍️ You’re welcome! <a href="https://t.co/2I8yTzUzOQ">pic.twitter.com/2I8yTzUzOQ</a></p>&mdash; MTV (@MTV) <a href="https://twitter.com/MTV/status/1860013079876239361?ref_src=twsrc%5Etfw">November 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<h2 id="i-told-u">#I told u</h2>
+<p><a href="#toc">↩️</a><br>
+第一年时候我们有节英语课，学术类型但是非专业学术，还是会广范围练习，我做过分享Podcast List，分享过Reading List, 还有Music和Comedy，我有太多故事可以讲了。好在课上我一个人都不认识，so literally dont give a fvck. 我甚至对着老师说：“我甚至敢说KENDRICK LAMAR地位比Shakespeare还高“当然我知道这样显得很”愚蠢“，像是high的stan一样，fan的行为，虽然当时知道这样，但是信心或许来源于普利策奖吧LOL.  Pulitzer KENNY!!!    DAMN., by Kendrick Lamar</p>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/imgs/2024/11/24/5e15ddb02580fbfd.png" alt="" loading="lazy"></figure>
+<p><a href="https://x.com/bbrokencrownn/status/1860062277145362828">from</a></p>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="ufcmacau">UFCMacau</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>不战至最后一刻永远都不该放弃 否则会辜负别人的期望 使他人为你做出的努力付之一炬 ，教练都仍然在奋力呐喊。</p>
+</li>
+<li>
+<p>局间休息的takea breath像是对我这个观众说的  终于能深呼吸一口</p>
+</li>
+<li>
+<p>格斗是刚柔并济的艺术，有Arman柔韧性拉满的身体，也有强有力的重拳。</p>
+</li>
+<li>
+<p>刚还觉得FENG是有点像Leon，身体修长而且四肢敏捷，结果对手右腿高扫镜像复刻Leon，英语很好，之前做过医生。很久没醒来，去医院后broadcast说没有严重风险。 Flowers to both Chinese female!!! Awesome , HUMBLE AND STRONG CHINESE WOMEN.</p>
+</li>
+<li>
+<p>印象中从没有一晚上这么多nasty KO  #UFCMacau、</p>
+</li>
+</ul>
+<h2 id="fitness">Fitness</h2>
+<ul>
+<li>和其他所有运动一样，就像百米短跑，这是关于人类身体技能的艺术，同样追求更高更快更强，竞技的目标从来不是损毁对手的身体。</li>
+<li>今天下雨听了一期podcast<a href="https://www.xiaoyuzhoufm.com/episode/673f7fc18d1233fb0d0c20dd">何广智:我是真的受伤了</a> 何主播是真的受伤了，前阵子，去踢球，踩人脚上了，就嘎巴了。韧带撕裂，比骨折恢复起来更慢。他也提到健康或许并不是运动到一身发达的肌肉，我常认为或许应该好好研究下fitness定义，这通常来描述人的身体状态，这包括了没有疾病和具备良好的身体条件。疾病和缺乏健康状态是密切相关的，意味着如果一个人不健康，他更有可能患病，就算很多人常进行比较剧烈的运动具备良好的身体条件，可是健康状态也不一定比其运动强度较低的人良好。这里有很多因素，基因，过敏源不同等等，但是我总会想到David Goggins或者村上春树，跑步总是感觉最适合，随着年龄上升，不喜欢青春期那么需要释放荷尔蒙在篮球、足球场上横冲直撞，喜欢安静地跑步，思考，让自己的mind得到一些peace，这时候身体和心理都会得到恢复和治愈，当然进球更会燃起激情，但是我似乎已经不需要，或许性格使然。尤其在晚上又看到Muslim Salikhov转身后脚跟KO宋克南之后，很多场比赛之前我就意识到他和wonderboy是不可思议的存在，四十多“高龄”，没有太多肌肉take damage，体力还或许是大问题，但是只要核心还在，虽然外表看起来腹部肱二头推积着一些肉，没有普通fighter八块腹肌那么分明，但是移动速度和打磨的技巧仍然一点不减当年，这种就是需要追求的fitness，灵活即可。</li>
+</ul>
+<h2 id="english-mma">English MMA</h2>
+<ul>
+<li>Muslim Salikhov接受采访也不用翻译过来翻译了，自己也可以顺溜地讲，回答问题，表述自己。他同样来自Dagestan，Khabib Gang对他都很熟悉，让我联想到他们几个 ISLAM, KHABIB, UMAR都不需要翻译，都是英语接受各种采访。（此时此刻2024年11月23日23:43:20，我正同时听Don't Miss These WILD Press Conference Moments! 的视频，Izzy说I'm the child of the Earth.）今天还刷到Renato Moicano的podcast吐槽三个巴西人在一起录podcast全程说英语，哈哈，这是大家共同的语言，大多数母语者和非母语者觉得都正常，只有很少情况下才会被拿来取笑，那也通常是急眼了，没什么攻击力。何况上次苏格兰人在发布会上也被“嘲讽”听不懂他说的英语，无所谓了，这时候的攻击本来就是对人不对事了。如果你意识到两个人在争论的过程中，争论的目标或者意义发生了变化，作为更wise睿智的你就应该意识到并停下来，这种情形很常见。比如学术探讨，你们两个人先正反方表达自己的立场，之后有人渐渐拿出的事实已经明显存在错误或者已经毫不相干地偏离这个议题，这时候争论的状态已经悄然变化为其中有一个人要维护面子了，那如果你意识到了，就应该停下来，这没有输赢，因为你们都没有得到有意义的结果，继续下去可能会有更多负面不必要的杂事产生。</li>
+<li>上周末和SADAF晚上散步聊了聊，看到一个科普的视频讲的大意大概是古英语，可能也包括日耳曼语系那一支以前是有颤舌音r rr的，正如如今的西语 意大利语等拉丁语系的，是后来法国英国那边渐渐把颤舌音弱化了，毕竟耗费更多能量来发音挺麻烦，英国都把bottle of water的t都懒得发音了，Paris现在是派瑞斯，以前还是要颤音的，但是你会发现在英国弱化的同时，他们的殖民地印度却一直保留着颤音，所以这就是今天巴基斯坦印度那一带的南亚地区英语口音，正统在这~</li>
+</ul>
+<h3 id="donnie-yen-甄子丹">Donnie Yen (甄子丹)</h3>
+<p><a href="#toc">↩️</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The stars are out in Macau 🤩<a href="https://twitter.com/hashtag/UFCMacau?src=hash&amp;ref_src=twsrc%5Etfw">#UFCMacau</a> | LIVE on TNT Sports 3 and discovery+ <a href="https://t.co/LKFDwpjJwt">pic.twitter.com/LKFDwpjJwt</a></p>&mdash; UFC on TNT Sports (@ufcontnt) <a href="https://twitter.com/ufcontnt/status/1860307670000939507?ref_src=twsrc%5Etfw">November 23, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Alex Pereira casually dancing with the South Korean K-pop girl group tripleS 😭 <a href="https://t.co/H5oOtwaovn">pic.twitter.com/H5oOtwaovn</a></p>&mdash; Happy Punch (@HappyPunch) <a href="https://twitter.com/HappyPunch/status/1860317986667573511?ref_src=twsrc%5Etfw">November 23, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h3 id=""></h3>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Anything you do can be called a family business  cuz the genes in our body are from ancestors</li>
+</ul>
+<h2 id="yellowstone-united-in-grief">Yellowstone - United In Grief</h2>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>Yellowstone 归来，但是John Dutton已经被Jimmy嘎了，后面这部戏骨头感觉没有了。不过Beth还是那个Beth，尽管外面风狂雨潇，商业方面一片 Chaos，但是追求到时间去看Rip永远都是特别的，天堂般珍贵，或许这就是安宁和混乱冲突中建立出的幸福，就像很多人认为的“幸福对比出来的 ”。就像United In Grief Song by Kendrick Lamar里面所讲：I hope you find some peace of mind in this lifetime. Tell them, tell 'em, tell them the truth</li>
+<li>没有比拥有自己的一亩三分地所获得的宁静更让人幸福哩。</li>
+</ul>
+<h1 id="mancity">ManCity</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>有人四连败下课，有人四连败续约~ 诺坎普的国王~</li>
+</ul>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113527025107531&bvid=BV1fkBBYGE8C&cid=26908822628&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>
+<p>no friends in industry</p>
+</li>
+<li>
+<p><a href="https://www.feidaoboke.com/post/read-hillbilly-elegy.html">读《乡下人的悲歌》</a>，抽空快速过了下电影，还不错⭐⭐⭐⭐</p>
+</li>
+<li>
+<p><a href="https://news.sciencenet.cn/htmlnews/2024/11/534504.shtm">35岁光头博导：“科研是最佳解压方式”</a></p>
+</li>
+</ul>
+<h2 id="2024年11月22日">2024年11月22日</h2>
+<ul>
+<li>今天搞劳育 教铁棒套螺纹，之后水龙头什么的再组装奇形怪状的几何形状，最后美其名曰艺术作品。一见东西就让我想到小时候去电焊部手转螺纹，修自来水管这么简单的问题自然不在话下，只要有点兴趣，这东西就像刻在男孩子的基因里。想到Francis多次冠军战后回到喀麦隆的小乡村，拿着锨一次次将土甩上翻斗车，他也写到I used to do this for a living. Alex也经常在战役之后会到部落，也回到过曾经工作过的修车店，甚至计时比拼谁卸装轮胎更快。</li>
+<li>所有冠军成名很久之前都有一段风尘的故事。Isreal打过多次工，给同事说自己想成为冠军，之后便辞退工作走上这条路。张伟丽之前做健身教练也在街头发过传单。The belt belongs to nobody.</li>
+</ul>
+<h2 id="i-trust-you-l-love-youi-wont-waste-your-time">I trust you, l love you,<br>
+I won't waste your time</h2>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gnx">👑GNX :</a>
+<ul>
+<li><a href="#reactions">reactions：</a></li>
+<li><a href="#i-told-u">#I told u</a></li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a>
+<ul>
+<li><a href="#ufcmacau">UFCMacau</a></li>
+<li><a href="#fitness">Fitness</a></li>
+<li><a href="#english-mma">English MMA</a>
+<ul>
+<li><a href="#donnie-yen-%E7%94%84%E5%AD%90%E4%B8%B9">Donnie Yen (甄子丹)</a></li>
+<li></li>
+</ul>
+</li>
+<li><a href="#yellowstone-united-in-grief">Yellowstone - United In Grief</a></li>
+</ul>
+</li>
+<li><a href="#mancity">ManCity</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a>
+<ul>
+<li><a href="#2024%E5%B9%B411%E6%9C%8822%E6%97%A5">2024年11月22日</a></li>
+<li><a href="#i-trust-you-l-love-youi-wont-waste-your-time">I trust you, l love you,<br>
+I won't waste your time</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-macau-and-gnx/">https://ezraknotlab.github.io/post/ekl-macau-and-gnx/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-macau-and-gnx/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-macau-and-gnx/&sharesource=qzone&title=EKL Macau &amp; GNX!&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;KDOT!!! GNX!!!&lt;/li&gt;
+&lt;li&gt;UFC Macau!!!&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-macau-and-gnx/&sharesource=weibo&title=EKL Macau &amp; GNX! + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;KDOT!!! GNX!!!&lt;/li&gt;
+&lt;li&gt;UFC Macau!!!&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/MfUWXDRIx/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241127/">
+                                                                                            EKL Alma Mater 《足利女童连续失踪事件》
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20241120-boxplot/">
+                                                                                                    EKL 20241120 - Boxplot
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

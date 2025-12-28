@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 289
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2023-06-29</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">10.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">2470</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">EKL_NUM</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://ezraknotlab.github.io//post-images/ekl-289vvvv.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>PACA区别,Graduation,treble champ,darkness&amp;loneliness,OV</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#fighters">👑 Fighters</a></li>
+<li><a href="#%EF%B8%8Ftreble-winners">☀️TREBLE WINNERs</a></li>
+<li><a href="#wait-but-why">😤wait but why</a></li>
+<li><a href="#paca">😇PACA</a></li>
+<li><a href="#brandenburg">🌌Brandenburg</a></li>
+</ul>
+</p>
+<h1 id="fighters">👑 Fighters</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://img1.baidu.com/it/u=1573879923,2435983755&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=800&amp;h=500" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://i2.hdslb.com/bfs/archive/08e6bd4a98ef242aa1b60eb35a0bc3ce5a6a8061.jpg" alt="" loading="lazy"></figure>
+<p>On June 17 2023, UFC 289 took place in Vancouver, Canada. All Canadian fighters performed perfectly and ended as 6-0. The main event was the lion Amanda Nunes versus Irene Aldana. The undisputed two-division champion won the match dominantly. As a matter of fact, I picked the latter, but Irene didn’t even show her strike skills very much, she had to face the force and push from the champion. After the unsuspicious decision was read out, the UFC female queen took off the gloves and made a speech to the entire world. She’s been a fighter for so many years, now she retires as a GOAT. She got the family and a girl by side and it’s pretty enough.<br>
+The comain even was between Charles 'DoBronxs' Oliveira</p>
+<figure data-type="image" tabindex="2"><img src="https://www.qjhm.net/uploads/allimg/230612/1_230612153652_1.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://img.sportsv.net/img/article/cover/8/104748/fit-HljheXLv11-555x291.jpg" alt="" loading="lazy"></figure>
+<p>An surprising and explosive accident happened on June 24, 2023, due to the unpleased manner to Russia’s Ministry of National Defense, the leader of the world most prominent mercenary army Wagner, Mr. Prigozhin, decided to attack the capital Moscow to protest. Specifically Russia’s MND was willing to incorporate mercenaries into the national army which is unfavorable for Wagner. This breaking news actually happened and ended soon with a peaceful result that the president of the Republic of Belarus Lukashenko stepped in and confirmed Prigozhin arrival in Belarus, said Wagnerites &quot;welcome to stay here for a while, at their own expense of course&quot;. Of course, this implausible thriller looks even more surreal when you remember how he freaked out the first time Wagnerites showed up in Belarus.</p>
+<hr>
+<h1 id="️treble-winners">☀️TREBLE WINNERs</h1>
+<p><a href="#toc">↩️</a><br>
+<img src="https://ezraknotlab.github.io//post-images/1689501166933.png" alt="" loading="lazy"></p>
+<p><img src="https://ezraknotlab.github.io//post-images/1689501174250.png" alt="" loading="lazy"><br>
+不说很难受，但也觉得 会有积极方面的可能，但是越说越拖入深渊 狠狠地撕开皲裂的伤口。</p>
+<p><img src="https://ezraknotlab.github.io//post-images/1689501188164.jpg" alt="" loading="lazy"><br>
+'loyalty'</p>
+<pre><code class="language-python">I got, I got, I got, I got
+Loyalty, got royalty inside my DNA
+</code></pre>
+<figure data-type="image" tabindex="4"><img src="https://ezraknotlab.github.io//post-images/1689501253142.jpg" alt="" loading="lazy"></figure>
+<p>虽然不喜欢这样，但是还是会自己忍不住笑 哈哈哈哈 Team Chandler leads 6-0 versus Team McGregor. LOL</p>
+<figure data-type="image" tabindex="5"><img src="https://ezraknotlab.github.io//post-images/1689501263929.png" alt="" loading="lazy"></figure>
+<p>hard work pays off!!! we are again the champions!!</p>
+<figure data-type="image" tabindex="6"><img src="https://ezraknotlab.github.io//post-images/1689501274795.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://ezraknotlab.github.io//post-images/1689501283136.png" alt="" loading="lazy"></figure>
+<hr>
+<h1 id="wait-but-why">😤wait but why</h1>
+<p><a href="#toc">↩️</a><br>
+I've always been doing this: a conclusive thought comes to my mind, and I try to gather as much evidence as I can to solve and describe it from all perspectives. I process this kind of thing while I'm riding my bike on my way to the canteen. Like this, Conor McGregor said in his documentary: I don't go to other places to learn from other coaches, cause you must trust your coaches, have confidence and believe their capability. In this case, I think Team Khabib is the same as Team Conor. I got a straightforward and smooth narrative in my mind nearly one hour ago, but unfortunately, I lost it. Now I possibly see it in the other way. The most important thing in fighting business is self-improvement, that's the real matter that helps you keep and defend the belt if you're a champion. What matters is what you do, rather than who coach you or how high the coaches' level are. You can learn anywhere, anyway. And of course, it takes sacrifices and pain.<br>
+Oh, I have it now: ask a quick question for Mr M, what's the name of two main parties in USA. He can't even anwser it quite straight.</p>
+<p>2023年7月1日11:47:02<br>
+<a href="#toc">↩️</a><br>
+离开上海站回家，图中坐窗边听奥利维拉入阵音乐，UFC289温哥华OV刚秒了大流士。这walkout song开头是大海般的平静，可能是为了后面更有激情的迸发 这不就是一个电子的故事？ 随波逐流或者被迫达到某个激发态，不稳定后盲目无方向，当你不知道未来的去向时，不如回到最初，回到基态，调整好后，重新出发。无论结果怎么样，OV就是连续三场终结了冠军战的对手，虽不及很多其他量级冠军那样具有绝对的统治力，但接下面一场再rematch冠军赛还是可以的，但是现在有钻盖的BMF之争，后面也有可能两种冠军之战在OV的rematch之前。人们说人类从历史中学到的唯一教训就是人类从来不吸取教训，大的时间尺度上来说人类多数如此，但我们在生物角度上一定程度上就是不死的小强，三体1最后史强说的，人就像蝗虫一样，一波波的尝试，一代代奔涌向前，一次次被击倒在地，但我们总会再次出发，没有什么命中注定，我不认为我们一定要拿回属于自己的东西，成为冠军前也有很多是多次向其发起冲击才最终如愿的，没关系。起来继续，专注于目标。从来都不会活在过去。</p>
+<ul>
+<li>
+<p>We'll raise from the darkness and loneliness</p>
+</li>
+<li>
+<p>如果你积极生活，那我想你大概率是热爱自然的，那大概率也会向往西部文化，或是北欧风情，原始纯洁，使得内心平静安逸又满足。内心渴望沉浸其中，这时自不会受到外部嘈杂声音的搅扰，内心强大又自信，you got the entire world！LFG</p>
+</li>
+<li>
+<p>电动汽车储能方面的巅峰可能在2050年附近，目前毫无疑问还有很多严重的问题厄待解决，提高空间很大，但是碳排放问题更为紧急，肯定目前要大力推广新能源。至于汽车后面如何发展，还有很多能源动力模式方向要发展，磁悬浮等等。</p>
+</li>
+<li>
+<p>综合格斗极具魅力，首先体育运动是可以同时给人带来至高荣耀和生命危险的活动，个人型运动又与很多常规的团队型运动不同，其中综合格斗则更为极端，能够获得个人至高无上的荣耀的同时也常常游走在死亡的边线上。对于一个人来说，实际上我们每个人多数时候还是要一个人面对很多，团队合作固然重要，但是像MMA，走进笼子，踏上战场，还是孤独的自己面对对手，冠军常常要付出巨大的牺牲才能换来胜利：与家人陪伴的时间，健康，休闲的时光，无尽的汗水…团队型运动像是足球篮球其实也是，胜利当然是共同努力的结果，但是具体的表现还是个人的，关键球员的致胜发挥…就算是替补队员也要为自己的上场机会默默努力，独自争取。所以说，最终，ultimately，培养自己成为冠军需要牺牲很多很多，sacrifice relationships, time&amp;life, efforts...Don't live in the past and we move on champ!</p>
+</li>
+<li>
+<p>安全带还挺有意思的 一般小事故都是冲撞 身体甩出去 系好安全带能缓解百分之八九十 严重的事故安全带肯定作用不明显了 毕竟也无济于事。</p>
+</li>
+<li>
+<p>ML is a ultimate data-driven method for designing materials. For now, researchers’ work mainly focus on fabricating and detecting the characteristics of the certain materials they made, like HEA, HEO, Ternary, LDH... Once there’re enough data of considerable sorts of materials, ML models could be formed for highly efficient synthesis, giving advice on different methods and characterizing properties. SIMPLIFIED GRAPHIC DESCRIPTION OF THE SAMLL REPARTED LAYERED USED IN CNN PART.</p>
+</li>
+</ul>
+<hr>
+<h1 id="paca">😇PACA</h1>
+<p><a href="#toc">↩️</a><br>
+<mark>物理吸附和化学吸附</mark></p>
+<ul>
+<li>首先PA和CA一定有区别，存在界限，但受限于电子定量问题的影响，界限较为模糊。区别表现在：
+<ul>
+<li>实验上，质谱中的产物丰度，PA的吸附容易，解离也容易，整个过程快速，所以从相对丰度上看，谱图中几乎不会显示PA。稳定产物都是CA。</li>
+<li>计算的几何结构上，一般桥位吸附，也就是过氧吸附对应吸附能更大，有可能对应CA；顶位吸附，也就是超氧吸附对应吸附能相对更小，有可能对应PA。（当然不是普适规律，一般针对不同的体系有不一样的规律对应，甚至吸附构型毫无规律可言。）</li>
+<li>计算的能量学数据上，化学吸附对应的吸附能通常是远大于物理吸附（同样，适不同体系而定，更详细的还有采用什么单位的吸附能 eV还是Hartley a.u.有时候可能是双倍的关系，例如金银纯簇的体系。</li>
+<li>计算的电子学数据上，化学吸附通常对应的结果中，片段间作用毫无疑问更强于物理吸附，例如在PDOS中，CA中片段间重叠范围更广，这也是较大吸附能的成因。</li>
+<li>最本质的区别回归于一个最基础的概念------O-O上自旋和（∑O-O）大小。自旋和大小反映着电子的转移量，三线态的单体氧气分子接受另一个片段的电子，配对后一定程度上O-O上自旋和会下降，固自旋和降低越多，化学吸附越强烈，表现的吸附能数值越大。从两种片段相遇碰撞到PA再到CA最后解离氧化等等，在化学吸附前必然经过了物理吸附，所以物理吸附混在其中，如何更详细的区别？举例：单体氧气上两个单电子，最初的自旋和为2，物理吸附对应的自旋和在1.7左右，化学吸附对应的自旋和在1.3左右，那是不是有阈值来区别呢？目前我们（我和师兄交流，还没和老师讨论过，物理这边也没有提出，算是最近新的发现）认为是物理吸附到化学吸附间的过渡态，已经计算验证，过渡态处于该阈值，当然该阈值也不能提出作为规律，因为过渡态本身也不够确定。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="brandenburg">🌌Brandenburg</h1>
+<p><a href="#toc">↩️</a></p>
+<pre><code class="language-python">I heard you callin', now my eyes are open
+Day is breaking into powder blue
+Sunlight is framin' our every moment
+What a way to start off the day with you
+Flick a finger
+Start a discussion to pick a singer
+This one, you'll love it, I had to bring her
+Just let the speakers take you away
+And drop the needle on Dusty
+Frost on the leaves like a lake
+The moment came out of nothin'
+A beautiful smile on your face
+Yesterday was a long night
+But I got a feeling that the future is so bright
+All of the pressure washed away in the low tide
+But we gotta wait 'til our clothes are bone dry
+So I'll drop the needle on Dusty
+</code></pre>
+<p>So they're right. Once there's a rift, it won't be the same ever.</p>
+<pre><code class="language-python"># Got done with graduation project.
+# Won 2 prizes: The excellent graduation thesis &amp; Second prize of Shanghai excellent graduation thesis
+# ManCity won the trible, making them the second team ever doing that in history, ManUnited was the last one.
+# Visited the west lake and xiaoruocun in zhejiang province.
+
+
+</code></pre>
+<hr>
+<p>Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#fighters">👑 Fighters</a></li>
+<li><a href="#%EF%B8%8Ftreble-winners">☀️TREBLE WINNERs</a></li>
+<li><a href="#wait-but-why">😤wait but why</a></li>
+<li><a href="#paca">😇PACA</a></li>
+<li><a href="#brandenburg">🌌Brandenburg</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-289vvvv/">https://ezraknotlab.github.io/post/ekl-289vvvv/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-289vvvv/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-289vvvv/&sharesource=qzone&title=EKL 289&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PACA区别,Graduation,treble champ,darkness&amp;amp;loneliness,OV&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-289vvvv/&sharesource=weibo&title=EKL 289 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PACA区别,Graduation,treble champ,darkness&amp;amp;loneliness,OV&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKL_NUM/">#
+                                                EKL_NUM
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-290/">
+                                                                                            EKL 290
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-288vvv/">
+                                                                                                    EKL 288
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

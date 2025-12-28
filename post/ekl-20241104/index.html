@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Bruno Leopold">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="CHEM PhD |Energy Research|Data Viz|CmonCity|NASA|Tech|⚽🏀">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NQ53GG7G"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'GTM-NQ53GG7G');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLChaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKLFike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1766919018532" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLChaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKLFike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="https://ezraknotlab.github.io/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL  Alma Mater 《当我谈跑步时我谈些什么》
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2024-11-04</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">26.3
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7256</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKLFike/">EKL Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/imgs/2024/11/04/8c7a4e9dbea94b72.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>《当我谈跑步时我谈些什么》</li>
+<li>劝读</li>
+<li>路还很长 - 无志者常立志，有志者立长志</li>
+<li>书籍&amp;智慧&amp;猫头鹰</li>
+<li>We Treated President Biden Like ST! - Trevor Noah</li>
+</ul>
+<!-- more -->
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#info">info</a>
+<ul>
+<li><a href="#%E4%BD%9C%E8%80%85%E7%AE%80%E4%BB%8B">作者简介  · · · · · ·</a></li>
+<li><a href="#rating">Rating⭐⭐⭐⭐</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0">第二章</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-2005%E5%B9%B49%E6%9C%881%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第三章 2005年9月1日夏威夷州考爱岛</a>
+<ul>
+<li><a href="#%E5%87%BA%E7%9B%90%E7%9A%84%E9%BA%BB%E7%83%A6-same-problem">出盐的麻烦  same problem</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-2005%E5%B9%B48%E6%9C%885%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第一章 2005年8月5日夏威夷州考爱岛</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-2005%E5%B9%B48%E6%9C%8814%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第二章 2005年8月14日夏威夷州考爱岛</a>
+<ul>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-2005%E5%B9%B49%E6%9C%8819%E6%97%A5%E4%B8%9C%E4%BA%AC">第四章 2005年9月19日东京</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-2005%E5%B9%B410%E6%9C%883%E6%97%A5%E9%A9%AC%E8%90%A8%E8%AF%B8%E5%A1%9E%E5%B7%9E%E5%89%91%E6%A1%A5">第五章 2005年10月3日马萨诸塞州剑桥</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-1996%E5%B9%B46%E6%9C%8823%E6%97%A5%E5%8C%97%E6%B5%B7%E9%81%93%E4%BD%90%E5%90%95%E9%97%B4%E6%B9%96">第六章 1996年6月23日北海道佐吕间湖</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-2005%E5%B9%B410%E6%9C%8830%E6%97%A5%E9%A9%AC%E8%90%A8%E8%AF%B8%E5%A1%9E%E5%B7%9E%E5%89%91%E6%A1%A5">第七章 2005年10月30日马萨诸塞州剑桥</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-2006%E5%B9%B48%E6%9C%8826%E6%97%A5%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%8E%BF%E6%B5%B7%E5%B2%B8%E7%9A%84%E6%9F%90%E5%BA%A7%E5%9F%8E%E5%B8%82">第八章 2006年8月26日神奈川县海岸的某座城市</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-2006%E5%B9%B410%E6%9C%881%E6%97%A5%E6%96%B0%E6%BA%BA%E5%8E%BF%E6%9D%91%E4%B8%8A%E5%B8%82">第九章 2006年10月1日新溺县村上市</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0-%E5%9C%A8%E4%B8%96%E7%95%8C%E5%90%84%E5%9C%B0%E7%9A%84%E8%B7%AF%E4%B8%8A">后记　在世界各地的路上</a></li>
+<li><a href="#%E8%B7%91%E6%AD%A5%E6%97%B6%E5%80%99%E5%8C%85%E5%90%AB%E7%9A%84%E5%BE%88%E5%A4%9A%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0">跑步时候包含的很多影响因素：</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%9D%E8%AF%BB">劝读</a>
+<ul>
+<li><a href="#%E8%B7%AF%E8%BF%98%E5%BE%88%E9%95%BF-%E6%97%A0%E5%BF%97%E8%80%85%E5%B8%B8%E7%AB%8B%E5%BF%97%E6%9C%89%E5%BF%97%E8%80%85%E7%AB%8B%E9%95%BF%E5%BF%97">路还很长 - 无志者常立志，有志者立长志</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B9%A6%E7%B1%8D%E6%99%BA%E6%85%A7%E7%8C%AB%E5%A4%B4%E9%B9%B0">书籍&amp;智慧&amp;猫头鹰</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a>
+<ul>
+<li><a href="#we-treated-president-biden-like-st-trevor-noah">We Treated President Biden Like ST! - Trevor Noah</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p><audio controls="" loop="" preload=""><source src="https://rildi.sunproxy.net/file/Snk2QVBOZXhTcEJQcEpJWE9GUGtkdVJuMldNYno2RHFDVnNOTWE1QkIzUncvbW5pQU0yalhvYmFDT1Raa0dUZm9zVUFjdHh2TU85NE5tZmdadzBtOGNIZGgvejdkeWh6dSt1UU1vUFJFT0U9/A_AP_Rocky_-_Tailor_Swif_(Hydr0.org).mp3"></audio></p>
+<p>I'm too swift, don't tell Taylor 'bout this shit</p>
+<p><mark>A$AP Rocky – Tailor Swif</mark></p>
+<summary>lyrics</summary>
+<details>
+<pre><code class="language-c">(Hitkidd, what it do, man?)
+
+Shoot my shot, got her wet (ho)
+Bet that's all neck, girl, that's wetty, ready
+Gave me all neck, how beheading, ready
+Might just sign my ex-girl, no Malcolm and Eddie, already
+Your ass might just go and get upset, don't be petty already
+Smoke 'za so you stressed, boy, that’s Reggie, a wetty
+Got cadets in my set, who up next? Boy, they ready
+She want sex, I profess my finesse like a wedding
+
+For the punk shit, for the funk shit
+For the dumb shit, for the go dumb shit (go, go, go, go)
+Get your gun shit, I got the funk shit (go, go, go, go)
+Fuck up the function with the dumb shit (go, go, go, go)
+Don't give a fuck shit (go)
+
+Eatin' lamb chops on the block when we was broke (go, go, go, go)
+Even when I was po', I was out here eatin' goats (go, go, go, go)
+Mary had a lil' lamb, but my mama need a coat (go, go, go, go)
+Yeah, I had a shearling and a Gucci link at four years old (yeah)
+
+I'm too swift, don't tell Taylor 'bout this shit (swift, yeah)
+I'm too swift, now don't tell Taylor 'bout this shit (yeah)
+Go to my tailor, got me dripped like (yeah, wetty)
+Go to my tailor, got me dripped up in the district (yeah, wetty)
+I'm too swift, don't tell Taylor 'bout this shit (yeah, wetty)
+I'm too swift, don't tell Taylor 'bout that (yeah, wetty)
+Go to my tailor, got me dripped up than a bit' (yeah, wetty)
+I'm too swift, don't tell Taylor 'bout this sh' (yeah)
+
+Was a stick-up kid, imagine all the shit I did (yeah)
+Ballin', I was just a kid, I just fucked this feminist (yeah)
+So, I ain't feminine, won't you give my dick a kiss? (Yeah)
+You tryna give my dick a kit, ridin' on my strip again (yeah)
+Ridin' through my window tint, hit a lick again (yeah)
+Got these niggas sick again, hit a lick again (yeah)
+
+We gon' freak, we gon' freak, we gon', hold, uh (go, go, go, go)
+She on me, she on me, she on go, uh (go, go, go, go)
+She on green, she on green, she on go, uh (go, go, go, go)
+I'm too G, she agreed I'm a GOAT, GOAT (go, go, go, go)
+Gotta keep it low pro', shorty might give me throat, wow (go, go, go, go)
+Chuck it on me, no throat goat (go, go, go, go)
+Drip it on me, you hoes's broke (go, go, go, go)
+
+I'm too swift, don't tell Taylor 'bout this shit (swift, yeah)
+I'm too swift, now don't tell Taylor 'bout this shit (yeah, wetty)
+Go to my tailor, got me dripped like (yeah, wetty)
+Go to my tailor, got me dripped up in the district (yeah, wetty)
+I'm too swift, don't tell Taylor 'bout this shit (yeah, wetty)
+I'm too swift, don't tell Taylor 'bout that (yeah, wetty)
+Go to my tailor, got me dripped up in the pit (yeah, wetty)
+I'm too swift, don't tell Taylor about this sh'
+
+</code></pre>
+</details>
+<hr>
+<hr>
+<p>📍 封面是书中一页的照片</p>
+<p>最近看到北京马拉松结束，前面看过这篇<a href="https://luolei.org/changsha-marathon-2024">罗磊的独立博客——长沙马拉松:回到 5 小时内</a>，想起前面看的村上春树《当我谈跑步时我谈些什么》，很早之前就看完但是陆续积累一些“垃圾”，就没有系统的整理，今天想就这样吧，和这个时代很多技术产品一样，发出来再看，尽管后面更改的几率也极小了。写跑步的书，与绝大多数小说不同，这种经历或者故事可以经常发生在我们身上，不是某个小说中人物在特定背景下所产生的故事，这是市面上很少有的自传性质的杂文集，更是一种自我生活习惯的分享，尤其是来自一个在这个时代耀眼的作家。</p>
+<h2 id="info">info</h2>
+<p><a href="#toc">↩️</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7473639"> <a href="https://book.douban.com/subject/3369600/">当我谈跑步时我谈些什么<label class="task-list-item-label" for="task-item-7473639"> [当我谈跑步时我谈些什么](https://book.douban.com/subject/3369600/)</label>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-219622"><label class="task-list-item-label" for="task-item-219622">  No.242豆瓣图书Top250  (最近才确定这个Top250榜单确实是动态的，怪不得之前基里尼亚加还在，现在消失了)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4496043"><label class="task-list-item-label" for="task-item-4496043">  豆瓣评分8.2   95819人评价</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5131905"><label class="task-list-item-label" for="task-item-5131905">  作者: [日] 村上春树</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8662446"><label class="task-list-item-label" for="task-item-8662446">  出版社: 南海出版公司</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9583029"><label class="task-list-item-label" for="task-item-9583029">  出品方: 新经典文化</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3333763"><label class="task-list-item-label" for="task-item-3333763">  原作名: 走ることについて語るときに僕の語ること</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-187913"><label class="task-list-item-label" for="task-item-187913">  译者: 施小炜</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3050072"><label class="task-list-item-label" for="task-item-3050072">  出版年: 2009-1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9359048"><label class="task-list-item-label" for="task-item-9359048">  页数: 198</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8832855"><label class="task-list-item-label" for="task-item-8832855">  定价: 25.00</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3969685"><label class="task-list-item-label" for="task-item-3969685">  装帧: 平装</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6797546"><label class="task-list-item-label" for="task-item-6797546">  丛书: 新经典文库·村上春树作品</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6082321"><label class="task-list-item-label" for="task-item-6082321">  ISBN: 9787544242820</label></li>
+</ul>
+</li>
+</ul>
+<h3 id="作者简介">作者简介  · · · · · ·</h3>
+<p><a href="#toc">↩️</a><br>
+村上春树，日本著名作家，著名诺贝尔文学奖陪跑者，当然有很多跑步方面的想法（Kidding🫡）。</p>
+<p>循着岁月流逝、地点变迁，唯有四分之一个世纪里日日坚持跑步的所见所闻、所惑所思最是真真切切：1982年秋，开始职业作家生涯之际，也开始长跑。此后近30年，从夏威夷的考爱岛到马萨诸塞的剑桥，从日本村上市参加铁人三项赛，到踏上希腊马拉松长跑古道，他，永远奔跑。</p>
+<h3 id="rating">Rating⭐⭐⭐⭐</h3>
+<p><a href="#toc">↩️</a></p>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<hr>
+<p>又一个梦境</p>
+<p>今天是二〇〇五年的八月五日，星期五。夏威夷的考爱岛。<br>
+北部海岸。晴空万里，爽朗得令人膛目。纤云也无。此时甚至连云彩这一概念的暗示都不存在。七月底我来到此地，一如以往，租了一套公寓，早晨趁着凉快的时候伏案工作，比如说此刻便在写这篇文章，关于跑步的、自由的文章。现在是夏天，当然很热。夏威夷每每被说成四季常夏，但毕竟位于北半球，四个季节大体一应俱全，相对而言夏天比冬天要热，不过与马萨诸塞州的剑桥那为红砖和混凝土重重包围、犹如拷问一般的闷热相比，此地的舒适简直有如天堂。空调根本不需要。只需打开窗户，凉爽的清风便自己吹进屋子里来。剑桥的人听说我要在夏威夷度过八月，都众口一词地表示惊讶：“分明是夏天，居然特地赶到那么炎热的地方去，莫不是有毛病？”他们并不知道，打东北方从不间断地吹来的贸易风（信风），让夏威夷变得何等凉爽；他们也不知道，在鳄梨树那风凉的树荫下安闲地读书，兴之所至便去南太平洋的海湾里游泳，这样的生活，让人感到何等幸福。</p>
+<p>我不能说是一个适合团体竞技的人，好也罢坏也罢，生来便是如此。参加足球或棒球这类比赛——除却孩提时代，这样的经历几乎为零——总是隐隐感到不快。这也许和我没有兄弟姐妹有关，和别人共同参与的赛事，总是难以全身心投人。但像网球这样一对一的比赛，我也不怎么拿手。壁球是我喜欢的运动，可是一打比赛，不论是输是赢，我总是难以从容不迫。<br>
+格斗技也非我所长。<br>
+诚然，我并非毫无争强好胜之心。不过不知何故，跟别人一决雌雄，我自小就不甚在乎胜负成败。这一性格在长大成人后也大致未变。无论何事，赢了别人也罢输给别人也罢。<br>
+都不太计较，倒是更关心能否达到为自己设定的标准。在这层意义上，长跑方是与我的心态完全吻合的体育运动。<br>
+跑过一趟全程马拉松便会明白，在比赛中胜过或负于某个特定的人，对跑者来说并不特别重要。</p>
+<hr>
+<p>✏️ 大家都是跑步时候顺便还经常思考   但是思绪简单易来易去  难思考严肃的事情</p>
+<p>✏️ 跑步时浮上脑际的思绪，很像天际的云朵，形状各异，大小不同。它们飘然而来，又飘然而去。然而天空犹自是天空，一成不变。云朵不过是匆匆过客，它穿过天空，来了去了。唯，有天空留存下来。所谓天空，是既在又不在的东西，既是实体又不是实体。对于天空这种广漠容器般的存在状态，我们唯有照单收下，全盘接受。<br>
+✏️ 在某个时段你开始对跑步感兴趣，大概率心里成长许多。在从小到现在经历很多感兴趣的体育运动之后，没有初高中时候对于篮球的狂热的热爱，慢慢对于足球和其他球类运动，甚至包括格斗和其他新兴运动，你会体会到跑步也是一种特别的运动，这时候变得成熟沉稳，喜欢独处一种安静的环境，通过真正的思考来认识自己，观察世界。<br>
+✏️ 首先它很简单，不需要任何器材，只需要一颗准备好的决心，一次接着一次地将一只脚迈到另一只脚前，不需要伙伴和对手，也不需要特定的场所。<br>
+✏️ 需要你专注，但是同时你也可以有些许时间来思考问题，从基础相关的体能，身体条件天赋等，拓展到类似于武术格斗带给人思考的人生的耐力长度以及坚持不懈，等等……</p>
+<blockquote>
+<p>我在自制的小巧玲珑的空白之中、在令人怀念的沉默之中，一味地跑个不休。这是相当快意的事情，哪还能管别人如何言说？</p>
+</blockquote>
+<h1 id="第二章">第二章</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>作者三十三岁开始跑步，当然大家都有一些类似的感悟，以及遇到的烦恼，比如不能坚持每天跑步，偶尔会偷懒，事实上所有人都这样。另外还有他为了戒烟，保持体重，更健康的身体来写作，所以规律作息。</li>
+</ul>
+<h2 id="第三章-2005年9月1日夏威夷州考爱岛">第三章 2005年9月1日夏威夷州考爱岛</h2>
+<p><a href="#toc">↩️</a><br>
+在盛夏的雅典跑第一个42公里</p>
+<ul>
+<li>村老在夏威夷的考艾岛备战一两个月后的波士顿马拉松 全程，还有讲起以前在盛夏的希腊跑全马，天气热不说 人啊很容易死的。 想起张博洋对这段的脱口秀。  有个人跑42KM后死了 后人不是引以为戒 而是模仿他的脚步 反反复复举行比赛来纪念  但更像是羞辱 LOL</li>
+<li>为了避免酷暑带来的挑战，一般最好是趁着天不亮就从雅典出发，在太阳没有升的很高之前到达终点，有点像是与太阳赛跑</li>
+<li>不穿上衣，跑起来很爽，但是太阳晒会晒伤成小水泡 水疱</li>
+<li>马拉松是个小小的热情的村子 宁静和平</li>
+</ul>
+<p>没有苦夏。我并无特别的苦夏对策。硬说有什么，不过是平时注意不吃冷的东西，多吃水果和蔬菜。在夏威夷，芒果、木瓜和鳄梨之类的新鲜水果很便宜就能买到，正所谓堆满店头，对于我夏天的饮食，这儿真是个理想的所在。说这是“苦夏对策”，毋宁说是身体自然的要求。每天运动身体，就容易明白个中味道。<br>
+还有一个健康法是睡午觉。我午觉睡得可真不少。大体在午饭后，觉得有睡意袭来，便横躺于沙发上，就这般迷迷糊糊地睡了去。约莫三十分钟便会猛地醒过来。醒来时，身体倦意全消，脑子非常清醒，即南欧人所谓“歇死它”（siesta）。我记得这好像是住在意大利时养成的习惯，也许有出人。</p>
+<h3 id="出盐的麻烦-same-problem">出盐的麻烦  same problem</h3>
+<p><a href="#toc">↩️</a><br>
+跑完要立刻洗澡 要不然盐 伤皮肤  几个小时 半夜 第二天痒  微红一片</p>
+<h2 id="第一章-2005年8月5日夏威夷州考爱岛">第一章 2005年8月5日夏威夷州考爱岛</h2>
+<p><a href="#toc">↩️</a><br>
+谁能够笑话米克·贾格尔呢?</p>
+<h2 id="第二章-2005年8月14日夏威夷州考爱岛">第二章 2005年8月14日夏威夷州考爱岛</h2>
+<p><a href="#toc">↩️</a><br>
+人是如何成为跑步小说家的</p>
+<h3 id="第四章-2005年9月19日东京">第四章 2005年9月19日东京</h3>
+<p><a href="#toc">↩️</a><br>
+我写小说的许多方法，是每天清晨沿着道路跑步时学到的</p>
+<p>✏️ 两种项目的balance： 课业和田径  初中最后  高中一同学   马霍姆斯的篮球和NFL  只能选一个</p>
+<ul>
+<li>
+<p>接受采访时，常有人提问：“对小说家来说，最为重要的资质是什么？”无须赘言，当然是才华。倘若毫无文学才华，无论何等热心与努力，恐怕也成不了小说家。说这是必要的资质，毋宁说是前提条件。如果没有燃料，再出色的汽车也无法开动。<br>
+✏️是骡子是马 拉出来溜溜</p>
+</li>
+<li>
+<p>才华</p>
+</li>
+<li>
+<p>集中力</p>
+</li>
+<li>
+<p>耐力</p>
+</li>
+<li>
+<p>重要性排序  后二者是后天可习得</p>
+</li>
+</ul>
+<p>我写小说的许多方法，是每天清晨沿着道路跑步时学到的，自然地，切身地，以及实务性地学到的。应将自己追问到何处为止？何种程度的休养才是恰当的，而多少又是休息得过分？到何种程度才是妥当，而到什么程度又是狭隘？外部的风景该撷取多少好，而内心的世界又该挖掘多少为妙？对自己的能力应该相信多少，又该对自身有多少怀疑？假使当初我改行做小说家的时候，没有痛下决心开始跑长跑，我的作品恐怕</p>
+<h2 id="第五章-2005年10月3日马萨诸塞州剑桥">第五章 2005年10月3日马萨诸塞州剑桥</h2>
+<p><a href="#toc">↩️</a><br>
+即便那时的我有一条长长的马尾辫子</p>
+<p>我觉得，跑步时很适合背诵演讲稿之类。一边几乎无意识地迈步，一边在大脑中依序排列词语，检验文章的节奏，设想词句的韵律。就这样，一面将意识放置于别处，一面放脚奔跑，便能毫不费力地以自然的速度奔跑很久很久。只不过，在脑子里自说自话，有时一不留神做出表情、摆出姿势来</p>
+<ul>
+<li>哈佛等名校  周围环境的变化  从秋到冬的波士顿</li>
+</ul>
+<h2 id="第六章-1996年6月23日北海道佐吕间湖">第六章 1996年6月23日北海道佐吕间湖</h2>
+<p><a href="#toc">↩️</a><br>
+已经无人敲桌子，无人扔杯子了</p>
+<p>超级马拉松一次一百多公里  也就跑过一次</p>
+<ul>
+<li>题目指的是艰难熬过五十到七十这段距离  一下感觉来到河的另一侧  完全不一样了  之前各个器官开革命会议反抗  这会XXXXX</li>
+<li>自己处于这深刻的疲劳中，将这疲劳全盘容纳，还能扎扎实实地继续奔跑</li>
+<li>在这个世界上没有比这更高的愿望了</li>
+<li>我们经常跑步会有这种情形出现  到终点觉得还可以继续  反而没有初识时候痛苦</li>
+</ul>
+<p>我心中滋生的新东西究竟是什么？我寻觅不到恰如其分的表达，不过，许是近乎“心灰意冷”的东西。说得夸张些，由于跑完了一百公里，我似乎一脚踏进了“稍稍不同的场所”。跑过七十五公里，疲劳感突然销声匿迹后，那段意识的空白之中，甚至存有某种哲学或宗教的妙趣。其中有强迫我内省的东西。<br>
+也许是因这个，我再也无法以从前那种不顾一切、单纯而积极的态度面对跑步了。</p>
+<h2 id="第七章-2005年10月30日马萨诸塞州剑桥">第七章 2005年10月30日马萨诸塞州剑桥</h2>
+<p><a href="#toc">↩️</a><br>
+纽约的秋日</p>
+<p>十一月中央公园金黄  是最美的纽约  波士顿的马拉松也即将开赛  我小练以待</p>
+<p>✏️阅读的这些书籍倒也不是什么圣贤书  剩闲书还差不多  因此主线任务还是要有priorities  每天半小时，最多一小时番茄钟足够</p>
+<h2 id="第八章-2006年8月26日神奈川县海岸的某座城市">第八章 2006年8月26日神奈川县海岸的某座城市</h2>
+<p><a href="#toc">↩️</a><br>
+至死都是十八岁</p>
+<p>也喜欢古典音乐  在哈佛剑桥买CD  运回日本</p>
+<p>制定周密的计划和勤奋的训练  但是全马成绩还是不够理想   找了很多原因  就是年纪大了</p>
+<p>并不是有个人跑来找我，劝诱我“你跑步吧”，我就沿着马路开始跑步。也没有什么人跑来找我，跟我说“你当小说家吧”，我就开始写小说。突然有一天，我出于喜欢开始写小说。<br>
+又有一天，我出于喜欢开始在马路上跑步。不拘什么，按照喜欢的方式做喜欢的事，我就是这样生活的。纵然受到别人阻止，遭到恶意非难，我都不曾改变。这样一个人，又能向谁索求什么呢？</p>
+<h2 id="第九章-2006年10月1日新溺县村上市">第九章 2006年10月1日新溺县村上市</h2>
+<p><a href="#toc">↩️</a><br>
+至少是跑到了最后</p>
+<p>这一段还真是有点震撼，简简单单男孩的两个年龄段的景象</p>
+<blockquote>
+<p>记得好像是十六岁的时候，算计好了家里人都不在，我站在家里的大镜子前赤身裸体，仔仔细细地打量自己的躯体，将身体上自以为不及常人的部位一一列出，比方说眉毛稍稍偏浓呀，指甲的形状难看呀，诸如此类。我记得总共列到了二十七项。这时，我感到腻了，于是中止了检视，还想，仅仅是蠢一查驱体上肉眼可及的各个部位，就发现这么多劣于常人的地方，倘如再涉及其他领域，比如说人格呀头脑呀运动能力呀，那可要没完没了。<br>
+诸位恐怕熟细，十六岁是一个让人极不省心的年龄：会一一在意琐细的小事，对自己的位置又无力客观地把握，为了微不足道的理由便莫名地扬扬自得，也容易产生自卑感。</p>
+<p>随着年龄的增长，经历了形形色色的失误，该拾起来的拾起来，该抛弃掉的抛弃掉，才会有这样的认识：“缺点和缺陷，如果一一去数，势将没完没了。可是优点肯定也有一些。我们只能凭着手头现有的东西去面对世界。”<br>
+赤身裸体站在镜子前，一一列举自己肉体上的缺点，这颇为悲惨的记忆依然留在我的心中。负债居多，进账却根本看不到，这就是我这个人可怜的资产。</p>
+<p>四十年的岁月一晃而逝，如今，当我身裹黑色的游泳衣，将游泳眼镜推在头顶，站在海岸边百无聊赖地等待着铁人三项比赛的发令枪响时，早年的记忆忽然复苏。我再次意识到，自已这个容器是何等可哀，何等微不足道。力量不足，破绽百出，丢人现眼，只怕干什么都是徒劳。我马上就要开始一公里半的游泳，四十公里的自行车，十公里的长跑。但这么做来，又会有什么样的结果？不就像往底上穿了孔的破锅子里拼命倒水么？</p>
+</blockquote>
+<ul>
+<li>
+<p>铁人三项  跑步 自行车和游泳</p>
+</li>
+<li>
+<p>自行车我是不擅长的   所以赛前两个月开始练</p>
+</li>
+<li>
+<p>游泳 是在海边长大  会在大海游   尽管很好  但是正式比赛还是会出现莫名其妙的突发状况  状态不好 肌肉没力气等物理上出现的问题会严重导致心理上慌张不知所措  严重影响比赛  最后自由泳改蛙泳  浪费时间  从擅长的跑步也不一定能够弥补</p>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>假如有我的墓志铭，而且上面的文字可以自己选择，我愿意它是这么写的：<br>
+村上春树<br>
+作家（兼跑者）<br>
+1949-20xx<br>
+他至少是跑到了最后<br>
+此时此刻，这，便是我的愿望。</p>
+</blockquote>
+<h2 id="后记-在世界各地的路上">后记　在世界各地的路上</h2>
+<p><a href="#toc">↩️</a></p>
+<blockquote>
+<p>对于振奋精神、鼓足勇气去挑战正式的铁人三项大赛，说老实话，我并非没有兴趣，不过心存畏惧，担心真那么千，肯定会被平日的练习占去更多的时间——毫无疑问，势必如此，对本业产生妨碍。没有朝超级马拉松方向发展，也是基于相同的理由。坚持体育运动，“调整、增强体力，以写好小说”才是第一目的，假如因为比赛和练习而削减了写东西的时间，那便是本末倒置，要感到为难了。</p>
+</blockquote>
+<p>✏️ 之前是不会 读书会想到见到作者长着什么样的面孔，就像高中时候想着余华和巴金一样年迈，当然在看本书中关于村上春树的跑步照片之前也不会想象到村上春树以前长这样，照片很久远十几二十年前，但面庞确实看起来就是意志坚定有思想的人。</p>
+<h2 id="跑步时候包含的很多影响因素">跑步时候包含的很多影响因素：</h2>
+<pre><code>* 手环松紧程度 检测出不同强度的跑步  手机手环记录数据速度不一致  
+* 天气湿润程度  
+* 风向 
+* 衣服舒适度
+* 身体状态……
+</code></pre>
+<p>要自己把握好睡眠时间，尤其是在跑步之后的那晚，规划好明早要什么时候起床。有时候恢复要意外长的时间，起床会比平常更困难。</p>
+<h1 id="劝读">劝读</h1>
+<p><a href="#toc">↩️</a><br>
+要保持读书的习惯。</p>
+<blockquote>
+<p>你作为普通人，根本没机会接触顶尖的大牛；就算你公司里有，人家也根本不会搭理你。读书是你接触顶级智者思想的唯一途径。（引）</p>
+</blockquote>
+<p>✏️“读万卷书，行万里路”，出自董其昌《画禅室随笔》，意为要努力读书，尽可能多地了解书本知识，掌握间接经验；同时要尽可能多地接触实际，丰富自己的亲身体验，开阔眼界、增进见识。 只有理论与实际相结合，间接经验与直接经验相结合，才能既有真才实学，又能学以致用。<br>
+这是网上原出处的意思解释。后来也有种说法，读万卷书不如行万里路。其实我认为这是人生最终的或者说life long的两个学问，人生就这两个目的，在自然世界游山伴水，也要在精神世界探索这个世界。这是两个不同维度但又相互关联。经济独立后就只有这两个追求，物理和精神层面的拓展和追求对于世界的认知。知道的越多越幸福。</p>
+<p>还是昨晚上看的张骏的脱口秀 吐槽健身肌肉男和相关日常生活行为的矛盾  提到了跑步有氧掉肌肉</p>
+<ul>
+<li>书还是要读的，和笔记一样，一定程度上可以支援未来的自己</li>
+<li>想法转瞬即逝，5秒的点火法则</li>
+<li>可能是最近像背课文一样听Mercy一年一度锐评J.Cole，看待事物都要锐评，看见闪光点和不足之处，一个事物具有的两面性，只有这点是确定的。好的地方取其精华，不足的地方帮助其提出想法，有利于进一步改善和完善自己的系统。</li>
+<li>还是理越辨越明，要进行思想斗争和思想实验。同时还要实验检验，只有实验验证才会更加深入对于事物的认识。回看已完成的实验，写成感悟，继续提升。就是个很简单的机械性的工步，如今的我们这群人就像是西部世界园区里面的人，也像是如今现实里人工智能的学习成长方法，慢慢地认识到我们本身的进化是有一个机械不变的套路的：不管一个互联网产品或者作品怎么样，先发布，然后通过反馈一步步进化，不断迭代不断进化提高性能。</li>
+</ul>
+<p>满脸疑惑，总以为是在周日晚上🥲，难以置信，就这样等了一周颗粒无收，就像白白忙活没有实验结果一样</p>
+<ul>
+<li>大多数思考的时间是要跑步的时候，都是一边跑一边语音记录，所以录音是个比较好的工具，刚刚想到赋予物质意义的重要性，就像阎鹤祥送郭麒麟的一枚巴西的硬币，普通的硬币没多少价值，但赋予的意义都不一样。还有每个赛季的那版球衣，每次数字赛的海报，那首歌代表当时所处的环境。</li>
+</ul>
+<h2 id="路还很长-无志者常立志有志者立长志">路还很长 - 无志者常立志，有志者立长志</h2>
+<ul>
+<li>读过了不久前靓仔马家辉发布在联合早报的<a href="https://www.zaobao.com/lifestyle/columns/story20240615-3918040">《马家辉：余华的立志》发布: 2024-06-15 05:00 AM</a>，感触到人生的路很长，尤其在中高考这几个关卡附近尤其体会明显，身边的人中考前后是两批，高考前后也是，甚至之后的也是……不同人流被分了段，但这并不是人们眼中那么重要，人生就是马拉松，工作和生活尤其能够体现出类似的特点，就像村上春树写的《当我谈跑步时我谈些什么》，这是一场life-long battle，像梅罗绝代双骄的20年，像法老萨拉赫非昙花一现，像LeBron20年保持巅峰，本该一路追求卓越。</li>
+</ul>
+<hr>
+<p>“ 工作就工作吧，人人头上一片天，留得青山在，哪怕无柴烧，此处不留爷，自有留爷处，处处不留爷，爷干个体户，好好活下去，快乐地活下去，争气地走下去，不愁找不到出路。——每回有落榜者对我叹气，无论他是内地生抑或香港人，我都这样鼓励。</p>
+<ul>
+<li><a href="https://www.sohu.com/a/784193439_232127">十九年前的一次高考——余 华</a></li>
+</ul>
+<h1 id="书籍智慧猫头鹰">书籍&amp;智慧&amp;猫头鹰</h1>
+<ul>
+<li>封面又是猫头鹰背景的词云图，OVOhoe~   为什么这种知识类的图书总爱猫头鹰这个意象，体现智慧吗？  猫头鹰智慧？</li>
+</ul>
+<p>猫头鹰通常被认为是智慧的象征，这个形象在西方文化中尤其常见。</p>
+<blockquote>
+<p>猫头鹰与智慧的关联可以追溯到古希腊神话。在希腊神话中，猫头鹰是智慧女神雅典娜的象征。雅典娜不仅是智慧与知识的女神，也是战争与工艺的女神。猫头鹰作为她的象征，逐渐与智慧、学识以及洞察力联系在一起。在许多文化产品中，比如书籍的封面、教育类的图案设计中，猫头鹰常被用来传达一种与智慧、知识或学习相关的主题。这种形象让人联想到深邃的眼光和洞察力，能够在黑暗中看清事物的本质，这与追求知识和理解复杂问题的过程不谋而合。</p>
+</blockquote>
+<h1 id="ekl-wisdom-shelf">EKL Wisdom Shelf</h1>
+<p><a href="#toc">↩️</a></p>
+<h2 id="we-treated-president-biden-like-st-trevor-noah">We Treated President Biden Like ST! - Trevor Noah</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xma3ZdwtEJ4?si=dJ5-KL3YzxEg_Fsz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<p>都要睡觉了 偶然刷到Trevor发布了自己线下comedy的一段cut 有YouTube他的账号链接，时常十几分钟很快看完 最近大选 他从Joe Biden年龄大开始说，有一些政治方面Joe年龄大爱记错名字等开始说 中间提到他自己承认自己bias  我觉得很多人都应该这样 承认自己是bias 因为这是真实的 时间的单向性不能满足任何人具有看待同一个事物的多重视角 和新闻某些地方一样 尽管你的视角带有偏见 但至少这是真实的 有主观视角独特的价值 如果你本来屁股坐哪就对哪说好话  还自信地认为自己的见解公正 非常客观 这就是一种毫无价值的垃圾输出 第二部分Trevor讲了HARRIS作为首位女性 黑人 印度裔候选人 三重buff 提起原来Obama才是level1  后面有两段对应的模仿游戏的trap 非常好听又真实  有趣的男人☝️</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/718156903">清华计算机入学教育之“关于如何做科研的一些个人经验”</a></li>
+<li><a href="https://www.zhihu.com/question/2121086623/answer/21766786070?utm_psn=1836681348452077568">今年安卓发生了啥，电池怎么质的飞跃了?</a></li>
+<li><a href="https://blog.sailfishc.com/information">从信息茧房重新理解信息源</a></li>
+</ul>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a>
+<ul>
+<li><a href="#info">info</a>
+<ul>
+<li><a href="#%E4%BD%9C%E8%80%85%E7%AE%80%E4%BB%8B">作者简介  · · · · · ·</a></li>
+<li><a href="#rating">Rating⭐⭐⭐⭐</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0">第二章</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-2005%E5%B9%B49%E6%9C%881%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第三章 2005年9月1日夏威夷州考爱岛</a>
+<ul>
+<li><a href="#%E5%87%BA%E7%9B%90%E7%9A%84%E9%BA%BB%E7%83%A6-same-problem">出盐的麻烦  same problem</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-2005%E5%B9%B48%E6%9C%885%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第一章 2005年8月5日夏威夷州考爱岛</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-2005%E5%B9%B48%E6%9C%8814%E6%97%A5%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B7%9E%E8%80%83%E7%88%B1%E5%B2%9B">第二章 2005年8月14日夏威夷州考爱岛</a>
+<ul>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-2005%E5%B9%B49%E6%9C%8819%E6%97%A5%E4%B8%9C%E4%BA%AC">第四章 2005年9月19日东京</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-2005%E5%B9%B410%E6%9C%883%E6%97%A5%E9%A9%AC%E8%90%A8%E8%AF%B8%E5%A1%9E%E5%B7%9E%E5%89%91%E6%A1%A5">第五章 2005年10月3日马萨诸塞州剑桥</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-1996%E5%B9%B46%E6%9C%8823%E6%97%A5%E5%8C%97%E6%B5%B7%E9%81%93%E4%BD%90%E5%90%95%E9%97%B4%E6%B9%96">第六章 1996年6月23日北海道佐吕间湖</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-2005%E5%B9%B410%E6%9C%8830%E6%97%A5%E9%A9%AC%E8%90%A8%E8%AF%B8%E5%A1%9E%E5%B7%9E%E5%89%91%E6%A1%A5">第七章 2005年10月30日马萨诸塞州剑桥</a></li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-2006%E5%B9%B48%E6%9C%8826%E6%97%A5%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%8E%BF%E6%B5%B7%E5%B2%B8%E7%9A%84%E6%9F%90%E5%BA%A7%E5%9F%8E%E5%B8%82">第八章 2006年8月26日神奈川县海岸的某座城市</a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-2006%E5%B9%B410%E6%9C%881%E6%97%A5%E6%96%B0%E6%BA%BA%E5%8E%BF%E6%9D%91%E4%B8%8A%E5%B8%82">第九章 2006年10月1日新溺县村上市</a></li>
+<li><a href="#%E5%90%8E%E8%AE%B0-%E5%9C%A8%E4%B8%96%E7%95%8C%E5%90%84%E5%9C%B0%E7%9A%84%E8%B7%AF%E4%B8%8A">后记　在世界各地的路上</a></li>
+<li><a href="#%E8%B7%91%E6%AD%A5%E6%97%B6%E5%80%99%E5%8C%85%E5%90%AB%E7%9A%84%E5%BE%88%E5%A4%9A%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0">跑步时候包含的很多影响因素：</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%9D%E8%AF%BB">劝读</a>
+<ul>
+<li><a href="#%E8%B7%AF%E8%BF%98%E5%BE%88%E9%95%BF-%E6%97%A0%E5%BF%97%E8%80%85%E5%B8%B8%E7%AB%8B%E5%BF%97%E6%9C%89%E5%BF%97%E8%80%85%E7%AB%8B%E9%95%BF%E5%BF%97">路还很长 - 无志者常立志，有志者立长志</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B9%A6%E7%B1%8D%E6%99%BA%E6%85%A7%E7%8C%AB%E5%A4%B4%E9%B9%B0">书籍&amp;智慧&amp;猫头鹰</a></li>
+<li><a href="#ekl-wisdom-shelf">EKL Wisdom Shelf</a>
+<ul>
+<li><a href="#we-treated-president-biden-like-st-trevor-noah">We Treated President Biden Like ST! - Trevor Noah</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20241104/">https://ezraknotlab.github.io/post/ekl-20241104/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20241104/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20241104/&sharesource=qzone&title=EKL  Alma Mater 《当我谈跑步时我谈些什么》&pics=https://ezraknotlab.github.io//images/avatar.png?v=1766919018532&summary=&lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《当我谈跑步时我谈些什么》&lt;/li&gt;
+&lt;li&gt;劝读&lt;/li&gt;
+&lt;li&gt;路还很长 - 无志者常立志，有志者立长志&lt;/li&gt;
+&lt;li&gt;书籍&amp;amp;智慧&amp;amp;猫头鹰&lt;/li&gt;
+&lt;li&gt;We Treated President Biden Like ST! - Trevor Noah&lt;/li&gt;
+&lt;/ul&gt;
+"><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20241104/&sharesource=weibo&title=EKL  Alma Mater 《当我谈跑步时我谈些什么》 + " - " + &lt;h2 id=&#34;keywords&#34;&gt;Keywords&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《当我谈跑步时我谈些什么》&lt;/li&gt;
+&lt;li&gt;劝读&lt;/li&gt;
+&lt;li&gt;路还很长 - 无志者常立志，有志者立长志&lt;/li&gt;
+&lt;li&gt;书籍&amp;amp;智慧&amp;amp;猫头鹰&lt;/li&gt;
+&lt;li&gt;We Treated President Biden Like ST! - Trevor Noah&lt;/li&gt;
+&lt;/ul&gt;
+&pic="https://ezraknotlab.github.io//images/avatar.png?v=1766919018532 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src=""><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src=""><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKLFike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-20241105/">
+                                                                                            EKL 20241105 Piece by Piece
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20241102/">
+                                                                                                    EKL 20241102  TOP 10 most impressive octagon interviews
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+                                                <script type="application/javascript" src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="vlaine-comment"></div>
+<script type="application/javascript">
+    new Valine({
+        el: '#vlaine-comment',
+        appId: '',
+        appKey: '',
+        pageSize: 10,
+        avatar: 'mp',
+        placeholder: '来都来了，不妨评论一下',
+        visitor: true,
+        highlight: true,
+        recordIP: true,
+    })
+</script>
+                                                    
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                EKL
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg?raw=true',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1766919018532);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

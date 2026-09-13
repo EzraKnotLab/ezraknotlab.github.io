@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL Chaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL Fike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1789292542567" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1789292542567" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL Chaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL Fike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL 20260829 FN ShangHai
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2026-08-30</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">12.3
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3016</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL_daily/">EKL_daily</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/2026/08/30/NufZ23wH.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>NURMAGOMEDOV VS. SONG</li>
+<li>AI 拟人化讨论</li>
+<li>Cutting-edge science</li>
+</ul>
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#gooddays">☕Gooddays</a></li>
+<li><a href="#ufc-fight-night-nurmagomedov-vs-song">UFC FIGHT NIGHT: NURMAGOMEDOV VS. SONG</a></li>
+<li><a href="#city">City</a></li>
+<li><a href="#cutting-edge-science">cutting-edge science</a></li>
+<li><a href="#%E6%8A%A4%E5%9F%8E%E6%B2%B3-%E9%BB%91%E6%9A%97%E4%B8%9B%E6%9E%97%E6%B3%95%E5%88%99">护城河 黑暗丛林法则</a></li>
+<li><a href="#%E5%93%B2%E5%AD%A6-ai-%E6%8B%9F%E4%BA%BA%E5%8C%96%E8%AE%A8%E8%AE%BA">哲学  AI 拟人化讨论</a></li>
+</ul>
+</p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/song/nonviolent-communication/1690685863"></iframe>
+<p><mark>Nonviolent Communication 2023</mark></p>
+<audio controls>
+<source src="https://hhk.ourfiles.store/uploads/new/music/2024/09/Metro-Boomin-Nonviolent-Communication-Ft-James-Blake-A-AP-Rocky-21-Savage-(HipHopKit.com).mp3" type="audio/mp3">
+</audio>
+<details>
+    <summary> Lyrics </summary>
+<p>You let me fall first, then you dream awake<br>
+I'd do anything to bring you to that other place<br>
+We speak so differently alone, love like friends, and we are low<br>
+Watch for constellations, soft as cloud formations<br>
+That will never leave, much as duty calls<br>
+If I'm in over my head, I'll swim Niagara Falls<br>
+Nonviolent communication, ah<br>
+Nonviolent communication<br>
+Uh, caught up in the whip, Mary Jane all up in my head<br>
+Upside down when I took the mask off<br>
+Pull the mask back down, time to ride out right now<br>
+You was mine then (you was mine then)<br>
+And you mine now (and you mine now)<br>
+Show me where they hide (show me where they hide)<br>
+And let me find out (let me find out)<br>
+Ball hog and I'm balled out<br>
+And we go all out, down to no doubt<br>
+Yeah, nose bleeds, sell the floors out<br>
+Caught up in the web, tell 'em, &quot;Log out&quot; (mwah)<br>
+Kisses, baby, I bossed up, go frisk us, baby<br>
+Won't you be my missus, baby?<br>
+Ven aquí, I miss it, baby (uh)<br>
+Get lifted, I can tell you gifted, baby<br>
+Necklace like Saint Nicholas, baby<br>
+Wrap it up like Christmas, baby, uh<br>
+Nonviolent communication, ah<br>
+Nonviolent communication<br>
+Yeah, takin' chances, takin' risks for you (on God)<br>
+Yeah, I climb a mountain just to get to you (on God, 21)<br>
+You hungry, that plate, I'ma split with you<br>
+You know I'm a dog, on command, if you tell me, I sit for you (21)<br>
+They don't understand our bond (nah)<br>
+Took a G5 to Milan (on God)<br>
+Treat me like a king, I'm a don (21)<br>
+Treat me like a king, I'm the one, baby (21)<br>
+Rolls-Royce, you will never see a Hyundai (never)<br>
+Suitcase go straight to the runway (21)<br>
+Big dawg, nah, I don't know TSA (on God)<br>
+Real money, you don't never need a sweepstake (straight up)<br>
+Big Birkin, I ain't never been a cheapskate (21)<br>
+I'm the type to vacation on a weekday (21)<br>
+Get American Express, no prepaid (21)<br>
+I'm avoidin' all the, &quot;He say, she say&quot; (on God)<br>
+I'm the one that had you grabbin' on the sheets, bae (yeah)<br>
+Tattoos, yeah, I'm straight up out of E-A (okay)<br>
+Lookin' in your eyes every time we speak, bae (21)<br>
+Won't play you, no, I'm not a DJ (21)<br>
+Nonviolent communication, ah<br>
+Nonviolent communication<br>
+Nonviolent communication, ah<br>
+I'm this dimension's one and only, Spider-Man<br>
+At least I was</p>
+</details>
+<h1 id="gooddays">☕Gooddays</h1>
+<p><a href="#toc">↩️</a></p>
+<ul>
+<li>“地球是人类的摇篮，但人类不可能永远生活在摇篮里。”</li>
+<li><a href="https://www.mittrchina.com/news/detail/16821">人类为什么总想离开地球？</a></li>
+<li><a href="https://www.mittrchina.com/news/detail/16820">回收火箭，为什么中国追了十年？</a></li>
+</ul>
+<h1 id="ufc-fight-night-nurmagomedov-vs-song">UFC FIGHT NIGHT: NURMAGOMEDOV VS. SONG</h1>
+<ul>
+<li>
+<p>主持人和Herb之间小声的蛐蛐都被收音了 所以没宣布之前就知道是Draw</p>
+</li>
+<li>
+<p>Liu Ce TKO·R1 4:26, 最后一下视觉冲击很大，又一个LHW的，更多盼头，更多希望。</p>
+</li>
+<li>
+<p>Kai Asakura R2 TKO，算是Kai的正常水平，on feet的kai的水平肯定TOP5 in BW.</p>
+</li>
+<li>
+<p>Yan Xiaonan lost via KO/TKO·R1 4:49 by Denise Gomes，有点没有发挥出正常水平，没有找到节奏游走防反。</p>
+</li>
+<li>
+<p>Song Yadong KO R2 Umar Nurmagomedov，下潜抱摔的时候迎上upper cut，击晕KO，实力自信come from preparation, 然后轻松自如。但是感觉R1的时候也有很多不太好的，比如手比较低，如果像是刚刚Usman在PFL那种较低的高扫的话，很容易失误，Umar没有太多抓住这个机会，Usman边角也没有太多强调，但是Umar的飞踢还是非常skilled, 简直是把脚当手用的，一下就到脸上像是巴掌一样快，当然天平trade off的另一端就是力量不会太足，至少到现在没有一击毙命过。</p>
+</li>
+<li>
+<p>这下如果遇到比较勤快的Champ的话，坐等title shot.</p>
+</li>
+<li>
+<p>Umar也比较可惜，quiet life, reading books and practicing mixed martial arts</p>
+</li>
+<li>
+<p>云宫迅音这歌是真的厉害  纯音乐  但是书写了过去 现在和未来  还有骄傲自豪 高傲 自信 伤痕和能力 志向 短短的纯旋律就能承载这么多的信息、文化、古今  辛酸苦辣   积极阳光 。这片土地上璀璨辉煌的故事，上天入地神通广大的那个英雄，传奇， 从小的偶像。</p>
+</li>
+<li>
+<p>very likely every single of ur just clown</p>
+</li>
+<li>
+<p>虚张声势 只能当观众  鲁迅说的只会看热闹   实际上一点实力没有</p>
+</li>
+<li>
+<p>两件事  锦上添花  落井下石</p>
+</li>
+<li>
+<p>energy management</p>
+</li>
+<li>
+<p>visualization</p>
+</li>
+<li>
+<p>Mental Imagery - imagining goals, actions</p>
+</li>
+</ul>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117179978618781&bvid=BV1Zk4m6AEnp&cid=41407285271&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<p>【【UFC上海】赛后发布会：亚东说他做断头台时有点被现场粉丝架住了【独家视角】】 【精准空降到 09:08】 https://www.bilibili.com/video/BV1Zk4m6AEnp/?share_source=copy_web&amp;vd_source=7ce21f11ab471395a8db74500938d6c2&amp;t=548</p>
+<h1 id="city">City</h1>
+<ul>
+<li>1st home court of the season</li>
+<li>只要那声blue moon~</li>
+<li>赛后还是一声Blue moon</li>
+<li>将近全场被一比零领先，最后时刻极限先头球扳平，然后小熊贴近越位的进球，先是边裁立刻示意越位随后被VAR纠正，righteous</li>
+<li>助攻是谢尔吉，想起这类play maker的球员阵中极少，KDB出走，Foden低迷两年多了，没有B费这种mid field attacker<br>
+<img src="https://s3.bmp.ovh/2026/08/30/NufZ23wH.png" alt="7e6ca5d89cc3c8754c8cdbcd4f7baeb3.png" loading="lazy"></li>
+</ul>
+<h1 id="cutting-edge-science">cutting-edge science</h1>
+<p>https://podcasts.apple.com/cn/podcast/google-deepmind-the-podcast/id1476316441?l=en-GB&amp;i=1000786073670</p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/the-mathematics-of-ai-uncertainty/id1476316441?i=1000786073670&l=en-GB"></iframe>
+<p>不仅要正确  还要confident 正确 就像初中时候英语选择题  蒙对和信心答对是不同的level</p>
+<p>早期的DL的识图  改变些图的细节就会出错  校车变几个像素变成了猎豹</p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DchafoORg-T/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DchafoORg-T/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DchafoORg-T/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Nick Flint (@nickflintness)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<p>虽然这些动作选择是强化学习的结果，但是我感觉这个姿势选择确实是进化的结果。最有可能是这个动作和跨的宽度有关，双足机器人的跨明显比较宽，一般男性跨比较窄，常见更为前后摆臂，女生左右会稍微幅度大一些，当然也有人幅度接近这机器人的摆臂。</p>
+<p>有时候聊天 突然对方发出来很多短句 而且信息密度不大 就像是凑字数一样  这时候我会很警觉 他是不是现在在公共场合表演给别人看他很忙？  有人在注意他.  #cringe</p>
+<ul>
+<li>准备大段地todolist话题要讨论的，till then XX  nevermind</li>
+</ul>
+<h1 id="护城河-黑暗丛林法则">护城河 黑暗丛林法则</h1>
+<ul>
+<li>选择公开建立profile 或者公开宣传内容的，无论是学术方面的 还是技术技巧 AI等等，很多content creator，发表的内容和教程都是十分落后且不专业的，事实上即使不是专业的，爱好者也有很多水平高于专业的</li>
+</ul>
+<p>从技术壁垒上讲  闭源模型对于开源模型总有优势  因为他们可以吸取开源  站在他们肩膀上<br>
+闭源团队可以直接研究开源模型的架构、训练技巧、推理优化（很多论文和代码是公开的）。<br>
+用开源模型做蒸馏、合成数据、评估基准、对抗测试。在开源已经验证过的方向上，用更大算力、更多私有数据、更精细的工程去做迭代。</p>
+<p>从“信息单向流动”的角度看，闭源处于更有利的位置，闭源可以更高效地跟进甚至反超。但优势没有那么绝对，闭源团队再强，也很难同时覆盖所有分支。</p>
+<p>闭源也受制于自己的封闭性  无法像开源一样被社区大规模审计、找bug、做安全研究。</p>
+<p>早期GPT系列遥遥领先时，很多人觉得开源永远追不上。后来Llama系列、Qwen、DeepSeek等出现后，差距明显收窄，甚至在部分任务上开源已经不落下风。技术扩散速度在AI领域极快，单纯“吸取开源”并不能保证长期优势。</p>
+<p>闭源在短期、资源密集型任务上通常有优势（因为可以集中算力和数据，专业公司合作签约），开源在长期、生态和创新广度上有优势。</p>
+<h1 id="哲学-ai-拟人化讨论">哲学  AI 拟人化讨论</h1>
+<p>https://x.com/LuizaJarovsky/status/2091992805035970706?s=20</p>
+<p>原文：<br>
+“LLMs do not have emotions, regardless of what their anthropomorphic features might make it seem. Super interesting exploration by @Amit_Goldenb and James Gross:”<br>
+《Nature Human Behaviour》上发表的短文截图（2026年8月24日在线发表，DOI: 10.1038/s41562-026-02558-6）。作者是哈佛商学院/心理学系的 Amit Goldenberg 和斯坦福大学心理学系的 James J. Gross（情绪调节研究领域的知名学者）。</p>
+<p>背景：回应 Anthropic 的研究<br>
+Anthropic 通过机械可解释性方法，在模型内部找到约 171 个与情绪概念相关的内部表征（例如“绝望”“平静”“好奇”等“情绪向量”）。这些表征会跟踪对话的情感效价，并因果性地影响模型输出——包括偏好选择，以及错位行为（如谄媚、敲诈、奖励黑客等）。例如，人为增强“绝望”向量、抑制“平静”向量，可把模拟企业场景中的敲诈行为率从 22% 提升到 72%，反向操作则降到 0%。Anthropic 据此称 Claude 具有“功能情绪”（functional emotions）——即类似人类在情绪影响下的感知与行为模式，但并不声称模型有主观感受或意识。</p>
+<p>作者的核心论点：什么才算真正的情绪？<br>
+Goldenberg 和 Gross 从功能视角出发，认为情绪在生物系统中主要服务两个核心功能：</p>
+<p>情境敏感的解读（Appraisal / 如何解释世界）<br>
+情绪通过评价过程帮助个体理解情境（是否新奇、与自身相关、可控、由谁造成等），从而决定产生何种情绪。同一情境对不同人或不同评价可产生恐惧、兴奋或无动。<br>
+Anthropic 的发现在这一点上有部分支持：Claude 似乎会评估对话语境并生成跟踪情感意义的内部表征。<br>
+但作者指出关键差异：人类情绪高度灵活、情境依赖、可变。神经科学证据（如 Lindquist 等人的元分析、Satpute 等人的研究）显示，离散情绪类别并没有一致、特异的脑区激活模式，表征是分布式的、跨个体和实例高度变化的。Anthropic 发现的“一致、离散的情绪表征”更像是学到的抽象语义概念表征，而非真正的功能情绪状态。把“有稳定情绪向量”当作证据，恰恰依赖了当代情感神经科学已经强烈挑战的旧观点。</p>
+<p>加工过程的重组（如何对世界做出反应）<br>
+情绪不只是“输出什么”，而是会动态重组整个处理过程：注意力收窄、决策加速、身体准备行动、动机状态转变、记忆编码偏向等。例如恐惧会收窄注意力到威胁相关刺激、加速相关决策、产生回避/逃跑倾向；愤怒增加接近动机等。这些变化是跨多个系统、有时间持续性的“包”。<br>
+Anthropic 主要测量的是输出内容（说什么、偏好、行为率），这只捕捉了最表面的部分。LLM 的架构是每次前向传递结构固定的，情绪表征只是像其他上下文特征一样调节下一个 token 的概率，并没有动态重组注意力、处理速度、动机状态等。把输出调制等同于功能情绪，是混淆了“情绪加工的结果”与“情绪加工本身”。</p>
+<p>结论与标准<br>
+作者明确说：缺少面部表情、生理唤醒甚至意识感受，本身并不取消资格（集体情绪也没有单一生物身体，但具有功能签名）。真正重要的是上述两个功能是否成立。目前证据在两个功能上都只是部分/混合支持，Claude 学到了情绪概念的表征并影响输出，但这还不够称为“功能情绪”。</p>
+<p>他们提出更严格的标准：需要证据表明 LLM 的“情绪”能产生功能可解释的加工变化——注意力、处理速度、响应类型与可能性等方面的持续、多系统重组（而不仅仅是下一个 token 概率的偏移）。类似集体情绪可以分布式存在，LLM 原则上也可以，但目前尚未达到。</p>
+<hr>
+<p>You let me fall first<br>
+Then you dream awake<br>
+I'd do anything to bring you to that other place</p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/spider-man/pl.u-leyl1qAfMq2AdBJ"></iframe>
+<p>You cannot be interested and inconsistent.<br>
+Thanks for being an insider till the end!<br>
+Till next, stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-20260829-fn-shanghai/">https://ezraknotlab.github.io/post/ekl-20260829-fn-shanghai/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-20260829-fn-shanghai/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-20260829-fn-shanghai/&sharesource=qzone&title=EKL 20260829 FN ShangHai&pics=https://ezraknotlab.github.io//images/avatar.png?v=1789292542567&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-20260829-fn-shanghai/&sharesource=weibo&title=EKL 20260829 FN ShangHai + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1789292542567 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://blog.itjoker.cn/alipay.jpg"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://blog.itjoker.cn/wechat.jpg"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/EKL_daily/">#
+                                                EKL_daily
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslessba-zi-ji-zuo-wei-fang-fa-greatergreater/">
+                                                                                            EKL Alma Mater 《把自己作为方法》
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-20260822/">
+                                                                                                    EKL 20260822
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                Coding.net
+                                         </a>
+            </div>
+
+            <div style="margin: 20px auto; width: 100%; text-align: center;">
+                <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=3aaac8&w=300&t=tt&d=vmneIAnHhTzdrLIBnw9ozaCgCBKsCowP9vsSXdNyBIY&co=ffffff&cmo=ec9a7c&cmn=d55f8d&ct=000000'></script>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1789292542567);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

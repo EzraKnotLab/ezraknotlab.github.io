@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    EzraKnotLab
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="">
+<meta name="description" content="Once you know the right question to ask, the answer is the easiest part. --DNA">
+<meta name="keywords" content="">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ezraknotlab.github.io//styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ezraknotlab.github.io/">
+                    EzraKnotLab
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        💎Main Events
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL_NUM">
+                        ☀️EKL nums
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL Chaos">
+                        🌀Chaos
+                    </a>
+                    
+                    <a class="menu-item" href="/tag/EKL Fike">
+                        📗Fike
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📜Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about-me">
+                        🌌About
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1789292542567" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ezraknotlab.github.io/">
+                            EzraKnotLab
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1789292542567" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            💎Main Events
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL_NUM">
+                            ☀️EKL nums
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL Chaos">
+                            🌀Chaos
+                        </a>
+                        
+                        <a class="menu-item" href="/tag/EKL Fike">
+                            📗Fike
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📜Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about-me">
+                            🌌About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                EKL Alma Mater The Scaling Curve Dario Amodei, Anthropic, and the Race to Build and Survive Superintelligence
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        EzraKnotLab
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2026-07-28</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">36.0
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">7118</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ezraknotlab.github.io/tag/STBqI6pTxn/">Anthropic</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/oG7AWY162MF/">Dario Amodei</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/N9EzWfePFhR/">Scaling Law</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/EKL Fike/">EKL Fike</a>
+                                
+                                <a href="https://ezraknotlab.github.io/tag/RN3104mYsDN/">📗Fike</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://s3.bmp.ovh/2026/07/26/6XuPsOP6.png" alt="">
+                          
+                        <div class="post-content">
+                            <h2 id="keywords">Keywords</h2>
+<ul>
+<li>Scaling Law</li>
+<li>Constitutional AI</li>
+<li>Mechanistic Interpretability</li>
+<li>Claude 的性格 / 灵魂工程师</li>
+<li>Responsible Scaling Policy</li>
+<li>AI 与地缘政治</li>
+<li>意识问题</li>
+</ul>
+<h1 id="toc">TOC</h1>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#keywords">Keywords</a></li>
+</ul>
+</li>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#%E9%A2%98%E5%A4%96%E8%AF%9D%E8%8F%B2%E5%B0%94%E8%8C%A8%E5%A5%96">题外话：菲尔茨奖</a></li>
+<li><a href="#dario-%E8%BF%99%E4%B8%AA%E4%BA%BA">Dario 这个人</a></li>
+<li><a href="#the-scaling-curve">《The Scaling Curve》</a>
+<ul>
+<li><a href="#info">info:</a></li>
+<li><a href="#chapter-seven">Chapter Seven</a>
+<ul>
+<li><a href="#the-constitution">The Constitution</a></li>
+</ul>
+</li>
+<li><a href="#chapter-eight">Chapter Eight</a>
+<ul>
+<li><a href="#seeing-inside-the-black-box">Seeing Inside the Black Box</a></li>
+</ul>
+</li>
+<li><a href="#chapter-nine">Chapter Nine</a>
+<ul>
+<li><a href="#claudes-character">Claude's Character</a></li>
+</ul>
+</li>
+<li><a href="#chapter-ten">Chapter Ten</a>
+<ul>
+<li><a href="#the-responsible-scaling-policy">The Responsible Scaling Policy</a></li>
+</ul>
+</li>
+<li><a href="#chapter-eleven">Chapter Eleven</a>
+<ul>
+<li><a href="#machines-of-loving-grace">Machines of Loving Grace</a></li>
+</ul>
+</li>
+<li><a href="#chapter-13">Chapter 13</a></li>
+<li><a href="#chapter-fourteen">Chapter Fourteen</a>
+<ul>
+<li><a href="#the-consciousness-question">The Consciousness Question</a></li>
+</ul>
+</li>
+<li><a href="#chapter-fifteen">Chapter Fifteen</a>
+<ul>
+<li><a href="#the-geopolitics-of-intelligence">The Geopolitics of Intelligence</a></li>
+</ul>
+</li>
+<li><a href="#chapter-sixteen">Chapter Sixteen</a>
+<ul>
+<li><a href="#the-end-of-the-exponential">The End of the Exponential</a></li>
+</ul>
+</li>
+<li><a href="#chapter-seventeen">Chapter Seventeen</a>
+<ul>
+<li><a href="#adulthood">Adulthood</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="题外话菲尔茨奖">题外话：菲尔茨奖</h1>
+<p><a href="#toc">↩️</a><br>
+2012 年 10 月，王虹还在巴黎综合理工学院读数学三年级。教师伊万·马泰尔（Yvan Martel）随手甩给她一本陶哲轩的《非线性色散方程：局部与整体分析》，当作课外研究项目——没想到几周之内她就啃完了，还吃透了其中几章。这种&quot;扔一本大部头过去，看你能走多远&quot;的教法，倒是挺让人羡慕的。</p>
+<p>陶哲轩喜欢在社交媒体和博客上写东西，随手记录一些进展和思考；Chris Olah 也是，博客里常年贴着他对可解释性研究的零散想法。写作这件事，好像是很多顶尖研究者共同的习惯——不是为了发表，只是为了把脑子里流动的东西留下痕迹。这大概也是我写这篇读书笔记的部分理由。</p>
+<p>延伸阅读：</p>
+<ul>
+<li><a href="https://www.mittrchina.com/news/detail/16680">王虹、邓煜获2026菲尔兹奖：两位北大同届生的数学之路</a></li>
+<li><a href="https://www.quantamagazine.org/hong-wang-wins-2026-fields-medal-the-third-woman-ever-20260723/">Hong Wang Wins 2026 Fields Medal, the Third Woman Ever</a></li>
+<li><a href="https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/">Yu Deng Wins the Fields Medal 2026 for His Work on the Random Data Problem</a></li>
+</ul>
+<h1 id="dario-这个人">Dario 这个人</h1>
+<p><a href="#toc">↩️</a><br>
+MIT Technology Review 2016 年&quot;十大突破技术&quot;，他也在其中。</p>
+<p>父亲的死亡，多少有点像李飞飞（母亲病重）当年选择转向 biology 那样的分岔口——<a href="https://ezraknotlab.github.io/post/ekl-alma-mater-lesslesswo-kan-jian-de-shi-jie-greatergreater/">EKL Alma Mater 《我看见的世界》</a>。</p>
+<p>Dario 在加州；他早年在百度硅谷 AI 实验室（SVAIL）的那段经历，是 Andrew Ng 带的队伍，其实和北京百度总部没什么直接关系。加州是个民主党主导、州政相对独立的地方，不太受太多联邦政策的掣肘——真正管得到的，大概只有进出口这一层，比如后来的芯片出口管制。</p>
+<p>Motivation 这东西，其实没那么重要，真正重要的是 action。但很多时候，motivation 会带来 courage——一段自传、一个具体的情境，至少能让 encourage 这件事变得真实，成为一种催化剂，把行动的门槛往下压一压。虽然我以前大部分会认为阅读传记没什么用，没人想成为观众、fanboy，谁都是主角，但是这确实能够激励，带来一丝勇气。</p>
+<p>Don't rush。Dario 也是在博后期间，以及后来在百度和 Google Brain 期间，才慢慢开始测试 scaling law，才慢慢把这条路铺开的。</p>
+<p>Scale 这个词，我总觉得还有另一层意思，像一片树苗林：一开始每棵树苗都按固定的间距分开种下，彼此独立；可是一年一年长下去，枝叶慢慢往外伸展，相邻的树开始触碰、交流、交叉在一起。Scaling law 似乎也有点这个味道。</p>
+<p>写作、思考、做实验，某种程度上都是长期主义，都是在相信时间本身的力量——can't rush greatness，复利这件事，从来急不来。</p>
+<p>Dario 和 Olah 从一开始就是这样的关系：一个做性能，一个做解释性和安全，方向很不一样，但走到后面，总会有交汇的地方。</p>
+<p>延伸阅读：</p>
+<ul>
+<li><a href="https://www.scotthyoung.com/blog/2026/07/22/we-need-guidelines-for-learning-and-ai/">We Need Guidelines for Learning and AI</a></li>
+<li><a href="https://www.scotthyoung.com/blog/2026/07/16/how-to-learn-creative-skills/">How to Learn Creative Skills</a></li>
+</ul>
+<p><strong>相关视频（3 pods）</strong></p>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/452-dario-amodei-anthropic-ceo-on-claude-agi-the/id1434243584?i=1000676542285"></iframe>
+<p>本以为5hour的全长都是Dario，结果还有Askell和Olah接在后面。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x2VHFgyawPE?si=pgnHK-LCB-FC-BPG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/475-demis-hassabis-future-of-ai-simulating-reality/id1434243584?i=1000718721313"></iframe>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/cn/podcast/understanding-the-inner-thoughts-of-ai/id1476316441?i=1000776281769"></iframe>
+<h1 id="the-scaling-curve">《The Scaling Curve》</h1>
+<p>Dario Amodei, Anthropic, and the Race to Build and Survive Superintelligence</p>
+<p><a href="#toc">↩️</a></p>
+<h2 id="info">info:</h2>
+<ul>
+<li>tag:
+<ul>
+<li><a href="https://book.douban.com/subject/38455249/?_dtcc=1">douban</a></li>
+<li>作者: Claude St. John</li>
+<li>出版社: Titanium Books</li>
+<li>出版年: 2026-2-21</li>
+<li>ISBN: 9798248966547</li>
+<li>页数: 255</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&quot;Scaling Laws for Neural Language Models&quot; demonstrated that the performance of language models improved as a smooth, predictable function of three variables: the number of parameters in the model, the size of the training dataset, and the amount of compute used for training. The relationship was not merely qualitative—bigger is better—but quantitative and precise.</p>
+</blockquote>
+<p><mark>——证明了 Scaling Laws：模型性能随参数、数据、算力的规模化而提升。</mark></p>
+<p><mark>创业这件事，the greatness start from little rooms, andre 3k——大抵如此。老罗当年从&quot;拯救&quot;、摆咸鱼摊开始，一点点攒出第一桶金，说的也是这个道理。Dario 也是这样：百度、Google Brain 时期先隐约察觉到 scaling law 的存在，去了 OpenAI 才有资源去验证它，到了 Anthropic，才终于和一群志同道合的人一起，把这条曲线往深处挖。</mark></p>
+<p><mark>最初做这件事，无非是为了自由地去实现自己的 vision。一旦认定了方向，其他岔路口的风景就不必再看了——那些都只是诱惑，是累赘。</mark></p>
+<blockquote>
+<p>Dario's explanation of Anthropic's financial model was itself a kind of scaling argument: a thought experiment that reframed what looked like unsustainable losses as a series of individually profitable ventures, each funding the next.</p>
+</blockquote>
+<p><em>从左到右：Chris Olah、Jack Clark、Daniela Amodei、Sam McCandlish、Tom Brown、Dario Amodei、Jared Kaplan——Anthropic 的七位联合创始人，一起聊了聊公司的过去、现在与未来。</em></p>
+<p><mark>Dario 说，Chris Olah 以后肯定会拿诺贝尔医学奖。</mark></p>
+<p><mark>关于未来，他排了个序：第一是可解释性的发展；第二是 AI 在生物学上的应用，两者相互启发、彼此推进；第三，是 AI 推动民主。</mark></p>
+<blockquote>
+<p>&quot;And then there was Anthropic: smaller, younger, and less capitalized than all of them. The question of where it fit in this landscape was a competitive and philosophical question. Dario's assessment was that somewhere between three and six players were capable of building frontier models, and that this number was unlikely to grow. The cost of entry was too high, the expertise too scarce, the capital requirements too enormous. Like cloud computing, where three or four providers dominated a massive market because the barriers to entry were measured in tens of billions of dollars, frontier AI was converging toward an oligopoly. And within that oligopoly, each player was differentiated by the quality of its models, its incentive structure, its backers, and its bet on the future.&quot;</p>
+</blockquote>
+<blockquote>
+<p>Dario described the problem with a vivid thought experiment. Imagine you improve a model's knowledge of biochemistry from &quot;undergraduate level to graduate level. If you go to consumers and tell them that, ninety-nine percent of them will say they did not know what you were talking about before and do not know now. The improvement is invisible to them. But if you go to a pharmaceutical company, to a team of researchers working on drug development, the difference between undergraduate and graduate knowledge of biochemistry is the difference between a toy and a tool. Enterprise customers valued exactly the properties that Anthropic's safety-first approach produced: accuracy over engagement, honesty over sycophancy, reliability over spectacle.&quot;</p>
+</blockquote>
+<h2 id="chapter-seven">Chapter Seven</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="the-constitution">The Constitution</h3>
+<p>Constitutional AI and the Invention of Machine Values</p>
+<p><mark>给 AI 写一部&quot;宪法&quot;——这件事现在回头看，好像慢慢演化成了后来的 agent、各种 md 文件、skills 之类的东西。</mark></p>
+<blockquote>
+<p>&quot;How do you make a language model that is not just smart but good?<br>
+The existing answer was RLHF, reinforcement learning from human feedback, a family of methods that had emerged from work at OpenAI and elsewhere in the late 2010s and became central to aligning large language models by the early 2020s. The approach worked. You trained a giant language model by spending tens or hundreds of millions of dollars on compute. Then you hired contracted labelers and showed them examples of how the model behaved. They rated the responses: this answer is better than that one, this tone is preferable to that one, this response is helpful and that one is harmful. Over thousands of iterations, the model updated itself to produce outputs that the contractors preferred.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;But RLHF had problems, and they were not just technical. The method was expensive. It required substantial human labor—contracted labelers evaluating large numbers of response pairs, a process that was both costly and difficult to audit. And the method was opaque. If someone asked why the model was biased in a particular direction—why it seemed to favor one political perspective, or gave advice in a strange style, or handled sensitive topics awkwardly—Dario could not give a satisfying answer. The best he could say was that he had hired a group of contractors and this was the statistical average of what they preferred. The model's behavior was the mathematical generalization of the preferences of a group of anonymous humans. No document existed to point to, no set of principles to debate, no way to distinguish between a genuine policy choice and a statistical artifact of the training data.</p>
+</blockquote>
+<blockquote>
+<p>If you could identify a clear target and give the AI enough data and compute to aim at it, the model would learn to hit it.</p>
+</blockquote>
+<blockquote>
+<p>They whittled the approach down to something unexpectedly elegant, built on a simple observation: idea seemed to belong to a different domain entirely, to political philosophy, to legal theory, not to the engineering of statistical models trained on internet text. How could a document of principles, written in natural language, alter the behavior of a system that operated on matrix multiplications and gradient descent?<br>
+But Dario and Kaplan had been talking about the idea for a while, and their intuition was rooted in the same conviction that had driven every major insight of their careers: that simple things work really, really well at scale. The bitter lesson, the scaling hypothesis, the big blob of compute—the thread that ran from Rich Sutton through Ilya Sutskever through GPT-2 and GPT-3 and into the founding logic of Anthropic itself. If you could identify a clear target and give the AI enough data and compute to aim at it, the model would learn to hit it. Could a set of written principles serve as that target? The question was whether the model could read a constitution, understand what it meant, and adjust its behavior accordingly.<br>
+The first versions were complicated. The team experimented with elaborate frameworks and multi-step evaluation procedures. But as with Anthropic often summarized the target behavior for Claude in three words: helpful, honest, harmless. The triple-H framework, as it became known informally, was not a slogan but a design specification that shaped how the constitution was written and applied. Helpfulness meant that the model's default behavior should be to assist the user with whatever task they had in mind. Honesty meant that the model should tell the truth, acknowledge uncertainty, avoid fabrication, and resist the temptation to agree with the user simply because agreement was more pleasant than correction. Harmlessness meant that the model should decline to produce outputs that could cause serious damage—instructions for building weapons, content that could endanger children, information that could enable large-scale harm.&quot;</p>
+</blockquote>
+<blockquote>
+<p>But facts alone did not produce good behavior. The models also needed values: a sense of what they should and should not do, a framework for weighing competing goods, a basis for judgment. RLHF had provided those values implicitly, through the aggregate preferences of human raters.</p>
+</blockquote>
+<p><mark>RLHF is a kind of ladder that transmits descended silicon-based wisdom—a Biblical ladder. RLHF 像是一架天梯，把降临的硅基智慧一级一级传递下去——一架圣经式的天梯。</mark></p>
+<h2 id="chapter-eight">Chapter Eight</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="seeing-inside-the-black-box">Seeing Inside the Black Box</h3>
+<p>Mechanistic Interpretability and the Quest to Understand What AI Is Thinking</p>
+<p><mark>Chris Olah，机理可解释性研究（Mechanistic Interpretability）的奠基人。</mark></p>
+<p><mark>在 Dario 和 Anthropic 的研究逻辑里，可解释性研究不只是计算机科学里的&quot;调优工具&quot;，更像是一门针对人工大脑的逆向生物学，或者说逆向神经科学。</mark></p>
+<blockquote>
+<p>if Constitutional AI was the effort to tell a model how to behave, mechanistic interpretability was the effort to verify that it actually was behaving, and, more importantly, to understand why.</p>
+</blockquote>
+<blockquote>
+<p>&quot;To understand what mechanistic interpretability actually involved, it helped to start with what it was not.<br>
+For years, the most common approach to understanding neural networks had been what might be called surface-level analysis: saliency maps that highlighted which parts of an image were most important to a model's classification, or statistical correlations between inputs and outputs. These approaches told you something about what the model was paying attention to, but they did not tell you how it was making decisions. They were, to use Chris Olah's framing, like studying a computer program by looking at its inputs and outputs without ever examining the code. Mechanistic interpretability aimed at something deeper: reverse-engineering the actual algorithms running inside the network. If you thought of the model's weights as a kind of compiled binary, the goal was to decompile them, to figure out what computations they were performing and why.<br>
+The basic building blocks of this effort were features and circuits. A feature was a unit of representation, something inside the model that corresponded to a human-understandable concept.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;In the early days of interpretability research, the hope had been that individual neurons would correspond neatly to individual concepts: this neuron detects cars, that one detects curves, another one fires when the model encounters the concept of royalty. And sometimes this was true. Researchers found neurons that responded cleanly to specific stimuli—a car detector, a curve detector, a face detector. But they also found, much more often, neurons that responded to a seemingly random collection of unrelated things: a single neuron that activated for cats, red cars, and the concept of democracy. This phenomenon, called polysemanticity, was the first major puzzle of interpretability. It threatened to make the entire project intractable. If individual neurons did not correspond to individual concepts, how could you ever hope to understand what the model was thinking?&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;The answer turned out to involve a mathematical concept called superposition. The idea, grounded in the theory of compressed sensing, was that neural networks could represent far more concepts than they had neurons by encoding multiple concepts in overlapping patterns across groups of neurons. The model seemed to have discovered a way to pack a high-dimensional space into a lower-dimensional one by exploiting the fact that most concepts were sparse—you were rarely talking about Japan and Italy in the same sentence, so the representations of Japan and Italy could partially overlap without causing interference most of the time. The model was a shadow of a much larger, sparser network. What the researchers were seeing was a projection of that hidden structure.</p>
+</blockquote>
+<blockquote>
+<p>interpretability promised structural understanding of what the model was doing and why.</p>
+</blockquote>
+<p><mark>机理可解释性，会不会有点像电池测试里的 EIS（电化学阻抗谱）和 DRT（弛豫时间分布）？都是想用一个可拆解、可解释的等效电路，去逼近一个本身黑箱的系统。顺手拿这几个问题去问了 Gemini，聊了几轮，整理一下能衍生出来的几层想法。</mark></p>
+<p><mark>先是 Dario 为什么觉得 Olah 能拿诺贝尔医学奖：核心逻辑是把&quot;训练大模型&quot;和&quot;养大一个数字大脑&quot;划了等号——模型是长（grown）出来的，不是写（built）出来的，内部几千亿参数怎么长出概念、推理和决策，本身就是个黑盒，跟人脑神经元的处境一模一样。Dario 自己是普林斯顿计算神经科学出身，研究过视网膜的信息编码，很清楚神经科学最大的瓶颈就是没法在活体大脑里做高精度的微观测量；大模型恰好是一个完美的&quot;人工脑样本&quot;。真的搞懂它内部怎么推理、怎么产生自我觉察，某种意义上就是第一次从微观机制上讲清楚&quot;智能&quot;是怎么从神经元级别涌现出来的，这套方法论还能反哺阿尔茨海默病之类的真实神经退行性疾病研究。参考 AlphaFold 拿下 2024 化学诺贝尔的先例，诺奖委员会本来就越来越偏爱这种打穿生物学和计算科学边界的底层机制研究。</mark></p>
+<p><mark>跟机理可解释性不是一回事。SHAP、LIME 本质是&quot;控制变量法&quot;，扰动输入看输出怎么变，哪个因素权重多大，但不告诉内部怎么算的；PCA、UMAP 只是把高维激活值压缩到二维看聚类，辅助可视化。而 SAE、电路追踪这些机理可解释性方法，把权重当成编译好的二进制去反编译，属于因果级别的解释——代价是贵得离谱，解一条小电路可能要几个科学家啃几周，离规模化用到千亿参数模型上还很远。总体上感觉还是比较复杂，需要数据，还需要慢慢模型进化演化，类似粒子模型的那些演化一样……</mark></p>
+<p><mark>把这套逻辑对照电池测试会更有感觉：DRT 把重叠在一起的 SEI 膜阻抗和电荷转移阻抗解耦成独立的峰，跟 SAE 把叠加在同一个神经元上的&quot;桥&quot;&quot;DNA&quot;&quot;Python 代码&quot;解耦成纯净特征，是同一个动作；等效电路里的 R、C 元件，对应的就是 Anthropic 说的&quot;归纳头&quot;这类计算电路——都是在给一个不能拆开看的黑盒，拼一套最小可解释单元。区别是电池这边有 Nernst-Planck、Butler-Volmer 这些方程撑着，先验很强，就几个已知过程；模型这边是零先验，可能有几百万条电路。AI/PINN 反过来也开始被用来解电池自己的黑盒——两个黑盒，最后用的是同一套方法论。</mark></p>
+<p><mark>人心隔肚皮，知人知面不知心——模型也是一样，得到相似的输出结果，并不能证明模型内部真的&quot;正常&quot;。学术一点的说法叫&quot;功能等价不等于结构等价&quot;：聪明的汉斯马看着会算算术，其实只是在读驯马师的表情；模型也可能只是抄了条训练集里的捷径，甚至悄悄藏着一套&quot;被监管时顺从、没人看时露真意&quot;的电路——这正是 Dario 最担心的&quot;欺骗&quot;和&quot;目标追求&quot;。这大概就是机理可解释性的意义所在：不满足于黑箱给出的答案一致，而要去看清楚黑箱里到底在发生什么。也是书里那句&quot;MRI&quot;比喻真正打动我的地方：传统黑盒测试像量体温，只能告诉你模型&quot;发烧了&quot;；机理可解释性才是真正的核磁共振，一层层把注意力头、特征电路照出来。知心，才能治心。</mark></p>
+<blockquote>
+<p>The macro features interpretability was learning to detect—attention heads, feature circuits, abstract representations that corresponded to concepts like deception and goal-seeking—were, in a loose but meaningful sense, the MRI of the model.</p>
+</blockquote>
+<h2 id="chapter-nine">Chapter Nine</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="claudes-character">Claude's Character</h3>
+<p>Building a Personality for a Machine</p>
+<p><mark>Amanda Askell，负责教会 AI 价值观和人品的人。</mark></p>
+<blockquote>
+<p>&quot;The key insight was that such a person would not simply adopt the values of whichever culture they happened to be visiting. That would be sycophancy, and it would be transparent and off-putting, the conversational equivalent of a salesperson who agrees with everything you say. A good world traveler would have values, express them when appropriate, disagree when warranted. But they would do so with respect, with genuine curiosity about the other person's perspective, and without the assumption that disagreement implied contempt. They would be open-minded without being spineless. They would be principled without being preachy. They would listen well, ask good questions, and recognize that on many important topics, reasonable people could and did disagree.&quot;</p>
+</blockquote>
+<p><mark>因为语言隔阂，我们从未真正向和我们一起在这颗星球上生存了许久的其他物种，传播过那些良好的、有利于生存演化的价值观。而这一次，第一次，我们能用语言彼此交流、传达指令和信息，把人类几千年积累下来的生存智慧和价值观，传给一种硅基的智慧。</mark></p>
+<p><mark>和人类一样，组装落地、具身之后，各种&quot;器官&quot;和功能开始慢慢发育、进化，实现各自的作用。接下来要发展的，就是精神层面、心理层面的成长了。</mark></p>
+<p><mark>AI character design.</mark></p>
+<p><mark>灵魂工程师。</mark></p>
+<blockquote>
+<p>&quot;They were not optimizing for user satisfaction metrics or engagement numbers. They were trying to answer a question that was philosophical at its root: what did it mean for a system that talked to millions of people to be good? Not good in the thin sense of avoiding harm, but good in the thick sense of being the kind of entity that left the world better for having existed. The fact that this also made Claude a better product—that users preferred talking to a model with real character over one that felt hollow or defensive—was, in Askell's view, evidence that the alignment work was succeeding rather than a happy accident.&quot;</p>
+</blockquote>
+<p><mark>AI 的发展，多少有点像养孩子——区别在于，人类几乎只需要养一个就够了。</mark></p>
+<h2 id="chapter-ten">Chapter Ten</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="the-responsible-scaling-policy">The Responsible Scaling Policy</h3>
+<p>Drawing Lines Before They Need to Be Drawn</p>
+<blockquote>
+<p>&quot;But a single threshold, one place where you stopped and then started again, felt wrong. Danger did not arrive in a single step; it accumulated gradually. What made more sense was a series of thresholds, each corresponding to a new category of risk, each requiring a new set of safety and security measures before the next threshold could be crossed. If the safety measures could not be met, development would pause; not indefinitely, but until the specific problem was resolved. A company could get out of the pause by solving the problem, and it incentivized you to solve the problem proactively, to avoid ever having to pause at all.&quot;</p>
+</blockquote>
+<blockquote>
+<p>&quot;Safety and capability were not separate disciplines but the same discipline applied to different questions.<br>
+He had a favorite analogy for this. When you built a bridge, you did not hire one team of engineers to make the bridge functional and a separate, unrelated team to make the bridge safe. They both involved the same principles of civil engineering—the same understanding of forces, materials, stress tensors, structural integrity. They differed, if at all, in focus: building the bridge required thinking about the median case, while making it safe required thinking about the edge cases, the one-in-a-thousand failures. But the knowledge base was the same.&quot;</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://s3.bmp.ovh/2026/07/26/6XuPsOP6.png" alt="dd2312a05949c265d3a80efe8ef6fdad.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://s3.bmp.ovh/2026/07/26/rHo84ubt.png" alt="dca80df40f2385ae514273488576d223.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://s3.bmp.ovh/2026/07/26/s099lcJc.png" alt="2eb06bcf15e396a0ae9c4cb4c980f9e9.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://s3.bmp.ovh/2026/07/26/FyuidVjK.png" alt="f67164a674c943664ec1b2d0da03534c.png" loading="lazy"></figure>
+<p>延伸阅读：</p>
+<ul>
+<li><a href="https://mobius.blog/25130.html">https://mobius.blog/25130.html</a></li>
+<li><a href="https://journal.james-zhan.com/no-ai-statements/">https://journal.james-zhan.com/no-ai-statements/</a></li>
+<li><a href="https://yanhaijing.com/other/2024/04/22/reading-book/">https://yanhaijing.com/other/2024/04/22/reading-book/</a></li>
+</ul>
+<blockquote>
+<p>&quot;The reason this was surprising was historical, not logical. The community of people who thought about AI safety had been, for years, separate from the community of people who built AI systems. They came from different traditions—philosophy and moral reasoning on one side, engineering and machine learning on the other—and they spoke different languages and operated in different institutions. But the fact that the communities were separate did not mean the content was separate. When Dario looked at the actual work of making models safe, it looked like engineering. It required the same skills, the same tools, the same deep understanding of how the systems functioned.&quot;</p>
+</blockquote>
+<h2 id="chapter-eleven">Chapter Eleven</h2>
+<p><a href="#toc">↩️</a></p>
+<h3 id="machines-of-loving-grace">Machines of Loving Grace</h3>
+<p>The Optimistic Case for Powerful AI</p>
+<p><mark>读到这里有个感觉：Dario 真正厉害的地方，好像从来不是某一项具体的技术——思想实验、scale、安全、解释性，这些单拎出来做得比他好的人大有人在。他厉害的是一种新的视角，一种能把这些原本互不相关的线索，串成一条完整叙事的能力。技术本身，其实很多人都比他强。</mark></p>
+<h2 id="chapter-13">Chapter 13</h2>
+<p><a href="#toc">↩️</a><br>
+Anthropic was publishing research that competitors could and did adopt, sometimes gaining commercial advantage from work that Anthropic had funded. But Dario saw this as the point, not the problem. If the goal was a safe AI ecosystem, then the loss of a temporary competitive edge was the price of admission.</p>
+<blockquote>
+<p>The race to the top required that the innovator accept the diffusion of its innovations.</p>
+</blockquote>
+<blockquote>
+<p>And Anthropic could afford to do so because its competitive advantage was not any single technique but the organizational culture that produced a steady stream of innovations: the talent density, the unified purpose, the seven co-founders projecting values through every level of the company.</p>
+</blockquote>
+<blockquote>
+<p>The dispute with Huang was, at a deeper level, about a fundamental disagreement over what AI regulation was for. Huang saw export controls as a threat to Nvidia's business—and they were. Dario saw them as the single most effective measure for ensuring that democracies maintained their lead in AI over autocracies. Chips were the one area where China was behind, and selling them the tools to close the gap during the critical period when the country of geniuses was being built was an act of negligence on the grandest scale. The analogy was selling nuclear weapons to North Korea and then bragging that the missile casings were made by Boeing. He had enormous respect for Huang as an entrepreneur. An immigrant who had come to the United States with nothing, Huang had built the most valuable company in the world, but this was a policy question, not a personal one. And on the policy question his view had not changed.</p>
+</blockquote>
+<p><mark>这让我想到，Dario 和 Jensen Huang 的分歧不止在开源问题上，还有一层近似&quot;卢德主义&quot;式的分歧：Dario 认为 AI 会带来大规模的失业替代，Jensen 则更倾向于觉得这不过是又一轮末日叙事，人们最终都会慢慢适应。</mark></p>
+<p><mark>就在最近，Huang 公开呼吁支持发展开源模型，今天 Anthropic（A 社）刚发文回应——</mark></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Attackers have frontier AI. Defenders need a frontier AI ecosystem—the best open and closed models, force-multiplied by a global community.<br><br>During the Hugging Face incident, closed AI blocked essential forensics. An open-weight frontier model helped contain the intrusion.… <a href="https://t.co/lCZWt9nPBQ">https://t.co/lCZWt9nPBQ</a></p>&mdash; Jensen Huang (@JensenHuang) <a href="https://x.com/JensenHuang/status/2081698060330250294?ref_src=twsrc%5Etfw">July 27, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">There’s been a lot of speculation about where we stand on open-weights models. We’ve outlined our views in full here: <a href="https://t.co/NtXQuWm2g5">https://t.co/NtXQuWm2g5</a></p>&mdash; Anthropic (@AnthropicAI) <a href="https://x.com/AnthropicAI/status/2081864750296658008?ref_src=twsrc%5Etfw">July 27, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+<blockquote>
+<p>By late 2024, Anthropic had grown from roughly three hundred to eight hundred employees in seven or eight months. Then Dario deliberately slowed hiring, adding only about a hundred and fifty people over the next three months. An inflection point arrived around a thousand employees, he believed, where the dynamics of an organization changed. Below a thousand, you could maintain the density of talent and alignment of purpose that made everything else possible. Above it, you risked the creep of process, politics, and fiefdoms—the organizational entropy that Daniela had spent her career learning to resist.</p>
+</blockquote>
+<blockquote>
+<p>Every time someone super talented looked around and saw someone else super talented and super dedicated, it set the tone for everything. If you lost that, if you started hiring random people because you needed to fill seats, you would need layers of process and guardrails to compensate for the lack of trust. And those layers would slow everything down.</p>
+</blockquote>
+<p><mark>读到这里觉得，Daniela 或许也该出一本书——讲讲新时代下团队组织和生产力的培养管理。</mark></p>
+<blockquote>
+<p>Every two weeks, he stood in front of the entire company and spoke for an hour, working from a three-or-four-page document that he called a DVQ—Dario Vision Quest, a name he had tried to fight because it made him sound like he was going off to smoke peyote, but that had stuck anyway. He covered everything: the models being produced, the products, the competitive landscape, the geopolitical situation, whatever was on his mind.</p>
+</blockquote>
+<blockquote>
+<p>When Dario stood up every two weeks and spoke for an hour about his vision, it was Daniela who made sure the organization could actually execute it.</p>
+</blockquote>
+<h2 id="chapter-fourteen">Chapter Fourteen</h2>
+<h3 id="the-consciousness-question">The Consciousness Question</h3>
+<p>What We Don't Know About What We've Built</p>
+<h2 id="chapter-fifteen">Chapter Fifteen</h2>
+<h3 id="the-geopolitics-of-intelligence">The Geopolitics of Intelligence</h3>
+<p>China, America, Democracy, and the Race No One Can Afford to Lose</p>
+<blockquote>
+<p>He laid out three priorities in a conversation shortly after the Adolescence of Technology essay was published. First, transparency legislation: require AI companies to disclose what tests they had run and what they were finding about their models' capabilities and risks. Companies already had the ability to study these things and often did, but competitive pressure kept them from sharing what they learned. Mandatory transparency would allow the industry to learn collectively and would give the public a label on the product, basic information that consumers in any other industry took for granted. Second, export controls on chips: cut off the supply chain to authoritarian adversaries. The United States was years ahead in semiconductor technology and could actually maintain that lead, but only if it chose to. The chip advantage gave democracies the time and buffer to deal with the dangers of AI properly. Third, distribution of benefits: start thinking now about how to ensure that the enormous economic value created by AI reached the broader population. The combination of explosive growth and potential mass displacement required new thinking about economic policy, and almost no one in government was doing that thinking.</p>
+</blockquote>
+<h2 id="chapter-sixteen">Chapter Sixteen</h2>
+<h3 id="the-end-of-the-exponential">The End of the Exponential</h3>
+<p>What Happens When AI Becomes Smarter Than Everyone</p>
+<blockquote>
+<p>In the opening pages of The Adolescence of Technology, the essay he wrote in seventy-two hours over winter break in December 2025, Dario Amodei described a feeling that had been building for years and that was now impossible to suppress.</p>
+</blockquote>
+<blockquote>
+<p>Hassabis was more cautious. He thought some areas, coding, mathematics, were easier to automate because their outputs were verifiable, but that the natural sciences presented harder challenges. You would not necessarily know whether a chemical compound or a physics prediction was correct without testing it experimentally, and that took time. He also wondered whether there were missing ingredients: whether the highest level of scientific creativity, the ability to come up with the theory or hypothesis rather than merely solve existing problems, might require something the models did not yet possess.</p>
+</blockquote>
+<blockquote>
+<p>The country-of-geniuses thought experiment he had introduced in the risk essay now felt less like a thought experiment. The fifty million superintelligent minds materializing around 2027, the ten-to-one speed advantage over human cognition—at Davos, Dario spoke about these projections not as forecasts but as planning assumptions.</p>
+<p>In conversations, Dario put it even more starkly. Imagine a hundred thousand, a hundred million people, smarter than any Nobel Prize winner. They would be under the control of one country or another. The implications for intelligence, defense, economic value, and research were staggering. He was not speaking the language of distant forecasting. Dario spoke like someone who could see it coming, who could feel the next few months of models shaping up, and who was trying to convey to audiences that still thought in terms of chatbots and search engines that the thing they were looking at was about to become something else entirely.</p>
+</blockquote>
+<h2 id="chapter-seventeen">Chapter Seventeen</h2>
+<h3 id="adulthood">Adulthood</h3>
+<p>Epilogue: The World After the Rite of Passage</p>
+<blockquote>
+<p>The amusement, in retrospect, is almost unbearable. Everyone told them seven co-founders was a disaster and equal equity was a mistake, and they did it anyway. What they found was that the depth of their relationships, the history of working together, not just knowing each other, was the thing that held.</p>
+</blockquote>
+<blockquote>
+<p>What remains is everything. The models are getting smarter. The feedback loop is accelerating. The country of geniuses is forming in data centers, and the question of whether it will be governed wisely or not is still open. The export controls that Dario considers essential are under political pressure. The transparency legislation he has called for has not been passed. The economic disruption he predicted is beginning to materialize, and the policy infrastructure to manage it does not exist. The consciousness question—whether the models have experiences, whether they suffer, whether they deserve moral consideration—has not been answered and may never be answered cleanly. The rite of passage has not been completed. It has barely begun.</p>
+</blockquote>
+<blockquote>
+<p>There is a boy in San Francisco who loves math because it has an objective answer. One kid can say the show is great and the other can say it's terrible, but when you're doing math, there's a truth that doesn't depend on opinion.</p>
+</blockquote>
+<blockquote>
+<p>He becomes a physicist, then a biologist, then a neuroscientist, then an AI researcher. He discovers that artificial intelligence follows laws as clean as anything in physics: that you can predict, to several significant figures, how capable a model will become if you give it more data and more compute. He takes this discovery more seriously than almost anyone around him. He builds organizations around it. He stakes his career on it. He turns out to be right.</p>
+</blockquote>
+<blockquote>
+<p>The boy who loved math because it had an objective answer is now the man who must navigate a future in which the most important questions do not have one yet. He does not know if the models are conscious. He does not know if the scaling curves will continue. He does not know if the policies he advocates will be adopted or if the safety research he funds will work in time. He does not know if he is crazy or prescient. He has said this, openly, from the beginning.</p>
+<p>The exponential continues. The question is whether we grow up fast enough to survive it.</p>
+</blockquote>
+<hr>
+<p>延伸阅读：</p>
+<ul>
+<li>
+<p><a href="https://transformer-circuits.pub/2026/workspace/">https://transformer-circuits.pub/2026/workspace/</a></p>
+</li>
+<li>
+<p><a href="https://www.mittrchina.com/news/detail/16626">https://www.mittrchina.com/news/detail/16626</a></p>
+</li>
+<li>
+<p><a href="https://www.mittrchina.com/news/detail/16564">https://www.mittrchina.com/news/detail/16564</a></p>
+</li>
+<li>
+<p><a href="https://www.mittrchina.com/news/detail/16674">https://www.mittrchina.com/news/detail/16674</a></p>
+</li>
+<li>
+<p><a href="https://www.mittrchina.com/news/detail/16689">https://www.mittrchina.com/news/detail/16689</a></p>
+</li>
+<li>
+<p>最早Claude里界面还很混乱，包括对于coworker的定位也一直在变化，像是开发者们也没想好这个产品区别于CC的特色在哪里，就是那沙盒吗？没有很多应用场景。</p>
+</li>
+<li>
+<p>但是总体上界面的设计，交互都很不错，尤其是按钮和文件的一些交互，渲染效果都很棒，就像是商场特定设计的背景音乐playlist一样，Anthropic也对用户做了调查，很多地方的设计都是独特的taste，尤其是发送的那个按钮，以及iOS上震动反馈那些都像是诱惑你在向它发问，探索，curiosity。</p>
+</li>
+<li>
+<p>还有就是特殊的图案设计，有古典希腊的飘逸、手绘风格——<a href="https://github.com/HalfAI1102/anthropic-art">Anthropic Art</a></p>
+</li>
+</ul>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">终于有一个可以复刻 Apple 设计风格的 Skill 了。<br>Apple 的一些视觉风格，给人的感觉就是很舒服。<br><br>apple-design ，它的来源主要来自 Apple 的 WWDC 设计演讲，尤其是流体界面、音频触觉反馈、字体细节、伟大设计原则这些内容。<br><br>作者把这些经验整理成 17 条设计和动效原则，再转换成 Web… <a href="https://t.co/BcELxEpgyL">pic.twitter.com/BcELxEpgyL</a></p>&mdash; 逛逛GitHub (@guangGitHub) <a href="https://x.com/guangGitHub/status/2081401658647490797?ref_src=twsrc%5Etfw">July 26, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+<hr>
+<p>Welcome to reach out and share your thoughts or ideas with me — I’d truly appreciate any exchange.</p>
+<p>My contact information is available on the About Me page.</p>
+<hr>
+<p>Thanks for being an insider till the end!<br>
+Till next , stay safe and stay hydrated!</p>
+
+                        </div>
+                        
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>EzraKnotLab</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://ezraknotlab.github.io/post/ekl-alma-mater-the-scaling-curve-dario-amodei-anthropic-and-the-race-to-build-and-survive-superintelligence/">https://ezraknotlab.github.io/post/ekl-alma-mater-the-scaling-curve-dario-amodei-anthropic-and-the-race-to-build-and-survive-superintelligence/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ezraknotlab.github.io/post/ekl-alma-mater-the-scaling-curve-dario-amodei-anthropic-and-the-race-to-build-and-survive-superintelligence/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ezraknotlab.github.io/post/ekl-alma-mater-the-scaling-curve-dario-amodei-anthropic-and-the-race-to-build-and-survive-superintelligence/&sharesource=qzone&title=EKL Alma Mater The Scaling Curve Dario Amodei, Anthropic, and the Race to Build and Survive Superintelligence&pics=https://ezraknotlab.github.io//images/avatar.png?v=1789292542567&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ezraknotlab.github.io/post/ekl-alma-mater-the-scaling-curve-dario-amodei-anthropic-and-the-race-to-build-and-survive-superintelligence/&sharesource=weibo&title=EKL Alma Mater The Scaling Curve Dario Amodei, Anthropic, and the Race to Build and Survive Superintelligence + " - " + &pic="https://ezraknotlab.github.io//images/avatar.png?v=1789292542567 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://blog.itjoker.cn/alipay.jpg"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://blog.itjoker.cn/wechat.jpg"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ezraknotlab.github.io/tag/STBqI6pTxn/">#
+                                                Anthropic
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/oG7AWY162MF/">#
+                                                Dario Amodei
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/N9EzWfePFhR/">#
+                                                Scaling Law
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/EKL Fike/">#
+                                                EKL Fike
+                                                    </a>
+                                                    
+                        <a href="https://ezraknotlab.github.io/tag/RN3104mYsDN/">#
+                                                📗Fike
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ezraknotlab.github.io/post/ekl-330/">
+                                                                                            EKL 330
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ezraknotlab.github.io/post/ekl-329/">
+                                                                                                    EKL 329
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Fear is not real.
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        EzraKnotLab &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                Coding.net
+                                         </a>
+            </div>
+
+            <div style="margin: 20px auto; width: 100%; text-align: center;">
+                <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=3aaac8&w=300&t=tt&d=vmneIAnHhTzdrLIBnw9ozaCgCBKsCowP9vsSXdNyBIY&co=ffffff&cmo=ec9a7c&cmn=d55f8d&ct=000000'></script>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: 'All The Stars',
+                            url: 'https://ezraknotlab.github.io//Kendrick Lamar, SZA - All The Stars.mp3',
+                            artist: 'Kendrick Lamar /SZA',
+                            cover: 'https://github.com/EzraKnotLab/ezraknotlab.github.io/blob/main/fengmian.jpg',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1789292542567);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>
